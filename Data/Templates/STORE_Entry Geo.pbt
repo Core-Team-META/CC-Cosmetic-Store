@@ -1,0 +1,378 @@
+﻿Assets {
+  Id: 15389268987378960631
+  Name: "STORE_Entry Geo"
+  PlatformAssetType: 5
+  TemplateAsset {
+    ObjectBlock {
+      RootId: 9134274018311211015
+      Objects {
+        Id: 9134274018311211015
+        Name: "STORE_Entry Geo"
+        Transform {
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8535933385773224714
+        ChildIds: 7808404998850808861
+        ChildIds: 6604133153937003334
+        ChildIds: 16914064471433568227
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:PreviewMesh"
+            ObjectReference {
+              SubObjectId: 6604133153937003334
+            }
+          }
+          Overrides {
+            Name: "cs:BGMesh"
+            ObjectReference {
+              SubObjectId: 16914064471433568227
+            }
+          }
+          Overrides {
+            Name: "cs:DefaultColor"
+            Color {
+              G: 0.0705882385
+              B: 0.831372619
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "cs:HighlightColor"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 7808404998850808861
+        Name: "Fantasy Human Gal 1"
+        Transform {
+          Location {
+            Y: -30
+          }
+          Rotation {
+            Yaw: -90
+          }
+          Scale {
+            X: 0.25
+            Y: 0.25
+            Z: 0.25
+          }
+        }
+        ParentId: 9134274018311211015
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 1933423669694793802
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 1933423669694793802
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1933423669694793802
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail3:id"
+            AssetReference {
+              Id: 1933423669694793802
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.450980425
+              G: 0.450980425
+              B: 0.450980425
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:color"
+            Color {
+              R: 0.450980425
+              G: 0.450980425
+              B: 0.450980425
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.450980425
+              G: 0.450980425
+              B: 0.450980425
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail3:color"
+            Color {
+              R: 0.450980425
+              G: 0.450980425
+              B: 0.450980425
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 13784467660178889007
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          AnimatedMesh {
+            AnimationStance: "unarmed_idle_relaxed"
+            AnimationStancePlaybackRate: 1.1
+            AnimationStanceShouldLoop: true
+            AnimationPlaybackRateMultiplier: 1
+            PlayOnStartAnimation {
+              PlaybackRate: 1
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 6604133153937003334
+        Name: "Fantasy Human Gal 1"
+        Transform {
+          Location {
+            Y: -30
+          }
+          Rotation {
+            Yaw: -89.9999695
+          }
+          Scale {
+            X: 0.25
+            Y: 0.25
+            Z: 0.25
+          }
+        }
+        ParentId: 9134274018311211015
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 13206135842285396679
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 13206135842285396679
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 13206135842285396679
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail3:id"
+            AssetReference {
+              Id: 13206135842285396679
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:color"
+            Color {
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail3:color"
+            Color {
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 13784467660178889007
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          AnimatedMesh {
+            AnimationStance: "unarmed_idle_relaxed"
+            AnimationStancePlaybackRate: 1.1
+            AnimationStanceShouldLoop: true
+            AnimationPlaybackRateMultiplier: 1
+            PlayOnStartAnimation {
+              PlaybackRate: 1
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 16914064471433568227
+        Name: "Cube"
+        Transform {
+          Location {
+            Y: 40
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.85
+            Y: 0.85
+            Z: 0.85
+          }
+        }
+        ParentId: 9134274018311211015
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 8848890013785341561
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              G: 0.0705882385
+              B: 0.831372619
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.15
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.15
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 10397718742664464874
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+    }
+    Assets {
+      Id: 13784467660178889007
+      Name: "Human Gal 1"
+      PlatformAssetType: 17
+      PrimaryAsset {
+        AssetType: "AnimatedMeshAssetRef"
+        AssetId: "npc_human_gal_basic_001_ref"
+      }
+    }
+    Assets {
+      Id: 1933423669694793802
+      Name: "Basic Outline"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "fxma_outline_basic"
+      }
+    }
+    Assets {
+      Id: 13206135842285396679
+      Name: "Emissive Glow Transparent"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_basic_emissive_001"
+      }
+    }
+    Assets {
+      Id: 10397718742664464874
+      Name: "Cube - Rounded"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cube_rounded_002"
+      }
+    }
+    Assets {
+      Id: 8848890013785341561
+      Name: "Metal Basic Steel"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "steel_001"
+      }
+    }
+    PrimaryAssetId {
+      AssetType: "None"
+      AssetId: "None"
+    }
+  }
+  SerializationVersion: 65
+}
