@@ -85,7 +85,7 @@ function HideStore()
 	propStoreUIContainer.isEnabled = false
 	UI.SetCursorVisible(false)
 	player:ClearOverrideCamera()
-
+	ClearList()
 end
 
 function LerpFunc(a, b, v)
@@ -180,16 +180,30 @@ function SpawnPreview(templateId, previewMesh)
 end
 
 
-function SpawnMiniPreview(templateId, previewMesh)
+function SpawnMiniPreview(templateId, newGeo)
+	local previewMesh = newGeo:GetCustomProperty("PreviewMesh"):WaitForObject()
+	local previewOutline = newGeo:GetCustomProperty("PreviewOutline"):WaitForObject()
+
 	local previewItem = World.SpawnAsset(templateId)
-	for _, socket in pairs(previewMesh:GetSocketNames()) do
-		local deco = previewItem:FindDescendantByName(socket)
-		if deco ~= nil then
-			deco.parent = nil
-			deco:SetWorldScale(previewMesh:GetWorldScale())
-			previewMesh:AttachCoreObject(deco, socket)
+	local storeGraphic = previewItem:FindChildByName("store_graphic")
+	if storeGraphic ~= nil then
+		storeGraphic.parent = newGeo
+		storeGraphic:SetPosition(previewMesh:GetPosition())
+		previewMesh.isEnabled = false
+		previewOutline.isEnabled = false
+	else
+		previewMesh.isEnabled = true
+		previewOutline.isEnabled = true
+		for _, socket in pairs(previewMesh:GetSocketNames()) do
+			local deco = previewItem:FindDescendantByName(socket)
+			if deco ~= nil then
+				deco.parent = nil
+				deco:SetWorldScale(previewMesh:GetWorldScale())
+				previewMesh:AttachCoreObject(deco, socket)
+			end
 		end
 	end
+	previewItem:Destroy()
 end
 
 function ApplyCosmetic(entry)
@@ -243,6 +257,7 @@ end
 
 local ITEMS_PER_PAGE = 8
 function ClearList(direction)
+	if direction == nil then direction = 1 end
 	local startTime = time()
 
 	for k,v in pairs(StoreUIButtons) do
@@ -331,7 +346,7 @@ function PopulateStore(direction)
 		local previewMesh = newGeo:GetCustomProperty("PreviewMesh"):WaitForObject()
 		local BGMesh = newGeo:GetCustomProperty("BGMesh"):WaitForObject()
 
-		SpawnMiniPreview(v.templateId, previewMesh)
+		SpawnMiniPreview(v.templateId, newGeo)
 		local timeOffset = (5 - gridX)
 		if direction > 0 then timeOffset = gridX + 1 end
 		local entry = {
@@ -454,7 +469,7 @@ function WorldPosToUIPos(worldPos)
 	return pos.x * screenRatio + screenSize.x / 2, -pos.y * screenRatio + screenSize.y / 2
 end
 
-function BackClicked(button)
+function ExitStoreClicked(button)
 	if controlsLocked then return end
 	ClearList(1)
 	SelectNothing()
@@ -497,7 +512,7 @@ function BuyCosmeticResponse()
 end
 
 
-propBackButton.clickedEvent:Connect(BackClicked)
+propBackButton.clickedEvent:Connect(ExitStoreClicked)
 
 Events.Connect("SHOWSTORE", ShowStore)
 Events.Connect("APPLYCOSMETIC", ApplyCosmeticHelper)

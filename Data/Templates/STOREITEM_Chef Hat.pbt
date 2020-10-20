@@ -454,7 +454,7 @@
           }
           Overrides {
             Name: "cs:ID"
-            String: "CHEFHAT1"
+            String: "CHEFHAT2"
           }
         }
         Collidable_v2 {

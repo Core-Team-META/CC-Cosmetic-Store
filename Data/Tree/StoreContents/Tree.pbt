@@ -1,82 +1,9 @@
 ﻿Name: "StoreContents"
 RootId: 6769845893542896755
 Objects {
-  Id: 16516351901610510321
-  Name: "STORE_Cowboy Hat _Hat"
-  Transform {
-    Location {
-      Z: -450
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6769845893542896755
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 4034813922096462059
-      value {
-        Overrides {
-          Name: "Name"
-          String: "STORE_Cowboy Hat _Hat2"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "cs:ID"
-          String: "COWBOYHAT_3"
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 9974761825354809242
-      value {
-        Overrides {
-          Name: "cs:ID"
-          String: "DESPERADOHAT4"
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 614220041473863367
-    }
-  }
-}
-Objects {
   Id: 14060903035137645342
-  Name: "STORE_Cowboy Hat _Hat"
+  Name: "STORE_Cowboy Hat _Hat2"
   Transform {
-    Location {
-      Z: -450
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -107,27 +34,6 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "cs:ID"
-          String: "COWBOYHAT_3"
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 9974761825354809242
-      value {
-        Overrides {
-          Name: "cs:ID"
-          String: "DESPERADOHAT3"
         }
       }
     }
@@ -140,11 +46,6 @@ Objects {
   Id: 5218201550814171382
   Name: "STORE_Cowboy Hat _Hat"
   Transform {
-    Location {
-      Z: -450
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -176,27 +77,6 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "cs:ID"
-          String: "COWBOYHAT_2"
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 9974761825354809242
-      value {
-        Overrides {
-          Name: "cs:ID"
-          String: "DESPERADOHAT2"
-        }
       }
     }
     TemplateAsset {
@@ -208,11 +88,6 @@ Objects {
   Id: 12992767514292832531
   Name: "STORE_CloudSoundRapper _Hat"
   Transform {
-    Location {
-      Z: -450
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -244,27 +119,6 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "cs:ID"
-          String: "RAPPERHAT_2"
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 6387085729816349558
-      value {
-        Overrides {
-          Name: "cs:ID"
-          String: "RAPPERHAT2"
-        }
       }
     }
     TemplateAsset {
@@ -276,11 +130,6 @@ Objects {
   Id: 5441336910469626700
   Name: "STORE_Chef Hat"
   Transform {
-    Location {
-      Z: -450
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -312,27 +161,6 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "cs:ID"
-          String: "CHEFHAT_2"
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 3567951263905755893
-      value {
-        Overrides {
-          Name: "cs:ID"
-          String: "CHEFHAT2"
-        }
       }
     }
     TemplateAsset {
@@ -344,11 +172,6 @@ Objects {
   Id: 17409332071460778979
   Name: "STORE_BirthdayCake Hat"
   Transform {
-    Location {
-      Z: -450
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -380,27 +203,6 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "cs:ID"
-          String: "CAKE1_2"
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 14783338600786857350
-      value {
-        Overrides {
-          Name: "cs:ID"
-          String: "CAKE2"
-        }
       }
     }
     TemplateAsset {
@@ -412,11 +214,6 @@ Objects {
   Id: 9265940230318049646
   Name: "STORE_Hat1"
   Transform {
-    Location {
-      Z: -450
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -447,18 +244,6 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "cs:ID"
-          String: "BALL1_2"
         }
       }
     }

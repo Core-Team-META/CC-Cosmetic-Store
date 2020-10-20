@@ -17,6 +17,7 @@
         }
         ParentId: 6769845893542896755
         ChildIds: 7872076904898112746
+        ChildIds: 17557713305722273596
         ChildIds: 11230689304477526829
         UnregisteredParameters {
         }
@@ -33,7 +34,7 @@
       }
       Objects {
         Id: 7872076904898112746
-        Name: "head"
+        Name: "store_graphic"
         Transform {
           Location {
           }
@@ -100,6 +101,74 @@
         }
       }
       Objects {
+        Id: 17557713305722273596
+        Name: "head"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1263499199588855168
+        ChildIds: 11334300984355695076
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 11334300984355695076
+        Name: "Sphere"
+        Transform {
+          Location {
+            Z: 10
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+        ParentId: 17557713305722273596
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6981698627626169233
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5760915064523727563
+          }
+          Teams {
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
         Id: 11230689304477526829
         Name: "StoreItemInfo"
         Transform {
@@ -121,7 +190,7 @@
           }
           Overrides {
             Name: "cs:ID"
-            String: "BALL1"
+            String: "BALL"
           }
         }
         Collidable_v2 {

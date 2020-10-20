@@ -27,6 +27,12 @@
             }
           }
           Overrides {
+            Name: "cs:PreviewOutline"
+            ObjectReference {
+              SubObjectId: 7808404998850808861
+            }
+          }
+          Overrides {
             Name: "cs:BGMesh"
             ObjectReference {
               SubObjectId: 16914064471433568227
@@ -62,7 +68,7 @@
       }
       Objects {
         Id: 7808404998850808861
-        Name: "Fantasy Human Gal 1"
+        Name: "PreviewOutline"
         Transform {
           Location {
             Y: -30
@@ -167,7 +173,7 @@
       }
       Objects {
         Id: 6604133153937003334
-        Name: "Fantasy Human Gal 1"
+        Name: "PreviewMesh"
         Transform {
           Location {
             Y: -30

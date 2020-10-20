@@ -7,7 +7,7 @@
       RootId: 4034813922096462059
       Objects {
         Id: 4034813922096462059
-        Name: "STORE_Cowboy Hat _Hat"
+        Name: "STORE_Cowboy Hat _Hat2"
         Transform {
           Scale {
             X: 1
@@ -19,18 +19,6 @@
         ChildIds: 3276858166989935681
         ChildIds: 9974761825354809242
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:StoreName"
-            String: "Desperado hat"
-          }
-          Overrides {
-            Name: "cs:ID"
-            String: "COWBOYHAT"
-          }
-          Overrides {
-            Name: "cs:Cost"
-            Int: 25
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -378,7 +366,7 @@
           }
           Overrides {
             Name: "cs:ID"
-            String: "DESPERADOHAT"
+            String: "DESPERADOHAT3"
           }
         }
         Collidable_v2 {

@@ -290,7 +290,7 @@
           }
           Overrides {
             Name: "cs:ID"
-            String: "RAPPERHAT"
+            String: "RAPPERHAT2"
           }
         }
         Collidable_v2 {
