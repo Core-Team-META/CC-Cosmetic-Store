@@ -93,12 +93,8 @@ function ShowStore()
 	propStoreUIContainer.isEnabled = true
 	UI.SetCursorVisible(true)
 	storePos = 0
-	PopulateStore(-1)
+	ClearFilter()
 	UpdateCurrencyDisplay()
-
-	--Task.Wait(3)
-	--player:ClearOverrideCamera()
-	--HideStore()
 end
 
 function HideStore()
@@ -631,6 +627,18 @@ function RemoveFilterMenu()
 	end
 	filterButtonData = {}
 end
+
+
+function ClearFilter()
+	for k,v in ipairs(StoreElements) do
+		table.insert(CurrentStoreElements, v)
+	end
+	RemoveFilterMenu()
+	PopulateStore(-1)
+	storePos = 0
+end
+
+
 
 function OnFilterButtonSelected(button)
 	local buttonData = filterButtonData[button]
