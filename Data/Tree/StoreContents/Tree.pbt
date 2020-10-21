@@ -382,6 +382,15 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 3567951263905755893
+      value {
+        Overrides {
+          Name: "cs:Tags"
+          String: "Legendary"
+        }
+      }
+    }
     TemplateAsset {
       Id: 12269522058044990569
     }
@@ -421,6 +430,15 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14783338600786857350
+      value {
+        Overrides {
+          Name: "cs:Tags"
+          String: "Rare"
         }
       }
     }
@@ -466,6 +484,15 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 11230689304477526829
+      value {
+        Overrides {
+          Name: "cs:Tags"
+          String: "Uncommon"
+        }
+      }
+    }
     TemplateAsset {
       Id: 6935989339742598427
     }
@@ -489,6 +516,15 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 2958241985496875048
+      value {
+        Overrides {
+          Name: "cs:Tags"
+          String: "Common"
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 8141680742227768540
       value {

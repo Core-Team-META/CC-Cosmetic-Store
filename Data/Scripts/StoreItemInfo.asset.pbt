@@ -16,6 +16,10 @@
         Name: "cs:Cost"
         Int: 25
       }
+      Overrides {
+        Name: "cs:Tags"
+        String: ""
+      }
     }
   }
   SerializationVersion: 65

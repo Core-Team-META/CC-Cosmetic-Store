@@ -32,6 +32,7 @@ local controlsLocked = false
 local propStoreRoot = script:GetCustomProperty("StoreRoot"):WaitForObject()
 local propCurrencyResourceName = propStoreRoot:GetCustomProperty("CurrencyResourceName")
 local propStoreContents = propStoreRoot:GetCustomProperty("StoreContents"):WaitForObject()
+local propTagDefinitions = propStoreRoot:GetCustomProperty("TagDefinitions"):WaitForObject()
 
 
 local player = Game.GetLocalPlayer()
@@ -59,6 +60,9 @@ local StoreUIButtons = {}
 
 -- List of the templates and details for things in the store.
 local StoreElements = {}
+
+-- List of tags
+local TagDefs = {}
 
 local currentlySelected = nil
 local previewElements = {}
@@ -127,15 +131,15 @@ function SelectNothing()
 end
 
 
+
 function SelectEntry(entry)
 	SelectNothing()	-- Clear everything.
 	SetupMeshButton(entry)
 	if currentlySelected ~= nil then
-		currentlySelected.BGMesh:SetColor(currentlySelected.geo:GetCustomProperty("DefaultColor"))
+		currentlySelected.BGMesh:SetColor(currentlySelected.BGMeshColor)
 	end
 	currentlySelected = entry
 	local newColor = currentlySelected.BGMesh:GetCustomProperty("HighlightColor")
-	print(currentlySelected.BGMesh.name)
 	for k,v in pairs(currentlySelected.BGMesh:GetCustomProperties()) do
 		print(k,v)
 	end
@@ -349,6 +353,18 @@ function PopulateStore(direction)
 		SpawnMiniPreview(v.templateId, newGeo)
 		local timeOffset = (5 - gridX)
 		if direction > 0 then timeOffset = gridX + 1 end
+
+
+		local BGMeshColor = newGeo:GetCustomProperty("DefaultColor")
+		for kk,vv in pairs(v.tags) do
+			if TagDefs[kk] ~= nil then
+				BGMeshColor = TagDefs[kk].color
+				break
+			end
+		end
+		BGMesh:SetColor(BGMeshColor)
+
+
 		local entry = {
 			overlay = newOverlay,
 			geo = newGeo,
@@ -359,6 +375,7 @@ function PopulateStore(direction)
 			listener3 = propButton.unhoveredEvent:Connect(StoreItemUnhovered),
 			previewMesh = previewMesh,
 			BGMesh = BGMesh,
+			BGMeshColor = BGMeshColor,
 			data = v,
 
 			-- Stuff for sliding around and being cool.
@@ -395,7 +412,15 @@ function InitStore()
 			local propStoreName = storeInfo:GetCustomProperty("StoreName")
 			local propID = storeInfo:GetCustomProperty("ID")
 			local propCost = storeInfo:GetCustomProperty("Cost")
+			local propTags = storeInfo:GetCustomProperty("Tags")
 
+
+			local tagList = {}
+			--print("tags for " .. propID)
+			for tag in string.gmatch(propTags, "[^%s]+") do
+				tagList[tag] = tag
+				--print("[" .. tag .. "]")
+			end			
 
 			if propCost == nil then propCost = 25 end
 			if propStoreDesc == nil then propStoreDesc = "" end
@@ -405,9 +430,22 @@ function InitStore()
 				name = propStoreName,
 				id = propID,
 				cost = propCost,
-				templateId = v.sourceTemplateId
+				templateId = v.sourceTemplateId,
+				tags = tagList,
 			})
 		end
+	end
+
+	TagDefs = {}
+	for k,v in pairs(propTagDefinitions:GetChildren()) do
+		local propDisplayName = v:GetCustomProperty("DisplayName")
+		if propDisplayName == "" then propDisplayName = k end
+		local propTagColor = v:GetCustomProperty("TagColor")
+		print(v.name)
+		TagDefs[v.name] = {
+			name=propDisplayName,
+			color=propTagColor
+		}
 	end
 	SelectNothing()
 
@@ -445,7 +483,7 @@ function UpdateUIPos()
 		v.overlay.width = math.floor(screenSize.x * 0.155)
 		v.overlay.height = v.overlay.width
 
-		v.label.fontSize = math.floor(screenSize.x * 0.02)
+		v.label.fontSize = math.floor(screenSize.x * 0.017)
 
 		if v.deleting and currentTime >= v.startTime + v.travelTime then
 			v.overlay:Destroy()

@@ -28233,6 +28233,7 @@ Objects {
   ChildIds: 3231900649251387585
   ChildIds: 10322996616966008580
   ChildIds: 6769845893542896755
+  ChildIds: 1495587963440536165
   UnregisteredParameters {
     Overrides {
       Name: "cs:CurrencyResourceName"
@@ -28244,6 +28245,12 @@ Objects {
         SelfId: 6769845893542896755
       }
     }
+    Overrides {
+      Name: "cs:TagDefinitions"
+      ObjectReference {
+        SelfId: 1495587963440536165
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28253,6 +28260,32 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 1495587963440536165
+  Name: "TagDefinitions"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7563443499317668191
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "TagDefinitions"
   }
 }
 Objects {
