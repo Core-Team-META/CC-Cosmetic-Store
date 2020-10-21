@@ -1,5 +1,7 @@
 ﻿local propSTORE_EntryOverlay = script:GetCustomProperty("STORE_EntryOverlay")
 local propSTORE_EntryGeo = script:GetCustomProperty("STORE_EntryGeo")
+local propSTORE_FilterListEntry = script:GetCustomProperty("STORE_FilterListEntry")
+
 local propStoreRoot = script:GetCustomProperty("StoreRoot"):WaitForObject()
 local propCamera = script:GetCustomProperty("Camera"):WaitForObject()
 local propStoreUIContainer = script:GetCustomProperty("StoreUIContainer"):WaitForObject()
@@ -12,11 +14,13 @@ local propMeshButtonFrameImage = script:GetCustomProperty("MeshButtonFrameImage"
 
 local propCurrencyDisplay = script:GetCustomProperty("CurrencyDisplay"):WaitForObject()
 local propButtonHolder = script:GetCustomProperty("ButtonHolder"):WaitForObject()
+local propFilterButton = script:GetCustomProperty("FilterButton"):WaitForObject()
 
 local propPageBackButton = script:GetCustomProperty("PageBackButton"):WaitForObject()
 local propPageNextButton = script:GetCustomProperty("PageNextButton"):WaitForObject()
 
 local propStoreGeoHolder = script:GetCustomProperty("StoreGeoHolder"):WaitForObject()
+local propFilterListHolder = script:GetCustomProperty("FilterListHolder"):WaitForObject()
 
 
 local uiBackButton = propPageBackButton:FindChildByType("UIButton")
@@ -24,9 +28,9 @@ local uiNextButton = propPageNextButton:FindChildByType("UIButton")
 
 local CAMERA_WIDTH = 600
 local BUTTON_SCALE = 0.75
-local ITEMS_PER_ROW = 3
+local ITEMS_PER_ROW = 4
 local ITEMS_PER_COL = 3
-local ITEM_PADDING = 70
+local ITEM_PADDING = 80
 local ITEMS_PER_PAGE = ITEMS_PER_ROW * ITEMS_PER_COL
 
 
@@ -67,8 +71,15 @@ local StoreUIButtons = {}
 -- List of the templates and details for things in the store.
 local StoreElements = {}
 
--- List of tags
+-- List of all the actual elements in the current filter
+local CurrentStoreElements = {}
+
+-- List of tags, keyed by their name
 local TagDefs = {}
+
+-- array of tag names.  (For ordered iteration)
+local TagList = {}
+
 
 local currentlySelected = nil
 local previewElements = {}
@@ -109,6 +120,7 @@ end
 
 function StoreItemClicked(button)
 	if controlsLocked then return end
+	RemoveFilterMenu()
 
 	local entry = StoreUIButtons[button]
 	if entry then
@@ -134,6 +146,9 @@ end
 function SelectNothing()
 	RemovePreview()
 	propMeshButton.parent.isEnabled = false
+	if currentlySelected ~= nil then
+		currentlySelected.BGMesh:SetColor(currentlySelected.BGMeshColor)
+	end
 end
 
 
@@ -162,13 +177,13 @@ function SetupMeshButton(entry)
 		propMeshButtonFrameImage:SetColor(Color.FromLinearHex("63F3FFFF"))
 	else
 		local currency = Game.GetLocalPlayer():GetResource(propCurrencyResourceName)
-		propMeshButtonText.text = "$" .. tostring(entry.data.cost)
+		propMeshButtonText.text = "Buy it!\n($" .. tostring(entry.data.cost) .. ")"
 		if entry.data.cost <= currency then
 			propMeshButtonText:SetColor(Color.WHITE)
 			propMeshButtonFrameImage:SetColor(Color.FromLinearHex("63F3FFFF"))
 		else
 			propMeshButtonText:SetColor(Color.RED)
-			propMeshButtonText.text = "$" .. tostring(entry.data.cost)
+			propMeshButtonText.text = "Buy it!\n($" .. tostring(entry.data.cost) .. ")"
 			propMeshButtonFrameImage:SetColor(Color.FromLinearHex("888888FF"))
 		end
 	end
@@ -299,18 +314,20 @@ end
 
 function BackPageClicked()
 	if controlsLocked then return end
+	RemoveFilterMenu()
 
 	storePos = storePos - ITEMS_PER_PAGE
-	if storePos > ITEMS_PER_PAGE * (#StoreElements // ITEMS_PER_PAGE) then storePos = ITEMS_PER_PAGE * (#StoreElements // ITEMS_PER_PAGE) end
+	if storePos > ITEMS_PER_PAGE * (#CurrentStoreElements // ITEMS_PER_PAGE) then storePos = ITEMS_PER_PAGE * (#CurrentStoreElements // ITEMS_PER_PAGE) end
 	if storePos < 0 then storePos = 0 end
 	PopulateStore(-1)
 end
 
 function NextPageClicked()
 	if controlsLocked then return end
+	RemoveFilterMenu()
 
 	storePos = storePos + ITEMS_PER_PAGE
-	if storePos > ITEMS_PER_PAGE * (#StoreElements // ITEMS_PER_PAGE) then storePos = ITEMS_PER_PAGE * (#StoreElements // ITEMS_PER_PAGE) end
+	if storePos > ITEMS_PER_PAGE * (#CurrentStoreElements // ITEMS_PER_PAGE) then storePos = ITEMS_PER_PAGE * (#CurrentStoreElements // ITEMS_PER_PAGE) end
 	if storePos < 0 then storePos = 0 end
 	PopulateStore(1)
 end
@@ -321,14 +338,14 @@ function PopulateStore(direction)
 	ClearList(direction)
 	SelectNothing()
 	propPageBackButton.isEnabled = storePos > 0
-	propPageNextButton.isEnabled = (storePos + ITEMS_PER_PAGE) < #StoreElements
+	propPageNextButton.isEnabled = (storePos + ITEMS_PER_PAGE) < #CurrentStoreElements
 
 	local startTime = time()
 	for k = 1, ITEMS_PER_PAGE do
 		local index = k + storePos
 
-		if index > #StoreElements then break end
-		local v = StoreElements[index]
+		if index > #CurrentStoreElements then break end
+		local v = CurrentStoreElements[index]
 
 		local gridX = (k - 1) % ITEMS_PER_ROW
 		local gridY = (k - 1) // ITEMS_PER_ROW
@@ -432,29 +449,31 @@ function InitStore()
 			if propStoreDesc == nil then propStoreDesc = "" end
 			if propStoreName == nil then propStoreName = v.name end
 
-			table.insert(StoreElements, {
+			local entry = {
 				name = propStoreName,
 				id = propID,
 				cost = propCost,
 				templateId = v.sourceTemplateId,
 				tags = tagList,
-			})
+			}
+			table.insert(StoreElements, entry)
+			table.insert(CurrentStoreElements, entry)
 		end
 	end
 
 	TagDefs = {}
+	TagList = {}
 	for k,v in pairs(propTagDefinitions:GetChildren()) do
 		local propDisplayName = v:GetCustomProperty("DisplayName")
-		if propDisplayName == "" then propDisplayName = k end
+		if propDisplayName == "" then propDisplayName = v.name end
 		local propTagColor = v:GetCustomProperty("TagColor")
-		print(v.name)
 		TagDefs[v.name] = {
 			name=propDisplayName,
 			color=propTagColor
 		}
+		table.insert(TagList, v.name)
 	end
 	SelectNothing()
-
 
 	propMeshButton.clickedEvent:Connect(MeshButtonClicked)
 end
@@ -515,6 +534,7 @@ end
 
 function ExitStoreClicked(button)
 	if controlsLocked then return end
+	RemoveFilterMenu()
 	ClearList(1)
 	SelectNothing()
 	HideStore()
@@ -522,6 +542,8 @@ end
 
 function MeshButtonClicked()
 	if controlsLocked then return end
+	RemoveFilterMenu()
+
 
 	local currency = Game.GetLocalPlayer():GetResource(propCurrencyResourceName)
 
@@ -556,6 +578,83 @@ function BuyCosmeticResponse()
 end
 
 
+local filterMenuActive = false
+local filterButtonData = {}
+
+function OnFilterClicked(button)
+	if filterMenuActive then
+		RemoveFilterMenu()
+		return
+	end
+	SelectNothing()
+	filterMenuActive = true
+	SpawnFilterButton("No Filter", "NOFILTER", nil, 0)
+	SpawnFilterButton("Owned", "OWNED", nil, 1)
+	SpawnFilterButton("Not Owned", "UNOWNED", nil, 2)
+	local count = 2
+	for k,v in ipairs(TagList) do
+		if v:sub(1,1) ~= "_" then
+			count = count + 1
+			SpawnFilterButton(TagDefs[v].name, v, TagDefs[v].color, count)
+		end
+	end
+end
+
+function SpawnFilterButton(displayName, tag, color, position)
+	local newFilterButton = World.SpawnAsset(propSTORE_FilterListEntry, {
+		--parent = propStoreUIContainer,
+		parent = propFilterListHolder
+	})
+	newFilterButton.y = -newFilterButton.height * position
+
+	local propBGImage = newFilterButton:GetCustomProperty("BGImage"):WaitForObject()
+	local propButtonLabel = newFilterButton:GetCustomProperty("ButtonLabel"):WaitForObject()
+	local propButton = newFilterButton:GetCustomProperty("Button"):WaitForObject()
+
+	if color then propBGImage:SetColor(color) end
+	propButtonLabel.text = displayName
+	filterButtonData[propButton] = {
+		listener = propButton.clickedEvent:Connect(OnFilterButtonSelected),
+		root = newFilterButton,
+		tag = tag
+	}
+
+end
+
+
+
+function RemoveFilterMenu()
+	filterMenuActive = false
+	for k,v in pairs(filterButtonData) do
+		v.listener:Disconnect()
+		v.root:Destroy()
+	end
+	filterButtonData = {}
+end
+
+function OnFilterButtonSelected(button)
+	local buttonData = filterButtonData[button]
+	local tag = buttonData.tag
+
+	print("We should filter for " .. buttonData.tag)
+	CurrentStoreElements = {}
+	for k,v in ipairs(StoreElements) do
+		if tag == "NOFILTER" or
+			(tag == "OWNED" and OwnedCosmetics[v.id] ~= nil) or
+			(tag == "UNOWNED" and OwnedCosmetics[v.id] == nil) or
+			(v.tags[tag] ~= nil) then
+				table.insert(CurrentStoreElements, v)
+		end
+	end
+
+	RemoveFilterMenu()
+	PopulateStore(-1)
+	storePos = 0
+end
+
+
+
+
 propBackButton.clickedEvent:Connect(ExitStoreClicked)
 
 Events.Connect("SHOWSTORE", ShowStore)
@@ -564,6 +663,6 @@ Events.Connect("BUYCOSMETIC_RESPONSE", BuyCosmeticResponse)
 
 uiBackButton.clickedEvent:Connect(BackPageClicked)
 uiNextButton.clickedEvent:Connect(NextPageClicked)
-
+propFilterButton.clickedEvent:Connect(OnFilterClicked)
 
 InitStore()
