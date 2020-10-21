@@ -19,7 +19,6 @@
         ChildIds: 1661866846436332256
         ChildIds: 9213429565646229483
         ChildIds: 14545723142400096674
-        ChildIds: 10424445104557283518
         UnregisteredParameters {
           Overrides {
             Name: "cs:Label"
@@ -43,8 +42,8 @@
         Control {
           Width: 350
           Height: 350
-          UIX: 1710
-          UIY: 660
+          UIX: 2021.80713
+          UIY: 412.017639
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -156,6 +155,7 @@
           }
         }
         ParentId: 8190460683665384455
+        ChildIds: 10424445104557283518
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -193,6 +193,64 @@
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:bottomcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 10424445104557283518
+        Name: "UI Text Box"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9213429565646229483
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 100
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          Text {
+            Label: " Item Title"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            Size: 40
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+            AutoWrapText: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
               }
             }
           }
@@ -251,64 +309,6 @@
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:topleft"
-              }
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 10424445104557283518
-        Name: "UI Text Box"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 8190460683665384455
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Control {
-          Width: 200
-          Height: 100
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          UseParentWidth: true
-          Text {
-            Label: " Item Title"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-            Size: 40
-            Justification {
-              Value: "mc:etextjustify:center"
-            }
-            AutoWrapText: true
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:bottomcenter"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:bottomcenter"
               }
             }
           }

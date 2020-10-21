@@ -23,6 +23,12 @@ local uiBackButton = propPageBackButton:FindChildByType("UIButton")
 local uiNextButton = propPageNextButton:FindChildByType("UIButton")
 
 local CAMERA_WIDTH = 600
+local BUTTON_SCALE = 0.75
+local ITEMS_PER_ROW = 3
+local ITEMS_PER_COL = 3
+local ITEM_PADDING = 70
+local ITEMS_PER_PAGE = ITEMS_PER_ROW * ITEMS_PER_COL
+
 
 propStoreUIContainer.isEnabled = false
 propStoreUIContainer.visibility = Visibility.INHERIT
@@ -193,6 +199,7 @@ function SpawnMiniPreview(templateId, newGeo)
 	if storeGraphic ~= nil then
 		storeGraphic.parent = newGeo
 		storeGraphic:SetPosition(previewMesh:GetPosition())
+		storeGraphic:SetScale(Vector3.ONE)	-- Because we have a parent now, this will scale to the parent size.
 		previewMesh.isEnabled = false
 		previewOutline.isEnabled = false
 	else
@@ -258,8 +265,6 @@ function RemoveCosmetic(playerId)
 	cosmeticElements[playerId] = nil
 end
 
-
-local ITEMS_PER_PAGE = 8
 function ClearList(direction)
 	if direction == nil then direction = 1 end
 	local startTime = time()
@@ -296,7 +301,7 @@ function BackPageClicked()
 	if controlsLocked then return end
 
 	storePos = storePos - ITEMS_PER_PAGE
-	if storePos > (#StoreElements - ITEMS_PER_PAGE) then storePos = #StoreElements - ITEMS_PER_PAGE end
+	if storePos > ITEMS_PER_PAGE * (#StoreElements // ITEMS_PER_PAGE) then storePos = ITEMS_PER_PAGE * (#StoreElements // ITEMS_PER_PAGE) end
 	if storePos < 0 then storePos = 0 end
 	PopulateStore(-1)
 end
@@ -305,7 +310,7 @@ function NextPageClicked()
 	if controlsLocked then return end
 
 	storePos = storePos + ITEMS_PER_PAGE
-	if storePos > (#StoreElements - ITEMS_PER_PAGE) then storePos = #StoreElements - ITEMS_PER_PAGE end
+	if storePos > ITEMS_PER_PAGE * (#StoreElements // ITEMS_PER_PAGE) then storePos = ITEMS_PER_PAGE * (#StoreElements // ITEMS_PER_PAGE) end
 	if storePos < 0 then storePos = 0 end
 	PopulateStore(1)
 end
@@ -316,7 +321,7 @@ function PopulateStore(direction)
 	ClearList(direction)
 	SelectNothing()
 	propPageBackButton.isEnabled = storePos > 0
-	propPageNextButton.isEnabled = storePos < #StoreElements - ITEMS_PER_PAGE
+	propPageNextButton.isEnabled = (storePos + ITEMS_PER_PAGE) < #StoreElements
 
 	local startTime = time()
 	for k = 1, ITEMS_PER_PAGE do
@@ -325,8 +330,8 @@ function PopulateStore(direction)
 		if index > #StoreElements then break end
 		local v = StoreElements[index]
 
-		local gridX = (k - 1) % 4
-		local gridY = (k - 1) // 4
+		local gridX = (k - 1) % ITEMS_PER_ROW
+		local gridY = (k - 1) // ITEMS_PER_ROW
 
 		--[[
 		local newGeo = World.SpawnAsset(propSTORE_EntryGeo, {
@@ -336,7 +341,8 @@ function PopulateStore(direction)
 		]]
 		local newGeo = World.SpawnAsset(propSTORE_EntryGeo, {
 			parent = propStoreGeoHolder,
-			position = Vector3.New(gridX * -100 + 1000, 0, gridY * -100)
+			position = Vector3.New(gridX * -100 + 1000, 0, gridY * -100),
+			scale = Vector3.ONE * BUTTON_SCALE
 		})
 
 		local newOverlay = World.SpawnAsset(propSTORE_EntryOverlay, {
@@ -379,9 +385,9 @@ function PopulateStore(direction)
 			data = v,
 
 			-- Stuff for sliding around and being cool.
-			startPos = Vector3.New(gridX * -100, 0, gridY * -100)
+			startPos = Vector3.New(gridX * -ITEM_PADDING, 0, gridY * -ITEM_PADDING)
 					+ Vector3.FORWARD * -1000 * direction + Vector3.UP * 300,
-			targetPos = Vector3.New(gridX * -100, 0, gridY * -100),
+			targetPos = Vector3.New(gridX * -ITEM_PADDING, 0, gridY * -ITEM_PADDING),
 			startTime = startTime,
 			travelTime = 0.2 + 0.2 * timeOffset + 0.1 * gridY,
 			deleting = false,
@@ -480,10 +486,10 @@ function UpdateUIPos()
 
 		v.overlay.x, v.overlay.y = WorldPosToUIPos(v.geo:GetWorldPosition())
 
-		v.overlay.width = math.floor(screenSize.x * 0.155)
+		v.overlay.width = math.floor(screenSize.x * 0.155 * BUTTON_SCALE)
 		v.overlay.height = v.overlay.width
 
-		v.label.fontSize = math.floor(screenSize.x * 0.017)
+		v.label.fontSize = math.floor(screenSize.x * 0.017 * BUTTON_SCALE)
 
 		if v.deleting and currentTime >= v.startTime + v.travelTime then
 			v.overlay:Destroy()
