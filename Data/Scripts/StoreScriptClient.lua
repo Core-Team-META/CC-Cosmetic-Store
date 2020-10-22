@@ -32,7 +32,6 @@ local ITEMS_PER_COL = 3
 local ITEM_PADDING = 80
 local ITEMS_PER_PAGE = ITEMS_PER_ROW * ITEMS_PER_COL
 
-
 propStoreUIContainer.isEnabled = false
 propStoreUIContainer.visibility = Visibility.INHERIT
 
@@ -63,7 +62,12 @@ local playerSockets = {
 }
 
 function HasCosmetic(storeId)
-	return (player:GetResource("COSMETIC_" .. storeId) > 0)
+	print(storeId, OwnedCosmetics[storeId])
+	if OwnedCosmetics[storeId] == true then
+		return true
+	else
+		return (player:GetResource("COSMETIC_" .. storeId) > 0)
+	end
 end
 
 -- List of actual buttons, ui elements, and listeners for the store elements
@@ -173,8 +177,7 @@ end
 
 function SetupMeshButton(entry)
 	propMeshButton.parent.isEnabled = true
-	--if OwnedCosmetics[entry.data.id] ~= nil then
-		if HasCosmetic(entry.data.id) then
+	if HasCosmetic(entry.data.id) then
 		-- owned
 		propMeshButtonText:SetColor(Color.WHITE)
 		propMeshButtonText.text = "Equip"
@@ -539,7 +542,6 @@ function MeshButtonClicked()
 	local currency = Game.GetLocalPlayer():GetResource(propCurrencyResourceName)
 
 	if currentlySelected ~= nil then
---		if OwnedCosmetics[currentlySelected.data.id] ~= nil then
 		if HasCosmetic(currentlySelected.data.id) then
 			ApplyCosmetic(currentlySelected)
 			HideStore()
@@ -555,9 +557,11 @@ function MeshButtonClicked()
 end
 
 
-function BuyCosmeticResponse()
+function BuyCosmeticResponse(storeId, success)
 	controlsLocked = false
-	--OwnedCosmetics[currentlySelected.data.id] = true
+	if success then
+		OwnedCosmetics[storeId] = true
+	end
 	SetupMeshButton(currentlySelected)
 	UpdateCurrencyDisplay()
 end
@@ -632,7 +636,7 @@ function OnFilterButtonSelected(button)
 	local buttonData = filterButtonData[button]
 	local tag = buttonData.tag
 
-	print("We should filter for " .. buttonData.tag)
+	print("Filtering for " .. buttonData.tag)
 	CurrentStoreElements = {}
 	local owned = HasCosmetic(currentlySelected.data.id)
 

@@ -27,7 +27,8 @@ function BuyCosmetic(player, templateId, cost)
 
 	local currency = player:GetResource(propCurrencyResourceName)
 	player:SetResource(propCurrencyResourceName, currency - cost)
-	Events.BroadcastToAllPlayers("BUYCOSMETIC_RESPONSE", player.id, templateId)
+	-- todo - validate purchase?
+	Events.BroadcastToPlayer(player, "BUYCOSMETIC_RESPONSE", templateId, true)
 	if playerOwnedCosmetics[player.id] == nil then playerOwnedCosmetics[player.id] = {} end
 	playerOwnedCosmetics[player.id][templateId] = true
 end
