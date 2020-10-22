@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18194858692276435470
+  Name: "BG Gradient 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_019"
+  }
+}
+Assets {
   Id: 18096924205921019413
   Name: "Sphere - Half Thick"
   PlatformAssetType: 1
@@ -41,6 +50,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_planks_dark_001_uv"
+  }
+}
+Assets {
+  Id: 18026213939653472356
+  Name: "Frame Outline Thin 012"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameOutline_029"
   }
 }
 Assets {
@@ -143,15 +161,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16143991430091926284
-  Name: "Sci-fi Frame 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_SciFi_Frame_001"
-  }
-}
-Assets {
   Id: 16017302004248798226
   Name: "Donut"
   PlatformAssetType: 1
@@ -176,6 +185,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_fabric_silk_002_uv"
+  }
+}
+Assets {
+  Id: 15775978992330089425
+  Name: "BG Flat 015"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_32"
+  }
+}
+Assets {
+  Id: 15575092074641359796
+  Name: "Frame Outlined 016"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid4px_033"
   }
 }
 Assets {
@@ -251,6 +278,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14509317390755952210
+  Name: "Frame Outlined 015"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid4px_032"
+  }
+}
+Assets {
   Id: 14435918643864210506
   Name: "Grid Glow Topographical"
   PlatformAssetType: 2
@@ -320,6 +356,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_iron_003"
+  }
+}
+Assets {
+  Id: 12893011964149736787
+  Name: "Frame Outline Thin 015"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameOutline_032"
   }
 }
 Assets {
@@ -476,6 +521,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9809938118791414773
+  Name: "Frame Outlined 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid4px_019"
+  }
+}
+Assets {
   Id: 9785582534948471896
   Name: "Pipe - Thin"
   PlatformAssetType: 1
@@ -509,6 +563,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_half-pipe_001"
+  }
+}
+Assets {
+  Id: 9325242685167482929
+  Name: "BG Gradient 015"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_032"
   }
 }
 Assets {
@@ -590,6 +653,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Sky"
+  }
+}
+Assets {
+  Id: 7809958927931360774
+  Name: "BG Flat 016"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_33"
   }
 }
 Assets {
@@ -737,6 +809,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5070926887581296867
+  Name: "BG Gradient 016"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_033"
+  }
+}
+Assets {
   Id: 4897691643828307606
   Name: "Text 05: )"
   PlatformAssetType: 1
@@ -806,6 +887,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_gold_001"
+  }
+}
+Assets {
+  Id: 3959704981855061964
+  Name: "Fantasy Frame 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Frame_001"
   }
 }
 Assets {

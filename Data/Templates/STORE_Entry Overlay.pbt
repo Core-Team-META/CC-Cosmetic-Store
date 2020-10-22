@@ -19,6 +19,8 @@
         ChildIds: 1661866846436332256
         ChildIds: 9213429565646229483
         ChildIds: 14545723142400096674
+        ChildIds: 10424445104557283518
+        ChildIds: 6332642404675391778
         UnregisteredParameters {
           Overrides {
             Name: "cs:Label"
@@ -37,13 +39,13 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceon"
         }
         Control {
           Width: 350
           Height: 350
-          UIX: 2021.80713
-          UIY: 412.017639
+          UIX: 2009.6864
+          UIY: 660
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -155,7 +157,6 @@
           }
         }
         ParentId: 8190460683665384455
-        ChildIds: 10424445104557283518
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -199,6 +200,64 @@
         }
       }
       Objects {
+        Id: 14545723142400096674
+        Name: "Frame Image"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8190460683665384455
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 350
+          Height: 350
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 3336506729119984068
+            }
+            Color {
+              R: 0.388235331
+              G: 1
+              B: 0.796078503
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
         Id: 10424445104557283518
         Name: "UI Text Box"
         Transform {
@@ -212,7 +271,7 @@
             Z: 1
           }
         }
-        ParentId: 9213429565646229483
+        ParentId: 8190460683665384455
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -245,19 +304,19 @@
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topcenter"
+                Value: "mc:euianchor:bottomcenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topcenter"
+                Value: "mc:euianchor:bottomcenter"
               }
             }
           }
         }
       }
       Objects {
-        Id: 14545723142400096674
+        Id: 6332642404675391778
         Name: "Frame Image"
         Transform {
           Location {
@@ -278,8 +337,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 200
-          Height: 200
+          Width: 350
+          Height: 350
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -289,12 +348,12 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 16143991430091926284
+              Id: 9047200524685801204
             }
             Color {
-              R: 0.39
-              G: 0.951523066
-              B: 1
+              R: 0.388235331
+              G: 1
+              B: 0.796078503
               A: 1
             }
             TeamSettings {
@@ -325,12 +384,21 @@
       }
     }
     Assets {
-      Id: 16143991430091926284
-      Name: "Sci-fi Frame 001"
+      Id: 3336506729119984068
+      Name: "Sci-fi Frame 002"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_SciFi_Frame_001"
+        AssetId: "UI_SciFi_Frame_002"
+      }
+    }
+    Assets {
+      Id: 9047200524685801204
+      Name: "Sci-fi Frame 007"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_SciFi_Frame_007"
       }
     }
     PrimaryAssetId {

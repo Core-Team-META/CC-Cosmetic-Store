@@ -7,7 +7,7 @@
       RootId: 11095064026389309121
       Objects {
         Id: 11095064026389309121
-        Name: "FilterButton"
+        Name: "STORE_FilterListEntry"
         Transform {
           Scale {
             X: 1
@@ -20,6 +20,8 @@
         ChildIds: 9915478346020926775
         ChildIds: 14450792020836875955
         ChildIds: 18116637499696162210
+        ChildIds: 18291834878647454466
+        ChildIds: 6865373168515517362
         UnregisteredParameters {
           Overrides {
             Name: "cs:BGImage"
@@ -50,7 +52,7 @@
           Width: 350
           Height: 100
           UIX: -22.7998047
-          UIY: -115.62384
+          UIY: -200
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -105,10 +107,10 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 5506084799444686347
+              Id: 18194858692276435470
             }
             Color {
-              G: 0.0307282954
+              R: 0.0338333659
               B: 0.289999962
               A: 1
             }
@@ -162,7 +164,7 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 16143991430091926284
+              Id: 18026213939653472356
             }
             Color {
               R: 0.39
@@ -321,23 +323,156 @@
           }
         }
       }
-    }
-    Assets {
-      Id: 5506084799444686347
-      Name: "BG Flat 002"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_019"
+      Objects {
+        Id: 18291834878647454466
+        Name: "Frame Image"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11095064026389309121
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 200
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 9809938118791414773
+            }
+            Color {
+              R: 0.39
+              G: 0.951523066
+              B: 1
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 6865373168515517362
+        Name: "Frame Image"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11095064026389309121
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 25
+          Height: 50
+          UIY: 25
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 151487740535735474
+            }
+            Color {
+              R: 0.39
+              G: 0.951523066
+              B: 1
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
       }
     }
     Assets {
-      Id: 16143991430091926284
-      Name: "Sci-fi Frame 001"
+      Id: 18194858692276435470
+      Name: "BG Gradient 002"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_SciFi_Frame_001"
+        AssetId: "BackgroundFlat_019"
+      }
+    }
+    Assets {
+      Id: 18026213939653472356
+      Name: "Frame Outline Thin 012"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "FrameOutline_029"
+      }
+    }
+    Assets {
+      Id: 9809938118791414773
+      Name: "Frame Outlined 002"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "FrameSolid4px_019"
+      }
+    }
+    Assets {
+      Id: 151487740535735474
+      Name: "Fantasy Shape 003"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Shape_003"
       }
     }
     PrimaryAssetId {

@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 15389268987378960631
-  Name: "STORE_Entry Geo"
+  Id: 8188022974107749669
+  Name: "STORE_Entry Geo v2"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 9134274018311211015
       Objects {
         Id: 9134274018311211015
-        Name: "STORE_Entry Geo"
+        Name: "STORE_Entry Geo v2"
         Transform {
           Scale {
             X: 1
@@ -24,12 +24,6 @@
             Name: "cs:PreviewMesh"
             ObjectReference {
               SubObjectId: 6604133153937003334
-            }
-          }
-          Overrides {
-            Name: "cs:PreviewOutline"
-            ObjectReference {
-              SubObjectId: 7808404998850808861
             }
           }
           Overrides {
@@ -68,7 +62,7 @@
       }
       Objects {
         Id: 7808404998850808861
-        Name: "PreviewOutline"
+        Name: "Fantasy Human Gal 1"
         Transform {
           Location {
             Y: -30
@@ -173,7 +167,7 @@
       }
       Objects {
         Id: 6604133153937003334
-        Name: "PreviewMesh"
+        Name: "Fantasy Human Gal 1"
         Transform {
           Location {
             Y: -30

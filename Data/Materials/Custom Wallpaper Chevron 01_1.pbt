@@ -4,7 +4,7 @@
   PlatformAssetType: 13
   SerializationVersion: 65
   CustomMaterialAsset {
-    BaseMaterialId: 12782940202352343062
+    BaseMaterialId: 14284637133222531216
     ParameterOverrides {
       Overrides {
         Name: "color"
@@ -18,9 +18,9 @@
       Overrides {
         Name: "color_secondary"
         Color {
-          R: 0.13
-          G: 0.204900444
-          B: 1
+          R: 0.116970696
+          G: 0.132868335
+          B: 0.309468955
           A: 1
         }
       }
@@ -30,12 +30,12 @@
       }
     }
     Assets {
-      Id: 12782940202352343062
-      Name: "Wallpaper Chevron 01"
+      Id: 14284637133222531216
+      Name: "Metal Abstract Tech Panel 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_gen_wallpaper_004"
+        AssetId: "mi_scf_abstract_tech_panel_001_uv"
       }
     }
   }
