@@ -107,15 +107,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16758780892424488412
-  Name: "Text 01: $"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_040"
-  }
-}
-Assets {
   Id: 16637344483517699016
   Name: "Food Citrus 01"
   PlatformAssetType: 2
@@ -476,15 +467,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10170126635481069714
-  Name: "Marble Basic 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_gen_marble_tiles_001_uv"
-  }
-}
-Assets {
   Id: 10041432532692494316
   Name: "Plastic Shiny"
   PlatformAssetType: 2
@@ -536,15 +518,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_torus_003"
-  }
-}
-Assets {
-  Id: 9136786294201978281
-  Name: "Metal Old Beaten Gold 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_gold_002"
   }
 }
 Assets {
