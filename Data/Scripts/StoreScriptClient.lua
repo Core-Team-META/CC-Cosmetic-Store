@@ -22,7 +22,6 @@ local propPageNextButton = script:GetCustomProperty("PageNextButton"):WaitForObj
 local propStoreGeoHolder = script:GetCustomProperty("StoreGeoHolder"):WaitForObject()
 local propFilterListHolder = script:GetCustomProperty("FilterListHolder"):WaitForObject()
 
-
 local uiBackButton = propPageBackButton:FindChildByType("UIButton")
 local uiNextButton = propPageNextButton:FindChildByType("UIButton")
 
@@ -49,7 +48,6 @@ local player = Game.GetLocalPlayer()
 
 local OwnedCosmetics = {}
 
-
 local storePos = 0
 
 local playerSockets = {
@@ -64,6 +62,9 @@ local playerSockets = {
 	"left_arm_prop",
 }
 
+function HasCosmetic(storeId)
+	return (player:GetResource("COSMETIC_" .. storeId) > 0)
+end
 
 -- List of actual buttons, ui elements, and listeners for the store elements
 local StoreUIButtons = {}
@@ -88,6 +89,7 @@ local cosmeticElements = {}
 --player.lookControlMode = LookControlMode.NONE
 --player.movementControlMode = MovementControlMode.NONE
 function ShowStore()
+	print("Resource: ", player:GetResource("testRsc"))
 	player:SetOverrideCamera(propCamera)
 	propCamera.rotationMode = RotationMode.CAMERA
 	propStoreUIContainer.isEnabled = true
@@ -106,11 +108,11 @@ function HideStore()
 end
 
 function LerpFunc(a, b, v)
-	v = 1 - (1 - v) * (1 - v) * (1 - v) --* (1 - v)
+	v = 1 - (1 - v) * (1 - v) * (1 - v)
 	return CoreMath.Lerp(a, b, v)
 end
 function LerpFunc2(a, b, v)
-	v = v * v -- * v
+	v = v * v
 	return CoreMath.Lerp(a, b, v)
 end
 
@@ -166,7 +168,8 @@ end
 
 function SetupMeshButton(entry)
 	propMeshButton.parent.isEnabled = true
-	if OwnedCosmetics[entry.data.id] ~= nil then
+	--if OwnedCosmetics[entry.data.id] ~= nil then
+		if HasCosmetic(entry.data.id) then
 		-- owned
 		propMeshButtonText:SetColor(Color.WHITE)
 		propMeshButtonText.text = "Equip"
@@ -295,7 +298,6 @@ function ClearList(direction)
 
 		v.startTime = startTime
 
-
 		local timeOffset = (5 - v.gridX)
 		if direction > 0 then timeOffset = v.gridX + 1 end
 
@@ -346,12 +348,6 @@ function PopulateStore(direction)
 		local gridX = (k - 1) % ITEMS_PER_ROW
 		local gridY = (k - 1) // ITEMS_PER_ROW
 
-		--[[
-		local newGeo = World.SpawnAsset(propSTORE_EntryGeo, {
-			parent = propStoreGeoHolder,
-			position = Vector3.New(gridX * -100, 0, gridY * -100)
-		})
-		]]
 		local newGeo = World.SpawnAsset(propSTORE_EntryGeo, {
 			parent = propStoreGeoHolder,
 			position = Vector3.New(gridX * -100 + 1000, 0, gridY * -100),
@@ -359,7 +355,6 @@ function PopulateStore(direction)
 		})
 
 		local newOverlay = World.SpawnAsset(propSTORE_EntryOverlay, {
-			--parent = propStoreUIContainer,
 			parent = propButtonHolder
 		})
 		local propLabel = newOverlay:GetCustomProperty("Label"):WaitForObject()
@@ -414,7 +409,6 @@ end
 function UpdateCurrencyDisplay()
 	local currency = Game.GetLocalPlayer():GetResource(propCurrencyResourceName)
 	propCurrencyDisplay.text = "$"..tostring(currency)
-
 end
 
 
@@ -481,9 +475,6 @@ end
 
 
 function UpdateUIPos()
-	--local button = propMeshButton.parent
-	--button.x, button.y = WorldPosToUIPos(propMeshButtonMarker:GetWorldPosition())
-
 	local screenSize = UI.GetScreenSize()
 	local currentTime = time()
 	for k,v in pairs(StoreUIButtons) do
@@ -512,7 +503,6 @@ function UpdateUIPos()
 			StoreUIButtons[k] = nil
 		end
 	end
-
 end
 
 -- Takes a world position and figures
@@ -540,11 +530,12 @@ function MeshButtonClicked()
 	if controlsLocked then return end
 	RemoveFilterMenu()
 
-
 	local currency = Game.GetLocalPlayer():GetResource(propCurrencyResourceName)
 
 	if currentlySelected ~= nil then
-		if OwnedCosmetics[currentlySelected.data.id] ~= nil then
+--		if OwnedCosmetics[currentlySelected.data.id] ~= nil then
+		if HasCosmetic(currentlySelected.data.id) then
+
 			ApplyCosmetic(currentlySelected)
 			HideStore()
 		else
@@ -552,24 +543,17 @@ function MeshButtonClicked()
 				print("Not enough funds to buy " .. currentlySelected.data.id)
 			else
 				controlsLocked = true
-				Events.BroadcastToServer("BUYCOSMETIC", currentlySelected.data.templateId, currentlySelected.data.cost)
-				--OwnedCosmetics[currentlySelected.data.id] = true
-				--SetupMeshButton(currentlySelected)
-				--player:SetResource(propCurrencyResourceName, currency - currentlySelected.data.cost)
-				--UpdateCurrencyDisplay()
+				Events.BroadcastToServer("BUYCOSMETIC", currentlySelected.data.id, currentlySelected.data.cost)
 			end
 		end
-
 	end
-
 end
 
 
 function BuyCosmeticResponse()
 	controlsLocked = false
-	OwnedCosmetics[currentlySelected.data.id] = true
+	--OwnedCosmetics[currentlySelected.data.id] = true
 	SetupMeshButton(currentlySelected)
-	--Game.GetLocalPlayer():SetResource(propCurrencyResourceName, currency - currentlySelected.data.cost)
 	UpdateCurrencyDisplay()
 end
 
@@ -598,7 +582,6 @@ end
 
 function SpawnFilterButton(displayName, tag, color, position)
 	local newFilterButton = World.SpawnAsset(propSTORE_FilterListEntry, {
-		--parent = propStoreUIContainer,
 		parent = propFilterListHolder
 	})
 	newFilterButton.y = -newFilterButton.height * position
@@ -646,10 +629,12 @@ function OnFilterButtonSelected(button)
 
 	print("We should filter for " .. buttonData.tag)
 	CurrentStoreElements = {}
+	local owned = HasCosmetic(currentlySelected.data.id)
+
 	for k,v in ipairs(StoreElements) do
 		if tag == "NOFILTER" or
-			(tag == "OWNED" and OwnedCosmetics[v.id] ~= nil) or
-			(tag == "UNOWNED" and OwnedCosmetics[v.id] == nil) or
+			(tag == "OWNED" and owned) or
+			(tag == "UNOWNED" and not owned) or
 			(v.tags[tag] ~= nil) then
 				table.insert(CurrentStoreElements, v)
 		end
@@ -661,11 +646,10 @@ function OnFilterButtonSelected(button)
 end
 
 
-
-
 propBackButton.clickedEvent:Connect(ExitStoreClicked)
 
 Events.Connect("SHOWSTORE", ShowStore)
+Events.Connect("FORCEHIDESTORE", HideStore)
 Events.Connect("APPLYCOSMETIC", ApplyCosmeticHelper)
 Events.Connect("BUYCOSMETIC_RESPONSE", BuyCosmeticResponse)
 

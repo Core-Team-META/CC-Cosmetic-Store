@@ -24,12 +24,9 @@ end
 
 
 function BuyCosmetic(player, templateId, cost)
-	print(player, templateId, cost)
+	player:SetResource("COSMETIC_" .. templateId, 1)
+
 	local currency = player:GetResource(propCurrencyResourceName)
-	-- todo - server validation of purchase?
-	
-	--OwnedCosmetics[currentlySelected.data.id] = true
-	--SetupMeshButton(currentlySelected)
 	player:SetResource(propCurrencyResourceName, currency - cost)
 	Events.BroadcastToAllPlayers("BUYCOSMETIC_RESPONSE", player.id, templateId)
 	if playerOwnedCosmetics[player.id] == nil then playerOwnedCosmetics[player.id] = {} end
@@ -37,7 +34,18 @@ function BuyCosmetic(player, templateId, cost)
 end
 	
 
+function OnPlayerJoined(player)
+	print("Testing player resources")
+	player:SetResource("testRsc", 555)
+end
 
+function OnPlayerLeft(player)
+
+end
+
+
+Game.playerJoinedEvent:Connect(OnPlayerJoined)
+Game.playerLeftEvent:Connect(OnPlayerLeft)
 
 Events.Connect("SHOWSTORE", ShowStore)
 Events.ConnectForPlayer("HIDESTORE", HideStore)
