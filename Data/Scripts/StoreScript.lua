@@ -3,15 +3,14 @@ local propCurrencyResourceName = propStoreRoot:GetCustomProperty("CurrencyResour
 
 local playerOwnedCosmetics = {}
 
-function ShowStore(player)
+function ShowStore_ServerHelper(player)
 	if player ~= nil then
 		player.lookControlMode = LookControlMode.NONE
 		player.movementControlMode = MovementControlMode.NONE
-		Events.BroadcastToPlayer(player, "SHOWSTORE")
 	end
 end
 
-function HideStore(player)
+function HideStore_ServerHelper(player)
 	player.lookControlMode = LookControlMode.RELATIVE
 	player.movementControlMode = MovementControlMode.LOOK_RELATIVE
 end
@@ -35,8 +34,6 @@ end
 	
 
 function OnPlayerJoined(player)
-	print("Testing player resources")
-	player:SetResource("testRsc", 555)
 end
 
 function OnPlayerLeft(player)
@@ -47,7 +44,7 @@ end
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 
-Events.Connect("SHOWSTORE", ShowStore)
-Events.ConnectForPlayer("HIDESTORE", HideStore)
+Events.Connect("SHOWSTORE_SERVER", ShowStore_ServerHelper)
+Events.Connect("HIDESTORE_SERVER", HideStore_ServerHelper)
 Events.ConnectForPlayer("REQUESTCOSMETIC", ApplyCosmetic)
 Events.ConnectForPlayer("BUYCOSMETIC", BuyCosmetic)

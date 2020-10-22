@@ -88,8 +88,7 @@ local cosmeticElements = {}
 
 --player.lookControlMode = LookControlMode.NONE
 --player.movementControlMode = MovementControlMode.NONE
-function ShowStore()
-	print("Resource: ", player:GetResource("testRsc"))
+function ShowStore_ClientHelper()
 	player:SetOverrideCamera(propCamera)
 	propCamera.rotationMode = RotationMode.CAMERA
 	propStoreUIContainer.isEnabled = true
@@ -99,13 +98,19 @@ function ShowStore()
 	UpdateCurrencyDisplay()
 end
 
-function HideStore()
-	Events.BroadcastToServer("HIDESTORE")
+function HideStore_ClientHelper()
 	propStoreUIContainer.isEnabled = false
 	UI.SetCursorVisible(false)
 	player:ClearOverrideCamera()
 	ClearList()
 end
+
+
+function HideStore()
+	HideStore_ClientHelper(player)
+	Events.BroadcastToServer("HIDESTORE_SERVER", player)
+end
+
 
 function LerpFunc(a, b, v)
 	v = 1 - (1 - v) * (1 - v) * (1 - v)
@@ -526,6 +531,7 @@ function ExitStoreClicked(button)
 	HideStore()
 end
 
+
 function MeshButtonClicked()
 	if controlsLocked then return end
 	RemoveFilterMenu()
@@ -535,7 +541,6 @@ function MeshButtonClicked()
 	if currentlySelected ~= nil then
 --		if OwnedCosmetics[currentlySelected.data.id] ~= nil then
 		if HasCosmetic(currentlySelected.data.id) then
-
 			ApplyCosmetic(currentlySelected)
 			HideStore()
 		else
@@ -648,8 +653,8 @@ end
 
 propBackButton.clickedEvent:Connect(ExitStoreClicked)
 
-Events.Connect("SHOWSTORE", ShowStore)
-Events.Connect("FORCEHIDESTORE", HideStore)
+Events.Connect("SHOWSTORE_CLIENT", ShowStore_ClientHelper)
+Events.Connect("HIDESTORE_CLIENT", HideStore_ClientHelper)
 Events.Connect("APPLYCOSMETIC", ApplyCosmeticHelper)
 Events.Connect("BUYCOSMETIC_RESPONSE", BuyCosmeticResponse)
 
