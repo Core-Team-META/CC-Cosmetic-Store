@@ -25,6 +25,7 @@
         ChildIds: 2958241985496875048
         UnregisteredParameters {
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -954,7 +955,7 @@
       }
       Objects {
         Id: 2958241985496875048
-        Name: "StoreItemInfo"
+        Name: "STORE_ItemInfo"
         Transform {
           Location {
           }
@@ -976,7 +977,12 @@
             Name: "cs:ID"
             String: "TOPPLECOSTUME"
           }
+          Overrides {
+            Name: "cs:Tags"
+            String: "Common"
+          }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

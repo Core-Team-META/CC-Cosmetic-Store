@@ -17,11 +17,9 @@ end
 
 function HideStore(player)
 	if IsRunningOnClient() then
-		print("on cl ient")
 		Events.Broadcast("HIDESTORE_CLIENT", player)
 		Events.BroadcastToServer("HIDESTORE_SERVER", player)
 	else
-		print("on ser ver", player.name)
 		Events.BroadcastToPlayer(player, "HIDESTORE_CLIENT")
 		Events.Broadcast("HIDESTORE_SERVER", player)
 	end
@@ -30,6 +28,15 @@ end
 
 function IsItemOwned(player, storeId)
 	return player:GetResource("COSMETIC_" .. storeId) > 0
+end
+
+
+function ResetPlayerPurchases(player)
+	if IsRunningOnClient() then
+		Events.BroadcastToServer("RESET_PURCHASES")	-- Don't need to send player explicitly because it's automatic
+	else
+		Events.Broadcast("RESET_PURCHASES", player)
+	end
 end
 
 

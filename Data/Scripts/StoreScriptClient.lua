@@ -39,8 +39,15 @@ local controlsLocked = false
 
 local propStoreRoot = script:GetCustomProperty("StoreRoot"):WaitForObject()
 local propCurrencyResourceName = propStoreRoot:GetCustomProperty("CurrencyResourceName")
-local propStoreContents = propStoreRoot:GetCustomProperty("StoreContents"):WaitForObject()
-local propTagDefinitions = propStoreRoot:GetCustomProperty("TagDefinitions"):WaitForObject()
+
+--local propStoreContents = propStoreRoot:GetCustomProperty("StoreContents"):WaitForObject()
+--local propTagDefinitions = propStoreRoot:GetCustomProperty("TagDefinitions"):WaitForObject()
+local propStoreContentsFolderName = propStoreRoot:GetCustomProperty("StoreContentsFolderName")
+local propStoreTagsFolder = propStoreRoot:GetCustomProperty("StoreTagsFolder")
+
+
+local propStoreContents = World.GetRootObject():FindDescendantByName(propStoreContentsFolderName)
+local propTagDefinitions = World.GetRootObject():FindDescendantByName(propStoreTagsFolder)
 
 
 local player = Game.GetLocalPlayer()
@@ -62,11 +69,10 @@ local playerSockets = {
 }
 
 function HasCosmetic(storeId)
-	print(storeId, OwnedCosmetics[storeId])
 	if OwnedCosmetics[storeId] == true then
 		return true
 	else
-		return (player:GetResource("COSMETIC_" .. storeId) > 0)
+		return player:GetResource("COSMETIC_" .. storeId) > 0
 	end
 end
 
@@ -168,9 +174,6 @@ function SelectEntry(entry)
 	end
 	currentlySelected = entry
 	local newColor = currentlySelected.BGMesh:GetCustomProperty("HighlightColor")
-	for k,v in pairs(currentlySelected.BGMesh:GetCustomProperties()) do
-		print(k,v)
-	end
 	currentlySelected.BGMesh:SetColor(currentlySelected.geo:GetCustomProperty("HighlightColor"))
 	SpawnPreview(entry.data.templateId, propPreviewMesh)
 end
@@ -427,7 +430,7 @@ function InitStore()
 	end
 
 	for k,v in pairs(propStoreContents:GetChildren()) do
-		local storeInfo = v:FindChildByName("StoreItemInfo")
+		local storeInfo = v:FindChildByName("STORE_ItemInfo")
 		if storeInfo ~= nil then
 
 			local propStoreName = storeInfo:GetCustomProperty("StoreName")
@@ -461,19 +464,24 @@ function InitStore()
 
 	TagDefs = {}
 	TagList = {}
-	for k,v in pairs(propTagDefinitions:GetChildren()) do
-		local propDisplayName = v:GetCustomProperty("DisplayName")
-		if propDisplayName == "" then propDisplayName = v.name end
-		local propTagColor = v:GetCustomProperty("TagColor")
-		TagDefs[v.name] = {
-			name=propDisplayName,
-			color=propTagColor
-		}
-		table.insert(TagList, v.name)
+	if propTagDefinitions ~= nil then
+		for k,v in pairs(propTagDefinitions:GetChildren()) do
+			local propDisplayName = v:GetCustomProperty("DisplayName")
+			if propDisplayName == "" then propDisplayName = v.name end
+			local propTagColor = v:GetCustomProperty("TagColor")
+			TagDefs[v.name] = {
+				name=propDisplayName,
+				color=propTagColor
+			}
+			table.insert(TagList, v.name)
+		end
 	end
 	SelectNothing()
 
 	propMeshButton.clickedEvent:Connect(MeshButtonClicked)
+
+	print("Requesting other player costume data")
+	Events.BroadcastToServer("REQUST_OTHER_COSMETICS")
 end
 
 
@@ -622,6 +630,7 @@ end
 
 
 function ClearFilter()
+	CurrentStoreElements = {}
 	for k,v in ipairs(StoreElements) do
 		table.insert(CurrentStoreElements, v)
 	end
@@ -638,9 +647,9 @@ function OnFilterButtonSelected(button)
 
 	print("Filtering for " .. buttonData.tag)
 	CurrentStoreElements = {}
-	local owned = HasCosmetic(currentlySelected.data.id)
 
 	for k,v in ipairs(StoreElements) do
+	local owned = HasCosmetic(v.id)
 		if tag == "NOFILTER" or
 			(tag == "OWNED" and owned) or
 			(tag == "UNOWNED" and not owned) or

@@ -21,6 +21,7 @@
         ChildIds: 2444164892310639820
         UnregisteredParameters {
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -47,6 +48,7 @@
         }
         ParentId: 549989728288704889
         ChildIds: 14807703806914802443
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -435,7 +437,7 @@
       }
       Objects {
         Id: 3567951263905755893
-        Name: "StoreItemInfo"
+        Name: "STORE_ItemInfo"
         Transform {
           Location {
           }
@@ -457,7 +459,12 @@
             Name: "cs:ID"
             String: "CHEFHAT2"
           }
+          Overrides {
+            Name: "cs:Tags"
+            String: "Legendary"
+          }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -486,6 +493,7 @@
         }
         ParentId: 549989728288704889
         ChildIds: 6527117704687062800
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

@@ -20,6 +20,7 @@
         ChildIds: 6387085729816349558
         UnregisteredParameters {
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -46,6 +47,7 @@
         }
         ParentId: 4680741444129310880
         ChildIds: 10930499211929976396
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -270,7 +272,7 @@
       }
       Objects {
         Id: 6387085729816349558
-        Name: "StoreItemInfo"
+        Name: "STORE_ItemInfo"
         Transform {
           Location {
           }
@@ -293,6 +295,7 @@
             String: "RAPPERHAT2"
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

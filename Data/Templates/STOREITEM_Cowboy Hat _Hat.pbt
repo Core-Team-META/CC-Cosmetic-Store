@@ -7,7 +7,7 @@
       RootId: 4034813922096462059
       Objects {
         Id: 4034813922096462059
-        Name: "STORE_Cowboy Hat _Hat2"
+        Name: "STORE_Cowboy Hat _Hat"
         Transform {
           Scale {
             X: 1
@@ -20,6 +20,7 @@
         ChildIds: 9974761825354809242
         UnregisteredParameters {
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -46,6 +47,7 @@
         }
         ParentId: 4034813922096462059
         ChildIds: 12698504859313637511
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -346,7 +348,7 @@
       }
       Objects {
         Id: 9974761825354809242
-        Name: "StoreItemInfo"
+        Name: "STORE_ItemInfo"
         Transform {
           Location {
           }
@@ -369,6 +371,7 @@
             String: "DESPERADOHAT3"
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

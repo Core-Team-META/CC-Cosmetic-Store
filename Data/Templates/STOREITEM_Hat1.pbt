@@ -21,6 +21,7 @@
         ChildIds: 11230689304477526829
         UnregisteredParameters {
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -48,6 +49,7 @@
         }
         ParentId: 1263499199588855168
         ChildIds: 3048042660958241656
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -82,6 +84,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -116,6 +119,7 @@
         }
         ParentId: 1263499199588855168
         ChildIds: 11334300984355695076
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -150,6 +154,7 @@
             }
           }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -170,7 +175,7 @@
       }
       Objects {
         Id: 11230689304477526829
-        Name: "StoreItemInfo"
+        Name: "STORE_ItemInfo"
         Transform {
           Location {
           }
@@ -192,7 +197,12 @@
             Name: "cs:ID"
             String: "BALL"
           }
+          Overrides {
+            Name: "cs:Tags"
+            String: "Uncommon"
+          }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

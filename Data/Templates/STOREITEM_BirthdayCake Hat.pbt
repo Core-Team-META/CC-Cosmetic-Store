@@ -21,6 +21,7 @@
         ChildIds: 516413180110825162
         UnregisteredParameters {
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -47,6 +48,7 @@
         }
         ParentId: 11511463057368722708
         ChildIds: 6364218471167572908
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -674,7 +676,7 @@
       }
       Objects {
         Id: 14783338600786857350
-        Name: "StoreItemInfo"
+        Name: "STORE_ItemInfo"
         Transform {
           Location {
           }
@@ -696,7 +698,12 @@
             Name: "cs:ID"
             String: "CAKE2"
           }
+          Overrides {
+            Name: "cs:Tags"
+            String: "Rare"
+          }
         }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -725,6 +732,7 @@
         }
         ParentId: 11511463057368722708
         ChildIds: 14758409404181388623
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
