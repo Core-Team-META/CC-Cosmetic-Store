@@ -979,7 +979,11 @@
           }
           Overrides {
             Name: "cs:Tags"
-            String: "Common"
+            String: "Legendary"
+          }
+          Overrides {
+            Name: "cs:Types"
+            String: "Outfit"
           }
         }
         WantsNetworking: true

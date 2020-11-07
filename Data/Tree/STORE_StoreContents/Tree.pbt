@@ -38,6 +38,15 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 9974761825354809242
+      value {
+        Overrides {
+          Name: "cs:ZoomView"
+          String: "Hat"
+        }
+      }
+    }
     TemplateAsset {
       Id: 614220041473863367
     }
@@ -78,6 +87,15 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6387085729816349558
+      value {
+        Overrides {
+          Name: "cs:ZoomView"
+          String: "Hat"
         }
       }
     }
@@ -124,6 +142,15 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 3567951263905755893
+      value {
+        Overrides {
+          Name: "cs:ZoomView"
+          String: "Hat"
+        }
+      }
+    }
     TemplateAsset {
       Id: 12269522058044990569
     }
@@ -167,6 +194,15 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 14783338600786857350
+      value {
+        Overrides {
+          Name: "cs:ZoomView"
+          String: "Hat"
+        }
+      }
+    }
     TemplateAsset {
       Id: 18277733649088940997
     }
@@ -207,6 +243,15 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11230689304477526829
+      value {
+        Overrides {
+          Name: "cs:ZoomView"
+          String: "Head"
         }
       }
     }

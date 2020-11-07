@@ -370,6 +370,14 @@
             Name: "cs:ID"
             String: "DESPERADOHAT3"
           }
+          Overrides {
+            Name: "cs:Types"
+            String: "Hat"
+          }
+          Overrides {
+            Name: "cs:Tags"
+            String: "Legendary"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

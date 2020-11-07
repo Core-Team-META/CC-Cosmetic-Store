@@ -1,8 +1,8 @@
 ﻿Name: "STORE_TagDefinitions"
-RootId: 1495587963440536165
+RootId: 15156601564198830699
 Objects {
-  Id: 6743932162432575341
-  Name: "Legendary"
+  Id: 14376319667609821834
+  Name: "Outfit"
   Transform {
     Location {
     }
@@ -14,19 +14,19 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1495587963440536165
+  ParentId: 15156601564198830699
   UnregisteredParameters {
     Overrides {
-      Name: "cs:TagName"
-      String: ""
-    }
-    Overrides {
-      Name: "cs:TagColor"
+      Name: "cs:TypeColor"
       Color {
-        R: 0.64
-        G: 0.305165559
+        R: 0.279999971
+        B: 0.267019689
         A: 1
       }
+    }
+    Overrides {
+      Name: "cs:ZoomView"
+      String: "Full"
     }
   }
   WantsNetworking: true
@@ -38,13 +38,13 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 343391826884542433
+      Id: 13112615037892024010
     }
   }
 }
 Objects {
-  Id: 15818892775455840500
-  Name: "Rare"
+  Id: 9841776145300683611
+  Name: "Hat"
   Transform {
     Location {
     }
@@ -56,15 +56,19 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1495587963440536165
+  ParentId: 15156601564198830699
   UnregisteredParameters {
     Overrides {
-      Name: "cs:TagColor"
+      Name: "cs:TypeColor"
       Color {
-        R: 0.0105960844
-        B: 0.799999952
+        R: 0.279999971
+        B: 0.267019689
         A: 1
       }
+    }
+    Overrides {
+      Name: "cs:ZoomView"
+      String: "Hat"
     }
   }
   WantsNetworking: true
@@ -76,13 +80,13 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 343391826884542433
+      Id: 13112615037892024010
     }
   }
 }
 Objects {
-  Id: 16528048553961409829
-  Name: "Uncommon"
+  Id: 1686777038747769995
+  Name: "Mask"
   Transform {
     Location {
     }
@@ -94,15 +98,19 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1495587963440536165
+  ParentId: 15156601564198830699
   UnregisteredParameters {
     Overrides {
-      Name: "cs:TagColor"
+      Name: "cs:TypeColor"
       Color {
-        R: 0.0125826243
-        G: 0.950000048
+        R: 0.279999971
+        B: 0.267019689
         A: 1
       }
+    }
+    Overrides {
+      Name: "cs:ZoomView"
+      String: "Head"
     }
   }
   WantsNetworking: true
@@ -114,13 +122,13 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 343391826884542433
+      Id: 13112615037892024010
     }
   }
 }
 Objects {
-  Id: 13851340906761864470
-  Name: "Common"
+  Id: 7875556123193377429
+  Name: "Shirt"
   Transform {
     Location {
     }
@@ -132,14 +140,59 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1495587963440536165
+  ParentId: 15156601564198830699
   UnregisteredParameters {
     Overrides {
-      Name: "cs:TagColor"
+      Name: "cs:TypeColor"
       Color {
-        R: 0.279
-        G: 0.279
-        B: 0.279
+        R: 0.279999971
+        B: 0.267019689
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:ZoomView"
+      String: "UpperBody"
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13112615037892024010
+    }
+  }
+}
+Objects {
+  Id: 14167371183103502130
+  Name: "Pants"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15156601564198830699
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ZoomView"
+      String: "LowerBody"
+    }
+    Overrides {
+      Name: "cs:TypeColor"
+      Color {
+        R: 0.279999971
+        B: 0.267019689
         A: 1
       }
     }
@@ -153,7 +206,49 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 343391826884542433
+      Id: 13112615037892024010
+    }
+  }
+}
+Objects {
+  Id: 16707235563720220142
+  Name: "Shoes"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15156601564198830699
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ZoomView"
+      String: "Feet"
+    }
+    Overrides {
+      Name: "cs:TypeColor"
+      Color {
+        R: 0.279999971
+        B: 0.267019689
+        A: 1
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13112615037892024010
     }
   }
 }

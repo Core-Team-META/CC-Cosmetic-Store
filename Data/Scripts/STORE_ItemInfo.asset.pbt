@@ -25,6 +25,14 @@
         String: ""
       }
       Overrides {
+        Name: "cs:Types"
+        String: ""
+      }
+      Overrides {
+        Name: "cs:ZoomView"
+        String: ""
+      }
+      Overrides {
         Name: "cs:Info:tooltip"
         String: "This script is for defining new items in the store.  See the STORE_README for information on where to put it and how it should be used."
       }

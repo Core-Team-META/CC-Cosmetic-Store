@@ -201,6 +201,10 @@
             Name: "cs:Tags"
             String: "Uncommon"
           }
+          Overrides {
+            Name: "cs:Types"
+            String: "Mask"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

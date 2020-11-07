@@ -294,6 +294,10 @@
             Name: "cs:ID"
             String: "RAPPERHAT2"
           }
+          Overrides {
+            Name: "cs:Types"
+            String: "Hat"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

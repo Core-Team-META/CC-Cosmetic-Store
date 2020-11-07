@@ -463,6 +463,10 @@
             Name: "cs:Tags"
             String: "Legendary"
           }
+          Overrides {
+            Name: "cs:Types"
+            String: "Hat"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

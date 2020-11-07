@@ -7,20 +7,53 @@ local propAutosaveCurrency = propStoreRoot:GetCustomProperty("AutosaveCurrency")
 
 local playerOwnedCosmetics = {}
 
+local previousLookMode = LookControlMode.NONE
+local previousMovementMode = MovementControlMode.NONE
+
+function SavePreviousSettings(player)
+	-- Seems like you cannot directly store a control mode, so just brute-forced with if-else
+	if player.lookControlMode == LookControlMode.RELATIVE then
+		previousLookMode = LookControlMode.RELATIVE
+	elseif player.lookControlMode == LookControlMode.LOOK_AT_CURSOR then
+		previousLookMode = LookControlMode.LOOK_AT_CURSOR
+	elseif player.lookControlMode == LookControlMode.NONE then
+		previousLookMode = LookControlMode.NONE
+	else	
+		previousLookMode = LookControlMode.RELATIVE
+	end
+
+	if player.movementControlMode ==  MovementControlMode.LOOK_RELATIVE then
+		previousMovementMode = MovementControlMode.LOOK_RELATIVE
+	elseif player.movementControlMode == MovementControlMode.VIEW_RELATIVE then
+		previousMovementMode = MovementControlMode.VIEW_RELATIVE
+	elseif player.movementControlMode == MovementControlMode.FACING_RELATIVE then
+		previousMovementMode = MovementControlMode.FACING_RELATIVE
+	elseif player.movementControlMode == MovementControlMode.FIXED_AXES then
+		previousMovementMode = MovementControlMode.FIXED_AXES
+	elseif player.movementControlMode == MovementControlMode.NONE then
+		previousMovementMode = MovementControlMode.NONE
+	else	
+		previousMovementMode = MovementControlMode.LOOK_RELATIVE
+	end		
+
+end
+
 function ShowStore_ServerHelper(player)
 	if player ~= nil then
+		SavePreviousSettings(player)
+		Task.Wait()
 		player.lookControlMode = LookControlMode.NONE
 		player.movementControlMode = MovementControlMode.NONE
 	end
 end
 
 function HideStore_ServerHelper(player)
-	player.lookControlMode = LookControlMode.RELATIVE
-	player.movementControlMode = MovementControlMode.LOOK_RELATIVE
+	player.lookControlMode = previousLookMode
+	player.movementControlMode = previousMovementMode
 end
 
-
 local AppliedCosmetics = {}
+
 function ApplyCosmetic(player, templateId)
 	Events.BroadcastToAllPlayers("APPLYCOSMETIC", player.id, templateId)
 	AppliedCosmetics[player.id] = templateId
