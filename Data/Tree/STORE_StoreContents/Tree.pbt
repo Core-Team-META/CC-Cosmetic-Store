@@ -99,6 +99,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
+            X: 5
           }
         }
         Overrides {
