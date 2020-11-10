@@ -34,6 +34,12 @@
               SubObjectId: 1661866846436332256
             }
           }
+          Overrides {
+            Name: "cs:BGImage"
+            ObjectReference {
+              SubObjectId: 9213429565646229483
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -42,10 +48,10 @@
           Value: "mc:evisibilitysetting:forceon"
         }
         Control {
-          Width: 350
-          Height: 350
-          UIX: 2009.6864
-          UIY: 660
+          Width: 250
+          Height: 310
+          UIX: 1505
+          UIY: 570
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -91,6 +97,7 @@
         Control {
           Width: 100
           Height: 30
+          UIY: 40
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -164,23 +171,24 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 200
-          Height: 90
-          UIY: -10
+          Width: -10
+          Height: 135
+          UIY: 30
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          AddSizeToParentIfUsingParentSize: true
           UseParentWidth: true
           Image {
             Brush {
-              Id: 5506084799444686347
+              Id: 18194858692276435470
             }
             Color {
-              G: 0.0307283644
+              R: 0.0338333659
               B: 0.289999962
-              A: 0.34
+              A: 1
             }
             TeamSettings {
             }
@@ -223,6 +231,7 @@
         Control {
           Width: 350
           Height: 350
+          UIY: 40
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -280,7 +289,8 @@
         }
         Control {
           Width: 200
-          Height: 100
+          Height: 125
+          UIY: 25
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -295,7 +305,7 @@
               B: 1
               A: 1
             }
-            Size: 40
+            Size: 20
             Justification {
               Value: "mc:etextjustify:center"
             }
@@ -339,6 +349,7 @@
         Control {
           Width: 350
           Height: 350
+          UIY: 40
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -375,12 +386,12 @@
       }
     }
     Assets {
-      Id: 5506084799444686347
-      Name: "BG Flat 002"
+      Id: 18194858692276435470
+      Name: "BG Gradient 002"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_019"
+        AssetId: "BackgroundFlat_019"
       }
     }
     Assets {

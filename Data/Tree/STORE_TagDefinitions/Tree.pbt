@@ -19,14 +19,10 @@ Objects {
     Overrides {
       Name: "cs:TypeColor"
       Color {
-        R: 0.279999971
-        B: 0.267019689
+        R: 0.0338333659
+        B: 0.289999962
         A: 1
       }
-    }
-    Overrides {
-      Name: "cs:ZoomView"
-      String: "Full"
     }
   }
   WantsNetworking: true
@@ -61,14 +57,10 @@ Objects {
     Overrides {
       Name: "cs:TypeColor"
       Color {
-        R: 0.279999971
-        B: 0.267019689
+        R: 0.0338333659
+        B: 0.289999962
         A: 1
       }
-    }
-    Overrides {
-      Name: "cs:ZoomView"
-      String: "Hat"
     }
   }
   WantsNetworking: true
@@ -103,14 +95,10 @@ Objects {
     Overrides {
       Name: "cs:TypeColor"
       Color {
-        R: 0.279999971
-        B: 0.267019689
+        R: 0.0338333659
+        B: 0.289999962
         A: 1
       }
-    }
-    Overrides {
-      Name: "cs:ZoomView"
-      String: "Head"
     }
   }
   WantsNetworking: true
@@ -145,14 +133,10 @@ Objects {
     Overrides {
       Name: "cs:TypeColor"
       Color {
-        R: 0.279999971
-        B: 0.267019689
+        R: 0.0338333659
+        B: 0.289999962
         A: 1
       }
-    }
-    Overrides {
-      Name: "cs:ZoomView"
-      String: "UpperBody"
     }
   }
   WantsNetworking: true
@@ -185,14 +169,10 @@ Objects {
   ParentId: 15156601564198830699
   UnregisteredParameters {
     Overrides {
-      Name: "cs:ZoomView"
-      String: "LowerBody"
-    }
-    Overrides {
       Name: "cs:TypeColor"
       Color {
-        R: 0.279999971
-        B: 0.267019689
+        R: 0.0338333659
+        B: 0.289999962
         A: 1
       }
     }
@@ -227,14 +207,10 @@ Objects {
   ParentId: 15156601564198830699
   UnregisteredParameters {
     Overrides {
-      Name: "cs:ZoomView"
-      String: "Feet"
-    }
-    Overrides {
       Name: "cs:TypeColor"
       Color {
-        R: 0.279999971
-        B: 0.267019689
+        R: 0.0338333659
+        B: 0.289999962
         A: 1
       }
     }

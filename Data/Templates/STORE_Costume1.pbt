@@ -41,14 +41,14 @@
         Name: "right_ankle"
         Transform {
           Location {
-            X: -561.52356
-            Y: -406.124939
-            Z: 461.456024
+            X: -25
+            Y: 20
+            Z: -100
           }
           Rotation {
-            Pitch: -7.46794415
-            Yaw: -0.616064489
-            Roll: -1.07538354
+            Pitch: -7.46795654
+            Yaw: -0.61605835
+            Roll: -1.07537842
           }
           Scale {
             X: 1
@@ -133,12 +133,12 @@
         Name: "left_ankle"
         Transform {
           Location {
-            X: -561.52356
-            Y: -452.233826
-            Z: 461.456024
+            X: -25
+            Y: -26.1088867
+            Z: -100
           }
           Rotation {
-            Pitch: -7.46754789
+            Pitch: -7.46756
             Yaw: 0.615756094
             Roll: 1.07542431
           }
@@ -225,14 +225,13 @@
         Name: "lower_spine"
         Transform {
           Location {
-            X: -553.917603
-            Y: -429.179382
-            Z: 583.728882
+            X: -17.394043
+            Y: -3.05444336
+            Z: 22.2728271
           }
           Rotation {
             Pitch: 6.83018879e-05
             Yaw: 7.40648466e-05
-            Roll: -5.97637063e-06
           }
           Scale {
             X: 1
@@ -447,14 +446,14 @@
         Name: "right_shoulder"
         Transform {
           Location {
-            X: -559.464844
-            Y: -405.560364
-            Z: 618.666
+            X: -22.9412842
+            Y: 20.5645752
+            Z: 57.2099609
           }
           Rotation {
             Pitch: 1.64699757
             Yaw: 3.05700111
-            Roll: -30.1109829
+            Roll: -30.1109924
           }
           Scale {
             X: 1
@@ -539,13 +538,13 @@
         Name: "left_shoulder"
         Transform {
           Location {
-            X: -559.464844
-            Y: -452.79837
-            Z: 618.666
+            X: -22.9412842
+            Y: -26.6734314
+            Z: 57.2099609
           }
           Rotation {
-            Pitch: -1.64800847
-            Yaw: -3.05700707
+            Pitch: -1.64801025
+            Yaw: -3.05700684
             Roll: 30.1110077
           }
           Scale {
@@ -631,12 +630,12 @@
         Name: "head"
         Transform {
           Location {
-            X: -557.211548
-            Y: -429.117371
-            Z: 640.154053
+            X: -20.6879883
+            Y: -2.99243164
+            Z: 78.698
           }
           Rotation {
-            Pitch: -9.93500137
+            Pitch: -9.93499756
             Yaw: 0.000120403849
           }
           Scale {
@@ -979,7 +978,7 @@
           }
           Overrides {
             Name: "cs:Tags"
-            String: "Legendary"
+            String: "Common"
           }
           Overrides {
             Name: "cs:Types"

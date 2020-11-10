@@ -21,6 +21,10 @@
         Int: 25
       }
       Overrides {
+        Name: "cs:PlayerVisibility"
+        Bool: true
+      }
+      Overrides {
         Name: "cs:Tags"
         String: ""
       }
@@ -51,6 +55,18 @@
       Overrides {
         Name: "cs:Tags:tooltip"
         String: "Put any tags that apply to the item here, seperated by spaces.  See STORE_README for information on how to set up tags."
+      }
+      Overrides {
+        Name: "cs:Types:tooltip"
+        String: "Put any types that apply to the item here, seperated by spaces.  See STORE_README for information on how to set up types."
+      }
+      Overrides {
+        Name: "cs:PlayerVisibility:tooltip"
+        String: "This sets the player visibility when wearing this item. "
+      }
+      Overrides {
+        Name: "cs:ZoomView:tooltip"
+        String: "This sets the target for where the camera zooms in for this item.  See STORE_README for information on how to set up ZoomView."
       }
     }
   }

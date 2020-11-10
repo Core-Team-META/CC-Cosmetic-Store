@@ -71,15 +71,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12893011964149736787
-  Name: "Frame Outline Thin 015"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameOutline_032"
-  }
-}
-Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
@@ -134,6 +125,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5985956015751324126
+  Name: "Human Guy 2"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_guy_basic_002_ref"
+  }
+}
+Assets {
   Id: 5760915064523727563
   Name: "Sphere"
   PlatformAssetType: 1
@@ -185,15 +185,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "CenterArrow_003Wedge"
-  }
-}
-Assets {
-  Id: 3018484463695229962
-  Name: "Fantasy Human Gal 1"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_gal_fantasy_003_ref"
   }
 }
 Assets {

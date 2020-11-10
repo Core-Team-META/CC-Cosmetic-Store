@@ -1,14 +1,14 @@
 ﻿Assets {
   Id: 9666371690278309020
-  Name: "Boxing Glow"
+  Name: "Custom Emissive Glow"
   PlatformAssetType: 13
   SerializationVersion: 65
   CustomMaterialAsset {
-    BaseMaterialId: 13206135842285396679
+    BaseMaterialId: 5351428073291024820
     ParameterOverrides {
       Overrides {
         Name: "emissive_boost"
-        Float: 40
+        Float: 2
       }
       Overrides {
         Name: "color"
@@ -19,12 +19,12 @@
       }
     }
     Assets {
-      Id: 13206135842285396679
-      Name: "Emissive Glow Transparent"
+      Id: 5351428073291024820
+      Name: "Opaque Emissive"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_basic_emissive_001"
+        AssetId: "fxma_opaque_emissive"
       }
     }
   }

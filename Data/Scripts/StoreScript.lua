@@ -146,6 +146,12 @@ function OnRequestCosmetics(player)
 	end
 end
 
+function SetPlayerVisibility(player, visible)
+	--print("setting visilbiity to ")
+	--print(visible)
+	player:SetVisibility(visible, false)
+end
+
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 
@@ -153,6 +159,7 @@ Events.Connect("SHOWSTORE_SERVER", ShowStore_ServerHelper)
 Events.Connect("HIDESTORE_SERVER", HideStore_ServerHelper)
 Events.ConnectForPlayer("REQUESTCOSMETIC", ApplyCosmetic)
 Events.ConnectForPlayer("BUYCOSMETIC", BuyCosmetic)
+Events.ConnectForPlayer("SETVISIBILITY", SetPlayerVisibility)
 
 Events.Connect("RESET_PURCHASES", ResetPurchases)
 Events.ConnectForPlayer("RESET_PURCHASES", ResetPurchases)

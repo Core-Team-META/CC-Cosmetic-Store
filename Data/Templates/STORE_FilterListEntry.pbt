@@ -15,13 +15,12 @@
             Z: 1
           }
         }
-        ParentId: 8881734497852450539
+        ParentId: 1584381114514347661
         ChildIds: 18241852259046579622
         ChildIds: 9915478346020926775
         ChildIds: 14450792020836875955
         ChildIds: 18116637499696162210
         ChildIds: 18291834878647454466
-        ChildIds: 6865373168515517362
         UnregisteredParameters {
           Overrides {
             Name: "cs:BGImage"
@@ -41,6 +40,18 @@
               SubObjectId: 18116637499696162210
             }
           }
+          Overrides {
+            Name: "cs:FrameImage"
+            ObjectReference {
+              SubObjectId: 18291834878647454466
+            }
+          }
+          Overrides {
+            Name: "cs:FrameImage2"
+            ObjectReference {
+              SubObjectId: 9915478346020926775
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -49,10 +60,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 350
-          Height: 100
-          UIX: -22.7998047
-          UIY: -200
+          Width: 225
+          Height: 70
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -63,12 +72,12 @@
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomright"
+                Value: "mc:euianchor:middleleft"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomright"
+                Value: "mc:euianchor:middleright"
               }
             }
           }
@@ -211,8 +220,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 40
-          Height: 60
+          Height: 30
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -228,21 +236,21 @@
               B: 1
               A: 1
             }
-            Size: 45
+            Size: 30
             Justification {
               Value: "mc:etextjustify:center"
             }
-            AutoWrapText: true
+            ClipTextToSize: true
           }
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:topcenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:topcenter"
               }
             }
           }
@@ -381,63 +389,6 @@
           }
         }
       }
-      Objects {
-        Id: 6865373168515517362
-        Name: "Frame Image"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 11095064026389309121
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Control {
-          Width: 25
-          Height: 50
-          UIY: 25
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          Image {
-            Brush {
-              Id: 151487740535735474
-            }
-            Color {
-              R: 0.39
-              G: 0.951523066
-              B: 1
-              A: 1
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:topleft"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:topleft"
-              }
-            }
-          }
-        }
-      }
     }
     Assets {
       Id: 18194858692276435470
@@ -464,15 +415,6 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "FrameSolid4px_019"
-      }
-    }
-    Assets {
-      Id: 151487740535735474
-      Name: "Fantasy Shape 003"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Shape_003"
       }
     }
     PrimaryAssetId {
