@@ -87,12 +87,11 @@ function OnPlayerJoined(player)
 end
 
 function OnPlayerLeft(player)
-	SaveOwnedCosmeticsAndMoney(player)
 	local equippedCosmetics = player:GetAttachedObjects()
-	
 	for _, v in ipairs(equippedCosmetics) do
 		v:Destroy()
 	end
+	SaveOwnedCosmeticsAndMoney(player)
 	
 end
 
@@ -164,8 +163,9 @@ function SetPlayerVisibility(player, playerId, visible)
 			targetPlayer = v
 		end
 	end
-
-	targetPlayer:SetVisibility(visible, false)
+	if targetPlayer ~= nil then
+		targetPlayer:SetVisibility(visible, false)
+	end
 end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)

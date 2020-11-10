@@ -229,6 +229,7 @@ function StoreItemClicked(button)
 		setPreviewMesh.visibility = Visibility.INHERIT
 		currentlyEquipped = nil
 		RemoveCosmetic(player.id)
+		UpdateEntryButton(entry, false)
 		--print("removed equipped")
 		return
 		
@@ -369,6 +370,8 @@ function SpawnPreview(templateId, previewMesh, visible)
 	
 	RemovePreview()
 	
+	if not templateId then return end
+	
 	local previewItem = World.SpawnAsset(templateId)
 	for _, socket in pairs(previewMesh:GetSocketNames()) do
 		local deco = previewItem:FindDescendantByName(socket)
@@ -416,6 +419,7 @@ function RemovePreview()
 		v:Destroy()
 	end
 	previewElements = {}
+	setPreviewMesh.visibility = Visibility.INHERIT
 end
 
 
@@ -1221,6 +1225,12 @@ function SwapMannequin(button)
 	end
 end
 
+function OnPlayerLeft(leftPlayer)
+
+	RemoveCosmetic(leftPlayer.id)
+
+end
+
 propBackButton.clickedEvent:Connect(ExitStoreClicked)
 
 Events.Connect("SHOWSTORE_CLIENT", ShowStore_ClientHelper)
@@ -1231,5 +1241,7 @@ Events.Connect("BUYCOSMETIC_RESPONSE", BuyCosmeticResponse)
 uiBackButton.clickedEvent:Connect(BackPageClicked)
 uiNextButton.clickedEvent:Connect(NextPageClicked)
 propSwapMannequin.clickedEvent:Connect(SwapMannequin)
+
+Game.playerLeftEvent:Connect(OnPlayerLeft)
 
 InitStore()
