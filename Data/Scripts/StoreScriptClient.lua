@@ -139,6 +139,8 @@ local currentlyEquipped = nil
 local equippedVisibility = true
 local equippedZoom = nil
 
+local expectedNewCurrency = 0
+
 --for filtering with type and rarity
 local currentType = {
 		type = nil
@@ -155,6 +157,8 @@ local defaultColor = Color.FromLinearHex("63F3FFFF")
 --player.lookControlMode = LookControlMode.NONE
 --player.movementControlMode = MovementControlMode.NONE
 function ShowStore_ClientHelper()
+	player = Game.GetLocalPlayer()
+	
 	setPreviewMesh:MoveTo(propDefaultZoomMarker:GetPosition(), 0, true)
 	setPreviewMesh:RotateTo(Rotation.New(0, 0, -90), 0, true)
 	setPreviewMesh:ScaleTo(Vector3.New(1, 1, 1), 0, true)
@@ -211,7 +215,7 @@ function StoreItemClicked(button)
 	
 	SelectNothing()	-- Clear everything.
 
-	local currency = Game.GetLocalPlayer():GetResource(propCurrencyResourceName)
+	local currency = player:GetResource(propCurrencyResourceName)
 	
 	if currentlySelected ~= nil then
 		currentlySelected.BGMesh:SetColor(currentlySelected.BGMeshColor)
@@ -232,7 +236,13 @@ function StoreItemClicked(button)
 		if HasCosmetic(currentlySelected.data.id) then
 			local oldEquipped = currentlyEquipped
 			
+			currentlyEquipped = nil
+			
 			ApplyCosmetic(currentlySelected)
+			
+			while not currentlyEquipped do
+				Task.Wait()
+			end
 			
 			for _, v in pairs(StoreUIButtons) do
 				if v.data.templateId == oldEquipped then
@@ -248,6 +258,7 @@ function StoreItemClicked(button)
 				SpawnPreview(currentlyEquipped, setPreviewMesh, equippedVisibility)
 				return
 			else
+				expectedNewCurrency = currency - currentlySelected.data.cost
 				controlsLocked = true
 				Events.BroadcastToServer("BUYCOSMETIC", currentlySelected.data.id, currentlySelected.data.cost)
 			end
@@ -313,7 +324,7 @@ function UpdateEntryButton(entry, highlighted)
 		entry.label.text = entry.data.name .. "\n" .. entry.data.cost
 		entry.BGImage:SetColor(entry.BGImageColor)
 	else -- cases for not owned and not hovered
-		local currency = Game.GetLocalPlayer():GetResource(propCurrencyResourceName)
+		local currency = player:GetResource(propCurrencyResourceName)
 		entry.label.text = "Buy it!\n[" .. tostring(entry.data.cost) .. "]"
 		if entry.data.cost <= currency then
 			entry.label:SetColor(Color.WHITE)
@@ -327,12 +338,17 @@ function UpdateEntryButton(entry, highlighted)
 end
 
 function BuyCosmeticResponse(storeId, success)
-	controlsLocked = false
 	if success then
 		OwnedCosmetics[storeId] = true
 	end
+	
+	while player:GetResource(propCurrencyResourceName) ~= expectedNewCurrency do
+		Task.Wait()
+	end
+	
 	UpdateEntryButton(currentlySelected, false)
 	UpdateCurrencyDisplay()
+	controlsLocked = false
 end
 
 function SpawnPreview(templateId, previewMesh, visible)
@@ -409,7 +425,7 @@ function RemoveCosmetic(playerId)
 			v:Destroy()
 		end
 	end
-	Events.BroadcastToServer("SETVISIBILITY", true)
+	Events.BroadcastToServer("SETVISIBILITY", playerId, true)
 	cosmeticElements[playerId] = nil
 end
 
@@ -449,18 +465,23 @@ function ApplyCosmeticHelper(playerId, templateId)
 	currentlyEquipped = templateId
 	
 	Task.Wait()
+	
 
 	for _, v in pairs(CurrentStoreElements) do
 		if v.templateId == templateId then
 			--print("currently equipped stuff found")
-			equippedVisibility = v.visible
-			equippedZoom = v.zoom
-			currentZoom = equippedZoom
-			Events.BroadcastToServer("SETVISIBILITY", v.visible)
-			SpawnPreview(templateId, setPreviewMesh, v.visible)
+			Events.BroadcastToServer("SETVISIBILITY", playerId, v.visible)
+			if not player then return end
+			if player.id == playerId then
+				equippedVisibility = v.visible
+				equippedZoom = v.zoom
+				currentZoom = equippedZoom
+				SpawnPreview(templateId, setPreviewMesh, v.visible)
+			end
 			return
 		end
 	end
+
 end
 
 function ClearList(direction)
@@ -609,7 +630,7 @@ end
 function UpdateCurrencyDisplay()
 	local currency = player:GetResource(propCurrencyResourceName)
 	propCurrencyDisplay.text = tostring(currency)
-	--print(currency)
+	print(currency)
 end
 
 
@@ -1192,7 +1213,7 @@ function SwapMannequin(button)
 		currentZoom = currentlySelected.data.zoom
 	elseif currentlyEquipped ~= nil then
 		SpawnPreview(currentlyEquipped, setPreviewMesh, equippedVisibility)
-		currentZoom = equippedZoom
+		currentZoom = equippedZoom			
 	end
 	
 	if setPreviewMesh:GetPosition() ~= propDefaultZoomMarker:GetPosition() then

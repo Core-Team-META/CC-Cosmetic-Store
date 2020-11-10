@@ -7,33 +7,33 @@ local propAutosaveCurrency = propStoreRoot:GetCustomProperty("AutosaveCurrency")
 
 local playerOwnedCosmetics = {}
 
-local previousLookMode = LookControlMode.NONE
-local previousMovementMode = MovementControlMode.NONE
+local previousLookMode = {}
+local previousMovementMode = {}
 
 function SavePreviousSettings(player)
 	-- Seems like you cannot directly store a control mode, so just brute-forced with if-else
 	if player.lookControlMode == LookControlMode.RELATIVE then
-		previousLookMode = LookControlMode.RELATIVE
+		previousLookMode[player.id] = LookControlMode.RELATIVE
 	elseif player.lookControlMode == LookControlMode.LOOK_AT_CURSOR then
-		previousLookMode = LookControlMode.LOOK_AT_CURSOR
+		previousLookMode[player.id] = LookControlMode.LOOK_AT_CURSOR
 	elseif player.lookControlMode == LookControlMode.NONE then
-		previousLookMode = LookControlMode.NONE
+		previousLookMode[player.id] = LookControlMode.NONE
 	else	
-		previousLookMode = LookControlMode.RELATIVE
+		previousLookMode[player.id] = LookControlMode.RELATIVE
 	end
 
 	if player.movementControlMode ==  MovementControlMode.LOOK_RELATIVE then
-		previousMovementMode = MovementControlMode.LOOK_RELATIVE
+		previousMovementMode[player.id] = MovementControlMode.LOOK_RELATIVE
 	elseif player.movementControlMode == MovementControlMode.VIEW_RELATIVE then
-		previousMovementMode = MovementControlMode.VIEW_RELATIVE
+		previousMovementMode[player.id] = MovementControlMode.VIEW_RELATIVE
 	elseif player.movementControlMode == MovementControlMode.FACING_RELATIVE then
-		previousMovementMode = MovementControlMode.FACING_RELATIVE
+		previousMovementMode[player.id] = MovementControlMode.FACING_RELATIVE
 	elseif player.movementControlMode == MovementControlMode.FIXED_AXES then
-		previousMovementMode = MovementControlMode.FIXED_AXES
+		previousMovementMode[player.id] = MovementControlMode.FIXED_AXES
 	elseif player.movementControlMode == MovementControlMode.NONE then
-		previousMovementMode = MovementControlMode.NONE
+		previousMovementMode[player.id] = MovementControlMode.NONE
 	else	
-		previousMovementMode = MovementControlMode.LOOK_RELATIVE
+		previousMovementMode[player.id] = MovementControlMode.LOOK_RELATIVE
 	end		
 
 end
@@ -48,8 +48,8 @@ function ShowStore_ServerHelper(player)
 end
 
 function HideStore_ServerHelper(player)
-	player.lookControlMode = previousLookMode
-	player.movementControlMode = previousMovementMode
+	player.lookControlMode = previousLookMode[player.id]
+	player.movementControlMode = previousMovementMode[player.id]
 end
 
 local AppliedCosmetics = {}
@@ -65,7 +65,12 @@ function BuyCosmetic(player, templateId, cost)
 
 	local currency = player:GetResource(propCurrencyResourceName)
 	player:SetResource(propCurrencyResourceName, currency - cost)
-	-- todo - validate purchase?
+	
+	
+	while player:GetResource(propCurrencyResourceName) ~= currency - cost do
+		Task.Wait()
+	end
+
 	Events.BroadcastToPlayer(player, "BUYCOSMETIC_RESPONSE", templateId, true)
 	if playerOwnedCosmetics[player.id] == nil then playerOwnedCosmetics[player.id] = {} end
 	playerOwnedCosmetics[player.id][templateId] = true
@@ -83,6 +88,12 @@ end
 
 function OnPlayerLeft(player)
 	SaveOwnedCosmeticsAndMoney(player)
+	local equippedCosmetics = player:GetAttachedObjects()
+	
+	for _, v in ipairs(equippedCosmetics) do
+		v:Destroy()
+	end
+	
 end
 
 function SaveOwnedCosmeticsAndMoney(player)
@@ -146,10 +157,15 @@ function OnRequestCosmetics(player)
 	end
 end
 
-function SetPlayerVisibility(player, visible)
-	--print("setting visilbiity to ")
-	--print(visible)
-	player:SetVisibility(visible, false)
+function SetPlayerVisibility(player, playerId, visible)
+	local targetPlayer = nil
+	for k,v in pairs(Game.GetPlayers()) do
+		if v.id == playerId then
+			targetPlayer = v
+		end
+	end
+
+	targetPlayer:SetVisibility(visible, false)
 end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
