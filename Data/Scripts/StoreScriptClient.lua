@@ -496,6 +496,8 @@ end
 
 function BackPageClicked()
 	if controlsLocked then return end
+	
+	RemovePreview()
 
 	storePos = storePos - ITEMS_PER_PAGE
 	if storePos > ITEMS_PER_PAGE * (#CurrentStoreElements // ITEMS_PER_PAGE) then storePos = ITEMS_PER_PAGE * (#CurrentStoreElements // ITEMS_PER_PAGE) end
@@ -505,6 +507,8 @@ end
 
 function NextPageClicked()
 	if controlsLocked then return end
+	
+	RemovePreview()
 
 	storePos = storePos + ITEMS_PER_PAGE
 	if storePos > ITEMS_PER_PAGE * (#CurrentStoreElements // ITEMS_PER_PAGE) then storePos = ITEMS_PER_PAGE * (#CurrentStoreElements // ITEMS_PER_PAGE) end
@@ -1181,13 +1185,15 @@ function SwapMannequin(button)
 		propSwapText.text = "Female"
 	end
 	
+	setPreviewMesh:SetTransform(oldSetMesh:GetTransform())
+	
 	if currentlySelected ~= nil then
 		SpawnPreview(currentlySelected.data.templateId, setPreviewMesh, currentlySelected.data.visible)
+		currentZoom = currentlySelected.data.zoom
 	elseif currentlyEquipped ~= nil then
 		SpawnPreview(currentlyEquipped, setPreviewMesh, equippedVisibility)
+		currentZoom = equippedZoom
 	end
-	
-	setPreviewMesh:SetTransform(oldSetMesh:GetTransform())
 	
 	if setPreviewMesh:GetPosition() ~= propDefaultZoomMarker:GetPosition() then
 		zoomToggle = true
