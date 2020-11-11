@@ -239,14 +239,14 @@ function StoreItemClicked(button)
 		equippedZoom = nil
 		
 		RemoveCosmetic(player.id)
-		UpdateEntryButton(entry, false)
+		UpdateEntryButton(entry, true)
 		--print("removed equipped")
 		return
 		
 	elseif currentlySelected ~= nil then
 		if HasCosmetic(currentlySelected.data.id) then
 			local oldEquipped = currentlyEquipped
-			
+						
 			currentlyEquipped = nil
 			
 			ApplyCosmetic(currentlySelected)
@@ -371,7 +371,7 @@ function BuyCosmeticResponse(storeId, success)
 		Task.Wait()
 	end
 	
-	UpdateEntryButton(currentlySelected, false)
+	UpdateEntryButton(currentlySelected, true)
 	UpdateCurrencyDisplay()
 	controlsLocked = false
 end
@@ -1242,12 +1242,12 @@ function SwapMannequin(button)
 	
 	setPreviewMesh:SetTransform(oldSetMesh:GetTransform())
 	
-	if currentlySelected ~= nil then
+	if currentlyEquipped ~= nil then
+		SpawnPreview(currentlyEquipped, setPreviewMesh, equippedVisibility)
+		currentZoom = equippedZoom
+	elseif currentlySelected ~= nil then
 		SpawnPreview(currentlySelected.data.templateId, setPreviewMesh, currentlySelected.data.visible)
 		currentZoom = currentlySelected.data.zoom
-	elseif currentlyEquipped ~= nil then
-		SpawnPreview(currentlyEquipped, setPreviewMesh, equippedVisibility)
-		currentZoom = equippedZoom			
 	end
 	
 	if setPreviewMesh:GetPosition() ~= propDefaultZoomMarker:GetPosition() then

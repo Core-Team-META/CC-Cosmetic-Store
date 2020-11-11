@@ -63,11 +63,11 @@ Objects {
     }
     Overrides {
       Name: "cs:AutosavePurchases"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:AutosaveCurrency"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:EnableFilterByTag"
