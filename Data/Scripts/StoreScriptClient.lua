@@ -28,10 +28,10 @@ local uiBackButton = propPageBackButton:FindChildByType("UIButton")
 local uiNextButton = propPageNextButton:FindChildByType("UIButton")
 
 local CAMERA_WIDTH = 600
-local BUTTON_SCALE = 0.75
+local BUTTON_SCALE = 0.72
 local ITEMS_PER_ROW = 5
 local ITEMS_PER_COL = 2
-local ITEM_PADDING = 80
+local ITEM_PADDING = 75
 local ITEMS_PER_PAGE = ITEMS_PER_ROW * ITEMS_PER_COL
 
 propStoreUIContainer.isEnabled = false
@@ -69,6 +69,8 @@ local propHeadZoomMarker = script:GetCustomProperty("HeadZoomMarker"):WaitForObj
 local propUpperZoomMarker = script:GetCustomProperty("UpperZoomMarker"):WaitForObject()
 local propLowerZoomMarker = script:GetCustomProperty("LowerZoomMarker"):WaitForObject()
 local propFeetZoomMarker = script:GetCustomProperty("FeetZoomMarker"):WaitForObject()
+
+local propUIMarkersAndPreviews = script:GetCustomProperty("UIMarkersAndPreviews"):WaitForObject()
 
 local player = nil
 
@@ -596,7 +598,7 @@ function PopulateStore(direction)
 		local gridX = (k - 1) % ITEMS_PER_ROW
 		local gridY = (k - 1) // ITEMS_PER_ROW
 		
-		local target = Vector3.New(gridX * -ITEM_PADDING + 20, 0, gridY * -(ITEM_PADDING + 22) - 35)
+		local target = Vector3.New(gridX * -ITEM_PADDING + 20, 0, gridY * -(ITEM_PADDING + 20) - 35)
 		
 		local start = Vector3.New(gridX * -100 + 1000, 0, gridY * -100)
 		
@@ -815,6 +817,8 @@ function UpdateUIPos()
 	local screenSize = UI.GetScreenSize()
 	local currentTime = time()
 	
+	local newScale = (1.6 * UI.GetScreenSize().y) / UI.GetScreenSize().x
+	
 	for k,v in pairs(StoreUIButtons) do
 		if currentTime < v.startTime + v.travelTime and propEnableStoreAnimations then
 			local lerpVal
@@ -833,7 +837,7 @@ function UpdateUIPos()
 		v.overlay.width = math.floor(screenSize.x * 0.155 * BUTTON_SCALE)
 		v.overlay.height = math.floor(v.overlay.width * 1.35)
 
-		v.label.fontSize = math.floor(screenSize.x * 0.017 * BUTTON_SCALE)
+		v.label.fontSize = math.floor(screenSize.x * 0.017 * BUTTON_SCALE * newScale)
 
 		if v.deleting and (currentTime >= v.startTime + v.travelTime or not propEnableStoreAnimations) then
 			v.overlay:Destroy()
@@ -873,6 +877,8 @@ function UpdateUIPos()
 	
 	propRotateMarkerBottomRight.x = UI.GetScreenSize().x * 0.92
 	propRotateMarkerBottomRight.y = UI.GetScreenSize().y * 0.87
+	
+	propUIMarkersAndPreviews:ScaleTo(Vector3.ONE * newScale, 0, true)
 end
 
 -- Takes a world position and figures

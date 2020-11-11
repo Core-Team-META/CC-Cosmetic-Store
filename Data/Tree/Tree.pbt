@@ -63,11 +63,11 @@ Objects {
     }
     Overrides {
       Name: "cs:AutosavePurchases"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:AutosaveCurrency"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:EnableFilterByTag"
@@ -3703,15 +3703,16 @@ Objects {
   Name: "UIMarkersAndPreviews"
   Transform {
     Location {
-      X: -30
-      Z: 80
+      X: -170.582336
+      Y: 310
+      Z: 360
     }
     Rotation {
     }
     Scale {
-      X: 0.8
-      Y: 0.8
-      Z: 0.8
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 10322996616966008580
@@ -3738,9 +3739,7 @@ Objects {
   Name: "FeetZoomMarker"
   Transform {
     Location {
-      X: -170
-      Y: 310
-      Z: 575
+      Z: 235
     }
     Rotation {
       Yaw: 89.9995422
@@ -3778,9 +3777,7 @@ Objects {
   Name: "LowerZoomMarker"
   Transform {
     Location {
-      X: -170
-      Y: 310
-      Z: 425
+      Z: 85
     }
     Rotation {
       Yaw: 89.9995422
@@ -3818,9 +3815,7 @@ Objects {
   Name: "UpperZoomMarker"
   Transform {
     Location {
-      X: -170
-      Y: 310
-      Z: 265
+      Z: -75
     }
     Rotation {
       Yaw: 89.9995422
@@ -3858,9 +3853,7 @@ Objects {
   Name: "HeadZoomMarker"
   Transform {
     Location {
-      X: -170
-      Y: 310
-      Z: 85
+      Z: -255
     }
     Rotation {
       Yaw: 89.9995422
@@ -3898,9 +3891,7 @@ Objects {
   Name: "HatZoomMarker"
   Transform {
     Location {
-      X: -170
-      Y: 310
-      Z: 30
+      Z: -310
     }
     Rotation {
       Yaw: 89.9995422
@@ -3938,9 +3929,6 @@ Objects {
   Name: "DefaultZoomMarker"
   Transform {
     Location {
-      X: -170.582336
-      Y: 310
-      Z: 340
     }
     Rotation {
       Yaw: 89.9995422
@@ -3978,12 +3966,9 @@ Objects {
   Name: "Fantasy Human Gal 1"
   Transform {
     Location {
-      X: -170.582336
-      Y: 310
-      Z: 340
     }
     Rotation {
-      Yaw: -89.9999542
+      Yaw: -89.999939
     }
     Scale {
       X: 1
@@ -4060,12 +4045,9 @@ Objects {
   Name: "Fantasy Human Guy 1"
   Transform {
     Location {
-      X: -170.582336
-      Y: 310
-      Z: 340
     }
     Rotation {
-      Yaw: -89.9999466
+      Yaw: -89.999939
     }
     Scale {
       X: 1
@@ -4912,6 +4894,12 @@ Objects {
       Name: "cs:SwapText"
       ObjectReference {
         SelfId: 5008563711227559606
+      }
+    }
+    Overrides {
+      Name: "cs:UIMarkersAndPreviews"
+      ObjectReference {
+        SelfId: 1825625024445678567
       }
     }
   }
