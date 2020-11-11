@@ -213,6 +213,7 @@ function LerpFunc(a, b, v)
 	v = 1 - (1 - v) * (1 - v) * (1 - v)
 	return CoreMath.Lerp(a, b, v)
 end
+
 function LerpFunc2(a, b, v)
 	v = v * v
 	return CoreMath.Lerp(a, b, v)
@@ -234,7 +235,7 @@ function StoreItemClicked(button)
 	currentlySelected = entry
 		
 	if currentlyEquipped == entry.data.templateId then
-		currentlySelected = nil
+		--currentlySelected = nil
 		
 		RemovePreview()
 		setPreviewMesh.visibility = Visibility.INHERIT
@@ -243,7 +244,7 @@ function StoreItemClicked(button)
 		equippedZoom = nil
 		
 		RemoveCosmetic(player.id)
-		UpdateEntryButton(entry, true)
+		UpdateEntryButton(entry, currentlySelected == entry)
 		--print("removed equipped")
 		return
 		
