@@ -130,15 +130,15 @@ Objects {
     }
   }
   ParentId: 7563443499317668191
-  ChildIds: 8535933385773224714
-  ChildIds: 13179596012001901527
-  ChildIds: 3484379741785455993
   ChildIds: 13756277461495626637
-  ChildIds: 8881734497852450539
+  ChildIds: 3381630003204112244
   ChildIds: 5737279255228618280
   ChildIds: 16129276471000992403
-  ChildIds: 3381630003204112244
+  ChildIds: 3484379741785455993
+  ChildIds: 8535933385773224714
+  ChildIds: 13179596012001901527
   ChildIds: 1825625024445678567
+  ChildIds: 8881734497852450539
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -146,469 +146,6 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
-  }
-}
-Objects {
-  Id: 1825625024445678567
-  Name: "UIMarkers"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10322996616966008580
-  ChildIds: 14741216661649593330
-  ChildIds: 10633552882833830393
-  ChildIds: 5523001435888052406
-  ChildIds: 588750198547102471
-  ChildIds: 7661516753854315302
-  ChildIds: 10543548275765842146
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 10543548275765842146
-  Name: "FeetZoomMarker"
-  Transform {
-    Location {
-      X: -170
-      Y: 310
-      Z: 575
-    }
-    Rotation {
-      Yaw: 89.9995422
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1825625024445678567
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5760915064523727563
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 7661516753854315302
-  Name: "LowerZoomMarker"
-  Transform {
-    Location {
-      X: -170
-      Y: 310
-      Z: 425
-    }
-    Rotation {
-      Yaw: 89.9995422
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1825625024445678567
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5760915064523727563
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 588750198547102471
-  Name: "UpperZoomMarker"
-  Transform {
-    Location {
-      X: -170
-      Y: 310
-      Z: 265
-    }
-    Rotation {
-      Yaw: 89.9995422
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1825625024445678567
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5760915064523727563
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 5523001435888052406
-  Name: "HeadZoomMarker"
-  Transform {
-    Location {
-      X: -170
-      Y: 310
-      Z: 85
-    }
-    Rotation {
-      Yaw: 89.9995422
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1825625024445678567
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5760915064523727563
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 10633552882833830393
-  Name: "HatZoomMarker"
-  Transform {
-    Location {
-      X: -170
-      Y: 310
-      Z: 30
-    }
-    Rotation {
-      Yaw: 89.9995422
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1825625024445678567
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5760915064523727563
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 14741216661649593330
-  Name: "DefaultZoomMarker"
-  Transform {
-    Location {
-      X: -170.582336
-      Y: 310
-      Z: 340
-    }
-    Rotation {
-      Yaw: 89.9995422
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1825625024445678567
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5760915064523727563
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 3381630003204112244
-  Name: "StoreDisplay"
-  Transform {
-    Location {
-      X: 245
-      Y: 550
-      Z: 410
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10322996616966008580
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 16129276471000992403
-  Name: "Fantasy Human Gal 1"
-  Transform {
-    Location {
-      X: -170.582336
-      Y: 310
-      Z: 340
-    }
-    Rotation {
-      Yaw: -90
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10322996616966008580
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_Detail1:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail2:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail3:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13784467660178889007
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_relaxed"
-      AnimationStancePlaybackRate: 1.1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        PlaybackRate: 1
-      }
-    }
-  }
-}
-Objects {
-  Id: 5737279255228618280
-  Name: "Fantasy Human Guy 1"
-  Transform {
-    Location {
-      X: -170.582336
-      Y: 310
-      Z: 340
-    }
-    Rotation {
-      Yaw: -89.9999771
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10322996616966008580
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_Detail1:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail2:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail3:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5985956015751324126
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_relaxed"
-      AnimationStancePlaybackRate: 1.1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        PlaybackRate: 1
-      }
-    }
   }
 }
 Objects {
@@ -3872,8 +3409,8 @@ Objects {
   }
 }
 Objects {
-  Id: 13756277461495626637
-  Name: "StoreScriptClient"
+  Id: 1825625024445678567
+  Name: "UIMarkers"
   Transform {
     Location {
     }
@@ -3886,184 +3423,30 @@ Objects {
     }
   }
   ParentId: 10322996616966008580
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:STORE_EntryOverlay"
-      AssetReference {
-        Id: 14247382145864210697
-      }
-    }
-    Overrides {
-      Name: "cs:STORE_EntryGeo"
-      AssetReference {
-        Id: 15389268987378960631
-      }
-    }
-    Overrides {
-      Name: "cs:STORE_FilterListEntry"
-      AssetReference {
-        Id: 13687067019817101910
-      }
-    }
-    Overrides {
-      Name: "cs:StoreRoot"
-      ObjectReference {
-        SelfId: 7563443499317668191
-      }
-    }
-    Overrides {
-      Name: "cs:Camera"
-      ObjectReference {
-        SelfId: 3484379741785455993
-      }
-    }
-    Overrides {
-      Name: "cs:StoreUIContainer"
-      ObjectReference {
-        SelfId: 8881734497852450539
-      }
-    }
-    Overrides {
-      Name: "cs:PreviewMesh"
-      ObjectReference {
-        SelfId: 16129276471000992403
-      }
-    }
-    Overrides {
-      Name: "cs:PreviewMesh2"
-      ObjectReference {
-        SelfId: 5737279255228618280
-      }
-    }
-    Overrides {
-      Name: "cs:BackButton"
-      ObjectReference {
-        SelfId: 16623782144795530169
-      }
-    }
-    Overrides {
-      Name: "cs:StoreGeoHolder"
-      ObjectReference {
-        SelfId: 8535933385773224714
-      }
-    }
-    Overrides {
-      Name: "cs:PageBackButton"
-      ObjectReference {
-        SelfId: 16827338000429250253
-      }
-    }
-    Overrides {
-      Name: "cs:PageNextButton"
-      ObjectReference {
-        SelfId: 13832330279874992609
-      }
-    }
-    Overrides {
-      Name: "cs:ButtonHolder"
-      ObjectReference {
-        SelfId: 11628095997273252421
-      }
-    }
-    Overrides {
-      Name: "cs:CurrencyDisplay"
-      ObjectReference {
-        SelfId: 15020454629687176127
-      }
-    }
-    Overrides {
-      Name: "cs:FilterListHolder"
-      ObjectReference {
-        SelfId: 6257470790944615007
-      }
-    }
-    Overrides {
-      Name: "cs:TypeFilterListHolder"
-      ObjectReference {
-        SelfId: 3679802494336887840
-      }
-    }
-    Overrides {
-      Name: "cs:RotateMarkerTopLeft"
-      ObjectReference {
-        SelfId: 12277089494322296611
-      }
-    }
-    Overrides {
-      Name: "cs:RotateMarkerBottomRight"
-      ObjectReference {
-        SelfId: 16007424256792872039
-      }
-    }
-    Overrides {
-      Name: "cs:DefaultZoomMarker"
-      ObjectReference {
-        SelfId: 14741216661649593330
-      }
-    }
-    Overrides {
-      Name: "cs:HatZoomMarker"
-      ObjectReference {
-        SelfId: 10633552882833830393
-      }
-    }
-    Overrides {
-      Name: "cs:HeadZoomMarker"
-      ObjectReference {
-        SelfId: 5523001435888052406
-      }
-    }
-    Overrides {
-      Name: "cs:UpperZoomMarker"
-      ObjectReference {
-        SelfId: 588750198547102471
-      }
-    }
-    Overrides {
-      Name: "cs:LowerZoomMarker"
-      ObjectReference {
-        SelfId: 7661516753854315302
-      }
-    }
-    Overrides {
-      Name: "cs:FeetZoomMarker"
-      ObjectReference {
-        SelfId: 10543548275765842146
-      }
-    }
-    Overrides {
-      Name: "cs:SwapMannequin"
-      ObjectReference {
-        SelfId: 7283447811995493537
-      }
-    }
-    Overrides {
-      Name: "cs:SwapText"
-      ObjectReference {
-        SelfId: 5008563711227559606
-      }
-    }
-  }
+  ChildIds: 14741216661649593330
+  ChildIds: 10633552882833830393
+  ChildIds: 5523001435888052406
+  ChildIds: 588750198547102471
+  ChildIds: 7661516753854315302
+  ChildIds: 10543548275765842146
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
-  Script {
-    ScriptAsset {
-      Id: 15929695815138299398
-    }
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
-  Id: 3484379741785455993
-  Name: "Camera"
+  Id: 10543548275765842146
+  Name: "FeetZoomMarker"
   Transform {
     Location {
-      X: 25
-      Y: -120
-      Z: 350
+      X: -170
+      Y: 310
+      Z: 575
     }
     Rotation {
       Yaw: 89.9995422
@@ -4074,54 +3457,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10322996616966008580
-  ChildIds: 14964913925366234724
-  ChildIds: 17864943706680488772
+  ParentId: 1825625024445678567
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Camera {
-    MinDistance: 300
-    MaxDistance: 600
-    PositionOffset {
-    }
-    RotationOffset {
-    }
-    FieldOfView: 90
-    ViewWidth: 600
-    IsOrthographic: true
-    RotationMode {
-      Value: "mc:erotationmode:lookangle"
-    }
-    MinPitch: -89
-    MaxPitch: 89
-  }
-}
-Objects {
-  Id: 17864943706680488772
-  Name: "Sphere"
-  Transform {
-    Location {
-      X: 300.004578
-      Y: -300
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3484379741785455993
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
   }
   CoreMesh {
     MeshAsset {
@@ -4139,14 +3480,16 @@ Objects {
   }
 }
 Objects {
-  Id: 14964913925366234724
-  Name: "Sphere"
+  Id: 7661516753854315302
+  Name: "LowerZoomMarker"
   Transform {
     Location {
-      X: 300.0047
-      Y: 300
+      X: -170
+      Y: 310
+      Z: 425
     }
     Rotation {
+      Yaw: 89.9995422
     }
     Scale {
       X: 1
@@ -4154,12 +3497,172 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3484379741785455993
+  ParentId: 1825625024445678567
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5760915064523727563
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 588750198547102471
+  Name: "UpperZoomMarker"
+  Transform {
+    Location {
+      X: -170
+      Y: 310
+      Z: 265
+    }
+    Rotation {
+      Yaw: 89.9995422
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1825625024445678567
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5760915064523727563
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5523001435888052406
+  Name: "HeadZoomMarker"
+  Transform {
+    Location {
+      X: -170
+      Y: 310
+      Z: 85
+    }
+    Rotation {
+      Yaw: 89.9995422
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1825625024445678567
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5760915064523727563
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10633552882833830393
+  Name: "HatZoomMarker"
+  Transform {
+    Location {
+      X: -170
+      Y: 310
+      Z: 30
+    }
+    Rotation {
+      Yaw: 89.9995422
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1825625024445678567
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5760915064523727563
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14741216661649593330
+  Name: "DefaultZoomMarker"
+  Transform {
+    Location {
+      X: -170.582336
+      Y: 310
+      Z: 340
+    }
+    Rotation {
+      Yaw: 89.9995422
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1825625024445678567
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   CoreMesh {
     MeshAsset {
@@ -4631,6 +4134,503 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 3484379741785455993
+  Name: "Camera"
+  Transform {
+    Location {
+      X: 25
+      Y: -120
+      Z: 350
+    }
+    Rotation {
+      Yaw: 89.9995422
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10322996616966008580
+  ChildIds: 14964913925366234724
+  ChildIds: 17864943706680488772
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Camera {
+    MinDistance: 300
+    MaxDistance: 600
+    PositionOffset {
+    }
+    RotationOffset {
+    }
+    FieldOfView: 90
+    ViewWidth: 600
+    IsOrthographic: true
+    RotationMode {
+      Value: "mc:erotationmode:lookangle"
+    }
+    MinPitch: -89
+    MaxPitch: 89
+  }
+}
+Objects {
+  Id: 17864943706680488772
+  Name: "Sphere"
+  Transform {
+    Location {
+      X: 300.004578
+      Y: -300
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3484379741785455993
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5760915064523727563
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14964913925366234724
+  Name: "Sphere"
+  Transform {
+    Location {
+      X: 300.0047
+      Y: 300
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3484379741785455993
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5760915064523727563
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16129276471000992403
+  Name: "Fantasy Human Gal 1"
+  Transform {
+    Location {
+      X: -170.582336
+      Y: 310
+      Z: 340
+    }
+    Rotation {
+      Yaw: -90
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10322996616966008580
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail3:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13784467660178889007
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1.1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+    }
+  }
+}
+Objects {
+  Id: 5737279255228618280
+  Name: "Fantasy Human Guy 1"
+  Transform {
+    Location {
+      X: -170.582336
+      Y: 310
+      Z: 340
+    }
+    Rotation {
+      Yaw: -89.9999771
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10322996616966008580
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail3:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5985956015751324126
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1.1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+    }
+  }
+}
+Objects {
+  Id: 3381630003204112244
+  Name: "StoreDisplay"
+  Transform {
+    Location {
+      X: 245
+      Y: 550
+      Z: 410
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10322996616966008580
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13756277461495626637
+  Name: "StoreScriptClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10322996616966008580
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:STORE_EntryOverlay"
+      AssetReference {
+        Id: 14247382145864210697
+      }
+    }
+    Overrides {
+      Name: "cs:STORE_EntryGeo"
+      AssetReference {
+        Id: 15389268987378960631
+      }
+    }
+    Overrides {
+      Name: "cs:STORE_FilterListEntry"
+      AssetReference {
+        Id: 13687067019817101910
+      }
+    }
+    Overrides {
+      Name: "cs:StoreRoot"
+      ObjectReference {
+        SelfId: 7563443499317668191
+      }
+    }
+    Overrides {
+      Name: "cs:Camera"
+      ObjectReference {
+        SelfId: 3484379741785455993
+      }
+    }
+    Overrides {
+      Name: "cs:StoreUIContainer"
+      ObjectReference {
+        SelfId: 8881734497852450539
+      }
+    }
+    Overrides {
+      Name: "cs:PreviewMesh"
+      ObjectReference {
+        SelfId: 16129276471000992403
+      }
+    }
+    Overrides {
+      Name: "cs:PreviewMesh2"
+      ObjectReference {
+        SelfId: 5737279255228618280
+      }
+    }
+    Overrides {
+      Name: "cs:BackButton"
+      ObjectReference {
+        SelfId: 16623782144795530169
+      }
+    }
+    Overrides {
+      Name: "cs:StoreGeoHolder"
+      ObjectReference {
+        SelfId: 8535933385773224714
+      }
+    }
+    Overrides {
+      Name: "cs:PageBackButton"
+      ObjectReference {
+        SelfId: 16827338000429250253
+      }
+    }
+    Overrides {
+      Name: "cs:PageNextButton"
+      ObjectReference {
+        SelfId: 13832330279874992609
+      }
+    }
+    Overrides {
+      Name: "cs:ButtonHolder"
+      ObjectReference {
+        SelfId: 11628095997273252421
+      }
+    }
+    Overrides {
+      Name: "cs:CurrencyDisplay"
+      ObjectReference {
+        SelfId: 15020454629687176127
+      }
+    }
+    Overrides {
+      Name: "cs:FilterListHolder"
+      ObjectReference {
+        SelfId: 6257470790944615007
+      }
+    }
+    Overrides {
+      Name: "cs:TypeFilterListHolder"
+      ObjectReference {
+        SelfId: 3679802494336887840
+      }
+    }
+    Overrides {
+      Name: "cs:RotateMarkerTopLeft"
+      ObjectReference {
+        SelfId: 12277089494322296611
+      }
+    }
+    Overrides {
+      Name: "cs:RotateMarkerBottomRight"
+      ObjectReference {
+        SelfId: 16007424256792872039
+      }
+    }
+    Overrides {
+      Name: "cs:DefaultZoomMarker"
+      ObjectReference {
+        SelfId: 14741216661649593330
+      }
+    }
+    Overrides {
+      Name: "cs:HatZoomMarker"
+      ObjectReference {
+        SelfId: 10633552882833830393
+      }
+    }
+    Overrides {
+      Name: "cs:HeadZoomMarker"
+      ObjectReference {
+        SelfId: 5523001435888052406
+      }
+    }
+    Overrides {
+      Name: "cs:UpperZoomMarker"
+      ObjectReference {
+        SelfId: 588750198547102471
+      }
+    }
+    Overrides {
+      Name: "cs:LowerZoomMarker"
+      ObjectReference {
+        SelfId: 7661516753854315302
+      }
+    }
+    Overrides {
+      Name: "cs:FeetZoomMarker"
+      ObjectReference {
+        SelfId: 10543548275765842146
+      }
+    }
+    Overrides {
+      Name: "cs:SwapMannequin"
+      ObjectReference {
+        SelfId: 7283447811995493537
+      }
+    }
+    Overrides {
+      Name: "cs:SwapText"
+      ObjectReference {
+        SelfId: 5008563711227559606
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15929695815138299398
+    }
   }
 }
 Objects {

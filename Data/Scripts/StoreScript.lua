@@ -66,11 +66,6 @@ function BuyCosmetic(player, templateId, cost)
 	local currency = player:GetResource(propCurrencyResourceName)
 	player:SetResource(propCurrencyResourceName, currency - cost)
 	
-	
-	while player:GetResource(propCurrencyResourceName) ~= currency - cost do
-		Task.Wait()
-	end
-
 	Events.BroadcastToPlayer(player, "BUYCOSMETIC_RESPONSE", templateId, true)
 	if playerOwnedCosmetics[player.id] == nil then playerOwnedCosmetics[player.id] = {} end
 	playerOwnedCosmetics[player.id][templateId] = true

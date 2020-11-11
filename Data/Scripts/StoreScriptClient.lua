@@ -157,6 +157,8 @@ local defaultColor = Color.FromLinearHex("63F3FFFF")
 --player.lookControlMode = LookControlMode.NONE
 --player.movementControlMode = MovementControlMode.NONE
 function ShowStore_ClientHelper()
+
+	if player ~= Game.GetLocalPlayer() then return end
 	
 	setPreviewMesh:MoveTo(propDefaultZoomMarker:GetPosition(), 0, true)
 	setPreviewMesh:RotateTo(Rotation.New(0, 0, -90), 0, true)
@@ -173,6 +175,10 @@ function ShowStore_ClientHelper()
 	storePos = 0
 	ClearFilter()
 	UpdateCurrencyDisplay()
+	
+	for k,v in pairs(StoreUIButtons) do
+		UpdateEntryButton(v, false)
+	end
 	
 	if currentlyEquipped ~= nil then
 		SpawnPreview(currentlyEquipped, setPreviewMesh, equippedVisibility)
@@ -279,7 +285,6 @@ function StoreItemClicked(button)
 end
 
 function StoreItemHovered(button)
-	if player ~= Game.GetLocalPlayer() then return end
 	local entry = StoreUIButtons[button]
 	if entry then
 		currentlySelected = entry
@@ -357,6 +362,7 @@ function UpdateEntryButton(entry, highlighted)
 end
 
 function BuyCosmeticResponse(storeId, success)
+	print(player.name .. " Bought cosmetic " .. storeId)
 	if success then
 		OwnedCosmetics[storeId] = true
 	end
@@ -484,8 +490,6 @@ function ApplyCosmeticHelper(playerId, templateId)
 	cosmeticElements[playerId] = itemList
 	cosmeticItem:Destroy()
 	
-	currentlyEquipped = templateId
-	
 	Task.Wait()
 	
 
@@ -495,6 +499,7 @@ function ApplyCosmeticHelper(playerId, templateId)
 			Events.BroadcastToServer("SETVISIBILITY", playerId, v.visible)
 			if not player then return end
 			if player.id == playerId then
+				currentlyEquipped = templateId
 				equippedVisibility = v.visible
 				equippedZoom = v.zoom
 				currentZoom = equippedZoom
@@ -659,6 +664,10 @@ end
 
 
 function InitStore()
+	if not player then
+		player = Game.GetLocalPlayer()
+		print(player.name)
+	end
 	
 	ShopContents = {}
 	for k,v in pairs(propStoreGeoHolder:GetChildren()) do
@@ -1246,12 +1255,6 @@ function SwapMannequin(button)
 	end
 end
 
-function OnPlayerJoined(joinedPlayer)
-	
-	player = joinedPlayer
-
-end
-
 function OnPlayerLeft(leftPlayer)
 
 	RemoveCosmetic(leftPlayer.id)
@@ -1269,7 +1272,6 @@ uiBackButton.clickedEvent:Connect(BackPageClicked)
 uiNextButton.clickedEvent:Connect(NextPageClicked)
 propSwapMannequin.clickedEvent:Connect(SwapMannequin)
 
-Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 
 InitStore()
