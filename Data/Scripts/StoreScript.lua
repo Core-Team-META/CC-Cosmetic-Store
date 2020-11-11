@@ -55,7 +55,9 @@ end
 local AppliedCosmetics = {}
 
 function ApplyCosmetic(player, templateId)
-	Events.BroadcastToAllPlayers("APPLYCOSMETIC", player.id, templateId)
+	while Events.BroadcastToAllPlayers("APPLYCOSMETIC", player.id, templateId) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
+		Task.Wait()
+	end
 	AppliedCosmetics[player.id] = templateId
 end
 
@@ -66,7 +68,9 @@ function BuyCosmetic(player, templateId, cost)
 	local currency = player:GetResource(propCurrencyResourceName)
 	player:SetResource(propCurrencyResourceName, currency - cost)
 	
-	Events.BroadcastToPlayer(player, "BUYCOSMETIC_RESPONSE", templateId, true)
+	while Events.BroadcastToPlayer(player, "BUYCOSMETIC_RESPONSE", templateId, true)  == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
+		Task.Wait()
+	end
 	if playerOwnedCosmetics[player.id] == nil then playerOwnedCosmetics[player.id] = {} end
 	playerOwnedCosmetics[player.id][templateId] = true
 end
@@ -137,7 +141,9 @@ function OnRequestCosmetics(player)
 		print("Checking data for " .. v.id)
 		if AppliedCosmetics[v.id] ~= nil then
 			print("Sending data for " .. v.id)
-			Events.BroadcastToPlayer(player, "APPLYCOSMETIC", v.id, AppliedCosmetics[v.id])
+			while Events.BroadcastToPlayer(player, "APPLYCOSMETIC", v.id, AppliedCosmetics[v.id])  == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
+				Task.Wait()
+			end
 		end
 	end
 	print("pairs:")

@@ -201,7 +201,9 @@ end
 
 function HideStore()
 	HideStore_ClientHelper(player)
-	Events.BroadcastToServer("HIDESTORE_SERVER", player)
+	while Events.BroadcastToServer("HIDESTORE_SERVER", player) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
+		Task.Wait()
+	end
 end
 
 
@@ -271,7 +273,9 @@ function StoreItemClicked(button)
 			else
 				expectedNewCurrency = currency - currentlySelected.data.cost
 				controlsLocked = true
-				Events.BroadcastToServer("BUYCOSMETIC", currentlySelected.data.id, currentlySelected.data.cost)
+				while Events.BroadcastToServer("BUYCOSMETIC", currentlySelected.data.id, currentlySelected.data.cost) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
+					Task.Wait()
+				end
 			end
 		end
 	end
@@ -313,11 +317,14 @@ function StoreItemUnhovered(button)
 		currentZoom = equippedZoom
 	end
 	
+	UpdateEntryButton(StoreUIButtons[button], false)
+	--[[
 	if currentlyEquipped == StoreUIButtons[button].data.templateId then
 		UpdateEntryButton(StoreUIButtons[button], currentlySelected == StoreUIButtons[button])
 	else
 		UpdateEntryButton(StoreUIButtons[button], false)
 	end
+	]]
 end
 
 function SelectNothing()
@@ -453,13 +460,17 @@ function RemoveCosmetic(playerId)
 			v:Destroy()
 		end
 	end
-	Events.BroadcastToServer("SETVISIBILITY", playerId, true)
+	while Events.BroadcastToServer("SETVISIBILITY", playerId, true)  == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
+		Task.Wait()
+	end
 	cosmeticElements[playerId] = nil
 end
 
 function ApplyCosmetic(entry)
 	print("Requesting", currentlySelected.data.templateId)
-	Events.BroadcastToServer("REQUESTCOSMETIC", currentlySelected.data.templateId)
+	while Events.BroadcastToServer("REQUESTCOSMETIC", currentlySelected.data.templateId)  == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
+		Task.Wait()
+	end
 end
 
 function ApplyCosmeticHelper(playerId, templateId)
@@ -496,7 +507,9 @@ function ApplyCosmeticHelper(playerId, templateId)
 	for _, v in pairs(CurrentStoreElements) do
 		if v.templateId == templateId then
 			--print("currently equipped stuff found")
-			Events.BroadcastToServer("SETVISIBILITY", playerId, v.visible)
+			while Events.BroadcastToServer("SETVISIBILITY", playerId, v.visible)  == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
+				Task.Wait()
+			end
 			if not player then return end
 			if player.id == playerId then
 				currentlyEquipped = templateId
@@ -787,7 +800,9 @@ function InitStore()
 	end
 	
 	--print("Requesting other player costume data")
-	Events.BroadcastToServer("REQUST_OTHER_COSMETICS")
+	while Events.BroadcastToServer("REQUST_OTHER_COSMETICS")  == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
+		Task.Wait()
+	end
 end
 
 
