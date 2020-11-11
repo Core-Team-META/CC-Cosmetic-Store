@@ -90,6 +90,15 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 3311330293510164700
+      value {
+        Overrides {
+          Name: "cs:Tags"
+          String: "Epic"
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 17268787965089802201
       value {
         Overrides {
@@ -136,6 +145,15 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 4649612584295969390
+      value {
+        Overrides {
+          Name: "cs:Cost"
+          Int: 40
+        }
+      }
+    }
     TemplateAsset {
       Id: 11410006483835281178
     }
@@ -169,7 +187,7 @@ Objects {
         }
         Overrides {
           Name: "cs:Cost"
-          Int: 160
+          Int: 150
         }
       }
     }
@@ -244,7 +262,11 @@ Objects {
         }
         Overrides {
           Name: "cs:Cost"
-          Int: 60
+          Int: 50
+        }
+        Overrides {
+          Name: "cs:Tags"
+          String: "Epic"
         }
       }
     }

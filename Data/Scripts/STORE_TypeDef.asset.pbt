@@ -14,7 +14,15 @@
           A: 1
         }
       }
+      Overrides {
+        Name: "cs:Number"
+        Int: 1
+      }
+      Overrides {
+        Name: "cs:Number:tooltip"
+        String: "Determines the order of appearance for each type starting from the left most. Starts at 1."
+      }
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

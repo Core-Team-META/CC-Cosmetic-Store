@@ -172,7 +172,7 @@
         }
         Control {
           Width: -10
-          Height: 135
+          Height: 120
           UIY: 30
           RenderTransformPivot {
             Anchor {
@@ -289,7 +289,7 @@
         }
         Control {
           Width: 200
-          Height: 125
+          Height: 110
           UIY: 25
           RenderTransformPivot {
             Anchor {
@@ -417,5 +417,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

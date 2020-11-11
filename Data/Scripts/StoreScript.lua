@@ -87,12 +87,7 @@ function OnPlayerJoined(player)
 end
 
 function OnPlayerLeft(player)
-	local equippedCosmetics = player:GetAttachedObjects()
-	for _, v in ipairs(equippedCosmetics) do
-		v:Destroy()
-	end
-	SaveOwnedCosmeticsAndMoney(player)
-	
+	SaveOwnedCosmeticsAndMoney(player)	
 end
 
 function SaveOwnedCosmeticsAndMoney(player)

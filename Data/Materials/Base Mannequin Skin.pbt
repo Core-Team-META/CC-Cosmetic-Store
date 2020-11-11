@@ -2,7 +2,7 @@
   Id: 12725358166370600875
   Name: "Base Mannequin Skin"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 1748546920278996658
     ParameterOverrides {

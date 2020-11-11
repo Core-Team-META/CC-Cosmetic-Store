@@ -70,7 +70,7 @@ local propUpperZoomMarker = script:GetCustomProperty("UpperZoomMarker"):WaitForO
 local propLowerZoomMarker = script:GetCustomProperty("LowerZoomMarker"):WaitForObject()
 local propFeetZoomMarker = script:GetCustomProperty("FeetZoomMarker"):WaitForObject()
 
-local player = Game.GetLocalPlayer()
+local player = nil
 
 local OwnedCosmetics = {}
 
@@ -157,7 +157,6 @@ local defaultColor = Color.FromLinearHex("63F3FFFF")
 --player.lookControlMode = LookControlMode.NONE
 --player.movementControlMode = MovementControlMode.NONE
 function ShowStore_ClientHelper()
-	player = Game.GetLocalPlayer()
 	
 	setPreviewMesh:MoveTo(propDefaultZoomMarker:GetPosition(), 0, true)
 	setPreviewMesh:RotateTo(Rotation.New(0, 0, -90), 0, true)
@@ -174,6 +173,7 @@ function ShowStore_ClientHelper()
 	storePos = 0
 	ClearFilter()
 	UpdateCurrencyDisplay()
+	
 	if currentlyEquipped ~= nil then
 		SpawnPreview(currentlyEquipped, setPreviewMesh, equippedVisibility)
 	else
@@ -225,9 +225,13 @@ function StoreItemClicked(button)
 		
 	if currentlyEquipped == entry.data.templateId then
 		currentlySelected = nil
+		
 		RemovePreview()
 		setPreviewMesh.visibility = Visibility.INHERIT
+		
 		currentlyEquipped = nil
+		equippedZoom = nil
+		
 		RemoveCosmetic(player.id)
 		UpdateEntryButton(entry, false)
 		--print("removed equipped")
@@ -275,8 +279,11 @@ function StoreItemClicked(button)
 end
 
 function StoreItemHovered(button)
+	if player ~= Game.GetLocalPlayer() then return end
 	local entry = StoreUIButtons[button]
 	if entry then
+		currentlySelected = entry
+		
 		SpawnPreview(entry.data.templateId, setPreviewMesh, entry.data.visible)
 		currentZoom = entry.data.zoom
 		UpdateEntryButton(StoreUIButtons[button], true)
@@ -295,9 +302,17 @@ function StoreItemUnhovered(button)
 		currentZoom = nil	
 	end
 	--]]
-
+		
+	if currentlyEquipped ~= nil then
+		SpawnPreview(currentlyEquipped, setPreviewMesh, equippedVisibility)
+		currentZoom = equippedZoom
+	end
 	
-	UpdateEntryButton(StoreUIButtons[button], false)
+	if currentlyEquipped == StoreUIButtons[button].data.templateId then
+		UpdateEntryButton(StoreUIButtons[button], currentlySelected == StoreUIButtons[button])
+	else
+		UpdateEntryButton(StoreUIButtons[button], false)
+	end
 end
 
 function SelectNothing()
@@ -311,15 +326,15 @@ function UpdateEntryButton(entry, highlighted)
 	if entry.data.templateId == currentlyEquipped then -- currently equipped
 		entry.label:SetColor(Color.WHITE)
 		entry.label.text = entry.data.name .. "\nEQUIPPED"
-		entry.BGImage:SetColor(Color.FromLinearHex("020013FF")) -- dark purple
+		entry.BGImage:SetColor(Color.FromLinearHex("000007FF")) -- dark blue
 	elseif HasCosmetic(entry.data.id) and not highlighted then -- owned but not hovered
 		entry.label:SetColor(Color.WHITE)
 		entry.label.text = entry.data.name .. "\nOWNED"
-		entry.BGImage:SetColor(Color.FromLinearHex("2A264AFF")) -- faded purple
+		entry.BGImage:SetColor(Color.FromLinearHex("08004AFF")) -- purple
 	elseif HasCosmetic(entry.data.id) and highlighted then -- owned but hovered
 		entry.label:SetColor(Color.WHITE)
 		entry.label.text = entry.data.name .. "\nEquip?"
-		entry.BGImage:SetColor(Color.FromLinearHex("020013FF")) -- dark purple
+		entry.BGImage:SetColor(Color.FromLinearHex("000007FF")) -- dark blue
 	elseif not highlighted then -- not owned and not hovered
 		entry.label:SetColor(Color.WHITE)
 		entry.label.text = entry.data.name .. "\n" .. entry.data.cost
@@ -335,6 +350,9 @@ function UpdateEntryButton(entry, highlighted)
 			entry.label.text = "NOT ENOUGH\nFUNDS"
 			entry.BGImage:SetColor(Color.FromLinearHex("280000FF")) -- dark red
 		end
+	end
+	if not highlighted then
+		entry.BGMesh:SetColor(entry.BGMeshColor)
 	end
 end
 
@@ -357,20 +375,20 @@ function SpawnPreview(templateId, previewMesh, visible)
 	previewMesh:MoveTo(propDefaultZoomMarker:GetPosition(), 0.5, true)
 	previewMesh:ScaleTo(Vector3.New(1, 1, 1), 0.5, true)
 	previewMesh:RotateTo(Rotation.New(0, 0, -90), 0.5, true)
-	
-	if visible then
-		previewMesh.visibility = Visibility.INHERIT
-		--print("visible")
-	else
-		previewMesh.visibility = Visibility.FORCE_OFF
-		--print("not visible")
-	end
-	
+		
 	zoomToggle = false
 	
 	RemovePreview()
 	
 	if not templateId then return end
+	
+	if visible then
+		previewMesh.visibility = Visibility.INHERIT
+		print("visible")
+	else
+		previewMesh.visibility = Visibility.FORCE_OFF
+		print("not visible")
+	end
 	
 	local previewItem = World.SpawnAsset(templateId)
 	for _, socket in pairs(previewMesh:GetSocketNames()) do
@@ -481,6 +499,7 @@ function ApplyCosmeticHelper(playerId, templateId)
 				equippedZoom = v.zoom
 				currentZoom = equippedZoom
 				SpawnPreview(templateId, setPreviewMesh, v.visible)
+				print("set preview for " .. player.name)
 			end
 			return
 		end
@@ -522,7 +541,7 @@ end
 function BackPageClicked()
 	if controlsLocked then return end
 	
-	RemovePreview()
+	--RemovePreview()
 
 	storePos = storePos - ITEMS_PER_PAGE
 	if storePos > ITEMS_PER_PAGE * (#CurrentStoreElements // ITEMS_PER_PAGE) then storePos = ITEMS_PER_PAGE * (#CurrentStoreElements // ITEMS_PER_PAGE) end
@@ -533,7 +552,7 @@ end
 function NextPageClicked()
 	if controlsLocked then return end
 	
-	RemovePreview()
+	--RemovePreview()
 
 	storePos = storePos + ITEMS_PER_PAGE
 	if storePos > ITEMS_PER_PAGE * (#CurrentStoreElements // ITEMS_PER_PAGE) then storePos = ITEMS_PER_PAGE * (#CurrentStoreElements // ITEMS_PER_PAGE) end
@@ -591,9 +610,10 @@ function PopulateStore(direction)
 
 
 		local BGMeshColor = newGeo:GetCustomProperty("DefaultColor")
+		local BGImageColor = newGeo:GetCustomProperty("DefaultColor")
 		for kk,vv in pairs(v.tags) do
 			if TagDefs[kk] ~= nil then
-				BGMeshColor = TagDefs[kk].color
+				BGImageColor = TagDefs[kk].color
 				break
 			end
 		end
@@ -613,7 +633,7 @@ function PopulateStore(direction)
 			BGMesh = BGMesh,
 			BGMeshColor = BGMeshColor,
 			BGImage = propBGImage,
-			BGImageColor = propBGImage:GetColor(),
+			BGImageColor = BGImageColor,
 			data = v,
 
 			-- Stuff for sliding around and being cool.
@@ -700,9 +720,11 @@ function InitStore()
 			local propDisplayName = v:GetCustomProperty("DisplayName")
 			if propDisplayName == "" then propDisplayName = v.name end
 			local propTagColor = v:GetCustomProperty("TagColor")
+			local propNumber = v:GetCustomProperty("Number")
 			TagDefs[v.name] = {
 				name=propDisplayName,
-				color=propTagColor
+				color=propTagColor,
+				number= propNumber
 			}
 			table.insert(TagList, v.name)
 		end
@@ -716,10 +738,11 @@ function InitStore()
 			local propDisplayName = v:GetCustomProperty("DisplayName")
 			if propDisplayName == "" then propDisplayName = v.name end
 			local propTagColor = v:GetCustomProperty("TypeColor")
-			local propZoomView = v:GetCustomProperty("ZoomView")
+			local propNumber = v:GetCustomProperty("Number")
 			TypeDefs[v.name] = {
 				name=propDisplayName,
-				color=propTagColor
+				color=propTagColor,
+				number= propNumber
 			}
 			table.insert(TypeList, v.name)
 		end
@@ -727,13 +750,12 @@ function InitStore()
 	
 	SelectNothing()
 	
-	local count = 0
+	local count = -1
 	
 	if propEnableFilterByType then
 		for k,v in ipairs(TypeList) do
 			if v:sub(1,1) ~= "_" then
-				SpawnTypeFilterButton(TypeDefs[v].name, v, TypeDefs[v].color, count)
-				count = count + 1
+				SpawnTypeFilterButton(TypeDefs[v].name, v, TypeDefs[v].color, count + TypeDefs[v].number)
 			end
 		end
 		propTypeFilterListHolder.visibility = Visibility.INHERIT
@@ -744,11 +766,10 @@ function InitStore()
 	if propEnableFilterByTag then
 		SpawnFilterButton("Owned", "OWNED", nil, 0)
 		SpawnFilterButton("Not Owned", "UNOWNED", nil, 1)
-		count = 2
+		count = 1
 		for k,v in ipairs(TagList) do
 			if v:sub(1,1) ~= "_" then
-				SpawnFilterButton(TagDefs[v].name, v, TagDefs[v].color, count)
-				count = count + 1
+				SpawnFilterButton(TagDefs[v].name, v, TagDefs[v].color, count + TagDefs[v].number)
 			end
 		end
 		propFilterListHolder.visibility = Visibility.INHERIT
@@ -800,7 +821,7 @@ function UpdateUIPos()
 	local propButtonLabel = nil
 	
 	for k,v in pairs(filterButtonData) do
-		v.root.width = math.floor(screenSize.x * 0.09)
+		v.root.width = math.floor(screenSize.x * 0.08)
 		v.root.height =  math.floor(screenSize.y * 0.06)
 		
 		propButtonLabel = v.root:GetCustomProperty("ButtonLabel"):WaitForObject()
@@ -1225,6 +1246,12 @@ function SwapMannequin(button)
 	end
 end
 
+function OnPlayerJoined(joinedPlayer)
+	
+	player = joinedPlayer
+
+end
+
 function OnPlayerLeft(leftPlayer)
 
 	RemoveCosmetic(leftPlayer.id)
@@ -1242,6 +1269,7 @@ uiBackButton.clickedEvent:Connect(BackPageClicked)
 uiNextButton.clickedEvent:Connect(NextPageClicked)
 propSwapMannequin.clickedEvent:Connect(SwapMannequin)
 
+Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 
 InitStore()

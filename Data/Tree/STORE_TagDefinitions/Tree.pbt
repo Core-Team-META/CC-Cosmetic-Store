@@ -24,6 +24,10 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "cs:Number"
+      Int: 6
+    }
   }
   WantsNetworking: true
   Collidable_v2 {
@@ -61,6 +65,10 @@ Objects {
         B: 0.289999962
         A: 1
       }
+    }
+    Overrides {
+      Name: "cs:Number"
+      Int: 5
     }
   }
   WantsNetworking: true
@@ -100,6 +108,10 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "cs:Number"
+      Int: 4
+    }
   }
   WantsNetworking: true
   Collidable_v2 {
@@ -138,6 +150,10 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "cs:Number"
+      Int: 3
+    }
   }
   WantsNetworking: true
   Collidable_v2 {
@@ -175,6 +191,10 @@ Objects {
         B: 0.289999962
         A: 1
       }
+    }
+    Overrides {
+      Name: "cs:Number"
+      Int: 2
     }
   }
   WantsNetworking: true

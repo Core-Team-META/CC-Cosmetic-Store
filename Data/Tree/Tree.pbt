@@ -1786,7 +1786,7 @@ Objects {
         Id: 5506084799444686347
       }
       Color {
-        G: 0.117449954
+        G: 0.117449895
         B: 0.243000016
         A: 1
       }
@@ -2157,8 +2157,8 @@ Objects {
         Id: 9325242685167482929
       }
       Color {
-        R: 0.0338333659
-        B: 0.289999962
+        R: 0.0313725509
+        B: 0.290196091
         A: 1
       }
       TeamSettings {
@@ -3513,8 +3513,7 @@ Objects {
         Id: 1814707273787853473
       }
       Color {
-        G: 0.000607054
-        B: 0.0295568425
+        B: 0.0274509825
         A: 1
       }
       TeamSettings {
@@ -5359,6 +5358,9 @@ Objects {
       AppearanceChannelingTime: 2
       MountChannelingTime: 2
       FlipOnMultiJump: true
+      CanMoveUp: true
+      CanMoveDown: true
+      IsMountEnabled: true
     }
   }
 }
@@ -5421,6 +5423,23 @@ Objects {
       EnablePlayerStorage: true
       ChatMode {
         Value: "mc:echatmode:teamandall"
+      }
+      ChatSettings {
+        ChatMode {
+        }
+        ChatPosition {
+          X: 40
+        }
+        ChatSize {
+          X: 450
+          Y: 400
+        }
+        ChatHorizontalAlignment {
+          Value: "mc:ecorehorizontalalign:left"
+        }
+        ChatVerticalAlignment {
+          Value: "mc:ecorehorizontalalign:center"
+        }
       }
     }
   }

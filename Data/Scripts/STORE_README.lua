@@ -101,7 +101,7 @@
 
 	Any tags created this way will also be automatically added to the bottom row in the store.
 	Owned and Not Owned tags will be generated automatically, and it is advised to keep the number of
-	additional tags to four at most to prevent the tags from spilling off the screen.
+	additional tags to five at most to prevent the tags from spilling off the screen.
 	
 	
 	

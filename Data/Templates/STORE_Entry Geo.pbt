@@ -41,17 +41,16 @@
           Overrides {
             Name: "cs:DefaultColor"
             Color {
-              G: 0.0580000021
-              B: 0.0570334047
+              G: 0.117449895
+              B: 0.243000016
               A: 1
             }
           }
           Overrides {
             Name: "cs:HighlightColor"
             Color {
-              R: 0.18
-              G: 0.18
-              B: 0.18
+              G: 0.0654304475
+              B: 0.13
               A: 1
             }
           }
@@ -371,5 +370,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }
