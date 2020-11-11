@@ -141,6 +141,8 @@ local currentlyEquipped = nil
 local equippedVisibility = true
 local equippedZoom = nil
 
+local currentlyHovered = nil
+
 local expectedNewCurrency = 0
 
 --for filtering with type and rarity
@@ -287,7 +289,7 @@ function StoreItemClicked(button)
 	currentlySelected.BGMesh:SetColor(currentlySelected.geo:GetCustomProperty("HighlightColor"))
 	SpawnPreview(entry.data.templateId, setPreviewMesh, entry.data.visible)
 	
-	UpdateEntryButton(entry, true)
+	UpdateEntryButton(entry, entry == currentlyHovered)
 	currentZoom = entry.data.zoom
 end
 
@@ -295,6 +297,7 @@ function StoreItemHovered(button)
 	local entry = StoreUIButtons[button]
 	if entry then
 		currentlySelected = entry
+		currentlyHovered = entry
 		
 		SpawnPreview(entry.data.templateId, setPreviewMesh, entry.data.visible)
 		currentZoom = entry.data.zoom
@@ -302,32 +305,15 @@ function StoreItemHovered(button)
 	end
 end
 
-function StoreItemUnhovered(button)
-	--[[
-	if currentlySelected ~= nil then
-		SpawnPreview(currentlySelected.data.templateId, setPreviewMesh, currentlySelected.data.visible)
-
-	elseif currentlyEquipped ~= nil then
-		SpawnPreview(currentlyEquipped, setPreviewMesh)
-	else
-		RemovePreview()
-		currentZoom = nil	
-	end
-	--]]
-		
+function StoreItemUnhovered(button)	
+	currentlyHovered = nil
+	
 	if currentlyEquipped ~= nil then
 		SpawnPreview(currentlyEquipped, setPreviewMesh, equippedVisibility)
 		currentZoom = equippedZoom
 	end
 	
 	UpdateEntryButton(StoreUIButtons[button], false)
-	--[[
-	if currentlyEquipped == StoreUIButtons[button].data.templateId then
-		UpdateEntryButton(StoreUIButtons[button], currentlySelected == StoreUIButtons[button])
-	else
-		UpdateEntryButton(StoreUIButtons[button], false)
-	end
-	]]
 end
 
 function SelectNothing()
@@ -380,9 +366,8 @@ function BuyCosmeticResponse(storeId, success)
 	while player:GetResource(propCurrencyResourceName) ~= expectedNewCurrency do
 		Task.Wait()
 	end
-	
-	UpdateEntryButton(currentlySelected, true)
 	UpdateCurrencyDisplay()
+	UpdateEntryButton(currentlySelected, currentlyHovered == currentlySelected)
 	controlsLocked = false
 end
 
