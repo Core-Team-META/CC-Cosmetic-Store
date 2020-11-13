@@ -38,6 +38,7 @@ propStoreUIContainer.isEnabled = false
 propStoreUIContainer.visibility = Visibility.INHERIT
 
 local controlsLocked = false
+local controlsLockedSecondary = false
 
 local propStoreRoot = script:GetCustomProperty("StoreRoot"):WaitForObject()
 local propCurrencyResourceName = propStoreRoot:GetCustomProperty("CurrencyResourceName")
@@ -222,7 +223,7 @@ function LerpFunc2(a, b, v)
 end
 
 function StoreItemClicked(button)
-	if controlsLocked then return end
+	if controlsLocked or controlsLockedSecondary then return end
 	
 	local entry = StoreUIButtons[button]
 	
@@ -545,7 +546,7 @@ end
 
 
 function BackPageClicked()
-	if controlsLocked then return end
+	if controlsLocked or controlsLockedSecondary then return end
 	
 	--RemovePreview()
 
@@ -556,7 +557,7 @@ function BackPageClicked()
 end
 
 function NextPageClicked()
-	if controlsLocked then return end
+	if controlsLocked or controlsLockedSecondary then return end
 	
 	--RemovePreview()
 
@@ -814,8 +815,10 @@ function UpdateUIPos()
 				lerpVal = LerpFunc2(0, 1, (currentTime - v.startTime) / v.travelTime)
 			end
 			v.geo:SetPosition(Vector3.Lerp(v.startPos, v.targetPos, lerpVal))
+			controlsLockedSecondary = true
 		else
 			v.geo:SetPosition(v.targetPos)
+			controlsLockedSecondary = false
 		end
 
 		v.overlay.x, v.overlay.y = WorldPosToUIPos(v.geo:GetWorldPosition())
@@ -923,6 +926,8 @@ function SpawnFilterButton(displayName, tag, color, position)
 end
 
 function OnFilterButtonSelected(button)
+	if controlsLocked or controlsLockedSecondary then return end
+	
 	local buttonData = filterButtonData[button]
 	local tag = buttonData.tag
 	
@@ -983,7 +988,7 @@ function OnFilterButtonSelected(button)
 	propFrameImage:SetColor(propFilterSelectedColor)
 	propFrameImage2:SetColor(propFilterSelectedColor)
 	
-	propBGImage:SetColor(buttonData.color + Color.New(0.1, 0.1, 0.1))
+	propBGImage:SetColor(propFilterSelectedColor + Color.New(0.01, 0.01, 0.01))
 	
 	currentTag = buttonData
 
@@ -1043,6 +1048,7 @@ function SpawnTypeFilterButton(displayName, type, color, position)
 end
 
 function OnTypeFilterButtonSelected(button)
+	if controlsLocked or controlsLockedSecondary then return end
 
 	local buttonData = typeFilterButtonData[button]
 	local type = buttonData.type
@@ -1050,7 +1056,7 @@ function OnTypeFilterButtonSelected(button)
 	local propFrameImage = buttonData.root:GetCustomProperty("FrameImage"):WaitForObject()
 	local propFrameImage2 = buttonData.root:GetCustomProperty("FrameImage2"):WaitForObject()
 	local propBGImage = buttonData.root:GetCustomProperty("BGImage"):WaitForObject()
-	
+
 	RemovePreview()
 	if currentlyEquipped ~= nil then
 		SpawnPreview(currentlyEquipped, setPreviewMesh, equippedVisibility)
@@ -1105,7 +1111,7 @@ function OnTypeFilterButtonSelected(button)
 	propFrameImage:SetColor(propFilterSelectedColor)
 	propFrameImage2:SetColor(propFilterSelectedColor)
 	
-	propBGImage:SetColor(buttonData.color + Color.New(0.1, 0.1, 0.1))
+	propBGImage:SetColor(propFilterSelectedColor + Color.New(0.01, 0.01, 0.01))
 	
 	currentType = buttonData
 	

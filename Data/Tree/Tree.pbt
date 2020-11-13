@@ -96,10 +96,9 @@ Objects {
     Overrides {
       Name: "cs:FilterSelectedColor"
       Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
+        R: 0.76
+        G: 0.377483457
+        A: 2
       }
     }
   }
@@ -2751,8 +2750,8 @@ Objects {
   Control {
     Width: 4200
     Height: 120
-    UIX: -220
-    UIY: -975
+    UIX: -195
+    UIY: -15
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -2773,12 +2772,12 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:bottomright"
+          Value: "mc:euianchor:topright"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:bottomright"
+          Value: "mc:euianchor:topright"
         }
       }
     }
@@ -2981,8 +2980,8 @@ Objects {
   Control {
     Width: 4200
     Height: 120
-    UIX: -225
-    UIY: -965
+    UIX: -155
+    UIY: -6
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3004,12 +3003,12 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:bottomright"
+          Value: "mc:euianchor:topright"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:bottomright"
+          Value: "mc:euianchor:topright"
         }
       }
     }
