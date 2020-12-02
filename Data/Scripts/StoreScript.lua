@@ -54,7 +54,14 @@ end
 
 local AppliedCosmetics = {}
 
-function ApplyCosmetic(player, templateId)
+function ApplyCosmetic(player, templateId, visible)
+	SetPlayerVisibility(player, player.id, visible)
+	
+	if templateId == nil then
+		return
+	end
+
+	SetPlayerVisibility(player, player.id, visible)
 	while Events.BroadcastToAllPlayers("APPLYCOSMETIC", player.id, templateId) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 		Task.Wait()
 	end
@@ -171,7 +178,7 @@ Events.Connect("SHOWSTORE_SERVER", ShowStore_ServerHelper)
 Events.Connect("HIDESTORE_SERVER", HideStore_ServerHelper)
 Events.ConnectForPlayer("REQUESTCOSMETIC", ApplyCosmetic)
 Events.ConnectForPlayer("BUYCOSMETIC", BuyCosmetic)
-Events.ConnectForPlayer("SETVISIBILITY", SetPlayerVisibility)
+--Events.ConnectForPlayer("SETVISIBILITY", SetPlayerVisibility)
 
 Events.Connect("RESET_PURCHASES", ResetPurchases)
 Events.ConnectForPlayer("RESET_PURCHASES", ResetPurchases)
