@@ -670,7 +670,7 @@ end
 function UpdateCurrencyDisplay()
 	local currency = player:GetResource(propCurrencyResourceName)
 	propCurrencyDisplay.text = tostring(currency)
-	print(currency)
+	--print(currency)
 end
 
 
@@ -805,7 +805,8 @@ end
 
 
 function Tick()
-	UpdateUIPos()	
+	UpdateUIPos()
+	UpdateCurrencyDisplay()
 end
 
 

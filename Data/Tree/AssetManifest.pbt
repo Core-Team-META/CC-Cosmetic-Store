@@ -17,6 +17,28 @@ Assets {
   }
 }
 Assets {
+  Id: 17697992609923532685
+  Name: "money"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "a2b85443c61e495d9c206da5e48f3399"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
+  Id: 17167898803849830920
+  Name: "Crosshair 021"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Crosshair_021"
+  }
+}
+Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -194,5 +216,18 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
+  Id: 1749225442048636468
+  Name: "VIP"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "eef7422ff7244f66bc830b4b9cfc37d3"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
   }
 }

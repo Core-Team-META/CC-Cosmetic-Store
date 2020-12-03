@@ -26,6 +26,7 @@ Objects {
   ChildIds: 1495587963440536165
   ChildIds: 15156601564198830699
   ChildIds: 7563443499317668191
+  ChildIds: 4296421264996771920
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,12 +39,41 @@ Objects {
   }
 }
 Objects {
+  Id: 4296421264996771920
+  Name: "Perks"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Perks"
+  }
+  InstanceHistory {
+    SelfId: 4296421264996771920
+    SubobjectId: 11238896906502593893
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+    WasRoot: true
+  }
+}
+Objects {
   Id: 7563443499317668191
   Name: "STORE_CosmeticStore"
   Transform {
     Location {
       X: 850
-      Y: -1500
+      Y: -4200
     }
     Rotation {
     }
@@ -55,6 +85,7 @@ Objects {
   }
   ParentId: 4781671109827199097
   ChildIds: 3231900649251387585
+  ChildIds: 16103553488385988738
   ChildIds: 10322996616966008580
   UnregisteredParameters {
     Overrides {
@@ -63,11 +94,11 @@ Objects {
     }
     Overrides {
       Name: "cs:AutosavePurchases"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:AutosaveCurrency"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:EnableFilterByTag"
@@ -80,6 +111,30 @@ Objects {
     Overrides {
       Name: "cs:EnableStoreAnimations"
       Bool: true
+    }
+    Overrides {
+      Name: "cs:AllowCurrencyPurchaseWithPerks"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:CurrencyPerPerkPurchase"
+      Float: 10
+    }
+    Overrides {
+      Name: "cs:AllowPerkExclusives"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:AllowSubscriptionPurchase"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:SubscriptionName"
+      String: "VIP"
+    }
+    Overrides {
+      Name: "cs:SubscriptionDescription"
+      String: "Benefits: <br> - 1.5 Currency Multiplier <br>  (+0.1 for every VIP in the game) <br> - VIP Room Access <br> - VIP Group Access With 2 or more VIPs <br> - VIP Exclusive Outfit"
     }
     Overrides {
       Name: "cs:StoreContentsFolderName"
@@ -129,6 +184,7 @@ Objects {
     }
   }
   ParentId: 7563443499317668191
+  ChildIds: 1793120644241690030
   ChildIds: 13756277461495626637
   ChildIds: 3381630003204112244
   ChildIds: 3484379741785455993
@@ -172,6 +228,7 @@ Objects {
   ChildIds: 6257470790944615007
   ChildIds: 596589445512400056
   ChildIds: 9481997145200824306
+  ChildIds: 13536235082291328677
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -198,6 +255,1416 @@ Objects {
         }
       }
     }
+  }
+}
+Objects {
+  Id: 13536235082291328677
+  Name: "Perks"
+  Transform {
+    Location {
+      Y: 2095
+      Z: 1335
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8881734497852450539
+  ChildIds: 7573060149449721200
+  ChildIds: 9365664955046223993
+  ChildIds: 12109044768076816330
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 100
+    Height: 100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 13536235082291328677
+    SubobjectId: 1998823383376348048
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 12109044768076816330
+  Name: "CurrencyButton"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13536235082291328677
+  ChildIds: 5180028945743212776
+  ChildIds: 1916941107048538416
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 140
+    Height: 75
+    UIX: -240
+    UIY: 105
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12109044768076816330
+    SubobjectId: 607028684570143487
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 1916941107048538416
+  Name: "CurrencyConversion"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12109044768076816330
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 115
+    Height: 35
+    UIY: 5
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentHeight: true
+    Text {
+      Label: " = $0"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 30
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 1916941107048538416
+    SubobjectId: 13473985686461420549
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 5180028945743212776
+  Name: "CurrencyPurchase"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12109044768076816330
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 150
+    Height: 50
+    UIX: -165
+    UIY: 15
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    PurchaseButton {
+      IsButtonEnabled: true
+      PerkReference {
+        Key: "a2b85443c61e495d9c206da5e48f3399"
+        Type {
+          Value: "mc:enetreferencetype:creatorperk"
+        }
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 5180028945743212776
+    SubobjectId: 16682539947189601757
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 9365664955046223993
+  Name: "SubscriptionWindow"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13536235082291328677
+  ChildIds: 3366730147307909786
+  ChildIds: 13279327202042037580
+  ChildIds: 12474836698140592215
+  ChildIds: 16722918080725358098
+  ChildIds: 3075254986177900310
+  ChildIds: 11564308862730564303
+  ChildIds: 13062091846961563208
+  ChildIds: 12490030874114759339
+  ChildIds: 7647210216306755258
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 750
+    Height: 665
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 9365664955046223993
+    SubobjectId: 2422628699763971404
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 7647210216306755258
+  Name: "SubscriptionDescription"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9365664955046223993
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: -105
+    Height: 420
+    UIX: 5
+    UIY: 80
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    Text {
+      Label: "Benefits:"
+      Color {
+        R: 0.960000038
+        G: 0.858278215
+        A: 1
+      }
+      Size: 30
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7647210216306755258
+    SubobjectId: 14575680828184998799
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 12490030874114759339
+  Name: "SubscriptionWindowName"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9365664955046223993
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 115
+    Height: 65
+    UIY: 5
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    Text {
+      Label: "VIP"
+      Color {
+        R: 0.960000038
+        G: 0.858278215
+        A: 1
+      }
+      Size: 30
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12490030874114759339
+    SubobjectId: 951070649966030750
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 13062091846961563208
+  Name: "SubscriptionLeave"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9365664955046223993
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 50
+    Height: 50
+    UIX: -20
+    UIY: 20
+    RotationAngle: 45
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Button {
+      FontColor {
+        A: 1
+      }
+      FontSize: 20
+      ButtonColor {
+        R: 0.5
+        A: 1
+      }
+      HoveredColor {
+        R: 1
+        G: 0.100000024
+        B: 0.100000024
+        A: 1
+      }
+      PressedColor {
+        R: 0.200000048
+        A: 1
+      }
+      DisabledColor {
+        A: 1
+      }
+      Brush {
+        Id: 17167898803849830920
+      }
+      IsButtonEnabled: true
+      ClickMode {
+        Value: "mc:ebuttonclickmode:default"
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 13062091846961563208
+    SubobjectId: 1522988548585190269
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 11564308862730564303
+  Name: "SubscriptionPurchase"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9365664955046223993
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 225
+    Height: 85
+    UIY: -65
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    PurchaseButton {
+      IsButtonEnabled: true
+      PerkReference {
+        Key: "eef7422ff7244f66bc830b4b9cfc37d3"
+        Type {
+          Value: "mc:enetreferencetype:creatorperk"
+        }
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 11564308862730564303
+    SubobjectId: 7825171930351610
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 3075254986177900310
+  Name: "Frame Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9365664955046223993
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 9809938118791414773
+      }
+      Color {
+        R: 0.39
+        G: 0.154966891
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 3075254986177900310
+    SubobjectId: 10001053647353551395
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 16722918080725358098
+  Name: "Frame Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9365664955046223993
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 18026213939653472356
+      }
+      Color {
+        R: 0.39
+        G: 0.154966891
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 16722918080725358098
+    SubobjectId: 5221039987068527399
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 12474836698140592215
+  Name: "BG Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9365664955046223993
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 18194858692276435470
+      }
+      Color {
+        R: 0.39
+        G: 0.154966891
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12474836698140592215
+    SubobjectId: 970777172273708386
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 13279327202042037580
+  Name: "BG Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9365664955046223993
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 5506084799444686347
+      }
+      Color {
+        R: 0.39
+        G: 0.154966891
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 13279327202042037580
+    SubobjectId: 1742546621702746233
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 3366730147307909786
+  Name: "Frame Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9365664955046223993
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 65
+    Height: 160
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 9809938118791414773
+      }
+      Color {
+        R: 0.39
+        G: 0.154966891
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 3366730147307909786
+    SubobjectId: 10294778408200112047
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 7573060149449721200
+  Name: "SubscriptionButton"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13536235082291328677
+  ChildIds: 13663115693608404939
+  ChildIds: 4646917292030850698
+  ChildIds: 14042796847700367111
+  ChildIds: 1563950075333295412
+  ChildIds: 6924848462886542326
+  ChildIds: 13304617680417823641
+  ChildIds: 12078677319218475057
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 175
+    Height: 75
+    UIX: -20
+    UIY: 265
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7573060149449721200
+    SubobjectId: 14519476853147562053
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 12078677319218475057
+  Name: "SubscriptionName"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7573060149449721200
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 115
+    Height: -15
+    UIY: 5
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Text {
+      Label: "VIP"
+      Color {
+        R: 0.960000038
+        G: 0.858278215
+        A: 1
+      }
+      Size: 30
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12078677319218475057
+    SubobjectId: 560544593533617412
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 13304617680417823641
+  Name: "SubscriptionView"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7573060149449721200
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 100
+    Height: 30
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Button {
+      FontColor {
+        A: 1
+      }
+      FontSize: 20
+      ButtonColor {
+        R: 1
+        G: 1
+        B: 1
+      }
+      HoveredColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 0.333
+      }
+      PressedColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 0.111
+      }
+      DisabledColor {
+        R: 1
+        G: 1
+        B: 1
+      }
+      Brush {
+        Id: 841534158063459245
+      }
+      IsButtonEnabled: true
+      ClickMode {
+        Value: "mc:ebuttonclickmode:default"
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 13304617680417823641
+    SubobjectId: 1784584449957850796
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 6924848462886542326
+  Name: "Frame Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7573060149449721200
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 9809938118791414773
+      }
+      Color {
+        R: 0.39
+        G: 0.154966891
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 6924848462886542326
+    SubobjectId: 13870349822675971779
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 1563950075333295412
+  Name: "Frame Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7573060149449721200
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 18026213939653472356
+      }
+      Color {
+        R: 0.39
+        G: 0.154966891
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 1563950075333295412
+    SubobjectId: 13101856554220275713
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 14042796847700367111
+  Name: "BG Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7573060149449721200
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 18194858692276435470
+      }
+      Color {
+        R: 0.39
+        G: 0.154966891
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14042796847700367111
+    SubobjectId: 7099194758217867826
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 4646917292030850698
+  Name: "BG Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7573060149449721200
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 5506084799444686347
+      }
+      Color {
+        R: 0.39
+        G: 0.154966891
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 4646917292030850698
+    SubobjectId: 16148302943066358719
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 13663115693608404939
+  Name: "Frame Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7573060149449721200
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 65
+    Height: 160
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 9809938118791414773
+      }
+      Color {
+        R: 0.39
+        G: 0.154966891
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 13663115693608404939
+    SubobjectId: 2160111562539135742
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
   }
 }
 Objects {
@@ -904,7 +2371,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 270
+    Width: 90
     Height: 75
     UIX: 485
     UIY: -15
@@ -914,7 +2381,7 @@ Objects {
       }
     }
     Text {
-      Label: "Filter by Tag:"
+      Label: "Tag:"
       Color {
         R: 1
         G: 1
@@ -963,7 +2430,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 290
+    Width: 110
     Height: 80
     UIX: 15
     UIY: 10
@@ -973,7 +2440,7 @@ Objects {
       }
     }
     Text {
-      Label: "Filter by Type:"
+      Label: "Type:"
       Color {
         R: 1
         G: 1
@@ -1200,7 +2667,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "$35000"
+      Label: "35000"
       Color {
         R: 1
         G: 1
@@ -4915,6 +6382,169 @@ Objects {
   }
 }
 Objects {
+  Id: 1793120644241690030
+  Name: "PerkScriptClient"
+  Transform {
+    Location {
+      X: -710
+      Y: 1395
+      Z: -1335
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10322996616966008580
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:StoreRoot"
+      ObjectReference {
+        SelfId: 7563443499317668191
+      }
+    }
+    Overrides {
+      Name: "cs:CurrencyButton"
+      ObjectReference {
+        SelfId: 12109044768076816330
+      }
+    }
+    Overrides {
+      Name: "cs:CurrencyConversion"
+      ObjectReference {
+        SelfId: 1916941107048538416
+      }
+    }
+    Overrides {
+      Name: "cs:CurrencyPurchase"
+      ObjectReference {
+        SelfId: 5180028945743212776
+      }
+    }
+    Overrides {
+      Name: "cs:SubscriptionButton"
+      ObjectReference {
+        SelfId: 7573060149449721200
+      }
+    }
+    Overrides {
+      Name: "cs:SubscriptionName"
+      ObjectReference {
+        SelfId: 12078677319218475057
+      }
+    }
+    Overrides {
+      Name: "cs:SubscriptionView"
+      ObjectReference {
+        SelfId: 13304617680417823641
+      }
+    }
+    Overrides {
+      Name: "cs:SubscriptionWindow"
+      ObjectReference {
+        SelfId: 9365664955046223993
+      }
+    }
+    Overrides {
+      Name: "cs:SubscriptionWindowName"
+      ObjectReference {
+        SelfId: 12490030874114759339
+      }
+    }
+    Overrides {
+      Name: "cs:SubscriptionDescription"
+      ObjectReference {
+        SelfId: 7647210216306755258
+      }
+    }
+    Overrides {
+      Name: "cs:SubscriptionPurchase"
+      ObjectReference {
+        SelfId: 11564308862730564303
+      }
+    }
+    Overrides {
+      Name: "cs:SubscriptionLeave"
+      ObjectReference {
+        SelfId: 13062091846961563208
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 16331102716351555170
+    }
+  }
+  InstanceHistory {
+    SelfId: 1793120644241690030
+    SubobjectId: 13296052070037715099
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 16103553488385988738
+  Name: "CurrencyPerkScript"
+  Transform {
+    Location {
+      X: -710
+      Y: 1395
+      Z: -1335
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7563443499317668191
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:StoreRoot"
+      ObjectReference {
+        SelfId: 7563443499317668191
+      }
+    }
+    Overrides {
+      Name: "cs:CurrencyPerk"
+      NetReference {
+        Key: "a2b85443c61e495d9c206da5e48f3399"
+        Type {
+          Value: "mc:enetreferencetype:creatorperk"
+        }
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8805694120623832865
+    }
+  }
+  InstanceHistory {
+    SelfId: 16103553488385988738
+    SubobjectId: 9159250459687136695
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
   Id: 3231900649251387585
   Name: "StoreScript"
   Transform {
@@ -5057,7 +6687,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 500
+            X: 90
+            Y: 1215
           }
         }
       }
@@ -5099,12 +6730,14 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
+      X: -255
+      Y: -30
     }
     Rotation {
     }
     Scale {
-      X: 50
-      Y: 50
+      X: 33.8
+      Y: 63.7
       Z: 1
     }
   }
@@ -5655,6 +7288,7 @@ Objects {
       Z: 115
     }
     Rotation {
+      Yaw: -115
     }
     Scale {
       X: 1
