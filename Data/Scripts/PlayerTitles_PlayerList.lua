@@ -8,6 +8,15 @@
 --]]
 
 ------------------------------------------------------------------------------------------------------------------------
+--	ADDED FOR SUBSCRIPTION
+------------------------------------------------------------------------------------------------------------------------
+
+local PlayerTitlesRoot = script:GetCustomProperty("METAPlayerTitlesWithSubscriptionMar"):WaitForObject()
+local SubscriptionPerk = PlayerTitlesRoot:GetCustomProperty("VIP")
+local SubscriptionName = PlayerTitlesRoot:GetCustomProperty("SubscriptionName")
+local SubscriptionColor = PlayerTitlesRoot:GetCustomProperty("SubscriptionColor")
+
+------------------------------------------------------------------------------------------------------------------------
 --	EXTERNAL SCRIPTS AND APIS
 ------------------------------------------------------------------------------------------------------------------------
 local PlayerTitles = require(script:GetCustomProperty("PlayerTitles"))
@@ -115,6 +124,11 @@ local function CreatePlayerEntry(player)
 		playerNameText.x = playerNameText.x + 26
 		playerNameText.width = playerNameText.width - 26
 	end
+	local subscriptionMarker = entry:GetCustomProperty("Subscription"):WaitForObject() -- added for subscription
+	subscriptionMarker.fontSize = playerNameText.fontSize + 2
+	subscriptionMarker.text = SubscriptionName .. "   "
+	subscriptionMarker:SetColor(SubscriptionColor)
+	subscriptionMarker.visibility = Visibility.FORCE_OFF
 
 	if(PLAYER_NAME_COLOR_MODE == "TEAM") then
 		playerNameText:SetColor(teamColor)
@@ -125,8 +139,11 @@ local function CreatePlayerEntry(player)
 	else
 		playerNameText:SetColor(PLAYER_NAME_COLOR)
 	end
-
+	
 	UpdatePlayerEntries()
+	
+	player.perkChangedEvent:Connect(UpdateVIP)	
+	UpdateVIP(player, SubscriptionPerk)
 end
 
 --	nil DeletePlayerEntry(Player)
@@ -167,8 +184,9 @@ local function UpdatePlayerEntry(player)
 		playerNameText:SetColor(title.prefixColor or COLOR_DEFAULT)
 	else
 		playerNameText:SetColor(PLAYER_NAME_COLOR)
-	end
+	end	
 end
+	
 
 --	nil UpdateHeader()
 --	Updates the name color and team color for the LocalPlayer on the Header
@@ -263,6 +281,24 @@ function ForceToggle()
 	else
 		ForceOn()
 	end
+end
+
+-- added for showing subscription status of player
+function UpdateVIP(player, perk)
+	if perk ~= SubscriptionPerk then
+		return
+	end
+
+	local entry = Entries:FindChildByName(player.name)
+
+	if SubscriptionPerk ~= nil then
+		local subscriptionMarker = entry:GetCustomProperty("Subscription"):WaitForObject()
+		if player:HasPerk(SubscriptionPerk) then
+			subscriptionMarker.visibility = Visibility.INHERIT
+			print("Showing VIP")
+		end
+	end
+	
 end
 
 --	nil Tick(deltaTime)

@@ -6,6 +6,14 @@
 		Nicholas Foreman (https://www.coregames.com/user/f9df3457225741c89209f6d484d0eba8)
 
 --]]
+------------------------------------------------------------------------------------------------------------------------
+--	ADDED FOR SUBSCRIPTION
+------------------------------------------------------------------------------------------------------------------------
+
+local PlayerTitlesRoot = script:GetCustomProperty("METAPlayerTitlesWithSubscriptionMar"):WaitForObject()
+local SubscriptionPerk = PlayerTitlesRoot:GetCustomProperty("VIP")
+local SubscriptionName = PlayerTitlesRoot:GetCustomProperty("SubscriptionName")
+local SubscriptionColor = PlayerTitlesRoot:GetCustomProperty("SubscriptionColor")
 
 ------------------------------------------------------------------------------------------------------------------------
 --	EXTERNAL SCRIPTS AND APIS
@@ -128,6 +136,12 @@ local function CreatePlayerLeaderstat(player, playerEntry, leaderstatName, leade
 		resource = leaderstatResource,
 		text = leaderstatText
 	}
+	
+	local subscriptionMarker = playerEntry:GetCustomProperty("Subscription"):WaitForObject() -- added for subscription
+	subscriptionMarker.fontSize = leaderstatText.fontSize + 2
+	subscriptionMarker.text = SubscriptionName
+	subscriptionMarker:SetColor(SubscriptionColor)
+	subscriptionMarker.visibility = Visibility.FORCE_OFF
 
 	return true
 end
@@ -208,6 +222,9 @@ local function CreatePlayerEntry(player)
 	end
 
 	UpdatePlayerEntries()
+	
+	player.perkChangedEvent:Connect(UpdateVIP)	
+	UpdateVIP(player, SubscriptionPerk)
 end
 
 --	nil DeletePlayerEntry(Player)
@@ -228,6 +245,9 @@ end
 --	nil UpdatePlayerEntry(Player)
 --	Updates the name color and team color of a player on the Scoreboard
 local function UpdatePlayerEntry(player)
+
+	-- added for showing subscription status of player
+	
 	playerTeams[player] = player.team
 
 	local entry = Entries:FindChildByName(player.name)
@@ -248,7 +268,25 @@ local function UpdatePlayerEntry(player)
 		playerNameText:SetColor(title.prefixColor or Color.New(0.1, 0.1, 0.1))
 	else
 		playerNameText:SetColor(PLAYER_NAME_COLOR)
+	end	
+end
+
+-- added for showing subscription status of player
+function UpdateVIP(player, perk)
+	if perk ~= SubscriptionPerk then
+		return
 	end
+
+	local entry = Entries:FindChildByName(player.name)
+
+	if SubscriptionPerk ~= nil then
+		local subscriptionMarker = entry:GetCustomProperty("Subscription"):WaitForObject()
+		if player:HasPerk(SubscriptionPerk) then
+			subscriptionMarker.visibility = Visibility.INHERIT
+			print("Showing VIP")
+		end
+	end
+	
 end
 
 --	nil UpdateHeader()

@@ -71,8 +71,8 @@ Objects {
     Overrides {
       Name: "cs:SubscriptionColor"
       Color {
-        R: 0.49
-        G: 0.184966907
+        R: 0.960000038
+        G: 0.495894104
         A: 1
       }
     }
@@ -199,7 +199,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ToggleBinding"
-      String: "ability_extra_19"
+      String: "ability_extra_40"
     }
     Overrides {
       Name: "cs:ToggleEvent"
@@ -1223,6 +1223,12 @@ Objects {
         SelfId: 3228962783324642779
       }
     }
+    Overrides {
+      Name: "cs:METAPlayerTitlesWithSubscriptionMar"
+      ObjectReference {
+        SelfId: 17650196336063449941
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1517,6 +1523,12 @@ Objects {
       Name: "cs:HeaderTeamColor"
       ObjectReference {
         SelfId: 13043699554548215777
+      }
+    }
+    Overrides {
+      Name: "cs:METAPlayerTitlesWithSubscriptionMar"
+      ObjectReference {
+        SelfId: 17650196336063449941
       }
     }
   }

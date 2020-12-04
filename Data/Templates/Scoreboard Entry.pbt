@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 7949726774975659069
+        ParentId: 4781671109827199097
         ChildIds: 13566595807761741455
         ChildIds: 9713772700323341360
         UnregisteredParameters {
@@ -53,6 +53,12 @@
             Name: "cs:Information"
             ObjectReference {
               SubObjectId: 13566595807761741455
+            }
+          }
+          Overrides {
+            Name: "cs:Subscription"
+            ObjectReference {
+              SubObjectId: 4991241081670176179
             }
           }
         }
@@ -350,6 +356,7 @@
           }
         }
         ParentId: 13566595807761741455
+        ChildIds: 4991241081670176179
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -389,6 +396,65 @@
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:middleleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 4991241081670176179
+        Name: "Subscription"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13748460554164637697
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 60
+          UIX: -32
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentHeight: true
+          Text {
+            Label: "Text"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            Size: 20
+            Justification {
+              Value: "mc:etextjustify:right"
+            }
+            AutoWrapText: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middleright"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middleright"
               }
             }
           }

@@ -15,11 +15,12 @@
             Z: 1
           }
         }
-        ParentId: 7949726774975659069
+        ParentId: 4781671109827199097
         ChildIds: 12017684423116506160
         ChildIds: 17120607346234526550
         ChildIds: 4740638919572107198
         ChildIds: 16092389880185578890
+        ChildIds: 13342339652429431573
         UnregisteredParameters {
           Overrides {
             Name: "cs:TeamColor"
@@ -51,6 +52,12 @@
               SubObjectId: 16092389880185578890
             }
           }
+          Overrides {
+            Name: "cs:Subscription"
+            ObjectReference {
+              SubObjectId: 13342339652429431573
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -60,6 +67,7 @@
         }
         Control {
           Height: 32
+          UIX: 10
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -313,6 +321,64 @@
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:middleleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 13342339652429431573
+        Name: "Subscription"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11739838323085763985
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 60
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentHeight: true
+          Text {
+            Label: "Text"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            Size: 20
+            Justification {
+              Value: "mc:etextjustify:right"
+            }
+            AutoWrapText: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middleright"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middleright"
               }
             }
           }
