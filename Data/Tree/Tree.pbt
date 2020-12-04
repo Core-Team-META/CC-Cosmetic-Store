@@ -9451,6 +9451,7 @@ Objects {
   Name: "STORE_README"
   Transform {
     Location {
+      Z: 5
     }
     Rotation {
     }
