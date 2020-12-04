@@ -96,7 +96,7 @@ Module.titles = {
 		extraWidth = 4,
 		extraHeight = 4,
 		playerMUIDs = {
-			-- INSERT MUID HERE, SEE 1. ABOVE
+			--"0683255743f5409e9f09991ff0c54fc4"
 		},
 	},
 

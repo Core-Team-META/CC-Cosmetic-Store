@@ -1,18 +1,12 @@
 ﻿local propStoreRoot = script:GetCustomProperty("StoreRoot"):WaitForObject()
 local propCurrencyPerk = script:GetCustomProperty("CurrencyPerk")
+local propSubscriptionPerk = script:GetCustomProperty("SubscriptionPerk")
 
 local propCurrencyPerPerkPurchase = propStoreRoot:GetCustomProperty("CurrencyPerPerkPurchase")
 local propCurrencyResourceName = propStoreRoot:GetCustomProperty("CurrencyResourceName")
-
-
+local propSubscriptionOneTimeReward = propStoreRoot:GetCustomProperty("SubscriptionOneTimeReward")
 
 function UpdatePlayer(player, perkRef)
-
-	if perkRef ~= propCurrencyPerk then
-	
-		return
-		
-	end
 
 	local data = Storage.GetPlayerData(player)
 	
@@ -34,6 +28,12 @@ function UpdatePlayer(player, perkRef)
 		data.COSMETICS.currencyGranted = currencyPurchased
 	end
 	
+	if data.COSMETICS.subscribedBefore == nil and player:HasPerk(propSubscriptionPerk) then
+		data.COSMETICS.subscribedBefore = true
+		currentCurrency = currentCurrency + propSubscriptionOneTimeReward
+		print("Got one time reward from subscription:" .. tostring(currentCurrency))
+	end
+	
 	player:SetResource(propCurrencyResourceName, currentCurrency)
 	Storage.SetPlayerData(player, data)
 end
@@ -42,23 +42,5 @@ function HandlePlayerJoined(player)
 
 	player.perkChangedEvent:Connect(UpdatePlayer)
 	
-	--[[
-	data = Storage.GetPlayerData(player)
-	
-	if (Environment.IsPreview()) then
-		data.COSMETICS.currencyGranted = 0
-	end
-	
-	Storage.SetPlayerData(player, data)
-	]]
 end
---[[
-function Tick(dt)
-
-	players = Game.GetPlayers()
-	for i, player in pairs(players) do
-		UpdatePlayer(player)
-	end
-end
-]]
 Game.playerJoinedEvent:Connect(HandlePlayerJoined)

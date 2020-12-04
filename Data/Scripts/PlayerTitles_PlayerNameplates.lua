@@ -6,6 +6,14 @@
 		Nicholas Foreman (https://www.coregames.com/user/f9df3457225741c89209f6d484d0eba8)
 
 --]]
+------------------------------------------------------------------------------------------------------------------------
+--	ADDED FOR SUBSCRIPTION
+------------------------------------------------------------------------------------------------------------------------
+
+local PlayerTitlesRoot = script:GetCustomProperty("METAPlayerTitlesWithSubscriptionMar"):WaitForObject()
+local SubscriptionPerk = PlayerTitlesRoot:GetCustomProperty("VIP")
+local SubscriptionName = PlayerTitlesRoot:GetCustomProperty("SubscriptionName")
+local SubscriptionColor = PlayerTitlesRoot:GetCustomProperty("SubscriptionColor")
 
 ------------------------------------------------------------------------------------------------------------------------
 --	EXTERNAL SCRIPTS AND APIS
@@ -136,6 +144,15 @@ local function OnPlayerJoined(player)
 	if(not SHOW_HEALTH) then
 		nameplate:SetPosition(Vector3.New(0, 0, -15))
 	end
+	-- added to initialize subscription status marker
+	local subscriptionMarker = nameplate:GetCustomProperty("Subscription"):WaitForObject()
+	subscriptionMarker.visibility = Visibility.FORCE_OFF
+	
+	if prefixText.text == "" or not SHOW_TITLE_PREFIX then
+		subscriptionMarker:SetPosition(Vector3.New(0, 0, 23))
+	end
+	
+	print(player.id)
 
 	PlayerTitles.SetVisibility(LocalPlayer, player, nameplate, SHOW_ON_SELF, SHOW_ON_NEUTRALS, SHOW_ON_FRIENDLIES, SHOW_ON_ENEMIES)
 end
@@ -239,6 +256,15 @@ local function Update(nameplate)
 		UpdatePlayerNameColor(player, nameplate)
 		UpdateHealthColor(player, nameplate)
 		UpdateVisibility(player, nameplate)
+	end
+	
+	if SubscriptionPerk ~= nil then
+		local subscriptionMarker = nameplate:GetCustomProperty("Subscription"):WaitForObject()
+		if player:HasPerk(SubscriptionPerk) and subscriptionMarker.visibility == Visibility.FORCE_OFF then -- added for showing subscription status of player
+			SetText(subscriptionMarker, SubscriptionName)
+			subscriptionMarker:SetColor(SubscriptionColor)
+			subscriptionMarker.visibility = Visibility.INHERIT
+		end
 	end
 end
 
