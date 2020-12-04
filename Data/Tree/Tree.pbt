@@ -14,7 +14,6 @@ Objects {
       Z: 1
     }
   }
-  ChildIds: 6322116964842941439
   ChildIds: 7367735074338159388
   ChildIds: 16813558807825262224
   ChildIds: 14713340454944924967
@@ -26,7 +25,9 @@ Objects {
   ChildIds: 1495587963440536165
   ChildIds: 15156601564198830699
   ChildIds: 7563443499317668191
+  ChildIds: 13390522731244440466
   ChildIds: 4296421264996771920
+  ChildIds: 476196882066254278
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -39,8 +40,34 @@ Objects {
   }
 }
 Objects {
+  Id: 476196882066254278
+  Name: "META Player Titles"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8811065946277757407
+      value {
+        Overrides {
+          Name: "Name"
+          String: "META Player Titles"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11766085156774324641
+    }
+  }
+}
+Objects {
   Id: 4296421264996771920
-  Name: "Perks"
+  Name: "STORE_Perks"
   Transform {
     Scale {
       X: 1
@@ -57,7 +84,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Perks"
+    FilePartitionName: "STORE_Perks"
   }
   InstanceHistory {
     SelfId: 4296421264996771920
@@ -65,6 +92,484 @@ Objects {
     InstanceId: 4234497685331599696
     TemplateId: 12118991292016097700
     WasRoot: true
+  }
+}
+Objects {
+  Id: 13390522731244440466
+  Name: "STORE_SampleUI"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 4679710737921521361
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4679710737921521361
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13390522731244440466
+  ChildIds: 10018678173846923500
+  ChildIds: 16561191798859492544
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 16561191798859492544
+  Name: "UI Container"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4679710737921521361
+  ChildIds: 9803003993024469160
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 9803003993024469160
+  Name: "CurrencyDisplay"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16561191798859492544
+  ChildIds: 10953865982242512799
+  ChildIds: 5425084129935424609
+  ChildIds: 11819556021402725097
+  ChildIds: 17239934290687514526
+  ChildIds: 18390818292161909904
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 250
+    Height: 60
+    UIX: -25
+    UIY: 25
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 18390818292161909904
+  Name: "BG Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9803003993024469160
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 225
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 3959704981855061964
+      }
+      Color {
+        R: 0.39
+        G: 0.951523066
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 17239934290687514526
+  Name: "BG Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9803003993024469160
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 18026213939653472356
+      }
+      Color {
+        R: 0.39
+        G: 0.951523066
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 11819556021402725097
+  Name: "CurrencyUI"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9803003993024469160
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 350
+    Height: 60
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Text {
+      Label: "35000"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 30
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5425084129935424609
+  Name: "BG Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9803003993024469160
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 18194858692276435470
+      }
+      Color {
+        G: 0.117449895
+        B: 0.243000016
+        A: 0.465000033
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 10953865982242512799
+  Name: "BG Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9803003993024469160
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 5506084799444686347
+      }
+      Color {
+        G: 0.117449895
+        B: 0.243000016
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 10018678173846923500
+  Name: "BaseUserInterfaceUpdater"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4679710737921521361
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:CurrencyUI"
+      ObjectReference {
+        SelfId: 11819556021402725097
+      }
+    }
+    Overrides {
+      Name: "cs:STORE_CosmeticStore"
+      ObjectReference {
+        SelfId: 7563443499317668191
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1030309154842821714
+    }
   }
 }
 Objects {
@@ -89,16 +594,22 @@ Objects {
   ChildIds: 10322996616966008580
   UnregisteredParameters {
     Overrides {
+      Name: "cs:BaseUIContainer"
+      ObjectReference {
+        SelfId: 16561191798859492544
+      }
+    }
+    Overrides {
       Name: "cs:CurrencyResourceName"
       String: "money"
     }
     Overrides {
       Name: "cs:AutosavePurchases"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:AutosaveCurrency"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:EnableFilterByTag"
@@ -134,7 +645,7 @@ Objects {
     }
     Overrides {
       Name: "cs:SubscriptionDescription"
-      String: "Benefits: <br> - 1.5 Currency Multiplier <br>  (+0.1 for every VIP in the game) <br> - VIP Room Access <br> - VIP Group Access With 2 or more VIPs <br> - VIP Exclusive Outfit"
+      String: "Benefits: <br> - 250 dollars for first subscription <br> - 1.5 Currency Multiplier <br>  (+0.1 for every VIP in the game) <br> - VIP Room Access <br> - VIP Group Access With 2 or more VIPs <br> - VIP Exclusive Outfit"
     }
     Overrides {
       Name: "cs:StoreContentsFolderName"
@@ -233,7 +744,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     RenderTransformPivot {
@@ -6687,8 +7198,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 90
-            Y: 1215
+            X: -240
+            Y: 1070
           }
         }
       }
@@ -7283,12 +7794,12 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: 772.692139
-      Y: 1611.29517
+      X: 100
+      Y: 1365
       Z: 115
     }
     Rotation {
-      Yaw: -115
+      Yaw: -90
     }
     Scale {
       X: 1
@@ -7356,33 +7867,6 @@ Objects {
           Value: "mc:ecorehorizontalalign:center"
         }
       }
-    }
-  }
-}
-Objects {
-  Id: 6322116964842941439
-  Name: "Setup"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 13504467147769347133
     }
   }
 }

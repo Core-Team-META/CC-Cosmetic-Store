@@ -27,6 +27,8 @@ local propEnableStoreAnimations = propStoreRoot:GetCustomProperty("EnableStoreAn
 local uiBackButton = propPageBackButton:FindChildByType("UIButton")
 local uiNextButton = propPageNextButton:FindChildByType("UIButton")
 
+local propBaseUIContainer = propStoreRoot:GetCustomProperty("BaseUIContainer"):WaitForObject()
+
 local CAMERA_WIDTH = 600
 local BUTTON_SCALE = 0.72
 local ITEMS_PER_ROW = 5
@@ -163,6 +165,10 @@ local defaultColor = Color.FromLinearHex("63F3FFFF")
 --player.movementControlMode = MovementControlMode.NONE
 function ShowStore_ClientHelper()
 
+	if propBaseUIContainer then
+		propBaseUIContainer.isEnabled = false
+	end
+
 	if player ~= Game.GetLocalPlayer() then return end
 	
 	setPreviewMesh:MoveTo(propDefaultZoomMarker:GetPosition(), 0, true)
@@ -187,6 +193,10 @@ function ShowStore_ClientHelper()
 end
 
 function HideStore_ClientHelper()
+
+	if propBaseUIContainer then
+		propBaseUIContainer.isEnabled = true
+	end
 
 	pressedListener:Disconnect()
 	releasedListener:Disconnect()

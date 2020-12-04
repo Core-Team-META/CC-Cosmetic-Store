@@ -20,9 +20,9 @@ end
 function CheckForVIP(trigger, player)
 	if player:IsA("Player") then
 		if not player:HasPerk(propVIP) then
-			player:AddImpulse(-player:GetVelocity() * Vector3.New(1, 1, 0) * player.mass * 10)
+			player:AddImpulse(-player:GetVelocity() * player.mass * 10)
 		elseif CheckVIPCount() < propRequiredNumberOfVIP then
-			player:AddImpulse(-player:GetVelocity() * Vector3.New(1, 1, 0) * player.mass * 10)
+			player:AddImpulse(-player:GetVelocity() * player.mass * 10)
 		end
 		
 	end

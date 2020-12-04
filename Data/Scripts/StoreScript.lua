@@ -55,7 +55,6 @@ end
 local AppliedCosmetics = {}
 
 function ApplyCosmetic(player, templateId, visible)
-	SetPlayerVisibility(player, player.id, visible)
 	
 	if templateId == nil then
 		return
