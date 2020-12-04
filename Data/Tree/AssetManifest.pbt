@@ -39,15 +39,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16927285275278039329
-  Name: "Text 01: K"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_010"
-  }
-}
-Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
@@ -75,24 +66,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15183385565541694115
-  Name: "Cube - Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_hq_test_001"
-  }
-}
-Assets {
-  Id: 14582790818618070150
-  Name: "Asphalt 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_gen_asphault_001"
-  }
-}
-Assets {
   Id: 14509317390755952210
   Name: "Frame Outlined 015"
   PlatformAssetType: 9
@@ -111,30 +84,12 @@ Assets {
   }
 }
 Assets {
-  Id: 14212309121062317517
-  Name: "Text 01: B"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_001"
-  }
-}
-Assets {
   Id: 13784467660178889007
   Name: "Human Gal 1"
   PlatformAssetType: 17
   PrimaryAsset {
     AssetType: "AnimatedMeshAssetRef"
     AssetId: "npc_human_gal_basic_001_ref"
-  }
-}
-Assets {
-  Id: 12928141163739175169
-  Name: "Trim Top 8m 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_trim_top_6m_002"
   }
 }
 Assets {
@@ -153,15 +108,6 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Skylight"
-  }
-}
-Assets {
-  Id: 11317712607918049806
-  Name: "Text 01: N"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_013"
   }
 }
 Assets {
@@ -198,42 +144,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_33"
-  }
-}
-Assets {
-  Id: 7302048936707060706
-  Name: "Text 01: A"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_000"
-  }
-}
-Assets {
-  Id: 6958594896357373015
-  Name: "Terrain - Grass Cliffs"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_terrain_cliff-grass-001_wa"
-  }
-}
-Assets {
-  Id: 6839554851047765471
-  Name: "Pipe - 4-Sided Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_4_sided_thick_001"
-  }
-}
-Assets {
-  Id: 6838476285595577340
-  Name: "Whitebox Window Insert - Blank Wall"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_gen_whitebox_winInsert_001_blank"
   }
 }
 Assets {
@@ -279,15 +189,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundFlat_033"
-  }
-}
-Assets {
-  Id: 4066445981393379399
-  Name: "Metal Gold 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_gold_001"
   }
 }
 Assets {
