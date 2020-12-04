@@ -11,7 +11,7 @@ function UpdatePlayer(player, perkRef)
 	local data = Storage.GetPlayerData(player)
 	
 	if data.COSMETICS == nil then
-		return
+		data.COSMETICS = {}
 	end
 		
 	if data.COSMETICS.currencyGranted == nil then
