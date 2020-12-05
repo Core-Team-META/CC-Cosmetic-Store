@@ -18,16 +18,8 @@ Objects {
   ChildIds: 16813558807825262224
   ChildIds: 14713340454944924967
   ChildIds: 10005074784157121906
-  ChildIds: 14982843161775482339
-  ChildIds: 11356402237129105530
-  ChildIds: 18248970786249341558
-  ChildIds: 6769845893542896755
-  ChildIds: 1495587963440536165
-  ChildIds: 15156601564198830699
-  ChildIds: 7563443499317668191
-  ChildIds: 13390522731244440466
-  ChildIds: 4296421264996771920
-  ChildIds: 17650196336063449941
+  ChildIds: 3541217153010524449
+  ChildIds: 4910077326215855758
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -40,8 +32,8 @@ Objects {
   }
 }
 Objects {
-  Id: 17650196336063449941
-  Name: "META Player Titles With Subscription Marker"
+  Id: 4910077326215855758
+  Name: "Julie Env"
   Transform {
     Scale {
       X: 1
@@ -50,6 +42,81 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4642580085860783718
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Julie Env"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5558468140405960764
+    }
+  }
+}
+Objects {
+  Id: 3541217153010524449
+  Name: "Estlogic"
+  Transform {
+    Location {
+      X: 283.333344
+      Y: -11601.834
+      Z: -450
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 11356402237129105530
+  ChildIds: 18248970786249341558
+  ChildIds: 6769845893542896755
+  ChildIds: 1495587963440536165
+  ChildIds: 15156601564198830699
+  ChildIds: 7563443499317668191
+  ChildIds: 13390522731244440466
+  ChildIds: 4296421264996771920
+  ChildIds: 17650196336063449941
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17650196336063449941
+  Name: "META Player Titles With Subscription Marker"
+  Transform {
+    Location {
+      X: -283.333344
+      Y: 800
+      Z: 450
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3541217153010524449
   ChildIds: 5658044456804404545
   ChildIds: 13435254281540670334
   ChildIds: 4290003451655690948
@@ -1774,13 +1841,20 @@ Objects {
   Id: 4296421264996771920
   Name: "STORE_Perks"
   Transform {
+    Location {
+      X: -283.333344
+      Y: 800
+      Z: 450
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 3541217153010524449
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1804,6 +1878,9 @@ Objects {
   Name: "STORE_SampleUI"
   Transform {
     Location {
+      X: -283.333344
+      Y: 800
+      Z: 450
     }
     Rotation {
     }
@@ -1813,7 +1890,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 3541217153010524449
   ChildIds: 4679710737921521361
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2813,8 +2890,9 @@ Objects {
   Name: "STORE_CosmeticStore"
   Transform {
     Location {
-      X: 850
-      Y: -4200
+      X: 566.666626
+      Y: -3400
+      Z: 450
     }
     Rotation {
     }
@@ -2824,7 +2902,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 3541217153010524449
   ChildIds: 3231900649251387585
   ChildIds: 16103553488385988738
   ChildIds: 10322996616966008580
@@ -9364,8 +9442,9 @@ Objects {
   Name: "STORE_TypeDefinitions"
   Transform {
     Location {
-      X: 850
-      Y: -1500
+      X: 566.666626
+      Y: -700
+      Z: 450
     }
     Rotation {
     }
@@ -9375,7 +9454,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 3541217153010524449
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9393,8 +9472,9 @@ Objects {
   Name: "STORE_TagDefinitions"
   Transform {
     Location {
-      X: 850
-      Y: -1500
+      X: 566.666626
+      Y: -700
+      Z: 450
     }
     Rotation {
     }
@@ -9404,7 +9484,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 3541217153010524449
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9422,7 +9502,8 @@ Objects {
   Name: "STORE_StoreContents"
   Transform {
     Location {
-      Z: -450
+      X: -283.333344
+      Y: 800
     }
     Rotation {
     }
@@ -9432,7 +9513,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 3541217153010524449
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -9455,7 +9536,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 3541217153010524449
   TemplateInstance {
     ParameterOverrideMap {
       key: 735007756134955167
@@ -9467,8 +9548,22 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -240
-            Y: 1070
+            X: -523.333374
+            Y: 1870
+            Z: 450
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
@@ -9483,7 +9578,9 @@ Objects {
   Name: "STORE_README"
   Transform {
     Location {
-      Z: 5
+      X: -283.333344
+      Y: 800
+      Z: 455
     }
     Rotation {
     }
@@ -9493,7 +9590,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 3541217153010524449
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9503,46 +9600,6 @@ Objects {
   Script {
     ScriptAsset {
       Id: 7983566201036266420
-    }
-  }
-}
-Objects {
-  Id: 14982843161775482339
-  Name: "Default Floor"
-  Transform {
-    Location {
-      X: -255
-      Y: -30
-    }
-    Rotation {
-    }
-    Scale {
-      X: 33.8
-      Y: 63.7
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
     }
   }
 }
