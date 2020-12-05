@@ -138,6 +138,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17144001514194218553
+  Name: "Text 01: W"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_022"
+  }
+}
+Assets {
   Id: 16976085640077695470
   Name: "Arch Fancy 3m"
   PlatformAssetType: 1
@@ -255,6 +264,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15580918249943951229
+  Name: "Wood Siding White"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_siding_white_001_uv"
+  }
+}
+Assets {
   Id: 15575092074641359796
   Name: "Frame Outlined 016"
   PlatformAssetType: 9
@@ -288,6 +306,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_013"
+  }
+}
+Assets {
+  Id: 14686523923141187490
+  Name: "Tree Birch 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_birch_001"
   }
 }
 Assets {
@@ -363,6 +390,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14331488779309247797
+  Name: "Cabinet Topper"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_cabinet_topper_001"
+  }
+}
+Assets {
   Id: 14210629989863872294
   Name: "Craftsman Stairs 01 Banister"
   PlatformAssetType: 1
@@ -423,6 +459,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F6_Text_018"
+  }
+}
+Assets {
+  Id: 13856799017769079752
+  Name: "Cube - Arcade 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arcade_cube_003"
   }
 }
 Assets {
@@ -921,6 +966,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5920223932982244516
+  Name: "Cylinder"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_002"
+  }
+}
+Assets {
   Id: 5760915064523727563
   Name: "Sphere"
   PlatformAssetType: 1
@@ -1110,12 +1164,30 @@ Assets {
   }
 }
 Assets {
+  Id: 3574196015064273933
+  Name: "Roof Asphalt 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_roof_asphalt_002_uv"
+  }
+}
+Assets {
   Id: 3456686779070553167
   Name: "Part - Window 02 Mainstreet"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_part_window_002_ref"
+  }
+}
+Assets {
+  Id: 3423992038996368607
+  Name: "Text 01: I"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_008"
   }
 }
 Assets {
@@ -1254,6 +1326,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1797617470665358380
+  Name: "Park Bench"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_park_bench_001"
+  }
+}
+Assets {
   Id: 1749225442048636468
   Name: "VIP"
   PlatformAssetType: 24
@@ -1309,6 +1390,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F6_Text_015"
+  }
+}
+Assets {
+  Id: 639344404000416583
+  Name: "Text 01: V"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_021"
   }
 }
 Assets {
