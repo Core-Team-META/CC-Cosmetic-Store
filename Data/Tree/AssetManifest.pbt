@@ -80,6 +80,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17903669751448619867
+  Name: "Text 01: C"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_002"
+  }
+}
+Assets {
   Id: 17804872816677549927
   Name: "Floor 01 4m x 4m Mainstreet"
   PlatformAssetType: 1
@@ -144,6 +153,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_pillar_001_ref"
+  }
+}
+Assets {
+  Id: 16841541365316387934
+  Name: "Text 01: \'"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_057"
   }
 }
 Assets {
@@ -273,12 +291,30 @@ Assets {
   }
 }
 Assets {
+  Id: 14636872873973941417
+  Name: "Main Street Trim 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_urb_dtn_mst_trim_001_ref"
+  }
+}
+Assets {
   Id: 14570194941963875758
   Name: "Text 05: M"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F6_Text_012"
+  }
+}
+Assets {
+  Id: 14545135634545215532
+  Name: "Text 01: T"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_019"
   }
 }
 Assets {
@@ -423,6 +459,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_010"
+  }
+}
+Assets {
+  Id: 13241175125531652701
+  Name: "Text 01: R"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_017"
   }
 }
 Assets {
@@ -813,12 +858,30 @@ Assets {
   }
 }
 Assets {
+  Id: 7024490427461832088
+  Name: "Modern Weapon - Gas Cylinder 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_modern_gas_cylinder_001"
+  }
+}
+Assets {
   Id: 6712270632153873756
   Name: "Ceramic Terracotta Pots 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_fan_terracotta_pots_001_uv"
+  }
+}
+Assets {
+  Id: 6662310896267058003
+  Name: "Advanced Material"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "universal_material_001"
   }
 }
 Assets {
@@ -882,6 +945,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_019"
+  }
+}
+Assets {
+  Id: 5351428073291024820
+  Name: "Opaque Emissive"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_opaque_emissive"
   }
 }
 Assets {
@@ -1201,6 +1273,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_trim_top_6m_002"
+  }
+}
+Assets {
+  Id: 1574680945468383340
+  Name: "Text 01: S"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_018"
   }
 }
 Assets {
