@@ -107,6 +107,7 @@ end
 
 
 function OnPlayerJoined(player)
+	print(player.name .. " is VIP?: " .. tostring(player:HasPerk(propSubscriptionPerk)))
 	LoadOwnedCosmeticsAndMoney(player)
 end
 
@@ -149,15 +150,21 @@ function LoadOwnedCosmeticsAndMoney(player)
 	if data.COSMETICS ~= nil then
 		if data.COSMETICS.owned ~= nil then
 			if propAutosavePurchases then
-				ApplyCosmetic(player, data.COSMETICS.equipped, data.COSMETICS.visible)
-				playerOwnedSubscriptionCosmetics[player.id] = data.COSMETICS.fromSubscription 
-				
+			
 				if not propKeepSubscriptionCosmetics then
-					CheckSubscription(player)
+					data = CheckSubscription(player)
+				else
+					playerOwnedSubscriptionCosmetics[player.id] = data.COSMETICS.fromSubscription 
 				end
 				
-				for k,v in pairs(data.COSMETICS.owned) do
-					player:SetResource(k, 1)
+				if data.COSMETICS.equipped ~= nil then
+					ApplyCosmetic(player, data.COSMETICS.equipped, data.COSMETICS.visible)
+				end
+				
+				if data.COSMETICS.owned ~= nil then					
+					for k,v in pairs(data.COSMETICS.owned) do
+						player:SetResource(k, 1)
+					end
 				end
 			end
 			if propAutosaveCurrency and data.COSMETICS.currency ~= nil then
@@ -173,7 +180,7 @@ function CheckSubscription(player)
 	if data.COSMETICS.fromSubscription == nil then
 		return
 	end
-	
+
 	if not player:HasPerk(propSubscriptionPerk) then
 		for k,v in pairs(data.COSMETICS.fromSubscription) do
 			if data.COSMETICS.owned[k] ~= nil then
@@ -184,8 +191,9 @@ function CheckSubscription(player)
 			end
 		end
 	end
+	data.COSMETICS.owned = {}
 	
-	Storage.SetPlayerData(player, data)
+	return data
 end
 
 function ResetPurchases(player)

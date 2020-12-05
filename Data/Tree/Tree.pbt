@@ -3054,7 +3054,7 @@ Objects {
     Location {
       X: 566.666626
       Y: -3400
-      Z: 450
+      Z: -2530
     }
     Rotation {
     }
@@ -3117,7 +3117,7 @@ Objects {
     }
     Overrides {
       Name: "cs:KeepSubscriptionCosmetics"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:SubscriptionPerk"
@@ -9710,14 +9710,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -523.333374
-            Y: 1870
+            X: -1008.33337
+            Y: 15526.834
             Z: 450
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: -150
           }
         }
         Overrides {
