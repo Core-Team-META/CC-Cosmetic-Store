@@ -2,7 +2,7 @@
   Id: 14181633572542282020
   Name: "Store Manequin"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 69
   CustomMaterialAsset {
     BaseMaterialId: 4837726766135890159
     ParameterOverrides {

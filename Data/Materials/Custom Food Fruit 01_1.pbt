@@ -2,7 +2,7 @@
   Id: 4283023764229537960
   Name: "Custom Food Fruit 01"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 69
   CustomMaterialAsset {
     BaseMaterialId: 14128145843334160491
     ParameterOverrides {

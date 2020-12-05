@@ -2,7 +2,7 @@
   Id: 13354963142046096139
   Name: "Banana"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 69
   CustomMaterialAsset {
     BaseMaterialId: 4399777814431567982
     ParameterOverrides {

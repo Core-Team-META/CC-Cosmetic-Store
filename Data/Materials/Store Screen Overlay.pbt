@@ -2,7 +2,7 @@
   Id: 16490091655120980800
   Name: "Store Screen Overlay"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 69
   CustomMaterialAsset {
     BaseMaterialId: 1655071426524182364
     ParameterOverrides {

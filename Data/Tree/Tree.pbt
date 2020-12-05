@@ -2841,11 +2841,11 @@ Objects {
     }
     Overrides {
       Name: "cs:AutosavePurchases"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:AutosaveCurrency"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:EnableFilterByTag"
@@ -2876,8 +2876,29 @@ Objects {
       Bool: true
     }
     Overrides {
+      Name: "cs:KeepSubscriptionCosmetics"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:SubscriptionPerk"
+      NetReference {
+        Key: "eef7422ff7244f66bc830b4b9cfc37d3"
+        Type {
+          Value: "mc:enetreferencetype:creatorperk"
+        }
+      }
+    }
+    Overrides {
       Name: "cs:SubscriptionName"
       String: "VIP"
+    }
+    Overrides {
+      Name: "cs:SubscriptionColor"
+      Color {
+        R: 0.960000038
+        G: 0.495894104
+        A: 1
+      }
     }
     Overrides {
       Name: "cs:SubscriptionDescription"
@@ -2902,8 +2923,7 @@ Objects {
     Overrides {
       Name: "cs:FilterSelectedColor"
       Color {
-        R: 0.76
-        G: 0.377483457
+        R: 0.429999948
         A: 2
       }
     }

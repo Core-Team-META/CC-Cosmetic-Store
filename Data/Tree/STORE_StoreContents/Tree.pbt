@@ -189,6 +189,10 @@ Objects {
           Name: "cs:Cost"
           Int: 150
         }
+        Overrides {
+          Name: "cs:Tags"
+          String: "VIP Legendary"
+        }
       }
     }
     ParameterOverrideMap {

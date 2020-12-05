@@ -2,7 +2,7 @@
   Id: 2189750689645014528
   Name: "Material Lettuce"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 69
   CustomMaterialAsset {
     BaseMaterialId: 10037676646852241120
     ParameterOverrides {
