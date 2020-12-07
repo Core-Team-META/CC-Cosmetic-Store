@@ -201,6 +201,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16758780892424488412
+  Name: "Text 01: $"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_040"
+  }
+}
+Assets {
   Id: 16693491951236765902
   Name: "Bricks Concrete Cinder Block 01"
   PlatformAssetType: 2
@@ -300,6 +309,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15249633882133814909
+  Name: "Baseball Bat"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_modern_bat_001"
+  }
+}
+Assets {
   Id: 15048610057996333108
   Name: "Text 01: G"
   PlatformAssetType: 1
@@ -387,6 +405,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameSolid4px_032"
+  }
+}
+Assets {
+  Id: 14476102981171926565
+  Name: "Text 03: B"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_001"
   }
 }
 Assets {
@@ -495,6 +522,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_food_generic_cheese_001_uv"
+  }
+}
+Assets {
+  Id: 13463529736008818383
+  Name: "Hill 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hill_004"
   }
 }
 Assets {
@@ -957,6 +993,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6777447344140592468
+  Name: "Metal Steel Brushed"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_stainless-steel_001_uv"
+  }
+}
+Assets {
   Id: 6712270632153873756
   Name: "Ceramic Terracotta Pots 01"
   PlatformAssetType: 2
@@ -1044,6 +1089,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_002"
+  }
+}
+Assets {
+  Id: 5822913166312317804
+  Name: "Moss 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_moss_001_uv"
   }
 }
 Assets {
@@ -1146,6 +1200,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4774606322871755174
+  Name: "Text 03: O"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_014"
+  }
+}
+Assets {
   Id: 4519163911553529386
   Name: "Railing 01 Post Mainstreet"
   PlatformAssetType: 1
@@ -1197,6 +1260,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_stucco_tint_001_uv"
+  }
+}
+Assets {
+  Id: 4210516917900250470
+  Name: "Cylinder - Rounded"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_rounded_002"
   }
 }
 Assets {
@@ -1314,6 +1386,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_wall_002_window_ref"
+  }
+}
+Assets {
+  Id: 3317796239166417439
+  Name: "Text 03: H"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_007"
   }
 }
 Assets {
@@ -1474,6 +1555,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1392156535297566702
+  Name: "Flower Daisy Patch 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_flower_daisy_001"
+  }
+}
+Assets {
   Id: 1391703649440246415
   Name: "Text 01: H"
   PlatformAssetType: 1
@@ -1525,6 +1615,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_bark_redwood_001_uv"
+  }
+}
+Assets {
+  Id: 135787505950856674
+  Name: "Invisible"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_invisible_001"
   }
 }
 Assets {
