@@ -12,6 +12,8 @@ local propPreviewMesh2 = script:GetCustomProperty("PreviewMesh2"):WaitForObject(
 local propBackButton = script:GetCustomProperty("BackButton"):WaitForObject()
 
 local propCurrencyDisplay = script:GetCustomProperty("CurrencyDisplay"):WaitForObject()
+local propPremiumCurrency = script:GetCustomProperty("PremiumCurrency"):WaitForObject()
+
 local propButtonHolder = script:GetCustomProperty("ButtonHolder"):WaitForObject()
 
 local propPageBackButton = script:GetCustomProperty("PageBackButton"):WaitForObject()
@@ -44,6 +46,7 @@ local controlsLockedSecondary = false
 
 local propStoreRoot = script:GetCustomProperty("StoreRoot"):WaitForObject()
 local propCurrencyResourceName = propStoreRoot:GetCustomProperty("CurrencyResourceName")
+local propPremiumCurrencyName = propStoreRoot:GetCustomProperty("PremiumCurrencyName")
 
 --local propStoreContents = propStoreRoot:GetCustomProperty("StoreContents"):WaitForObject()
 --local propTagDefinitions = propStoreRoot:GetCustomProperty("TagDefinitions"):WaitForObject()
@@ -384,12 +387,16 @@ function UpdateEntryButton(entry, highlighted)
 		entry.BGImage:SetColor(entry.BGImageColor)
 	else -- cases for not owned and not hovered
 		local currency = player:GetResource(propCurrencyResourceName)
-		if entry.PartOfSubscription then
+		if entry.PartOfSubscription and player:HasPerk(propSubscriptionPerk) then
 			entry.label.text = "Claim it!"
+			entry.label:SetColor(Color.WHITE)
+			entry.BGImage:SetColor(Color.FromLinearHex("063300FF")) -- dark green
+			return
 		else
 			entry.label.text = "Buy it!\n[" .. tostring(entry.data.cost) .. "]"
 		end
-		if entry.data.cost <= currency then
+		
+		if entry.data.cost <= currency and not entry.PartOfSubscription then
 			entry.label:SetColor(Color.WHITE)
 			entry.BGImage:SetColor(Color.FromLinearHex("063300FF")) -- dark green
 		else
@@ -444,10 +451,8 @@ function SpawnPreview(templateId, previewMesh, visible)
 	
 	if visible then
 		previewMesh.visibility = Visibility.INHERIT
-		print("visible")
 	else
 		previewMesh.visibility = Visibility.FORCE_OFF
-		print("not visible")
 	end
 	
 	local previewItem = World.SpawnAsset(templateId)
@@ -520,13 +525,14 @@ end
 
 function ApplyCosmetic(entry)
 	if entry == nil then
-		while Events.BroadcastToServer("REQUESTCOSMETIC", nil, true)  == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
+		while Events.BroadcastToServer("REQUESTCOSMETIC", nil, nil, true)  == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 			Task.Wait()
 		end
 		return
 	end
-	print("Requesting", entry.data.templateId)
-	while Events.BroadcastToServer("REQUESTCOSMETIC", entry.data.templateId, entry.data.visible)  == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
+	--print("Requesting" .. entry.data.id)
+	--print(entry.data.visible)
+	while Events.BroadcastToServer("REQUESTCOSMETIC", entry.data.templateId, entry.data.id, entry.data.visible)  == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 		Task.Wait()
 	end
 end
@@ -577,7 +583,7 @@ function ApplyCosmeticHelper(playerId, templateId)
 				equippedZoom = v.zoom
 				currentZoom = equippedZoom
 				SpawnPreview(templateId, setPreviewMesh, v.visible)
-				print("set preview for " .. player.name)
+				--print("set preview for " .. player.name)
 			end
 			return
 		end
@@ -767,8 +773,13 @@ end
 
 function UpdateCurrencyDisplay()
 	local currency = player:GetResource(propCurrencyResourceName)
+
 	propCurrencyDisplay.text = tostring(currency)
-	--print(currency)
+	
+	local premium = player:GetResource(propPremiumCurrencyName)
+	
+	propPremiumCurrency.text = tostring(premium)
+
 end
 
 ----------------------------------------------------------------------------------------------------------------

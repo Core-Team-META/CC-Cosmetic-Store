@@ -2,7 +2,7 @@
   Id: 15630911104160611978
   Name: "Metal Boxing Gloves"
   PlatformAssetType: 13
-  SerializationVersion: 69
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 15234093044632579186
     ParameterOverrides {

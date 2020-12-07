@@ -2,7 +2,7 @@
   Id: 972826911241001064
   Name: "Custom Wallpaper Stars 01"
   PlatformAssetType: 13
-  SerializationVersion: 69
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 2526696746403737095
     ParameterOverrides {

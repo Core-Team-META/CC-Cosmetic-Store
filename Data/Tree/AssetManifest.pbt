@@ -117,7 +117,7 @@ Assets {
 }
 Assets {
   Id: 17697992609923532685
-  Name: "money"
+  Name: "gold"
   PlatformAssetType: 24
   NetReferenceAsset {
     NetReference {

@@ -480,8 +480,8 @@ Objects {
   Name: "STORE_SampleSubscriptionGroup"
   Transform {
     Location {
-      X: 1135
-      Y: 8311.83398
+      X: -720
+      Y: 13410
     }
     Rotation {
       Yaw: -45
@@ -856,8 +856,8 @@ Objects {
   Name: "STORE_SampleSubscription"
   Transform {
     Location {
-      X: -2360
-      Y: 12931.834
+      X: -945
+      Y: 13915
     }
     Rotation {
       Yaw: -90

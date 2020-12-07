@@ -3,6 +3,7 @@
 local propCurrencyButton = script:GetCustomProperty("CurrencyButton"):WaitForObject()
 local propCurrencyConversion = script:GetCustomProperty("CurrencyConversion"):WaitForObject()
 local propCurrencyPurchase = script:GetCustomProperty("CurrencyPurchase"):WaitForObject()
+local propPremiumCurrencyDisplay = script:GetCustomProperty("PremiumCurrencyDisplay"):WaitForObject()
 
 local propSubscriptionButton = script:GetCustomProperty("SubscriptionButton"):WaitForObject()
 local propSubscriptionName = script:GetCustomProperty("SubscriptionName"):WaitForObject()
@@ -42,12 +43,14 @@ function Initialize()
 
 	if propAllowCurrencyPurchaseWithPerks then
 		propCurrencyButton.visibility = Visibility.INHERIT
+		propPremiumCurrencyDisplayvisibility = Visibility.INHERIT
 		
 		propCurrencyPurchase.isInteractable = true
 		
 		propCurrencyConversion.text = " = " .. propCurrencyPerPerkPurchase
 	else
 		propCurrencyButton.visibility = Visibility.FORCE_OFF
+		propPremiumCurrencyDisplayvisibility = Visibility.FORCE_OFF
 		
 		propCurrencyPurchase.isInteractable = false
 	end

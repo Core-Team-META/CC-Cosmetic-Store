@@ -40,5 +40,5 @@
     Version: "1.0.0"
     Description: "FallFunny_Costume 2"
   }
-  SerializationVersion: 69
+  SerializationVersion: 70
 }

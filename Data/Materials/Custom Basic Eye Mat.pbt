@@ -2,7 +2,7 @@
   Id: 1280525341534199913
   Name: "Custom Basic Eye Mat"
   PlatformAssetType: 13
-  SerializationVersion: 69
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 10184847056121543272
     ParameterOverrides {

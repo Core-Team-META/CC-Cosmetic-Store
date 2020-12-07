@@ -2,7 +2,7 @@
   Id: 9955110316320929207
   Name: "Frog Glass"
   PlatformAssetType: 13
-  SerializationVersion: 69
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 16630259605395466384
     ParameterOverrides {

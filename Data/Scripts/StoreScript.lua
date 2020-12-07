@@ -1,5 +1,6 @@
 ﻿local propStoreRoot = script:GetCustomProperty("StoreRoot"):WaitForObject()
 local propCurrencyResourceName = propStoreRoot:GetCustomProperty("CurrencyResourceName")
+local propPremiumCurrencyName = propStoreRoot:GetCustomProperty("PremiumCurrencyName")
 
 local propAutosavePurchases = propStoreRoot:GetCustomProperty("AutosavePurchases")
 local propAutosaveCurrency = propStoreRoot:GetCustomProperty("AutosaveCurrency")
@@ -56,23 +57,26 @@ function HideStore_ServerHelper(player)
 end
 
 local AppliedCosmetics = {}
+local AppliedCosmeticsTemplate = {}
 local AppliedCosmeticsVisibility = {}
 
-function ApplyCosmetic(player, templateId, visible)
-
-	print(templateId)
+function ApplyCosmetic(player, templateId, cosmeticId, visible)
 	
-	if templateId == nil then
+	if templateId == nil or cosmeticId == nil then
 		player:SetVisibility(true, false)
 		return
 	end
-
+	
+	print(visible)
+	
 	player:SetVisibility(visible, false)
 	
 	while Events.BroadcastToAllPlayers("APPLYCOSMETIC", player.id, templateId) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 		Task.Wait()
 	end
-	AppliedCosmetics[player.id] = templateId
+	
+	AppliedCosmetics[player.id] = cosmeticId
+	AppliedCosmeticsTemplate[player.id] = templateId
 	AppliedCosmeticsVisibility[player.id] = visible
 end
 
@@ -81,7 +85,7 @@ function BuyCosmetic(player, templateId, isPartOfSubscription, cost)
 	player:SetResource("COSMETIC_" .. templateId, 1)
 	
 	if isPartOfSubscription then
-		if playerOwnedCosmetics[player.id] == nil then 
+		if playerOwnedSubscriptionCosmetics[player.id] == nil then
 			playerOwnedSubscriptionCosmetics[player.id] = {} 
 		end
 		playerOwnedSubscriptionCosmetics[player.id][templateId] = true
@@ -116,33 +120,30 @@ function OnPlayerLeft(player)
 end
 
 function SaveOwnedCosmeticsAndMoney(player)
-	local saveTable = {}
+	local saveTable = Storage.GetPlayerData(player)
 	if propAutosavePurchases then
+		if not saveTable.COSMETICS then
+			saveTable.COSMETICS = {}
+		end
 		local ownedCosmetics = {}
 		for k,v in pairs(player:GetResources()) do
 			if IsCosmeticName(k) then
 				ownedCosmetics[k] = 1
 			end
 		end
-		saveTable.owned = ownedCosmetics
-		saveTable.equipped = AppliedCosmetics[player.id]
-		saveTable.visible = AppliedCosmeticsVisibility[player.id]
+		saveTable.COSMETICS.owned = ownedCosmetics
+		saveTable.COSMETICS.equipped = AppliedCosmetics[player.id]
+		saveTable.COSMETICS.equippedTemplate = AppliedCosmeticsTemplate[player.id]
+		saveTable.COSMETICS.visible = AppliedCosmeticsVisibility[player.id]
+		saveTable.COSMETICS.fromSubscription = playerOwnedSubscriptionCosmetics[player.id]
 		
-		print(saveTable.equipped)
-		print(saveTable.visible)
-		
-		if player:HasPerk(propSubscriptionPerk) then
-			saveTable.fromSubscription = playerOwnedSubscriptionCosmetics[player.id]
-		else 
-			saveTable.fromSubscription = nil
-		end
 	end
 	if propAutosaveCurrency then
-		saveTable.currency = player:GetResource(propCurrencyResourceName)
+		saveTable.COSMETICS.currency = player:GetResource(propCurrencyResourceName)
+		saveTable.COSMETICS.premiumCurrency = player:GetResource(propPremiumCurrencyName)
 	end
-	local playerData = Storage.GetPlayerData(player)
-	playerData.COSMETICS = saveTable
-	Storage.SetPlayerData(player, playerData)
+
+	Storage.SetPlayerData(player, saveTable)
 end
 
 function LoadOwnedCosmeticsAndMoney(player)
@@ -150,15 +151,20 @@ function LoadOwnedCosmeticsAndMoney(player)
 	if data.COSMETICS ~= nil then
 		if data.COSMETICS.owned ~= nil then
 			if propAutosavePurchases then
-			
 				if not propKeepSubscriptionCosmetics then
-					data = CheckSubscription(player)
+					--print("Checking Subcription...")
+					CheckSubscription(player, data)
+					
+					Task.Wait()
+					
+					data = Storage.GetPlayerData(player)
 				else
 					playerOwnedSubscriptionCosmetics[player.id] = data.COSMETICS.fromSubscription 
 				end
 				
 				if data.COSMETICS.equipped ~= nil then
-					ApplyCosmetic(player, data.COSMETICS.equipped, data.COSMETICS.visible)
+					print(data.COSMETICS.visible)
+					ApplyCosmetic(player, data.COSMETICS.equippedTemplate, data.COSMETICS.equipped, data.COSMETICS.visible)
 				end
 				
 				if data.COSMETICS.owned ~= nil then					
@@ -170,11 +176,15 @@ function LoadOwnedCosmeticsAndMoney(player)
 			if propAutosaveCurrency and data.COSMETICS.currency ~= nil then
 				player:SetResource(propCurrencyResourceName, data.COSMETICS.currency)
 			end
+			if propAutosaveCurrency and data.COSMETICS.premiumCurrency ~= nil then
+				player:SetResource(propPremiumCurrencyName, data.COSMETICS.premiumCurrency)
+			end
 		end
 	end
 end
 
 function CheckSubscription(player)
+
 	local data = Storage.GetPlayerData(player)
 	
 	if data.COSMETICS.fromSubscription == nil then
@@ -183,17 +193,19 @@ function CheckSubscription(player)
 
 	if not player:HasPerk(propSubscriptionPerk) then
 		for k,v in pairs(data.COSMETICS.fromSubscription) do
-			if data.COSMETICS.owned[k] ~= nil then
-				table.remove(data.COSMETICS.owned, k)
+			print(k)
+			print(data.COSMETICS.owned["COSMETIC_"..k])
+			if data.COSMETICS.owned["COSMETIC_" .. k] == 1 then
+				data.COSMETICS.owned["COSMETIC_" .. k] = nil
 			end
-			if data.COSMETICS.equipped[k] ~= nil then
-				table.remove(data.COSMETICS.equipped, k)
+			if data.COSMETICS.equipped == k then
+				data.COSMETICS.equipped = nil
+				data.COSMETICS.visible = nil
 			end
 		end
 	end
-	data.COSMETICS.owned = {}
-	
-	return data
+
+	Storage.SetPlayerData(player, data)
 end
 
 function ResetPurchases(player)
@@ -234,5 +246,4 @@ Events.ConnectForPlayer("BUYCOSMETIC", BuyCosmetic)
 
 Events.Connect("RESET_PURCHASES", ResetPurchases)
 Events.ConnectForPlayer("RESET_PURCHASES", ResetPurchases)
-
 Events.ConnectForPlayer("REQUST_OTHER_COSMETICS", OnRequestCosmetics)

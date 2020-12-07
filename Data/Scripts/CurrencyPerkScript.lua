@@ -2,16 +2,20 @@
 local propCurrencyPerk = script:GetCustomProperty("CurrencyPerk")
 local propSubscriptionPerk = script:GetCustomProperty("SubscriptionPerk")
 
-local propCurrencyPerPerkPurchase = propStoreRoot:GetCustomProperty("CurrencyPerPerkPurchase")
 local propCurrencyResourceName = propStoreRoot:GetCustomProperty("CurrencyResourceName")
+local propCurrencyPerPerkPurchase = propStoreRoot:GetCustomProperty("CurrencyPerPerkPurchase")
+local propPremiumCurrencyName = propStoreRoot:GetCustomProperty("PremiumCurrencyName")
 local propSubscriptionOneTimeReward = propStoreRoot:GetCustomProperty("SubscriptionOneTimeReward")
+local propSubscriptionOneTimePremiumReward = propStoreRoot:GetCustomProperty("SubscriptionOneTimePremiumReward")
 
 function UpdatePlayer(player, perkRef)
 
 	local data = Storage.GetPlayerData(player)
 	
 	if data.COSMETICS == nil then
+	
 		data.COSMETICS = {}
+		
 	end
 		
 	if data.COSMETICS.currencyGranted == nil then
@@ -21,21 +25,30 @@ function UpdatePlayer(player, perkRef)
 	end
 	
 	local currencyPurchased = player:GetPerkCount(propCurrencyPerk)
-	local currentCurrency = player:GetResource(propCurrencyResourceName)
+	local currentPremiumCurrency = player:GetResource(propPremiumCurrencyName)
 		
 	if currencyPurchased > data.COSMETICS.currencyGranted then
-		currentCurrency = currentCurrency + propCurrencyPerPerkPurchase * (currencyPurchased - data.COSMETICS.currencyGranted)
+		currentPremiumCurrency = currentPremiumCurrency + propCurrencyPerPerkPurchase * (currencyPurchased - data.COSMETICS.currencyGranted)
 		data.COSMETICS.currencyGranted = currencyPurchased
 	end
 	
-	if data.COSMETICS.subscribedBefore == nil and player:HasPerk(propSubscriptionPerk) then
+	if not data.COSMETICS.subscribedBefore and player:HasPerk(propSubscriptionPerk) then
 		data.COSMETICS.subscribedBefore = true
+		
+		local currentCurrency = player:GetResource(propCurrencyResourceName)
 		currentCurrency = currentCurrency + propSubscriptionOneTimeReward
-		print("Got one time reward from subscription:" .. tostring(currentCurrency))
+		player:SetResource(propCurrencyResourceName, currentCurrency)
+		
+		currentPremiumCurrency = currentPremiumCurrency + propSubscriptionOneTimePremiumReward
 	end
 	
-	player:SetResource(propCurrencyResourceName, currentCurrency)
-	Storage.SetPlayerData(player, data)
+	player:SetResource(propPremiumCurrencyName, currentPremiumCurrency)
+	
+	local SaveData = Storage.GetPlayerData(player)
+	SaveData = data
+	print(SaveData.COSMETICS.subscribedBefore)
+	
+	Storage.SetPlayerData(player, SaveData)
 end
 
 function HandlePlayerJoined(player)
