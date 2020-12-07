@@ -40,6 +40,27 @@
         Name: "roughness_multiplier"
         Float: 0
       }
+      Overrides {
+        Name: "grout_color"
+        Color {
+          R: 0.679999948
+          G: 0.378278136
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "roughness"
+        Float: 0.02
+      }
+      Overrides {
+        Name: "color_secondary"
+        Color {
+          R: 0.442708
+          G: 0.416947
+          B: 0.405816
+          A: 1
+        }
+      }
     }
     Assets {
       Id: 16436457243626939192

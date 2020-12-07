@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18105158013125412176
+  Name: "Sci-fi Base Door 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_scf_base_door_002_ref"
+  }
+}
+Assets {
   Id: 18033297229984528543
   Name: "Wood Planks Dark"
   PlatformAssetType: 2
@@ -153,15 +162,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Crosshair_021"
-  }
-}
-Assets {
-  Id: 17144001514194218553
-  Name: "Text 01: W"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_022"
   }
 }
 Assets {
@@ -333,6 +333,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_016"
+  }
+}
+Assets {
+  Id: 14775225527493723590
+  Name: "Military Tank Modern Gear 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_mil_tank_mod_gear_002_ref"
   }
 }
 Assets {
@@ -1083,12 +1092,12 @@ Assets {
   }
 }
 Assets {
-  Id: 5920223932982244516
-  Name: "Cylinder"
+  Id: 5943884565525996278
+  Name: "Counter - Cabinet"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_002"
+    AssetId: "sm_urb_counter_cabinet_001"
   }
 }
 Assets {
@@ -1353,21 +1362,21 @@ Assets {
   }
 }
 Assets {
+  Id: 3539178114288347554
+  Name: "Marble Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_marble_tiles_001_uv"
+  }
+}
+Assets {
   Id: 3456686779070553167
   Name: "Part - Window 02 Mainstreet"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_part_window_002_ref"
-  }
-}
-Assets {
-  Id: 3423992038996368607
-  Name: "Text 01: I"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_008"
   }
 }
 Assets {
@@ -1386,15 +1395,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_wall_002_window_ref"
-  }
-}
-Assets {
-  Id: 3317796239166417439
-  Name: "Text 03: H"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F5_Text_007"
   }
 }
 Assets {
@@ -1470,6 +1470,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2311784804042372068
+  Name: "Human Gal 2"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_gal_basic_002_ref"
+  }
+}
+Assets {
   Id: 2046248182654598336
   Name: "Wallpaper Geometric 01"
   PlatformAssetType: 2
@@ -1485,6 +1494,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F6_Text_014"
+  }
+}
+Assets {
+  Id: 1938148825372685458
+  Name: "Truncated Teardrop"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_truncated_teardrop_001"
   }
 }
 Assets {
@@ -1600,15 +1618,6 @@ Assets {
   }
 }
 Assets {
-  Id: 639344404000416583
-  Name: "Text 01: V"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_021"
-  }
-}
-Assets {
   Id: 638509805231330704
   Name: "Bark Redwood 01"
   PlatformAssetType: 2
@@ -1624,6 +1633,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 90264950113277889
+  Name: "Wood Raw"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_raw_001_uv"
   }
 }
 Assets {
