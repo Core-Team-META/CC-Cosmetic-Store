@@ -26,7 +26,11 @@
       }
       Overrides {
         Name: "blend_amount"
-        Float: 0.234599352
+        Float: 0.378424495
+      }
+      Overrides {
+        Name: "invert_height"
+        Bool: true
       }
     }
     Assets {
