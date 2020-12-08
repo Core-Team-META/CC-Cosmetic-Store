@@ -186,6 +186,9 @@ Objects {
   ChildIds: 17570398928641806251
   ChildIds: 7160588660974266015
   ChildIds: 8483301176081573842
+  ChildIds: 16134559814255445811
+  ChildIds: 7247858890776397666
+  ChildIds: 17411348197545149182
   Folder {
     IsGroup: true
   }
@@ -195,6 +198,126 @@ Objects {
     InstanceId: 4910077326215855758
     TemplateId: 5558468140405960764
     WasRoot: true
+  }
+}
+Objects {
+  Id: 17411348197545149182
+  Name: "Craftsman Stairs 01 Pillar"
+  Transform {
+    Location {
+      X: -2336.83057
+      Y: 4729.84717
+      Z: 203.017334
+    }
+    Rotation {
+      Yaw: 31.347084
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1.42739129
+    }
+  }
+  ParentId: 46864981776191286
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8617818292148704575
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7247858890776397666
+  Name: "Craftsman Stairs 01 Pillar"
+  Transform {
+    Location {
+      X: -1022.28796
+      Y: 5458.67432
+      Z: 203.017334
+    }
+    Rotation {
+      Yaw: 31.3470669
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1.42739129
+    }
+  }
+  ParentId: 46864981776191286
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8617818292148704575
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16134559814255445811
+  Name: "Craftsman Couch"
+  Transform {
+    Location {
+      X: 1305.3031
+      Y: 4611.74707
+      Z: 197.841644
+    }
+    Rotation {
+      Yaw: -23.4632053
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 46864981776191286
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2899906453498883904
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -3138,16 +3261,16 @@ Objects {
   Name: "Craftsman Interior Door 01"
   Transform {
     Location {
-      X: 1671.91162
-      Y: 5206.45654
+      X: 1646.63025
+      Y: 5218.3291
       Z: 197.841675
     }
     Rotation {
-      Yaw: -23.2604465
+      Yaw: -23.260437
     }
     Scale {
-      X: 1.01584518
-      Y: 1.01584518
+      X: 1.01584756
+      Y: 0.761362851
       Z: 1.01584518
     }
   }
@@ -55197,13 +55320,14 @@ Objects {
     Location {
       X: -549.999939
       Y: 549.998535
+      Z: -145.959229
     }
     Rotation {
     }
     Scale {
       X: 2.07270169
       Y: 1.98460388
-      Z: 1
+      Z: 1.56407
     }
   }
   ParentId: 2158898019679059710
@@ -55302,7 +55426,7 @@ Objects {
     Overrides {
       Name: "ma:Building_WallInner:id"
       AssetReference {
-        Id: 2758266643690185227
+        Id: 14303248881309562005
       }
     }
     Overrides {
@@ -55327,6 +55451,14 @@ Objects {
       Name: "ma:Shared_TrimInner:id"
       AssetReference {
         Id: 135787505950856674
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:color"
+      Color {
+        G: 0.420529604
+        B: 0.5
+        A: 1
       }
     }
   }
@@ -55379,7 +55511,7 @@ Objects {
     Overrides {
       Name: "ma:Building_WallInner:id"
       AssetReference {
-        Id: 2046248182654598336
+        Id: 14303248881309562005
       }
     }
     Overrides {
@@ -55404,6 +55536,14 @@ Objects {
       Name: "ma:Shared_TrimInner:id"
       AssetReference {
         Id: 135787505950856674
+      }
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:color"
+      Color {
+        G: 0.420529604
+        B: 0.5
+        A: 1
       }
     }
   }
@@ -55490,7 +55630,6 @@ Objects {
   ChildIds: 436248394682589189
   ChildIds: 12248407431811230160
   ChildIds: 10415055358152435840
-  ChildIds: 14007248814484261642
   ChildIds: 4205239520023786078
   ChildIds: 17080233762544525137
   ChildIds: 3012396041722149950
@@ -55545,12 +55684,12 @@ Objects {
     Overrides {
       Name: "ma:Building_WallInner:id"
       AssetReference {
-        Id: 12868964879191068817
+        Id: 14303248881309562005
       }
     }
     Overrides {
       Name: "ma:Building_WallInner:smart"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "ma:Building_WallOuter:smart"
@@ -55559,9 +55698,8 @@ Objects {
     Overrides {
       Name: "ma:Building_WallInner:color"
       Color {
-        R: 0.614583313
-        G: 0.614583313
-        B: 0.614583313
+        G: 0.420529604
+        B: 0.5
         A: 1
       }
     }
@@ -55579,6 +55717,14 @@ Objects {
       AssetReference {
         Id: 135787505950856674
       }
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:utile"
+      Float: 0.769018412
+    }
+    Overrides {
+      Name: "ma:Building_WallInner:vtile"
+      Float: 0.597860754
     }
   }
   Collidable_v2 {
@@ -55952,839 +56098,6 @@ Objects {
   InstanceHistory {
     SelfId: 12248407431811230160
     SubobjectId: 16803118382193373312
-    InstanceId: 4910077326215855758
-    TemplateId: 5558468140405960764
-  }
-}
-Objects {
-  Id: 14007248814484261642
-  Name: "Trim Interior"
-  Transform {
-    Location {
-      X: -799.062439
-      Y: -799.151
-      Z: 600
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16434877423572846655
-  ChildIds: 15152723449710037712
-  ChildIds: 14376241008410678790
-  ChildIds: 7134704424465107580
-  ChildIds: 8512260003739645653
-  ChildIds: 7341241497175872151
-  ChildIds: 3244068358280601414
-  ChildIds: 12756719065524921899
-  ChildIds: 6507767275698187515
-  ChildIds: 9383276012539686624
-  ChildIds: 6388092020157946783
-  ChildIds: 3542802045857438414
-  ChildIds: 1012129031678338200
-  ChildIds: 16696030765908154688
-  ChildIds: 3998063526187089361
-  ChildIds: 10126530922366322481
-  ChildIds: 13856328144788001275
-  ChildIds: 5866443049858621217
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 14007248814484261642
-    SubobjectId: 9414775137250349658
-    InstanceId: 4910077326215855758
-    TemplateId: 5558468140405960764
-  }
-}
-Objects {
-  Id: 5866443049858621217
-  Name: "Craftsman Part - Stair Stringer"
-  Transform {
-    Location {
-      X: 17.81427
-      Y: 759.187256
-      Z: 99.0576782
-    }
-    Rotation {
-      Yaw: -179.999893
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.672593
-    }
-  }
-  ParentId: 14007248814484261642
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14117777319619300768
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 5866443049858621217
-    SubobjectId: 1270705936209921649
-    InstanceId: 4910077326215855758
-    TemplateId: 5558468140405960764
-  }
-}
-Objects {
-  Id: 13856328144788001275
-  Name: "Craftsman Part - Stair Stringer"
-  Transform {
-    Location {
-      X: 17.0011597
-      Y: -771.662109
-      Z: 99.7302246
-    }
-    Rotation {
-      Yaw: -179.999893
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.672593
-    }
-  }
-  ParentId: 14007248814484261642
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14117777319619300768
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 13856328144788001275
-    SubobjectId: 9259453090295318699
-    InstanceId: 4910077326215855758
-    TemplateId: 5558468140405960764
-  }
-}
-Objects {
-  Id: 10126530922366322481
-  Name: "Craftsman Part - Stair Stringer"
-  Transform {
-    Location {
-      X: 774.061279
-      Y: 18.0587769
-      Z: 99.0576782
-    }
-    Rotation {
-      Yaw: -89.9998779
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.672593
-    }
-  }
-  ParentId: 14007248814484261642
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14117777319619300768
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 10126530922366322481
-    SubobjectId: 14718630782960885345
-    InstanceId: 4910077326215855758
-    TemplateId: 5558468140405960764
-  }
-}
-Objects {
-  Id: 3998063526187089361
-  Name: "Craftsman Part - Stair Stringer"
-  Transform {
-    Location {
-      X: -765.13446
-      Y: 16.5178223
-      Z: 99.0576782
-    }
-    Rotation {
-      Yaw: -89.9998779
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.672593
-    }
-  }
-  ParentId: 14007248814484261642
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14117777319619300768
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 3998063526187089361
-    SubobjectId: 8624471448107852929
-    InstanceId: 4910077326215855758
-    TemplateId: 5558468140405960764
-  }
-}
-Objects {
-  Id: 16696030765908154688
-  Name: "Craftsman Part - Stair Stringer"
-  Transform {
-    Location {
-      X: 759.064941
-      Y: -770.209229
-      Z: 99.0576782
-    }
-    Rotation {
-      Yaw: -179.999893
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.672593
-    }
-  }
-  ParentId: 14007248814484261642
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14117777319619300768
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 16696030765908154688
-    SubobjectId: 12069516210821578768
-    InstanceId: 4910077326215855758
-    TemplateId: 5558468140405960764
-  }
-}
-Objects {
-  Id: 1012129031678338200
-  Name: "Craftsman Part - Stair Stringer"
-  Transform {
-    Location {
-      X: -363.293213
-      Y: -770.848267
-      Z: 99.0576782
-    }
-    Rotation {
-      Yaw: -179.999893
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.672593
-    }
-  }
-  ParentId: 14007248814484261642
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14117777319619300768
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 1012129031678338200
-    SubobjectId: 5674662471133576648
-    InstanceId: 4910077326215855758
-    TemplateId: 5558468140405960764
-  }
-}
-Objects {
-  Id: 3542802045857438414
-  Name: "Craftsman Part - Stair Stringer"
-  Transform {
-    Location {
-      X: 388.197083
-      Y: -770.847534
-      Z: 99.0576782
-    }
-    Rotation {
-      Yaw: -179.999893
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.672593
-    }
-  }
-  ParentId: 14007248814484261642
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14117777319619300768
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 3542802045857438414
-    SubobjectId: 8205894142312055710
-    InstanceId: 4910077326215855758
-    TemplateId: 5558468140405960764
-  }
-}
-Objects {
-  Id: 6388092020157946783
-  Name: "Craftsman Part - Stair Stringer"
-  Transform {
-    Location {
-      X: 759.0625
-      Y: 759.153503
-      Z: 99.0576782
-    }
-    Rotation {
-      Yaw: -179.999893
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.672593
-    }
-  }
-  ParentId: 14007248814484261642
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14117777319619300768
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 6388092020157946783
-    SubobjectId: 1759976539503559375
-    InstanceId: 4910077326215855758
-    TemplateId: 5558468140405960764
-  }
-}
-Objects {
-  Id: 9383276012539686624
-  Name: "Craftsman Part - Stair Stringer"
-  Transform {
-    Location {
-      X: -353.532532
-      Y: 759.151306
-      Z: 99.0576782
-    }
-    Rotation {
-      Yaw: -179.999893
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.672593
-    }
-  }
-  ParentId: 14007248814484261642
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14117777319619300768
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 9383276012539686624
-    SubobjectId: 14047757891691820976
-    InstanceId: 4910077326215855758
-    TemplateId: 5558468140405960764
-  }
-}
-Objects {
-  Id: 6507767275698187515
-  Name: "Craftsman Part - Stair Stringer"
-  Transform {
-    Location {
-      X: 387.728546
-      Y: 759.152466
-      Z: 99.0576782
-    }
-    Rotation {
-      Yaw: -179.999893
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.672593
-    }
-  }
-  ParentId: 14007248814484261642
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14117777319619300768
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 6507767275698187515
-    SubobjectId: 1917272669863212459
-    InstanceId: 4910077326215855758
-    TemplateId: 5558468140405960764
-  }
-}
-Objects {
-  Id: 12756719065524921899
-  Name: "Craftsman Part - Stair Stringer"
-  Transform {
-    Location {
-      X: -765.392334
-      Y: 759.151123
-      Z: 99.0576782
-    }
-    Rotation {
-      Yaw: -89.9998779
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.672593
-    }
-  }
-  ParentId: 14007248814484261642
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14117777319619300768
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 12756719065524921899
-    SubobjectId: 17420845748868939643
-    InstanceId: 4910077326215855758
-    TemplateId: 5558468140405960764
-  }
-}
-Objects {
-  Id: 3244068358280601414
-  Name: "Craftsman Part - Stair Stringer"
-  Transform {
-    Location {
-      X: -765.93573
-      Y: -354.377136
-      Z: 99.0576782
-    }
-    Rotation {
-      Yaw: -89.9998779
-    }
-    Scale {
-      X: 1.02687502
-      Y: 1
-      Z: 1.672593
-    }
-  }
-  ParentId: 14007248814484261642
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14117777319619300768
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 3244068358280601414
-    SubobjectId: 7912402838259648022
-    InstanceId: 4910077326215855758
-    TemplateId: 5558468140405960764
-  }
-}
-Objects {
-  Id: 7341241497175872151
-  Name: "Craftsman Part - Stair Stringer"
-  Transform {
-    Location {
-      X: -765.93689
-      Y: 387.962219
-      Z: 99.0576782
-    }
-    Rotation {
-      Yaw: -89.9998779
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.672593
-    }
-  }
-  ParentId: 14007248814484261642
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14117777319619300768
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 7341241497175872151
-    SubobjectId: 2678210975523556295
-    InstanceId: 4910077326215855758
-    TemplateId: 5558468140405960764
-  }
-}
-Objects {
-  Id: 8512260003739645653
-  Name: "Craftsman Part - Stair Stringer"
-  Transform {
-    Location {
-      X: 774.064148
-      Y: -353.424133
-      Z: 99.0576782
-    }
-    Rotation {
-      Yaw: -89.9998779
-    }
-    Scale {
-      X: 1.02026367
-      Y: 1
-      Z: 1.672593
-    }
-  }
-  ParentId: 14007248814484261642
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14117777319619300768
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 8512260003739645653
-    SubobjectId: 3957012407797067653
-    InstanceId: 4910077326215855758
-    TemplateId: 5558468140405960764
-  }
-}
-Objects {
-  Id: 7134704424465107580
-  Name: "Craftsman Part - Stair Stringer"
-  Transform {
-    Location {
-      X: 774.06189
-      Y: 387.815674
-      Z: 99.0576782
-    }
-    Rotation {
-      Yaw: -89.9998779
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.672593
-    }
-  }
-  ParentId: 14007248814484261642
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14117777319619300768
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 7134704424465107580
-    SubobjectId: 2578365011328144172
-    InstanceId: 4910077326215855758
-    TemplateId: 5558468140405960764
-  }
-}
-Objects {
-  Id: 14376241008410678790
-  Name: "Craftsman Part - Stair Stringer"
-  Transform {
-    Location {
-      X: 774.061829
-      Y: 759.153259
-      Z: 99.0576782
-    }
-    Rotation {
-      Yaw: -89.9998779
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.672593
-    }
-  }
-  ParentId: 14007248814484261642
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14117777319619300768
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 14376241008410678790
-    SubobjectId: 9748346546769678166
-    InstanceId: 4910077326215855758
-    TemplateId: 5558468140405960764
-  }
-}
-Objects {
-  Id: 15152723449710037712
-  Name: "Craftsman Part - Inside Upper Trim 01"
-  Transform {
-    Location {
-      X: 399.064941
-      Y: -785.847046
-      Z: 160
-    }
-    Rotation {
-      Yaw: -179.999954
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14007248814484261642
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4811718779179670830
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 15152723449710037712
-    SubobjectId: 10557272329209435008
     InstanceId: 4910077326215855758
     TemplateId: 5558468140405960764
   }
@@ -58908,12 +58221,20 @@ Objects {
     Overrides {
       Name: "ma:Building_Floor:id"
       AssetReference {
-        Id: 14278548608839717864
+        Id: 6047315630637183176
       }
     }
     Overrides {
       Name: "ma:Building_Floor:smart"
-      Bool: true
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Building_Floor:utile"
+      Float: 2.26167917
+    }
+    Overrides {
+      Name: "ma:Building_Floor:vtile"
+      Float: 3.51379585
     }
   }
   Collidable_v2 {

@@ -125,19 +125,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17697992609923532685
-  Name: "gold"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "a2b85443c61e495d9c206da5e48f3399"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
   Id: 17684593812185219291
   Name: "Brick Red Old 02"
   PlatformAssetType: 2
@@ -531,15 +518,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_cabinet_topper_001"
-  }
-}
-Assets {
-  Id: 14278548608839717864
-  Name: "Carpet 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_carpet_002_uv"
   }
 }
 Assets {
@@ -1065,6 +1043,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8617818292148704575
+  Name: "Craftsman Stairs 01 Pillar"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_stairs_001_pillar"
+  }
+}
+Assets {
   Id: 8492432699345975995
   Name: "Craftsman Wall 01 Corner"
   PlatformAssetType: 1
@@ -1206,6 +1193,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_018"
+  }
+}
+Assets {
+  Id: 6047315630637183176
+  Name: "Wood Floor Chevron Light"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_floor_chevron_light_001_uv"
   }
 }
 Assets {
@@ -1728,19 +1724,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_020"
-  }
-}
-Assets {
-  Id: 1749225442048636468
-  Name: "VIP"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "eef7422ff7244f66bc830b4b9cfc37d3"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
   }
 }
 Assets {
