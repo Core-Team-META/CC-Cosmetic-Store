@@ -1,12 +1,1155 @@
 ﻿Name: "STORE_Perks"
 RootId: 4296421264996771920
 Objects {
+  Id: 5595803427365930117
+  Name: "STORE_LootboxExample"
+  Transform {
+    Location {
+      X: -380
+      Y: 400
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4296421264996771920
+  ChildIds: 4066705427424873131
+  ChildIds: 1799235503229948380
+  ChildIds: 11551354572020659945
+  ChildIds: 11269061822651247186
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11269061822651247186
+  Name: "DropTable"
+  Transform {
+    Location {
+      Z: 140
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5595803427365930117
+  ChildIds: 12421400290699316201
+  ChildIds: 5783978569600250705
+  ChildIds: 1024424576905458656
+  ChildIds: 10248276691086032383
+  ChildIds: 10502377126588664828
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10502377126588664828
+  Name: "Legendary"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11269061822651247186
+  ChildIds: 15649972440369526338
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RarityName"
+      String: "Legendary"
+    }
+    Overrides {
+      Name: "cs:DropChance"
+      Float: 0.1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15649972440369526338
+  Name: "STORE_Chef Hat"
+  Transform {
+    Location {
+      Y: -20950
+      Z: -450
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10502377126588664828
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 549989728288704889
+      value {
+        Overrides {
+          Name: "Name"
+          String: "STORE_Chef Hat"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            Y: -22190
+            Z: -450
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3567951263905755893
+      value {
+        Overrides {
+          Name: "cs:ZoomView"
+          String: "Hat"
+        }
+        Overrides {
+          Name: "cs:Cost"
+          Int: 60
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12269522058044990569
+    }
+  }
+}
+Objects {
+  Id: 10248276691086032383
+  Name: "Epic"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11269061822651247186
+  ChildIds: 1383753363605370217
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RarityName"
+      String: "Epic"
+    }
+    Overrides {
+      Name: "cs:DropChance"
+      Float: 0.15
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1383753363605370217
+  Name: "STORE_Cowboy Hat _Hat"
+  Transform {
+    Location {
+      Y: -20950
+      Z: -450
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10248276691086032383
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4034813922096462059
+      value {
+        Overrides {
+          Name: "Name"
+          String: "STORE_Cowboy Hat _Hat"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            Y: -22190
+            Z: -450
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9974761825354809242
+      value {
+        Overrides {
+          Name: "cs:ZoomView"
+          String: "Hat"
+        }
+        Overrides {
+          Name: "cs:Cost"
+          Int: 50
+        }
+        Overrides {
+          Name: "cs:Tags"
+          String: "Epic"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 614220041473863367
+    }
+  }
+}
+Objects {
+  Id: 1024424576905458656
+  Name: "Rare"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11269061822651247186
+  ChildIds: 17378968478982630252
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RarityName"
+      String: "Rare"
+    }
+    Overrides {
+      Name: "cs:DropChance"
+      Float: 0.2
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17378968478982630252
+  Name: "STORE_BirthdayCake Hat"
+  Transform {
+    Location {
+      Y: -20950
+      Z: -450
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1024424576905458656
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 11511463057368722708
+      value {
+        Overrides {
+          Name: "Name"
+          String: "STORE_BirthdayCake Hat"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            Y: -22190
+            Z: -450
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14783338600786857350
+      value {
+        Overrides {
+          Name: "cs:ZoomView"
+          String: "Hat"
+        }
+        Overrides {
+          Name: "cs:Cost"
+          Int: 60
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 18277733649088940997
+    }
+  }
+}
+Objects {
+  Id: 5783978569600250705
+  Name: "Uncommon"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11269061822651247186
+  ChildIds: 10715728359282592629
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RarityName"
+      String: "Common"
+    }
+    Overrides {
+      Name: "cs:DropChance"
+      Float: 0.25
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10715728359282592629
+  Name: "STORE_Hat1"
+  Transform {
+    Location {
+      Y: -20950
+      Z: -450
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5783978569600250705
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1263499199588855168
+      value {
+        Overrides {
+          Name: "Name"
+          String: "STORE_Hat1"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            Y: -22190
+            Z: -450
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11230689304477526829
+      value {
+        Overrides {
+          Name: "cs:ZoomView"
+          String: "Head"
+        }
+        Overrides {
+          Name: "cs:Cost"
+          Int: 35
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6935989339742598427
+    }
+  }
+}
+Objects {
+  Id: 12421400290699316201
+  Name: "Common"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11269061822651247186
+  ChildIds: 1597792151756429423
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RarityName"
+      String: "Common"
+    }
+    Overrides {
+      Name: "cs:DropChance"
+      Float: 0.3
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1597792151756429423
+  Name: "STORE_Costume1"
+  Transform {
+    Location {
+      Y: -20950
+      Z: -450
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12421400290699316201
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2958241985496875048
+      value {
+        Overrides {
+          Name: "cs:PlayerVisibility"
+          Bool: false
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8141680742227768540
+      value {
+        Overrides {
+          Name: "Name"
+          String: "STORE_Costume1"
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13488633352376776946
+    }
+  }
+}
+Objects {
+  Id: 11551354572020659945
+  Name: "Lootbox"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5595803427365930117
+  ChildIds: 16364061791353533025
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16364061791353533025
+  Name: "Container - Rectangle"
+  Transform {
+    Location {
+      Z: 20
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.80000007
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11551354572020659945
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 15224186827264541306
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.159000009
+        G: 0.159000009
+        B: 0.159000009
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15445074537456837842
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1799235503229948380
+  Name: "DropRateSign"
+  Transform {
+    Location {
+      Y: 250
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5595803427365930117
+  ChildIds: 166981070751770444
+  ChildIds: 14395384274632489103
+  ChildIds: 907878281951588768
+  ChildIds: 1227465095761796394
+  ChildIds: 9542997011995524773
+  ChildIds: 17802854552864247499
+  ChildIds: 6681673036597660612
+  ChildIds: 17656368779360086837
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17656368779360086837
+  Name: "World Text"
+  Transform {
+    Location {
+      X: 25
+      Z: 95
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1799235503229948380
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Text {
+    Text: "10% Legendary"
+    Color {
+      R: 0.330000043
+      G: 0.157351092
+      A: 1
+    }
+    HorizontalSize: 1
+    VerticalSize: 1
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:center"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
+    }
+  }
+}
+Objects {
+  Id: 6681673036597660612
+  Name: "World Text"
+  Transform {
+    Location {
+      X: 25
+      Z: 120
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1799235503229948380
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Text {
+    Text: "15% Epic"
+    Color {
+      R: 0.16132471
+      B: 0.210000038
+      A: 1
+    }
+    HorizontalSize: 1
+    VerticalSize: 1
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:center"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
+    }
+  }
+}
+Objects {
+  Id: 17802854552864247499
+  Name: "World Text"
+  Transform {
+    Location {
+      X: 25
+      Z: 145
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1799235503229948380
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Text {
+    Text: "20% Rare"
+    Color {
+      G: 0.00284749246
+      B: 0.429999948
+      A: 1
+    }
+    HorizontalSize: 1
+    VerticalSize: 1
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:center"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
+    }
+  }
+}
+Objects {
+  Id: 9542997011995524773
+  Name: "World Text"
+  Transform {
+    Location {
+      X: 25
+      Z: 170
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1799235503229948380
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Text {
+    Text: "25% Uncommon"
+    Color {
+      R: 0.0105960099
+      G: 0.320000052
+      A: 1
+    }
+    HorizontalSize: 1
+    VerticalSize: 1
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:center"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
+    }
+  }
+}
+Objects {
+  Id: 1227465095761796394
+  Name: "World Text"
+  Transform {
+    Location {
+      X: 25
+      Z: 195
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1799235503229948380
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Text {
+    Text: "30% Common"
+    Color {
+      R: 0.122000009
+      G: 0.122000009
+      B: 0.122000009
+      A: 1
+    }
+    HorizontalSize: 1
+    VerticalSize: 1
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:center"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
+    }
+  }
+}
+Objects {
+  Id: 907878281951588768
+  Name: "World Text"
+  Transform {
+    Location {
+      X: 25
+      Z: 225
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1799235503229948380
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Text {
+    Text: "DROP RATES"
+    Color {
+      R: 1
+      G: 1
+      B: 1
+      A: 1
+    }
+    HorizontalSize: 1
+    VerticalSize: 1
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:center"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
+    }
+  }
+}
+Objects {
+  Id: 14395384274632489103
+  Name: "Cube"
+  Transform {
+    Location {
+      X: 10
+      Z: 160
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.2
+      Y: 2.5
+      Z: 1.80000007
+    }
+  }
+  ParentId: 1799235503229948380
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 15224186827264541306
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.159000009
+        G: 0.159000009
+        B: 0.159000009
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 166981070751770444
+  Name: "Cube"
+  Transform {
+    Location {
+      Z: 35
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.3
+      Y: 0.3
+      Z: 3.19999981
+    }
+  }
+  ParentId: 1799235503229948380
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 15224186827264541306
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.159000009
+        G: 0.159000009
+        B: 0.159000009
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4066705427424873131
+  Name: "Trigger"
+  Transform {
+    Location {
+      Z: 70
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3.20000029
+      Y: 3.20000029
+      Z: 3.20000029
+    }
+  }
+  ParentId: 5595803427365930117
+  ChildIds: 15316851131136835521
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Buy Lootbox (100 dollars per roll)"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 15316851131136835521
+  Name: "LootboxGenerator"
+  Transform {
+    Location {
+      X: 9.53674225e-06
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.31249997
+      Y: 0.31249997
+      Z: 0.31249997
+    }
+  }
+  ParentId: 4066705427424873131
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:DropTable"
+      ObjectReference {
+        SelfId: 11269061822651247186
+      }
+    }
+    Overrides {
+      Name: "cs:CurrencyName"
+      String: "money"
+    }
+    Overrides {
+      Name: "cs:RollCost"
+      Int: 100
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6111990894080668121
+    }
+  }
+}
+Objects {
   Id: 16501819506997473943
   Name: "STORE_SampleMultiplier"
   Transform {
     Location {
       X: 755
-      Y: 14756.834
+      Y: 796.834
     }
     Rotation {
       Yaw: 145
@@ -481,7 +1624,7 @@ Objects {
   Transform {
     Location {
       X: -720
-      Y: 13410
+      Y: -550
     }
     Rotation {
       Yaw: -45
@@ -857,7 +2000,7 @@ Objects {
   Transform {
     Location {
       X: -945
-      Y: 13915
+      Y: -45
     }
     Rotation {
       Yaw: -90

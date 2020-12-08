@@ -78093,7 +78093,7 @@ Objects {
   Transform {
     Location {
       X: -283.333344
-      Y: 800
+      Y: 22990
       Z: 450
     }
     Rotation {
@@ -86504,8 +86504,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1008.33337
-            Y: 15526.834
+            X: -273.333374
+            Y: 22575
             Z: 450
           }
         }
@@ -86740,7 +86740,7 @@ Objects {
   Transform {
     Location {
       X: 100
-      Y: 767.161133
+      Y: 1450
       Z: 115
     }
     Rotation {
