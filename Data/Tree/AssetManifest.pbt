@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18033389860248816225
+  Name: "Craftsman Interior Door 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_door_002"
+  }
+}
+Assets {
   Id: 18033297229984528543
   Name: "Wood Planks Dark"
   PlatformAssetType: 2
@@ -116,16 +125,12 @@ Assets {
   }
 }
 Assets {
-  Id: 17697992609923532685
-  Name: "gold"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "a2b85443c61e495d9c206da5e48f3399"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
+  Id: 17684593812185219291
+  Name: "Brick Red Old 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_red_old_002_uv"
   }
 }
 Assets {
@@ -219,6 +224,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16516719627038597854
+  Name: "Wood Floor Herringbone Light"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_floor_herringbone_light_001_uv"
+  }
+}
+Assets {
   Id: 16502568146720592227
   Name: "Ivy 04"
   PlatformAssetType: 1
@@ -234,6 +248,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_foundation_001_ref"
+  }
+}
+Assets {
+  Id: 16436457243626939192
+  Name: "Marble Tiles Square 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_marble_tiles_002_uv"
   }
 }
 Assets {
@@ -264,12 +287,39 @@ Assets {
   }
 }
 Assets {
+  Id: 15987660078424725024
+  Name: "Curtain Rod 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_curtain_rod_01"
+  }
+}
+Assets {
+  Id: 15851271444363751188
+  Name: "Whitebox Window Insert - Basic Frame"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_winInsert_001_frame"
+  }
+}
+Assets {
   Id: 15775978992330089425
   Name: "BG Flat 015"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_32"
+  }
+}
+Assets {
+  Id: 15726225467571471568
+  Name: "Bottle 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_bottle_002"
   }
 }
 Assets {
@@ -297,6 +347,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_trim_002_corner_ref"
+  }
+}
+Assets {
+  Id: 15385195988779076100
+  Name: "Cylinder - Rounded Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_rounded_003"
   }
 }
 Assets {
@@ -462,6 +521,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14231809728886464860
+  Name: "Wood Raw White"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_raw_white_001_uv"
+  }
+}
+Assets {
   Id: 14131243806865495719
   Name: "Text 05: I"
   PlatformAssetType: 1
@@ -477,6 +545,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_part_stair_001_stringer"
+  }
+}
+Assets {
+  Id: 14031147348977058477
+  Name: "Bricks Wall Flat 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_wall_flat_001"
   }
 }
 Assets {
@@ -588,12 +665,39 @@ Assets {
   }
 }
 Assets {
+  Id: 13175243767499661588
+  Name: "Human Gal 3"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_gal_basic_003_ref"
+  }
+}
+Assets {
+  Id: 12924351653177272696
+  Name: "Fantasy Human Gal 2"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_gal_fantasy_001_ref"
+  }
+}
+Assets {
   Id: 12868964879191068817
   Name: "Wallpaper Imperial Trellis 02"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wallpaper_abstract_004_uv"
+  }
+}
+Assets {
+  Id: 12806424890710406609
+  Name: "Human Guy 1"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_guy_basic_001_ref"
   }
 }
 Assets {
@@ -657,6 +761,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_002"
+  }
+}
+Assets {
+  Id: 11974361906548255645
+  Name: "Glass 01 (no distortion)"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_glass_001"
+  }
+}
+Assets {
+  Id: 11863498865612668742
+  Name: "Gear - generic large five-spoked"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_gear_001_spoke5x"
   }
 }
 Assets {
@@ -774,6 +896,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_gen_asphault_001"
+  }
+}
+Assets {
+  Id: 10397718742664464874
+  Name: "Cube - Rounded"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_rounded_002"
   }
 }
 Assets {
@@ -912,6 +1043,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8617818292148704575
+  Name: "Craftsman Stairs 01 Pillar"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_stairs_001_pillar"
+  }
+}
+Assets {
   Id: 8492432699345975995
   Name: "Craftsman Wall 01 Corner"
   PlatformAssetType: 1
@@ -927,15 +1067,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_020"
-  }
-}
-Assets {
-  Id: 8258126162099426130
-  Name: "Craftsman Dining Table"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_table_dining_001"
   }
 }
 Assets {
@@ -1065,6 +1196,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6047315630637183176
+  Name: "Wood Floor Chevron Light"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_floor_chevron_light_001_uv"
+  }
+}
+Assets {
   Id: 6023105047490337935
   Name: "Main Street Stairs 01 - 1.5m"
   PlatformAssetType: 1
@@ -1116,6 +1256,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_sphere_002"
+  }
+}
+Assets {
+  Id: 5631145109778766864
+  Name: "Curtains Tied"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_curtain_01"
   }
 }
 Assets {
@@ -1272,12 +1421,30 @@ Assets {
   }
 }
 Assets {
+  Id: 4241954836035827010
+  Name: "Candle Holder 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_candle_holder_table_002"
+  }
+}
+Assets {
   Id: 4210516917900250470
   Name: "Cylinder - Rounded"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_rounded_002"
+  }
+}
+Assets {
+  Id: 4193024863549911546
+  Name: "Column Base 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_bottom_002"
   }
 }
 Assets {
@@ -1362,6 +1529,24 @@ Assets {
   }
 }
 Assets {
+  Id: 3677793947984566051
+  Name: "Bush Leafy Tall 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_leafy_bush_001"
+  }
+}
+Assets {
+  Id: 3545990756830023721
+  Name: "O-Bracket"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_o_bracket_001"
+  }
+}
+Assets {
   Id: 3539178114288347554
   Name: "Marble Basic 01"
   PlatformAssetType: 2
@@ -1413,6 +1598,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fern_generic_001"
+  }
+}
+Assets {
+  Id: 2899906453498883904
+  Name: "Craftsman Couch"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_couch_001"
   }
 }
 Assets {
@@ -1533,19 +1727,6 @@ Assets {
   }
 }
 Assets {
-  Id: 1749225442048636468
-  Name: "VIP"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "eef7422ff7244f66bc830b4b9cfc37d3"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
   Id: 1649969124135552589
   Name: "Trim Top 8m 02"
   PlatformAssetType: 1
@@ -1624,6 +1805,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_bark_redwood_001_uv"
+  }
+}
+Assets {
+  Id: 398142537028815788
+  Name: "Cylinder - Chamfered Small Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_hq_003"
+  }
+}
+Assets {
+  Id: 264306642701326985
+  Name: "Bannister Single Post"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bannister_post_001"
   }
 }
 Assets {
