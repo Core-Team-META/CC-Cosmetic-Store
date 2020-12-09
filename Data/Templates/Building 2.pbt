@@ -10177,7 +10177,7 @@
     }
     Assets {
       Id: 6023105047490337935
-      Name: "Stairs 01 1.5m Mainstreet"
+      Name: "Main Street Stairs 01 - 1.5m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10195,7 +10195,7 @@
     }
     Assets {
       Id: 18379924532194096666
-      Name: "Landing 01 4m x 4m Mainstreet"
+      Name: "MAin Street Landing 01 4m x 4m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10204,7 +10204,7 @@
     }
     Assets {
       Id: 4519163911553529386
-      Name: "Railing 01 Post Mainstreet"
+      Name: "Main Street Railing 01 - Post"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10213,7 +10213,7 @@
     }
     Assets {
       Id: 4832010047877921553
-      Name: "Railing 01 2m Mainstreet"
+      Name: "Main Street Railing 01 - 2m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10222,7 +10222,7 @@
     }
     Assets {
       Id: 5945942976172211747
-      Name: "Railing 01 Angled Mainstreet"
+      Name: "Main Street Railing 01 - Angled"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10231,7 +10231,7 @@
     }
     Assets {
       Id: 16442067914662662686
-      Name: "Foundation 01 Mainstreet"
+      Name: "Main Street Foundation 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10249,7 +10249,7 @@
     }
     Assets {
       Id: 10396917736734746205
-      Name: "Foundation 01 Corner Mainstreet"
+      Name: "Main Street Foundation 01 - Corner"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10258,7 +10258,7 @@
     }
     Assets {
       Id: 13751408475123645462
-      Name: "Floor 01 8m x 8m Mainstreet"
+      Name: "Main Street Floor 01 - 8m x 8m"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10267,7 +10267,7 @@
     }
     Assets {
       Id: 18292448005538599011
-      Name: "Part - Pillar Small Mainstreet"
+      Name: "Main Street Pillar 01 - Small"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10276,7 +10276,7 @@
     }
     Assets {
       Id: 14539674100726889376
-      Name: "Wall 01 Window Mainstreet"
+      Name: "Main Street Wall 01 - Window 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10294,7 +10294,7 @@
     }
     Assets {
       Id: 11730308934333352162
-      Name: "Part - Window 01 Mainstreet"
+      Name: "Main Street Window 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10321,7 +10321,7 @@
     }
     Assets {
       Id: 11180821767795272231
-      Name: "Wall 01 Half Window Mainstreet"
+      Name: "Main Street Wall 01 - Half Window 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10330,7 +10330,7 @@
     }
     Assets {
       Id: 5517650793586535881
-      Name: "Wall 01 Doorway Mainstreet"
+      Name: "Main Street Wall 01 - Doorway 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10348,7 +10348,7 @@
     }
     Assets {
       Id: 9246394684961412836
-      Name: "Door Shopfront 01 Mainstreet"
+      Name: "Main Street Door Shopfront 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10357,7 +10357,7 @@
     }
     Assets {
       Id: 16931630116077975102
-      Name: "Pillar 01 Mainstreet"
+      Name: "Main Street Pillar 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10366,7 +10366,7 @@
     }
     Assets {
       Id: 1854918430747165024
-      Name: "Wall 01 Half Mainstreet"
+      Name: "Main Street Wall 01 - Half"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10375,7 +10375,7 @@
     }
     Assets {
       Id: 70674630196833729
-      Name: "Wall 01 Mainstreet"
+      Name: "Main Street Wall 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10384,7 +10384,7 @@
     }
     Assets {
       Id: 1936447668697306516
-      Name: "Trim 02 Mainstreet"
+      Name: "Main Street Trim 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10393,7 +10393,7 @@
     }
     Assets {
       Id: 15402296587404581505
-      Name: "Trim 02 Corner Mainstreet"
+      Name: "Main Street Trim 02 - Corner"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10411,7 +10411,7 @@
     }
     Assets {
       Id: 17775019098342521252
-      Name: "Wall 02 Mainstreet"
+      Name: "Main Street Wall 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10438,7 +10438,7 @@
     }
     Assets {
       Id: 2469313280627759486
-      Name: "Wall 02 Corner Trim Mainstreet"
+      Name: "Main Street Wall 02 - Corner Trim 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10456,7 +10456,7 @@
     }
     Assets {
       Id: 3374330078197732504
-      Name: "Wall 02 Window Mainstreet"
+      Name: "Main Street Wall 02 - Window 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10474,7 +10474,7 @@
     }
     Assets {
       Id: 3456686779070553167
-      Name: "Part - Window 02 Mainstreet"
+      Name: "Main Street Window 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10483,7 +10483,7 @@
     }
     Assets {
       Id: 13219973207836793111
-      Name: "Wall 02 Half Window Mainstreet"
+      Name: "Main Street Wall 02 - Half Window 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10492,7 +10492,7 @@
     }
     Assets {
       Id: 9430017653316231459
-      Name: "Part - Window 03 Mainstreet"
+      Name: "Main Street Window 03"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"

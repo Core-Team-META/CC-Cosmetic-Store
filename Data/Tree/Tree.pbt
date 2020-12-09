@@ -76330,13 +76330,7 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 11356402237129105530
-  ChildIds: 18248970786249341558
-  ChildIds: 6769845893542896755
-  ChildIds: 1495587963440536165
-  ChildIds: 15156601564198830699
-  ChildIds: 13390522731244440466
-  ChildIds: 7563443499317668191
+  ChildIds: 7755841275126465915
   ChildIds: 4296421264996771920
   ChildIds: 17650196336063449941
   Collidable_v2 {
@@ -78089,7 +78083,7 @@ Objects {
 }
 Objects {
   Id: 4296421264996771920
-  Name: "STORE_Perks"
+  Name: "PERKS_Examples"
   Transform {
     Location {
       X: -283.333344
@@ -78124,12 +78118,12 @@ Objects {
   }
 }
 Objects {
-  Id: 7563443499317668191
-  Name: "STORE_CosmeticStore"
+  Id: 7755841275126465915
+  Name: "STORE_Logic"
   Transform {
     Location {
-      X: 566.666626
-      Y: -3400
+      X: 120
+      Y: -345
       Z: -2530
     }
     Rotation {
@@ -78141,6 +78135,40 @@ Objects {
     }
   }
   ParentId: 3541217153010524449
+  ChildIds: 11356402237129105530
+  ChildIds: 18248970786249341558
+  ChildIds: 6769845893542896755
+  ChildIds: 1495587963440536165
+  ChildIds: 15156601564198830699
+  ChildIds: 13390522731244440466
+  ChildIds: 7563443499317668191
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 7563443499317668191
+  Name: "STORE_CosmeticStore"
+  Transform {
+    Location {
+      X: 446.666656
+      Y: -3055
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7755841275126465915
   ChildIds: 3231900649251387585
   ChildIds: 16103553488385988738
   ChildIds: 10322996616966008580
@@ -85040,9 +85068,9 @@ Objects {
   Name: "STORE_SampleUI"
   Transform {
     Location {
-      X: -283.333344
-      Y: 800
-      Z: 450
+      X: -403.333344
+      Y: 1145
+      Z: 2980
     }
     Rotation {
     }
@@ -85052,7 +85080,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3541217153010524449
+  ParentId: 7755841275126465915
   ChildIds: 4679710737921521361
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -86398,9 +86426,9 @@ Objects {
   Name: "STORE_TypeDefinitions"
   Transform {
     Location {
-      X: 566.666626
-      Y: -700
-      Z: 450
+      X: 446.666656
+      Y: -355
+      Z: 2980
     }
     Rotation {
     }
@@ -86410,7 +86438,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3541217153010524449
+  ParentId: 7755841275126465915
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -86428,9 +86456,9 @@ Objects {
   Name: "STORE_TagDefinitions"
   Transform {
     Location {
-      X: 566.666626
-      Y: -700
-      Z: 450
+      X: 446.666656
+      Y: -355
+      Z: 2980
     }
     Rotation {
     }
@@ -86440,7 +86468,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3541217153010524449
+  ParentId: 7755841275126465915
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -86458,8 +86486,9 @@ Objects {
   Name: "STORE_StoreContents"
   Transform {
     Location {
-      X: -283.333344
-      Y: 800
+      X: -403.333344
+      Y: 1145
+      Z: 2530
     }
     Rotation {
     }
@@ -86469,7 +86498,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3541217153010524449
+  ParentId: 7755841275126465915
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -86492,7 +86521,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3541217153010524449
+  ParentId: 7755841275126465915
   TemplateInstance {
     ParameterOverrideMap {
       key: 735007756134955167
@@ -86504,15 +86533,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -273.333374
-            Y: 22575
-            Z: 450
+            X: -393.333374
+            Y: 22920
+            Z: 2980
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -150
+            Yaw: -149.999985
           }
         }
         Overrides {
@@ -86535,9 +86564,9 @@ Objects {
   Name: "STORE_README"
   Transform {
     Location {
-      X: -283.333344
-      Y: 800
-      Z: 455
+      X: -403.333344
+      Y: 1145
+      Z: 2985
     }
     Rotation {
     }
@@ -86547,7 +86576,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3541217153010524449
+  ParentId: 7755841275126465915
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

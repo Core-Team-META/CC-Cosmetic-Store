@@ -52,7 +52,21 @@ function RollLootbox(trigger, player)
 	print("Reward: " .. reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("StoreName"))
 	
 	
-
+	script:SetNetworkedCustomProperty("PrizeRarity", chosenRarity.name)
+	
+	Task.Wait(7)
+	
+	if player:GetResource("COSMETIC_" .. reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID")) == 1 then
+	
+		print("Player already has the prize!")
+		
+	else
+	
+		print("Giving Reward!")
+		
+	end
+	
+	script:SetNetworkedCustomProperty("PrizeRarity", "")
 end
 
 

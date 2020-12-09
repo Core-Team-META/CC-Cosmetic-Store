@@ -605,7 +605,7 @@
     }
     Assets {
       Id: 1938148825372685458
-      Name: "Truncated Teardrop"
+      Name: "Teardrop - Truncated"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -641,7 +641,7 @@
     }
     Assets {
       Id: 7725759676246772278
-      Name: "Scifi Ship Fuselage 02"
+      Name: "Sci-fi Ship Fuselage 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -650,7 +650,7 @@
     }
     Assets {
       Id: 10780552303138620685
-      Name: "Scifi Ship Engine 03"
+      Name: "Sci-fi Ship Engine 03"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"

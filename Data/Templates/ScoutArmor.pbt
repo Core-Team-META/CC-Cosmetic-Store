@@ -10261,7 +10261,7 @@
     }
     Assets {
       Id: 1938148825372685458
-      Name: "Truncated Teardrop"
+      Name: "Teardrop - Truncated"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10297,7 +10297,7 @@
     }
     Assets {
       Id: 7725759676246772278
-      Name: "Scifi Ship Fuselage 02"
+      Name: "Sci-fi Ship Fuselage 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10306,7 +10306,7 @@
     }
     Assets {
       Id: 10780552303138620685
-      Name: "Scifi Ship Engine 03"
+      Name: "Sci-fi Ship Engine 03"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10342,7 +10342,7 @@
     }
     Assets {
       Id: 14148694443006706995
-      Name: "Scifi Cockpit Control Terminal 01"
+      Name: "Sci-fi Cockpit Control Terminal 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10351,7 +10351,7 @@
     }
     Assets {
       Id: 12760477557866178555
-      Name: "Lense"
+      Name: "Lens"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10360,7 +10360,7 @@
     }
     Assets {
       Id: 13486718312674240514
-      Name: "Scifi Ship Nacelle 01"
+      Name: "Sci-fi Ship Nacelle 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10387,7 +10387,7 @@
     }
     Assets {
       Id: 405236317939450680
-      Name: "Scifi Ship Nacelle 04"
+      Name: "Sci-fi Ship Nacelle 04"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10396,7 +10396,7 @@
     }
     Assets {
       Id: 17083166192660092680
-      Name: "Scifi Ship Cockpit Back 02"
+      Name: "Sci-fi Ship Cockpit Back 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10405,7 +10405,7 @@
     }
     Assets {
       Id: 5607204438265284916
-      Name: "Scifi CockPit Control Yoke"
+      Name: "Sci-fi CockPit Control Yoke"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10432,7 +10432,7 @@
     }
     Assets {
       Id: 5717544946372160630
-      Name: "Scifi Cockpit Back 01"
+      Name: "Sci-fi Cockpit Back 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10441,7 +10441,7 @@
     }
     Assets {
       Id: 11024977997119225113
-      Name: "Scifi Cockpit Siderail 01"
+      Name: "Sci-fi Cockpit Siderail 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10468,7 +10468,7 @@
     }
     Assets {
       Id: 3350581364753243189
-      Name: "Scifi Cockpit Console 001"
+      Name: "Sci-fi Cockpit Console 001"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -10477,7 +10477,7 @@
     }
     Assets {
       Id: 3374093864809822223
-      Name: "Scifi Ship Fuselage 01"
+      Name: "Sci-fi Ship Fuselage 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
