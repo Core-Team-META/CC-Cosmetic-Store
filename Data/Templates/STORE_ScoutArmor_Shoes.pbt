@@ -1208,7 +1208,7 @@
     }
     Assets {
       Id: 3350581364753243189
-      Name: "Sci-fi Cockpit Console 001"
+      Name: "Scifi Cockpit Console 001"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -1217,7 +1217,7 @@
     }
     Assets {
       Id: 17083166192660092680
-      Name: "Sci-fi Ship Cockpit Back 02"
+      Name: "Scifi Ship Cockpit Back 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -1226,7 +1226,7 @@
     }
     Assets {
       Id: 3374093864809822223
-      Name: "Sci-fi Ship Fuselage 01"
+      Name: "Scifi Ship Fuselage 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
