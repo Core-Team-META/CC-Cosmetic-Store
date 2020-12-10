@@ -110185,7 +110185,7 @@ Objects {
     Overrides {
       Name: "cs:VIP"
       NetReference {
-        Key: "eef7422ff7244f66bc830b4b9cfc37d3"
+        Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }
@@ -112409,7 +112409,7 @@ Objects {
     PurchaseButton {
       IsButtonEnabled: true
       PerkReference {
-        Key: "a2b85443c61e495d9c206da5e48f3399"
+        Key: "e373410ac53f4c30a2b40e31afbfb466"
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }
@@ -112740,7 +112740,7 @@ Objects {
     PurchaseButton {
       IsButtonEnabled: true
       PerkReference {
-        Key: "eef7422ff7244f66bc830b4b9cfc37d3"
+        Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }
@@ -118810,7 +118810,7 @@ Objects {
     Overrides {
       Name: "cs:CurrencyPerk"
       NetReference {
-        Key: "a2b85443c61e495d9c206da5e48f3399"
+        Key: "e373410ac53f4c30a2b40e31afbfb466"
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }
@@ -118819,7 +118819,7 @@ Objects {
     Overrides {
       Name: "cs:SubscriptionPerk"
       NetReference {
-        Key: "eef7422ff7244f66bc830b4b9cfc37d3"
+        Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }

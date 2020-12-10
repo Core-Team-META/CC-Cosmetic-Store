@@ -483,7 +483,7 @@
     }
     Assets {
       Id: 14697405062555329113
-      Name: "Post Process AO"
+      Name: "Ambient Occlusion Post Process"
       PlatformAssetType: 6
       PrimaryAsset {
         AssetType: "BlueprintAssetRef"

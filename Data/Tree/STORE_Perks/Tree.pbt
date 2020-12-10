@@ -49,9 +49,10 @@ Objects {
   }
   ParentId: 5595803427365930117
   ChildIds: 7974363599121822680
+  ChildIds: 13920662423478820380
   ChildIds: 16512271251343450437
+  ChildIds: 15458909977630169654
   ChildIds: 18047390184561860665
-  ChildIds: 4891459773341906158
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -60,63 +61,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-}
-Objects {
-  Id: 4891459773341906158
-  Name: "Sci-fi Chest Common 01(Prop)"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15121953775591137953
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 9421395008554623825
-      value {
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Roll: -115
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 14045067466769104603
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Sci-fi Chest Common 01(Prop)"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            Z: 65
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -85
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 7864846402634828784
-    }
   }
 }
 Objects {
@@ -132,6 +76,43 @@ Objects {
   ParentId: 15121953775591137953
   TemplateInstance {
     ParameterOverrideMap {
+      key: 1898606966269597054
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.330000043
+            G: 0.157351092
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            R: 0.330000043
+            G: 0.157351092
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail2:color"
+          Color {
+            R: 0.330000043
+            G: 0.157351092
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail3:color"
+          Color {
+            R: 0.330000043
+            G: 0.157351092
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 3007038174989856118
       value {
         Overrides {
@@ -141,22 +122,22 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 335
-            Y: 1270
+            X: 30
+            Y: 1910
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.4
+            Y: 1.4
+            Z: 1.4
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -155
+            Yaw: -140
           }
         }
       }
@@ -180,8 +161,192 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 18128212643210019951
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.330000043
+            G: 0.157351092
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            R: 0.330000043
+            G: 0.157351092
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail2:color"
+          Color {
+            R: 0.330000043
+            G: 0.157351092
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail3:color"
+          Color {
+            R: 0.330000043
+            G: 0.157351092
+            A: 1
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 13131149243676811333
+    }
+  }
+}
+Objects {
+  Id: 15458909977630169654
+  Name: "Sci-fi Chest Rare 01(Prop)"
+  Transform {
+    Location {
+      X: -350
+      Y: 2950
+    }
+    Rotation {
+      Yaw: -135
+    }
+    Scale {
+      X: 1.4
+      Y: 1.4
+      Z: 1.4
+    }
+  }
+  ParentId: 15121953775591137953
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1103142261150511446
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Sci-fi Chest Rare 01(Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 30
+            Y: 1610
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.4
+            Y: 1.4
+            Z: 1.4
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -135
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5949284466000442729
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.161324918
+            B: 0.210000038
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            R: 0.161324918
+            B: 0.210000038
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail2:color"
+          Color {
+            R: 0.161324918
+            B: 0.210000038
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail3:color"
+          Color {
+            R: 0.161324918
+            B: 0.210000038
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12261639175358989948
+      value {
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Roll: -95
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.00000012
+            Y: 1.00000012
+            Z: 1.00000012
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13039530156766507751
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.161324918
+            B: 0.210000038
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            R: 0.161324918
+            B: 0.210000038
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail2:color"
+          Color {
+            R: 0.161324918
+            B: 0.210000038
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail3:color"
+          Color {
+            R: 0.161324918
+            B: 0.210000038
+            A: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6036151430486524688
     }
   }
 }
@@ -207,8 +372,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 150
-            Y: 1060
+            X: 30
+            Y: 1310
           }
         }
         Overrides {
@@ -223,6 +388,43 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -135
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5949284466000442729
+      value {
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            G: 0.00284728734
+            B: 0.429999948
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail2:color"
+          Color {
+            G: 0.00284728734
+            B: 0.429999948
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail3:color"
+          Color {
+            G: 0.00284728734
+            B: 0.429999948
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            G: 0.00284728734
+            B: 0.429999948
+            A: 1
           }
         }
       }
@@ -246,8 +448,170 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 13039530156766507751
+      value {
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            G: 0.00284728734
+            B: 0.429999948
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail2:color"
+          Color {
+            G: 0.00284728734
+            B: 0.429999948
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail3:color"
+          Color {
+            G: 0.00284728734
+            B: 0.429999948
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            G: 0.00284728734
+            B: 0.429999948
+            A: 1
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 6036151430486524688
+    }
+  }
+}
+Objects {
+  Id: 13920662423478820380
+  Name: "Sci-fi Chest Common 01(Prop)"
+  Transform {
+    Location {
+      X: -315
+      Y: 2445
+      Z: 25
+    }
+    Rotation {
+      Yaw: -124.999992
+    }
+    Scale {
+      X: 1.4
+      Y: 1.4
+      Z: 1.4
+    }
+  }
+  ParentId: 15121953775591137953
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7401317315738085114
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.0105960099
+            G: 0.320000052
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            R: 0.0105960099
+            G: 0.320000052
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail2:color"
+          Color {
+            R: 0.0105960099
+            G: 0.320000052
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9421395008554623825
+      value {
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Roll: -85
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14045067466769104603
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Sci-fi Chest Common 01(Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 65
+            Y: 1060
+            Z: 25
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.4
+            Y: 1.4
+            Z: 1.4
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -125
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 18073642315341092683
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.0105960099
+            G: 0.320000052
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            R: 0.0105960099
+            G: 0.320000052
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail2:color"
+          Color {
+            R: 0.0105960099
+            G: 0.320000052
+            A: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7864846402634828784
     }
   }
 }
@@ -263,6 +627,38 @@ Objects {
   }
   ParentId: 15121953775591137953
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 7401317315738085114
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.122000009
+            G: 0.122000009
+            B: 0.122000009
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            R: 0.122000009
+            G: 0.122000009
+            B: 0.122000009
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail2:color"
+          Color {
+            R: 0.122000009
+            G: 0.122000009
+            B: 0.122000009
+            A: 1
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 9421395008554623825
       value {
@@ -301,6 +697,38 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -125
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 18073642315341092683
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:color"
+          Color {
+            R: 0.122000009
+            G: 0.122000009
+            B: 0.122000009
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            R: 0.122000009
+            G: 0.122000009
+            B: 0.122000009
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail2:color"
+          Color {
+            R: 0.122000009
+            G: 0.122000009
+            B: 0.122000009
+            A: 1
           }
         }
       }
@@ -456,6 +884,7 @@ Objects {
     Location {
     }
     Rotation {
+      Yaw: -175
     }
     Scale {
       X: 1
@@ -2484,8 +2913,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 390
-            Y: 1220
+            X: 30
+            Y: 1910
           }
         }
       }
@@ -2589,6 +3018,13 @@ Objects {
             Z: 1
           }
         }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 30
+            Y: 1610
+          }
+        }
       }
     }
     ParameterOverrideMap {
@@ -2684,8 +3120,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 145
-            Y: 1075
+            X: 30
+            Y: 1310
             Z: -35
           }
         }
@@ -2801,6 +3237,13 @@ Objects {
             X: 1
             Y: 1
             Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 80
+            Y: 1060
           }
         }
       }
@@ -3112,7 +3555,7 @@ Objects {
   Text {
     Text: "15% Epic"
     Color {
-      R: 0.161324814
+      R: 0.161324918
       B: 0.210000038
       A: 1
     }
@@ -3152,7 +3595,7 @@ Objects {
   Text {
     Text: "20% Rare"
     Color {
-      G: 0.00284738978
+      G: 0.00284728734
       B: 0.429999948
       A: 1
     }
@@ -3514,7 +3957,7 @@ Objects {
     Overrides {
       Name: "cs:VIP"
       NetReference {
-        Key: "eef7422ff7244f66bc830b4b9cfc37d3"
+        Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }
@@ -4307,7 +4750,7 @@ Objects {
     Overrides {
       Name: "cs:VIP"
       NetReference {
-        Key: "eef7422ff7244f66bc830b4b9cfc37d3"
+        Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }
@@ -4635,7 +5078,7 @@ Objects {
     Overrides {
       Name: "cs:VIP"
       NetReference {
-        Key: "eef7422ff7244f66bc830b4b9cfc37d3"
+        Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }
