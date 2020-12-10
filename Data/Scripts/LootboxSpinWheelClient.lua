@@ -27,35 +27,34 @@ function SpinTheWheel(generator, propertyName)
 	
 	Task.Wait(4)
 	
-	local desiredRotation = selectedSection:GetRotation().z
-	
+	local desiredRotation = -selectedSection:GetRotation().z
+
 	if desiredRotation <= 0 then
 	
 		desiredRotation = 360 + desiredRotation
 		
 	end
-	
+
 	local currentRotation = propWheel:GetRotation().z
-	
+
 	if currentRotation <= 0 then
 	
 		currentRotation = 360 + currentRotation
 		
 	end
-	
+
 	print("Desired: " .. tostring(desiredRotation))
 	
-	print(currentRotation - desiredRotation)
+	print(currentRotation/desiredRotation)
 	
-	while currentRotation - desiredRotation > -180 and currentRotation - desiredRotation < 180  do
+	while currentRotation/desiredRotation < 0.55 or currentRotation/desiredRotation > 0.6 do
 	
 		Task.Wait()
 		
-		print(currentRotation - desiredRotation)
+		print(currentRotation/desiredRotation)
 		
 		currentRotation = propWheel:GetRotation().z
 		
-
 		if currentRotation <= 0 then
 		
 			currentRotation = 360 + currentRotation
@@ -64,11 +63,9 @@ function SpinTheWheel(generator, propertyName)
 
 	end
 	
-	print(currentRotation - desiredRotation)
+	print(currentRotation/desiredRotation)
 	
-	propWheel:RotateTo(Rotation.New(0, 0, 360 - selectedSection:GetRotation().z), 360 / (math.abs(selectedSection:GetWorldRotation().z + 1)) * 0.3, true)
-	
-
+	propWheel:RotateTo(Rotation.New(0, 0, 360 - selectedSection:GetRotation().z), currentRotation/desiredRotation * 2, true)		
 
 end
 

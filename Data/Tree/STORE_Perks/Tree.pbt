@@ -884,7 +884,6 @@ Objects {
     Location {
     }
     Rotation {
-      Yaw: -175
     }
     Scale {
       X: 1
