@@ -4716,7 +4716,7 @@
     }
     Assets {
       Id: 9249305860775483153
-      Name: "Pyramid = 4-Sided Truncated"
+      Name: "Pyramid - 4-Sided Truncated"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"

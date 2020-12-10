@@ -133301,7 +133301,7 @@ Objects {
     Overrides {
       Name: "cs:SubscriptionPerk"
       NetReference {
-        Key: "eef7422ff7244f66bc830b4b9cfc37d3"
+        Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }
@@ -140324,7 +140324,7 @@ Objects {
       }
       Color {
         R: 0.580000043
-        G: 0.253509969
+        G: 0.253509879
         A: 1
       }
       TeamSettings {

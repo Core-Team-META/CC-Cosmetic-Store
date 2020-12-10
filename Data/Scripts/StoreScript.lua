@@ -242,6 +242,7 @@ Events.Connect("SHOWSTORE_SERVER", ShowStore_ServerHelper)
 Events.Connect("HIDESTORE_SERVER", HideStore_ServerHelper)
 Events.ConnectForPlayer("REQUESTCOSMETIC", ApplyCosmetic)
 Events.ConnectForPlayer("BUYCOSMETIC", BuyCosmetic)
+Events.Connect("BUYCOSMETIC", BuyCosmetic)
 --Events.ConnectForPlayer("SETVISIBILITY", SetPlayerVisibility)
 
 Events.Connect("RESET_PURCHASES", ResetPurchases)

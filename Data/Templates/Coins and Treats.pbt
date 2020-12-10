@@ -15775,7 +15775,7 @@
     }
     Assets {
       Id: 16493463228991118792
-      Name: "Spray Pain Aersol Can Lid Pop 01 SFX"
+      Name: "Spray Paint Aerosol Can Lid Pop 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
@@ -15820,7 +15820,7 @@
     }
     Assets {
       Id: 18120287186582886745
-      Name: "Hemisphere"
+      Name: "Sphere - Half"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"

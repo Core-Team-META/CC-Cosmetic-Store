@@ -4,7 +4,7 @@ local propRollCost = script:GetCustomProperty("RollCost")
 
 local table = {}
 
-function RollLootbox(trigger, player)
+function RollLootbox(player)
 
 	print("Rolling...")
 	
@@ -12,6 +12,11 @@ function RollLootbox(trigger, player)
 	
 	if currency < propRollCost then
 		print("Not enough currency.")
+
+		while Events.BroadcastToPlayer(player, "WheelExit") == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT do
+			Task.Wait()
+		end
+		
 		return
 	end
 	
@@ -54,7 +59,7 @@ function RollLootbox(trigger, player)
 	
 	script:SetNetworkedCustomProperty("PrizeRarity", chosenRarity.name)
 	
-	Task.Wait(7)
+	Task.Wait(8)
 	
 	if player:GetResource("COSMETIC_" .. reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID")) == 1 then
 	
@@ -63,6 +68,13 @@ function RollLootbox(trigger, player)
 	else
 	
 		print("Giving Reward!")
+		
+		while Events.Broadcast("BUYCOSMETIC", player, reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID"), false, 0) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
+			Task.Wait()
+		end
+		
+		player:SetResource(propCurrencyName, currency - propRollCost)
+		
 		
 	end
 	
@@ -82,6 +94,6 @@ function Initialize()
 
 end
 
-script.parent.interactedEvent:Connect(RollLootbox)
+Events.ConnectForPlayer("SpinTheWheel", RollLootbox)
 
 Initialize()
