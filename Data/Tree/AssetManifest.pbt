@@ -1331,6 +1331,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9727296549808613137
+  Name: "Text 03: V"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_021"
+  }
+}
+Assets {
   Id: 9700178794441537793
   Name: "Text 01: M"
   PlatformAssetType: 1
