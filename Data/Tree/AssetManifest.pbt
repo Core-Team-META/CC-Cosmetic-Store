@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18297409250839599089
+  Name: "Basic Material"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_pbr_material_001"
+  }
+}
+Assets {
   Id: 18292448005538599011
   Name: "Main Street Pillar 01 - Small"
   PlatformAssetType: 1
@@ -116,6 +125,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17985883485331085714
+  Name: "Horn"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_horn_001"
+  }
+}
+Assets {
   Id: 17943173908974613987
   Name: "Text 03: R"
   PlatformAssetType: 1
@@ -197,6 +215,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17563255658047034781
+  Name: "Text 01: ~"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_036"
+  }
+}
+Assets {
   Id: 17485881147669499682
   Name: "Cube - Rounded Bottom-Aligned"
   PlatformAssetType: 1
@@ -251,6 +278,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17164668289428711060
+  Name: "Cylinder"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_002"
+  }
+}
+Assets {
   Id: 17094951970768599212
   Name: "Wood Floor Weave Light"
   PlatformAssetType: 2
@@ -302,6 +338,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_heart_polished_001"
+  }
+}
+Assets {
+  Id: 16808072507652565232
+  Name: "Sphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_002"
   }
 }
 Assets {
@@ -572,6 +617,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_container_triangular_Thin_ref"
+  }
+}
+Assets {
+  Id: 14871311605744414142
+  Name: "Ellipsoid - Truncated"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ellipsoid_truncated_001"
+  }
+}
+Assets {
+  Id: 14836776585200891717
+  Name: "Decal Stains Round 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stain_round_001"
   }
 }
 Assets {
@@ -899,12 +962,30 @@ Assets {
   }
 }
 Assets {
+  Id: 13703744877030710122
+  Name: "Horn"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_horn_001"
+  }
+}
+Assets {
   Id: 13614546110894110611
   Name: "Food Cheese 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_food_generic_cheese_001_uv"
+  }
+}
+Assets {
+  Id: 13560635218549589426
+  Name: "Sand 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_sand_001_uv"
   }
 }
 Assets {
@@ -989,6 +1070,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12979675522461502313
+  Name: "Pyramid - 3-Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pyramid_threesided_001"
+  }
+}
+Assets {
   Id: 12924351653177272696
   Name: "Fantasy Human Gal 2"
   PlatformAssetType: 17
@@ -1013,6 +1103,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wallpaper_abstract_004_uv"
+  }
+}
+Assets {
+  Id: 12782940202352343062
+  Name: "Wallpaper Chevron 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_wallpaper_004"
   }
 }
 Assets {
@@ -1124,12 +1223,30 @@ Assets {
   }
 }
 Assets {
+  Id: 11905758265264120802
+  Name: "Food Fruit 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_food_generic_apple_001_uv"
+  }
+}
+Assets {
   Id: 11863498865612668742
   Name: "Gear - generic large five-spoked"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_gen_gear_001_spoke5x"
+  }
+}
+Assets {
+  Id: 11736871599618441439
+  Name: "Food Watermelon 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_food_generic_watermelon_001_uv1"
   }
 }
 Assets {
@@ -1148,6 +1265,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_diamond_hq_001"
+  }
+}
+Assets {
+  Id: 11478803472724618344
+  Name: "Arch Fancy 3m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arch_fancy_3m_001"
   }
 }
 Assets {
@@ -1205,6 +1331,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11001967573859652020
+  Name: "Cone - Truncated Hollow Wide"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_truncated_hollow_004"
+  }
+}
+Assets {
   Id: 10903443342621460853
   Name: "Text 04: S"
   PlatformAssetType: 1
@@ -1241,6 +1376,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10766975867019021707
+  Name: "Glass 01 (no distortion)"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_glass_001"
+  }
+}
+Assets {
   Id: 10752071864741613435
   Name: "Cube - Polished"
   PlatformAssetType: 1
@@ -1256,6 +1400,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_oak_001"
+  }
+}
+Assets {
+  Id: 10665232564313502781
+  Name: "Fabric Burlap New 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_fabric_burlap_002_uv"
+  }
+}
+Assets {
+  Id: 10646437916172963454
+  Name: "Ellipsoid - Truncated"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ellipsoid_truncated_001"
   }
 }
 Assets {
@@ -1328,6 +1490,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameSolid4px_019"
+  }
+}
+Assets {
+  Id: 9728495127137008342
+  Name: "Bark Redwood 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bark_redwood_001_uv"
   }
 }
 Assets {
@@ -1457,6 +1628,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8892042042451259458
+  Name: "Wicker Basket 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_wicker_002_uv"
+  }
+}
+Assets {
   Id: 8856941240534218807
   Name: "Text 04: {"
   PlatformAssetType: 1
@@ -1472,6 +1652,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_part_intTrim_001_low"
+  }
+}
+Assets {
+  Id: 8695582295120411573
+  Name: "Text 01: )"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_046"
   }
 }
 Assets {
@@ -1502,6 +1691,24 @@ Assets {
   }
 }
 Assets {
+  Id: 8484616519758689005
+  Name: "Bark Redwood 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bark_redwood_001_uv"
+  }
+}
+Assets {
+  Id: 8425111237879329054
+  Name: "Metal Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_basic_001"
+  }
+}
+Assets {
   Id: 8423882558463640516
   Name: "Text 03: U"
   PlatformAssetType: 1
@@ -1517,6 +1724,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_candle_004"
+  }
+}
+Assets {
+  Id: 8121390472708756070
+  Name: "Bush 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_001"
   }
 }
 Assets {
@@ -1736,6 +1952,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6348953427985704596
+  Name: "Food Citrus 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_food_generic_citrus_001_uv"
+  }
+}
+Assets {
   Id: 6307371810581530536
   Name: "Fabric Burlap New 01"
   PlatformAssetType: 2
@@ -1760,6 +1985,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_column_segment_001"
+  }
+}
+Assets {
+  Id: 6278985560465791740
+  Name: "Food Strawberry 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_food_generic_strawberry_001_uv"
   }
 }
 Assets {
@@ -1925,6 +2159,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5489775416547967874
+  Name: "Hemisphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hemisphere_001"
+  }
+}
+Assets {
   Id: 5440923935137102652
   Name: "Craftsman Dining Chair"
   PlatformAssetType: 1
@@ -2001,6 +2244,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4833945965905802845
+  Name: "Thorn"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tooth_002"
+  }
+}
+Assets {
   Id: 4832010047877921553
   Name: "Main Street Railing 01 - 2m"
   PlatformAssetType: 1
@@ -2025,6 +2277,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_014"
+  }
+}
+Assets {
+  Id: 4569094990012719941
+  Name: "Sphere - Half Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hemisphere_003"
   }
 }
 Assets {
@@ -2106,6 +2367,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_column_bottom_002"
+  }
+}
+Assets {
+  Id: 4174204201551471315
+  Name: "Cylinder"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_002"
   }
 }
 Assets {
@@ -2199,6 +2469,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3792649349488507857
+  Name: "Ellipsoid - Truncated"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ellipsoid_truncated_001"
+  }
+}
+Assets {
   Id: 3716062961443243971
   Name: "Ivy 05"
   PlatformAssetType: 1
@@ -2268,6 +2547,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_wall_002_window_ref"
+  }
+}
+Assets {
+  Id: 3280557559942806649
+  Name: "Fern 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fern_generic_003"
   }
 }
 Assets {
@@ -2367,6 +2655,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bones_human_scap_01_ref"
+  }
+}
+Assets {
+  Id: 2547572759449184237
+  Name: "Cone - Bullet"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bullet_001"
   }
 }
 Assets {
@@ -2527,6 +2824,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1541924526516184505
+  Name: "Sphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_002"
+  }
+}
+Assets {
   Id: 1532438403020507221
   Name: "Metal Gold 01"
   PlatformAssetType: 2
@@ -2545,6 +2851,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1413196292823476264
+  Name: "Sphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_002"
+  }
+}
+Assets {
   Id: 1392156535297566702
   Name: "Flower Daisy Patch 01"
   PlatformAssetType: 1
@@ -2560,6 +2875,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_007"
+  }
+}
+Assets {
+  Id: 1304149708294318909
+  Name: "Pipe"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_001"
   }
 }
 Assets {
@@ -2686,6 +3010,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 132672053610873933
+  Name: "Plastic Matte"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_matte_001"
+  }
+}
+Assets {
+  Id: 129748403337713611
+  Name: "Lens"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_lense_001"
   }
 }
 Assets {

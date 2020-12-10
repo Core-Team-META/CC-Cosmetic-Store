@@ -5256,8 +5256,8 @@ Objects {
   Name: "PERKS_RestrictedSubscriptionZone(Group)"
   Transform {
     Location {
-      X: -720
-      Y: -550
+      X: -280.766052
+      Y: -989.233765
     }
     Rotation {
       Yaw: -45
