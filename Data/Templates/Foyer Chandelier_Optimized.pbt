@@ -20073,7 +20073,7 @@
     }
     Assets {
       Id: 5489775416547967874
-      Name: "Sphere - Half"
+      Name: "Hemisphere"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
