@@ -69,16 +69,22 @@ function RollLootbox(player)
 	
 		print("Giving Reward!")
 		
-		while Events.Broadcast("BUYCOSMETIC", player, reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID"), false, 0) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
+		--while Events.Broadcast("BUYCOSMETIC", player, reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID"), false, 0) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 			Task.Wait()
-		end
+		--end
 		
-		player:SetResource(propCurrencyName, currency - propRollCost)
+		--player:SetResource(propCurrencyName, currency - propRollCost)
+		
+		script:SetNetworkedCustomProperty("RewardName", reward.name)
 		
 		
 	end
 	
 	script:SetNetworkedCustomProperty("PrizeRarity", "")
+	
+	Task.Wait(1)
+	
+	script:SetNetworkedCustomProperty("RewardName", "")
 end
 
 
