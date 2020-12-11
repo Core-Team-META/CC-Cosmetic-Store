@@ -2,7 +2,7 @@
   Id: 3237716126631996828
   Name: "Fish Bowl Water"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 71
   CustomMaterialAsset {
     BaseMaterialId: 7249976682375897255
     ParameterOverrides {

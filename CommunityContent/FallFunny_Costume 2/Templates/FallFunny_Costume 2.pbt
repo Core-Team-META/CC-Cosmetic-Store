@@ -1573,6 +1573,6 @@
   Marketplace {
     Description: "FallFunny_Costume 2"
   }
-  SerializationVersion: 70
+  SerializationVersion: 71
   DirectlyPublished: true
 }

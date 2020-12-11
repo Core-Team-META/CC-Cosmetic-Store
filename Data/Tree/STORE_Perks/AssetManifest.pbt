@@ -62,6 +62,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14450710026532162460
+  Name: "Prism - 3-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_hq_001"
+  }
+}
+Assets {
   Id: 14295439443652911268
   Name: "Sports Crowd Intense Cheer Yeah 01 SFX"
   PlatformAssetType: 7
@@ -143,12 +152,12 @@ Assets {
   }
 }
 Assets {
-  Id: 10788698299831633704
-  Name: "Prism - 6-Sided Half"
+  Id: 9501844877588962673
+  Name: "Fantasy Shield 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_half_hexagon_001"
+    AssetId: "sm_weap_fan_shield_001"
   }
 }
 Assets {
@@ -197,12 +206,12 @@ Assets {
   }
 }
 Assets {
-  Id: 5920223932982244516
-  Name: "Cylinder"
+  Id: 5546692261811206609
+  Name: "Ball"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_002"
+    AssetId: "sm_sphere_001"
   }
 }
 Assets {
@@ -212,15 +221,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_019"
-  }
-}
-Assets {
-  Id: 5351428073291024820
-  Name: "Emissive Glow Opaque"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_opaque_emissive"
   }
 }
 Assets {
@@ -311,5 +311,32 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_pbr_material_001"
+  }
+}
+Assets {
+  Id: 264306642701326985
+  Name: "Bannister Single Post"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bannister_post_001"
+  }
+}
+Assets {
+  Id: 135787505950856674
+  Name: "Invisible"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 129748403337713611
+  Name: "Lens"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_lense_001"
   }
 }

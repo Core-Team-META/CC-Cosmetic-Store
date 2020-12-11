@@ -198,5 +198,5 @@
       AssetId: "Sci-fi_Chest_Common_01_Prop_"
     }
   }
-  SerializationVersion: 70
+  SerializationVersion: 71
 }

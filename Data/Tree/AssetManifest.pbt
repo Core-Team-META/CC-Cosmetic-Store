@@ -485,6 +485,19 @@ Assets {
   }
 }
 Assets {
+  Id: 15891070541082286417
+  Name: "gold"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "a2b85443c61e495d9c206da5e48f3399"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 15851271444363751188
   Name: "Whitebox Window Insert - Basic Frame"
   PlatformAssetType: 1
@@ -2096,6 +2109,19 @@ Assets {
   }
 }
 Assets {
+  Id: 5889553834180147361
+  Name: "VIP"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "eef7422ff7244f66bc830b4b9cfc37d3"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 5822913166312317804
   Name: "Moss 01"
   PlatformAssetType: 2
@@ -2219,19 +2245,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F7_Text_013"
-  }
-}
-Assets {
-  Id: 4951016466345464679
-  Name: "VIP"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
   }
 }
 Assets {
@@ -2799,19 +2812,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_trim_top_6m_002"
-  }
-}
-Assets {
-  Id: 1575973895163857857
-  Name: "gold"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "e373410ac53f4c30a2b40e31afbfb466"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
   }
 }
 Assets {

@@ -142010,7 +142010,7 @@ Objects {
     Overrides {
       Name: "cs:VIP"
       NetReference {
-        Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
+        Key: "eef7422ff7244f66bc830b4b9cfc37d3"
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }
@@ -143854,7 +143854,7 @@ Objects {
     }
     Overrides {
       Name: "cs:CurrencyPerPerkPurchase"
-      Float: 10
+      Float: 100
     }
     Overrides {
       Name: "cs:AllowPerkExclusives"
@@ -143871,7 +143871,7 @@ Objects {
     Overrides {
       Name: "cs:SubscriptionPerk"
       NetReference {
-        Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
+        Key: "eef7422ff7244f66bc830b4b9cfc37d3"
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }
@@ -144104,9 +144104,9 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 140
+    Width: 185
     Height: 75
-    UIX: -490
+    UIX: -500
     UIY: 110
     RenderTransformPivot {
       Anchor {
@@ -144165,6 +144165,7 @@ Objects {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    UseParentWidth: true
     UseParentHeight: true
     Text {
       Label: " = $0"
@@ -144224,8 +144225,8 @@ Objects {
   Control {
     Width: 150
     Height: 50
-    UIX: -165
-    UIY: 15
+    UIX: -195
+    UIY: 10
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -144234,7 +144235,7 @@ Objects {
     PurchaseButton {
       IsButtonEnabled: true
       PerkReference {
-        Key: "e373410ac53f4c30a2b40e31afbfb466"
+        Key: "a2b85443c61e495d9c206da5e48f3399"
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }
@@ -144565,7 +144566,7 @@ Objects {
     PurchaseButton {
       IsButtonEnabled: true
       PerkReference {
-        Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
+        Key: "eef7422ff7244f66bc830b4b9cfc37d3"
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }
@@ -150635,7 +150636,7 @@ Objects {
     Overrides {
       Name: "cs:CurrencyPerk"
       NetReference {
-        Key: "e373410ac53f4c30a2b40e31afbfb466"
+        Key: "a2b85443c61e495d9c206da5e48f3399"
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }
@@ -150644,7 +150645,7 @@ Objects {
     Overrides {
       Name: "cs:SubscriptionPerk"
       NetReference {
-        Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
+        Key: "eef7422ff7244f66bc830b4b9cfc37d3"
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }
@@ -152174,15 +152175,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -393.333374
-            Y: 22920
-            Z: 2980
+            X: -773.333374
+            Y: 22790
+            Z: 2990
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -149.999985
+            Yaw: -90
           }
         }
         Overrides {
@@ -152401,6 +152402,7 @@ Objects {
       CanMoveUp: true
       CanMoveDown: true
       IsMountEnabled: true
+      MaxHitpoints: 100
     }
   }
 }

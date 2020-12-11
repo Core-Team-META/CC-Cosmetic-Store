@@ -2,7 +2,7 @@
   Id: 7946681086304403235
   Name: "Custom Store Hologram"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 71
   CustomMaterialAsset {
     BaseMaterialId: 4087878410686763743
     ParameterOverrides {

@@ -2,7 +2,7 @@
   Id: 314594804455000350
   Name: "Custom Leaves from Ivy 05"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 71
   CustomMaterialAsset {
     BaseMaterialId: 9838480654139193059
     ParameterOverrides {

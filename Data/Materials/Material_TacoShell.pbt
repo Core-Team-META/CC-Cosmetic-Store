@@ -2,7 +2,7 @@
   Id: 13751836553642120073
   Name: "Material_TacoShell"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 71
   CustomMaterialAsset {
     BaseMaterialId: 13560635218549589426
     ParameterOverrides {

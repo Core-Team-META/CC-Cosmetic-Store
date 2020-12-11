@@ -2,7 +2,7 @@
   Id: 15324685714110955822
   Name: "IceCream"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 71
   CustomMaterialAsset {
     BaseMaterialId: 1523214900353875295
     ParameterOverrides {

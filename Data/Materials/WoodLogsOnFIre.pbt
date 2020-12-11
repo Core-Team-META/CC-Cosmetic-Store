@@ -2,7 +2,7 @@
   Id: 14356558476970021760
   Name: "WoodLogsOnFIre"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 71
   CustomMaterialAsset {
     BaseMaterialId: 18097573562715092141
     ParameterOverrides {

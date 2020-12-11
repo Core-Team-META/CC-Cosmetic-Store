@@ -219,5 +219,5 @@
       AssetId: "Fantasy_Castle_Pillar_01_-_Tall_3x_Tile_Template"
     }
   }
-  SerializationVersion: 70
+  SerializationVersion: 71
 }

@@ -21,15 +21,28 @@ function UpdatePlayer(player, perkRef)
 	if data.COSMETICS.currencyGranted == nil then
 	
 		data.COSMETICS.currencyGranted = 0
+	end
+	
+	if data.COSMETICS.currencyPurchased == nil then
+		
+		data.COSMETICS.currencyPurchased = 0
 		
 	end
 	
 	local currencyPurchased = player:GetPerkCount(propCurrencyPerk)
 	local currentPremiumCurrency = player:GetResource(propPremiumCurrencyName)
+	
+	if currencyPurchased < data.COSMETICS.currencyPurchased then
+		currencyPurchased = data.COSMETICS.currencyPurchased + 1
+	end
+	
+	print("Currently purchased: " .. tostring(currencyPurchased))
+	print("Granted: " .. tostring(data.COSMETICS.currencyGranted))
 		
-	if currencyPurchased > data.COSMETICS.currencyGranted then
+	if currencyPurchased >= data.COSMETICS.currencyGranted then
 		currentPremiumCurrency = currentPremiumCurrency + propCurrencyPerPerkPurchase * (currencyPurchased - data.COSMETICS.currencyGranted)
 		data.COSMETICS.currencyGranted = currencyPurchased
+		data.COSMETICS.currencyPurchased = currencyPurchased
 	end
 	
 	if not data.COSMETICS.subscribedBefore and player:HasPerk(propSubscriptionPerk) then

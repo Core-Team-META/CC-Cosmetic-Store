@@ -16132,6 +16132,6 @@
   Marketplace {
     Description: "From the amazing work done on Core Plaza.  \r\n\r\nDrop these into your game, and make sure to go to GAME SETTINGS and check the \"ENABLE PLAYER STORAGE\" box\r\n\r\nNow you have persistent coin collection and 2 stands (Balloons and Treats) that you can reskin and reuse.\r\n\r\nAlso included are Glow sticks and spray cans, because they\'re awesome so why not.\r\n\r\nAlso includes UI Coin indicator and coin spawners you can spread throughout your game.\r\n"
   }
-  SerializationVersion: 70
+  SerializationVersion: 71
   DirectlyPublished: true
 }
