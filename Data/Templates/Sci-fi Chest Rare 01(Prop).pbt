@@ -199,5 +199,5 @@
       AssetId: "Sci-fi_Chest_Rare_01_Prop_"
     }
   }
-  SerializationVersion: 71
+  SerializationVersion: 70
 }

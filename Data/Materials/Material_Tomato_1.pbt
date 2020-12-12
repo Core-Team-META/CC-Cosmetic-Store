@@ -2,7 +2,7 @@
   Id: 285448908228857896
   Name: "Material_Tomato"
   PlatformAssetType: 13
-  SerializationVersion: 71
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 644549644970623125
     ParameterOverrides {

@@ -36,13 +36,9 @@ function SpinTheWheel(generator, propertyName)
 	
 	local selectedSection = sections[math.random(1, #sections)]
 	
-	propWheel:RotateContinuous(Rotation.New(0, 0, -100), 1, true)
-	
-	Task.Wait(0.3)
-	
 	propWheel:RotateContinuous(Rotation.New(0, 0, START_SPIN_SPEED), 1, true)
 	
-	Task.Wait(3.7)
+	Task.Wait(4)
 	
 	local desiredRotation = -selectedSection:GetRotation().z
 
@@ -60,15 +56,15 @@ function SpinTheWheel(generator, propertyName)
 		
 	end
 
-	--print("Desired: " .. tostring(desiredRotation))
+	print("Desired: " .. tostring(desiredRotation))
 	
-	--print(currentRotation/desiredRotation)
+	print(currentRotation/desiredRotation)
 	
-	while currentRotation/desiredRotation < 0.55 or currentRotation/desiredRotation > 0.8 do
+	while currentRotation/desiredRotation < 0.55 or currentRotation/desiredRotation > 0.6 do
 	
 		Task.Wait()
 		
-		--print(currentRotation/desiredRotation)
+		print(currentRotation/desiredRotation)
 		
 		currentRotation = propWheel:GetRotation().z
 		

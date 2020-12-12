@@ -75,7 +75,7 @@ function ApplyCosmetic(player, templateId, cosmeticId, visible)
 		Task.Wait()
 	end
 	
-	AppliedCosmetics[player.id] = templateId
+	AppliedCosmetics[player.id] = cosmeticId
 	AppliedCosmeticsTemplate[player.id] = templateId
 	AppliedCosmeticsVisibility[player.id] = visible
 end

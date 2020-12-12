@@ -4,5 +4,5 @@
   PlatformAssetType: 3
   TextAsset {
   }
-  SerializationVersion: 71
+  SerializationVersion: 70
 }

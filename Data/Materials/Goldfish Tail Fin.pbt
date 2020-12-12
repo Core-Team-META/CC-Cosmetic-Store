@@ -2,7 +2,7 @@
   Id: 1357600297956960911
   Name: "Goldfish Tail Fin"
   PlatformAssetType: 13
-  SerializationVersion: 71
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 16108497759573435996
     ParameterOverrides {

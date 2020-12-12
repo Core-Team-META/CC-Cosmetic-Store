@@ -2,7 +2,7 @@
   Id: 12557991413225897844
   Name: "Rough Fabric"
   PlatformAssetType: 13
-  SerializationVersion: 71
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 7564638630302161349
     ParameterOverrides {

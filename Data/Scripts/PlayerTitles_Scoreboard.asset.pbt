@@ -81,5 +81,5 @@
       }
     }
   }
-  SerializationVersion: 71
+  SerializationVersion: 70
 }

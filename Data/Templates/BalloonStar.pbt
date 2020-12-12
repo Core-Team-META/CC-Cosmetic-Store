@@ -1222,5 +1222,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 71
+  SerializationVersion: 70
 }

@@ -172,5 +172,5 @@
       AssetId: "Fantasy_Castle_Pillar_02_-_Template"
     }
   }
-  SerializationVersion: 71
+  SerializationVersion: 70
 }

@@ -2,7 +2,7 @@
   Id: 10610112056244224949
   Name: "Material_Mince"
   PlatformAssetType: 13
-  SerializationVersion: 71
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 5822913166312317804
     ParameterOverrides {
