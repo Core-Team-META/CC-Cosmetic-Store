@@ -6,10 +6,20 @@ local propYesButton = script:GetCustomProperty("YesButton"):WaitForObject()
 local propNoButton = script:GetCustomProperty("NoButton"):WaitForObject()
 local propTrigger = script:GetCustomProperty("Trigger"):WaitForObject()
 local propCamera = script:GetCustomProperty("Camera"):WaitForObject()
+local propClicker = script:GetCustomProperty("Clicker"):WaitForObject()
+local propClickSFX = script:GetCustomProperty("ClickSFX"):WaitForObject()
 
-local START_SPIN_SPEED = 2000
+local Ease3D = require(script:GetCustomProperty("Ease3D"))
+
+local START_SPIN_SPEED = 1000
 
 local listener = nil
+
+local totalDt = 0
+local zeroedBefore = false
+local rotationDirection = 1
+
+local rollInProgress = false
 
 local player = Game.GetLocalPlayer()
 
@@ -17,6 +27,8 @@ propSpinWheelUI.isEnabled = false
 propSpinWheelUI.visibility = Visibility.INHERIT
 
 function SpinTheWheel(generator, propertyName)
+
+	rollInProgress = true
 
 	if propertyName ~= "PrizeRarity" then
 		
@@ -35,6 +47,14 @@ function SpinTheWheel(generator, propertyName)
 	local sections = propWheel:FindDescendantsByName(targetRarity)
 	
 	local selectedSection = sections[math.random(1, #sections)]
+	
+	rotationDirection = -1
+	
+	Ease3D.EaseRotation(propWheel, propWheel:GetRotation() + Rotation.New(0, 0, -50), 1, Ease3D.EasingEquation.CUBIC, Ease3D.EasingDirection.INOUT)
+	
+	Task.Wait(1)
+	
+	rotationDirection = 1
 	
 	propWheel:RotateContinuous(Rotation.New(0, 0, START_SPIN_SPEED), 1, true)
 	
@@ -79,18 +99,39 @@ function SpinTheWheel(generator, propertyName)
 	print(currentRotation/desiredRotation)
 	
 	propWheel:RotateTo(Rotation.New(0, 0, 360 - selectedSection:GetRotation().z), currentRotation/desiredRotation * 2, true)		
+	--Ease3D.EaseRotation(propWheel, Rotation.New(0, 0, 360 - selectedSection:GetRotation().z), currentRotation/desiredRotation * 2, Ease3D.EasingEquation.QUINTIC, Ease3D.EasingDirection.OUT)
 	
 	Task.Wait((currentRotation/desiredRotation * 2) + 2)
 	
 	player:ClearOverrideCamera()
 	UI.SetCursorVisible(false)
 	listener = propTrigger.interactedEvent:Connect(Confirmation)
+	
+	Task.Wait(14)
+	
+	rollInProgress = false
 end
 
 function Confirmation(trigger, player)
 
-	listener:Disconnect()
+	while rollInProgress do
+	
+		Task.Wait(1)
+		
+	end
 
+	if not player:IsA("Player") then
+		
+		return
+		
+	end
+
+	if not propTrigger:IsOverlapping(player) then
+	
+		return
+		
+	end
+	
 	propSpinWheelUI.isEnabled = true
 	
 	player:SetOverrideCamera(propCamera)
@@ -102,6 +143,7 @@ end
 
 function Exit(button)
 	propSpinWheelUI.isEnabled = false
+	
 	if button == propYesButton then
 		while Events.BroadcastToServer("SpinTheWheel") == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT do
 			Task.Wait()
@@ -114,12 +156,52 @@ function Exit(button)
 end
 
 function EmergencyExit()
+
+	if propTrigger.isEnabled == false then
+		return
+	end
+	
+	propSpinWheelUI.isEnabled = false
 	player:ClearOverrideCamera()
 	UI.SetCursorVisible(false)
 	listener = propTrigger.interactedEvent:Connect(Confirmation)
 end
 
-listener = propTrigger.interactedEvent:Connect(Confirmation)
+function Tick(dt)
+
+	totalDt = totalDt + dt
+
+	if math.fmod(math.abs(propWheel:GetRotation().z), 18) > 5 and math.fmod(math.abs(propWheel:GetRotation().z), 18) < 15 then
+				
+		--propClicker:RotateTo(Rotation.New(0, 0, -42 * rotationDirection), 0.1, true)
+		
+		Ease3D.EaseRotation(propClicker, Rotation.New(0, 0, -30 * rotationDirection), 0.02, Ease3D.EasingEquation.BOUNCE, Ease3D.EasingDirection.IN)
+		
+		if totalDt >= 0.1 and zeroedBefore then
+		
+			propClickSFX:Play()
+			
+			totalDt = 0
+			
+			zeroedBefore = false
+			
+		end
+		
+	else
+	
+		--propClicker:RotateTo(Rotation.New(0, 0, 0), 0.1, true)
+		
+		Ease3D.EaseRotation(propClicker, Rotation.New(0, 0, 0), 0.1, Ease3D.EasingEquation.BOUNCE, Ease3D.EasingDirection.OUT)
+		
+		zeroedBefore = true
+		
+	end
+	
+end
+
+propTrigger.beginOverlapEvent:Connect(Confirmation)
+propTrigger.endOverlapEvent:Connect(EmergencyExit)
+
 propLootboxGenerator.networkedPropertyChangedEvent:Connect(SpinTheWheel)
 
 Events.Connect("WheelExit", EmergencyExit)

@@ -44,15 +44,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16251665124910529573
-  Name: "Advanced Material"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "universal_material_001"
-  }
-}
-Assets {
   Id: 16171957045391883906
   Name: "Plastic Shiny"
   PlatformAssetType: 2
@@ -122,6 +113,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_mil_tank_hst_hull_001_rear_ref"
+  }
+}
+Assets {
+  Id: 13326279924888959397
+  Name: "Military Tank Modern Armorplate 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_mil_tank_mod_armorplate_001_ref"
   }
 }
 Assets {
@@ -206,6 +206,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9136786294201978281
+  Name: "Metal Old Beaten Gold 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_002"
+  }
+}
+Assets {
   Id: 8856291079533827889
   Name: "Plastic Matte"
   PlatformAssetType: 2
@@ -230,15 +239,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_mil_crate_003_ref"
-  }
-}
-Assets {
-  Id: 5972843030948052309
-  Name: "Arch Fancy Peaked 6m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_arch_fancy_ogive_6m_001"
   }
 }
 Assets {

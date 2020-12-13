@@ -17,6 +17,7 @@ Objects {
     }
   }
   ParentId: 4296421264996771920
+  ChildIds: 15316851131136835521
   ChildIds: 4066705427424873131
   ChildIds: 1799235503229948380
   ChildIds: 11269061822651247186
@@ -786,6 +787,7 @@ Objects {
   Transform {
     Location {
       Y: 255
+      Z: 30
     }
     Rotation {
     }
@@ -831,7 +833,7 @@ Objects {
     }
   }
   ParentId: 154452205934306316
-  ChildIds: 8400938074889611871
+  ChildIds: 18210770887564232971
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -849,35 +851,49 @@ Objects {
   }
 }
 Objects {
-  Id: 8400938074889611871
-  Name: "Arch Fancy Peaked 6m"
+  Id: 18210770887564232971
+  Name: "Military Tank Modern Armorplate 01"
   Transform {
     Location {
       X: -5
-      Y: -90
+      Z: 45
     }
     Rotation {
+      Pitch: -1.36603776e-05
+      Yaw: -89.9999771
+      Roll: 180
     }
     Scale {
-      X: 0.2
-      Y: 0.3
-      Z: 0.3
+      X: 1.80000007
+      Y: 0.899999797
+      Z: 2.69999981
     }
   }
   ParentId: 14730716102981691696
   UnregisteredParameters {
     Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 9136786294201978281
+      }
+    }
+    Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 15224186827264541306
+        Id: 1532438403020507221
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.159000009
-        G: 0.159000009
-        B: 0.159000009
+        R: 0.330000043
+        G: 0.157351092
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
         A: 1
       }
     }
@@ -890,7 +906,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 5972843030948052309
+      Id: 13326279924888959397
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -903,12 +919,6 @@ Objects {
         LinearDamping: 0.01
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 8400938074889611871
-    SubobjectId: 16570350769848042689
-    InstanceId: 1562941066764850832
-    TemplateId: 9629062711606724945
   }
 }
 Objects {
@@ -1049,9 +1059,9 @@ Objects {
       Yaw: 9
     }
     Scale {
-      X: 0.099999994
-      Y: 0.099999994
-      Z: 0.7
+      X: 0.1
+      Y: 0.1
+      Z: 0.6
     }
   }
   ParentId: 13056125655917309052
@@ -1059,8 +1069,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -1109,7 +1131,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -1205,9 +1227,9 @@ Objects {
       Yaw: 9
     }
     Scale {
-      X: 0.099999994
-      Y: 0.099999994
-      Z: 0.7
+      X: 0.1
+      Y: 0.1
+      Z: 0.6
     }
   }
   ParentId: 13395969224357802458
@@ -1215,8 +1237,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -1265,7 +1299,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -1361,9 +1395,9 @@ Objects {
       Yaw: 9
     }
     Scale {
-      X: 0.099999994
-      Y: 0.099999994
-      Z: 0.7
+      X: 0.1
+      Y: 0.1
+      Z: 0.6
     }
   }
   ParentId: 17123330956521283377
@@ -1371,8 +1405,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -1421,7 +1467,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -1517,9 +1563,9 @@ Objects {
       Yaw: 9
     }
     Scale {
-      X: 0.099999994
-      Y: 0.099999994
-      Z: 0.7
+      X: 0.1
+      Y: 0.1
+      Z: 0.6
     }
   }
   ParentId: 9220516049883966525
@@ -1527,8 +1573,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -1577,7 +1635,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -1673,9 +1731,9 @@ Objects {
       Yaw: 9
     }
     Scale {
-      X: 0.099999994
-      Y: 0.099999994
-      Z: 0.7
+      X: 0.1
+      Y: 0.1
+      Z: 0.6
     }
   }
   ParentId: 13670450093177651624
@@ -1683,8 +1741,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -1733,7 +1803,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -1829,9 +1899,9 @@ Objects {
       Yaw: 9
     }
     Scale {
-      X: 0.099999994
-      Y: 0.099999994
-      Z: 0.7
+      X: 0.1
+      Y: 0.1
+      Z: 0.6
     }
   }
   ParentId: 9329841553660623549
@@ -1839,8 +1909,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -1889,7 +1971,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -1985,9 +2067,9 @@ Objects {
       Yaw: 9
     }
     Scale {
-      X: 0.099999994
-      Y: 0.099999994
-      Z: 0.7
+      X: 0.1
+      Y: 0.1
+      Z: 0.6
     }
   }
   ParentId: 17137948667501036023
@@ -1995,8 +2077,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -2045,7 +2139,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -2141,9 +2235,9 @@ Objects {
       Yaw: 9
     }
     Scale {
-      X: 0.099999994
-      Y: 0.099999994
-      Z: 0.7
+      X: 0.1
+      Y: 0.1
+      Z: 0.6
     }
   }
   ParentId: 3053632728663453027
@@ -2151,8 +2245,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -2201,7 +2307,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -2297,9 +2403,9 @@ Objects {
       Yaw: 9
     }
     Scale {
-      X: 0.099999994
-      Y: 0.099999994
-      Z: 0.7
+      X: 0.1
+      Y: 0.1
+      Z: 0.6
     }
   }
   ParentId: 16233935902829095125
@@ -2307,8 +2413,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -2357,7 +2475,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -2453,9 +2571,9 @@ Objects {
       Yaw: 9
     }
     Scale {
-      X: 0.099999994
-      Y: 0.099999994
-      Z: 0.7
+      X: 0.1
+      Y: 0.1
+      Z: 0.6
     }
   }
   ParentId: 2739519055178679044
@@ -2463,8 +2581,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -2513,7 +2643,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -2609,9 +2739,9 @@ Objects {
       Yaw: 9
     }
     Scale {
-      X: 0.099999994
-      Y: 0.099999994
-      Z: 0.7
+      X: 0.1
+      Y: 0.1
+      Z: 0.6
     }
   }
   ParentId: 1302881456183672630
@@ -2619,8 +2749,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -2669,7 +2811,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -2765,9 +2907,9 @@ Objects {
       Yaw: 9
     }
     Scale {
-      X: 0.099999994
-      Y: 0.099999994
-      Z: 0.7
+      X: 0.1
+      Y: 0.1
+      Z: 0.6
     }
   }
   ParentId: 12168735695483391671
@@ -2775,8 +2917,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -2825,7 +2979,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -2921,9 +3075,9 @@ Objects {
       Yaw: 9
     }
     Scale {
-      X: 0.099999994
-      Y: 0.099999994
-      Z: 0.7
+      X: 0.1
+      Y: 0.1
+      Z: 0.6
     }
   }
   ParentId: 5340408273744157736
@@ -2931,8 +3085,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -2981,7 +3147,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -3077,9 +3243,9 @@ Objects {
       Yaw: 9
     }
     Scale {
-      X: 0.099999994
-      Y: 0.099999994
-      Z: 0.7
+      X: 0.1
+      Y: 0.1
+      Z: 0.6
     }
   }
   ParentId: 17350391193546095369
@@ -3087,8 +3253,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -3137,7 +3315,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -3233,9 +3411,9 @@ Objects {
       Yaw: 9
     }
     Scale {
-      X: 0.099999994
-      Y: 0.099999994
-      Z: 0.7
+      X: 0.1
+      Y: 0.1
+      Z: 0.6
     }
   }
   ParentId: 18009593814492053564
@@ -3243,8 +3421,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -3293,7 +3483,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -3390,9 +3580,9 @@ Objects {
       Yaw: 9
     }
     Scale {
-      X: 0.099999994
-      Y: 0.099999994
-      Z: 0.7
+      X: 0.1
+      Y: 0.1
+      Z: 0.6
     }
   }
   ParentId: 4163444286038188962
@@ -3400,8 +3590,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -3450,7 +3652,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -3547,9 +3749,9 @@ Objects {
       Yaw: 9
     }
     Scale {
-      X: 0.099999994
-      Y: 0.099999994
-      Z: 0.7
+      X: 0.1
+      Y: 0.1
+      Z: 0.6
     }
   }
   ParentId: 6538936898760179124
@@ -3557,8 +3759,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -3607,7 +3821,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -3704,9 +3918,9 @@ Objects {
       Yaw: 9
     }
     Scale {
-      X: 0.099999994
-      Y: 0.099999994
-      Z: 0.7
+      X: 0.1
+      Y: 0.1
+      Z: 0.6
     }
   }
   ParentId: 4690772110109596189
@@ -3714,8 +3928,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -3764,7 +3990,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -3861,9 +4087,9 @@ Objects {
       Yaw: 9
     }
     Scale {
-      X: 0.099999994
-      Y: 0.099999994
-      Z: 0.7
+      X: 0.1
+      Y: 0.1
+      Z: 0.6
     }
   }
   ParentId: 16072861538673782196
@@ -3871,8 +4097,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -3921,7 +4159,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -4017,9 +4255,9 @@ Objects {
       Roll: 4.25570761e-07
     }
     Scale {
-      X: 0.1
-      Y: 0.1
-      Z: 0.7
+      X: 0.100000009
+      Y: 0.100000009
+      Z: 0.6
     }
   }
   ParentId: 10847588867355859845
@@ -4027,8 +4265,20 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 1532438403020507221
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.77866447
     }
   }
   Collidable_v2 {
@@ -4077,7 +4327,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16251665124910529573
+        Id: 17241385864391730824
       }
     }
     Overrides {
@@ -4491,14 +4741,6 @@ Objects {
       Bool: false
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.330000043
-        G: 0.157351092
-        A: 1
-      }
-    }
-    Overrides {
       Name: "ma:Shared_Detail1:color"
       Color {
         R: 0.330000043
@@ -4528,6 +4770,14 @@ Objects {
       Name: "ma:Shared_Trim2:id"
       AssetReference {
         Id: 1532438403020507221
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.330000043
+        G: 0.157351092
+        A: 1
       }
     }
   }
@@ -4662,7 +4912,6 @@ Objects {
     }
   }
   ParentId: 13363179722086851574
-  ChildIds: 8554922756142348295
   ChildIds: 22944115190030467
   ChildIds: 3357036419631783885
   Collidable_v2 {
@@ -4762,53 +5011,6 @@ Objects {
     SubobjectId: 10462448098870742557
     InstanceId: 1562941066764850832
     TemplateId: 9629062711606724945
-  }
-}
-Objects {
-  Id: 8554922756142348295
-  Name: "ClickerAnimation"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17360336809329204851
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Clicker"
-      ObjectReference {
-        SelfId: 17360336809329204851
-      }
-    }
-    Overrides {
-      Name: "cs:Sample"
-      ObjectReference {
-        SelfId: 8721086712576126677
-      }
-    }
-    Overrides {
-      Name: "cs:ClickSFX"
-      ObjectReference {
-        SelfId: 3357036419631783885
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 9098075361385321193
-    }
   }
 }
 Objects {
@@ -5774,6 +5976,24 @@ Objects {
       Name: "cs:Camera"
       ObjectReference {
         SelfId: 14830893987683036235
+      }
+    }
+    Overrides {
+      Name: "cs:Clicker"
+      ObjectReference {
+        SelfId: 17360336809329204851
+      }
+    }
+    Overrides {
+      Name: "cs:ClickSFX"
+      ObjectReference {
+        SelfId: 3357036419631783885
+      }
+    }
+    Overrides {
+      Name: "cs:Ease3D"
+      AssetReference {
+        Id: 11818466330896644996
       }
     }
   }
@@ -10461,7 +10681,7 @@ Objects {
   Name: "Trigger"
   Transform {
     Location {
-      Z: 70
+      Z: 70.0000229
     }
     Rotation {
     }
@@ -10472,7 +10692,7 @@ Objects {
     }
   }
   ParentId: 5595803427365930117
-  ChildIds: 15316851131136835521
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10480,8 +10700,6 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Trigger {
-    Interactable: true
-    InteractionLabel: "Buy Lootbox (50 gold per roll)"
     TeamSettings {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
@@ -10496,22 +10714,29 @@ Objects {
   Name: "LootboxGenerator"
   Transform {
     Location {
-      X: 9.53674225e-06
+      X: 3.05175781e-05
+      Z: 70
     }
     Rotation {
     }
     Scale {
-      X: 0.31249997
-      Y: 0.31249997
-      Z: 0.31249997
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
-  ParentId: 4066705427424873131
+  ParentId: 5595803427365930117
   UnregisteredParameters {
     Overrides {
       Name: "cs:DropTable"
       ObjectReference {
         SelfId: 11269061822651247186
+      }
+    }
+    Overrides {
+      Name: "cs:Trigger"
+      ObjectReference {
+        SelfId: 4066705427424873131
       }
     }
     Overrides {

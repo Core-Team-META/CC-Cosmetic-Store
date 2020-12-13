@@ -1,10 +1,14 @@
 ﻿local propDropTable = script:GetCustomProperty("DropTable"):WaitForObject()
+local propTrigger = script:GetCustomProperty("Trigger"):WaitForObject()
+
 local propCurrencyName = script:GetCustomProperty("CurrencyName")
 local propRollCost = script:GetCustomProperty("RollCost")
 
 local table = {}
 
 function RollLootbox(player)
+
+	propTrigger.isEnabled = false
 
 	print("Rolling...")
 	
@@ -84,6 +88,8 @@ function RollLootbox(player)
 	script:SetNetworkedCustomProperty("PrizeRarity", "")
 	
 	script:SetNetworkedCustomProperty("RewardName", "")
+	
+	propTrigger.isEnabled = true
 end
 
 
