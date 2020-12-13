@@ -141972,7 +141972,6 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 16103553488385988738
   ChildIds: 7383339583197418928
   ChildIds: 7755841275126465915
   ChildIds: 4296421264996771920
@@ -145336,6 +145335,7 @@ Objects {
     }
   }
   ParentId: 3541217153010524449
+  ChildIds: 16103553488385988738
   ChildIds: 12751001978713011830
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -147303,7 +147303,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3541217153010524449
+  ParentId: 7383339583197418928
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreRoot"

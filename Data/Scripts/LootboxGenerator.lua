@@ -73,16 +73,15 @@ function RollLootbox(player)
 			Task.Wait()
 		--end
 		
-		--player:SetResource(propCurrencyName, currency - propRollCost)
-		
-		script:SetNetworkedCustomProperty("RewardName", reward.name)
-		
+		--player:SetResource(propCurrencyName, currency - propRollCost)	
 		
 	end
 	
-	script:SetNetworkedCustomProperty("PrizeRarity", "")
+	script:SetNetworkedCustomProperty("RewardName", reward.name)
 	
 	Task.Wait(1)
+	
+	script:SetNetworkedCustomProperty("PrizeRarity", "")
 	
 	script:SetNetworkedCustomProperty("RewardName", "")
 end

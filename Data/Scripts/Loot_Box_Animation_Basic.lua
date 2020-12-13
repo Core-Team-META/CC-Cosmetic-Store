@@ -14,10 +14,6 @@ local Unlock_SFX = script:GetCustomProperty("Unlock_SFX"):WaitForObject()
 local Machine_SFX = script:GetCustomProperty("Machine_SFX"):WaitForObject()
 local Ease3D = require(script:GetCustomProperty("Ease3D"))
 
-
-local militaryEpicCrateBase = script:GetCustomProperty("MilitaryEpicCrateBase"):WaitForObject()
-local militaryEpicCrateLid = script:GetCustomProperty("MilitaryEpicCrateLid"):WaitForObject()
-
 local allFX = {
 	Open_VFX,
 	Open_Music,
@@ -28,6 +24,9 @@ local allFX = {
 }
 
 local lootboxGenerator = script:GetCustomProperty("LootboxGenerator"):WaitForObject()
+local militaryEpicCrateBase = script:GetCustomProperty("MilitaryEpicCrateBase"):WaitForObject()
+local militaryEpicCrateLid = script:GetCustomProperty("MilitaryEpicCrateLid"):WaitForObject()
+
 local Loot_BoxDefault = Loot_Box:GetTransform()
 local LidDefault = Lid:GetTransform()
 local LogoDefault = CORE_Logo:GetTransform()
@@ -36,13 +35,9 @@ local Right_DoorDefault = Right_Door:GetTransform()
 local Left_DoorDefault = Left_Door:GetTransform()
 local RewardDefault = Reward:GetTransform()
 
-for _, c in pairs(Reward:GetChildren()) do
-	
-	c.visibility = Visibility.FORCE_OFF
-		
-end
-
 function Setup(generator, propertyName)
+
+	if propertyName ~= "RewardName" then return end
 	
 	local prize = lootboxGenerator:GetCustomProperty("RewardName")
 	
@@ -56,16 +51,22 @@ function Setup(generator, propertyName)
 	
 	Reset()
 	
-	local rarity = lootboxGenerator:GetCustomProperty("PrizeRarity")
+	--local rarity = lootboxGenerator:GetCustomProperty("PrizeRarity")
 	
-	local rarityColor = script:GetCustomProperty(tostring(rarity))
+	if rarity == "" then
+	
+		return
+		
+	end
+	
+	--local rarityColor = script:GetCustomProperty(tostring(rarity))
 	
 	for _, c in pairs(Reward:GetChildren()) do
 		
 		if c.name == prize then
 		
 			c.visibility = Visibility.FORCE_ON
-			--print(c.name .. " selected.")
+			print(c.name .. " selected.")
 			
 		else
 		
@@ -77,6 +78,7 @@ function Setup(generator, propertyName)
 	
 	--militaryEpicCrateBase:SetColor(rarityColor)
 	--militaryEpicCrateLid:SetColor(rarityColor)
+	--Open_VFX:SetColor(rarityColor)
 
 	OpenChest()
 	

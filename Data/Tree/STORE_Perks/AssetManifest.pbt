@@ -1,10 +1,55 @@
 ﻿Assets {
+  Id: 18194858692276435470
+  Name: "BG Gradient 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_019"
+  }
+}
+Assets {
   Id: 18168390525223111288
   Name: "Wedge - Corner Complex"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_corelogo_shape_001"
+  }
+}
+Assets {
+  Id: 18068332545945605919
+  Name: "Sci-fi Cinematic Time Warp Impact 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_designer_cinematic_scifi_timewarp_impact_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 18026213939653472356
+  Name: "Frame Outline Thin 012"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameOutline_029"
+  }
+}
+Assets {
+  Id: 17245586022597769725
+  Name: "Magic Poof Subtle 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_magic_poof_subtle_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 16251665124910529573
+  Name: "Advanced Material"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "universal_material_001"
   }
 }
 Assets {
@@ -26,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15585626911168066842
+  Name: "Dry Fire Click Generic 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_gun_dryfire"
+  }
+}
+Assets {
   Id: 15559420455638364971
   Name: "Column Base 01"
   PlatformAssetType: 1
@@ -41,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_planks_001_uv"
+  }
+}
+Assets {
+  Id: 14450710026532162460
+  Name: "Prism - 3-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_hq_001"
   }
 }
 Assets {
@@ -89,6 +152,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11023254515517314222
+  Name: "Plane Kite - One Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_kite_001"
+  }
+}
+Assets {
   Id: 11001788240134690440
   Name: "Military Epic Crate Lid"
   PlatformAssetType: 1
@@ -113,6 +185,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_scifi_keyboard_001_ref"
+  }
+}
+Assets {
+  Id: 9501844877588962673
+  Name: "Fantasy Shield 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_shield_001"
   }
 }
 Assets {
@@ -152,6 +233,33 @@ Assets {
   }
 }
 Assets {
+  Id: 5972843030948052309
+  Name: "Arch Fancy Peaked 6m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arch_fancy_ogive_6m_001"
+  }
+}
+Assets {
+  Id: 5506084799444686347
+  Name: "BG Flat 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_019"
+  }
+}
+Assets {
+  Id: 4999891035434594380
+  Name: "Cylinder - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_hq_test_001"
+  }
+}
+Assets {
   Id: 4990547234950917864
   Name: "Metal Painted 01"
   PlatformAssetType: 2
@@ -167,6 +275,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_Treasure_Rays"
+  }
+}
+Assets {
+  Id: 4753988644095219219
+  Name: "Cylinder - Chamfered Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_hq_002"
   }
 }
 Assets {
@@ -197,12 +314,21 @@ Assets {
   }
 }
 Assets {
-  Id: 3702191406046426907
-  Name: "Emissive Glow Transparent"
-  PlatformAssetType: 2
+  Id: 3959704981855061964
+  Name: "Fantasy Frame 001"
+  PlatformAssetType: 9
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_basic_emissive_001"
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Frame_001"
+  }
+}
+Assets {
+  Id: 3116133004127615129
+  Name: "Weapon Guide 1hand_pistol"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "weapon_guide_pistol_BP_ref"
   }
 }
 Assets {
@@ -215,11 +341,47 @@ Assets {
   }
 }
 Assets {
+  Id: 1532438403020507221
+  Name: "Metal Gold 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_001"
+  }
+}
+Assets {
   Id: 1371596269550390581
   Name: "Basic Material"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_pbr_material_001"
+  }
+}
+Assets {
+  Id: 1087167255202433751
+  Name: "Level Up VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_Level_Up"
+  }
+}
+Assets {
+  Id: 135787505950856674
+  Name: "Invisible"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 129748403337713611
+  Name: "Lens"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_lense_001"
   }
 }
