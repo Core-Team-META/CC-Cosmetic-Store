@@ -152,10 +152,23 @@ function SetupShop(player)
 		Task.Wait(0.1)
 	end	
 
+	player.bindingPressedEvent:Connect(ReRoll)
 end
 
 
-function ReRoll(player, perk)
+function ReRoll(player, binding)
+
+	if binding ~= "ability_extra_22" then
+	
+		return
+		
+	end
+
+	local selecteditems = {}
+	
+	local data = Storage.GetPlayerData(player)
+
+	--[[
 
 	if perk ~= dailyRollPerk then
 	
@@ -168,10 +181,6 @@ function ReRoll(player, perk)
 	local now = os.date("!*t", os.time())
 	local thisMonth = now.month
 	local today = now.day
-
-	local selecteditems = {}
-	
-	local data = Storage.GetPlayerData(player)
 	
 	if not data.DAILY.grantedRolls then
 	
@@ -187,11 +196,13 @@ function ReRoll(player, perk)
 	
 	data.DAILY.grantedRolls = player:GetPerkCount(dailyRollPerk)
 	
-	Initialize(player)
-	
 	data.DAILY.latestDay = today
 	data.DAILY.latestMonth = thisMonth
-			
+	
+	]]
+
+	Initialize(player)
+	
 	for i = 1, 9 do
 		
 		selecteditems[i] = RollSale(player)
@@ -202,6 +213,8 @@ function ReRoll(player, perk)
 
 
 	Storage.SetPlayerData(player, data)
+
+	
 
 	
 	while Events.BroadcastToPlayer(player, "SETUPDAILYSHOP", 1 , data.DAILY.items[1], data.DAILY.items[2], data.DAILY.items[3]) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do

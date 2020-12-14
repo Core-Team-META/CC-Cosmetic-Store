@@ -117,7 +117,7 @@ function Tick()
 			if math.floor(highlightedReward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("Cost") * (1 - discount)) <= LOCAL_PLAYER:GetResource(currencyName) then
 			
 				
-			
+			end
 						
 			infoPanel.visibility = Visibility.INHERIT
 			
