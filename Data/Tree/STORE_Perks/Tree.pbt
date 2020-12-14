@@ -21,7 +21,8 @@ Objects {
   ChildIds: 4066705427424873131
   ChildIds: 1799235503229948380
   ChildIds: 11269061822651247186
-  ChildIds: 7593405430459876540
+  ChildIds: 18244449108185125627
+  ChildIds: 3214236737450207462
   ChildIds: 15722103009879527801
   ChildIds: 154452205934306316
   ChildIds: 15121953775591137953
@@ -51,7 +52,6 @@ Objects {
     }
   }
   ParentId: 5595803427365930117
-  ChildIds: 4811714079861595350
   ChildIds: 7974363599121822680
   ChildIds: 13920662423478820380
   ChildIds: 16512271251343450437
@@ -739,45 +739,6 @@ Objects {
     }
     TemplateAsset {
       Id: 7864846402634828784
-    }
-  }
-}
-Objects {
-  Id: 4811714079861595350
-  Name: "Column Base 01"
-  Transform {
-    Location {
-      Z: -30
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.7
-      Y: 2.10000014
-      Z: 0.5
-    }
-  }
-  ParentId: 15121953775591137953
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15559420455638364971
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
     }
   }
 }
@@ -4913,6 +4874,7 @@ Objects {
   }
   ParentId: 13363179722086851574
   ChildIds: 22944115190030467
+  ChildIds: 7922160086768376861
   ChildIds: 3357036419631783885
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4957,6 +4919,45 @@ Objects {
     EnableOcclusion: true
     IsSpatializationEnabled: true
     IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 7922160086768376861
+  Name: "Drum Kit Set Funk Sampled Instrument 01 SFX"
+  Transform {
+    Location {
+      X: 6.1035149e-05
+      Z: 3.05175708e-05
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17360336809329204851
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13152669538555145280
+    }
+    TeamSettings {
+    }
+    AudioBP {
+      Volume: 1
+      Falloff: 3600
+      Radius: 400
+      EnableOcclusion: true
+      IsSpatializationEnabled: true
+      IsAttenuationEnabled: true
+    }
   }
 }
 Objects {
@@ -6070,26 +6071,27 @@ Objects {
   }
 }
 Objects {
-  Id: 7593405430459876540
-  Name: "Loot Machine Animation Standard"
+  Id: 3214236737450207462
+  Name: "Loot Machine Animation Classic"
   Transform {
     Location {
-      Z: 90
+      Y: 545
+      Z: 35
     }
     Rotation {
       Yaw: -90
     }
     Scale {
-      X: 0.25
-      Y: 0.25
-      Z: 0.25
+      X: 0.53403151
+      Y: 0.53403151
+      Z: 0.53403151
     }
   }
   ParentId: 5595803427365930117
-  ChildIds: 930166260568110178
-  ChildIds: 17635232484312647946
-  ChildIds: 3528200997955181486
-  ChildIds: 7644906111380411656
+  ChildIds: 17027891281403907839
+  ChildIds: 4107651657672995225
+  ChildIds: 2424672459257810468
+  ChildIds: 3843778499945385248
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -6099,15 +6101,15 @@ Objects {
   NetworkContext {
   }
   InstanceHistory {
-    SelfId: 7593405430459876540
-    SubobjectId: 9990825077127903793
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 3214236737450207462
+    SubobjectId: 16331913881181283089
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
     WasRoot: true
   }
 }
 Objects {
-  Id: 7644906111380411656
+  Id: 3843778499945385248
   Name: "Loot_Machine"
   Transform {
     Location {
@@ -6120,19 +6122,19 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7593405430459876540
-  ChildIds: 10343576415508836065
-  ChildIds: 9800959991636011478
-  ChildIds: 11753968352186599482
-  ChildIds: 15130647136983236944
-  ChildIds: 8155459195074836332
-  ChildIds: 9159155297462015082
-  ChildIds: 6344249827847845111
-  ChildIds: 5237481380498927306
-  ChildIds: 5928021772468131326
-  ChildIds: 16840635453181050596
-  ChildIds: 12053651587076335072
-  ChildIds: 3491785637584931783
+  ParentId: 3214236737450207462
+  ChildIds: 16091571420070866452
+  ChildIds: 470070569146533524
+  ChildIds: 2971374935219958040
+  ChildIds: 16039449422790577347
+  ChildIds: 16410638766710211637
+  ChildIds: 14129309444323631792
+  ChildIds: 633385412607420196
+  ChildIds: 15796233914928773836
+  ChildIds: 7372507591841362145
+  ChildIds: 8367594530838537499
+  ChildIds: 16642993377037033165
+  ChildIds: 13947893604221632844
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6143,14 +6145,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 7644906111380411656
-    SubobjectId: 9934819703511477125
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 3843778499945385248
+    SubobjectId: 18116299337312585431
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 3491785637584931783
+  Id: 13947893604221632844
   Name: "Military Tank Historic Armor Plate 02"
   Transform {
     Location {
@@ -6167,7 +6169,7 @@ Objects {
       Z: 6.65310335
     }
   }
-  ParentId: 7644906111380411656
+  ParentId: 3843778499945385248
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6218,14 +6220,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3491785637584931783
-    SubobjectId: 15254511010470376778
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 13947893604221632844
+    SubobjectId: 1129560422060182203
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 12053651587076335072
+  Id: 16642993377037033165
   Name: "Military Tank Historic Armor Plate 02"
   Transform {
     Location {
@@ -6241,7 +6243,7 @@ Objects {
       Z: 2.10000014
     }
   }
-  ParentId: 7644906111380411656
+  ParentId: 3843778499945385248
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail2:color"
@@ -6302,14 +6304,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12053651587076335072
-    SubobjectId: 4936108167744625517
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 16642993377037033165
+    SubobjectId: 2939183839531406650
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 16840635453181050596
+  Id: 8367594530838537499
   Name: "Military Tank Historic Hull 01 Mid"
   Transform {
     Location {
@@ -6327,7 +6329,7 @@ Objects {
       Z: 0.6
     }
   }
-  ParentId: 7644906111380411656
+  ParentId: 3843778499945385248
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail2:id"
@@ -6394,14 +6396,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16840635453181050596
-    SubobjectId: 752748478125572201
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 8367594530838537499
+    SubobjectId: 13412410772333522668
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 5928021772468131326
+  Id: 7372507591841362145
   Name: "Military Tank Historic Armor Plate 02"
   Transform {
     Location {
@@ -6417,7 +6419,7 @@ Objects {
       Z: 2.10000014
     }
   }
-  ParentId: 7644906111380411656
+  ParentId: 3843778499945385248
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail2:color"
@@ -6478,14 +6480,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5928021772468131326
-    SubobjectId: 12791111468761099123
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 7372507591841362145
+    SubobjectId: 12136557758144920342
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 5237481380498927306
+  Id: 15796233914928773836
   Name: "Military Tank Historic Hull 01 Mid"
   Transform {
     Location {
@@ -6503,7 +6505,7 @@ Objects {
       Z: 0.6
     }
   }
-  ParentId: 7644906111380411656
+  ParentId: 3843778499945385248
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail2:id"
@@ -6570,14 +6572,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5237481380498927306
-    SubobjectId: 12351401152062738503
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 15796233914928773836
+    SubobjectId: 1516201661907906875
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 6344249827847845111
+  Id: 633385412607420196
   Name: "Military Tank Historic Hull 01 Rear"
   Transform {
     Location {
@@ -6593,7 +6595,7 @@ Objects {
       Z: 1.21294248
     }
   }
-  ParentId: 7644906111380411656
+  ParentId: 3843778499945385248
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail2:color"
@@ -6654,14 +6656,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6344249827847845111
-    SubobjectId: 13532461332869450362
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 633385412607420196
+    SubobjectId: 14337177253787413715
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 9159155297462015082
+  Id: 14129309444323631792
   Name: "Military Tank Historic Hull 01 Rear"
   Transform {
     Location {
@@ -6678,7 +6680,7 @@ Objects {
       Z: 1.21294248
     }
   }
-  ParentId: 7644906111380411656
+  ParentId: 3843778499945385248
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail2:color"
@@ -6739,14 +6741,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9159155297462015082
-    SubobjectId: 11303018358071159527
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 14129309444323631792
+    SubobjectId: 732039969104030023
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 8155459195074836332
+  Id: 16410638766710211637
   Name: "CORE_Logo"
   Transform {
     Location {
@@ -6763,12 +6765,12 @@ Objects {
       Z: 1.39840448
     }
   }
-  ParentId: 7644906111380411656
-  ChildIds: 15411777337051592396
-  ChildIds: 10574226884858819155
-  ChildIds: 16497532801809214522
-  ChildIds: 4677285306729913717
-  ChildIds: 17281180672329972875
+  ParentId: 3843778499945385248
+  ChildIds: 13696229032058390701
+  ChildIds: 8301674365346284841
+  ChildIds: 1839949542459396368
+  ChildIds: 7913789504118543596
+  ChildIds: 16934055917478026347
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6779,14 +6781,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 8155459195074836332
-    SubobjectId: 10586197548759796193
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 16410638766710211637
+    SubobjectId: 3279627061604011970
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 17281180672329972875
+  Id: 16934055917478026347
   Name: "Lens - Half"
   Transform {
     Location {
@@ -6799,7 +6801,7 @@ Objects {
       Z: 0.00047506392
     }
   }
-  ParentId: 8155459195074836332
+  ParentId: 16410638766710211637
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -6840,14 +6842,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17281180672329972875
-    SubobjectId: 870512199515390470
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 16934055917478026347
+    SubobjectId: 2683024217742448540
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 4677285306729913717
+  Id: 7913789504118543596
   Name: "Wedge - Corner Complex"
   Transform {
     Location {
@@ -6865,7 +6867,7 @@ Objects {
       Z: 0.54832226
     }
   }
-  ParentId: 8155459195074836332
+  ParentId: 16410638766710211637
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -6897,14 +6899,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4677285306729913717
-    SubobjectId: 11758536115544056824
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 7913789504118543596
+    SubobjectId: 11812576727247183643
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 16497532801809214522
+  Id: 1839949542459396368
   Name: "Wedge - Corner Complex"
   Transform {
     Location {
@@ -6922,7 +6924,7 @@ Objects {
       Z: 0.54832226
     }
   }
-  ParentId: 8155459195074836332
+  ParentId: 16410638766710211637
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -6954,14 +6956,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16497532801809214522
-    SubobjectId: 519245277880767159
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 1839949542459396368
+    SubobjectId: 15543345293146807015
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 10574226884858819155
+  Id: 8301674365346284841
   Name: "Wedge - Corner Complex"
   Transform {
     Location {
@@ -6977,7 +6979,7 @@ Objects {
       Z: 0.54832226
     }
   }
-  ParentId: 8155459195074836332
+  ParentId: 16410638766710211637
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -7009,14 +7011,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 10574226884858819155
-    SubobjectId: 8176438140546157790
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 8301674365346284841
+    SubobjectId: 13621320367200046814
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 15411777337051592396
+  Id: 13696229032058390701
   Name: "Lens - Half"
   Transform {
     Location {
@@ -7029,7 +7031,7 @@ Objects {
       Z: 0.342353642
     }
   }
-  ParentId: 8155459195074836332
+  ParentId: 16410638766710211637
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -7070,14 +7072,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15411777337051592396
-    SubobjectId: 3901834360351918145
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 13696229032058390701
+    SubobjectId: 8083708238565311322
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 15130647136983236944
+  Id: 16039449422790577347
   Name: "CORE_Logo"
   Transform {
     Location {
@@ -7093,12 +7095,12 @@ Objects {
       Z: 1.39840448
     }
   }
-  ParentId: 7644906111380411656
-  ChildIds: 2077086235794742604
-  ChildIds: 9872561445767358628
-  ChildIds: 9029557351241859825
-  ChildIds: 5696503224593240344
-  ChildIds: 6214820887850785294
+  ParentId: 3843778499945385248
+  ChildIds: 13359530867058772557
+  ChildIds: 12289501808735126129
+  ChildIds: 12355469057903572173
+  ChildIds: 8981656752874341183
+  ChildIds: 1150067418174007838
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7109,14 +7111,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 15130647136983236944
-    SubobjectId: 3620158662367674333
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 16039449422790577347
+    SubobjectId: 1200855992173643572
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 6214820887850785294
+  Id: 1150067418174007838
   Name: "Lens - Half"
   Transform {
     Location {
@@ -7129,7 +7131,7 @@ Objects {
       Z: 0.00047506392
     }
   }
-  ParentId: 15130647136983236944
+  ParentId: 16039449422790577347
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -7170,14 +7172,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6214820887850785294
-    SubobjectId: 13112444527427626115
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 1150067418174007838
+    SubobjectId: 13963413205967249897
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 5696503224593240344
+  Id: 8981656752874341183
   Name: "Wedge - Corner Complex"
   Transform {
     Location {
@@ -7195,7 +7197,7 @@ Objects {
       Z: 0.54832226
     }
   }
-  ParentId: 15130647136983236944
+  ParentId: 16039449422790577347
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -7227,14 +7229,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5696503224593240344
-    SubobjectId: 12450680526517301141
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 8981656752874341183
+    SubobjectId: 12869211134313253064
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 9029557351241859825
+  Id: 12355469057903572173
   Name: "Wedge - Corner Complex"
   Transform {
     Location {
@@ -7252,7 +7254,7 @@ Objects {
       Z: 0.54832226
     }
   }
-  ParentId: 15130647136983236944
+  ParentId: 16039449422790577347
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -7284,14 +7286,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9029557351241859825
-    SubobjectId: 11423616752359668860
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 12355469057903572173
+    SubobjectId: 7298839419702886202
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 9872561445767358628
+  Id: 12289501808735126129
   Name: "Wedge - Corner Complex"
   Transform {
     Location {
@@ -7307,7 +7309,7 @@ Objects {
       Z: 0.54832226
     }
   }
-  ParentId: 15130647136983236944
+  ParentId: 16039449422790577347
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -7339,14 +7341,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9872561445767358628
-    SubobjectId: 7693795418252940841
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 12289501808735126129
+    SubobjectId: 7255521810542987654
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 2077086235794742604
+  Id: 13359530867058772557
   Name: "Lens - Half"
   Transform {
     Location {
@@ -7359,7 +7361,7 @@ Objects {
       Z: 0.342353642
     }
   }
-  ParentId: 15130647136983236944
+  ParentId: 16039449422790577347
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -7400,14 +7402,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2077086235794742604
-    SubobjectId: 18380582703204836289
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 13359530867058772557
+    SubobjectId: 8600548073879994810
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 11753968352186599482
+  Id: 2971374935219958040
   Name: "Platform"
   Transform {
     Location {
@@ -7420,9 +7422,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7644906111380411656
-  ChildIds: 15328628621769953500
-  ChildIds: 1971769201075411650
+  ParentId: 3843778499945385248
+  ChildIds: 6915944439891111367
+  ChildIds: 10376045788579390359
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7433,14 +7435,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 11753968352186599482
-    SubobjectId: 4672981078801430199
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 2971374935219958040
+    SubobjectId: 16645778867480885999
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 1971769201075411650
+  Id: 10376045788579390359
   Name: "Military Tank Historic MainGun 01"
   Transform {
     Location {
@@ -7456,7 +7458,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11753968352186599482
+  ParentId: 2971374935219958040
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7508,14 +7510,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1971769201075411650
-    SubobjectId: 17913799640280949839
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 10376045788579390359
+    SubobjectId: 4738561718489737312
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 15328628621769953500
+  Id: 6915944439891111367
   Name: "Military Tank Historic Armor Plate 02"
   Transform {
     Location {
@@ -7531,7 +7533,7 @@ Objects {
       Z: 2.57848811
     }
   }
-  ParentId: 11753968352186599482
+  ParentId: 2971374935219958040
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7582,14 +7584,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15328628621769953500
-    SubobjectId: 3998496066896621137
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 6915944439891111367
+    SubobjectId: 10504506209592288816
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 9800959991636011478
+  Id: 470070569146533524
   Name: "Left_Door"
   Transform {
     Location {
@@ -7604,8 +7606,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7644906111380411656
-  ChildIds: 17415050315368904446
+  ParentId: 3843778499945385248
+  ChildIds: 18031772365019068374
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7616,14 +7618,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 9800959991636011478
-    SubobjectId: 7765253969958868827
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 470070569146533524
+    SubobjectId: 14464393068926094691
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 17415050315368904446
+  Id: 18031772365019068374
   Name: "Military Tank Historic Armor Plate 02"
   Transform {
     Location {
@@ -7639,7 +7641,7 @@ Objects {
       Z: 2.05187345
     }
   }
-  ParentId: 9800959991636011478
+  ParentId: 470070569146533524
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7690,14 +7692,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17415050315368904446
-    SubobjectId: 1326617431683008627
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 18031772365019068374
+    SubobjectId: 3747108142186806305
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 10343576415508836065
+  Id: 16091571420070866452
   Name: "Right_Door"
   Transform {
     Location {
@@ -7712,8 +7714,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7644906111380411656
-  ChildIds: 7317065932482351271
+  ParentId: 3843778499945385248
+  ChildIds: 5948533369911541234
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7724,14 +7726,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 10343576415508836065
-    SubobjectId: 7803748087781101676
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 16091571420070866452
+    SubobjectId: 1255766103943603683
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 7317065932482351271
+  Id: 5948533369911541234
   Name: "Military Tank Historic Armor Plate 02"
   Transform {
     Location {
@@ -7748,7 +7750,7 @@ Objects {
       Z: 2.05187345
     }
   }
-  ParentId: 10343576415508836065
+  ParentId: 16091571420070866452
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7799,14 +7801,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7317065932482351271
-    SubobjectId: 9677330469337280042
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 5948533369911541234
+    SubobjectId: 11290719945359128069
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 3528200997955181486
+  Id: 2424672459257810468
   Name: "Loot_Box"
   Transform {
     Location {
@@ -7819,18 +7821,22 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7593405430459876540
-  ChildIds: 2594462699968626047
-  ChildIds: 6179669069691325332
-  ChildIds: 14667988874199004459
-  ChildIds: 8808179726452949604
-  ChildIds: 14228376355312155760
-  ChildIds: 6522057853730231438
-  ChildIds: 16844272504997921268
-  ChildIds: 12841809597894152966
-  ChildIds: 820118482848446982
-  ChildIds: 8269523433474290894
-  ChildIds: 13457592247361628561
+  ParentId: 3214236737450207462
+  ChildIds: 15771019076139060882
+  ChildIds: 4483105471965284811
+  ChildIds: 16080175107311804363
+  ChildIds: 14945242989729931212
+  ChildIds: 4171019491646176975
+  ChildIds: 15948751317386508012
+  ChildIds: 8701118437184004316
+  ChildIds: 16354389883527457969
+  ChildIds: 3095999062263559873
+  ChildIds: 3704455211587746674
+  ChildIds: 8198893136668918611
+  ChildIds: 2079021772083350768
+  ChildIds: 17416605550738715767
+  ChildIds: 4262589673743609534
+  ChildIds: 7351928505572112648
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7841,284 +7847,188 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 3528200997955181486
-    SubobjectId: 15217953849942517027
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 2424672459257810468
+    SubobjectId: 17265662616950408659
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 13457592247361628561
-  Name: "Reward"
+  Id: 7351928505572112648
+  Name: "Military Tank Modern Mudflap 01"
   Transform {
     Location {
-      Z: 30
+      Y: 56.1649132
+      Z: 91.8216858
     }
     Rotation {
+      Pitch: -90
+      Roll: -90
     }
     Scale {
-      X: 0.1
-      Y: 0.1
-      Z: 0.1
+      X: 0.450576305
+      Y: 0.450576037
+      Z: 0.94141531
     }
   }
-  ParentId: 3528200997955181486
-  ChildIds: 166566125932590602
-  ChildIds: 8542851779739392449
-  ChildIds: 6614845632776586061
-  ChildIds: 15837184790646461700
-  ChildIds: 10591507480129226820
+  ParentId: 2424672459257810468
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.056128
+        G: 0.056128
+        B: 0.038204
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.056128
+        G: 0.056128
+        B: 0.038204
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6040461109962236062
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7351928505572112648
+    SubobjectId: 12122162337111061247
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
+  }
+}
+Objects {
+  Id: 4262589673743609534
+  Name: "Beam Down Teleport VFX"
+  Transform {
+    Location {
+      Y: 67.0816116
+      Z: 87.7355576
+    }
+    Rotation {
+      Roll: 89.9999847
+    }
+    Scale {
+      X: 0.512028456
+      Y: 0.512028456
+      Z: 0.512028456
+    }
+  }
+  ParentId: 2424672459257810468
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Enable Spiral Elements"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Enable Ground Hot Spot"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Enable Central Flare Element"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Enable Central Particles"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Teleport Duration"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Particle Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Spiral Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Spiral Ground Element Color"
+      Color {
+        R: 0.05
+        G: 0.4
+        B: 0.05
+        A: 1
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Folder {
-    IsGroup: true
+  Blueprint {
+    BlueprintAsset {
+      Id: 2139533047087704714
+    }
+    TeamSettings {
+    }
+    Vfx {
+    }
   }
   InstanceHistory {
-    SelfId: 13457592247361628561
-    SubobjectId: 6414604301495883548
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 4262589673743609534
+    SubobjectId: 17661460586603636041
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 10591507480129226820
-  Name: "STORE_Hat1"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 3.9
-      Y: 3.9
-      Z: 3.9
-    }
-  }
-  ParentId: 13457592247361628561
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Hat 1"
-  }
-  InstanceHistory {
-    SelfId: 10591507480129226820
-    SubobjectId: 1263499199588855168
-    InstanceId: 4144760558013664828
-    TemplateId: 6935989339742598427
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 15837184790646461700
-  Name: "STORE_BirthdayCake Hat"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 3.9
-      Y: 3.9
-      Z: 3.9
-    }
-  }
-  ParentId: 13457592247361628561
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "STORE_BirthdayCake Hat"
-  }
-  InstanceHistory {
-    SelfId: 15837184790646461700
-    SubobjectId: 11511463057368722708
-    InstanceId: 8344387327099409665
-    TemplateId: 18277733649088940997
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 6614845632776586061
-  Name: "STORE_Cowboy Hat _Hat"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 3.9
-      Y: 3.9
-      Z: 3.9
-    }
-  }
-  ParentId: 13457592247361628561
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "STORE_Cowboy Hat _Hat"
-  }
-  InstanceHistory {
-    SelfId: 6614845632776586061
-    SubobjectId: 4034813922096462059
-    InstanceId: 15631285836382875372
-    TemplateId: 614220041473863367
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 8542851779739392449
-  Name: "STORE_Chef Hat"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 3.9
-      Y: 3.9
-      Z: 3.9
-    }
-  }
-  ParentId: 13457592247361628561
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "STORE_Chef Hat"
-  }
-  InstanceHistory {
-    SelfId: 8542851779739392449
-    SubobjectId: 549989728288704889
-    InstanceId: 17648780899093822160
-    TemplateId: 12269522058044990569
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 166566125932590602
-  Name: "STORE_Costume1"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.34000087
-      Y: 2.34000087
-      Z: 2.34000087
-    }
-  }
-  ParentId: 13457592247361628561
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "STORE_Costume1"
-  }
-  InstanceHistory {
-    SelfId: 166566125932590602
-    SubobjectId: 8141680742227768540
-    InstanceId: 17063227314503076989
-    TemplateId: 13488633352376776946
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 8269523433474290894
-  Name: "Lid"
-  Transform {
-    Location {
-      Y: -85.2107773
-      Z: 85.6520538
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3528200997955181486
-  ChildIds: 17531957157560356222
-  ChildIds: 7972631903105511407
-  ChildIds: 15181107648719384449
-  ChildIds: 8834040833227659034
-  ChildIds: 116203418085830462
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 8269523433474290894
-    SubobjectId: 10449626324364446275
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
-  }
-}
-Objects {
-  Id: 116203418085830462
+  Id: 17416605550738715767
   Name: "CORE_Logo"
   Transform {
     Location {
-      Y: 56
-      Z: 40
+      Y: 69.7649384
+      Z: 87.7735367
     }
     Rotation {
+      Roll: 89.9999924
     }
     Scale {
-      X: 0.786235154
-      Y: 0.786235154
-      Z: 0.786235154
+      X: 0.572847247
+      Y: 0.572847247
+      Z: 0.572847247
     }
   }
-  ParentId: 8269523433474290894
-  ChildIds: 3631656076853602935
-  ChildIds: 14732903935794991160
-  ChildIds: 14562817997963303578
-  ChildIds: 5445613032699764244
-  ChildIds: 15196483855026613664
+  ParentId: 2424672459257810468
+  ChildIds: 5797463121850369052
+  ChildIds: 8020286621976958578
+  ChildIds: 16077787881228774610
+  ChildIds: 14927987637940566737
+  ChildIds: 5540994208548867493
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8129,14 +8039,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 116203418085830462
-    SubobjectId: 16310751542290518451
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 17416605550738715767
+    SubobjectId: 4578445676401049472
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 15196483855026613664
+  Id: 5540994208548867493
   Name: "Lens - Half"
   Transform {
     Location {
@@ -8150,7 +8060,7 @@ Objects {
       Z: 0.0571330972
     }
   }
-  ParentId: 116203418085830462
+  ParentId: 17416605550738715767
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -8191,14 +8101,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15196483855026613664
-    SubobjectId: 3540807827574575917
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 5540994208548867493
+    SubobjectId: 9428372189253682770
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 5445613032699764244
+  Id: 14927987637940566737
   Name: "Wedge - Corner Complex"
   Transform {
     Location {
@@ -8216,7 +8126,7 @@ Objects {
       Z: 0.54832226
     }
   }
-  ParentId: 116203418085830462
+  ParentId: 17416605550738715767
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -8248,14 +8158,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5445613032699764244
-    SubobjectId: 12129614691129237657
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 14927987637940566737
+    SubobjectId: 78535673135542566
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 14562817997963303578
+  Id: 16077787881228774610
   Name: "Wedge - Corner Complex"
   Transform {
     Location {
@@ -8273,7 +8183,7 @@ Objects {
       Z: 0.54832226
     }
   }
-  ParentId: 116203418085830462
+  ParentId: 17416605550738715767
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -8305,14 +8215,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14562817997963303578
-    SubobjectId: 3016916657916617751
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 16077787881228774610
+    SubobjectId: 1234576226876040997
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 14732903935794991160
+  Id: 8020286621976958578
   Name: "Wedge - Corner Complex"
   Transform {
     Location {
@@ -8328,7 +8238,7 @@ Objects {
       Z: 0.54832226
     }
   }
-  ParentId: 116203418085830462
+  ParentId: 17416605550738715767
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -8360,14 +8270,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14732903935794991160
-    SubobjectId: 3436935269294763701
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 8020286621976958578
+    SubobjectId: 11632822426629250437
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 3631656076853602935
+  Id: 5797463121850369052
   Name: "Lens - Half"
   Transform {
     Location {
@@ -8380,7 +8290,7 @@ Objects {
       Z: 0.342353642
     }
   }
-  ParentId: 116203418085830462
+  ParentId: 17416605550738715767
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -8412,183 +8322,261 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3631656076853602935
-    SubobjectId: 15105499268241151226
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 5797463121850369052
+    SubobjectId: 11405761413860265963
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 8834040833227659034
-  Name: "Level Up VFX"
+  Id: 2079021772083350768
+  Name: "Reward"
   Transform {
     Location {
-      Y: 56.0379639
-      Z: 35.3806305
+      Z: 30
     }
     Rotation {
     }
     Scale {
-      X: 0.3
-      Y: 0.3
-      Z: 0.0786235183
+      X: 0.1
+      Y: 0.1
+      Z: 0.1
     }
   }
-  ParentId: 8269523433474290894
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Enable Spiral"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Enable Beam"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Enable Rings"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Enable Inner Spirals"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Enable Outer Particle Swirls"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Enable Ground Hot Spot"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Enable Ground Flare"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Ground Burst Lines"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Enable Base Rays"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Life"
-      Float: 2.5
-    }
-    Overrides {
-      Name: "bp:color"
-      Color {
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Spiral Color"
-      Color {
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Ground Element Color"
-      Color {
-        R: 0.05
-        G: 0.4
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 30
-    }
-  }
+  ParentId: 2424672459257810468
+  ChildIds: 8584810886548196435
+  ChildIds: 15902666682451886084
+  ChildIds: 7063600773578205809
+  ChildIds: 6674500998939836191
+  ChildIds: 7907928919222636926
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Blueprint {
-    BlueprintAsset {
-      Id: 1087167255202433751
-    }
-    TeamSettings {
-    }
-    Vfx {
-    }
+  Folder {
+    IsGroup: true
   }
   InstanceHistory {
-    SelfId: 8834040833227659034
-    SubobjectId: 11051667656653678999
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 2079021772083350768
+    SubobjectId: 15197385003575723783
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 15181107648719384449
-  Name: "Lens - Half"
+  Id: 7907928919222636926
+  Name: "STORE_BirthdayCake Hat"
   Transform {
     Location {
-      Y: 56.0379639
-      Z: 35.8878326
     }
     Rotation {
     }
     Scale {
-      X: 0.907292366
-      Y: 0.907292366
-      Z: 0.063915439
+      X: 1.82573462
+      Y: 1.82573462
+      Z: 1.82573462
     }
   }
-  ParentId: 8269523433474290894
+  ParentId: 2079021772083350768
   UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 4990547234950917864
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.056128
-        G: 0.056128
-        B: 0.038204
-        A: 1
-      }
-    }
   }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "STORE_BirthdayCake Hat"
+  }
+  InstanceHistory {
+    SelfId: 15837184790646461700
+    SubobjectId: 11511463057368722708
+    InstanceId: 8344387327099409665
+    TemplateId: 18277733649088940997
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 6674500998939836191
+  Name: "STORE_Cowboy Hat _Hat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.82573462
+      Y: 1.82573462
+      Z: 1.82573462
+    }
+  }
+  ParentId: 2079021772083350768
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "STORE_Cowboy Hat _Hat"
+  }
+  InstanceHistory {
+    SelfId: 6614845632776586061
+    SubobjectId: 4034813922096462059
+    InstanceId: 15631285836382875372
+    TemplateId: 614220041473863367
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 7063600773578205809
+  Name: "STORE_Chef Hat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.82573462
+      Y: 1.82573462
+      Z: 1.82573462
+    }
+  }
+  ParentId: 2079021772083350768
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "STORE_Chef Hat"
+  }
+  InstanceHistory {
+    SelfId: 8542851779739392449
+    SubobjectId: 549989728288704889
+    InstanceId: 17648780899093822160
+    TemplateId: 12269522058044990569
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 15902666682451886084
+  Name: "STORE_Costume1"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.09544134
+      Y: 1.09544134
+      Z: 1.09544134
+    }
+  }
+  ParentId: 2079021772083350768
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "STORE_Costume1"
+  }
+  InstanceHistory {
+    SelfId: 166566125932590602
+    SubobjectId: 8141680742227768540
+    InstanceId: 17063227314503076989
+    TemplateId: 13488633352376776946
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 8584810886548196435
+  Name: "STORE_Hat1"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.82573462
+      Y: 1.82573462
+      Z: 1.82573462
+    }
+  }
+  ParentId: 2079021772083350768
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Hat 1"
+  }
+  InstanceHistory {
+    SelfId: 10591507480129226820
+    SubobjectId: 1263499199588855168
+    InstanceId: 4144760558013664828
+    TemplateId: 6935989339742598427
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 8198893136668918611
+  Name: "Lid"
+  Transform {
+    Location {
+      Y: -85.2107773
+      Z: 85.6520538
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2424672459257810468
+  ChildIds: 6774333709979023561
+  ChildIds: 12450536906887427789
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 4753988644095219219
-    }
-    Teams {
-    }
-    DisableReceiveDecals: true
-    StaticMesh {
-      Physics {
-      }
-    }
+  Folder {
+    IsGroup: true
   }
   InstanceHistory {
-    SelfId: 15181107648719384449
-    SubobjectId: 3560544662575042828
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 8198893136668918611
+    SubobjectId: 13832119830089828516
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 7972631903105511407
+  Id: 12450536906887427789
   Name: "Sci-fi Terminal Keyboard 01"
   Transform {
     Location {
@@ -8604,7 +8592,7 @@ Objects {
       Z: 1.43423486
     }
   }
-  ParentId: 8269523433474290894
+  ParentId: 8198893136668918611
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8659,14 +8647,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7972631903105511407
-    SubobjectId: 10188200092345586018
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 12450536906887427789
+    SubobjectId: 7130587119810280762
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 17531957157560356222
+  Id: 6774333709979023561
   Name: "Military Epic Crate Lid"
   Transform {
     Location {
@@ -8675,11 +8663,11 @@ Objects {
     }
     Scale {
       X: 1.02414799
-      Y: 1.37713838
+      Y: 1.27889693
       Z: 1
     }
   }
-  ParentId: 8269523433474290894
+  ParentId: 8198893136668918611
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8725,14 +8713,51 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17531957157560356222
-    SubobjectId: 1191692883872199667
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 6774333709979023561
+    SubobjectId: 10393915360178795326
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 820118482848446982
+  Id: 3704455211587746674
+  Name: "Magic Star Cute Disappear 01 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.87254846
+      Y: 1.87254846
+      Z: 1.87254846
+    }
+  }
+  ParentId: 2424672459257810468
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 11673733992968245091
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    IsAttenuationEnabled: true
+  }
+  InstanceHistory {
+    SelfId: 3704455211587746674
+    SubobjectId: 18254496725494804613
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
+  }
+}
+Objects {
+  Id: 3095999062263559873
   Name: "Sci-fi Cinematic Time Warp Impact 01 SFX"
   Transform {
     Location {
@@ -8745,7 +8770,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3528200997955181486
+  ParentId: 2424672459257810468
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8761,14 +8786,14 @@ Objects {
     Radius: -1
   }
   InstanceHistory {
-    SelfId: 820118482848446982
-    SubobjectId: 16764118628407264395
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 3095999062263559873
+    SubobjectId: 16486249777102028086
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 12841809597894152966
+  Id: 16354389883527457969
   Name: "Magic Poof Subtle 01 SFX"
   Transform {
     Location {
@@ -8781,7 +8806,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3528200997955181486
+  ParentId: 2424672459257810468
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8798,14 +8823,14 @@ Objects {
     Radius: -1
   }
   InstanceHistory {
-    SelfId: 12841809597894152966
-    SubobjectId: 5904498056371269003
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 16354389883527457969
+    SubobjectId: 3227858955645183814
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 16844272504997921268
+  Id: 8701118437184004316
   Name: "Heavy Mechanical Door Airlock Pneumatic 01 SFX"
   Transform {
     Location {
@@ -8818,7 +8843,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3528200997955181486
+  ParentId: 2424672459257810468
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8834,14 +8859,14 @@ Objects {
     Radius: -1
   }
   InstanceHistory {
-    SelfId: 16844272504997921268
-    SubobjectId: 722081040953737081
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 8701118437184004316
+    SubobjectId: 13185778242870209323
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 6522057853730231438
+  Id: 15948751317386508012
   Name: "Sci-fi Mech Robotic Transformation Sequence 03 SFX"
   Transform {
     Location {
@@ -8854,7 +8879,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3528200997955181486
+  ParentId: 2424672459257810468
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8871,14 +8896,14 @@ Objects {
     Radius: -1
   }
   InstanceHistory {
-    SelfId: 6522057853730231438
-    SubobjectId: 13349999054872095235
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 15948751317386508012
+    SubobjectId: 1398515842726214939
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 14228376355312155760
+  Id: 4171019491646176975
   Name: "Magic Shield Buff Powerup Spell 01 SFX"
   Transform {
     Location {
@@ -8891,7 +8916,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3528200997955181486
+  ParentId: 2424672459257810468
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8908,14 +8933,14 @@ Objects {
     Radius: -1
   }
   InstanceHistory {
-    SelfId: 14228376355312155760
-    SubobjectId: 2788538029543916285
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 4171019491646176975
+    SubobjectId: 17861186295316018488
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 8808179726452949604
+  Id: 14945242989729931212
   Name: "Sports Crowd Intense Cheer Yeah 01 SFX"
   Transform {
     Location {
@@ -8928,7 +8953,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3528200997955181486
+  ParentId: 2424672459257810468
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8944,14 +8969,14 @@ Objects {
     Radius: -1
   }
   InstanceHistory {
-    SelfId: 8808179726452949604
-    SubobjectId: 11095542043015265513
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 14945242989729931212
+    SubobjectId: 96252612572206139
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 14667988874199004459
+  Id: 16080175107311804363
   Name: "Orchestral Adventurous Victory Fanfare Music Stinger Set 01"
   Transform {
     Location {
@@ -8964,7 +8989,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3528200997955181486
+  ParentId: 2424672459257810468
   UnregisteredParameters {
     Overrides {
       Name: "bp:Type"
@@ -8993,33 +9018,33 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14667988874199004459
-    SubobjectId: 2902730840747527078
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 16080175107311804363
+    SubobjectId: 1231062134591853628
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 6179669069691325332
+  Id: 4483105471965284811
   Name: "Treasure Ray Burst"
   Transform {
     Location {
       Y: -17.7434673
-      Z: 101.942383
+      Z: 101.942375
     }
     Rotation {
     }
     Scale {
-      X: 1.81311822
-      Y: 1.3853451
-      Z: 1
+      X: 0.773905933
+      Y: 0.591316581
+      Z: 0.426837027
     }
   }
-  ParentId: 3528200997955181486
+  ParentId: 2424672459257810468
   UnregisteredParameters {
     Overrides {
       Name: "bp:Life"
-      Float: 8
+      Float: 6
     }
     Overrides {
       Name: "bp:color"
@@ -9039,7 +9064,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Blueprint {
     BlueprintAsset {
@@ -9051,27 +9076,28 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6179669069691325332
-    SubobjectId: 13115924947446478105
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 4483105471965284811
+    SubobjectId: 17296899835772256828
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 2594462699968626047
+  Id: 15771019076139060882
   Name: "Military Epic Crate Base"
   Transform {
     Location {
+      Y: -5.87758684
     }
     Rotation {
     }
     Scale {
       X: 1
-      Y: 1.37713838
+      Y: 1.29323554
       Z: 1
     }
   }
-  ParentId: 3528200997955181486
+  ParentId: 2424672459257810468
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9117,27 +9143,27 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2594462699968626047
-    SubobjectId: 14395433420353291250
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 15771019076139060882
+    SubobjectId: 1504259621718820197
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 17635232484312647946
-  Name: "Loot_Box_Animation_Basic"
+  Id: 4107651657672995225
+  Name: "Loot_Box_Animation_Classic"
   Transform {
     Location {
     }
     Rotation {
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.8725487
+      Y: 1.8725487
+      Z: 1.8725487
     }
   }
-  ParentId: 7593405430459876540
+  ParentId: 3214236737450207462
   UnregisteredParameters {
     Overrides {
       Name: "cs:Ease3D"
@@ -9148,103 +9174,109 @@ Objects {
     Overrides {
       Name: "cs:Loot_Box"
       ObjectReference {
-        SelfId: 3528200997955181486
+        SelfId: 2424672459257810468
       }
     }
     Overrides {
       Name: "cs:Lid"
       ObjectReference {
-        SelfId: 8269523433474290894
+        SelfId: 8198893136668918611
       }
     }
     Overrides {
       Name: "cs:CORE_Logo"
       ObjectReference {
-        SelfId: 116203418085830462
+        SelfId: 17416605550738715767
       }
     }
     Overrides {
       Name: "cs:Reward"
       ObjectReference {
-        SelfId: 13457592247361628561
+        SelfId: 2079021772083350768
       }
     }
     Overrides {
       Name: "cs:Right_Door"
       ObjectReference {
-        SelfId: 10343576415508836065
+        SelfId: 16091571420070866452
       }
     }
     Overrides {
       Name: "cs:Left_Door"
       ObjectReference {
-        SelfId: 9800959991636011478
+        SelfId: 470070569146533524
       }
     }
     Overrides {
       Name: "cs:Window"
       ObjectReference {
-        SelfId: 3631656076853602935
+        SelfId: 5797463121850369052
       }
     }
     Overrides {
       Name: "cs:Platform"
       ObjectReference {
-        SelfId: 11753968352186599482
+        SelfId: 2971374935219958040
       }
     }
     Overrides {
       Name: "cs:Open_Music"
       ObjectReference {
-        SelfId: 14667988874199004459
+        SelfId: 16080175107311804363
       }
     }
     Overrides {
       Name: "cs:Open_VFX"
       ObjectReference {
-        SelfId: 6179669069691325332
+        SelfId: 4483105471965284811
       }
     }
     Overrides {
       Name: "cs:Unlock_VFX"
       ObjectReference {
-        SelfId: 8834040833227659034
+        SelfId: 4262589673743609534
       }
     }
     Overrides {
       Name: "cs:Unlock_SFX"
       ObjectReference {
-        SelfId: 6522057853730231438
+        SelfId: 15948751317386508012
       }
     }
     Overrides {
       Name: "cs:Open_SFX"
       ObjectReference {
-        SelfId: 14228376355312155760
+        SelfId: 4171019491646176975
       }
     }
     Overrides {
       Name: "cs:Open_SFX_2"
       ObjectReference {
-        SelfId: 8808179726452949604
+        SelfId: 14945242989729931212
       }
     }
     Overrides {
       Name: "cs:Machine_SFX"
       ObjectReference {
-        SelfId: 16844272504997921268
+        SelfId: 8701118437184004316
       }
     }
     Overrides {
       Name: "cs:Launch_SFX"
       ObjectReference {
-        SelfId: 12841809597894152966
+        SelfId: 16354389883527457969
       }
     }
     Overrides {
       Name: "cs:Impact_SFX"
       ObjectReference {
-        SelfId: 820118482848446982
+        SelfId: 3095999062263559873
+      }
+    }
+    Overrides {
+      Name: "cs:Reset_SFX"
+      ObjectReference {
+        SelfId: 3704455211587746674
       }
     }
     Overrides {
@@ -9254,15 +9286,44 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:MilitaryEpicCrateBase"
-      ObjectReference {
-        SelfId: 2594462699968626047
+      Name: "cs:Common"
+      Color {
+        R: 0.122000009
+        G: 0.122000009
+        B: 0.122000009
+        A: 1
       }
     }
     Overrides {
-      Name: "cs:MilitaryEpicCrateLid"
-      ObjectReference {
-        SelfId: 17531957157560356222
+      Name: "cs:Uncommon"
+      Color {
+        R: 0.0105960099
+        G: 0.320000052
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:Rare"
+      Color {
+        G: 0.00284718489
+        B: 0.429999948
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:Epic"
+      Color {
+        R: 0.161325023
+        B: 0.210000038
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:Legendary"
+      Color {
+        R: 0.330000043
+        G: 0.157351092
+        A: 1
       }
     }
   }
@@ -9274,18 +9335,18 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 11241636305063355869
+      Id: 16246728979500132687
     }
   }
   InstanceHistory {
-    SelfId: 17635232484312647946
-    SubobjectId: 1692041721039435655
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 4107651657672995225
+    SubobjectId: 17815273681950784110
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 930166260568110178
+  Id: 17027891281403907839
   Name: "CinematicShot"
   Transform {
     Location {
@@ -9299,20 +9360,20 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7593405430459876540
-  ChildIds: 15473668424300991420
-  ChildIds: 12980947006444027373
+  ParentId: 3214236737450207462
+  ChildIds: 13732931174154810695
+  ChildIds: 3707756374839328179
   UnregisteredParameters {
     Overrides {
       Name: "cs:CameraStart"
       ObjectReference {
-        SelfId: 16119146702206084414
+        SelfId: 3630598723566711700
       }
     }
     Overrides {
       Name: "cs:CameraEnd"
       ObjectReference {
-        SelfId: 372336268501473497
+        SelfId: 3936376374722140373
       }
     }
     Overrides {
@@ -9330,7 +9391,7 @@ Objects {
     Overrides {
       Name: "cs:Target"
       ObjectReference {
-        SelfId: 13457592247361628561
+        SelfId: 2079021772083350768
       }
     }
     Overrides {
@@ -9464,14 +9525,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 930166260568110178
-    SubobjectId: 17235035193877170927
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 17027891281403907839
+    SubobjectId: 2482299827155830024
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 12980947006444027373
+  Id: 3707756374839328179
   Name: "ClientContext"
   Transform {
     Location {
@@ -9484,11 +9545,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 930166260568110178
-  ChildIds: 3545555469107540410
-  ChildIds: 7674371361679276731
-  ChildIds: 16119146702206084414
-  ChildIds: 372336268501473497
+  ParentId: 17027891281403907839
+  ChildIds: 9391531666938024678
+  ChildIds: 5428738300592448744
+  ChildIds: 3630598723566711700
+  ChildIds: 3936376374722140373
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9500,14 +9561,14 @@ Objects {
   NetworkContext {
   }
   InstanceHistory {
-    SelfId: 12980947006444027373
-    SubobjectId: 6332675694729134944
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 3707756374839328179
+    SubobjectId: 18251196661429892676
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 372336268501473497
+  Id: 3936376374722140373
   Name: "CameraEnd"
   Transform {
     Location {
@@ -9525,7 +9586,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12980947006444027373
+  ParentId: 3707756374839328179
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9550,14 +9611,14 @@ Objects {
     MaxPitch: 89
   }
   InstanceHistory {
-    SelfId: 372336268501473497
-    SubobjectId: 16640085552893716052
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 3936376374722140373
+    SubobjectId: 17914491495417877282
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 16119146702206084414
+  Id: 3630598723566711700
   Name: "CameraStart"
   Transform {
     Location {
@@ -9575,7 +9636,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12980947006444027373
+  ParentId: 3707756374839328179
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9600,14 +9661,14 @@ Objects {
     MaxPitch: 89
   }
   InstanceHistory {
-    SelfId: 16119146702206084414
-    SubobjectId: 4356404695988149171
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 3630598723566711700
+    SubobjectId: 18185434281071884387
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 7674371361679276731
+  Id: 5428738300592448744
   Name: "Target"
   Transform {
     Location {
@@ -9621,7 +9682,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12980947006444027373
+  ParentId: 3707756374839328179
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9636,14 +9697,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 7674371361679276731
-    SubobjectId: 9891981138380080182
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 5428738300592448744
+    SubobjectId: 9613811732429467423
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 3545555469107540410
+  Id: 9391531666938024678
   Name: "CinematicToolClient"
   Transform {
     Location {
@@ -9656,12 +9717,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12980947006444027373
+  ParentId: 3707756374839328179
   UnregisteredParameters {
     Overrides {
       Name: "cs:Root"
       ObjectReference {
-        SelfId: 930166260568110178
+        SelfId: 17027891281403907839
       }
     }
   }
@@ -9677,14 +9738,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 3545555469107540410
-    SubobjectId: 15200756574609575735
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 9391531666938024678
+    SubobjectId: 5505846427332532497
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
   }
 }
 Objects {
-  Id: 15473668424300991420
+  Id: 13732931174154810695
   Name: "CinematicShot_README"
   Transform {
     Location {
@@ -9697,7 +9758,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 930166260568110178
+  ParentId: 17027891281403907839
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -9712,10 +9773,3562 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15473668424300991420
-    SubobjectId: 3853457346847255857
-    InstanceId: 12776921659471280248
-    TemplateId: 13033743946148283660
+    SelfId: 13732931174154810695
+    SubobjectId: 8118004727604362928
+    InstanceId: 7038576426571652717
+    TemplateId: 4510984036840989584
+  }
+}
+Objects {
+  Id: 18244449108185125627
+  Name: "Loot Machine Animation Fantasy"
+  Transform {
+    Location {
+      Y: -45
+      Z: 30
+    }
+    Rotation {
+      Yaw: -90
+    }
+    Scale {
+      X: 0.438334018
+      Y: 0.438334018
+      Z: 0.438334018
+    }
+  }
+  ParentId: 5595803427365930117
+  ChildIds: 2531178615423613386
+  ChildIds: 17703021382529201812
+  ChildIds: 4016090841422039979
+  ChildIds: 2449865194192283689
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 18244449108185125627
+    SubobjectId: 8559622631337307007
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 2449865194192283689
+  Name: "Loot_Machine"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18244449108185125627
+  ChildIds: 9801599484227476730
+  ChildIds: 4127437910445559915
+  ChildIds: 1780084465286283223
+  ChildIds: 11056467172891143191
+  ChildIds: 12493885486245315654
+  ChildIds: 16539899654307678554
+  ChildIds: 17018031312039364174
+  ChildIds: 17415418314980813751
+  ChildIds: 13246590485762050521
+  ChildIds: 6771553302132839558
+  ChildIds: 7216178979680738962
+  ChildIds: 7904097960320113909
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 2449865194192283689
+    SubobjectId: 12251767669165691309
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 7904097960320113909
+  Name: "Fantasy Castle Bannister 01 - Post"
+  Transform {
+    Location {
+      X: -5.63865888e-06
+      Y: -134.233
+      Z: -40
+    }
+    Rotation {
+      Yaw: -90
+    }
+    Scale {
+      X: 0.643839598
+      Y: 4.82321882
+      Z: 1.28408146
+    }
+  }
+  ParentId: 2449865194192283689
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 897429753597555270
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7904097960320113909
+    SubobjectId: 16593602530971559281
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 7216178979680738962
+  Name: "Fantasy Castle Bannister 01 - Post"
+  Transform {
+    Location {
+      X: -5.63865888e-06
+      Y: 134.23317
+      Z: -40
+    }
+    Rotation {
+      Yaw: 90
+    }
+    Scale {
+      X: 0.643839598
+      Y: 4.82321882
+      Z: 1.28408146
+    }
+  }
+  ParentId: 2449865194192283689
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 897429753597555270
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7216178979680738962
+    SubobjectId: 17284158062815536918
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 6771553302132839558
+  Name: "Fantasy Castle Pillar 02 - Top"
+  Transform {
+    Location {
+      Z: -35.7846298
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 6.12640381
+      Y: 8.7181921
+      Z: 0.698478
+    }
+  }
+  ParentId: 2449865194192283689
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.592695117
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11142463406731921364
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 6771553302132839558
+    SubobjectId: 15420832529792396546
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 13246590485762050521
+  Name: "Fantasy Castle Bannister 01 - Post"
+  Transform {
+    Location {
+      X: 215.522
+      Z: -40
+    }
+    Rotation {
+      Yaw: 180
+    }
+    Scale {
+      X: 2.29645371
+      Y: 4.59290743
+      Z: 1.28408146
+    }
+  }
+  ParentId: 2449865194192283689
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 897429753597555270
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 13246590485762050521
+    SubobjectId: 4336396341371121757
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 17415418314980813751
+  Name: "Fantasy Castle Pillar 02 - Base"
+  Transform {
+    Location {
+      X: 212
+      Y: -8.7244829e-05
+      Z: 255.778656
+    }
+    Rotation {
+      Yaw: -179.999985
+      Roll: -179.999985
+    }
+    Scale {
+      X: 0.894845426
+      Y: 1.9
+      Z: 1.1
+    }
+  }
+  ParentId: 2449865194192283689
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14476679536478096151
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 17415418314980813751
+    SubobjectId: 8815602814766240307
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 17018031312039364174
+  Name: "CORE_Logo"
+  Transform {
+    Location {
+      X: -4.37776907e-05
+      Y: -154.011398
+      Z: 157.773697
+    }
+    Rotation {
+      Yaw: 180
+      Roll: 89.9999542
+    }
+    Scale {
+      X: 1.10646522
+      Y: 1.10646522
+      Z: 1.10646522
+    }
+  }
+  ParentId: 2449865194192283689
+  ChildIds: 16623322801710652135
+  ChildIds: 7006173995544690504
+  ChildIds: 6642235574167836348
+  ChildIds: 827558905290771131
+  ChildIds: 16508497859953116732
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 17018031312039364174
+    SubobjectId: 7481780744088780746
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 16508497859953116732
+  Name: "Lens - Half"
+  Transform {
+    Location {
+      Y: -4.54861208e-07
+      Z: -2.21803427
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.00064743
+      Y: 1.00064743
+      Z: 0.0704919323
+    }
+  }
+  ParentId: 17018031312039364174
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.61331135
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.534912169
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.3
+        G: 0.3
+        B: 0.3
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4999891035434594380
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 16508497859953116732
+    SubobjectId: 7989766119338377144
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 827558905290771131
+  Name: "Wedge - Corner Complex"
+  Transform {
+    Location {
+      X: -29.8755322
+      Y: 17.2485962
+      Z: 2.39626312
+    }
+    Rotation {
+      Yaw: -120
+      Roll: -90
+    }
+    Scale {
+      X: 1.59938431
+      Y: 0.462715119
+      Z: -1.06184709
+    }
+  }
+  ParentId: 17018031312039364174
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 1371596269550390581
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 16.3397789
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 7.44225597
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2412619952602972996
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 827558905290771131
+    SubobjectId: 9260732148590146367
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 6642235574167836348
+  Name: "Wedge - Corner Complex"
+  Transform {
+    Location {
+      X: 29.8755188
+      Y: 17.2485962
+      Z: 2.39626312
+    }
+    Rotation {
+      Yaw: 120.000008
+      Roll: -90
+    }
+    Scale {
+      X: 1.59938431
+      Y: 0.462715119
+      Z: -1.06184709
+    }
+  }
+  ParentId: 17018031312039364174
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 1371596269550390581
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 16.3397789
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 7.44225597
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2412619952602972996
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 6642235574167836348
+    SubobjectId: 15552434410810552120
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 7006173995544690504
+  Name: "Wedge - Corner Complex"
+  Transform {
+    Location {
+      Y: -34.497345
+      Z: 2.39642334
+    }
+    Rotation {
+      Roll: -90
+    }
+    Scale {
+      X: 1.59938431
+      Y: 0.462715119
+      Z: -1.06184709
+    }
+  }
+  ParentId: 17018031312039364174
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 1371596269550390581
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 16.3397789
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 7.44225597
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2412619952602972996
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7006173995544690504
+    SubobjectId: 16916154080254297804
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 16623322801710652135
+  Name: "Lens - Half"
+  Transform {
+    Location {
+      Y: 2.72789271e-06
+      Z: 3.87981629
+    }
+    Rotation {
+      Roll: -90
+    }
+    Scale {
+      X: 0.627568
+      Y: 0.627568
+      Z: 0.627568
+    }
+  }
+  ParentId: 17018031312039364174
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 4.1616044
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 3.88652325
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 479021386492478355
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.117823996
+        G: 0.178651124
+        B: 0.224
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15720086389201637667
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 16623322801710652135
+    SubobjectId: 7874903084475704163
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 16539899654307678554
+  Name: "Fantasy Castle Pillar 02 - Base"
+  Transform {
+    Location {
+      X: -212
+      Y: -8.7244829e-05
+      Z: 255.778656
+    }
+    Rotation {
+      Pitch: 180
+    }
+    Scale {
+      X: 0.894845426
+      Y: 1.9
+      Z: 1.1
+    }
+  }
+  ParentId: 2449865194192283689
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14476679536478096151
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 16539899654307678554
+    SubobjectId: 7958187887660216542
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 12493885486245315654
+  Name: "Fantasy Castle Bannister 01 - Post"
+  Transform {
+    Location {
+      X: -215.522064
+      Z: -40
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.29645371
+      Y: 4.59290743
+      Z: 1.28408146
+    }
+  }
+  ParentId: 2449865194192283689
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 897429753597555270
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12493885486245315654
+    SubobjectId: 2781988743481900482
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 11056467172891143191
+  Name: "CORE_Logo"
+  Transform {
+    Location {
+      X: -4.37776907e-05
+      Y: 154.011
+      Z: 157.773697
+    }
+    Rotation {
+      Roll: 89.9999619
+    }
+    Scale {
+      X: 1.10646522
+      Y: 1.10646522
+      Z: 1.10646522
+    }
+  }
+  ParentId: 2449865194192283689
+  ChildIds: 4824012294981397714
+  ChildIds: 3016479103221343125
+  ChildIds: 9568019281716713011
+  ChildIds: 9209119606752864554
+  ChildIds: 12536411204058876375
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 11056467172891143191
+    SubobjectId: 1335555824191378835
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 12536411204058876375
+  Name: "Lens - Half"
+  Transform {
+    Location {
+      Y: -4.54861208e-07
+      Z: -2.21803427
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.00064743
+      Y: 1.00064743
+      Z: 0.0704919323
+    }
+  }
+  ParentId: 11056467172891143191
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.61331135
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.534912169
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.3
+        G: 0.3
+        B: 0.3
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4999891035434594380
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12536411204058876375
+    SubobjectId: 2739007930936864851
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 9209119606752864554
+  Name: "Wedge - Corner Complex"
+  Transform {
+    Location {
+      X: -29.8755322
+      Y: 17.2485962
+      Z: 2.39626312
+    }
+    Rotation {
+      Yaw: -120
+      Roll: -90
+    }
+    Scale {
+      X: 1.59938431
+      Y: 0.462715119
+      Z: -1.06184709
+    }
+  }
+  ParentId: 11056467172891143191
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 1371596269550390581
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 16.3397789
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 7.44225597
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2412619952602972996
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 9209119606752864554
+    SubobjectId: 17597239261592473774
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 9568019281716713011
+  Name: "Wedge - Corner Complex"
+  Transform {
+    Location {
+      X: 29.8755188
+      Y: 17.2485962
+      Z: 2.39626312
+    }
+    Rotation {
+      Yaw: 120.000008
+      Roll: -90
+    }
+    Scale {
+      X: 1.59938431
+      Y: 0.462715119
+      Z: -1.06184709
+    }
+  }
+  ParentId: 11056467172891143191
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 1371596269550390581
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 16.3397789
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 7.44225597
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2412619952602972996
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 9568019281716713011
+    SubobjectId: 1094586320652611511
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 3016479103221343125
+  Name: "Wedge - Corner Complex"
+  Transform {
+    Location {
+      Y: -34.497345
+      Z: 2.39642334
+    }
+    Rotation {
+      Roll: -90
+    }
+    Scale {
+      X: 1.59938431
+      Y: 0.462715119
+      Z: -1.06184709
+    }
+  }
+  ParentId: 11056467172891143191
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 1371596269550390581
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 16.3397789
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 7.44225597
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2412619952602972996
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 3016479103221343125
+    SubobjectId: 11683464851102210577
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 4824012294981397714
+  Name: "Lens - Half"
+  Transform {
+    Location {
+      Y: 2.72789271e-06
+      Z: 3.87981629
+    }
+    Rotation {
+      Roll: -90
+    }
+    Scale {
+      X: 0.627568
+      Y: 0.627568
+      Z: 0.627568
+    }
+  }
+  ParentId: 11056467172891143191
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 4.1616044
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 3.88652325
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 479021386492478355
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.117823996
+        G: 0.178651124
+        B: 0.224
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15720086389201637667
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 4824012294981397714
+    SubobjectId: 14486667394730923350
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 1780084465286283223
+  Name: "Platform"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2449865194192283689
+  ChildIds: 415555195724585573
+  ChildIds: 5774864442872097546
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1780084465286283223
+    SubobjectId: 10614016483174663763
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 5774864442872097546
+  Name: "Military Tank Historic MainGun 01"
+  Transform {
+    Location {
+      Z: 8.56369
+    }
+    Rotation {
+      Pitch: -90
+      Yaw: 90
+    }
+    Scale {
+      X: 0.5
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1780084465286283223
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4199776750539678640
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 5774864442872097546
+    SubobjectId: 15842781953347342990
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 415555195724585573
+  Name: "Military Tank Historic Armor Plate 02"
+  Transform {
+    Location {
+      X: 2.55393752e-06
+      Y: -11.4239769
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: -90
+    }
+    Scale {
+      X: 0.299768299
+      Y: 3.50606227
+      Z: 3.93311381
+    }
+  }
+  ParentId: 1780084465286283223
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 8856291079533827889
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.05
+        G: 0.05
+        B: 0.05
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18320880863940789533
+    }
+    Teams {
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 415555195724585573
+    SubobjectId: 10249339109863285729
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 4127437910445559915
+  Name: "Left_Door"
+  Transform {
+    Location {
+      X: -50
+      Z: 250
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2449865194192283689
+  ChildIds: 510338958905508782
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 4127437910445559915
+    SubobjectId: 12880070956512881135
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 510338958905508782
+  Name: "Fantasy Castle Pillar 02 - Top"
+  Transform {
+    Location {
+      X: -50
+      Z: 16.4286499
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.64424658
+      Y: 5.08048439
+      Z: 0.640940547
+    }
+  }
+  ParentId: 4127437910445559915
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.592695117
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11142463406731921364
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 510338958905508782
+    SubobjectId: 10154975276871399978
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 9801599484227476730
+  Name: "Right_Door"
+  Transform {
+    Location {
+      X: 50
+      Z: 250
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2449865194192283689
+  ChildIds: 6935753183603613871
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 9801599484227476730
+    SubobjectId: 287922987629798782
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 6935753183603613871
+  Name: "Fantasy Castle Pillar 02 - Top"
+  Transform {
+    Location {
+      X: 50
+      Z: 16.4286499
+    }
+    Rotation {
+      Yaw: 180
+    }
+    Scale {
+      X: 1.64424658
+      Y: 5.08048439
+      Z: 0.640940547
+    }
+  }
+  ParentId: 9801599484227476730
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.592695117
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11142463406731921364
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 6935753183603613871
+    SubobjectId: 16985344032385947947
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 4016090841422039979
+  Name: "Loot_Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18244449108185125627
+  ChildIds: 15733923651554306146
+  ChildIds: 15305806564702983202
+  ChildIds: 3410695664163816367
+  ChildIds: 10425777009290641431
+  ChildIds: 10168433330535480995
+  ChildIds: 17983781550569971592
+  ChildIds: 4457580756348566575
+  ChildIds: 9297004843483639229
+  ChildIds: 15953590638187289102
+  ChildIds: 12948840325965874076
+  ChildIds: 6319800329074250558
+  ChildIds: 14312363309312814778
+  ChildIds: 11810378963372560804
+  ChildIds: 8220477197148842154
+  ChildIds: 12319508850643905867
+  ChildIds: 9498057655327285509
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 4016090841422039979
+    SubobjectId: 13566157050009432623
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 9498057655327285509
+  Name: "CORE_Logo"
+  Transform {
+    Location {
+      Y: 69.7649307
+      Z: 87.7735291
+    }
+    Rotation {
+      Roll: 89.9999924
+    }
+    Scale {
+      X: 0.572847247
+      Y: 0.572847247
+      Z: 0.572847247
+    }
+  }
+  ParentId: 4016090841422039979
+  ChildIds: 5890908545067213275
+  ChildIds: 17304757056732545601
+  ChildIds: 15365493642866912277
+  ChildIds: 3696884775520205812
+  ChildIds: 9355912009461594909
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 9498057655327285509
+    SubobjectId: 592029558075971713
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 9355912009461594909
+  Name: "Lens - Half"
+  Transform {
+    Location {
+      Y: -4.54861208e-07
+      Z: -2.21803427
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.00064743
+      Y: 1.00064743
+      Z: 0.0704919323
+    }
+  }
+  ParentId: 9498057655327285509
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.61331135
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.534912169
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.3
+        G: 0.3
+        B: 0.3
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4999891035434594380
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 9355912009461594909
+    SubobjectId: 733610399094850201
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 3696884775520205812
+  Name: "Wedge - Corner Complex"
+  Transform {
+    Location {
+      X: -29.8755322
+      Y: 17.2485962
+      Z: 2.39626312
+    }
+    Rotation {
+      Yaw: -120
+      Roll: -90
+    }
+    Scale {
+      X: 1.59938431
+      Y: 0.462715119
+      Z: -1.06184709
+    }
+  }
+  ParentId: 9498057655327285509
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 1371596269550390581
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 16.3397789
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 7.70112419
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2412619952602972996
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 3696884775520205812
+    SubobjectId: 13309640753832411760
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 15365493642866912277
+  Name: "Wedge - Corner Complex"
+  Transform {
+    Location {
+      X: 29.8755188
+      Y: 17.2485962
+      Z: 2.39626312
+    }
+    Rotation {
+      Yaw: 120.000008
+      Roll: -90
+    }
+    Scale {
+      X: 1.59938431
+      Y: 0.462715119
+      Z: -1.06184709
+    }
+  }
+  ParentId: 9498057655327285509
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 1371596269550390581
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 16.3397789
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 7.70112419
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2412619952602972996
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 15365493642866912277
+    SubobjectId: 6829037774818694545
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 17304757056732545601
+  Name: "Wedge - Corner Complex"
+  Transform {
+    Location {
+      Y: -34.497345
+      Z: 2.39642334
+    }
+    Rotation {
+      Roll: -90
+    }
+    Scale {
+      X: 1.59938431
+      Y: 0.462715119
+      Z: -1.06184709
+    }
+  }
+  ParentId: 9498057655327285509
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 1371596269550390581
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 16.3397789
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 7.70112419
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2412619952602972996
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 17304757056732545601
+    SubobjectId: 8925701775750233029
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 5890908545067213275
+  Name: "Lens - Half"
+  Transform {
+    Location {
+      Y: 6.06481592e-07
+      Z: 2.73070025
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.483054042
+      Y: 0.483054042
+      Z: 0.483054042
+    }
+  }
+  ParentId: 9498057655327285509
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9477826524159400105
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1652630961498236339
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 5890908545067213275
+    SubobjectId: 15724345303443920991
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 12319508850643905867
+  Name: "Beam Down Teleport VFX"
+  Transform {
+    Location {
+      Y: 63.4443665
+      Z: 87.7355652
+    }
+    Rotation {
+      Roll: 89.9999847
+    }
+    Scale {
+      X: 0.632434607
+      Y: 0.632434607
+      Z: 0.632434607
+    }
+  }
+  ParentId: 4016090841422039979
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Enable Spiral Elements"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Enable Ground Hot Spot"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Enable Central Flare Element"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Enable Central Particles"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Teleport Duration"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Particle Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Spiral Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Spiral Ground Element Color"
+      Color {
+        R: 0.05
+        G: 0.4
+        B: 0.05
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 2139533047087704714
+    }
+    TeamSettings {
+    }
+    Vfx {
+    }
+  }
+  InstanceHistory {
+    SelfId: 12319508850643905867
+    SubobjectId: 2382156423962891471
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 8220477197148842154
+  Name: "Fantasy Pommel 04"
+  Transform {
+    Location {
+      Y: 48.0749092
+      Z: 83.1544571
+    }
+    Rotation {
+      Yaw: -90
+    }
+    Scale {
+      X: 11.9576426
+      Y: 9.37539577
+      Z: 6.46712208
+    }
+  }
+  ParentId: 4016090841422039979
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 41.5044899
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 41.5044899
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12510064410993333055
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 8220477197148842154
+    SubobjectId: 18009242722225967406
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 11810378963372560804
+  Name: "Lens - Half"
+  Transform {
+    Location {
+      Y: 72.6168823
+      Z: 87.7355957
+    }
+    Rotation {
+      Roll: 89.9999924
+    }
+    Scale {
+      X: 1.52737129
+      Y: 1.52737093
+      Z: -0.617235482
+    }
+  }
+  ParentId: 4016090841422039979
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4147476590988753507
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 11810378963372560804
+    SubobjectId: 2890831254243076128
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 14312363309312814778
+  Name: "Reward"
+  Transform {
+    Location {
+      Z: 30
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.1
+      Y: 0.1
+      Z: 0.1
+    }
+  }
+  ParentId: 4016090841422039979
+  ChildIds: 166566125932590602
+  ChildIds: 8542851779739392449
+  ChildIds: 6614845632776586061
+  ChildIds: 15837184790646461700
+  ChildIds: 10591507480129226820
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 14312363309312814778
+    SubobjectId: 5577448910575408958
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 10591507480129226820
+  Name: "STORE_Hat1"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.22433114
+      Y: 2.22433114
+      Z: 2.22433114
+    }
+  }
+  ParentId: 14312363309312814778
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "STORE_Hat1"
+  }
+  InstanceHistory {
+    SelfId: 10591507480129226820
+    SubobjectId: 1263499199588855168
+    InstanceId: 4144760558013664828
+    TemplateId: 6935989339742598427
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 15837184790646461700
+  Name: "STORE_BirthdayCake Hat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.22433114
+      Y: 2.22433114
+      Z: 2.22433114
+    }
+  }
+  ParentId: 14312363309312814778
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "STORE_BirthdayCake Hat_1"
+  }
+  InstanceHistory {
+    SelfId: 15837184790646461700
+    SubobjectId: 11511463057368722708
+    InstanceId: 8344387327099409665
+    TemplateId: 18277733649088940997
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 6614845632776586061
+  Name: "STORE_Cowboy Hat _Hat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.22433114
+      Y: 2.22433114
+      Z: 2.22433114
+    }
+  }
+  ParentId: 14312363309312814778
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "STORE_Cowboy Hat _Hat_1"
+  }
+  InstanceHistory {
+    SelfId: 6614845632776586061
+    SubobjectId: 4034813922096462059
+    InstanceId: 15631285836382875372
+    TemplateId: 614220041473863367
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 8542851779739392449
+  Name: "STORE_Chef Hat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.22433114
+      Y: 2.22433114
+      Z: 2.22433114
+    }
+  }
+  ParentId: 14312363309312814778
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "STORE_Chef Hat_1"
+  }
+  InstanceHistory {
+    SelfId: 8542851779739392449
+    SubobjectId: 549989728288704889
+    InstanceId: 17648780899093822160
+    TemplateId: 12269522058044990569
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 166566125932590602
+  Name: "STORE_Costume1"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.33459914
+      Y: 1.33459914
+      Z: 1.33459914
+    }
+  }
+  ParentId: 14312363309312814778
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "STORE_Costume1_1"
+  }
+  InstanceHistory {
+    SelfId: 166566125932590602
+    SubobjectId: 8141680742227768540
+    InstanceId: 17063227314503076989
+    TemplateId: 13488633352376776946
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 6319800329074250558
+  Name: "Lid"
+  Transform {
+    Location {
+      Y: -85.2107773
+      Z: 85.6520538
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4016090841422039979
+  ChildIds: 12568781173657659087
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 6319800329074250558
+    SubobjectId: 15874307188090350266
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 12568781173657659087
+  Name: "Military Epic Crate Lid"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.851585209
+      Y: 1.37713838
+      Z: 1.48569357
+    }
+  }
+  ParentId: 6319800329074250558
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.283040047
+        G: 0.487999976
+        B: 0.488000035
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 0.101500012
+        G: 0.174999982
+        B: 0.175000012
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.04402
+        G: 0.0624235757
+        B: 0.071
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:utile"
+      Float: 3.04847026
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:vtile"
+      Float: 5.21861553
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5314666338763493560
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12568781173657659087
+    SubobjectId: 2708327215563235147
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 12948840325965874076
+  Name: "Magic Star Cute Disappear 01 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.28136516
+      Y: 2.28136516
+      Z: 2.28136516
+    }
+  }
+  ParentId: 4016090841422039979
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 11673733992968245091
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    IsAttenuationEnabled: true
+  }
+  InstanceHistory {
+    SelfId: 12948840325965874076
+    SubobjectId: 4056383210825923096
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 15953590638187289102
+  Name: "Sci-fi Cinematic Time Warp Impact 01 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4016090841422039979
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 18068332545945605919
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    IsAttenuationEnabled: true
+  }
+  InstanceHistory {
+    SelfId: 15953590638187289102
+    SubobjectId: 6241466311549297546
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 9297004843483639229
+  Name: "Magic Poof Subtle 01 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4016090841422039979
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 17245586022597769725
+    }
+    Pitch: -200
+    Volume: 2
+    Falloff: -1
+    Radius: -1
+    IsAttenuationEnabled: true
+  }
+  InstanceHistory {
+    SelfId: 9297004843483639229
+    SubobjectId: 791848515507426361
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 4457580756348566575
+  Name: "Heavy Mechanical Door Airlock Pneumatic 01 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4016090841422039979
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 10930443841480605240
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    IsAttenuationEnabled: true
+  }
+  InstanceHistory {
+    SelfId: 4457580756348566575
+    SubobjectId: 13124664378212599211
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 17983781550569971592
+  Name: "Sci-fi Mech Robotic Transformation Sequence 03 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4016090841422039979
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 12608501405558972760
+    }
+    Pitch: 500
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    IsAttenuationEnabled: true
+  }
+  InstanceHistory {
+    SelfId: 17983781550569971592
+    SubobjectId: 8244847009146758668
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 10168433330535480995
+  Name: "Magic Shield Buff Powerup Spell 01 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4016090841422039979
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 16092184965830535244
+    }
+    Pitch: -800
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    IsAttenuationEnabled: true
+  }
+  InstanceHistory {
+    SelfId: 10168433330535480995
+    SubobjectId: 496845798313494311
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 10425777009290641431
+  Name: "Sports Crowd Intense Cheer Yeah 01 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4016090841422039979
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 14295439443652911268
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    IsAttenuationEnabled: true
+  }
+  InstanceHistory {
+    SelfId: 10425777009290641431
+    SubobjectId: 1970151465827973523
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 3410695664163816367
+  Name: "Orchestral Adventurous Victory Fanfare Music Stinger Set 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4016090841422039979
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Type"
+      Enum {
+        Value: "mc:emx_orchestral_adventourus_victory_fanfare_stinger_01:40"
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4165456448030584864
+    }
+    TeamSettings {
+    }
+    AudioBP {
+      Pitch: -50
+      Volume: 1
+      Falloff: 3600
+      Radius: 400
+      IsAttenuationEnabled: true
+    }
+  }
+  InstanceHistory {
+    SelfId: 3410695664163816367
+    SubobjectId: 11866306621647043115
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 15305806564702983202
+  Name: "Treasure Ray Burst"
+  Transform {
+    Location {
+      Y: -17.7434711
+      Z: 114.634949
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.450153798
+      Y: 0.343947947
+      Z: 0.248276025
+    }
+  }
+  ParentId: 4016090841422039979
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Life"
+      Float: 6
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.05
+        G: 0.4
+        B: 0.05
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Max Outward Ray Angle"
+      Float: 60
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4849153163056526563
+    }
+    TeamSettings {
+    }
+    Vfx {
+    }
+  }
+  InstanceHistory {
+    SelfId: 15305806564702983202
+    SubobjectId: 6886438516669459878
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 15733923651554306146
+  Name: "Military Epic Crate Base"
+  Transform {
+    Location {
+      Y: -15.9764042
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.84311074
+      Y: 1.3771385
+      Z: 1.17653847
+    }
+  }
+  ParentId: 4016090841422039979
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.283040047
+        G: 0.487999976
+        B: 0.488000035
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 0.101500012
+        G: 0.174999982
+        B: 0.175000012
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 9691585235102710834
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:utile"
+      Float: 3.04847026
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:vtile"
+      Float: 5.21861553
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12486122445463196188
+    }
+    Teams {
+    }
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 15733923651554306146
+    SubobjectId: 5882420815484604902
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 17703021382529201812
+  Name: "Loot_Box_Animation_Fantasy"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18244449108185125627
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Ease3D"
+      AssetReference {
+        Id: 11818466330896644996
+      }
+    }
+    Overrides {
+      Name: "cs:Loot_Box"
+      ObjectReference {
+        SelfId: 4016090841422039979
+      }
+    }
+    Overrides {
+      Name: "cs:Lid"
+      ObjectReference {
+        SelfId: 6319800329074250558
+      }
+    }
+    Overrides {
+      Name: "cs:CORE_Logo"
+      ObjectReference {
+        SelfId: 9498057655327285509
+      }
+    }
+    Overrides {
+      Name: "cs:Reward"
+      ObjectReference {
+        SelfId: 14312363309312814778
+      }
+    }
+    Overrides {
+      Name: "cs:Right_Door"
+      ObjectReference {
+        SelfId: 9801599484227476730
+      }
+    }
+    Overrides {
+      Name: "cs:Left_Door"
+      ObjectReference {
+        SelfId: 4127437910445559915
+      }
+    }
+    Overrides {
+      Name: "cs:Window"
+      ObjectReference {
+        SelfId: 5890908545067213275
+      }
+    }
+    Overrides {
+      Name: "cs:Platform"
+      ObjectReference {
+        SelfId: 1780084465286283223
+      }
+    }
+    Overrides {
+      Name: "cs:Open_Music"
+      ObjectReference {
+        SelfId: 3410695664163816367
+      }
+    }
+    Overrides {
+      Name: "cs:Open_VFX"
+      ObjectReference {
+        SelfId: 15305806564702983202
+      }
+    }
+    Overrides {
+      Name: "cs:Unlock_VFX"
+      ObjectReference {
+        SelfId: 12319508850643905867
+      }
+    }
+    Overrides {
+      Name: "cs:Unlock_SFX"
+      ObjectReference {
+        SelfId: 17983781550569971592
+      }
+    }
+    Overrides {
+      Name: "cs:Open_SFX"
+      ObjectReference {
+        SelfId: 10168433330535480995
+      }
+    }
+    Overrides {
+      Name: "cs:Open_SFX_2"
+      ObjectReference {
+        SelfId: 10425777009290641431
+      }
+    }
+    Overrides {
+      Name: "cs:Machine_SFX"
+      ObjectReference {
+        SelfId: 4457580756348566575
+      }
+    }
+    Overrides {
+      Name: "cs:Launch_SFX"
+      ObjectReference {
+        SelfId: 9297004843483639229
+      }
+    }
+    Overrides {
+      Name: "cs:Impact_SFX"
+      ObjectReference {
+        SelfId: 15953590638187289102
+      }
+    }
+    Overrides {
+      Name: "cs:Reset_SFX"
+      ObjectReference {
+        SelfId: 12948840325965874076
+      }
+    }
+    Overrides {
+      Name: "cs:LootboxGenerator"
+      ObjectReference {
+        SelfId: 15316851131136835521
+      }
+    }
+    Overrides {
+      Name: "cs:Common"
+      Color {
+        R: 0.122000009
+        G: 0.122000009
+        B: 0.122000009
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:Uncommon"
+      Color {
+        R: 0.0105960099
+        G: 0.320000052
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:Rare"
+      Color {
+        G: 0.00284718489
+        B: 0.429999948
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:Epic"
+      Color {
+        R: 0.161325023
+        B: 0.210000038
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:Legendary"
+      Color {
+        R: 0.330000043
+        G: 0.157351092
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8685601137298188508
+    }
+  }
+  InstanceHistory {
+    SelfId: 17703021382529201812
+    SubobjectId: 9103299342682033936
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 2531178615423613386
+  Name: "CinematicShot"
+  Transform {
+    Location {
+      Z: -40
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18244449108185125627
+  ChildIds: 9776667862744699028
+  ChildIds: 4349399310896481367
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:CameraStart"
+      ObjectReference {
+        SelfId: 10041196543448415891
+      }
+    }
+    Overrides {
+      Name: "cs:CameraEnd"
+      ObjectReference {
+        SelfId: 6934489697054798897
+      }
+    }
+    Overrides {
+      Name: "cs:LookOptions"
+      String: "---------------------------------------------"
+    }
+    Overrides {
+      Name: "cs:LookAtPlayer"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:LookAtTarget"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:Target"
+      ObjectReference {
+        SelfId: 14312363309312814778
+      }
+    }
+    Overrides {
+      Name: "cs:PlaybackOptions"
+      String: "----------------------------------------------"
+    }
+    Overrides {
+      Name: "cs:PlayOnKey"
+      String: "ability_extra_45"
+    }
+    Overrides {
+      Name: "cs:PlayOnEvent"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:SequenceNumber"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:Duration"
+      Float: 12
+    }
+    Overrides {
+      Name: "cs:PathOptions"
+      String: "----------------------------------------------"
+    }
+    Overrides {
+      Name: "cs:LinearPath"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:OrbitShortPath"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:OrbitLongPath"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:EasingOptions"
+      String: "----------------------------------------------"
+    }
+    Overrides {
+      Name: "cs:UseEaseFunction"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:EaseStrength"
+      Float: 1.8
+    }
+    Overrides {
+      Name: "cs:SequenceNumber:tooltip"
+      String: "If multiple shots are bound to the same key or event, the SequenceNumber defines their order."
+    }
+    Overrides {
+      Name: "cs:PlayOnEvent:tooltip"
+      String: "If set, this shot will play when a networked event is detected with matching name. See Events.BroadcastToPlayer() in the API for more info."
+    }
+    Overrides {
+      Name: "cs:PlayOnKey:tooltip"
+      String: "If set, this shot will play when the specified action binding is pressed. Default is \'M\' key."
+    }
+    Overrides {
+      Name: "cs:LinearPath:tooltip"
+      String: "Moves the camera in a linear trajectory."
+    }
+    Overrides {
+      Name: "cs:Duration:tooltip"
+      String: "The duration of the shot, in seconds, as the camera goes from Start to End."
+    }
+    Overrides {
+      Name: "cs:Target:tooltip"
+      String: "The target object for the camera to look at. This can by set to a static position or placed under the hierarchy of a dynamic object."
+    }
+    Overrides {
+      Name: "cs:LookAtTarget:tooltip"
+      String: "If true, the camera will continuously look at the Target object. The Target can be set to another object in the game."
+    }
+    Overrides {
+      Name: "cs:CameraStart:tooltip"
+      String: "Reference to the starting camera object."
+    }
+    Overrides {
+      Name: "cs:CameraEnd:tooltip"
+      String: "Reference to the ending camera object."
+    }
+    Overrides {
+      Name: "cs:LookAtPlayer:tooltip"
+      String: "If true, the camera will continuously look at the local player during the entire shot. Customize the Start camera\'s offset to look at a different point on the player."
+    }
+    Overrides {
+      Name: "cs:LookOptions:tooltip"
+      String: "Choose one. If none are chosen, then rotation will be interpolated based on the Start and End cameras."
+    }
+    Overrides {
+      Name: "cs:PlaybackOptions:tooltip"
+      String: "Control how the shot is initiated, the order of multiple shots and how long each one lasts."
+    }
+    Overrides {
+      Name: "cs:PathOptions:tooltip"
+      String: "Choose one. Determines the movement path of the camera. If none are chosen, a non-linear semi-bezier path is used."
+    }
+    Overrides {
+      Name: "cs:OrbitShortPath:tooltip"
+      String: "Moves the camera in a spherical path around the target. If no target/player is chosen then the root of the template is used as the center."
+    }
+    Overrides {
+      Name: "cs:OrbitLongPath:tooltip"
+      String: "Orbits the camera around the target using the long arc. For a full 360 shot, use this option with both Start and End cameras at the same position."
+    }
+    Overrides {
+      Name: "cs:EasingOptions:tooltip"
+      String: "(WIP) Options that control the shape of time is the shot."
+    }
+    Overrides {
+      Name: "cs:UseEaseFunction:tooltip"
+      String: "If true, time is non-linear, according to the following easing coeficients."
+    }
+    Overrides {
+      Name: "cs:EaseStrength:tooltip"
+      String: "How much to compress time in the beginning and end of the shot."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 2531178615423613386
+    SubobjectId: 12166513049979813966
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 4349399310896481367
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2531178615423613386
+  ChildIds: 10734831322614583011
+  ChildIds: 3021528182179330460
+  ChildIds: 10041196543448415891
+  ChildIds: 6934489697054798897
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 4349399310896481367
+    SubobjectId: 13232847854529183187
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 6934489697054798897
+  Name: "CameraEnd"
+  Transform {
+    Location {
+      X: 8.56987381
+      Y: 419.948669
+      Z: 686.491394
+    }
+    Rotation {
+      Pitch: -20.4529724
+      Yaw: -89.3249512
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4349399310896481367
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Camera {
+    MinDistance: 300
+    MaxDistance: 600
+    PositionOffset {
+    }
+    RotationOffset {
+    }
+    FieldOfView: 60
+    ViewWidth: 1200
+    RotationMode {
+      Value: "mc:erotationmode:default"
+    }
+    MinPitch: -89
+    MaxPitch: 89
+  }
+  InstanceHistory {
+    SelfId: 6934489697054798897
+    SubobjectId: 16988966485611154869
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 10041196543448415891
+  Name: "CameraStart"
+  Transform {
+    Location {
+      X: 2.41197872
+      Y: 444.673523
+      Z: 537.334229
+    }
+    Rotation {
+      Pitch: -20.9007263
+      Yaw: -88.3855286
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4349399310896481367
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Camera {
+    MinDistance: 300
+    MaxDistance: 600
+    PositionOffset {
+    }
+    RotationOffset {
+    }
+    FieldOfView: 100
+    ViewWidth: 1200
+    RotationMode {
+      Value: "mc:erotationmode:default"
+    }
+    MinPitch: -89
+    MaxPitch: 89
+  }
+  InstanceHistory {
+    SelfId: 10041196543448415891
+    SubobjectId: 45548008121517847
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 3021528182179330460
+  Name: "Target"
+  Transform {
+    Location {
+      Z: 30
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4349399310896481367
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3116133004127615129
+    }
+  }
+  InstanceHistory {
+    SelfId: 3021528182179330460
+    SubobjectId: 11679577097410527256
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 10734831322614583011
+  Name: "CinematicToolClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4349399310896481367
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Root"
+      ObjectReference {
+        SelfId: 2531178615423613386
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4982687985501020701
+    }
+  }
+  InstanceHistory {
+    SelfId: 10734831322614583011
+    SubobjectId: 2234179676337469287
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 9776667862744699028
+  Name: "CinematicShot_README"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2531178615423613386
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14361546050163422509
+    }
+  }
+  InstanceHistory {
+    SelfId: 9776667862744699028
+    SubobjectId: 888648649535400208
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
   }
 }
 Objects {
@@ -10296,7 +13909,9 @@ Objects {
   Name: "DropRateSign"
   Transform {
     Location {
-      Y: 530
+      X: -85
+      Y: 255
+      Z: 295
     }
     Rotation {
     }
@@ -10391,7 +14006,7 @@ Objects {
   Text {
     Text: "15% Epic"
     Color {
-      R: 0.161324918
+      R: 0.161325023
       B: 0.210000038
       A: 1
     }
@@ -10431,7 +14046,7 @@ Objects {
   Text {
     Text: "20% Rare"
     Color {
-      G: 0.00284728734
+      G: 0.00284718489
       B: 0.429999948
       A: 1
     }
@@ -10627,14 +14242,14 @@ Objects {
   Name: "Cube"
   Transform {
     Location {
-      Z: 35
+      Z: -45
     }
     Rotation {
     }
     Scale {
       X: 0.3
       Y: 0.3
-      Z: 3.19999981
+      Z: 6.49999762
     }
   }
   ParentId: 1799235503229948380
@@ -10681,14 +14296,15 @@ Objects {
   Name: "Trigger"
   Transform {
     Location {
+      Y: 240
       Z: 70.0000229
     }
     Rotation {
     }
     Scale {
-      X: 3.20000029
-      Y: 3.20000029
-      Z: 3.20000029
+      X: 3.90000057
+      Y: 8.5
+      Z: 3.2
     }
   }
   ParentId: 5595803427365930117

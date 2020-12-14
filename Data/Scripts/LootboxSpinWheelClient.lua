@@ -80,7 +80,7 @@ function SpinTheWheel(generator, propertyName)
 	
 	print(currentRotation/desiredRotation)
 	
-	while currentRotation/desiredRotation < 0.55 or currentRotation/desiredRotation > 0.6 do
+	while currentRotation/desiredRotation < 0.55 or currentRotation/desiredRotation > 0.7 do
 	
 		Task.Wait()
 		
@@ -107,7 +107,7 @@ function SpinTheWheel(generator, propertyName)
 	UI.SetCursorVisible(false)
 	listener = propTrigger.interactedEvent:Connect(Confirmation)
 	
-	Task.Wait(14)
+	Task.Wait(16)
 	
 	rollInProgress = false
 end

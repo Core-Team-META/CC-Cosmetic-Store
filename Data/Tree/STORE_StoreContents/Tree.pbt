@@ -1,6 +1,33 @@
 ﻿Name: "STORE_StoreContents"
 RootId: 6769845893542896755
 Objects {
+  Id: 15293838640380427395
+  Name: "STORE_Costume2"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6769845893542896755
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1816559377336734184
+      value {
+        Overrides {
+          Name: "Name"
+          String: "STORE_Costume2"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2019170231787868539
+    }
+  }
+}
+Objects {
   Id: 13351047624307500683
   Name: "STORE_ScoutArmor_Shoes"
   Transform {

@@ -1,7 +1,7 @@
-﻿Name: "Hat 1"
-RootId: 8584810886548196435
+﻿Name: "STORE_Hat1"
+RootId: 10591507480129226820
 Objects {
-  Id: 13620084770308899589
+  Id: 1778678136128163561
   Name: "STORE_ItemInfo"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8584810886548196435
+  ParentId: 10591507480129226820
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -60,7 +60,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12566984818729962079
+  Id: 8132877530617912056
   Name: "head"
   Transform {
     Location {
@@ -73,8 +73,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8584810886548196435
-  ChildIds: 5069856719505086471
+  ParentId: 10591507480129226820
+  ChildIds: 2179681255613041696
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -92,7 +92,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5069856719505086471
+  Id: 2179681255613041696
   Name: "Sphere"
   Transform {
     Location {
@@ -106,7 +106,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 12566984818729962079
+  ParentId: 8132877530617912056
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -140,7 +140,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16992947399747345659
+  Id: 17170943351030483246
   Name: "store_graphic"
   Transform {
     Location {
@@ -153,8 +153,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8584810886548196435
-  ChildIds: 10322316733288172091
+  ParentId: 10591507480129226820
+  ChildIds: 12193668178947221180
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -172,7 +172,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10322316733288172091
+  Id: 12193668178947221180
   Name: "Sphere"
   Transform {
     Location {
@@ -186,7 +186,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 16992947399747345659
+  ParentId: 17170943351030483246
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"

@@ -1,4 +1,13 @@
 ﻿Assets {
+  Id: 18320880863940789533
+  Name: "Stone Block Standard"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_block_01"
+  }
+}
+Assets {
   Id: 18194858692276435470
   Name: "BG Gradient 002"
   PlatformAssetType: 9
@@ -62,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15720086389201637667
+  Name: "Fantasy Shield 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_shield_001"
+  }
+}
+Assets {
   Id: 15585626911168066842
   Name: "Dry Fire Click Generic 01 SFX"
   PlatformAssetType: 7
@@ -71,21 +89,21 @@ Assets {
   }
 }
 Assets {
-  Id: 15559420455638364971
-  Name: "Column Base 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_column_bottom_001"
-  }
-}
-Assets {
   Id: 15224186827264541306
   Name: "Wood Planks"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_planks_001_uv"
+  }
+}
+Assets {
+  Id: 14476679536478096151
+  Name: "Fantasy Castle Pillar 02 - Base"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_002_base"
   }
 }
 Assets {
@@ -125,12 +143,39 @@ Assets {
   }
 }
 Assets {
+  Id: 13152669538555145280
+  Name: "Drum Kit Set Funk Sampled Instrument 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_sampled_drumkit_funk_ref"
+  }
+}
+Assets {
   Id: 12608501405558972760
   Name: "Sci-fi Mech Robotic Transformation Sequence 03 SFX"
   PlatformAssetType: 7
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_scifi_mech_robotic_transformation_sequence_03_Cue_ref"
+  }
+}
+Assets {
+  Id: 12510064410993333055
+  Name: "Fantasy Pommel 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_pommel_004"
+  }
+}
+Assets {
+  Id: 12486122445463196188
+  Name: "Fantasy Chest Base 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_chest_003_ref"
   }
 }
 Assets {
@@ -143,12 +188,30 @@ Assets {
   }
 }
 Assets {
+  Id: 11673733992968245091
+  Name: "Magic Star Cute Disappear 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_star_magic_cute_disappear_01_Cue_ref"
+  }
+}
+Assets {
   Id: 11349479181198021550
   Name: "Lens - Half"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_half_lense_001"
+  }
+}
+Assets {
+  Id: 11142463406731921364
+  Name: "Stone Block Long"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_block_03"
   }
 }
 Assets {
@@ -185,6 +248,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_scifi_keyboard_001_ref"
+  }
+}
+Assets {
+  Id: 9691585235102710834
+  Name: "Metal Iron 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_iron_001"
   }
 }
 Assets {
@@ -242,12 +314,30 @@ Assets {
   }
 }
 Assets {
+  Id: 6040461109962236062
+  Name: "Military Tank Modern Mudflap 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_mil_tank_mod_mudflap_001_ref"
+  }
+}
+Assets {
   Id: 5506084799444686347
   Name: "BG Flat 002"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_019"
+  }
+}
+Assets {
+  Id: 5314666338763493560
+  Name: "Fantasy Chest Lid 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_chest_lid_003_ref"
   }
 }
 Assets {
@@ -305,6 +395,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4147476590988753507
+  Name: "Chain Ceiling Anchor"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_chain_top_001"
+  }
+}
+Assets {
   Id: 4066445981393379399
   Name: "Metal Gold 01"
   PlatformAssetType: 2
@@ -341,6 +440,33 @@ Assets {
   }
 }
 Assets {
+  Id: 2412619952602972996
+  Name: "Fantasy Gauntlet Hand 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_gauntlet_hand_001"
+  }
+}
+Assets {
+  Id: 2139533047087704714
+  Name: "Beam Down Teleport VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_Teleporter_BeamDown"
+  }
+}
+Assets {
+  Id: 1652630961498236339
+  Name: "Gem - Diamond 8-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_diamond_8_sided_polished_001"
+  }
+}
+Assets {
   Id: 1532438403020507221
   Name: "Metal Gold 01"
   PlatformAssetType: 2
@@ -359,12 +485,21 @@ Assets {
   }
 }
 Assets {
-  Id: 1087167255202433751
-  Name: "Level Up VFX"
-  PlatformAssetType: 8
+  Id: 897429753597555270
+  Name: "Fantasy Castle Bannister 01 - Post"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_Level_Up"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_bannister_001_post"
+  }
+}
+Assets {
+  Id: 479021386492478355
+  Name: "Metal Gold 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_001"
   }
 }
 Assets {
