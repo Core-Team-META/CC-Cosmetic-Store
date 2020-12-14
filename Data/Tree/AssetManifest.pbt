@@ -80,6 +80,19 @@ Assets {
   }
 }
 Assets {
+  Id: 18183123429848157763
+  Name: "gold"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "e373410ac53f4c30a2b40e31afbfb466"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 18153381962735685629
   Name: "Plane Circle - One Sided"
   PlatformAssetType: 1
@@ -320,6 +333,19 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_pillar_001_ref"
+  }
+}
+Assets {
+  Id: 16904666179866830320
+  Name: "DailyRoll"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "4cba556512b64958881a790de790c0ff"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
   }
 }
 Assets {
@@ -2939,6 +2965,19 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_painted_new_001_uv"
+  }
+}
+Assets {
+  Id: 4986375263343566699
+  Name: "VIP"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
   }
 }
 Assets {
