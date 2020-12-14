@@ -28,15 +28,20 @@ local BINDING_ANIM = TEMPLATE_ROOT:GetCustomProperty("Binding_Anim")
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
-function OnBindingPressed(player, binding)
-	if binding == BINDING then
-		player:SetOverrideCamera(CAMERA)
-	end
-end
+local viewToggle = false
 
-function OnBindingReleased(player, binding)
-	if binding == BINDING then
+function OnBindingPressed(player, binding)
+	if binding == BINDING and not viewToggle then
+		player:SetOverrideCamera(CAMERA)
+		UI.SetCursorVisible(true)
+		
+		viewToggle = true
+		
+	elseif binding == BINDING then
 		player:ClearOverrideCamera()
+		UI.SetCursorVisible(false)
+		
+		viewToggle = false
 	end
 end
 
@@ -86,5 +91,22 @@ function OnBindingReleased(player, binding)
 	end
 end
 
+function Tick()
+
+	if viewToggle then
+	
+		if UI.GetCursorPlaneIntersection(REWARD_5:GetPosition()) then
+	
+			print("cursor X: " .. tostring(UI.GetCursorPlaneIntersection(REWARD_5:GetPosition()).x))
+			print("cursor Y: " .. tostring(UI.GetCursorPlaneIntersection(REWARD_5:GetPosition()).y))
+			print("cursor Z: " .. tostring(UI.GetCursorPlaneIntersection(REWARD_5:GetPosition()).z))
+			print("----------------------------------")
+			
+		end
+		
+		Task.Wait(1)
+	end
+	
+end
 LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
-LOCAL_PLAYER.bindingReleasedEvent:Connect(OnBindingReleased)
+
