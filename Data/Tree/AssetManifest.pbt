@@ -71,15 +71,6 @@ Assets {
   }
 }
 Assets {
-  Id: 18194858692276435470
-  Name: "BG Gradient 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundFlat_019"
-  }
-}
-Assets {
   Id: 18189156861081307607
   Name: "Cube - Arched"
   PlatformAssetType: 1
@@ -122,15 +113,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_door_002"
-  }
-}
-Assets {
-  Id: 18026213939653472356
-  Name: "Frame Outline Thin 012"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameOutline_029"
   }
 }
 Assets {
@@ -638,6 +620,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15511698475834043894
+  Name: "Icon Gender Male"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_GenderMale"
+  }
+}
+Assets {
   Id: 15402296587404581505
   Name: "Main Street Trim 02 - Corner"
   PlatformAssetType: 1
@@ -968,19 +959,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_hollow_001"
-  }
-}
-Assets {
-  Id: 14339744105215835560
-  Name: "DailyRoll"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "4cba556512b64958881a790de790c0ff"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
   }
 }
 Assets {
@@ -1335,6 +1313,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12804716500201279526
+  Name: "BG Highlighted 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_020"
+  }
+}
+Assets {
   Id: 12782940202352343062
   Name: "Wallpaper Chevron 01"
   PlatformAssetType: 2
@@ -1650,6 +1637,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11142210224783054821
+  Name: "Center Arrow 008 Wedge"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "CenterArrow_008Wedge"
+  }
+}
+Assets {
   Id: 11111447611931661974
   Name: "Craftsman Stairs 01 Railing"
   PlatformAssetType: 1
@@ -1908,15 +1904,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_modern_ammo_bullet_tip_001"
-  }
-}
-Assets {
-  Id: 9809938118791414773
-  Name: "Frame Outlined 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameSolid4px_019"
   }
 }
 Assets {
@@ -2187,6 +2174,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_stairs_001_pillar"
+  }
+}
+Assets {
+  Id: 8539898514552953847
+  Name: "Icon Gender Female"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_GenderFemale"
   }
 }
 Assets {
@@ -2829,15 +2825,6 @@ Assets {
   }
 }
 Assets {
-  Id: 5506084799444686347
-  Name: "BG Flat 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundNoOutline_019"
-  }
-}
-Assets {
   Id: 5489775416547967874
   Name: "Sphere - Half"
   PlatformAssetType: 1
@@ -2910,6 +2897,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5228409885155131754
+  Name: "Center Arrow 004 Wedge"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "CenterArrow_004Wedge"
+  }
+}
+Assets {
   Id: 5185278861897178064
   Name: "Sphere"
   PlatformAssetType: 1
@@ -2952,19 +2948,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F7_Text_013"
-  }
-}
-Assets {
-  Id: 4951016466345464679
-  Name: "VIP"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
   }
 }
 Assets {
@@ -3184,15 +3167,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3959704981855061964
-  Name: "Fantasy Frame 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Frame_001"
-  }
-}
-Assets {
   Id: 3888295663569024590
   Name: "Sphere - Half Thick"
   PlatformAssetType: 1
@@ -3289,15 +3263,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_part_window_002_ref"
-  }
-}
-Assets {
-  Id: 3374533332023403118
-  Name: "Center Arrow 003 Wedge"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "CenterArrow_003Wedge"
   }
 }
 Assets {
@@ -3622,19 +3587,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_trim_top_6m_002"
-  }
-}
-Assets {
-  Id: 1575973895163857857
-  Name: "gold"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "e373410ac53f4c30a2b40e31afbfb466"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
   }
 }
 Assets {
