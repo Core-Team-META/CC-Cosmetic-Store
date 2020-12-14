@@ -9,11 +9,15 @@ local propCamera = script:GetCustomProperty("Camera"):WaitForObject()
 local propClicker = script:GetCustomProperty("Clicker"):WaitForObject()
 local propClickSFX = script:GetCustomProperty("ClickSFX"):WaitForObject()
 
+local purchaseRollBinding = script:GetCustomProperty("PurchaseRollBinding")
+local exitRollBinding = script:GetCustomProperty("ExitRollBinding")
+
 local Ease3D = require(script:GetCustomProperty("Ease3D"))
 
 local START_SPIN_SPEED = 1000
 
 local listener = nil
+local bindingListener = nil
 
 local totalDt = 0
 local zeroedBefore = false
@@ -27,6 +31,11 @@ propSpinWheelUI.isEnabled = false
 propSpinWheelUI.visibility = Visibility.INHERIT
 
 function SpinTheWheel(generator, propertyName)
+	
+	local currentView = player:GetViewWorldRotation()
+	player:ClearOverrideCamera()
+	UI.SetCursorVisible(false)
+	player:SetLookWorldRotation(currentView)
 
 	rollInProgress = true
 
@@ -102,12 +111,10 @@ function SpinTheWheel(generator, propertyName)
 	--Ease3D.EaseRotation(propWheel, Rotation.New(0, 0, 360 - selectedSection:GetRotation().z), currentRotation/desiredRotation * 2, Ease3D.EasingEquation.QUINTIC, Ease3D.EasingDirection.OUT)
 	
 	Task.Wait((currentRotation/desiredRotation * 2) + 2)
-	
-	player:ClearOverrideCamera()
-	UI.SetCursorVisible(false)
-	listener = propTrigger.interactedEvent:Connect(Confirmation)
-	
+		
 	Task.Wait(16)
+	
+	listener = propTrigger.interactedEvent:Connect(Confirmation)
 	
 	rollInProgress = false
 end
@@ -132,6 +139,8 @@ function Confirmation(trigger, player)
 		
 	end
 	
+	bindingListener = player.bindingPressedEvent:Connect(BindingExit)
+	
 	propSpinWheelUI.isEnabled = true
 	
 	player:SetOverrideCamera(propCamera)
@@ -145,14 +154,32 @@ function Exit(button)
 	propSpinWheelUI.isEnabled = false
 	
 	if button == propYesButton then
-		while Events.BroadcastToServer("SpinTheWheel") == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT do
-			Task.Wait()
-		end
+		Events.BroadcastToServer("SpinTheWheel")
 	else 
 		player:ClearOverrideCamera()
 		UI.SetCursorVisible(false)
 		listener = propTrigger.interactedEvent:Connect(Confirmation)
 	end
+end
+
+function BindingExit(player, bindingName)
+	
+	if bindingName == purchaseRollBinding then
+		propSpinWheelUI.isEnabled = false
+		
+		Events.BroadcastToServer("SpinTheWheel")
+	elseif bindingName == exitRollBinding then
+		propSpinWheelUI.isEnabled = false
+		
+		player:ClearOverrideCamera()
+		UI.SetCursorVisible(false)
+		listener = propTrigger.interactedEvent:Connect(Confirmation)
+		
+		bindingListener:Disconnect()
+	end
+		
+	
+
 end
 
 function EmergencyExit()

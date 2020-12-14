@@ -480,11 +480,11 @@ Objects {
   Name: "PERKS_RestrictedSubscriptionZone(Group)"
   Transform {
     Location {
-      X: -280.766052
-      Y: -1715
+      X: 355
+      Y: -2140
     }
     Rotation {
-      Yaw: -45
+      Yaw: -5
     }
     Scale {
       X: 1
@@ -856,11 +856,11 @@ Objects {
   Name: "PERKS_RestrictedSubscriptionZone"
   Transform {
     Location {
-      X: -625
-      Y: -1090
+      X: -2000
+      Y: 770
     }
     Rotation {
-      Yaw: -65
+      Yaw: -90
     }
     Scale {
       X: 1
@@ -7169,6 +7169,14 @@ Objects {
       ObjectReference {
         SelfId: 3357036419631783885
       }
+    }
+    Overrides {
+      Name: "cs:PurchaseRollBinding"
+      String: "ability_extra_25"
+    }
+    Overrides {
+      Name: "cs:ExitRollBinding"
+      String: "ability_extra_44"
     }
     Overrides {
       Name: "cs:Ease3D"
@@ -15540,7 +15548,7 @@ Objects {
     }
     Overrides {
       Name: "cs:RollCost"
-      Int: 50
+      Int: 0
     }
     Overrides {
       Name: "cs:PrizeRarity"
