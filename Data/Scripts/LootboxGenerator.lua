@@ -20,7 +20,7 @@ function RollLootbox(player)
 		while Events.BroadcastToPlayer(player, "WheelExit") == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT do
 			Task.Wait()
 		end
-		
+		propTrigger.isEnabled = true
 		return
 	end
 	
@@ -73,11 +73,11 @@ function RollLootbox(player)
 	
 		print("Giving Reward!")
 		
-		--while Events.Broadcast("BUYCOSMETIC", player, reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID"), false, 0) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
+		while Events.Broadcast("BUYCOSMETIC", player, reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID"), false, 0) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 			Task.Wait()
-		--end
+		end
 		
-		--player:SetResource(propCurrencyName, currency - propRollCost)	
+		player:SetResource(propCurrencyName, currency - propRollCost)	
 		
 	end
 	

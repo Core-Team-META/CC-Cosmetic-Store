@@ -300,7 +300,7 @@ function StoreItemClicked(button)
 					expectedNewCurrency = currency
 					controlsLocked = true
 					while Events.BroadcastToServer("BUYCOSMETIC", currentlySelected.data.id, true, 0) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
-						Task.Wait()
+						Task.Wait(0.1)
 					end
 				else 
 					currentlySelected = nil
@@ -314,7 +314,7 @@ function StoreItemClicked(button)
 				expectedNewCurrency = currency - currentlySelected.data.cost
 				controlsLocked = true
 				while Events.BroadcastToServer("BUYCOSMETIC", currentlySelected.data.id, false, currentlySelected.data.cost) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
-					Task.Wait()
+					Task.Wait(0.1)
 				end
 			end
 		end

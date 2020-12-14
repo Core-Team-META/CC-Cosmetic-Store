@@ -13,5 +13,7 @@ end
 
 Events.Connect("SETUPDAILYSHOP", DiplayItems)
 
-Events.BroadcastToServer("DAILYSHOPREADY")
+while Events.BroadcastToServer("DAILYSHOPREADY") == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
+	Task.Wait()
+end
 
