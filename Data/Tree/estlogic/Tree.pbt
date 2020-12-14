@@ -1823,7 +1823,6 @@ Objects {
   ParentId: 3541217153010524449
   ChildIds: 11356402237129105530
   ChildIds: 18248970786249341558
-  ChildIds: 6769845893542896755
   ChildIds: 1495587963440536165
   ChildIds: 15156601564198830699
   ChildIds: 13390522731244440466
@@ -2894,33 +2893,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "STORE_TagDefinitions_1"
-  }
-}
-Objects {
-  Id: 6769845893542896755
-  Name: "STORE_StoreContents"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7755841275126465915
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "STORE_StoreContents"
   }
 }
 Objects {

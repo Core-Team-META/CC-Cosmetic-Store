@@ -1205,6 +1205,10 @@ Objects {
       Name: "cs:Discount"
       Float: 0.25
     }
+    Overrides {
+      Name: "cs:CurrencyName"
+      String: "money"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5146,6 +5150,7 @@ Objects {
   }
   ParentId: 17838574404898326113
   ChildIds: 10431267927397472214
+  ChildIds: 4020902902487838364
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5175,8 +5180,176 @@ Objects {
   }
 }
 Objects {
+  Id: 4020902902487838364
+  Name: "InfoPanel"
+  Transform {
+    Location {
+      X: -0.0009765625
+      Y: 1.16415322e-10
+    }
+    Rotation {
+      Yaw: -6.83018879e-06
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16642592586562198016
+  ChildIds: 5204829959845991627
+  ChildIds: 6364841374047097482
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 390
+    Height: 100
+    UIX: 1150
+    UIY: -500
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 6364841374047097482
+  Name: "MessageText"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4020902902487838364
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 330
+    Height: 60
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Text {
+      Label: "Purchase?"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 40
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5204829959845991627
+  Name: "BG Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4020902902487838364
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 1814707273787853473
+      }
+      Color {
+        R: 0.37
+        G: 0.169072792
+        A: 0.446
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 10431267927397472214
-  Name: "UI Panel"
+  Name: "ReRollPanel"
   Transform {
     Location {
       X: -0.0009765625
@@ -5731,6 +5904,24 @@ Objects {
         SelfId: 10431267927397472214
       }
     }
+    Overrides {
+      Name: "cs:InfoPanel"
+      ObjectReference {
+        SelfId: 4020902902487838364
+      }
+    }
+    Overrides {
+      Name: "cs:MessageText"
+      ObjectReference {
+        SelfId: 6364841374047097482
+      }
+    }
+    Overrides {
+      Name: "cs:BGImage"
+      ObjectReference {
+        SelfId: 5204829959845991627
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5844,14 +6035,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STORE_TheOoccoo"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 9888.33301
-            Y: -23335
-            Z: -3840
-          }
         }
         Overrides {
           Name: "Rotation"
@@ -6108,14 +6291,6 @@ Objects {
           String: "STORE_BlueEyeHat"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-            X: 9888.33301
-            Y: -23335
-            Z: -3840
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -6263,14 +6438,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STORE_TheSandy"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 9888.33301
-            Y: -23335
-            Z: -3840
-          }
         }
         Overrides {
           Name: "Rotation"
@@ -6423,14 +6590,6 @@ Objects {
           String: "STORE_StrawberrryHat"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-            X: 9888.33301
-            Y: -23335
-            Z: -3840
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -6478,14 +6637,6 @@ Objects {
           String: "STORE_BaseballCap"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-            X: 9888.33301
-            Y: -23335
-            Z: -3840
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -6531,14 +6682,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STORE_FruitHat"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 9888.33301
-            Y: -23335
-            Z: -3840
-          }
         }
         Overrides {
           Name: "Rotation"

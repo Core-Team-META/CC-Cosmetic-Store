@@ -25,6 +25,7 @@ Objects {
   ChildIds: 11035239812348056179
   ChildIds: 1510335979846993994
   ChildIds: 5886917377158341065
+  ChildIds: 7069178301840666666
   ChildIds: 15571470145942283465
   UnregisteredParameters {
   }
@@ -1772,6 +1773,32 @@ Objects {
         }
       }
     }
+  }
+}
+Objects {
+  Id: 7069178301840666666
+  Name: "Zach"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Zach"
   }
 }
 Objects {

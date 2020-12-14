@@ -29,9 +29,14 @@ local BINDING_ANIM = TEMPLATE_ROOT:GetCustomProperty("Binding_Anim")
 
 local cursorMarkers = script:GetCustomProperty("CursorMarkers"):WaitForObject()
 local dropTable = script:GetCustomProperty("DropTable"):WaitForObject()
+local infoPanel = script:GetCustomProperty("InfoPanel"):WaitForObject()
+local currencyName = randomDailySaleShop:GetCustomProperty("CurrencyName")
 
 local discount = randomDailySaleShop:GetCustomProperty("Discount")
 local reRollUI = script:GetCustomProperty("UIPanel"):WaitForObject()
+
+local messageText = script:GetCustomProperty("MessageText"):WaitForObject()
+local bgImage = script:GetCustomProperty("BGImage"):WaitForObject()
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
@@ -83,6 +88,42 @@ function CheckSelection()
 			while Events.BroadcastToServer("APLAYERPURCHASED", rewardId) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 				Task.Wait()
 			end
+			
+		end
+			
+	end
+
+end
+
+function Tick()
+
+	if not viewToggle then
+	
+		return
+		
+	end
+
+	local click = UI.GetCursorHitResult() 
+	
+	if click then
+	
+		local slot = REWARDS:FindChildByName(click.other.name)
+		
+		if slot then
+			local section = script:GetCustomProperty(click.other.name):GetChildren()
+	
+			local highlightedReward = section[1]
+			
+			if math.floor(highlightedReward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("Cost") * (1 - discount)) <= LOCAL_PLAYER:GetResource(currencyName) then
+			
+				
+			
+						
+			infoPanel.visibility = Visibility.INHERIT
+			
+		else
+		
+			infoPanel.visibility = Visibility.FORCE_OFF
 			
 		end
 			
