@@ -62,6 +62,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17167898803849830920
+  Name: "Crosshair 021"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Crosshair_021"
+  }
+}
+Assets {
   Id: 16251665124910529573
   Name: "Advanced Material"
   PlatformAssetType: 2
@@ -329,6 +338,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_scifi_keyboard_001_ref"
+  }
+}
+Assets {
+  Id: 9809938118791414773
+  Name: "Frame Outlined 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid4px_019"
   }
 }
 Assets {

@@ -26,6 +26,10 @@ local FINISH_SFX = script:GetCustomProperty("Finish_SFX"):WaitForObject()
 local BINDING = TEMPLATE_ROOT:GetCustomProperty("Binding")
 local BINDING_ANIM = TEMPLATE_ROOT:GetCustomProperty("Binding_Anim")
 
+local backplate = script:GetCustomProperty("Backplate"):WaitForObject()
+local cursorMarkers = script:GetCustomProperty("CursorMarkers"):WaitForObject()
+
+
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 local viewToggle = false
@@ -95,11 +99,9 @@ function Tick()
 
 	if viewToggle then
 	
-		if UI.GetCursorPlaneIntersection(REWARD_5:GetPosition()) then
+		if UI.GetCursorHitResult() then
 	
-			print("cursor X: " .. tostring(UI.GetCursorPlaneIntersection(REWARD_5:GetPosition()).x))
-			print("cursor Y: " .. tostring(UI.GetCursorPlaneIntersection(REWARD_5:GetPosition()).y))
-			print("cursor Z: " .. tostring(UI.GetCursorPlaneIntersection(REWARD_5:GetPosition()).z))
+			print("cursor X: " .. tostring(UI.GetCursorHitResult().other.name))
 			print("----------------------------------")
 			
 		end

@@ -269,15 +269,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17167898803849830920
-  Name: "Crosshair 021"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Crosshair_021"
-  }
-}
-Assets {
   Id: 17164668289428711060
   Name: "Cylinder"
   PlatformAssetType: 1
