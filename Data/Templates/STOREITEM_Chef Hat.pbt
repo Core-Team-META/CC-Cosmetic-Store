@@ -467,6 +467,14 @@
             Name: "cs:Types"
             String: "Hat"
           }
+          Overrides {
+            Name: "cs:ZoomView"
+            String: "Hat"
+          }
+          Overrides {
+            Name: "cs:Cost"
+            Int: 60
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

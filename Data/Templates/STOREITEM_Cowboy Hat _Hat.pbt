@@ -376,7 +376,15 @@
           }
           Overrides {
             Name: "cs:Tags"
-            String: "Legendary"
+            String: "Epic"
+          }
+          Overrides {
+            Name: "cs:ZoomView"
+            String: "Hat"
+          }
+          Overrides {
+            Name: "cs:Cost"
+            Int: 50
           }
         }
         WantsNetworking: true

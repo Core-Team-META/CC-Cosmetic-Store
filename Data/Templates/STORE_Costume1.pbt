@@ -984,6 +984,10 @@
             Name: "cs:Types"
             String: "Outfit"
           }
+          Overrides {
+            Name: "cs:PlayerVisibility"
+            Bool: false
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

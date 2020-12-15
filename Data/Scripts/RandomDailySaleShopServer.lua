@@ -24,66 +24,6 @@ function Initialize(player)
 
 end
 
-function RollSale(player)
-
-	local roll = math.random(1, 100)
-	
-	roll = roll * 0.01
-	
-	--print("player rolled: " .. roll)
-	
-	local previousRarity = 0
-	
-	local chosenRarity = nil
-	
-	for r, c in pairs(rarityTable[player.id]) do
-		--print("checking " .. r.name .. " at " .. tostring(c))
-		if c[1] + previousRarity >= roll then
-			chosenRarity = r
-			break
-		end
-		
-		previousRarity = c[1] + previousRarity
-	end
-	
-	--print("Rarity: " .. chosenRarity.name)
-	
-	local rewardsAtRarity = rarityTable[player.id][chosenRarity][2]
-	
-	local reward = nil
-	
-	if #rewardsAtRarity <= 1 then
-	
-		local probability = rarityTable[player.id][chosenRarity][1]
-	
-		rarityTable[player.id][chosenRarity] = nil
-		
-		for e, r in pairs(rarityTable[player.id]) do
-		
-			rarityTable[player.id][e][1] = r[1] + probability * (1/#rarityTable[player.id])
-			
-		end
-		
-		if #rewardsAtRarity < 1 then
-		
-			return RollSale(player)
-			
-		else
-			reward = rewardsAtRarity[1]
-		end		
-	else
-		local secondRoll = math.random(1, #rewardsAtRarity)
-		
-		reward = rewardsAtRarity[secondRoll]
-		
-		table.remove(rarityTable[player.id][chosenRarity][2], secondRoll)
-	end
-	
-	print("Reward: " .. reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("StoreName"))
-	
-	return reward.sourceTemplateId
-end
-
 function SetupShop(player)
 
 	player.perkChangedEvent:Connect(ReRoll)
@@ -155,6 +95,85 @@ function SetupShop(player)
 	player.bindingPressedEvent:Connect(ReRoll)
 end
 
+function RollSale(player)
+
+	local roll = math.random(1, 100)
+	
+	roll = roll * 0.01
+	
+	--print("player rolled: " .. roll)
+	
+	local previousRarity = 0
+	
+	local chosenRarity = nil
+	
+	if not rarityTable[player.id] then
+	
+		return nil
+		
+	end
+	
+	for r, c in pairs(rarityTable[player.id]) do
+		--print("checking " .. r.name .. " at " .. tostring(c))
+		if c[1] + previousRarity >= roll then
+			chosenRarity = r
+			break
+		end
+		
+		previousRarity = c[1] + previousRarity
+	end
+	
+	--print("Rarity: " .. chosenRarity.name)
+	
+	local rewardsAtRarity = rarityTable[player.id][chosenRarity][2]
+	
+	local reward = nil
+	
+	if #rewardsAtRarity <= 1 then
+	
+		local probability = rarityTable[player.id][chosenRarity][1]
+	
+		rarityTable[player.id][chosenRarity] = nil
+		
+		for e, r in pairs(rarityTable[player.id]) do
+		
+			rarityTable[player.id][e][1] = r[1] + probability * (1/#rarityTable[player.id])
+			
+		end
+		
+		if #rewardsAtRarity < 1 then
+		
+			local newReward = RollSale(player)
+		
+			return newReward
+			
+		else
+			reward = rewardsAtRarity[1]
+		end		
+	else
+
+		local secondRoll = math.random(1, #rewardsAtRarity)
+		
+		reward = rewardsAtRarity[secondRoll]
+		
+		table.remove(rarityTable[player.id][chosenRarity][2], secondRoll)
+		
+		if player:GetResource("COSMETIC_" .. reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID")) == 1 then
+		
+			print("PlayerAlreadyOwnsThis")
+			
+			local newReward = RollSale(player)
+		
+			return newReward
+			
+		end
+
+	end
+	
+	print("Reward: " .. reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("StoreName"))
+	
+	return reward.sourceTemplateId
+end
 
 function ReRoll(player, binding)
 
@@ -240,18 +259,18 @@ function OnAcceptPurchase(player, item)
 	
 	local cost = 0
 
-	for _, c in pairs(storeContents:GetChildren()) do
+	for _, c in pairs(dropTable:GetChildren()) do
 	
-		print(c.sourceTemplateId)
+		for _, cc in pairs(c:GetChildren()) do
 	
-		if c.sourceTemplateId == item then
-			itemId = c:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID")
-			cost = math.floor(c:FindChildByName("STORE_ItemInfo"):GetCustomProperty("Cost") * (1 - discount))
+			if cc.sourceTemplateId == item then
+				itemId = cc:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID")
+				cost = math.floor(cc:FindChildByName("STORE_ItemInfo"):GetCustomProperty("Cost") * (1 - discount))
+				print(itemId .. " costs " .. tostring(cost))
+			end
 		end
 		
 	end
-	
-	print(itemId .. " costs " .. tostring(cost))
 	
 	
 			

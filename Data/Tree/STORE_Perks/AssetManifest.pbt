@@ -1,4 +1,13 @@
 ﻿Assets {
+  Id: 18325201781401872249
+  Name: "UI Basic Shape Square"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_Square"
+  }
+}
+Assets {
   Id: 18194858692276435470
   Name: "BG Gradient 002"
   PlatformAssetType: 9
@@ -116,6 +125,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11974785293803476584
+  Name: "Sci-fi Frame 009"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Frame_009"
+  }
+}
+Assets {
   Id: 11730308934333352162
   Name: "Main Street Window 01"
   PlatformAssetType: 1
@@ -197,6 +215,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6903493265086585509
+  Name: "Fantasy Frame 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Frame_006"
+  }
+}
+Assets {
   Id: 5506084799444686347
   Name: "BG Flat 002"
   PlatformAssetType: 9
@@ -221,15 +248,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Frame_001"
-  }
-}
-Assets {
-  Id: 1814707273787853473
-  Name: "BG Flat 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundNoOutline_020"
   }
 }
 Assets {

@@ -205,6 +205,14 @@
             Name: "cs:Types"
             String: "Mask"
           }
+          Overrides {
+            Name: "cs:ZoomView"
+            String: "Head"
+          }
+          Overrides {
+            Name: "cs:Cost"
+            Int: 35
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
