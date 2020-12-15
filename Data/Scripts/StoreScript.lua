@@ -82,6 +82,8 @@ end
 
 
 function BuyCosmetic(player, templateId, isPartOfSubscription, cost)
+
+	print("Setting: " .. templateId)
 	player:SetResource("COSMETIC_" .. templateId, 1)
 	
 	if isPartOfSubscription then

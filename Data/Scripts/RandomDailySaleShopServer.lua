@@ -158,6 +158,8 @@ function RollSale(player)
 		
 		table.remove(rarityTable[player.id][chosenRarity][2], secondRoll)
 		
+		print("Checking " .. reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID"))
+		
 		if player:GetResource("COSMETIC_" .. reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID")) == 1 then
 		
 			print("PlayerAlreadyOwnsThis")
