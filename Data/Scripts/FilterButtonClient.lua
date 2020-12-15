@@ -26,10 +26,8 @@ end
 function Tick(delta)
 
     if (propSelectedFrame.visibility ~= Visibility.FORCE_OFF) then -- and not propButtonSelected:IsVisibleInHierarchy()
-        print("INHERIT")
         propButtonSelected.visibility = Visibility.FORCE_ON
     elseif (propSelectedFrame.visibility == Visibility.FORCE_OFF) then
-        print("OFF")
         propButtonSelected.visibility = Visibility.FORCE_OFF      
     end
     
