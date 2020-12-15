@@ -27,7 +27,6 @@ Objects {
   ChildIds: 1510335979846993994
   ChildIds: 5886917377158341065
   ChildIds: 7069178301840666666
-  ChildIds: 10935127214173276884
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -37,42 +36,6 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 10935127214173276884
-  Name: "STORE_Entry Geo"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 9134274018311211015
-      value {
-        Overrides {
-          Name: "Name"
-          String: "STORE_Entry Geo"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15389268987378960631
-    }
   }
 }
 Objects {
@@ -6225,7 +6188,6 @@ Objects {
     }
   }
   ParentId: 13179596012001901527
-  ChildIds: 18238164593691633981
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6273,33 +6235,6 @@ Objects {
     StaticMesh {
       Physics {
       }
-    }
-  }
-}
-Objects {
-  Id: 18238164593691633981
-  Name: "RotateStoreBG"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.05
-      Y: 0.666666687
-      Z: 0.05
-    }
-  }
-  ParentId: 5941334420889221032
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 15423606664423357804
     }
   }
 }

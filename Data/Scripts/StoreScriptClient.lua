@@ -380,12 +380,16 @@ function UpdateEntryButton(entry, highlighted)
 		entry.itemName:SetColor(Color.WHITE)
 		
 		if entry.PartOfSubscription then
-			entry.itemName.text = entry.data.name .. "\n" .. propSubscriptionName
+			entry.itemName.text = entry.data.name
 		else
-			entry.itemName.text = entry.data.name .. "\n" .. entry.data.cost
+			entry.itemName.text = entry.data.name
 		end
 		
-		entry.BGImage:SetColor(entry.BGImageColor)
+		entry.itemName:SetColor(entry.BGImageColor)
+
+		-- entry.BGImage:SetColor(entry.BGImageColor)
+
+
 	else -- cases for not owned and not hovered
 		local currency = player:GetResource(propCurrencyResourceName)
 		if entry.PartOfSubscription and player:HasPerk(propSubscriptionPerk) then
@@ -816,8 +820,8 @@ function UpdateUIPos()
 
 		v.overlay.x, v.overlay.y = WorldPosToUIPos(v.geo:GetWorldPosition())
 
-		v.overlay.width = math.floor(screenSize.x * 0.145 * BUTTON_SCALE)
-		v.overlay.height = math.floor(v.overlay.width * 1.2)
+		v.overlay.width = math.floor(screenSize.x * 0.1475 * BUTTON_SCALE)
+		v.overlay.height = math.floor(v.overlay.width * 1.5)
 
 		v.itemName.fontSize = math.floor(screenSize.x * 0.017 * BUTTON_SCALE * newScale)
 		v.price.fontSize = math.floor(screenSize.x * 0.017 * BUTTON_SCALE * newScale)
