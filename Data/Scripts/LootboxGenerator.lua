@@ -60,6 +60,7 @@ function RollLootbox(player)
 	print("Reward: " .. reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("StoreName"))
 
 	script:SetNetworkedCustomProperty("PrizeRarity", chosenRarity.name)
+	script:SetNetworkedCustomProperty("PlayerId", player.id)
 
 	Task.Wait(8)
 
