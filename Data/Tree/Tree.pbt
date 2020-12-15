@@ -77,6 +77,17 @@ Objects {
       }
     }
     ParameterOverrideMap {
+      key: 7713661820209391067
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 11229873877269569605
       value {
         Overrides {
