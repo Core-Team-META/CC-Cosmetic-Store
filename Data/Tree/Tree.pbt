@@ -6416,7 +6416,7 @@ Objects {
     Overrides {
       Name: "cs:STORE_EntryOverlay"
       AssetReference {
-        Id: 14247382145864210697
+        Id: 5152138363411456970
       }
     }
     Overrides {
