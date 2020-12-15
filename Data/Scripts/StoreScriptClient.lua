@@ -381,7 +381,7 @@ function UpdateEntryButton(entry, highlighted)
 	if entry.data.templateId == currentlyEquipped then
 		entry.price:SetColor(Color.WHITE)
 		entry.price.text = entry.data.name .. "\nEQUIPPED"
-		entry.BGImage:SetColor(Color.FromLinearHex("000007FF")) -- dark blue
+		entry.BGImage:SetColor(Color.FromLinearHex("000002FF")) -- dark blue
 
  	-- owned but not hovered
 	elseif HasCosmetic(entry.data.id) and not highlighted then
@@ -393,7 +393,7 @@ function UpdateEntryButton(entry, highlighted)
 	elseif HasCosmetic(entry.data.id) and highlighted then
 		entry.price:SetColor(Color.WHITE)
 		entry.price.text = entry.data.name .. "\nEquip?"
-		entry.BGImage:SetColor(Color.FromLinearHex("000007FF")) -- dark blue
+		entry.BGImage:SetColor(Color.FromLinearHex("000002FF")) -- dark blue
 
  	-- not owned and not hovered		
 	elseif not highlighted then
@@ -411,7 +411,7 @@ function UpdateEntryButton(entry, highlighted)
 		
 		entry.rarityFin:SetColor(entry.BGImageColor)
 
-		entry.BGImage:SetColor(Color.FromLinearHex("000007FF"))
+		entry.BGImage:SetColor(Color.FromLinearHex("000002FF"))
 
 
 	else -- cases for not owned and not hovered
@@ -848,11 +848,11 @@ function UpdateUIPos()
 
 		v.overlay.x, v.overlay.y = WorldPosToUIPos(v.geo:GetWorldPosition())
 
-		v.overlay.width = math.floor(screenSize.x * 0.1475 * BUTTON_SCALE)
+		v.overlay.width = math.floor(screenSize.x * 0.152 * BUTTON_SCALE)
 		v.overlay.height = math.floor(v.overlay.width * 1.5)
 
-		v.itemName.fontSize = math.floor(screenSize.x * 0.017 * BUTTON_SCALE * newScale)
-		v.price.fontSize = math.floor(screenSize.x * 0.016 * BUTTON_SCALE * newScale)
+		v.itemName.fontSize = math.floor(screenSize.x * 0.014 * BUTTON_SCALE * newScale)
+		v.price.fontSize = math.floor(screenSize.x * 0.012 * BUTTON_SCALE * newScale)
 
 		if v.deleting and (currentTime >= v.startTime + v.travelTime or not propEnableStoreAnimations) then
 			v.overlay:Destroy()

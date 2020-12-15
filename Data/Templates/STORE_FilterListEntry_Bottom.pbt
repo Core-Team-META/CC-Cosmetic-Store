@@ -7,7 +7,7 @@
       RootId: 11095064026389309121
       Objects {
         Id: 11095064026389309121
-        Name: "STORE_FilterListEntry"
+        Name: "STORE_FilterListEntry_Bottom"
         Transform {
           Scale {
             X: 1
@@ -132,6 +132,8 @@
         ChildIds: 14835943217078100028
         ChildIds: 15333044528143119153
         ChildIds: 17607137430413193455
+        ChildIds: 18086155330651261952
+        ChildIds: 4007075952279237012
         ChildIds: 15587145043623274833
         ChildIds: 4635801690577751426
         Collidable_v2 {
@@ -445,6 +447,120 @@
         }
       }
       Objects {
+        Id: 18086155330651261952
+        Name: "DESCRIPTION_SHADOW"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14787272120848065355
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        Control {
+          Width: 151
+          Height: 31
+          UIX: -2
+          UIY: 35
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Text {
+            Label: "HATS & HELMETS"
+            Color {
+              A: 0.593000054
+            }
+            Size: 11
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+            AutoWrapText: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 4007075952279237012
+        Name: "DESCRIPTION"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14787272120848065355
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        Control {
+          Width: 151
+          Height: 31
+          UIY: 33.3317032
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Text {
+            Label: "HATS & HELMETS"
+            Color {
+              R: 0.545165777
+              G: 0.32
+              B: 1
+              A: 1
+            }
+            Size: 11
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+            AutoWrapText: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
         Id: 15587145043623274833
         Name: "BUTTON_HOVER"
         Transform {
@@ -568,7 +684,7 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         Control {
           Width: 151
@@ -624,7 +740,7 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         Control {
           Width: 151
@@ -680,10 +796,10 @@
         ParentId: 14787272120848065355
         ChildIds: 3561688403720524689
         ChildIds: 12938041963701649702
-        ChildIds: 7877216659918188625
         ChildIds: 450841101535436127
         ChildIds: 13460849848135365680
-        ChildIds: 5242466669892586999
+        ChildIds: 3876900769234475358
+        ChildIds: 15475275265321803839
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -829,63 +945,6 @@
         }
       }
       Objects {
-        Id: 7877216659918188625
-        Name: "INDICATOR_TOP"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 4635801690577751426
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Control {
-          Width: 68
-          Height: 31
-          UIY: 12
-          RotationAngle: 180
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          Image {
-            Brush {
-              Id: 11142210224783054821
-            }
-            Color {
-              R: 0.191324577
-              B: 0.269999981
-              A: 1
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:topcenter"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:topcenter"
-              }
-            }
-          }
-        }
-      }
-      Objects {
         Id: 450841101535436127
         Name: "DESCRIPTION_SHADOW"
         Transform {
@@ -904,7 +963,7 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         Control {
           Width: 151
@@ -960,7 +1019,7 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         Control {
           Width: 151
@@ -1000,7 +1059,63 @@
         }
       }
       Objects {
-        Id: 5242466669892586999
+        Id: 3876900769234475358
+        Name: "INDICATOR_TOP"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4635801690577751426
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 68
+          Height: 31
+          UIY: 72.2120361
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 11142210224783054821
+            }
+            Color {
+              R: 0.191324577
+              B: 0.269999981
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 15475275265321803839
         Name: "INDICATOR_BOTTOM"
         Transform {
           Location {
@@ -1023,8 +1138,7 @@
         Control {
           Width: 40
           Height: 20
-          UIY: 22.7521973
-          RotationAngle: 180
+          UIY: -87.9950562
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
