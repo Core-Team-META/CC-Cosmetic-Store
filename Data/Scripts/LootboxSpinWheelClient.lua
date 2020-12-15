@@ -25,18 +25,12 @@ local rotationDirection = 1
 
 local rollInProgress = false
 
-local player = Game.GetLocalPlayer()
+local localPlayer = Game.GetLocalPlayer()
 
 propSpinWheelUI.isEnabled = false
 propSpinWheelUI.visibility = Visibility.INHERIT
 
 function SpinTheWheel(generator, propertyName)
-	local currentView = player:GetViewWorldRotation()
-	player:ClearOverrideCamera()
-	UI.SetCursorVisible(false)
-	player:SetLookWorldRotation(currentView)
-
-	rollInProgress = true
 
 	if propertyName ~= "PrizeRarity" then
 		return
@@ -47,6 +41,16 @@ function SpinTheWheel(generator, propertyName)
 	if targetRarity == "" then
 		return
 	end
+	
+
+	propSpinWheelUI.isEnabled = false
+	
+	local currentView = localPlayer:GetViewWorldRotation()
+	localPlayer:ClearOverrideCamera()
+	UI.SetCursorVisible(false)
+	localPlayer:SetLookWorldRotation(currentView)
+
+	rollInProgress = true
 
 	local sections = propWheel:FindDescendantsByName(targetRarity)
 
@@ -66,6 +70,8 @@ function SpinTheWheel(generator, propertyName)
 
 	rotationDirection = 1
 
+	propWheel:RotateContinuous(Rotation.New(0, 0, START_SPIN_SPEED), 1, true)
+	Task.Wait()
 	propWheel:RotateContinuous(Rotation.New(0, 0, START_SPIN_SPEED), 1, true)
 
 	Task.Wait(4)
@@ -89,7 +95,7 @@ function SpinTheWheel(generator, propertyName)
 	while currentRotation / desiredRotation < 0.55 or currentRotation / desiredRotation > 0.7 do
 		Task.Wait()
 
-		print(currentRotation / desiredRotation)
+		--print(currentRotation / desiredRotation)
 
 		currentRotation = propWheel:GetRotation().z
 
@@ -98,7 +104,7 @@ function SpinTheWheel(generator, propertyName)
 		end
 	end
 
-	print(currentRotation / desiredRotation)
+	--print(currentRotation / desiredRotation)
 
 	propWheel:RotateTo(
 		Rotation.New(0, 0, 360 - selectedSection:GetRotation().z),
@@ -109,7 +115,7 @@ function SpinTheWheel(generator, propertyName)
 
 	Task.Wait((currentRotation / desiredRotation * 2) + 2)
 
-	Task.Wait(16)
+	Task.Wait(14)
 
 	listener = propTrigger.interactedEvent:Connect(Confirmation)
 
@@ -117,6 +123,13 @@ function SpinTheWheel(generator, propertyName)
 end
 
 function Confirmation(trigger, player)
+
+	if player ~= localPlayer then
+		
+		return
+		
+	end
+
 	while rollInProgress do
 		Task.Wait(1)
 	end
@@ -145,7 +158,7 @@ function Exit(button)
 	if button == propYesButton then
 		Events.BroadcastToServer("SpinTheWheel")
 	else
-		player:ClearOverrideCamera()
+		localPlayer:ClearOverrideCamera()
 		UI.SetCursorVisible(false)
 		listener = propTrigger.interactedEvent:Connect(Confirmation)
 	end
@@ -173,7 +186,7 @@ function EmergencyExit()
 	end
 
 	propSpinWheelUI.isEnabled = false
-	player:ClearOverrideCamera()
+	localPlayer:ClearOverrideCamera()
 	UI.SetCursorVisible(false)
 	listener = propTrigger.interactedEvent:Connect(Confirmation)
 end
