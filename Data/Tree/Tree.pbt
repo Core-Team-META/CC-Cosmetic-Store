@@ -24,7 +24,6 @@ Objects {
   ChildIds: 18072860380143784802
   ChildIds: 2994614744540900363
   ChildIds: 11035239812348056179
-  ChildIds: 1021066630075219825
   ChildIds: 1510335979846993994
   ChildIds: 5886917377158341065
   ChildIds: 7069178301840666666
@@ -220,34 +219,8 @@ Objects {
   }
 }
 Objects {
-  Id: 1021066630075219825
-  Name: "Marcela"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Marcela"
-  }
-}
-Objects {
   Id: 11035239812348056179
-  Name: "Julie"
+  Name: "Environment"
   Transform {
     Location {
     }
@@ -268,7 +241,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Julie"
+    FilePartitionName: "Environment"
   }
 }
 Objects {
@@ -7084,12 +7057,12 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: 100
-      Y: 1450
-      Z: 115
+      X: -6146.57764
+      Y: 4735.88086
+      Z: 123.961639
     }
     Rotation {
-      Yaw: -90
+      Yaw: 5.49952173
     }
     Scale {
       X: 1
