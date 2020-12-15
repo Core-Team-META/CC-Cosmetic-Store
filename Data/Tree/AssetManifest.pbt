@@ -1,4 +1,13 @@
 ﻿Assets {
+  Id: 16020038083592938182
+  Name: "BG Highlighted 016"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_033"
+  }
+}
+Assets {
   Id: 15775978992330089425
   Name: "BG Flat 015"
   PlatformAssetType: 9
@@ -116,12 +125,12 @@ Assets {
   }
 }
 Assets {
-  Id: 9325242685167482929
-  Name: "BG Gradient 015"
+  Id: 9933879321394361768
+  Name: "BG Highlighted 015"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundFlat_032"
+    AssetId: "BackgroundHighlighted_032"
   }
 }
 Assets {
@@ -140,6 +149,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_GenderFemale"
+  }
+}
+Assets {
+  Id: 8250221790891313171
+  Name: "Fantasy Shape 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Shape_003"
   }
 }
 Assets {
@@ -194,15 +212,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_001"
-  }
-}
-Assets {
-  Id: 5070926887581296867
-  Name: "BG Gradient 016"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundFlat_033"
   }
 }
 Assets {
