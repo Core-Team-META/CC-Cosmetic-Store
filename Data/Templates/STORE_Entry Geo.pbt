@@ -41,15 +41,17 @@
           Overrides {
             Name: "cs:DefaultColor"
             Color {
-              G: 0.117449895
-              B: 0.243000016
+              R: 0.0520833321
+              G: 0.0520833321
+              B: 0.0520833321
               A: 1
             }
           }
           Overrides {
             Name: "cs:HighlightColor"
             Color {
-              G: 0.0654304475
+              R: 0.13
+              G: 0.13
               B: 0.13
               A: 1
             }
@@ -315,7 +317,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 10397718742664464874
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -357,12 +359,12 @@
       }
     }
     Assets {
-      Id: 10397718742664464874
-      Name: "Cube - Rounded"
+      Id: 12095835209017042614
+      Name: "Cube"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cube_rounded_002"
+        AssetId: "sm_cube_002"
       }
     }
     PrimaryAssetId {

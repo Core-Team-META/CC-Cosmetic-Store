@@ -1,12 +1,22 @@
 ﻿local lootboxGenerator = script:GetCustomProperty("LootboxGenerator"):WaitForObject()
-local CHEST_SPAWN_MARKER = script:GetCustomProperty("ChestSpawnMarker"):WaitForObject()
+local LOOT_MACHINE = script:GetCustomProperty("Loot_Machine"):WaitForObject()
 local Common_Lootbox = script:GetCustomProperty("Loot_Box_Common")
 local Uncommon_Lootbox = script:GetCustomProperty("Loot_Box_Uncommon")
 local Rare_Lootbox = script:GetCustomProperty("Loot_Box_Rare")
 local Epic_Lootbox = script:GetCustomProperty("Loot_Box_Epic")
 local Legendary_Lootbox = script:GetCustomProperty("Loot_Box_Legendary")
+local CHANGE_PRIZE_CAMERA = script:GetCustomProperty("ChangePrizeCamera")
+local chestSpawnMarker
 local selectedColor = nil
 local currentBox
+
+local function SetupPlatform()
+    for i, child in ipairs(LOOT_MACHINE:GetChildren()) do
+        if child.name == "ChestSpawnMarker" then
+            chestSpawnMarker = child
+        end
+    end
+end
 
 local function CheckRarity(rarity)
     if rarity == "Common" then
@@ -24,6 +34,14 @@ local function CheckRarity(rarity)
     end
 end
 
+local function FindPlayerById(id)
+    for _, player in ipairs(Game.GetPlayers()) do
+        if player.id == id then
+            return player
+        end
+    end
+end
+
 local function FindScript(lootBox)
     for _, child in ipairs(lootBox:GetChildren()) do
         if child.name == "Loot_Box_Animation_Fantasy" then
@@ -33,8 +51,12 @@ local function FindScript(lootBox)
     return nil
 end
 
-function SpawnLootBox(prize, rarity)
-    currentBox = World.SpawnAsset(CheckRarity(rarity), {parent = CHEST_SPAWN_MARKER})
+function SpawnLootBox(player, prize, rarity)
+    if CHANGE_PRIZE_CAMERA and player == Game.GetLocalPlayer() then
+        Events.Broadcast("OpenChestEvent")
+    end
+    SetupPlatform()
+    currentBox = World.SpawnAsset(CheckRarity(rarity), {parent = chestSpawnMarker})
     Task.Wait()
     local boxScript = FindScript(currentBox)
     if boxScript then
@@ -60,8 +82,9 @@ function Setup(generator, propertyName)
     if rarity == "" then
         return
     end
-
-    SpawnLootBox(prize, rarity)
+    local id = lootboxGenerator:GetCustomProperty("PlayerId")
+    local player = FindPlayerById(id)
+    SpawnLootBox(player, prize, rarity)
 end
 
 lootboxGenerator.networkedPropertyChangedEvent:Connect(Setup)

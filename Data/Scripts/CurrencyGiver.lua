@@ -21,7 +21,7 @@ function CheckVIPCount()
 
 end
 
-function GiveMoney(trigger, player)
+function GiveMoney(player, amount)
 	if player:IsA("Player") then
 		local baseMultiplier = 1.0
 		local currentCurrency = player:GetResource(propCurrencyResourceName)
@@ -30,7 +30,7 @@ function GiveMoney(trigger, player)
 			baseMultiplier = 1.5
 		end
 		
-		local moneyGiven = propMoneyPerInterraction * (baseMultiplier + 0.1 * CheckVIPCount())
+		local moneyGiven = propMoneyPerInterraction * amount * (baseMultiplier + 0.1 * CheckVIPCount())
 		
 		print(player.name .. " got " .. moneyGiven)
 		
@@ -39,3 +39,5 @@ function GiveMoney(trigger, player)
 	end
 end
 script.parent.interactedEvent:Connect(GiveMoney)
+
+Events.ConnectForPlayer("Give Player Money", GiveMoney)

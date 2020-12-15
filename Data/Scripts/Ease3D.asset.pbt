@@ -7,7 +7,7 @@
       Overrides {
         Name: "cs:EasingEquations"
         AssetReference {
-          Id: 2420943070735521504
+          Id: 16443047575533243663
         }
       }
     }

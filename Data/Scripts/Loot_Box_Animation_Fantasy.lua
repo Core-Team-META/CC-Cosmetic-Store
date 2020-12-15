@@ -1,9 +1,7 @@
 ﻿local Loot_Box = script:GetCustomProperty("Loot_Box"):WaitForObject()
 local Lid = script:GetCustomProperty("Lid"):WaitForObject()
 local CORE_Logo = script:GetCustomProperty("CORE_Logo"):WaitForObject()
-local Platform = script:GetCustomProperty("Platform"):WaitForObject()
-local Right_Door = script:GetCustomProperty("Right_Door"):WaitForObject()
-local Left_Door = script:GetCustomProperty("Left_Door"):WaitForObject()
+local LOOT_BOX_SPAWNNER = script:GetCustomProperty("Loot_Box_Spawner"):WaitForObject()
 local Reward = script:GetCustomProperty("Reward"):WaitForObject()
 local Window = script:GetCustomProperty("Window"):WaitForObject()
 local Open_VFX = script:GetCustomProperty("Open_VFX"):WaitForObject()
@@ -21,6 +19,8 @@ local PARENT = script:GetCustomProperty("PARENT"):WaitForObject()
 local Ease3D = require(script:GetCustomProperty("Ease3D"))
 --
 
+local Platform, Right_Door, Left_Door
+
 --#TODO was there a reason for this?
 --[[local allFX = {
 	Open_VFX,
@@ -34,8 +34,22 @@ local Ease3D = require(script:GetCustomProperty("Ease3D"))
 
 local lootboxGenerator = script:GetCustomProperty("LootboxGenerator"):WaitForObject()
 
+local function SetupPlatform()
+	local lootMachine = LOOT_BOX_SPAWNNER:GetCustomProperty("Loot_Machine"):WaitForObject()
+	for i, child in ipairs(lootMachine:GetChildren()) do
+		if child.name == "Platform" then
+			Platform = child
+		elseif child.name == "Right_Door" then
+			Right_Door = child
+		elseif child.name == "Left_Door" then
+			Left_Door = child
+		end
+	end
+end
+
 function Setup(prize, rarity)
-	print("I DID IT")
+	SetupPlatform()
+
 	selectedColor = script:GetCustomProperty(tostring(rarity))
 	for _, c in pairs(Reward:GetChildren()) do
 		if c.name == prize then

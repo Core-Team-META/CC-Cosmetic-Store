@@ -364,48 +364,48 @@ end
 
 function UpdateEntryButton(entry, highlighted)
 	if entry.data.templateId == currentlyEquipped then -- currently equipped
-		entry.label:SetColor(Color.WHITE)
-		entry.label.text = entry.data.name .. "\nEQUIPPED"
+		entry.price:SetColor(Color.WHITE)
+		entry.price.text = entry.data.name .. "\nEQUIPPED"
 		entry.BGImage:SetColor(Color.FromLinearHex("000007FF")) -- dark blue
 	elseif HasCosmetic(entry.data.id) and not highlighted then -- owned but not hovered
-		entry.label:SetColor(Color.WHITE)
-		entry.label.text = entry.data.name .. "\nOWNED"
+		entry.price:SetColor(Color.WHITE)
+		entry.price.text = entry.data.name .. "\nOWNED"
 		entry.BGImage:SetColor(Color.FromLinearHex("08004AFF")) -- purple
 	elseif HasCosmetic(entry.data.id) and highlighted then -- owned but hovered
-		entry.label:SetColor(Color.WHITE)
-		entry.label.text = entry.data.name .. "\nEquip?"
+		entry.price:SetColor(Color.WHITE)
+		entry.price.text = entry.data.name .. "\nEquip?"
 		entry.BGImage:SetColor(Color.FromLinearHex("000007FF")) -- dark blue
 	elseif not highlighted then -- not owned and not hovered
-		entry.label:SetColor(Color.WHITE)
+		entry.itemName:SetColor(Color.WHITE)
 		
 		if entry.PartOfSubscription then
-			entry.label.text = entry.data.name .. "\n" .. propSubscriptionName
+			entry.itemName.text = entry.data.name .. "\n" .. propSubscriptionName
 		else
-			entry.label.text = entry.data.name .. "\n" .. entry.data.cost
+			entry.itemName.text = entry.data.name .. "\n" .. entry.data.cost
 		end
 		
 		entry.BGImage:SetColor(entry.BGImageColor)
 	else -- cases for not owned and not hovered
 		local currency = player:GetResource(propCurrencyResourceName)
 		if entry.PartOfSubscription and player:HasPerk(propSubscriptionPerk) then
-			entry.label.text = "Claim it!"
-			entry.label:SetColor(Color.WHITE)
+			entry.price.text = "Claim it!"
+			entry.price:SetColor(Color.WHITE)
 			entry.BGImage:SetColor(Color.FromLinearHex("063300FF")) -- dark green
 			return
 		else
-			entry.label.text = "Buy it!\n[" .. tostring(entry.data.cost) .. "]"
+			entry.price.text = "Buy it!\n[" .. tostring(entry.data.cost) .. "]"
 		end
 		
 		if entry.data.cost <= currency and not entry.PartOfSubscription then
-			entry.label:SetColor(Color.WHITE)
+			entry.itemName:SetColor(Color.WHITE)
 			entry.BGImage:SetColor(Color.FromLinearHex("063300FF")) -- dark green
 		else
-			entry.label:SetColor(Color.RED)
+			entry.itemName:SetColor(Color.RED)
 			
 			if entry.PartOfSubscription then
-				entry.label.text = "NEED\n" .. propSubscriptionName
+				entry.price.text = "NEED\n" .. propSubscriptionName
 			else
-				entry.label.text = "NOT ENOUGH\nFUNDS"
+				entry.price.text = "NOT ENOUGH\nFUNDS"
 			end
 			
 			entry.BGImage:SetColor(Color.FromLinearHex("280000FF")) -- dark red
@@ -694,8 +694,9 @@ function PopulateStore(direction)
 			parent = propButtonHolder
 		})
 		
-		local propLabel = newOverlay:GetCustomProperty("Label"):WaitForObject()
-		local propButton = newOverlay:GetCustomProperty("Button"):WaitForObject()		
+		local propItemName = newOverlay:GetCustomProperty("ItemName"):WaitForObject()
+		local propPrice = newOverlay:GetCustomProperty("Price"):WaitForObject()
+		local propButton = newOverlay:GetCustomProperty("Button"):WaitForObject()
 		local propBGImage = newOverlay:GetCustomProperty("BGImage"):WaitForObject()
 		
 		local previewMesh = newGeo:GetCustomProperty("PreviewMesh"):WaitForObject()
@@ -719,10 +720,14 @@ function PopulateStore(direction)
 			end
 		end
 		print(partOfSubscription)
+
+		-- Set item name
+		propItemName.text = v.name
+
 		if partOfSubscription then
-			propLabel.text = v.name .. "\n" .. propSubscriptionName
+			propPrice.text = propSubscriptionName
 		else 
-			propLabel.text = v.name .. "\n" .. v.cost
+			propPrice.text = tostring(v.cost)
 		end
 		
 		BGMesh:SetColor(BGMeshColor)
@@ -732,7 +737,8 @@ function PopulateStore(direction)
 			overlay = newOverlay,
 			geo = newGeo,
 			button = propButton,
-			label = propLabel,
+			itemName = propItemName,
+			price = propPrice,
 			listener = propButton.clickedEvent:Connect(StoreItemClicked),
 			listener2 = propButton.hoveredEvent:Connect(StoreItemHovered),
 			listener3 = propButton.unhoveredEvent:Connect(StoreItemUnhovered),
@@ -809,10 +815,11 @@ function UpdateUIPos()
 
 		v.overlay.x, v.overlay.y = WorldPosToUIPos(v.geo:GetWorldPosition())
 
-		v.overlay.width = math.floor(screenSize.x * 0.155 * BUTTON_SCALE)
-		v.overlay.height = math.floor(v.overlay.width * 1.35)
+		v.overlay.width = math.floor(screenSize.x * 0.145 * BUTTON_SCALE)
+		v.overlay.height = math.floor(v.overlay.width * 1.2)
 
-		v.label.fontSize = math.floor(screenSize.x * 0.017 * BUTTON_SCALE * newScale)
+		v.itemName.fontSize = math.floor(screenSize.x * 0.017 * BUTTON_SCALE * newScale)
+		v.price.fontSize = math.floor(screenSize.x * 0.017 * BUTTON_SCALE * newScale)
 
 		if v.deleting and (currentTime >= v.startTime + v.travelTime or not propEnableStoreAnimations) then
 			v.overlay:Destroy()
