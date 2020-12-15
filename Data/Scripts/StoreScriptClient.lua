@@ -13,7 +13,7 @@ local propPreviewMesh2 = script:GetCustomProperty("PreviewMesh2"):WaitForObject(
 local propBackButton = script:GetCustomProperty("BackButton"):WaitForObject()
 
 local propCurrencyDisplay = script:GetCustomProperty("CurrencyDisplay"):WaitForObject()
-local propPremiumCurrency = script:GetCustomProperty("PremiumCurrency"):WaitForObject()
+--local propPremiumCurrency = script:GetCustomProperty("PremiumCurrency"):WaitForObject()
 
 local propButtonHolder = script:GetCustomProperty("ButtonHolder"):WaitForObject()
 
@@ -824,9 +824,9 @@ function UpdateCurrencyDisplay()
 
 	propCurrencyDisplay.text = tostring(currency)
 	
-	local premium = player:GetResource(propPremiumCurrencyName)
+	--local premium = player:GetResource(propPremiumCurrencyName)
 	
-	propPremiumCurrency.text = tostring(premium)
+	--propPremiumCurrency.text = tostring(premium)
 
 end
 
