@@ -9806,9 +9806,10 @@ Objects {
   }
   ParentId: 5595803427365930117
   ChildIds: 2531178615423613386
-  ChildIds: 17703021382529201812
-  ChildIds: 4016090841422039979
   ChildIds: 2449865194192283689
+  ChildIds: 4703501942428521935
+  ChildIds: 14312363309312814778
+  ChildIds: 4048568608329531071
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -9823,6 +9824,327 @@ Objects {
     InstanceId: 5210728010314460834
     TemplateId: 4038370370694954791
     WasRoot: true
+  }
+}
+Objects {
+  Id: 4048568608329531071
+  Name: "Loot_Box_Spawner"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.28136516
+      Y: 2.28136516
+      Z: 2.28136516
+    }
+  }
+  ParentId: 18244449108185125627
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Loot_Box_Common"
+      AssetReference {
+        Id: 13097320809386463721
+      }
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Uncommon"
+      AssetReference {
+        Id: 238163795467546082
+      }
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Rare"
+      AssetReference {
+        Id: 13097320809386463721
+      }
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Epic"
+      AssetReference {
+        Id: 13097320809386463721
+      }
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Legendary"
+      AssetReference {
+        Id: 13097320809386463721
+      }
+    }
+    Overrides {
+      Name: "cs:ChestSpawnMarker"
+      ObjectReference {
+        SelfId: 4703501942428521935
+      }
+    }
+    Overrides {
+      Name: "cs:LootboxGenerator"
+      ObjectReference {
+        SelfId: 15316851131136835521
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6605309665226940976
+    }
+  }
+}
+Objects {
+  Id: 14312363309312814778
+  Name: "Reward"
+  Transform {
+    Location {
+      Z: 193.916229
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.1
+      Y: 0.1
+      Z: 0.1
+    }
+  }
+  ParentId: 18244449108185125627
+  ChildIds: 166566125932590602
+  ChildIds: 8542851779739392449
+  ChildIds: 6614845632776586061
+  ChildIds: 15837184790646461700
+  ChildIds: 10591507480129226820
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 14312363309312814778
+    SubobjectId: 5577448910575408958
+    InstanceId: 5210728010314460834
+    TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 10591507480129226820
+  Name: "STORE_Hat1"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.22433114
+      Y: 2.22433114
+      Z: 2.22433114
+    }
+  }
+  ParentId: 14312363309312814778
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "STORE_Hat1"
+  }
+  InstanceHistory {
+    SelfId: 10591507480129226820
+    SubobjectId: 1263499199588855168
+    InstanceId: 4144760558013664828
+    TemplateId: 6935989339742598427
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 15837184790646461700
+  Name: "STORE_BirthdayCake Hat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.22433114
+      Y: 2.22433114
+      Z: 2.22433114
+    }
+  }
+  ParentId: 14312363309312814778
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "STORE_BirthdayCake Hat_1"
+  }
+  InstanceHistory {
+    SelfId: 15837184790646461700
+    SubobjectId: 11511463057368722708
+    InstanceId: 8344387327099409665
+    TemplateId: 18277733649088940997
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 6614845632776586061
+  Name: "STORE_Cowboy Hat _Hat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.22433114
+      Y: 2.22433114
+      Z: 2.22433114
+    }
+  }
+  ParentId: 14312363309312814778
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "STORE_Cowboy Hat _Hat_1"
+  }
+  InstanceHistory {
+    SelfId: 6614845632776586061
+    SubobjectId: 4034813922096462059
+    InstanceId: 15631285836382875372
+    TemplateId: 614220041473863367
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 8542851779739392449
+  Name: "STORE_Chef Hat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.22433114
+      Y: 2.22433114
+      Z: 2.22433114
+    }
+  }
+  ParentId: 14312363309312814778
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "STORE_Chef Hat_1"
+  }
+  InstanceHistory {
+    SelfId: 8542851779739392449
+    SubobjectId: 549989728288704889
+    InstanceId: 17648780899093822160
+    TemplateId: 12269522058044990569
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 166566125932590602
+  Name: "STORE_Costume1"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.33459914
+      Y: 1.33459914
+      Z: 1.33459914
+    }
+  }
+  ParentId: 14312363309312814778
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "STORE_Costume1_1"
+  }
+  InstanceHistory {
+    SelfId: 166566125932590602
+    SubobjectId: 8141680742227768540
+    InstanceId: 17063227314503076989
+    TemplateId: 13488633352376776946
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 4703501942428521935
+  Name: "ChestSpawnMarker"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18244449108185125627
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5546692261811206609
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
   }
 }
 Objects {
@@ -11308,1599 +11630,6 @@ Objects {
   InstanceHistory {
     SelfId: 6935753183603613871
     SubobjectId: 16985344032385947947
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 4016090841422039979
-  Name: "Loot_Box"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 18244449108185125627
-  ChildIds: 15733923651554306146
-  ChildIds: 15305806564702983202
-  ChildIds: 3410695664163816367
-  ChildIds: 10425777009290641431
-  ChildIds: 10168433330535480995
-  ChildIds: 17983781550569971592
-  ChildIds: 4457580756348566575
-  ChildIds: 9297004843483639229
-  ChildIds: 15953590638187289102
-  ChildIds: 12948840325965874076
-  ChildIds: 6319800329074250558
-  ChildIds: 14312363309312814778
-  ChildIds: 11810378963372560804
-  ChildIds: 8220477197148842154
-  ChildIds: 12319508850643905867
-  ChildIds: 9498057655327285509
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 4016090841422039979
-    SubobjectId: 13566157050009432623
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 9498057655327285509
-  Name: "CORE_Logo"
-  Transform {
-    Location {
-      Y: 69.7649307
-      Z: 87.7735291
-    }
-    Rotation {
-      Roll: 89.9999924
-    }
-    Scale {
-      X: 0.572847247
-      Y: 0.572847247
-      Z: 0.572847247
-    }
-  }
-  ParentId: 4016090841422039979
-  ChildIds: 5890908545067213275
-  ChildIds: 17304757056732545601
-  ChildIds: 15365493642866912277
-  ChildIds: 3696884775520205812
-  ChildIds: 9355912009461594909
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 9498057655327285509
-    SubobjectId: 592029558075971713
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 9355912009461594909
-  Name: "Lens - Half"
-  Transform {
-    Location {
-      Y: -4.54861208e-07
-      Z: -2.21803427
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.00064743
-      Y: 1.00064743
-      Z: 0.0704919323
-    }
-  }
-  ParentId: 9498057655327285509
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 9691585235102710834
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.61331135
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.534912169
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.3
-        G: 0.3
-        B: 0.3
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4999891035434594380
-    }
-    Teams {
-    }
-    DisableReceiveDecals: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 9355912009461594909
-    SubobjectId: 733610399094850201
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 3696884775520205812
-  Name: "Wedge - Corner Complex"
-  Transform {
-    Location {
-      X: -29.8755322
-      Y: 17.2485962
-      Z: 2.39626312
-    }
-    Rotation {
-      Yaw: -120
-      Roll: -90
-    }
-    Scale {
-      X: 1.59938431
-      Y: 0.462715119
-      Z: -1.06184709
-    }
-  }
-  ParentId: 9498057655327285509
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 1371596269550390581
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 9691585235102710834
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 16.3397789
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 7.70112419
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2412619952602972996
-    }
-    Teams {
-    }
-    DisableReceiveDecals: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 3696884775520205812
-    SubobjectId: 13309640753832411760
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 15365493642866912277
-  Name: "Wedge - Corner Complex"
-  Transform {
-    Location {
-      X: 29.8755188
-      Y: 17.2485962
-      Z: 2.39626312
-    }
-    Rotation {
-      Yaw: 120.000008
-      Roll: -90
-    }
-    Scale {
-      X: 1.59938431
-      Y: 0.462715119
-      Z: -1.06184709
-    }
-  }
-  ParentId: 9498057655327285509
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 1371596269550390581
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 9691585235102710834
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 16.3397789
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 7.70112419
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2412619952602972996
-    }
-    Teams {
-    }
-    DisableReceiveDecals: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 15365493642866912277
-    SubobjectId: 6829037774818694545
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 17304757056732545601
-  Name: "Wedge - Corner Complex"
-  Transform {
-    Location {
-      Y: -34.497345
-      Z: 2.39642334
-    }
-    Rotation {
-      Roll: -90
-    }
-    Scale {
-      X: 1.59938431
-      Y: 0.462715119
-      Z: -1.06184709
-    }
-  }
-  ParentId: 9498057655327285509
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 1371596269550390581
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 9691585235102710834
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 16.3397789
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 7.70112419
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2412619952602972996
-    }
-    Teams {
-    }
-    DisableReceiveDecals: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 17304757056732545601
-    SubobjectId: 8925701775750233029
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 5890908545067213275
-  Name: "Lens - Half"
-  Transform {
-    Location {
-      Y: 6.06481592e-07
-      Z: 2.73070025
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.483054042
-      Y: 0.483054042
-      Z: 0.483054042
-    }
-  }
-  ParentId: 9498057655327285509
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 9477826524159400105
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 1652630961498236339
-    }
-    Teams {
-    }
-    DisableReceiveDecals: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 5890908545067213275
-    SubobjectId: 15724345303443920991
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 12319508850643905867
-  Name: "Beam Down Teleport VFX"
-  Transform {
-    Location {
-      Y: 63.4443665
-      Z: 87.7355652
-    }
-    Rotation {
-      Roll: 89.9999847
-    }
-    Scale {
-      X: 0.632434607
-      Y: 0.632434607
-      Z: 0.632434607
-    }
-  }
-  ParentId: 4016090841422039979
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Enable Spiral Elements"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Enable Ground Hot Spot"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Enable Central Flare Element"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Enable Central Particles"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Teleport Duration"
-      Float: 0.5
-    }
-    Overrides {
-      Name: "bp:color"
-      Color {
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Particle Color"
-      Color {
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Spiral Color"
-      Color {
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Spiral Ground Element Color"
-      Color {
-        R: 0.05
-        G: 0.4
-        B: 0.05
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 2139533047087704714
-    }
-    TeamSettings {
-    }
-    Vfx {
-    }
-  }
-  InstanceHistory {
-    SelfId: 12319508850643905867
-    SubobjectId: 2382156423962891471
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 8220477197148842154
-  Name: "Fantasy Pommel 04"
-  Transform {
-    Location {
-      Y: 48.0749092
-      Z: 83.1544571
-    }
-    Rotation {
-      Yaw: -90
-    }
-    Scale {
-      X: 11.9576426
-      Y: 9.37539577
-      Z: 6.46712208
-    }
-  }
-  ParentId: 4016090841422039979
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 9691585235102710834
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 41.5044899
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 41.5044899
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12510064410993333055
-    }
-    Teams {
-    }
-    DisableReceiveDecals: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 8220477197148842154
-    SubobjectId: 18009242722225967406
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 11810378963372560804
-  Name: "Lens - Half"
-  Transform {
-    Location {
-      Y: 72.6168823
-      Z: 87.7355957
-    }
-    Rotation {
-      Roll: 89.9999924
-    }
-    Scale {
-      X: 1.52737129
-      Y: 1.52737093
-      Z: -0.617235482
-    }
-  }
-  ParentId: 4016090841422039979
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4147476590988753507
-    }
-    Teams {
-    }
-    DisableReceiveDecals: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 11810378963372560804
-    SubobjectId: 2890831254243076128
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 14312363309312814778
-  Name: "Reward"
-  Transform {
-    Location {
-      Z: 30
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.1
-      Y: 0.1
-      Z: 0.1
-    }
-  }
-  ParentId: 4016090841422039979
-  ChildIds: 166566125932590602
-  ChildIds: 8542851779739392449
-  ChildIds: 6614845632776586061
-  ChildIds: 15837184790646461700
-  ChildIds: 10591507480129226820
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 14312363309312814778
-    SubobjectId: 5577448910575408958
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 10591507480129226820
-  Name: "STORE_Hat1"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.22433114
-      Y: 2.22433114
-      Z: 2.22433114
-    }
-  }
-  ParentId: 14312363309312814778
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "STORE_Hat1"
-  }
-  InstanceHistory {
-    SelfId: 10591507480129226820
-    SubobjectId: 1263499199588855168
-    InstanceId: 4144760558013664828
-    TemplateId: 6935989339742598427
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 15837184790646461700
-  Name: "STORE_BirthdayCake Hat"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.22433114
-      Y: 2.22433114
-      Z: 2.22433114
-    }
-  }
-  ParentId: 14312363309312814778
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "STORE_BirthdayCake Hat_1"
-  }
-  InstanceHistory {
-    SelfId: 15837184790646461700
-    SubobjectId: 11511463057368722708
-    InstanceId: 8344387327099409665
-    TemplateId: 18277733649088940997
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 6614845632776586061
-  Name: "STORE_Cowboy Hat _Hat"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.22433114
-      Y: 2.22433114
-      Z: 2.22433114
-    }
-  }
-  ParentId: 14312363309312814778
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "STORE_Cowboy Hat _Hat_1"
-  }
-  InstanceHistory {
-    SelfId: 6614845632776586061
-    SubobjectId: 4034813922096462059
-    InstanceId: 15631285836382875372
-    TemplateId: 614220041473863367
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 8542851779739392449
-  Name: "STORE_Chef Hat"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.22433114
-      Y: 2.22433114
-      Z: 2.22433114
-    }
-  }
-  ParentId: 14312363309312814778
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "STORE_Chef Hat_1"
-  }
-  InstanceHistory {
-    SelfId: 8542851779739392449
-    SubobjectId: 549989728288704889
-    InstanceId: 17648780899093822160
-    TemplateId: 12269522058044990569
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 166566125932590602
-  Name: "STORE_Costume1"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.33459914
-      Y: 1.33459914
-      Z: 1.33459914
-    }
-  }
-  ParentId: 14312363309312814778
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "STORE_Costume1_1"
-  }
-  InstanceHistory {
-    SelfId: 166566125932590602
-    SubobjectId: 8141680742227768540
-    InstanceId: 17063227314503076989
-    TemplateId: 13488633352376776946
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 6319800329074250558
-  Name: "Lid"
-  Transform {
-    Location {
-      Y: -85.2107773
-      Z: 85.6520538
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4016090841422039979
-  ChildIds: 12568781173657659087
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 6319800329074250558
-    SubobjectId: 15874307188090350266
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 12568781173657659087
-  Name: "Military Epic Crate Lid"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.851585209
-      Y: 1.37713838
-      Z: 1.48569357
-    }
-  }
-  ParentId: 6319800329074250558
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.283040047
-        G: 0.487999976
-        B: 0.488000035
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail2:color"
-      Color {
-        R: 0.101500012
-        G: 0.174999982
-        B: 0.175000012
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 9691585235102710834
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail1:color"
-      Color {
-        R: 0.04402
-        G: 0.0624235757
-        B: 0.071
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:utile"
-      Float: 3.04847026
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:vtile"
-      Float: 5.21861553
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5314666338763493560
-    }
-    Teams {
-    }
-    DisableReceiveDecals: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 12568781173657659087
-    SubobjectId: 2708327215563235147
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 12948840325965874076
-  Name: "Magic Star Cute Disappear 01 SFX"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.28136516
-      Y: 2.28136516
-      Z: 2.28136516
-    }
-  }
-  ParentId: 4016090841422039979
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 11673733992968245091
-    }
-    Volume: 1
-    Falloff: -1
-    Radius: -1
-    IsAttenuationEnabled: true
-  }
-  InstanceHistory {
-    SelfId: 12948840325965874076
-    SubobjectId: 4056383210825923096
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 15953590638187289102
-  Name: "Sci-fi Cinematic Time Warp Impact 01 SFX"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4016090841422039979
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 18068332545945605919
-    }
-    Volume: 1
-    Falloff: -1
-    Radius: -1
-    IsAttenuationEnabled: true
-  }
-  InstanceHistory {
-    SelfId: 15953590638187289102
-    SubobjectId: 6241466311549297546
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 9297004843483639229
-  Name: "Magic Poof Subtle 01 SFX"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4016090841422039979
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 17245586022597769725
-    }
-    Pitch: -200
-    Volume: 2
-    Falloff: -1
-    Radius: -1
-    IsAttenuationEnabled: true
-  }
-  InstanceHistory {
-    SelfId: 9297004843483639229
-    SubobjectId: 791848515507426361
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 4457580756348566575
-  Name: "Heavy Mechanical Door Airlock Pneumatic 01 SFX"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4016090841422039979
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 10930443841480605240
-    }
-    Volume: 1
-    Falloff: -1
-    Radius: -1
-    IsAttenuationEnabled: true
-  }
-  InstanceHistory {
-    SelfId: 4457580756348566575
-    SubobjectId: 13124664378212599211
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 17983781550569971592
-  Name: "Sci-fi Mech Robotic Transformation Sequence 03 SFX"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4016090841422039979
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 12608501405558972760
-    }
-    Pitch: 500
-    Volume: 1
-    Falloff: -1
-    Radius: -1
-    IsAttenuationEnabled: true
-  }
-  InstanceHistory {
-    SelfId: 17983781550569971592
-    SubobjectId: 8244847009146758668
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 10168433330535480995
-  Name: "Magic Shield Buff Powerup Spell 01 SFX"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4016090841422039979
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 16092184965830535244
-    }
-    Pitch: -800
-    Volume: 1
-    Falloff: -1
-    Radius: -1
-    IsAttenuationEnabled: true
-  }
-  InstanceHistory {
-    SelfId: 10168433330535480995
-    SubobjectId: 496845798313494311
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 10425777009290641431
-  Name: "Sports Crowd Intense Cheer Yeah 01 SFX"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4016090841422039979
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 14295439443652911268
-    }
-    Volume: 1
-    Falloff: -1
-    Radius: -1
-    IsAttenuationEnabled: true
-  }
-  InstanceHistory {
-    SelfId: 10425777009290641431
-    SubobjectId: 1970151465827973523
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 3410695664163816367
-  Name: "Orchestral Adventurous Victory Fanfare Music Stinger Set 01"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4016090841422039979
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Type"
-      Enum {
-        Value: "mc:emx_orchestral_adventourus_victory_fanfare_stinger_01:40"
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 4165456448030584864
-    }
-    TeamSettings {
-    }
-    AudioBP {
-      Pitch: -50
-      Volume: 1
-      Falloff: 3600
-      Radius: 400
-      IsAttenuationEnabled: true
-    }
-  }
-  InstanceHistory {
-    SelfId: 3410695664163816367
-    SubobjectId: 11866306621647043115
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 15305806564702983202
-  Name: "Treasure Ray Burst"
-  Transform {
-    Location {
-      Y: -17.7434711
-      Z: 114.634949
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.450153798
-      Y: 0.343947947
-      Z: 0.248276025
-    }
-  }
-  ParentId: 4016090841422039979
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Life"
-      Float: 6
-    }
-    Overrides {
-      Name: "bp:color"
-      Color {
-        R: 0.05
-        G: 0.4
-        B: 0.05
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:Max Outward Ray Angle"
-      Float: 60
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 4849153163056526563
-    }
-    TeamSettings {
-    }
-    Vfx {
-    }
-  }
-  InstanceHistory {
-    SelfId: 15305806564702983202
-    SubobjectId: 6886438516669459878
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 15733923651554306146
-  Name: "Military Epic Crate Base"
-  Transform {
-    Location {
-      Y: -15.9764042
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.84311074
-      Y: 1.3771385
-      Z: 1.17653847
-    }
-  }
-  ParentId: 4016090841422039979
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.283040047
-        G: 0.487999976
-        B: 0.488000035
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail2:color"
-      Color {
-        R: 0.101500012
-        G: 0.174999982
-        B: 0.175000012
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 9691585235102710834
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:utile"
-      Float: 3.04847026
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:vtile"
-      Float: 5.21861553
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12486122445463196188
-    }
-    Teams {
-    }
-    DisableReceiveDecals: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 15733923651554306146
-    SubobjectId: 5882420815484604902
-    InstanceId: 5210728010314460834
-    TemplateId: 4038370370694954791
-  }
-}
-Objects {
-  Id: 17703021382529201812
-  Name: "Loot_Box_Animation_Fantasy"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 18244449108185125627
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Ease3D"
-      AssetReference {
-        Id: 11818466330896644996
-      }
-    }
-    Overrides {
-      Name: "cs:Loot_Box"
-      ObjectReference {
-        SelfId: 4016090841422039979
-      }
-    }
-    Overrides {
-      Name: "cs:Lid"
-      ObjectReference {
-        SelfId: 6319800329074250558
-      }
-    }
-    Overrides {
-      Name: "cs:CORE_Logo"
-      ObjectReference {
-        SelfId: 9498057655327285509
-      }
-    }
-    Overrides {
-      Name: "cs:Reward"
-      ObjectReference {
-        SelfId: 14312363309312814778
-      }
-    }
-    Overrides {
-      Name: "cs:Right_Door"
-      ObjectReference {
-        SelfId: 9801599484227476730
-      }
-    }
-    Overrides {
-      Name: "cs:Left_Door"
-      ObjectReference {
-        SelfId: 4127437910445559915
-      }
-    }
-    Overrides {
-      Name: "cs:Window"
-      ObjectReference {
-        SelfId: 5890908545067213275
-      }
-    }
-    Overrides {
-      Name: "cs:Platform"
-      ObjectReference {
-        SelfId: 1780084465286283223
-      }
-    }
-    Overrides {
-      Name: "cs:Open_Music"
-      ObjectReference {
-        SelfId: 3410695664163816367
-      }
-    }
-    Overrides {
-      Name: "cs:Open_VFX"
-      ObjectReference {
-        SelfId: 15305806564702983202
-      }
-    }
-    Overrides {
-      Name: "cs:Unlock_VFX"
-      ObjectReference {
-        SelfId: 12319508850643905867
-      }
-    }
-    Overrides {
-      Name: "cs:Unlock_SFX"
-      ObjectReference {
-        SelfId: 17983781550569971592
-      }
-    }
-    Overrides {
-      Name: "cs:Open_SFX"
-      ObjectReference {
-        SelfId: 10168433330535480995
-      }
-    }
-    Overrides {
-      Name: "cs:Open_SFX_2"
-      ObjectReference {
-        SelfId: 10425777009290641431
-      }
-    }
-    Overrides {
-      Name: "cs:Machine_SFX"
-      ObjectReference {
-        SelfId: 4457580756348566575
-      }
-    }
-    Overrides {
-      Name: "cs:Launch_SFX"
-      ObjectReference {
-        SelfId: 9297004843483639229
-      }
-    }
-    Overrides {
-      Name: "cs:Impact_SFX"
-      ObjectReference {
-        SelfId: 15953590638187289102
-      }
-    }
-    Overrides {
-      Name: "cs:Reset_SFX"
-      ObjectReference {
-        SelfId: 12948840325965874076
-      }
-    }
-    Overrides {
-      Name: "cs:LootboxGenerator"
-      ObjectReference {
-        SelfId: 15316851131136835521
-      }
-    }
-    Overrides {
-      Name: "cs:Common"
-      Color {
-        R: 0.122000009
-        G: 0.122000009
-        B: 0.122000009
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:Uncommon"
-      Color {
-        R: 0.0105960099
-        G: 0.320000052
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:Rare"
-      Color {
-        G: 0.00284718489
-        B: 0.429999948
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:Epic"
-      Color {
-        R: 0.161325023
-        B: 0.210000038
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:Legendary"
-      Color {
-        R: 0.330000043
-        G: 0.157351092
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 8685601137298188508
-    }
-  }
-  InstanceHistory {
-    SelfId: 17703021382529201812
-    SubobjectId: 9103299342682033936
     InstanceId: 5210728010314460834
     TemplateId: 4038370370694954791
   }
