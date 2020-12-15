@@ -188,15 +188,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17664178796766610406
-  Name: "Text 03: ("
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F5_Text_045"
-  }
-}
-Assets {
   Id: 17572648761083010261
   Name: "Marble Tiles Octagon Dot 01"
   PlatformAssetType: 2
@@ -602,6 +593,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15505231543121966376
+  Name: "Bricks Worn Stone 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_worn_001"
+  }
+}
+Assets {
   Id: 15402296587404581505
   Name: "Main Street Trim 02 - Corner"
   PlatformAssetType: 1
@@ -815,6 +815,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_birch_001"
+  }
+}
+Assets {
+  Id: 14667297920145436738
+  Name: "Square Column Segment"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_square_segment_001"
   }
 }
 Assets {
@@ -1565,6 +1574,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11053950961910504844
+  Name: "Grass Tall"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_grass_generic_001"
+  }
+}
+Assets {
   Id: 11052830231601453858
   Name: "Text 01: P"
   PlatformAssetType: 1
@@ -1931,15 +1949,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_gold_002"
-  }
-}
-Assets {
-  Id: 9129972548118489384
-  Name: "Food Watermelon 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_food_generic_watermelon_001_uv1"
   }
 }
 Assets {
@@ -2336,15 +2345,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_container_rectangle_thick_ref"
-  }
-}
-Assets {
-  Id: 6610453266627144862
-  Name: "Text 04: ?"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F7_Text_065"
   }
 }
 Assets {
@@ -3119,15 +3119,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fern_generic_003"
-  }
-}
-Assets {
-  Id: 3184356387751164974
-  Name: "Metal Basic 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_basic_001"
   }
 }
 Assets {
