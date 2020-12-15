@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 6769845893542896755
+        ParentId: 7069178301840666666
         ChildIds: 5670961158267261923
         ChildIds: 12657942517478932425
         WantsNetworking: true
@@ -147,8 +147,9 @@
         Name: "Cone - Truncated Concave"
         Transform {
           Location {
-            X: 6.93212891
+            X: -1.11223316
             Y: -0.546875
+            Z: 8.06815
           }
           Rotation {
             Pitch: 22.4613895
@@ -194,9 +195,9 @@
         Name: "Lens"
         Transform {
           Location {
-            X: -4.29736328
+            X: -12.3417253
             Y: 0.046875
-            Z: 33.0941925
+            Z: 41.1623421
           }
           Rotation {
             Pitch: 22.2956562
@@ -249,9 +250,9 @@
         Name: "Donut"
         Transform {
           Location {
-            X: -2.6348877
+            X: -10.6792498
             Y: 0.500976563
-            Z: 29.0369415
+            Z: 37.1050911
           }
           Rotation {
             Pitch: 22.2956562

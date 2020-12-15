@@ -5818,7 +5818,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     RenderTransformPivot {
@@ -5862,7 +5862,6 @@ Objects {
   ParentId: 16642592586562198016
   ChildIds: 13775028443667324456
   ChildIds: 14520798550328965773
-  ChildIds: 7450176264481840749
   ChildIds: 5604688027773998433
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5928,8 +5927,8 @@ Objects {
     Text {
       Label: "Purchase"
       Color {
-        R: 0.210000038
-        G: 0.0709271431
+        R: 0.769809246
+        B: 1
         A: 1
       }
       Size: 30
@@ -5954,69 +5953,6 @@ Objects {
   InstanceHistory {
     SelfId: 5604688027773998433
     SubobjectId: 6823641235314867128
-    InstanceId: 2160864537332788124
-    TemplateId: 15562873810623834263
-  }
-}
-Objects {
-  Id: 7450176264481840749
-  Name: "border"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4020902902487838364
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 275
-    Height: 50
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    UseParentWidth: true
-    UseParentHeight: true
-    Image {
-      Brush {
-        Id: 6903493265086585509
-      }
-      Color {
-        R: 0.210000038
-        G: 0.0709271431
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 7450176264481840749
-    SubobjectId: 8363743381578346676
     InstanceId: 2160864537332788124
     TemplateId: 15562873810623834263
   }
@@ -6054,11 +5990,11 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 11974785293803476584
+        Id: 1300444918076974230
       }
       Color {
-        R: 0.210000038
-        G: 0.0709271431
+        R: 0.769809246
+        B: 1
         A: 1
       }
       TeamSettings {
@@ -6120,9 +6056,8 @@ Objects {
         Id: 18325201781401872249
       }
       Color {
-        R: 1
-        G: 0.860132813
-        B: 0.0400000215
+        G: 0.00205297512
+        B: 0.00999999
         A: 1
       }
       TeamSettings {
@@ -6166,6 +6101,8 @@ Objects {
     }
   }
   ParentId: 16642592586562198016
+  ChildIds: 16774273281700054037
+  ChildIds: 15330074193061057668
   ChildIds: 5292953916387583047
   ChildIds: 5892088611746309810
   Collidable_v2 {
@@ -6235,8 +6172,7 @@ Objects {
     Text {
       Label: "REROLL: "
       Color {
-        R: 1
-        G: 1
+        R: 0.776470661
         B: 1
         A: 1
       }
@@ -6310,6 +6246,134 @@ Objects {
         }
       }
     }
+  }
+}
+Objects {
+  Id: 15330074193061057668
+  Name: "baseplate"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 3.25688738e-12
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10431267927397472214
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 400
+    Height: 100
+    UIX: -40
+    UIY: -25
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 18325201781401872249
+      }
+      Color {
+        G: 0.00205297512
+        B: 0.00999999
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 13775028443667324456
+    SubobjectId: 12420664984685359345
+    InstanceId: 2160864537332788124
+    TemplateId: 15562873810623834263
+  }
+}
+Objects {
+  Id: 16774273281700054037
+  Name: "border"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 3.25688738e-12
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10431267927397472214
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 390
+    Height: 110
+    UIX: -35
+    UIY: -30
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 1300444918076974230
+      }
+      Color {
+        R: 0.769809246
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14520798550328965773
+    SubobjectId: 15776556741612901460
+    InstanceId: 2160864537332788124
+    TemplateId: 15562873810623834263
   }
 }
 Objects {
@@ -6771,6 +6835,12 @@ Objects {
       Name: "cs:DailyRewardsSFX"
       ObjectReference {
         SelfId: 13819057675340179379
+      }
+    }
+    Overrides {
+      Name: "cs:UIPerkPurchaseButton"
+      ObjectReference {
+        SelfId: 5292953916387583047
       }
     }
   }

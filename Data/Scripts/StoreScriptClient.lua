@@ -1437,21 +1437,41 @@ function SwapMannequin(button)
 	--print("Swapping")
 
 	local oldSetMesh = setPreviewMesh
-	
-	if propSwapText.text == "Female" then
+	local femaleIcon = propSwapText:GetCustomProperty("Female"):WaitForObject()
+	local maleIcon = propSwapText:GetCustomProperty("Male"):WaitForObject()
+
+	if propSwapText.text == "FEMALE" then
 		propPreviewMesh2.visibility = propPreviewMesh.visibility
 		propPreviewMesh.visibility = Visibility.FORCE_OFF
 
 		setPreviewMesh = propPreviewMesh2
 		
-		propSwapText.text = "Male"
+		propSwapText.text = "MALE"
+
+		if (femaleIcon:IsVisibleInHierarchy()) then
+			femaleIcon.visibility = Visibility.FORCE_OFF
+		end
+
+		if (not maleIcon:IsVisibleInHierarchy()) then
+			maleIcon.visibility = Visibility.FORCE_ON
+		end		
+
 	else
 		propPreviewMesh.visibility = propPreviewMesh2.visibility
 		propPreviewMesh2.visibility = Visibility.FORCE_OFF
 		
 		setPreviewMesh = propPreviewMesh
 		
-		propSwapText.text = "Female"
+		propSwapText.text = "FEMALE"
+
+		if (not femaleIcon:IsVisibleInHierarchy()) then
+			femaleIcon.visibility = Visibility.FORCE_ON
+		end
+
+		if (maleIcon:IsVisibleInHierarchy()) then
+			maleIcon.visibility = Visibility.FORCE_OFF
+		end		
+
 	end
 	
 	setPreviewMesh:SetTransform(oldSetMesh:GetTransform())

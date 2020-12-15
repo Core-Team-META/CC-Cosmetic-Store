@@ -1,6 +1,14 @@
 ﻿--Press Q to switch to the camera
 local randomDailySaleShop = script:GetCustomProperty("PERKS_RandomDailySaleShop"):WaitForObject()
 
+while not _G.PERKS do
+
+	Task.Wait()
+	
+end
+
+local dailyRollPerk = _G.PERKS.DAILY_ROLL
+
 local TEMPLATE_ROOT = script:GetCustomProperty("TemplateRoot"):WaitForObject()
 local CAMERA = script:GetCustomProperty("Camera"):WaitForObject()
 local Ease3D = require(script:GetCustomProperty("Ease3D"))
@@ -42,6 +50,10 @@ local propDailyRewardsSFX = script:GetCustomProperty("DailyRewardsSFX"):WaitForO
 
 local messageText = script:GetCustomProperty("MessageText"):WaitForObject()
 local bgImage = script:GetCustomProperty("BGImage"):WaitForObject()
+
+local propUIPerkPurchaseButton = script:GetCustomProperty("UIPerkPurchaseButton"):WaitForObject()
+
+propUIPerkPurchaseButton:SetPerkReference(dailyRollPerk)
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 

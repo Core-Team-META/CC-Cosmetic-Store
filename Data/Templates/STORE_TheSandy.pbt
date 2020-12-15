@@ -15,9 +15,10 @@
             Z: 1
           }
         }
-        ParentId: 6769845893542896755
-        ChildIds: 848557835738791435
+        ParentId: 7069178301840666666
         ChildIds: 2193376719543673116
+        ChildIds: 848557835738791435
+        ChildIds: 16008298837172213677
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27,6 +28,197 @@
         }
         Folder {
           IsFilePartition: true
+        }
+      }
+      Objects {
+        Id: 2193376719543673116
+        Name: "STORE_TheSandy"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14827471458180861006
+        ChildIds: 1836285367774676731
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 1836285367774676731
+        Name: "head"
+        Transform {
+          Location {
+            X: 15.2406693
+            Y: -1.64644372
+            Z: -9.73358154
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2193376719543673116
+        ChildIds: 17091863073691818064
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 17091863073691818064
+        Name: "Group"
+        Transform {
+          Location {
+            X: -15.2406693
+            Y: 1.64644372
+            Z: 9.73358154
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1836285367774676731
+        ChildIds: 15813087035511567919
+        ChildIds: 3624520838626782362
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 15813087035511567919
+        Name: "Sphere"
+        Transform {
+          Location {
+            X: 15.2406693
+            Y: -1.64644372
+            Z: -6.67280912
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.365145564
+            Y: 0.365145564
+            Z: 0.365145475
+          }
+        }
+        ParentId: 17091863073691818064
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 10766975867019021707
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.38
+              G: 0.950728357
+              B: 1
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1413196292823476264
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 3624520838626782362
+        Name: "Pipe"
+        Transform {
+          Location {
+            X: 15.2406693
+            Y: -1.64644372
+            Z: -22.0910206
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.297777086
+            Y: 0.297777086
+            Z: 0.0413020514
+          }
+        }
+        ParentId: 17091863073691818064
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 8425111237879329054
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1304149708294318909
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
         }
       }
       Objects {
@@ -88,8 +280,8 @@
         }
       }
       Objects {
-        Id: 2193376719543673116
-        Name: "STORE_TheSandy"
+        Id: 16008298837172213677
+        Name: "store_graphic"
         Transform {
           Location {
           }
@@ -102,7 +294,7 @@
           }
         }
         ParentId: 14827471458180861006
-        ChildIds: 1836285367774676731
+        ChildIds: 5238620247855243025
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -114,8 +306,8 @@
         }
       }
       Objects {
-        Id: 1836285367774676731
-        Name: "head"
+        Id: 5238620247855243025
+        Name: "head_display"
         Transform {
           Location {
             X: 15.2406693
@@ -125,14 +317,13 @@
           Rotation {
           }
           Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
-        ParentId: 2193376719543673116
-        ChildIds: 15813087035511567919
-        ChildIds: 3624520838626782362
+        ParentId: 16008298837172213677
+        ChildIds: 10938135104159687198
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -144,21 +335,54 @@
         }
       }
       Objects {
-        Id: 15813087035511567919
+        Id: 10938135104159687198
+        Name: "Group"
+        Transform {
+          Location {
+            X: -15.2406693
+            Y: 1.64644372
+            Z: 54.7379646
+          }
+          Rotation {
+            Pitch: -18.119873
+          }
+          Scale {
+            X: 2.81302214
+            Y: 2.81302214
+            Z: 2.81302214
+          }
+        }
+        ParentId: 5238620247855243025
+        ChildIds: 14040435152026141935
+        ChildIds: 12568655499563408733
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 14040435152026141935
         Name: "Sphere"
         Transform {
           Location {
-            Z: 6.12154484
+            X: 15.2406693
+            Y: -1.64644372
+            Z: -6.67280912
           }
           Rotation {
           }
           Scale {
-            X: 0.730291128
-            Y: 0.730291128
-            Z: 0.730290949
+            X: 0.365145564
+            Y: 0.365145564
+            Z: 0.365145475
           }
         }
-        ParentId: 1836285367774676731
+        ParentId: 10938135104159687198
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -197,21 +421,23 @@
         }
       }
       Objects {
-        Id: 3624520838626782362
+        Id: 12568655499563408733
         Name: "Pipe"
         Transform {
           Location {
-            Z: -24.7148781
+            X: 15.2406693
+            Y: -1.64644372
+            Z: -22.0910206
           }
           Rotation {
           }
           Scale {
-            X: 0.595554173
-            Y: 0.595554173
-            Z: 0.0826041
+            X: 0.297777086
+            Y: 0.297777086
+            Z: 0.0413020514
           }
         }
-        ParentId: 1836285367774676731
+        ParentId: 10938135104159687198
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"

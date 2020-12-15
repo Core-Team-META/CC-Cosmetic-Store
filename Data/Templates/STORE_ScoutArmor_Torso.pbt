@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 6769845893542896755
+        ParentId: 7069178301840666666
         ChildIds: 17441746220149688736
         ChildIds: 7931934004559456467
         ChildIds: 17892090220585155239
@@ -47,10 +47,10 @@
           Location {
             X: -5.3269
             Y: -2.28881836e-05
-            Z: 94.6511841
+            Z: 42.0521469
           }
           Rotation {
-            Pitch: -9.93499756
+            Pitch: -9.93498802
           }
           Scale {
             X: 1
@@ -169,10 +169,10 @@
           Location {
             X: -6.05729151
             Y: -23.618948
-            Z: 82.210022
+            Z: 29.6109829
           }
           Rotation {
-            Roll: 24.999979
+            Roll: 24.9998932
           }
           Scale {
             X: 1
@@ -446,10 +446,10 @@
           Location {
             X: -5.99998093
             Y: -34.9998779
-            Z: 54.5440063
+            Z: 1.94496727
           }
           Rotation {
-            Roll: 30.0000057
+            Roll: 30.0000229
           }
           Scale {
             X: 1
@@ -536,10 +536,10 @@
           Location {
             X: -5.00000191
             Y: -51.9996185
-            Z: 29.5440063
+            Z: -23.0550327
           }
           Rotation {
-            Roll: 30.0000057
+            Roll: 30.0000229
           }
           Scale {
             X: 1
@@ -596,10 +596,10 @@
           Location {
             X: -6.05729485
             Y: 23.6190281
-            Z: 82.210022
+            Z: 29.6109829
           }
           Rotation {
-            Roll: -30
+            Roll: -30.0000191
           }
           Scale {
             X: 1
@@ -872,10 +872,10 @@
           Location {
             X: -5.99996
             Y: 38.9997635
-            Z: 53.5440063
+            Z: 0.94496727
           }
           Rotation {
-            Roll: -30
+            Roll: -30.0000191
           }
           Scale {
             X: 1
@@ -962,10 +962,10 @@
           Location {
             X: -5.99977064
             Y: 52.999939
-            Z: 28.5440063
+            Z: -24.0550327
           }
           Rotation {
-            Roll: -30
+            Roll: -30.0000191
           }
           Scale {
             X: 1
@@ -1023,7 +1023,7 @@
           Location {
             X: -0.51
             Y: -2.28881836e-05
-            Z: 75.5308838
+            Z: 22.9318447
           }
           Rotation {
             Pitch: 7.51320767e-05
@@ -1673,7 +1673,7 @@
           Location {
             X: -0.51
             Y: -2.28881836e-05
-            Z: 47.2728882
+            Z: -5.32615089
           }
           Rotation {
             Pitch: 7.51320767e-05
@@ -2029,6 +2029,7 @@
         Name: "STORE_ItemInfo"
         Transform {
           Location {
+            Z: -52.5990372
           }
           Rotation {
           }
@@ -2109,6 +2110,7 @@
         Name: "Group"
         Transform {
           Location {
+            Z: -52.5990372
           }
           Rotation {
           }
@@ -2140,7 +2142,7 @@
       }
       Objects {
         Id: 5919660035837459120
-        Name: "lower_spine"
+        Name: "lower_spine_display"
         Transform {
           Location {
             X: 4.09680176
@@ -2497,7 +2499,7 @@
       }
       Objects {
         Id: 16007371218355782507
-        Name: "left_shoulder"
+        Name: "left_shoulder_display"
         Transform {
           Location {
             X: -1.45047
@@ -2773,7 +2775,7 @@
       }
       Objects {
         Id: 9584960572353589904
-        Name: "left_elbow"
+        Name: "left_elbow_display"
         Transform {
           Location {
             X: -1.39315796
@@ -2862,7 +2864,7 @@
       }
       Objects {
         Id: 6553005853568928897
-        Name: "left_wrist"
+        Name: "left_wrist_display"
         Transform {
           Location {
             X: -0.393188477
@@ -2921,7 +2923,7 @@
       }
       Objects {
         Id: 2620374320950109487
-        Name: "right_shoulder"
+        Name: "right_shoulder_display"
         Transform {
           Location {
             X: -1.45047
@@ -3196,7 +3198,7 @@
       }
       Objects {
         Id: 1242911478766223784
-        Name: "right_elbow"
+        Name: "right_elbow_display"
         Transform {
           Location {
             X: -1.39315796
@@ -3285,7 +3287,7 @@
       }
       Objects {
         Id: 7139430511042752166
-        Name: "right_wrist"
+        Name: "right_wrist_display"
         Transform {
           Location {
             X: -1.39294434
@@ -3344,7 +3346,7 @@
       }
       Objects {
         Id: 16252699615337382460
-        Name: "upper_spine"
+        Name: "upper_spine_display"
         Transform {
           Location {
             X: 4.09680176
@@ -3993,7 +3995,7 @@
       }
       Objects {
         Id: 14327512278224868357
-        Name: "neck"
+        Name: "neck_display"
         Transform {
           Location {
             X: -0.720092773
