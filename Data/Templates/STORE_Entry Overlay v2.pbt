@@ -740,9 +740,9 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 4
+          Width: 7
           Height: 64
-          UIY: 33.0660782
+          UIY: -28.522892
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -766,12 +766,12 @@
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomcenter"
+                Value: "mc:euianchor:topcenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomcenter"
+                Value: "mc:euianchor:topcenter"
               }
             }
           }
@@ -799,7 +799,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Height: 3
+          UIY: 3.70910525
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -810,7 +810,7 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 208166813686421958
+              Id: 10043949526674053130
             }
             Color {
               R: 0.191201717
@@ -1014,12 +1014,12 @@
       }
     }
     Assets {
-      Id: 208166813686421958
-      Name: "Frame Outline Thin 001"
+      Id: 10043949526674053130
+      Name: "Frame Outlined 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "FrameOutline_020"
+        AssetId: "FrameSolid4px_020"
       }
     }
     PrimaryAssetId {
