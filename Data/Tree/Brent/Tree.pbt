@@ -9807,7 +9807,6 @@ Objects {
   ParentId: 5595803427365930117
   ChildIds: 2531178615423613386
   ChildIds: 2449865194192283689
-  ChildIds: 4703501942428521935
   ChildIds: 14312363309312814778
   ChildIds: 4048568608329531071
   Collidable_v2 {
@@ -9842,6 +9841,10 @@ Objects {
   }
   ParentId: 18244449108185125627
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:ChangePrizeCamera"
+      Bool: true
+    }
     Overrides {
       Name: "cs:Loot_Box_Common"
       AssetReference {
@@ -9882,6 +9885,12 @@ Objects {
       Name: "cs:LootboxGenerator"
       ObjectReference {
         SelfId: 15316851131136835521
+      }
+    }
+    Overrides {
+      Name: "cs:Loot_Machine"
+      ObjectReference {
+        SelfId: 2449865194192283689
       }
     }
   }
@@ -10110,44 +10119,6 @@ Objects {
   }
 }
 Objects {
-  Id: 4703501942428521935
-  Name: "ChestSpawnMarker"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 18244449108185125627
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5546692261811206609
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
   Id: 2449865194192283689
   Name: "Loot_Machine"
   Transform {
@@ -10174,6 +10145,7 @@ Objects {
   ChildIds: 6771553302132839558
   ChildIds: 7216178979680738962
   ChildIds: 7904097960320113909
+  ChildIds: 4703501942428521935
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10188,6 +10160,44 @@ Objects {
     SubobjectId: 12251767669165691309
     InstanceId: 5210728010314460834
     TemplateId: 4038370370694954791
+  }
+}
+Objects {
+  Id: 4703501942428521935
+  Name: "ChestSpawnMarker"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.00000012
+      Y: 1.00000012
+      Z: 1.00000012
+    }
+  }
+  ParentId: 2449865194192283689
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5546692261811206609
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
   }
 }
 Objects {
@@ -11689,11 +11699,11 @@ Objects {
     }
     Overrides {
       Name: "cs:PlayOnKey"
-      String: "ability_extra_45"
+      String: ""
     }
     Overrides {
       Name: "cs:PlayOnEvent"
-      String: ""
+      String: "OpenChestEvent"
     }
     Overrides {
       Name: "cs:SequenceNumber"
@@ -13109,11 +13119,19 @@ Objects {
       String: ""
     }
     Overrides {
+      Name: "cs:PlayerId"
+      String: ""
+    }
+    Overrides {
       Name: "cs:PrizeRarity:isrep"
       Bool: true
     }
     Overrides {
       Name: "cs:RewardName:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:PlayerId:isrep"
       Bool: true
     }
   }
