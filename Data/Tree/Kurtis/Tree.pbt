@@ -15,7 +15,7 @@ Objects {
     }
   }
   ParentId: 1510335979846993994
-  ChildIds: 13927905647521526404
+  ChildIds: 4589809122550267935
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -45,8 +45,8 @@ Objects {
   }
 }
 Objects {
-  Id: 13927905647521526404
-  Name: "STORE_Entry Overlay v2"
+  Id: 4589809122550267935
+  Name: "STORE_FilterListEntry_Bottom"
   Transform {
     Scale {
       X: 1
@@ -55,34 +55,18 @@ Objects {
     }
   }
   ParentId: 15571470145942283465
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
-  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 17217541726260855215
+      key: 11095064026389309121
       value {
         Overrides {
           Name: "Name"
-          String: "STORE_Entry Overlay v2"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
+          String: "STORE_FilterListEntry_Bottom"
         }
       }
     }
     TemplateAsset {
-      Id: 5152138363411456970
+      Id: 12987493614796074785
     }
   }
 }

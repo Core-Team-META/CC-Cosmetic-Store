@@ -1,6 +1,7 @@
 ﻿local propSTORE_EntryOverlay = script:GetCustomProperty("STORE_EntryOverlay")
 local propSTORE_EntryGeo = script:GetCustomProperty("STORE_EntryGeo")
 local propSTORE_FilterListEntry = script:GetCustomProperty("STORE_FilterListEntry")
+local propSTORE_FilterListEntry_Bottom = script:GetCustomProperty("STORE_FilterListEntry_Bottom")
 
 local propStoreRoot = script:GetCustomProperty("StoreRoot"):WaitForObject()
 local propCamera = script:GetCustomProperty("Camera"):WaitForObject()
@@ -986,7 +987,7 @@ function InitStore()
 	if propEnableFilterByType then
 		for k,v in ipairs(TypeList) do
 			if v:sub(1,1) ~= "_" then
-				SpawnTypeFilterButton(TypeDefs[v].name, v, TypeDefs[v].color, count + TypeDefs[v].number)
+				SpawnTypeFilterButton(TypeDefs[v].name, v, TypeDefs[v].color, count + TypeDefs[v].number, propSTORE_FilterListEntry)
 			end
 		end
 		propTypeFilterListHolder.visibility = Visibility.INHERIT
@@ -995,11 +996,11 @@ function InitStore()
 	end
 
 	if propEnableFilterByTag then
-		SpawnFilterButton("Owned", "OWNED", nil, 0)
-		SpawnFilterButton("Not Owned", "UNOWNED", nil, 1)
+		SpawnFilterButton("Owned", "OWNED", nil, 0, propSTORE_FilterListEntry_Bottom)
+		SpawnFilterButton("Not Owned", "UNOWNED", nil, 1, propSTORE_FilterListEntry_Bottom)
 		
 		if propAllowSubscriptionPurchase then
-			SpawnFilterButton(propSubscriptionName, propSubscriptionName, propSubscriptionColor, 2)
+			SpawnFilterButton(propSubscriptionName, propSubscriptionName, propSubscriptionColor, 2, propSTORE_FilterListEntry_Bottom)
 			count = 2
 		else 
 			count = 1
@@ -1007,7 +1008,7 @@ function InitStore()
 
 		for k,v in ipairs(TagList) do
 			if v:sub(1,1) ~= "_" then
-				SpawnFilterButton(TagDefs[v].name, v, TagDefs[v].color, count + TagDefs[v].number)
+				SpawnFilterButton(TagDefs[v].name, v, TagDefs[v].color, count + TagDefs[v].number, propSTORE_FilterListEntry_Bottom)
 			end
 		end
 		propFilterListHolder.visibility = Visibility.INHERIT
@@ -1025,8 +1026,8 @@ end
 -- FILTER RARITY FUNCTIONS
 ----------------------------------------------------------------------------------------------------------------
 
-function SpawnFilterButton(displayName, tag, color, position)
-	local newFilterButton = World.SpawnAsset(propSTORE_FilterListEntry, {
+function SpawnFilterButton(displayName, tag, color, position, template)
+	local newFilterButton = World.SpawnAsset(template, {
 		parent = propFilterListHolder
 	})
 	newFilterButton.x = newFilterButton.width * position
