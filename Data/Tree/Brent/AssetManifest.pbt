@@ -377,15 +377,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11974785293803476584
-  Name: "Sci-fi Frame 009"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Scifi_Frame_009"
-  }
-}
-Assets {
   Id: 11974554791926529893
   Name: "Ring - Beveled Thick"
   PlatformAssetType: 1
@@ -701,15 +692,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6903493265086585509
-  Name: "Fantasy Frame 006"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Frame_006"
-  }
-}
-Assets {
   Id: 6777447344140592468
   Name: "Metal Steel Brushed"
   PlatformAssetType: 2
@@ -977,6 +959,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_pbr_material_001"
+  }
+}
+Assets {
+  Id: 1300444918076974230
+  Name: "Frame Beveled 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid8px_020"
   }
 }
 Assets {
