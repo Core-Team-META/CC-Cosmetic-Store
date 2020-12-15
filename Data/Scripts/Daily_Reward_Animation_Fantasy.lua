@@ -35,6 +35,11 @@ local currencyName = randomDailySaleShop:GetCustomProperty("CurrencyName")
 local discount = randomDailySaleShop:GetCustomProperty("Discount")
 local reRollUI = script:GetCustomProperty("UIPanel"):WaitForObject()
 
+local propPopUpDelay = randomDailySaleShop:GetCustomProperty("PopUpDelay")
+
+local propViewDailyRewards = script:GetCustomProperty("ViewDailyRewards"):WaitForObject()
+local propDailyRewardsSFX = script:GetCustomProperty("DailyRewardsSFX"):WaitForObject()
+
 local messageText = script:GetCustomProperty("MessageText"):WaitForObject()
 local bgImage = script:GetCustomProperty("BGImage"):WaitForObject()
 
@@ -312,6 +317,36 @@ function DiplayItems(row, item1, item2, item3)
 
 end
 
+
+function PlayPopUp()
+
+	print("popup start")
+	
+	Task.Wait(propPopUpDelay)
+	
+	for i = 1, 100 do
+		
+		Task.Wait()
+		
+		propViewDailyRewards.x = propViewDailyRewards.x + 8
+		
+	end
+	
+	propDailyRewardsSFX:Play()
+	
+	Task.Wait(1)
+	
+	for i = 1, 100 do
+	
+		Task.Wait()
+		
+		propViewDailyRewards.x = propViewDailyRewards.x - 8
+		
+	end	
+	
+
+end
+
 LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
 
 Events.Connect("SETUPDAILYSHOP", DiplayItems)
@@ -321,3 +356,5 @@ reRollUI.isEnabled = false
 while Events.BroadcastToServer("DAILYSHOPREADY") == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 	Task.Wait()
 end
+
+PlayPopUp()

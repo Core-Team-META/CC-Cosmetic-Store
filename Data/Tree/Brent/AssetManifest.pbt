@@ -62,6 +62,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17758290862929856650
+  Name: "BG Highlighted 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_015"
+  }
+}
+Assets {
   Id: 17615924747510902643
   Name: "Wood Raw"
   PlatformAssetType: 2
@@ -233,6 +242,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14127903040359929144
+  Name: "Frame Ring 021"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameRing_021"
+  }
+}
+Assets {
   Id: 13924487467599180715
   Name: "Military Tank Historic Hull 01 - Rear"
   PlatformAssetType: 1
@@ -278,6 +296,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12988082475260462637
+  Name: "BG Highlighted 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_020"
+  }
+}
+Assets {
   Id: 12782920385090531738
   Name: "Pipe - Quarter Wedge Thin"
   PlatformAssetType: 1
@@ -320,6 +347,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_hq_002"
+  }
+}
+Assets {
+  Id: 12195790988998704122
+  Name: "BG Flat 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_015"
   }
 }
 Assets {
@@ -611,6 +647,24 @@ Assets {
   }
 }
 Assets {
+  Id: 8165784690113549298
+  Name: "Military Frame 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Frame_005"
+  }
+}
+Assets {
+  Id: 8043629826562036191
+  Name: "Frame Ring 039"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameRing_039"
+  }
+}
+Assets {
   Id: 7921238055335087561
   Name: "Prism - 8-Sided"
   PlatformAssetType: 1
@@ -899,6 +953,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1686638712407411925
+  Name: "BG Flat 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
   Id: 1532438403020507221
   Name: "Metal Gold 01"
   PlatformAssetType: 2
@@ -968,6 +1031,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_lense_001"
+  }
+}
+Assets {
+  Id: 85888879710765699
+  Name: "UI Basic Frame 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Frame_001"
   }
 }
 Assets {
