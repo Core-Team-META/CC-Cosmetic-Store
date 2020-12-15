@@ -484,7 +484,9 @@ function SpawnMiniPreview(templateId, newGeo)
 	if storeGraphic ~= nil then
 		storeGraphic.parent = newGeo
 		storeGraphic:SetPosition(previewMesh:GetPosition())
-		storeGraphic:SetScale(Vector3.ONE)	-- Because we have a parent now, this will scale to the parent size.
+		storeGraphic:SetRotation(Rotation.New(0, 0, -90))
+		storeGraphic:SetScale(Vector3.ONE * 0.5)
+		
 		previewMesh.isEnabled = false
 		previewOutline.isEnabled = false
 	else
@@ -494,7 +496,7 @@ function SpawnMiniPreview(templateId, newGeo)
 			local deco = previewItem:FindDescendantByName(socket)
 			if deco ~= nil then
 				deco.parent = nil
-				deco:SetWorldScale(previewMesh:GetWorldScale())
+				deco:SetWorldScale(previewMesh:GetWorldScale()) --previewMesh:GetWorldScale()
 				previewMesh:AttachCoreObject(deco, socket)
 			end
 		end
@@ -724,7 +726,7 @@ function PopulateStore(direction)
 				partOfSubscription = true
 			end
 		end
-		print(partOfSubscription)
+		--print(partOfSubscription)
 
 		-- Set item name
 		propItemName.text = v.name
