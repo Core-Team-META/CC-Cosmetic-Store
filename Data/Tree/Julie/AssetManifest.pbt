@@ -3194,6 +3194,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3163664052006087405
+  Name: "Square Column Base 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_square_bottom_002"
+  }
+}
+Assets {
   Id: 3135521423375055406
   Name: "Wood Floor Light"
   PlatformAssetType: 2
@@ -3614,6 +3623,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_capsule_001"
+  }
+}
+Assets {
+  Id: 907494637185805598
+  Name: "Square Column Base 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_square_bottom_001"
   }
 }
 Assets {

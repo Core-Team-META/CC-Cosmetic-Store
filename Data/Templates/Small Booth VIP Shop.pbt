@@ -34,6 +34,7 @@
         ChildIds: 5254026533287364270
         ChildIds: 6266927122687722169
         ChildIds: 1409747490050486128
+        ChildIds: 13150117127289263836
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -10059,6 +10060,69 @@
           }
         }
       }
+      Objects {
+        Id: 13150117127289263836
+        Name: "Trigger indicator"
+        Transform {
+          Location {
+            X: 18.6455612
+            Y: 196.851212
+            Z: 99.2198563
+          }
+          Rotation {
+            Yaw: 51.6368942
+            Roll: -179.999954
+          }
+          Scale {
+            X: 1.85050035
+            Y: 1.8505007
+            Z: 2.04284334
+          }
+        }
+        ParentId: 6871718040259554406
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7784718792660116125
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.942000031
+              G: 0.722514093
+              B: 0.0640560165
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5657452638476367488
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
     }
     Assets {
       Id: 5920223932982244516
@@ -10337,6 +10401,24 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cube_rounded_002"
+      }
+    }
+    Assets {
+      Id: 5657452638476367488
+      Name: "Cone - Truncated Wide"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cone_truncated_003"
+      }
+    }
+    Assets {
+      Id: 7784718792660116125
+      Name: "Additive Edgeline Top Fade"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "fxmi_add_edgeline_sharpline_topfade"
       }
     }
     PrimaryAssetId {

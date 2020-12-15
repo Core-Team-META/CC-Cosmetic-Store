@@ -29,6 +29,7 @@
         ChildIds: 891097481760589048
         ChildIds: 12986669448611563700
         ChildIds: 1707478604311705623
+        ChildIds: 7502429196157295140
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -9594,6 +9595,69 @@
           }
         }
       }
+      Objects {
+        Id: 7502429196157295140
+        Name: "Trigger indicator"
+        Transform {
+          Location {
+            X: 18.040617
+            Y: 206.974716
+            Z: 99.2200928
+          }
+          Rotation {
+            Yaw: -48.3862305
+            Roll: 180
+          }
+          Scale {
+            X: 1.85050035
+            Y: 1.85050046
+            Z: 2.04284334
+          }
+        }
+        ParentId: 16485372897615866114
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7784718792660116125
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.604000032
+              G: 0.201736048
+              B: 0.315710068
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5657452638476367488
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
     }
     Assets {
       Id: 14331488779309247797
@@ -10079,6 +10143,15 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cube_rounded_002"
+      }
+    }
+    Assets {
+      Id: 7784718792660116125
+      Name: "Additive Edgeline Top Fade"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "fxmi_add_edgeline_sharpline_topfade"
       }
     }
     PrimaryAssetId {
