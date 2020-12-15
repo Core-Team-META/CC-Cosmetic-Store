@@ -1,13 +1,4 @@
 ﻿Assets {
-  Id: 18325201781401872249
-  Name: "UI Basic Shape Square"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Basic_Shape_Square"
-  }
-}
-Assets {
   Id: 18320880863940789533
   Name: "Stone Block Standard"
   PlatformAssetType: 1
@@ -53,30 +44,12 @@ Assets {
   }
 }
 Assets {
-  Id: 17615924747510902643
-  Name: "Wood Raw"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_wood_raw_001_uv"
-  }
-}
-Assets {
   Id: 17245586022597769725
   Name: "Magic Poof Subtle 01 SFX"
   PlatformAssetType: 7
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_magic_poof_subtle_01_Cue_ref"
-  }
-}
-Assets {
-  Id: 16251665124910529573
-  Name: "Advanced Material"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "universal_material_001"
   }
 }
 Assets {
@@ -107,15 +80,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15686909077460378362
-  Name: "Fantasy Castle Trim - Parapet 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_parapet_001"
-  }
-}
-Assets {
   Id: 15585626911168066842
   Name: "Dry Fire Click Generic 01 SFX"
   PlatformAssetType: 7
@@ -125,39 +89,12 @@ Assets {
   }
 }
 Assets {
-  Id: 15480529359921500922
-  Name: "Wood Planks Dark"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_wood_planks_dark_001_uv"
-  }
-}
-Assets {
-  Id: 15230999210975415970
-  Name: "Wood Wheel Turning Movement 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_wood_wheel_turning_movement_loop_01_Cue_ref"
-  }
-}
-Assets {
   Id: 15224186827264541306
   Name: "Wood Planks"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_planks_001_uv"
-  }
-}
-Assets {
-  Id: 14562956383270024668
-  Name: "Cash Register Purchase Deep Boomy 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_cash_register_purchase_deep_boomy_01_Cue_ref"
   }
 }
 Assets {
@@ -224,15 +161,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12156070353958511142
-  Name: "Stone Block BIg"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_fantasy_block_04"
-  }
-}
-Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
@@ -242,39 +170,12 @@ Assets {
   }
 }
 Assets {
-  Id: 11974785293803476584
-  Name: "Sci-fi Frame 009"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Scifi_Frame_009"
-  }
-}
-Assets {
-  Id: 11730308934333352162
-  Name: "Main Street Window 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dtn_mst_part_window_001_ref"
-  }
-}
-Assets {
   Id: 11673733992968245091
   Name: "Magic Star Cute Disappear 01 SFX"
   PlatformAssetType: 7
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_star_magic_cute_disappear_01_Cue_ref"
-  }
-}
-Assets {
-  Id: 11673645982810031161
-  Name: "Gem - Diamond 6-Sided Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_diamond_6_sided_polished_001"
   }
 }
 Assets {
@@ -332,30 +233,12 @@ Assets {
   }
 }
 Assets {
-  Id: 10397718742664464874
-  Name: "Cube - Rounded"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_rounded_002"
-  }
-}
-Assets {
   Id: 9691585235102710834
   Name: "Metal Iron 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_iron_001"
-  }
-}
-Assets {
-  Id: 9644803856939782736
-  Name: "Fantasy Chest Base 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_fantasy_chest_002_ref"
   }
 }
 Assets {
@@ -395,33 +278,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8638575669891475153
-  Name: "Fantasy Castle Accessory Tower 01 - 12m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_acc_tower_001_12m"
-  }
-}
-Assets {
-  Id: 8438518230112498983
-  Name: "Cinematic Metallic Slam Impact 01 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_designer_metallic_slam_impact_01_Cue_ref"
-  }
-}
-Assets {
-  Id: 8307550620811980856
-  Name: "Fantasy Chest Lid 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_fantasy_chest_lid_002_ref"
-  }
-}
-Assets {
   Id: 7921238055335087561
   Name: "Prism - 8-Sided"
   PlatformAssetType: 1
@@ -437,24 +293,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_mil_crate_003_ref"
-  }
-}
-Assets {
-  Id: 7521713676895581299
-  Name: "Fantasy Castle Wall 04 - Window 01 Base"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_004_win_01_base"
-  }
-}
-Assets {
-  Id: 6903493265086585509
-  Name: "Fantasy Frame 006"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Frame_006"
   }
 }
 Assets {
@@ -482,15 +320,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_019"
-  }
-}
-Assets {
-  Id: 5351428073291024820
-  Name: "Emissive Glow Opaque"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_opaque_emissive"
   }
 }
 Assets {
@@ -644,14 +473,5 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_lense_001"
-  }
-}
-Assets {
-  Id: 33355891792091606
-  Name: "Object Fantasy Treasure Chest Open 03 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_object_fantasy_treasure_chest_open_03_Cue_ref"
   }
 }
