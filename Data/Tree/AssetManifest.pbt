@@ -1,4 +1,30 @@
 ﻿Assets {
+  Id: 17620452958652364124
+  Name: "gold"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "94143b92be804c7488f2e56de504947c"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
+  Id: 17604023863378856742
+  Name: "VIP"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "7ede08f3287a48d89191822247dd9bf8"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 15775978992330089425
   Name: "BG Flat 015"
   PlatformAssetType: 9
@@ -80,6 +106,19 @@ Assets {
   }
 }
 Assets {
+  Id: 11756506020522890520
+  Name: "dailyRoll"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "b97cffc8249f41f9be1ad9bdeab703fa"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 11142210224783054821
   Name: "Center Arrow 008 Wedge"
   PlatformAssetType: 9
@@ -104,6 +143,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_GenderFemale"
+  }
+}
+Assets {
+  Id: 8245276785317172772
+  Name: "Brick Red Old 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_red_old_001_uv"
   }
 }
 Assets {
@@ -149,15 +197,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundFlat_033"
-  }
-}
-Assets {
-  Id: 2723232960546970913
-  Name: "Wood Floor Dark"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_wood_floor_dark_001_uv"
   }
 }
 Assets {

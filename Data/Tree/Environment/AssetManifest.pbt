@@ -1889,6 +1889,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6047315630637183176
+  Name: "Wood Floor Chevron Light"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_floor_chevron_light_001_uv"
+  }
+}
+Assets {
   Id: 6023105047490337935
   Name: "Main Street Stairs 01 - 1.5m"
   PlatformAssetType: 1
