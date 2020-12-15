@@ -9848,31 +9848,31 @@ Objects {
     Overrides {
       Name: "cs:Loot_Box_Common"
       AssetReference {
-        Id: 13097320809386463721
+        Id: 6315750633306441554
       }
     }
     Overrides {
       Name: "cs:Loot_Box_Uncommon"
       AssetReference {
-        Id: 238163795467546082
+        Id: 6392292436882305540
       }
     }
     Overrides {
       Name: "cs:Loot_Box_Rare"
       AssetReference {
-        Id: 13097320809386463721
+        Id: 12984436206213878224
       }
     }
     Overrides {
       Name: "cs:Loot_Box_Epic"
       AssetReference {
-        Id: 13097320809386463721
+        Id: 4854196293923781992
       }
     }
     Overrides {
       Name: "cs:Loot_Box_Legendary"
       AssetReference {
-        Id: 13097320809386463721
+        Id: 15922254291833518175
       }
     }
     Overrides {

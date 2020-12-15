@@ -232,6 +232,12 @@
               SelfId: 2424672459257810468
             }
           }
+          Overrides {
+            Name: "cs:Loot_Box_Spawner"
+            ObjectReference {
+              SelfId: 4048568608329531071
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

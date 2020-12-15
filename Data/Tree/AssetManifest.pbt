@@ -133,6 +133,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8245276785317172772
+  Name: "Brick Red Old 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_red_old_001_uv"
+  }
+}
+Assets {
   Id: 7809958927931360774
   Name: "BG Flat 016"
   PlatformAssetType: 9

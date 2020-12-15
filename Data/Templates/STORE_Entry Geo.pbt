@@ -73,6 +73,7 @@
         Transform {
           Location {
             Y: -30
+            Z: -9.70930481
           }
           Rotation {
             Yaw: -90
@@ -178,6 +179,7 @@
         Transform {
           Location {
             Y: -30
+            Z: -9.70930481
           }
           Rotation {
             Yaw: -89.9999695
@@ -271,6 +273,7 @@
         Transform {
           Location {
             Y: 40
+            Z: -9.70930481
           }
           Rotation {
           }

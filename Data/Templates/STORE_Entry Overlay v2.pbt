@@ -17,14 +17,12 @@
         }
         ParentId: 15571470145942283465
         ChildIds: 4986523211629774112
-        ChildIds: 8276212151844654341
         ChildIds: 2963586128661085421
         ChildIds: 11848869901376802362
         ChildIds: 13371178204433504938
         ChildIds: 2689543270797781020
         ChildIds: 1171240098768360841
         ChildIds: 3996216161057668627
-        ChildIds: 13619166086386304065
         UnregisteredParameters {
           Overrides {
             Name: "cs:ItemName"
@@ -59,7 +57,7 @@
         }
         Control {
           Width: 245
-          Height: 310
+          Height: 370
           UIX: 1505
           UIY: 570
           RenderTransformPivot {
@@ -68,6 +66,7 @@
             }
           }
           Panel {
+            IsClipping: true
           }
           AnchorLayout {
             SelfAnchor {
@@ -152,63 +151,6 @@
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:topleft"
-              }
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 8276212151844654341
-        Name: "BG Image"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 17217541726260855215
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Control {
-          Height: 56
-          UIY: 38.7077637
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          AddSizeToParentIfUsingParentSize: true
-          UseParentWidth: true
-          Image {
-            Brush {
-              Id: 1814707273787853473
-            }
-            Color {
-              G: 0.00182116206
-              B: 0.00972121768
-              A: 1
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:bottomcenter"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:bottomcenter"
               }
             }
           }
@@ -350,6 +292,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
+          Height: -37
           UIY: 40
           RenderTransformPivot {
             Anchor {
@@ -400,6 +343,8 @@
           }
         }
         ParentId: 17217541726260855215
+        ChildIds: 8276212151844654341
+        ChildIds: 13619166086386304065
         ChildIds: 6373441915489367869
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -408,8 +353,9 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Height: 50
-          UIY: 30
+          Width: -4
+          Height: 80
+          UIY: 1.08717823
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -418,6 +364,120 @@
           AddSizeToParentIfUsingParentSize: true
           UseParentWidth: true
           Panel {
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8276212151844654341
+        Name: "BG Image"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2689543270797781020
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 1814707273787853473
+            }
+            Color {
+              G: 0.00182115927
+              B: 0.00972121768
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 13619166086386304065
+        Name: "DIVIDER"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2689543270797781020
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: -6
+          Height: 2
+          UIY: -76.3619537
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          Image {
+            Brush {
+              Id: 1814707273787853473
+            }
+            Color {
+              R: 0.191201717
+              B: 0.270497859
+              A: 1
+            }
+            TeamSettings {
+            }
           }
           AnchorLayout {
             SelfAnchor {
@@ -455,8 +515,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: -10
-          Height: 33
+          Width: -26
+          Height: -8
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -464,6 +524,7 @@
           }
           AddSizeToParentIfUsingParentSize: true
           UseParentWidth: true
+          UseParentHeight: true
           Text {
             Label: "111 $"
             Color {
@@ -474,19 +535,19 @@
             }
             Size: 14
             Justification {
-              Value: "mc:etextjustify:center"
+              Value: "mc:etextjustify:right"
             }
             AutoWrapText: true
           }
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomcenter"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomcenter"
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }
@@ -573,8 +634,8 @@
         }
         Control {
           Width: 10
-          Height: 62
-          UIY: 70.7507095
+          Height: 25
+          UIY: 33.2679901
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -609,71 +670,6 @@
           }
         }
       }
-      Objects {
-        Id: 13619166086386304065
-        Name: "DIVIDER"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 17217541726260855215
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Control {
-          Width: 240
-          Height: 1
-          UIY: -13.9777832
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          Image {
-            Brush {
-              Id: 1814707273787853473
-            }
-            Color {
-              R: 0.191201717
-              B: 0.270497859
-              A: 1
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:bottomcenter"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:bottomcenter"
-              }
-            }
-          }
-        }
-      }
-    }
-    Assets {
-      Id: 1814707273787853473
-      Name: "BG Flat 001"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_020"
-      }
     }
     Assets {
       Id: 12804716500201279526
@@ -691,6 +687,15 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "FrameOutline_020"
+      }
+    }
+    Assets {
+      Id: 1814707273787853473
+      Name: "BG Flat 001"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "BackgroundNoOutline_020"
       }
     }
     Assets {
