@@ -23,6 +23,7 @@ Objects {
   ChildIds: 15293838640380427395
   ChildIds: 18072860380143784802
   ChildIds: 2994614744540900363
+  ChildIds: 3797226906030037360
   ChildIds: 11035239812348056179
   ChildIds: 1510335979846993994
   ChildIds: 5886917377158341065
@@ -242,6 +243,40 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Environment"
+  }
+}
+Objects {
+  Id: 3797226906030037360
+  Name: "Info Sign"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16874666322015545267
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Info Sign"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1889.17468
+            Y: 5686.70557
+            Z: 16.0980682
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1328213396668415185
+    }
   }
 }
 Objects {

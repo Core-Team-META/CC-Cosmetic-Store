@@ -1871,15 +1871,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6185017546957884116
-  Name: "2D Basic Shapes Decal"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "dcl_basicShapes"
-  }
-}
-Assets {
   Id: 6175278711796486850
   Name: "Text 03: S"
   PlatformAssetType: 1
@@ -2339,15 +2330,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3350581364753243189
-  Name: "Sci-fi Cockpit Console 001"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_scf_ship_cockpit_console_001_ref"
-  }
-}
-Assets {
   Id: 3280557559942806649
   Name: "Fern 03"
   PlatformAssetType: 1
@@ -2498,15 +2480,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_wall_002_corner_ref"
-  }
-}
-Assets {
-  Id: 2402982143081217095
-  Name: "Sci-fi Base Pillar 02 - Base 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_scf_base_pillar_002_base_01_ref"
   }
 }
 Assets {
