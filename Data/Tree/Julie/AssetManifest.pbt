@@ -1043,15 +1043,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13865959327645582838
-  Name: "Column Segment 1m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_column_segment_001"
-  }
-}
-Assets {
   Id: 13751408475123645462
   Name: "Main Street Floor 01 - 8m x 8m"
   PlatformAssetType: 1
