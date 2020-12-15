@@ -939,30 +939,12 @@
       }
     }
     Assets {
-      Id: 15353538826678019899
-      Name: "Frame Outlined Thick 002"
+      Id: 5506084799444686347
+      Name: "BG Flat 002"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "FrameFlat_019"
-      }
-    }
-    Assets {
-      Id: 9809938118791414773
-      Name: "Frame Outlined 002"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "FrameSolid4px_019"
-      }
-    }
-    Assets {
-      Id: 8165784690113549298
-      Name: "Military Frame 005"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Military_Frame_005"
+        AssetId: "BackgroundNoOutline_019"
       }
     }
     Assets {
@@ -975,12 +957,30 @@
       }
     }
     Assets {
-      Id: 5506084799444686347
-      Name: "BG Flat 002"
+      Id: 8165784690113549298
+      Name: "Military Frame 005"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_019"
+        AssetId: "UI_Military_Frame_005"
+      }
+    }
+    Assets {
+      Id: 9809938118791414773
+      Name: "Frame Outlined 002"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "FrameSolid4px_019"
+      }
+    }
+    Assets {
+      Id: 15353538826678019899
+      Name: "Frame Outlined Thick 002"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "FrameFlat_019"
       }
     }
     PrimaryAssetId {
@@ -990,4 +990,3 @@
   }
   SerializationVersion: 70
 }
-IncludesAllDependencies: true

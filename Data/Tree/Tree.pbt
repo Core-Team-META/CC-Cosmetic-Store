@@ -28,6 +28,7 @@ Objects {
   ChildIds: 5886917377158341065
   ChildIds: 7069178301840666666
   ChildIds: 10254726131360694379
+  ChildIds: 16338354455236403851
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -37,6 +38,60 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 16338354455236403851
+  Name: "Miner Timer Sample"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3354135352753759116
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Miner Timer Sample"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5510
+            Y: 4760
+            Z: 15
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -90
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11229873877269569605
+      value {
+        Overrides {
+          Name: "cs:PerkRef"
+          NetReference {
+            Key: "1b3a78e5a62048ffb8258c3d2b078305"
+            Type {
+              Value: "mc:enetreferencetype:creatorperk"
+            }
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7272225331690163745
+    }
   }
 }
 Objects {
