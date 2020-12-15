@@ -37,6 +37,12 @@
         String: ""
       }
       Overrides {
+        Name: "cs:MUID"
+        AssetReference {
+          Id: 841534158063459245
+        }
+      }
+      Overrides {
         Name: "cs:Info:tooltip"
         String: "This script is for defining new items in the store.  See the STORE_README for information on where to put it and how it should be used."
       }
