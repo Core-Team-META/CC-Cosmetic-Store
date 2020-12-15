@@ -134,15 +134,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9136786294201978281
-  Name: "Metal Old Beaten Gold 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_gold_002"
-  }
-}
-Assets {
   Id: 8425111237879329054
   Name: "Metal Basic 01"
   PlatformAssetType: 2

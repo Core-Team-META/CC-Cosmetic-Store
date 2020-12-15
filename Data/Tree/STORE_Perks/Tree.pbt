@@ -857,9 +857,9 @@ Objects {
   Name: "Sign Bracket - Round"
   Transform {
     Location {
-      X: 219.780457
-      Y: 8.30835
-      Z: 64.6144409
+      X: 219.773
+      Y: 8.30847454
+      Z: 205.896652
     }
     Rotation {
       Roll: -179.999969
@@ -875,7 +875,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9136786294201978281
+        Id: 1532438403020507221
       }
     }
   }
@@ -907,9 +907,9 @@ Objects {
   Name: "Sign Bracket - Round"
   Transform {
     Location {
-      X: -211.860382
-      Y: 8.30835
-      Z: 64.6144409
+      X: -211.852905
+      Y: 8.30853939
+      Z: 205.896652
     }
     Rotation {
       Roll: -179.999985
@@ -1073,9 +1073,9 @@ Objects {
   Name: "Fantasy Staff Grip 01"
   Transform {
     Location {
-      X: -213.565979
-      Y: 26.2128906
-      Z: -441.544617
+      X: -213.561249
+      Y: 26.2128334
+      Z: -308.305054
     }
     Rotation {
     }
@@ -1114,9 +1114,9 @@ Objects {
   Name: "Fantasy Staff Grip 01"
   Transform {
     Location {
-      X: 218.637451
-      Y: 26.2128906
-      Z: -441.544617
+      X: 218.632736
+      Y: 26.2128487
+      Z: -308.305054
     }
     Rotation {
     }
@@ -5362,11 +5362,12 @@ Objects {
   Name: "PERKS_RestrictedSubscriptionZone"
   Transform {
     Location {
-      X: -2000
-      Y: 770
+      X: 238.63
+      Y: 2922.72412
+      Z: 10.7971954
     }
     Rotation {
-      Yaw: -90
+      Yaw: 180
     }
     Scale {
       X: 1
@@ -5375,8 +5376,8 @@ Objects {
     }
   }
   ParentId: 4296421264996771920
-  ChildIds: 4047942872222702910
   ChildIds: 3247844743285483589
+  ChildIds: 4047942872222702910
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5394,102 +5395,13 @@ Objects {
   }
 }
 Objects {
-  Id: 3247844743285483589
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: 184.803986
-      Y: 381.1745
-      Z: 171.696381
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.81398869
-      Y: 0.699999392
-      Z: 2.91652584
-    }
-  }
-  ParentId: 6810524974394914450
-  ChildIds: 3963430689955521959
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-  InstanceHistory {
-    SelfId: 3247844743285483589
-    SubobjectId: 10193274085088517488
-    InstanceId: 4234497685331599696
-    TemplateId: 12118991292016097700
-  }
-}
-Objects {
-  Id: 3963430689955521959
-  Name: "SubscriptionRoomGuard"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3247844743285483589
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:VIP"
-      NetReference {
-        Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
-        Type {
-          Value: "mc:enetreferencetype:creatorperk"
-        }
-      }
-    }
-    Overrides {
-      Name: "cs:RequiredNumberOfVIP"
-      Int: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 832981310233777609
-    }
-  }
-  InstanceHistory {
-    SelfId: 3963430689955521959
-    SubobjectId: 10909845193824784530
-    InstanceId: 4234497685331599696
-    TemplateId: 12118991292016097700
-  }
-}
-Objects {
   Id: 4047942872222702910
   Name: "Vip Sign"
   Transform {
     Location {
-      X: 188.766968
-      Y: 400.422058
-      Z: 332.415588
+      X: 3.9629848
+      Y: 19.2480392
+      Z: 321.618408
     }
     Rotation {
       Yaw: -179.999985
@@ -5566,7 +5478,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9136786294201978281
+        Id: 1532438403020507221
       }
     }
   }
@@ -9290,6 +9202,96 @@ Objects {
         LinearDamping: 0.01
       }
     }
+  }
+}
+Objects {
+  Id: 3247844743285483589
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 1.16415308e-10
+      Y: 0.000488281017
+      Z: 160.8992
+    }
+    Rotation {
+      Yaw: 6.83018516e-06
+    }
+    Scale {
+      X: 2.81398869
+      Y: 0.699999392
+      Z: 2.91652584
+    }
+  }
+  ParentId: 6810524974394914450
+  ChildIds: 3963430689955521959
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 3247844743285483589
+    SubobjectId: 10193274085088517488
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
+  }
+}
+Objects {
+  Id: 3963430689955521959
+  Name: "SubscriptionRoomGuard"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3247844743285483589
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:VIP"
+      NetReference {
+        Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
+        Type {
+          Value: "mc:enetreferencetype:creatorperk"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:RequiredNumberOfVIP"
+      Int: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 832981310233777609
+    }
+  }
+  InstanceHistory {
+    SelfId: 3963430689955521959
+    SubobjectId: 10909845193824784530
+    InstanceId: 4234497685331599696
+    TemplateId: 12118991292016097700
   }
 }
 Objects {

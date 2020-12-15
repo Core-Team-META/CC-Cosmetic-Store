@@ -3905,6 +3905,55 @@ Objects {
     }
   }
   ParentId: 16098541467184027750
+  ChildIds: 8375307072113441915
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 45
+    UIX: 195.135071
+    UIY: 9.20114708
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentHeight: true
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 8375307072113441915
+  Name: "UI Panel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4009624171374157153
   ChildIds: 11421915945124525656
   ChildIds: 183012120923265591
   ChildIds: 3759989059235315511
@@ -3917,10 +3966,8 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 45
-    Height: 57
-    UIX: 207.433975
-    UIY: 36.8803711
+    Width: 100
+    Height: 100
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3931,12 +3978,12 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:middlecenter"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
@@ -3956,7 +4003,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4009624171374157153
+  ParentId: 8375307072113441915
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3966,6 +4013,8 @@ Objects {
   Control {
     Width: 41
     Height: 26
+    UIX: -27.5
+    UIY: -1.5
     RotationAngle: 270
     RenderTransformPivot {
       Anchor {
@@ -4012,7 +4061,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4009624171374157153
+  ParentId: 8375307072113441915
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4022,6 +4071,8 @@ Objects {
   Control {
     Width: 41
     Height: 26
+    UIX: -27.5
+    UIY: -1.5
     RotationAngle: 270
     RenderTransformPivot {
       Anchor {
@@ -4068,7 +4119,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4009624171374157153
+  ParentId: 8375307072113441915
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4078,7 +4129,8 @@ Objects {
   Control {
     Width: 41
     Height: 26
-    UIX: 2.14958191
+    UIX: -25.3504181
+    UIY: -1.5
     RotationAngle: 270
     RenderTransformPivot {
       Anchor {
@@ -4125,7 +4177,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4009624171374157153
+  ParentId: 8375307072113441915
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4135,7 +4187,8 @@ Objects {
   Control {
     Width: 41
     Height: 26
-    UIX: 8.59832764
+    UIX: -18.9016724
+    UIY: -1.5
     RotationAngle: 270
     RenderTransformPivot {
       Anchor {
@@ -4182,7 +4235,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4009624171374157153
+  ParentId: 8375307072113441915
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4192,8 +4245,8 @@ Objects {
   Control {
     Width: 36
     Height: 39
-    UIX: 26.8696442
-    UIY: -2.06713457e-06
+    UIX: -0.630355835
+    UIY: -1.5
     RotationAngle: 90
     RenderTransformPivot {
       Anchor {

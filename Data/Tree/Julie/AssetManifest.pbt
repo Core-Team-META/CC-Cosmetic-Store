@@ -35,30 +35,12 @@ Assets {
   }
 }
 Assets {
-  Id: 18292448005538599011
-  Name: "Main Street Pillar 01 - Small"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dtn_mst_part_pillar_small_01_ref"
-  }
-}
-Assets {
   Id: 18276837318609612613
   Name: "Sphere"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_sphere_002"
-  }
-}
-Assets {
-  Id: 18243333251623460988
-  Name: "Candle 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_candle_003"
   }
 }
 Assets {
@@ -80,15 +62,6 @@ Assets {
   }
 }
 Assets {
-  Id: 18153381962735685629
-  Name: "Plane Circle - One Sided"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_plane_circle_001"
-  }
-}
-Assets {
   Id: 18105158013125412176
   Name: "Sci-fi Base Door 02"
   PlatformAssetType: 1
@@ -107,15 +80,6 @@ Assets {
   }
 }
 Assets {
-  Id: 18033389860248816225
-  Name: "Craftsman Interior Door 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_sub_craftsman_door_002"
-  }
-}
-Assets {
   Id: 17985883485331085714
   Name: "Horn"
   PlatformAssetType: 1
@@ -125,30 +89,12 @@ Assets {
   }
 }
 Assets {
-  Id: 17943173908974613987
-  Name: "Text 03: R"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F5_Text_017"
-  }
-}
-Assets {
   Id: 17903669751448619867
   Name: "Text 01: C"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_002"
-  }
-}
-Assets {
-  Id: 17804872816677549927
-  Name: "Main Street Floor 01 - 4m x 4m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dtn_mst_floor_001_4x4_ref"
   }
 }
 Assets {
@@ -179,24 +125,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17684593812185219291
-  Name: "Brick Red Old 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_red_old_002_uv"
-  }
-}
-Assets {
-  Id: 17572648761083010261
-  Name: "Marble Tiles Octagon Dot 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_gen_marble_tiles_004_uv"
-  }
-}
-Assets {
   Id: 17563255658047034781
   Name: "Text 01: ~"
   PlatformAssetType: 1
@@ -221,15 +149,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_arch_fancy_3m_001"
-  }
-}
-Assets {
-  Id: 17383505576677087978
-  Name: "Cone - Truncated Hollow Concave"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone_truncated_hollow_convex_001"
   }
 }
 Assets {
@@ -287,15 +206,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16999338032983966440
-  Name: "Star - Rounded"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_star_chubby_001"
-  }
-}
-Assets {
   Id: 16976085640077695470
   Name: "Arch Fancy 3m"
   PlatformAssetType: 1
@@ -341,57 +251,12 @@ Assets {
   }
 }
 Assets {
-  Id: 16804431787072213407
-  Name: "Text 03: G"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F5_Text_006"
-  }
-}
-Assets {
   Id: 16758780892424488412
   Name: "Text 01: $"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_040"
-  }
-}
-Assets {
-  Id: 16693491951236765902
-  Name: "Bricks Concrete Cinder Block 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_concrete_001"
-  }
-}
-Assets {
-  Id: 16661786161587437050
-  Name: "Text 01: 2"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_028"
-  }
-}
-Assets {
-  Id: 16516719627038597854
-  Name: "Wood Floor Herringbone Light"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_wood_floor_herringbone_light_001_uv"
-  }
-}
-Assets {
-  Id: 16502568146720592227
-  Name: "Ivy 04"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ivy_generic_004"
   }
 }
 Assets {
@@ -413,30 +278,12 @@ Assets {
   }
 }
 Assets {
-  Id: 16436457243626939192
-  Name: "Marble Tiles Square 01"
-  PlatformAssetType: 2
+  Id: 16412693659560353417
+  Name: "\"Winter Snowflakes\" Music Construction Kit (Sections) 01"
+  PlatformAssetType: 10
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_gen_marble_tiles_002_uv"
-  }
-}
-Assets {
-  Id: 16428018358708507592
-  Name: "Text 01: ."
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_063"
-  }
-}
-Assets {
-  Id: 16353917461806733124
-  Name: "Ring - Thin"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_torus_003"
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_winter_snowflakes_sections_kit_ref"
   }
 }
 Assets {
@@ -449,12 +296,12 @@ Assets {
   }
 }
 Assets {
-  Id: 16179859024420455086
-  Name: "Invisible"
+  Id: 16171957045391883906
+  Name: "Plastic Shiny"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_invisible_001"
+    AssetId: "plastic_shiny_001"
   }
 }
 Assets {
@@ -548,30 +395,12 @@ Assets {
   }
 }
 Assets {
-  Id: 15736298961885407444
-  Name: "Craftsman Stairs 01 Straight"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_sub_craftsman_stairs_001_straight"
-  }
-}
-Assets {
   Id: 15726225467571471568
   Name: "Bottle 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_bottle_002"
-  }
-}
-Assets {
-  Id: 15680714654116954725
-  Name: "Cylinder - Rounded Bottom-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_rounded_001"
   }
 }
 Assets {
@@ -611,15 +440,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15388000647109636384
-  Name: "Cone - Hollow"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone-hollow_001"
-  }
-}
-Assets {
   Id: 15385195988779076100
   Name: "Cylinder - Rounded Small"
   PlatformAssetType: 1
@@ -647,12 +467,12 @@ Assets {
   }
 }
 Assets {
-  Id: 15249633882133814909
-  Name: "Baseball Bat"
-  PlatformAssetType: 1
+  Id: 15234553642973347520
+  Name: "Ambience Nature Cicadas Set 01 SFX"
+  PlatformAssetType: 10
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_modern_bat_001"
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_cicadas_ref"
   }
 }
 Assets {
@@ -665,21 +485,12 @@ Assets {
   }
 }
 Assets {
-  Id: 15143766926267315553
-  Name: "Hill 03"
-  PlatformAssetType: 1
+  Id: 15172180549504871240
+  Name: "Ambience Nature Forest Birds Set 01 SFX"
+  PlatformAssetType: 10
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_hill_003"
-  }
-}
-Assets {
-  Id: 15091262323014444245
-  Name: "Birch Leaves 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_leaves_birch_001"
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_forestbirds_ref"
   }
 }
 Assets {
@@ -698,33 +509,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "fxsm_waterfall_straight"
-  }
-}
-Assets {
-  Id: 15041045188032119653
-  Name: "Food Fruit 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_food_generic_apple_001_uv"
-  }
-}
-Assets {
-  Id: 14984535920120337781
-  Name: "Text 01: 5"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_031"
-  }
-}
-Assets {
-  Id: 14871731965067019018
-  Name: "Container - Trapezoid Thin 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_container_triangular_Thin_ref"
   }
 }
 Assets {
@@ -836,39 +620,12 @@ Assets {
   }
 }
 Assets {
-  Id: 14570194941963875758
-  Name: "Text 05: M"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F6_Text_012"
-  }
-}
-Assets {
   Id: 14545135634545215532
   Name: "Text 01: T"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_019"
-  }
-}
-Assets {
-  Id: 14539674100726889376
-  Name: "Main Street Wall 01 - Window 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dtn_mst_wall_001_window_ref"
-  }
-}
-Assets {
-  Id: 14531555721629848865
-  Name: "Text 03: M"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F5_Text_012"
   }
 }
 Assets {
@@ -896,24 +653,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_two-by-four_3m"
-  }
-}
-Assets {
-  Id: 14368064234603408536
-  Name: "Text 03: ]"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F5_Text_054"
-  }
-}
-Assets {
-  Id: 14364313178059886990
-  Name: "Bark Redwood 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_bark_redwood_001_uv"
   }
 }
 Assets {
@@ -953,24 +692,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14210629989863872294
-  Name: "Craftsman Stairs 01 Banister"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_sub_craftsman_stairs_001_banister"
-  }
-}
-Assets {
-  Id: 14131243806865495719
-  Name: "Text 05: I"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F6_Text_008"
-  }
-}
-Assets {
   Id: 14128145843334160491
   Name: "Food Fruit 01"
   PlatformAssetType: 2
@@ -998,30 +719,12 @@ Assets {
   }
 }
 Assets {
-  Id: 14031147348977058477
-  Name: "Bricks Wall Flat 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_wall_flat_001"
-  }
-}
-Assets {
   Id: 14024462631882148001
   Name: "Text 04: D"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F7_Text_003"
-  }
-}
-Assets {
-  Id: 14014504692453732684
-  Name: "Food Corn 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_food_generic_corn_001_uv"
   }
 }
 Assets {
@@ -1043,15 +746,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13872818768797185478
-  Name: "Text 05: S"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F6_Text_018"
-  }
-}
-Assets {
   Id: 13751408475123645462
   Name: "Main Street Floor 01 - 8m x 8m"
   PlatformAssetType: 1
@@ -1070,15 +764,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13614546110894110611
-  Name: "Food Cheese 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_food_generic_cheese_001_uv"
-  }
-}
-Assets {
   Id: 13560635218549589426
   Name: "Sand 01"
   PlatformAssetType: 2
@@ -1094,15 +779,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_eightsided_001"
-  }
-}
-Assets {
-  Id: 13463529736008818383
-  Name: "Hill 04"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_hill_004"
   }
 }
 Assets {
@@ -1169,48 +845,12 @@ Assets {
   }
 }
 Assets {
-  Id: 13194760904972998112
-  Name: "Cabinet - Upper Corner"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_cabinet_corner_001"
-  }
-}
-Assets {
   Id: 13175243767499661588
   Name: "Human Gal 3"
   PlatformAssetType: 17
   PrimaryAsset {
     AssetType: "AnimatedMeshAssetRef"
     AssetId: "npc_human_gal_basic_003_ref"
-  }
-}
-Assets {
-  Id: 13127178988828444324
-  Name: "Helix - 1.0"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_helix_005"
-  }
-}
-Assets {
-  Id: 13101088872245227344
-  Name: "Food Watermelon 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_food_generic_watermelon_001_uv1"
-  }
-}
-Assets {
-  Id: 13091512434361803159
-  Name: "Cube - Chamfered Small Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_hq_003"
   }
 }
 Assets {
@@ -1229,15 +869,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pyramid_threesided_001"
-  }
-}
-Assets {
-  Id: 12924351653177272696
-  Name: "Fantasy Human Gal 2"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_gal_fantasy_001_ref"
   }
 }
 Assets {
@@ -1268,15 +899,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12759972949910562945
-  Name: "Column Base 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_column_bottom_001"
-  }
-}
-Assets {
   Id: 12728337217389179065
   Name: "Craftsman Wall 02 Corner"
   PlatformAssetType: 1
@@ -1286,48 +908,12 @@ Assets {
   }
 }
 Assets {
-  Id: 12537868752084607232
-  Name: "Ceramic Tiles Square 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_ceramic_tile_square_001"
-  }
-}
-Assets {
-  Id: 12482875248201116221
-  Name: "Food Corn 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_food_generic_corn_001_uv"
-  }
-}
-Assets {
   Id: 12478142156858989744
   Name: "Text 04: _"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F7_Text_049"
-  }
-}
-Assets {
-  Id: 12474228375475046909
-  Name: "Metal Painted Basic 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_painted_metal_basic_001"
-  }
-}
-Assets {
-  Id: 12371262671732615430
-  Name: "Fantasy Castle Pillar 01 Cap"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_pillar_001_cap"
   }
 }
 Assets {
@@ -1484,24 +1070,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11615716110344107020
-  Name: "Craftsman Wall Interior 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_sub_craftsman_wall_int_001"
-  }
-}
-Assets {
-  Id: 11580119391954692641
-  Name: "Text 01: 3"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_029"
-  }
-}
-Assets {
   Id: 11556563990941055561
   Name: "Ceramic Tile Rectangle 01"
   PlatformAssetType: 2
@@ -1529,24 +1097,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11349479181198021550
-  Name: "Lens - Half"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_half_lense_001"
-  }
-}
-Assets {
-  Id: 11267174079947266369
-  Name: "Text 05: T"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F6_Text_019"
-  }
-}
-Assets {
   Id: 11234189853963270640
   Name: "Manticore Logo"
   PlatformAssetType: 1
@@ -1565,39 +1115,12 @@ Assets {
   }
 }
 Assets {
-  Id: 11111447611931661974
-  Name: "Craftsman Stairs 01 Railing"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_sub_craftsman_stairs_001_rail"
-  }
-}
-Assets {
   Id: 11053950961910504844
   Name: "Grass Tall"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_001"
-  }
-}
-Assets {
-  Id: 11052830231601453858
-  Name: "Text 01: P"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_015"
-  }
-}
-Assets {
-  Id: 11020923890823202697
-  Name: "Container - Square Thin 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_container_square_thin_ref"
   }
 }
 Assets {
@@ -1634,24 +1157,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_plane_1m_002"
-  }
-}
-Assets {
-  Id: 10835155324150586940
-  Name: "Rock Pile 001"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rocks_small_001"
-  }
-}
-Assets {
-  Id: 10830521042113057013
-  Name: "Ring - Extra Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_torus_006"
   }
 }
 Assets {
@@ -1706,15 +1211,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bones_human_ulna_01_ref"
-  }
-}
-Assets {
-  Id: 10413465125058823580
-  Name: "Horn"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_horn_001"
   }
 }
 Assets {
@@ -1799,24 +1295,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9850774980230889095
-  Name: "Cone"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone_001"
-  }
-}
-Assets {
-  Id: 9826710443425479508
-  Name: "Modern Weapon Ammo - Bullet 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_modern_ammo_bullet_tip_001"
-  }
-}
-Assets {
   Id: 9752734717110669905
   Name: "Text 05: -"
   PlatformAssetType: 1
@@ -1862,57 +1340,12 @@ Assets {
   }
 }
 Assets {
-  Id: 9643743770374877205
-  Name: "Military Tank Historic Container 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_mil_tank_hst_container_001_ref"
-  }
-}
-Assets {
-  Id: 9536141319314062468
-  Name: "Craftsman Porch Fence Railing 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_sub_craftsman_porch_001_rail"
-  }
-}
-Assets {
-  Id: 9530654883155073160
-  Name: "Moss 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_moss_001_uv"
-  }
-}
-Assets {
-  Id: 9430017653316231459
-  Name: "Main Street Window 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dtn_mst_part_window_003_ref"
-  }
-}
-Assets {
   Id: 9414743244929396516
   Name: "Text 01: I"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_008"
-  }
-}
-Assets {
-  Id: 9286379901710937367
-  Name: "Text 05: A"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F6_Text_000"
   }
 }
 Assets {
@@ -1940,6 +1373,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "fxsm_candleflame"
+  }
+}
+Assets {
+  Id: 9172416079279347246
+  Name: "\"Simple Jazz Swing\" Music Construction Kit (Sections) 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_simple_jazz_swing_sections_kit_ref"
   }
 }
 Assets {
@@ -1976,15 +1418,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_007"
-  }
-}
-Assets {
-  Id: 8952972911246096844
-  Name: "Text 05: Z"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F6_Text_025"
   }
 }
 Assets {
@@ -2030,15 +1463,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_046"
-  }
-}
-Assets {
-  Id: 8681899656752834670
-  Name: "Craftsman Wall Interior 01 Doorway"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_sub_craftsman_wall_int_001_doorway"
   }
 }
 Assets {
@@ -2096,39 +1520,12 @@ Assets {
   }
 }
 Assets {
-  Id: 8294807043175688377
-  Name: "Ellipsoid - Truncated"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ellipsoid_truncated_001"
-  }
-}
-Assets {
   Id: 8208895403318571202
   Name: "Candle 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_candle_004"
-  }
-}
-Assets {
-  Id: 8165143622034885339
-  Name: "Carbon Fiber 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_carbon-fiber_001"
-  }
-}
-Assets {
-  Id: 8155994152759289014
-  Name: "Cylinder - Bottom-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_001"
   }
 }
 Assets {
@@ -2150,15 +1547,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8061254662148308094
-  Name: "Cone - Truncated"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone_truncated_001"
-  }
-}
-Assets {
   Id: 8054067229474751902
   Name: "Stone Basic"
   PlatformAssetType: 2
@@ -2168,12 +1556,12 @@ Assets {
   }
 }
 Assets {
-  Id: 7909321749664205074
-  Name: "Craftsman Part - Stair Rail"
-  PlatformAssetType: 1
+  Id: 7724989921381923917
+  Name: "Ambience Nature Wind and Trees Set 01 SFX"
+  PlatformAssetType: 10
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_sub_craftsman_part_stair_001_rail"
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_windytrees_ref"
   }
 }
 Assets {
@@ -2183,15 +1571,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ellipsoid_truncated_001"
-  }
-}
-Assets {
-  Id: 7586531330788385474
-  Name: "Craftsman Part - Doorway"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_sub_craftsman_part_doorway_001"
   }
 }
 Assets {
@@ -2228,15 +1607,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_curtain_02"
-  }
-}
-Assets {
-  Id: 7283825798727192743
-  Name: "Metal Iron Rusted 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_iron_003"
   }
 }
 Assets {
@@ -2348,15 +1718,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6556201207493402265
-  Name: "Wallpaper Fleur De Lis 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_wallpaper_fleurdelis_001_uv"
-  }
-}
-Assets {
   Id: 6517329941012659437
   Name: "Bush Leafy Low 01"
   PlatformAssetType: 1
@@ -2372,15 +1733,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_015"
-  }
-}
-Assets {
-  Id: 6443861056421750085
-  Name: "Hill 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_hill_002"
   }
 }
 Assets {
@@ -2408,15 +1760,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_food_generic_citrus_001_uv"
-  }
-}
-Assets {
-  Id: 6307371810581530536
-  Name: "Fabric Burlap New 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_fan_fabric_burlap_002_uv"
   }
 }
 Assets {
@@ -2465,24 +1808,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6167888878443100696
-  Name: "Cylinder - Rounded Small"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_rounded_003"
-  }
-}
-Assets {
-  Id: 6157711858907400962
-  Name: "Modern Weapon Accessory - Shell Clip"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_modern_acc_shellclip_001"
-  }
-}
-Assets {
   Id: 6047315630637183176
   Name: "Wood Floor Chevron Light"
   PlatformAssetType: 2
@@ -2525,15 +1850,6 @@ Assets {
   PrimaryAsset {
     AssetType: "AnimatedMeshAssetRef"
     AssetId: "npc_human_guy_basic_002_ref"
-  }
-}
-Assets {
-  Id: 5977426404073142443
-  Name: "Hay 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_fan_hay_002_uv"
   }
 }
 Assets {
@@ -2588,51 +1904,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_002"
-  }
-}
-Assets {
-  Id: 5861223425148352605
-  Name: "Metal Basic Steel"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "steel_001"
-  }
-}
-Assets {
-  Id: 5859920817203956584
-  Name: "Text 01: 0"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_026"
-  }
-}
-Assets {
-  Id: 5841705013059296597
-  Name: "Counter - Drawers"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_counter_drawers_001"
-  }
-}
-Assets {
-  Id: 5836430349218932838
-  Name: "Pipe - Thin"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_003"
-  }
-}
-Assets {
-  Id: 5822913166312317804
-  Name: "Moss 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_moss_001_uv"
   }
 }
 Assets {
@@ -2726,39 +1997,12 @@ Assets {
   }
 }
 Assets {
-  Id: 5318852982404395572
-  Name: "Bark Redwood 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_bark_redwood_001_uv"
-  }
-}
-Assets {
   Id: 5316765673530735247
   Name: "Coral Table 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_coral_table_02"
-  }
-}
-Assets {
-  Id: 5271639852184247581
-  Name: "Ring - Extra Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_torus_006"
-  }
-}
-Assets {
-  Id: 5185278861897178064
-  Name: "Sphere"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_sphere_002"
   }
 }
 Assets {
@@ -2771,30 +2015,12 @@ Assets {
   }
 }
 Assets {
-  Id: 4990547234950917864
-  Name: "Metal Painted 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_painted_new_001_uv"
-  }
-}
-Assets {
   Id: 4973123046096773779
   Name: "Text 04: N"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F7_Text_013"
-  }
-}
-Assets {
-  Id: 4846662083301446138
-  Name: "Craftsman Part - Stair Balust"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "urb_sub_craftsman_part_stair_001_balust"
   }
 }
 Assets {
@@ -2834,12 +2060,12 @@ Assets {
   }
 }
 Assets {
-  Id: 4680689859922991872
-  Name: "Text 01: 4"
+  Id: 4753988644095219219
+  Name: "Cylinder - Chamfered Polished"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_030"
+    AssetId: "sm_cylinder_hq_002"
   }
 }
 Assets {
@@ -2858,15 +2084,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_railing_001_post_ref"
-  }
-}
-Assets {
-  Id: 4514387888274565803
-  Name: "Whitebox Wall 01 Doorway 01 Frame"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_gen_whitebox_wall_001_doorframe"
   }
 }
 Assets {
@@ -2897,24 +2114,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4241954836035827010
-  Name: "Candle Holder 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_candle_holder_table_002"
-  }
-}
-Assets {
-  Id: 4210516917900250470
-  Name: "Cylinder - Rounded"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_rounded_002"
-  }
-}
-Assets {
   Id: 4193024863549911546
   Name: "Column Base 02"
   PlatformAssetType: 1
@@ -2942,39 +2141,12 @@ Assets {
   }
 }
 Assets {
-  Id: 4119214761733539033
-  Name: "Text 03: E"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F5_Text_004"
-  }
-}
-Assets {
   Id: 4086590606608242909
   Name: "Text 04: H"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F7_Text_007"
-  }
-}
-Assets {
-  Id: 4036135367007497248
-  Name: "Text 05: \'"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F6_Text_057"
-  }
-}
-Assets {
-  Id: 4013840384493368166
-  Name: "Bone Raw"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_bone_raw_001_uv_ref"
   }
 }
 Assets {
@@ -3032,24 +2204,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3785098346108157747
-  Name: "Sphere"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_sphere_002"
-  }
-}
-Assets {
-  Id: 3716062961443243971
-  Name: "Ivy 05"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ivy_generic_005"
-  }
-}
-Assets {
   Id: 3677793947984566051
   Name: "Bush Leafy Tall 01"
   PlatformAssetType: 1
@@ -3068,30 +2222,12 @@ Assets {
   }
 }
 Assets {
-  Id: 3544124856207124336
-  Name: "Kelp Bush 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_kelp_bush_02"
-  }
-}
-Assets {
   Id: 3539178114288347554
   Name: "Marble Basic 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_gen_marble_tiles_001_uv"
-  }
-}
-Assets {
-  Id: 3533190463953898497
-  Name: "Fantasy Chest Treasure Pile 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_fantasy_chest_treasure_pile_001_ref"
   }
 }
 Assets {
@@ -3113,12 +2249,30 @@ Assets {
   }
 }
 Assets {
+  Id: 3350581364753243189
+  Name: "Sci-fi Cockpit Console 001"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_scf_ship_cockpit_console_001_ref"
+  }
+}
+Assets {
   Id: 3280557559942806649
   Name: "Fern 03"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fern_generic_003"
+  }
+}
+Assets {
+  Id: 3163664052006087405
+  Name: "Square Column Base 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_square_bottom_002"
   }
 }
 Assets {
@@ -3164,15 +2318,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_cabinet_narrow_001_cabient"
-  }
-}
-Assets {
-  Id: 2838425145965478309
-  Name: "Flower Wild Lily 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_foliage_gen_flower_wild_lily_001_ref"
   }
 }
 Assets {
@@ -3248,15 +2393,6 @@ Assets {
   }
 }
 Assets {
-  Id: 2511353106045149030
-  Name: "Text 06: )"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F8_Text_046"
-  }
-}
-Assets {
   Id: 2479814728495428378
   Name: "Cabinet Door"
   PlatformAssetType: 1
@@ -3275,6 +2411,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2402982143081217095
+  Name: "Sci-fi Base Pillar 02 - Base 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_scf_base_pillar_002_base_01_ref"
+  }
+}
+Assets {
   Id: 2397991265285074411
   Name: "Flower Bellflower 02"
   PlatformAssetType: 1
@@ -3284,39 +2429,12 @@ Assets {
   }
 }
 Assets {
-  Id: 2379980367253352415
-  Name: "Concrete Bunker"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_gen_concrete_bunker_001"
-  }
-}
-Assets {
-  Id: 2359135948222717576
-  Name: "Cone - Truncated Concave"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone_truncated_concave_001"
-  }
-}
-Assets {
   Id: 2311784804042372068
   Name: "Human Gal 2"
   PlatformAssetType: 17
   PrimaryAsset {
     AssetType: "AnimatedMeshAssetRef"
     AssetId: "npc_human_gal_basic_002_ref"
-  }
-}
-Assets {
-  Id: 2159678873184162260
-  Name: "2D Basic Shapes Decal"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "dcl_basicShapes"
   }
 }
 Assets {
@@ -3338,24 +2456,6 @@ Assets {
   }
 }
 Assets {
-  Id: 2009711520667461264
-  Name: "Ring - Quarter"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_quarter_torus_002"
-  }
-}
-Assets {
-  Id: 1971942697827922499
-  Name: "Text 05: O"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F6_Text_014"
-  }
-}
-Assets {
   Id: 1938148825372685458
   Name: "Teardrop - Truncated"
   PlatformAssetType: 1
@@ -3371,24 +2471,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_trim_002_ref"
-  }
-}
-Assets {
-  Id: 1854918430747165024
-  Name: "Main Street Wall 01 - Half"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_urb_dtn_mst_wall_001_half_ref"
-  }
-}
-Assets {
-  Id: 1778446291070997431
-  Name: "Plastic Shiny"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "plastic_shiny_001"
   }
 }
 Assets {
@@ -3464,15 +2546,6 @@ Assets {
   }
 }
 Assets {
-  Id: 1391703649440246415
-  Name: "Text 01: H"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_007"
-  }
-}
-Assets {
   Id: 1304149708294318909
   Name: "Pipe"
   PlatformAssetType: 1
@@ -3491,12 +2564,12 @@ Assets {
   }
 }
 Assets {
-  Id: 1128247331693917451
-  Name: "Text 01: 1"
-  PlatformAssetType: 1
+  Id: 1176520312971990409
+  Name: "\"8-Bit Funland\" Music Construction Kit (Sections) 01"
+  PlatformAssetType: 10
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_027"
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_8bit_funland_sections_kit_ref"
   }
 }
 Assets {
@@ -3527,6 +2600,15 @@ Assets {
   }
 }
 Assets {
+  Id: 907494637185805598
+  Name: "Square Column Base 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_square_bottom_001"
+  }
+}
+Assets {
   Id: 892215899551972766
   Name: "Branches Cluster Small"
   PlatformAssetType: 1
@@ -3545,30 +2627,12 @@ Assets {
   }
 }
 Assets {
-  Id: 790977210918566173
-  Name: "Kelp Bush 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_kelp_bush_01"
-  }
-}
-Assets {
   Id: 780645872747897880
   Name: "Pipe - Thin"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_003"
-  }
-}
-Assets {
-  Id: 687006644229473324
-  Name: "Text 05: P"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F6_Text_015"
   }
 }
 Assets {
@@ -3626,24 +2690,6 @@ Assets {
   }
 }
 Assets {
-  Id: 198353679974341757
-  Name: "Cube - Bottom-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_001"
-  }
-}
-Assets {
-  Id: 156531678336788395
-  Name: "Spiral"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_helix_001"
-  }
-}
-Assets {
   Id: 135787505950856674
   Name: "Invisible"
   PlatformAssetType: 2
@@ -3686,14 +2732,5 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_wall_001_ref"
-  }
-}
-Assets {
-  Id: 41259329107093705
-  Name: "Cylinder - Rounded Bottom-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_rounded_001"
   }
 }
