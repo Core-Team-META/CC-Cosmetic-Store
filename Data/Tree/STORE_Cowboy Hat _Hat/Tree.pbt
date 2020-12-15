@@ -1,7 +1,7 @@
 ﻿Name: "STORE_Cowboy Hat _Hat"
-RootId: 6674500998939836191
+RootId: 6614845632776586061
 Objects {
-  Id: 1656029927593423995
+  Id: 16600083391757091900
   Name: "STORE_ItemInfo"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6674500998939836191
+  ParentId: 6614845632776586061
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -60,7 +60,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5165662313200234601
+  Id: 4705016727051218919
   Name: "head"
   Transform {
     Location {
@@ -73,8 +73,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6674500998939836191
-  ChildIds: 15132505288223455827
+  ParentId: 6614845632776586061
+  ChildIds: 15854931348895265569
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -92,7 +92,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15132505288223455827
+  Id: 15854931348895265569
   Name: "Cowboy Hat _Hat"
   Transform {
     Location {
@@ -105,8 +105,8 @@ Objects {
       Z: 0.9
     }
   }
-  ParentId: 5165662313200234601
-  ChildIds: 17915960534888940965
+  ParentId: 4705016727051218919
+  ChildIds: 3875704590580158987
   UnregisteredParameters {
     Overrides {
       Name: "cs:VerticalOffset"
@@ -171,7 +171,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17915960534888940965
+  Id: 3875704590580158987
   Name: "Hat"
   Transform {
     Location {
@@ -190,10 +190,10 @@ Objects {
       Z: 0.0215625409
     }
   }
-  ParentId: 15132505288223455827
-  ChildIds: 8784995511598127599
-  ChildIds: 10310440381001994916
-  ChildIds: 14565284122939633824
+  ParentId: 15854931348895265569
+  ChildIds: 12806438125612907161
+  ChildIds: 15087446386802688626
+  ChildIds: 12154373393986688325
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -211,7 +211,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14565284122939633824
+  Id: 12154373393986688325
   Name: "Capsule"
   Transform {
     Location {
@@ -230,7 +230,7 @@ Objects {
       Z: 2.52613735
     }
   }
-  ParentId: 17915960534888940965
+  ParentId: 3875704590580158987
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -277,7 +277,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10310440381001994916
+  Id: 15087446386802688626
   Name: "Cone - Truncated Wide"
   Transform {
     Location {
@@ -296,7 +296,7 @@ Objects {
       Z: 11.4278803
     }
   }
-  ParentId: 17915960534888940965
+  ParentId: 3875704590580158987
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -343,7 +343,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8784995511598127599
+  Id: 12806438125612907161
   Name: "Donut"
   Transform {
     Location {
@@ -362,7 +362,7 @@ Objects {
       Z: 2.20884085
     }
   }
-  ParentId: 17915960534888940965
+  ParentId: 3875704590580158987
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"

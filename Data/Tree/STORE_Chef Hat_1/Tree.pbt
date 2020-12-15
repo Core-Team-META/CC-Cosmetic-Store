@@ -1,7 +1,7 @@
 ﻿Name: "STORE_Chef Hat_1"
-RootId: 8542851779739392449
+RootId: 17863300342496129061
 Objects {
-  Id: 4660189967688868429
+  Id: 6620053366054839865
   Name: "STORE_ItemInfo"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8542851779739392449
+  ParentId: 17863300342496129061
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -60,7 +60,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2127996095622904578
+  Id: 8623669039602577908
   Name: "head"
   Transform {
     Location {
@@ -73,8 +73,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8542851779739392449
-  ChildIds: 13569401720461992883
+  ParentId: 17863300342496129061
+  ChildIds: 2405184147215512656
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -92,7 +92,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13569401720461992883
+  Id: 2405184147215512656
   Name: "ChefHat_Hat"
   Transform {
     Location {
@@ -106,8 +106,8 @@ Objects {
       Z: 1.5
     }
   }
-  ParentId: 2127996095622904578
-  ChildIds: 2961485441362962734
+  ParentId: 8623669039602577908
+  ChildIds: 9286067530844905169
   UnregisteredParameters {
     Overrides {
       Name: "cs:VerticalOffset"
@@ -172,7 +172,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2961485441362962734
+  Id: 9286067530844905169
   Name: "The_Chef_Hat"
   Transform {
     Location {
@@ -191,12 +191,12 @@ Objects {
       Z: 0.455417067
     }
   }
-  ParentId: 13569401720461992883
-  ChildIds: 8120122169245914015
-  ChildIds: 10941997184905528648
-  ChildIds: 8732616297920670775
-  ChildIds: 1486884266984374324
-  ChildIds: 4481104335604082189
+  ParentId: 2405184147215512656
+  ChildIds: 11741422329821716340
+  ChildIds: 2953030521541516915
+  ChildIds: 1420187068302831465
+  ChildIds: 15426508189290259718
+  ChildIds: 6216502082551071685
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -214,7 +214,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4481104335604082189
+  Id: 6216502082551071685
   Name: "Sphere"
   Transform {
     Location {
@@ -230,7 +230,7 @@ Objects {
       Z: 0.283753335
     }
   }
-  ParentId: 2961485441362962734
+  ParentId: 9286067530844905169
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -273,7 +273,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1486884266984374324
+  Id: 15426508189290259718
   Name: "Sphere"
   Transform {
     Location {
@@ -289,7 +289,7 @@ Objects {
       Z: 0.283753335
     }
   }
-  ParentId: 2961485441362962734
+  ParentId: 9286067530844905169
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -332,7 +332,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8732616297920670775
+  Id: 1420187068302831465
   Name: "Sphere"
   Transform {
     Location {
@@ -348,7 +348,7 @@ Objects {
       Z: 0.272438496
     }
   }
-  ParentId: 2961485441362962734
+  ParentId: 9286067530844905169
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -391,7 +391,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10941997184905528648
+  Id: 2953030521541516915
   Name: "Sphere"
   Transform {
     Location {
@@ -407,7 +407,7 @@ Objects {
       Z: 0.278473
     }
   }
-  ParentId: 2961485441362962734
+  ParentId: 9286067530844905169
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -450,7 +450,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8120122169245914015
+  Id: 11741422329821716340
   Name: "Cylinder"
   Transform {
     Location {
@@ -466,7 +466,7 @@ Objects {
       Z: 0.378164977
     }
   }
-  ParentId: 2961485441362962734
+  ParentId: 9286067530844905169
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
