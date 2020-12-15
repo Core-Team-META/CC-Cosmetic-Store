@@ -27,6 +27,7 @@ Objects {
   ChildIds: 1510335979846993994
   ChildIds: 5886917377158341065
   ChildIds: 7069178301840666666
+  ChildIds: 10935127214173276884
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -36,6 +37,42 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 10935127214173276884
+  Name: "STORE_Entry Geo"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9134274018311211015
+      value {
+        Overrides {
+          Name: "Name"
+          String: "STORE_Entry Geo"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15389268987378960631
+    }
   }
 }
 Objects {
