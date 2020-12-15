@@ -15,10 +15,10 @@
             Z: 1
           }
         }
-        ParentId: 6769845893542896755
-        ChildIds: 9703915565072842835
+        ParentId: 7069178301840666666
         ChildIds: 2655202589650813311
-        ChildIds: 6500100806912700610
+        ChildIds: 9703915565072842835
+        ChildIds: 12472552629764693485
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -28,64 +28,6 @@
         }
         Folder {
           IsFilePartition: true
-        }
-      }
-      Objects {
-        Id: 9703915565072842835
-        Name: "STORE_ItemInfo"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 10396994416835930918
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:StoreName"
-            String: "The Super Hat"
-          }
-          Overrides {
-            Name: "cs:ID"
-            String: "SUPERHAT"
-          }
-          Overrides {
-            Name: "cs:Tags"
-            String: "Rare"
-          }
-          Overrides {
-            Name: "cs:Types"
-            String: "Hat"
-          }
-          Overrides {
-            Name: "cs:PlayerVisibility"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Cost"
-            Int: 40
-          }
-          Overrides {
-            Name: "cs:ZoomView"
-            String: "Hat"
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 6380040976156754336
-          }
         }
       }
       Objects {
@@ -120,9 +62,10 @@
         Transform {
           Location {
             X: -4.9680891
-            Y: -2.44918728
+            Y: -2.44918823
           }
           Rotation {
+            Pitch: 3.09376144
           }
           Scale {
             X: 1
@@ -131,6 +74,36 @@
           }
         }
         ParentId: 2655202589650813311
+        ChildIds: 13567994930092473417
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 13567994930092473417
+        Name: "Group"
+        Transform {
+          Location {
+            X: 0.67609
+            Y: -3.01602936
+            Z: 13.6587343
+          }
+          Rotation {
+            Pitch: -32.1495361
+          }
+          Scale {
+            X: 0.464509428
+            Y: 0.464509428
+            Z: 0.464509428
+          }
+        }
+        ParentId: 11191836282157416899
         ChildIds: 18350452128990952156
         ChildIds: 1530084234228397264
         ChildIds: 6838682674498864574
@@ -150,10 +123,10 @@
         Transform {
           Location {
             X: -9.85734463
-            Y: 5.58490849
+            Y: 5.58490753
           }
           Rotation {
-            Pitch: 47.8711929
+            Pitch: 47.8711891
           }
           Scale {
             X: 0.608172357
@@ -161,7 +134,7 @@
             Z: 0.213796079
           }
         }
-        ParentId: 11191836282157416899
+        ParentId: 13567994930092473417
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -203,13 +176,13 @@
         Transform {
           Location {
             X: 10.7264566
-            Y: 6.19783974
-            Z: 22.3900166
+            Y: 6.19783783
+            Z: 22.3900146
           }
           Rotation {
-            Pitch: -59.3101082
-            Yaw: 5.74304597e-11
-            Roll: 0.00010065949
+            Pitch: -59.3101
+            Yaw: 6.38115949e-11
+            Roll: 0.000100659483
           }
           Scale {
             X: 0.166475564
@@ -217,7 +190,7 @@
             Z: 0.0132706435
           }
         }
-        ParentId: 11191836282157416899
+        ParentId: 13567994930092473417
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -260,13 +233,13 @@
         Name: "Text 01: )"
         Transform {
           Location {
-            X: -0.869429767
-            Y: -11.7840176
-            Z: 3.23232436
+            X: -0.869429588
+            Y: -11.7840195
+            Z: 3.23232269
           }
           Rotation {
-            Pitch: 34.6765289
-            Yaw: 1.45344884e-05
+            Pitch: 34.6765213
+            Yaw: 1.66108402e-05
             Roll: 89.999588
           }
           Scale {
@@ -275,7 +248,7 @@
             Z: 0.74244374
           }
         }
-        ParentId: 11191836282157416899
+        ParentId: 13567994930092473417
         UnregisteredParameters {
           Overrides {
             Name: "ma:Font.Bevel:id"
@@ -338,8 +311,8 @@
         }
       }
       Objects {
-        Id: 6500100806912700610
-        Name: "store_graphic"
+        Id: 9703915565072842835
+        Name: "STORE_ItemInfo"
         Transform {
           Location {
           }
@@ -352,7 +325,65 @@
           }
         }
         ParentId: 10396994416835930918
-        ChildIds: 7918807838857815126
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:StoreName"
+            String: "The Super Hat"
+          }
+          Overrides {
+            Name: "cs:ID"
+            String: "SUPERHAT"
+          }
+          Overrides {
+            Name: "cs:Tags"
+            String: "Rare"
+          }
+          Overrides {
+            Name: "cs:Types"
+            String: "Hat"
+          }
+          Overrides {
+            Name: "cs:PlayerVisibility"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:Cost"
+            Int: 40
+          }
+          Overrides {
+            Name: "cs:ZoomView"
+            String: "Hat"
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6380040976156754336
+          }
+        }
+      }
+      Objects {
+        Id: 12472552629764693485
+        Name: "store_graphci"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10396994416835930918
+        ChildIds: 7869925278687056738
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -364,28 +395,29 @@
         }
       }
       Objects {
-        Id: 7918807838857815126
-        Name: "head"
+        Id: 7869925278687056738
+        Name: "head_disaplay"
         Transform {
           Location {
-            X: 16.5172424
-            Y: 1.609375
-            Z: -7.49707031
+            X: -4.9680891
+            Y: -2.44918823
+            Z: 24.0246735
           }
           Rotation {
-            Pitch: -55.1153259
-            Yaw: 46.9746628
-            Roll: -2.52063
+            Pitch: -54.4981384
+            Yaw: -17.6621399
+            Roll: 21.3615322
           }
           Scale {
-            X: 1.24228895
-            Y: 1.24228895
-            Z: 1.24228895
+            X: 0.927416325
+            Y: 0.927416325
+            Z: 0.927416325
           }
         }
-        ParentId: 6500100806912700610
-        ChildIds: 716556876950179982
-        ChildIds: 14039540712996170392
+        ParentId: 12472552629764693485
+        ChildIds: 7485796143848284583
+        ChildIds: 9659452287852377938
+        ChildIds: 821172249494016332
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -397,40 +429,36 @@
         }
       }
       Objects {
-        Id: 716556876950179982
-        Name: "Sphere - Half Thin"
+        Id: 7485796143848284583
+        Name: "Ellipsoid - Truncated"
         Transform {
           Location {
-            X: -2.32181835
-            Y: -0.36438036
+            X: -9.85734463
+            Y: 5.58490849
           }
           Rotation {
-            Pitch: 61.9524155
+            Pitch: 47.8711929
           }
           Scale {
-            X: 0.711184442
-            Y: 0.711184859
-            Z: 0.770026505
+            X: 0.608172357
+            Y: 0.758330941
+            Z: 0.213796079
           }
         }
-        ParentId: 7918807838857815126
+        ParentId: 7869925278687056738
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 18423462351023287613
+              Id: 18297409250839599089
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.929999948
+              R: 0.960000038
               A: 1
             }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
           }
         }
         Collidable_v2 {
@@ -441,13 +469,12 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 8063868133702323256
+            Id: 10646437916172963454
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
             }
@@ -455,58 +482,139 @@
         }
       }
       Objects {
-        Id: 14039540712996170392
-        Name: "Sphere"
+        Id: 9659452287852377938
+        Name: "Cylinder"
         Transform {
           Location {
-            X: 2.32200289
-            Y: 0.365855604
-            Z: 9.75097847
+            X: 10.7264566
+            Y: 6.19783974
+            Z: 22.3900166
           }
           Rotation {
-            Pitch: -27.7951393
+            Pitch: -59.3101082
+            Yaw: 5.74304597e-11
+            Roll: 0.00010065949
           }
           Scale {
-            X: 0.0630114898
-            Y: 0.672429204
-            Z: 1
+            X: 0.166475564
+            Y: 0.224065512
+            Z: 0.0132706435
           }
         }
-        ParentId: 7918807838857815126
+        ParentId: 7869925278687056738
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 6278985560465791740
+              Id: 18297409250839599089
             }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.710000038
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
           }
         }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
-            Id: 16808072507652565232
+            Id: 4174204201551471315
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 821172249494016332
+        Name: "Text 01: )"
+        Transform {
+          Location {
+            X: -0.869429767
+            Y: -11.7840176
+            Z: 3.23232436
+          }
+          Rotation {
+            Pitch: 34.6765289
+            Yaw: 1.45344884e-05
+            Roll: 89.999588
+          }
+          Scale {
+            X: 1.34230781
+            Y: 0.596784174
+            Z: 0.74244374
+          }
+        }
+        ParentId: 7869925278687056738
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Font.Bevel:id"
+            AssetReference {
+              Id: 18297409250839599089
+            }
+          }
+          Overrides {
+            Name: "ma:Font.Bevel:color"
+            Color {
+              R: 0.809999943
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Font.Faces:color"
+            Color {
+              R: 0.799999952
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Font.Sides:color"
+            Color {
+              R: 0.799999952
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Font.Sides:id"
+            AssetReference {
+              Id: 18297409250839599089
+            }
+          }
+          Overrides {
+            Name: "ma:Font.Faces:id"
+            AssetReference {
+              Id: 18297409250839599089
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 8695582295120411573
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
           StaticMesh {
             Physics {
             }
@@ -548,33 +656,6 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "F1_Text_046"
-      }
-    }
-    Assets {
-      Id: 8063868133702323256
-      Name: "Sphere - Half Thin"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_hemisphere_002"
-      }
-    }
-    Assets {
-      Id: 16808072507652565232
-      Name: "Sphere"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_sphere_002"
-      }
-    }
-    Assets {
-      Id: 6278985560465791740
-      Name: "Food Strawberry 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_food_generic_strawberry_001_uv"
       }
     }
     PrimaryAssetId {

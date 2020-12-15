@@ -15,9 +15,9 @@
             Z: 1
           }
         }
-        ParentId: 6769845893542896755
-        ChildIds: 14012239198680515600
+        ParentId: 7069178301840666666
         ChildIds: 6241297443536457774
+        ChildIds: 14012239198680515600
         ChildIds: 12491482185264516446
         WantsNetworking: true
         Collidable_v2 {
@@ -28,64 +28,6 @@
         }
         Folder {
           IsFilePartition: true
-        }
-      }
-      Objects {
-        Id: 14012239198680515600
-        Name: "STORE_ItemInfo"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 10689192010148224864
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:StoreName"
-            String: "Fruity Tooty"
-          }
-          Overrides {
-            Name: "cs:ID"
-            String: "FRUITHAT"
-          }
-          Overrides {
-            Name: "cs:Tags"
-            String: "Common"
-          }
-          Overrides {
-            Name: "cs:Types"
-            String: "Hat"
-          }
-          Overrides {
-            Name: "cs:PlayerVisibility"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Cost"
-            Int: 20
-          }
-          Overrides {
-            Name: "cs:ZoomView"
-            String: "Hat"
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 6380040976156754336
-          }
         }
       }
       Objects {
@@ -2460,6 +2402,64 @@
         }
       }
       Objects {
+        Id: 14012239198680515600
+        Name: "STORE_ItemInfo"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10689192010148224864
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:StoreName"
+            String: "Fruity Tooty"
+          }
+          Overrides {
+            Name: "cs:ID"
+            String: "FRUITHAT"
+          }
+          Overrides {
+            Name: "cs:Tags"
+            String: "Common"
+          }
+          Overrides {
+            Name: "cs:Types"
+            String: "Hat"
+          }
+          Overrides {
+            Name: "cs:PlayerVisibility"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:Cost"
+            Int: 20
+          }
+          Overrides {
+            Name: "cs:ZoomView"
+            String: "Hat"
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6380040976156754336
+          }
+        }
+      }
+      Objects {
         Id: 12491482185264516446
         Name: "store_graphic"
         Transform {
@@ -2487,7 +2487,7 @@
       }
       Objects {
         Id: 8176319698278868373
-        Name: "head"
+        Name: "head_display"
         Transform {
           Location {
             X: 9.15527344e-05

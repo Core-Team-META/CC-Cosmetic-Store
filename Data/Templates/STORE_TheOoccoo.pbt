@@ -15,9 +15,9 @@
             Z: 1
           }
         }
-        ParentId: 6769845893542896755
-        ChildIds: 6709069997471188075
+        ParentId: 7069178301840666666
         ChildIds: 16699317927010479599
+        ChildIds: 6709069997471188075
         ChildIds: 16420790226111720245
         WantsNetworking: true
         Collidable_v2 {
@@ -28,64 +28,6 @@
         }
         Folder {
           IsFilePartition: true
-        }
-      }
-      Objects {
-        Id: 6709069997471188075
-        Name: "STORE_ItemInfo"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 15275936954081304982
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:StoreName"
-            String: "The Ooccoo Hat"
-          }
-          Overrides {
-            Name: "cs:ID"
-            String: "OOCCOO"
-          }
-          Overrides {
-            Name: "cs:Tags"
-            String: "Legendary"
-          }
-          Overrides {
-            Name: "cs:Types"
-            String: "Hat"
-          }
-          Overrides {
-            Name: "cs:PlayerVisibility"
-            Bool: true
-          }
-          Overrides {
-            Name: "cs:Cost"
-            Int: 50
-          }
-          Overrides {
-            Name: "cs:ZoomView"
-            String: "Hat"
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 6380040976156754336
-          }
         }
       }
       Objects {
@@ -916,6 +858,64 @@
         }
       }
       Objects {
+        Id: 6709069997471188075
+        Name: "STORE_ItemInfo"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15275936954081304982
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:StoreName"
+            String: "The Ooccoo Hat"
+          }
+          Overrides {
+            Name: "cs:ID"
+            String: "OOCCOO"
+          }
+          Overrides {
+            Name: "cs:Tags"
+            String: "Legendary"
+          }
+          Overrides {
+            Name: "cs:Types"
+            String: "Hat"
+          }
+          Overrides {
+            Name: "cs:PlayerVisibility"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:Cost"
+            Int: 50
+          }
+          Overrides {
+            Name: "cs:ZoomView"
+            String: "Hat"
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6380040976156754336
+          }
+        }
+      }
+      Objects {
         Id: 16420790226111720245
         Name: "store_graphic"
         Transform {
@@ -943,7 +943,7 @@
       }
       Objects {
         Id: 14291806172273152061
-        Name: "head"
+        Name: "head_display"
         Transform {
           Location {
             X: 42.6076965
@@ -952,9 +952,9 @@
           Rotation {
           }
           Scale {
-            X: 1.15456128
-            Y: 1.15456128
-            Z: 1.15456128
+            X: 0.925577939
+            Y: 0.925577939
+            Z: 0.925577939
           }
         }
         ParentId: 16420790226111720245

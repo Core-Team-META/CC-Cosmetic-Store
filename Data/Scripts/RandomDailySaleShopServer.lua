@@ -1,11 +1,18 @@
 ﻿local randomDailySaleShop = script:GetCustomProperty("PERKS_RandomDailySaleShop"):WaitForObject()
 local storeContents = script:GetCustomProperty("STORE_StoreContents"):WaitForObject()
 
+while not _G.PERKS do
+
+	Task.Wait()
+	
+end
+
+local dailyRollPerk = _G.PERKS.DAILY_ROLL
+
 local dropTable = script:GetCustomProperty("DropTable"):WaitForObject()
 
 local discount = randomDailySaleShop:GetCustomProperty("Discount")
 local currencyName = script:GetCustomProperty("CurrencyName")
-local dailyRollPerk = script:GetCustomProperty("DailyRollPerk")
 
 local rarityTable = {}
 
@@ -181,16 +188,12 @@ function RollSale(player)
 	return tempTbl[1]
 end
 
-function ReRoll(player, binding)
-	if binding ~= "ability_extra_22" then
-		return
-	end
+function ReRoll(player, perk)
 
 	local selecteditems = {}
 
 	local data = Storage.GetPlayerData(player)
 
-	--[[
 
 	if perk ~= dailyRollPerk then
 	
@@ -220,8 +223,7 @@ function ReRoll(player, binding)
 	
 	data.DAILY.latestDay = today
 	data.DAILY.latestMonth = thisMonth
-	
-	]]
+
 	Initialize(player)
 
 	for i = 1, 9 do
