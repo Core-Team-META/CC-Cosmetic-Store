@@ -12,6 +12,16 @@
         Name: "cs:Name"
         String: "STORE_Costume1"
       }
+      Overrides {
+        Name: "cs:Cost"
+        Int: 0
+      }
+      Overrides {
+        Name: "cs:MUID"
+        AssetReference {
+          Id: 841534158063459245
+        }
+      }
     }
   }
   SerializationVersion: 70
