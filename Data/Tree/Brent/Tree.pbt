@@ -11711,7 +11711,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Duration"
-      Float: 12
+      Float: 13
     }
     Overrides {
       Name: "cs:PathOptions"
@@ -12124,7 +12124,7 @@ Objects {
     }
   }
   ParentId: 11269061822651247186
-  ChildIds: 15649972440369526338
+  ChildIds: 2834911122733789049
   UnregisteredParameters {
     Overrides {
       Name: "cs:RarityName"
@@ -12146,12 +12146,10 @@ Objects {
   }
 }
 Objects {
-  Id: 15649972440369526338
-  Name: "STORE_Chef Hat"
+  Id: 2834911122733789049
+  Name: "Prize_ItemInfo"
   Transform {
     Location {
-      Y: -20950
-      Z: -450
     }
     Rotation {
     }
@@ -12162,58 +12160,25 @@ Objects {
     }
   }
   ParentId: 10502377126588664828
-  WantsNetworking: true
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Name"
+      String: "STORE_Chef Hat"
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "CHEFHAT2"
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 549989728288704889
-      value {
-        Overrides {
-          Name: "Name"
-          String: "STORE_Chef Hat"
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 30
-            Y: 1910
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 3567951263905755893
-      value {
-        Overrides {
-          Name: "cs:ZoomView"
-          String: "Hat"
-        }
-        Overrides {
-          Name: "cs:Cost"
-          Int: 60
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 12269522058044990569
+  Script {
+    ScriptAsset {
+      Id: 15071959512768627988
     }
   }
 }
@@ -12232,7 +12197,7 @@ Objects {
     }
   }
   ParentId: 11269061822651247186
-  ChildIds: 1383753363605370217
+  ChildIds: 7118852943656041104
   UnregisteredParameters {
     Overrides {
       Name: "cs:RarityName"
@@ -12254,12 +12219,10 @@ Objects {
   }
 }
 Objects {
-  Id: 1383753363605370217
-  Name: "STORE_Cowboy Hat _Hat"
+  Id: 7118852943656041104
+  Name: "Prize_ItemInfo"
   Transform {
     Location {
-      Y: -20950
-      Z: -450
     }
     Rotation {
     }
@@ -12270,62 +12233,25 @@ Objects {
     }
   }
   ParentId: 10248276691086032383
-  WantsNetworking: true
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Name"
+      String: "STORE_Cowboy Hat _Hat"
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "DESPERADOHAT3"
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 4034813922096462059
-      value {
-        Overrides {
-          Name: "Name"
-          String: "STORE_Cowboy Hat _Hat"
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 30
-            Y: 1610
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 9974761825354809242
-      value {
-        Overrides {
-          Name: "cs:ZoomView"
-          String: "Hat"
-        }
-        Overrides {
-          Name: "cs:Cost"
-          Int: 50
-        }
-        Overrides {
-          Name: "cs:Tags"
-          String: "Epic"
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 614220041473863367
+  Script {
+    ScriptAsset {
+      Id: 15071959512768627988
     }
   }
 }
@@ -12344,7 +12270,7 @@ Objects {
     }
   }
   ParentId: 11269061822651247186
-  ChildIds: 17378968478982630252
+  ChildIds: 15934887151256398010
   UnregisteredParameters {
     Overrides {
       Name: "cs:RarityName"
@@ -12366,12 +12292,10 @@ Objects {
   }
 }
 Objects {
-  Id: 17378968478982630252
-  Name: "STORE_BirthdayCake Hat"
+  Id: 15934887151256398010
+  Name: "Prize_ItemInfo"
   Transform {
     Location {
-      Y: -20950
-      Z: -450
     }
     Rotation {
     }
@@ -12382,59 +12306,25 @@ Objects {
     }
   }
   ParentId: 1024424576905458656
-  WantsNetworking: true
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Name"
+      String: "STORE_BirthdayCake Hat"
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "CAKE2"
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 11511463057368722708
-      value {
-        Overrides {
-          Name: "Name"
-          String: "STORE_BirthdayCake Hat"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 30
-            Y: 1310
-            Z: -35
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 14783338600786857350
-      value {
-        Overrides {
-          Name: "cs:ZoomView"
-          String: "Hat"
-        }
-        Overrides {
-          Name: "cs:Cost"
-          Int: 60
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 18277733649088940997
+  Script {
+    ScriptAsset {
+      Id: 15071959512768627988
     }
   }
 }
@@ -12453,7 +12343,7 @@ Objects {
     }
   }
   ParentId: 11269061822651247186
-  ChildIds: 10715728359282592629
+  ChildIds: 1518747746103198648
   UnregisteredParameters {
     Overrides {
       Name: "cs:RarityName"
@@ -12475,12 +12365,10 @@ Objects {
   }
 }
 Objects {
-  Id: 10715728359282592629
-  Name: "STORE_Hat1"
+  Id: 1518747746103198648
+  Name: "Prize_ItemInfo"
   Transform {
     Location {
-      Y: -20950
-      Z: -450
     }
     Rotation {
     }
@@ -12491,58 +12379,25 @@ Objects {
     }
   }
   ParentId: 5783978569600250705
-  WantsNetworking: true
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Name"
+      String: "STORE_Hat1"
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "BALL"
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1263499199588855168
-      value {
-        Overrides {
-          Name: "Name"
-          String: "STORE_Hat1"
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 80
-            Y: 1060
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 11230689304477526829
-      value {
-        Overrides {
-          Name: "cs:ZoomView"
-          String: "Head"
-        }
-        Overrides {
-          Name: "cs:Cost"
-          Int: 35
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 6935989339742598427
+  Script {
+    ScriptAsset {
+      Id: 15071959512768627988
     }
   }
 }
@@ -12561,7 +12416,7 @@ Objects {
     }
   }
   ParentId: 11269061822651247186
-  ChildIds: 1597792151756429423
+  ChildIds: 6843253101939033091
   UnregisteredParameters {
     Overrides {
       Name: "cs:RarityName"
@@ -12583,12 +12438,10 @@ Objects {
   }
 }
 Objects {
-  Id: 1597792151756429423
-  Name: "STORE_Costume1"
+  Id: 6843253101939033091
+  Name: "Prize_ItemInfo"
   Transform {
     Location {
-      Y: -20950
-      Z: -450
     }
     Rotation {
     }
@@ -12599,55 +12452,15 @@ Objects {
     }
   }
   ParentId: 12421400290699316201
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 2958241985496875048
-      value {
-        Overrides {
-          Name: "cs:PlayerVisibility"
-          Bool: false
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 8141680742227768540
-      value {
-        Overrides {
-          Name: "Name"
-          String: "STORE_Costume1"
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 55
-            Y: 810
-            Z: 50
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 13488633352376776946
+  Script {
+    ScriptAsset {
+      Id: 15071959512768627988
     }
   }
 }
