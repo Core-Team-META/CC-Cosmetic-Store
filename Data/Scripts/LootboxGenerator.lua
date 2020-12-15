@@ -57,14 +57,14 @@ function RollLootbox(player)
 		reward = rewardsAtRarity[secondRoll]
 	end
 
-	print("Reward: " .. reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("StoreName"))
+	print("Reward: " .. reward:GetCustomProperty("Name"))
 
 	script:SetNetworkedCustomProperty("PrizeRarity", chosenRarity.name)
 	script:SetNetworkedCustomProperty("PlayerId", player.id)
 
 	Task.Wait(8)
 
-	if player:GetResource("COSMETIC_" .. reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID")) == 1 then
+	if player:GetResource("COSMETIC_" .. reward:GetCustomProperty("ID")) == 1 then
 		print("Player already has the prize!")
 	else
 		print("Giving Reward!")
@@ -72,7 +72,7 @@ function RollLootbox(player)
 		while Events.Broadcast(
 			"BUYCOSMETIC",
 			player,
-			reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID"),
+			reward:GetCustomProperty("ID"),
 			false,
 			0
 		) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
@@ -82,7 +82,7 @@ function RollLootbox(player)
 		player:SetResource(CURRENCY_NAME, currency - ROLL_COST)
 	end
 
-	script:SetNetworkedCustomProperty("RewardName", reward.name)
+	script:SetNetworkedCustomProperty("RewardName", reward:GetCustomProperty("Name"))
 
 	Task.Wait(1)
 
