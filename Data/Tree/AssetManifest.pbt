@@ -1,30 +1,4 @@
 ﻿Assets {
-  Id: 17620452958652364124
-  Name: "gold"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "94143b92be804c7488f2e56de504947c"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
-  Id: 17604023863378856742
-  Name: "VIP"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "7ede08f3287a48d89191822247dd9bf8"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
   Id: 15775978992330089425
   Name: "BG Flat 015"
   PlatformAssetType: 9
@@ -70,12 +44,39 @@ Assets {
   }
 }
 Assets {
+  Id: 14331488779309247797
+  Name: "Cabinet Topper"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_cabinet_topper_001"
+  }
+}
+Assets {
+  Id: 14231809728886464860
+  Name: "Wood Raw White"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_raw_white_001_uv"
+  }
+}
+Assets {
   Id: 13784467660178889007
   Name: "Human Gal 1"
   PlatformAssetType: 17
   PrimaryAsset {
     AssetType: "AnimatedMeshAssetRef"
     AssetId: "npc_human_gal_basic_001_ref"
+  }
+}
+Assets {
+  Id: 12905923173550510229
+  Name: "Cylinder - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_hq_test_001"
   }
 }
 Assets {
@@ -106,19 +107,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11756506020522890520
-  Name: "dailyRoll"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "b97cffc8249f41f9be1ad9bdeab703fa"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
   Id: 11142210224783054821
   Name: "Center Arrow 008 Wedge"
   PlatformAssetType: 9
@@ -134,6 +122,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundFlat_032"
+  }
+}
+Assets {
+  Id: 9136786294201978281
+  Name: "Metal Old Beaten Gold 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_002"
   }
 }
 Assets {
@@ -161,6 +158,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_33"
+  }
+}
+Assets {
+  Id: 7331838309352431776
+  Name: "Curtains Straight"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_curtain_02"
   }
 }
 Assets {
@@ -197,6 +203,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundFlat_033"
+  }
+}
+Assets {
+  Id: 2888315853894773784
+  Name: "Cabinet - Upper Narrow"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_cabinet_narrow_001_cabient"
   }
 }
 Assets {
