@@ -10,8 +10,15 @@
 --	ADDED FOR SUBSCRIPTION
 ------------------------------------------------------------------------------------------------------------------------
 
-local PlayerTitlesRoot = script:GetCustomProperty("METAPlayerTitlesWithSubscriptionMar"):WaitForObject()
-local SubscriptionPerk = PlayerTitlesRoot:GetCustomProperty("VIP")
+local PlayerTitlesRoot = script:GetCustomProperty("METAPlayerTitles"):WaitForObject()
+
+while not _G.PERKS do
+	
+	Task.Wait()
+	
+end
+
+local SubscriptionPerk = _G.PERKS.SUBSCRIPTION
 local SubscriptionName = PlayerTitlesRoot:GetCustomProperty("SubscriptionName")
 local SubscriptionColor = PlayerTitlesRoot:GetCustomProperty("SubscriptionColor")
 

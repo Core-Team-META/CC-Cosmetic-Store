@@ -1,5 +1,12 @@
-﻿local propVIP = _G.PERKS.SUBSCRIPTION
-local propRequiredNumberOfVIP = script:GetCustomProperty("RequiredNumberOfVIP")
+﻿local propRequiredNumberOfVIP = script:GetCustomProperty("RequiredNumberOfVIP")
+
+while not _G.PERKS do
+
+	Task.Wait()
+
+end
+
+local propVIP = _G.PERKS.SUBSCRIPTION
 
 function CheckVIPCount()
 	
