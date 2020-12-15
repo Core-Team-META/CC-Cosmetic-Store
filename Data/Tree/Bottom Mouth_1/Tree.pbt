@@ -1,7 +1,7 @@
 ﻿Name: "Bottom Mouth_1"
-RootId: 18246849802366396212
+RootId: 3150126300396329244
 Objects {
-  Id: 4966307981963227706
+  Id: 16635127107748898143
   Name: "Lips"
   Transform {
     Location {
@@ -19,7 +19,7 @@ Objects {
       Z: 0.090604715
     }
   }
-  ParentId: 18246849802366396212
+  ParentId: 3150126300396329244
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -76,7 +76,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1214988580537885866
+  Id: 9871341408310915715
   Name: "Teeth"
   Transform {
     Location {
@@ -95,7 +95,7 @@ Objects {
       Z: 0.548910081
     }
   }
-  ParentId: 18246849802366396212
+  ParentId: 3150126300396329244
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -143,7 +143,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11316567099282180428
+  Id: 10562898246406152647
   Name: "Mouth"
   Transform {
     Location {
@@ -161,7 +161,7 @@ Objects {
       Z: 0.817036033
     }
   }
-  ParentId: 18246849802366396212
+  ParentId: 3150126300396329244
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
