@@ -79,12 +79,6 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "Visible"
-          Enum {
-            Value: "mc:evisibilitysetting:forceoff"
-          }
-        }
       }
     }
     TemplateAsset {

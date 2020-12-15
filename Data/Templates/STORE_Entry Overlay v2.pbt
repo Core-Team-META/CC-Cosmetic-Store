@@ -808,7 +808,7 @@
           }
           Image {
             Brush {
-              Id: 7809958927931360774
+              Id: 471056512243061456
             }
             Color {
               R: 0.140625
@@ -848,7 +848,6 @@
           }
         }
         ParentId: 17217541726260855215
-        ChildIds: 2844319812255071982
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -865,64 +864,6 @@
           }
           Panel {
             IsClipping: true
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:topright"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:topright"
-              }
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 2844319812255071982
-        Name: "Rarity Fin"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 11806176709476800330
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Control {
-          Width: 277
-          Height: 370
-          UIX: -4.70962858
-          UIY: 7.7961359
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          Image {
-            Brush {
-              Id: 7809958927931360774
-            }
-            Color {
-              R: 0.140625
-              G: 0.140625
-              B: 0.140625
-              A: 1
-            }
-            TeamSettings {
-            }
           }
           AnchorLayout {
             SelfAnchor {
@@ -973,15 +914,6 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Military_Frame_008"
-      }
-    }
-    Assets {
-      Id: 7809958927931360774
-      Name: "BG Flat 016"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_33"
       }
     }
     PrimaryAssetId {
