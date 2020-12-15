@@ -2,9 +2,16 @@
 local propCurrencyResourceName = propStoreRoot:GetCustomProperty("CurrencyResourceName")
 local propPremiumCurrencyName = propStoreRoot:GetCustomProperty("PremiumCurrencyName")
 
+while not _G.PERKS do
+
+	Task.Wait()
+	
+end
+
+local subscriptionPerk = _G.PERKS.SUBSCRIPTION
+
 local propAutosavePurchases = propStoreRoot:GetCustomProperty("AutosavePurchases")
 local propAutosaveCurrency = propStoreRoot:GetCustomProperty("AutosaveCurrency")
-local propSubscriptionPerk = propStoreRoot:GetCustomProperty("SubscriptionPerk")
 local propKeepSubscriptionCosmetics = propStoreRoot:GetCustomProperty("KeepSubscriptionCosmetics")
 
 local playerOwnedCosmetics = {}
@@ -112,7 +119,7 @@ function IsCosmeticName(rscName)
 end
 
 function OnPlayerJoined(player)
-	print(player.name .. " is VIP?: " .. tostring(player:HasPerk(propSubscriptionPerk)))
+	--print(player.name .. " is VIP?: " .. tostring(subscriptionPerk)))
 	LoadOwnedCosmeticsAndMoney(player)
 end
 
@@ -190,7 +197,7 @@ function CheckSubscription(player)
 		return
 	end
 
-	if not player:HasPerk(propSubscriptionPerk) then
+	if not player:HasPerk(subscriptionPerk) then
 		for k, v in pairs(data.COSMETICS.fromSubscription) do
 			print(k)
 			print(data.COSMETICS.owned["COSMETIC_" .. k])

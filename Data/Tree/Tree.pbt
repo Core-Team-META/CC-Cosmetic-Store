@@ -59,7 +59,7 @@ Objects {
     Overrides {
       Name: "cs:DailyRoll"
       NetReference {
-        Key: "4cba556512b64958881a790de790c0ff"
+        Key: "b97cffc8249f41f9be1ad9bdeab703fa"
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }
@@ -68,7 +68,7 @@ Objects {
     Overrides {
       Name: "cs:PremiumCurrency"
       NetReference {
-        Key: "e373410ac53f4c30a2b40e31afbfb466"
+        Key: "94143b92be804c7488f2e56de504947c"
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }
@@ -77,7 +77,7 @@ Objects {
     Overrides {
       Name: "cs:Subscription"
       NetReference {
-        Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
+        Key: "7ede08f3287a48d89191822247dd9bf8"
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }

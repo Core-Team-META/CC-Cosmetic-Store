@@ -79,10 +79,19 @@ local propFeetZoomMarker = script:GetCustomProperty("FeetZoomMarker"):WaitForObj
 
 local propUIMarkersAndPreviews = script:GetCustomProperty("UIMarkersAndPreviews"):WaitForObject()
 
+while not _G.PERKS do
+
+	Task.Wait()
+	
+end
+
+local subscriptionPerkRef = _G.PERKS.SUBSCRIPTION
+
 local propAllowSubscriptionPurchase = propStoreRoot:GetCustomProperty("AllowSubscriptionPurchase")
-local propSubscriptionPerk = propStoreRoot:GetCustomProperty("SubscriptionPerk")
 local propSubscriptionName = propStoreRoot:GetCustomProperty("SubscriptionName")
 local propSubscriptionColor = propStoreRoot:GetCustomProperty("SubscriptionColor")
+
+
 
 local player = nil
 
@@ -309,7 +318,7 @@ function StoreItemClicked(button)
 			end
 		else
 			if currentlySelected.PartOfSubscription then
-				if player:HasPerk(propSubscriptionPerk) then
+				if player:HasPerk(subscriptionPerkRef) then
 					expectedNewCurrency = currency
 					controlsLocked = true
 					while Events.BroadcastToServer("BUYCOSMETIC", currentlySelected.data.id, true, 0) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
@@ -416,7 +425,7 @@ function UpdateEntryButton(entry, highlighted)
 
 	else -- cases for not owned and not hovered
 		local currency = player:GetResource(propCurrencyResourceName)
-		if entry.PartOfSubscription and player:HasPerk(propSubscriptionPerk) then
+		if entry.PartOfSubscription and player:HasPerk(subscriptionPerkRef) then
 			entry.price.text = "Claim it!"
 			entry.price:SetColor(Color.WHITE)
 			entry.BGImage:SetColor(Color.FromLinearHex("063300FF")) -- dark green
