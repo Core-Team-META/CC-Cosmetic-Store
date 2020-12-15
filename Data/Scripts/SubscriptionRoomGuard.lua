@@ -1,4 +1,4 @@
-﻿local propVIP = script:GetCustomProperty("VIP")
+﻿local propVIP = _G.PERKS.SUBSCRIPTION
 local propRequiredNumberOfVIP = script:GetCustomProperty("RequiredNumberOfVIP")
 
 function CheckVIPCount()

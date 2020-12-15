@@ -27,6 +27,7 @@ Objects {
   ChildIds: 1510335979846993994
   ChildIds: 5886917377158341065
   ChildIds: 7069178301840666666
+  ChildIds: 10254726131360694379
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -36,6 +37,61 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 10254726131360694379
+  Name: "PERKS"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:DailyRoll"
+      NetReference {
+        Key: "4cba556512b64958881a790de790c0ff"
+        Type {
+          Value: "mc:enetreferencetype:creatorperk"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:PremiumCurrency"
+      NetReference {
+        Key: "e373410ac53f4c30a2b40e31afbfb466"
+        Type {
+          Value: "mc:enetreferencetype:creatorperk"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:Subscription"
+      NetReference {
+        Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
+        Type {
+          Value: "mc:enetreferencetype:creatorperk"
+        }
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Perks"
   }
 }
 Objects {

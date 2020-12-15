@@ -709,9 +709,7 @@ Objects {
   Name: "PERKS_Shop"
   Transform {
     Location {
-      X: 283.333344
-      Y: -22990
-      Z: -450
+      Z: 110
     }
     Rotation {
     }
