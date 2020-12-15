@@ -29,9 +29,15 @@ local propSubscriptionSetDescription = propStoreRoot:GetCustomProperty("Subscrip
 local propPerksWindow = script:GetCustomProperty("PerksWindow"):WaitForObject()
 
 local propTrigger = script:GetCustomProperty("Trigger"):WaitForObject()
+local propCamera = script:GetCustomProperty("Camera"):WaitForObject()
+
 
 propSubscriptionPurchase:SetPerkReference(subscriptionPerk)
 propCurrencyPurchase:SetPerkReference(currencyPerk)
+
+local localPlayer = Game.GetLocalPlayer()
+
+local collisionListener = nil
 
 local description = ""
 
@@ -40,13 +46,25 @@ local function ViewSubscriptionWindow(trigger, player)
         return
     end
     
+   	player:SetOverrideCamera(propCamera)
+	UI.SetCursorVisible(true)
+    
     propPerksWindow.isEnabled = true
     propPerksWindow.visibility = Visibility.FORCE_ON
+    
+    collisionListener:Disconnect()
     
     
 end
 
 local function ExitSubscriptionWindow(button)
+
+	local currentRotation = localPlayer:GetViewWorldRotation()
+
+   	localPlayer:ClearOverrideCamera()
+	UI.SetCursorVisible(false)
+	
+	localPlayer:SetLookWorldRotation(currentRotation)
 
     propPerksWindow.isEnabled = false
 
@@ -56,8 +74,17 @@ local function ExitSubscriptionWindowFromTrigger(trigger, player)
     if player ~= Game.GetLocalPlayer() then
         return
     end
+    
+	local currentRotation = localPlayer:GetViewWorldRotation()
 
+   	localPlayer:ClearOverrideCamera()
+	UI.SetCursorVisible(false)
+	
+	localPlayer:SetLookWorldRotation(currentRotation)
+	
     propPerksWindow.isEnabled = false
+    
+    collisionListener = propTrigger.beginOverlapEvent:Connect(ViewSubscriptionWindow)
     
 end
 
@@ -88,12 +115,14 @@ local function InitializePerkStore()
         
     end
     
+    propSubscriptionLeave.clickedEvent:Connect(ExitSubscriptionWindow)
+    
     propPerksWindow.isEnabled = false
     propPerksWindow.visibility = Visibility.FORCE_OFF
     
 end
 
-propTrigger.beginOverlapEvent:Connect(ViewSubscriptionWindow)
+collisionListener = propTrigger.beginOverlapEvent:Connect(ViewSubscriptionWindow)
 
 propTrigger.endOverlapEvent:Connect(ExitSubscriptionWindowFromTrigger)
 

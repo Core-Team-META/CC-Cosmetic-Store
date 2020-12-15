@@ -5,11 +5,12 @@ Objects {
   Name: "PERKS_Shop"
   Transform {
     Location {
-      X: 285
-      Y: -22990
-      Z: -450
+      X: -1835
+      Y: 4400
+      Z: 55
     }
     Rotation {
+      Yaw: 180
     }
     Scale {
       X: 1
@@ -158,6 +159,7 @@ Objects {
   }
   ParentId: 3251010835081095038
   ChildIds: 10240174461836952220
+  ChildIds: 17608455198021785243
   ChildIds: 9879178210869586501
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
@@ -1110,6 +1112,51 @@ Objects {
   }
 }
 Objects {
+  Id: 17608455198021785243
+  Name: "Camera"
+  Transform {
+    Location {
+      X: 7.27176594e-05
+      Y: 304.999878
+      Z: 115
+    }
+    Rotation {
+      Pitch: -10
+      Yaw: -90
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11861987956534285487
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Camera {
+    AttachToLocalPlayer: true
+    InitialDistance: 400
+    MinDistance: 300
+    MaxDistance: 600
+    PositionOffset {
+    }
+    RotationOffset {
+    }
+    FieldOfView: 90
+    ViewWidth: 1200
+    RotationMode {
+      Value: "mc:erotationmode:default"
+    }
+    MinPitch: -89
+    MaxPitch: 89
+    DoesPositionOffsetSpring: true
+  }
+}
+Objects {
   Id: 10240174461836952220
   Name: "PerkScriptClient"
   Transform {
@@ -1192,6 +1239,12 @@ Objects {
       Name: "cs:Trigger"
       ObjectReference {
         SelfId: 12951209918799974288
+      }
+    }
+    Overrides {
+      Name: "cs:Camera"
+      ObjectReference {
+        SelfId: 17608455198021785243
       }
     }
   }
@@ -3047,9 +3100,9 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 2.10000014
+      Y: 2.2
+      Z: 1.99999988
     }
   }
   ParentId: 3251010835081095038
