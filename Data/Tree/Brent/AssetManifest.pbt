@@ -161,24 +161,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12510064410993333055
-  Name: "Fantasy Pommel 04"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_pommel_004"
-  }
-}
-Assets {
-  Id: 12486122445463196188
-  Name: "Fantasy Chest Base 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_fantasy_chest_003_ref"
-  }
-}
-Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
@@ -323,21 +305,21 @@ Assets {
   }
 }
 Assets {
+  Id: 5546692261811206609
+  Name: "Ball"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_001"
+  }
+}
+Assets {
   Id: 5506084799444686347
   Name: "BG Flat 002"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_019"
-  }
-}
-Assets {
-  Id: 5314666338763493560
-  Name: "Fantasy Chest Lid 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_fantasy_chest_lid_003_ref"
   }
 }
 Assets {
@@ -395,15 +377,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4147476590988753507
-  Name: "Chain Ceiling Anchor"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_chain_top_001"
-  }
-}
-Assets {
   Id: 3959704981855061964
   Name: "Fantasy Frame 001"
   PlatformAssetType: 9
@@ -446,15 +419,6 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_Teleporter_BeamDown"
-  }
-}
-Assets {
-  Id: 1652630961498236339
-  Name: "Gem - Diamond 8-Sided Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_diamond_8_sided_polished_001"
   }
 }
 Assets {
