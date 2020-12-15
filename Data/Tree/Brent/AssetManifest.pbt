@@ -62,6 +62,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17758290862929856650
+  Name: "BG Highlighted 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_015"
+  }
+}
+Assets {
   Id: 17615924747510902643
   Name: "Wood Raw"
   PlatformAssetType: 2
@@ -233,6 +242,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14127903040359929144
+  Name: "Frame Ring 021"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameRing_021"
+  }
+}
+Assets {
   Id: 13924487467599180715
   Name: "Military Tank Historic Hull 01 - Rear"
   PlatformAssetType: 1
@@ -275,6 +293,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_sampled_drumkit_funk_ref"
+  }
+}
+Assets {
+  Id: 12988082475260462637
+  Name: "BG Highlighted 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_020"
   }
 }
 Assets {
@@ -323,6 +350,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12195790988998704122
+  Name: "BG Flat 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_015"
+  }
+}
+Assets {
   Id: 12156070353958511142
   Name: "Stone Block BIg"
   PlatformAssetType: 1
@@ -338,15 +374,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_002"
-  }
-}
-Assets {
-  Id: 11974785293803476584
-  Name: "Sci-fi Frame 009"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Scifi_Frame_009"
   }
 }
 Assets {
@@ -611,6 +638,24 @@ Assets {
   }
 }
 Assets {
+  Id: 8165784690113549298
+  Name: "Military Frame 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Frame_005"
+  }
+}
+Assets {
+  Id: 8043629826562036191
+  Name: "Frame Ring 039"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameRing_039"
+  }
+}
+Assets {
   Id: 7921238055335087561
   Name: "Prism - 8-Sided"
   PlatformAssetType: 1
@@ -644,15 +689,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_modern_gas_cylinder_001"
-  }
-}
-Assets {
-  Id: 6903493265086585509
-  Name: "Fantasy Frame 006"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Frame_006"
   }
 }
 Assets {
@@ -899,6 +935,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1686638712407411925
+  Name: "BG Flat 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
   Id: 1532438403020507221
   Name: "Metal Gold 01"
   PlatformAssetType: 2
@@ -914,6 +959,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_pbr_material_001"
+  }
+}
+Assets {
+  Id: 1300444918076974230
+  Name: "Frame Beveled 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid8px_020"
   }
 }
 Assets {
@@ -968,6 +1022,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_lense_001"
+  }
+}
+Assets {
+  Id: 85888879710765699
+  Name: "UI Basic Frame 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Frame_001"
   }
 }
 Assets {

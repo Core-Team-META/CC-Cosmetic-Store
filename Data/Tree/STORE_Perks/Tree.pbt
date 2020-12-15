@@ -19,7 +19,6 @@ Objects {
     }
   }
   ParentId: 4296421264996771920
-  ChildIds: 867796210822639976
   ChildIds: 12951209918799974288
   ChildIds: 12751001978713011830
   ChildIds: 11861987956534285487
@@ -3124,50 +3123,6 @@ Objects {
   InstanceHistory {
     SelfId: 12951209918799974288
     SubobjectId: 17553145389419339963
-    InstanceId: 6248374133317614710
-    TemplateId: 399464744490226404
-  }
-}
-Objects {
-  Id: 867796210822639976
-  Name: "CurrencyPerkScript"
-  Transform {
-    Location {
-      X: -143.333344
-      Y: -2005
-      Z: -3865
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3251010835081095038
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:StoreRoot"
-      ObjectReference {
-        SelfId: 7563443499317668191
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 8805694120623832865
-    }
-  }
-  InstanceHistory {
-    SelfId: 867796210822639976
-    SubobjectId: 5488116048504151619
     InstanceId: 6248374133317614710
     TemplateId: 399464744490226404
   }

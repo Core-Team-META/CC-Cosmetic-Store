@@ -93,6 +93,8 @@ local function InitializePerkStore()
     if propAllowCurrencyPurchaseWithPerks then
         
         propCurrencyButton.isEnabled = true
+        
+        propCurrencyConversion.text = " = " .. propCurrencyPerPerkPurchase
 
     else
     

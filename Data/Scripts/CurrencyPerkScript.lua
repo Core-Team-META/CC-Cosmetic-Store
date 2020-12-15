@@ -1,5 +1,4 @@
 ﻿local propStoreRoot = script:GetCustomProperty("StoreRoot"):WaitForObject()
-local propCurrencyPerk = script:GetCustomProperty("CurrencyPerk")
 
 while not _G.PERKS do
 
@@ -17,14 +16,16 @@ local propPremiumCurrencyName = propStoreRoot:GetCustomProperty("PremiumCurrency
 local propSubscriptionOneTimeReward = propStoreRoot:GetCustomProperty("SubscriptionOneTimeReward")
 local propSubscriptionOneTimePremiumReward = propStoreRoot:GetCustomProperty("SubscriptionOneTimePremiumReward")
 
-local function UpdatePlayer(player, perkRef)
+local function UpdatePlayerPremiums(player, perkRef)
 
     if perkRef ~= subscriptionPerk and perkRef ~= currencyPerk then
+    
+    	print("error")
     
         return
         
     end
-
+	print("see perk")
     local data = Storage.GetPlayerData(player)
     
     if data.COSMETICS == nil then
@@ -66,9 +67,14 @@ local function UpdatePlayer(player, perkRef)
     Storage.SetPlayerData(player, SaveData)
 end
 
-local function HandlePlayerJoined(player)
+local function WhenPlayerJoined(player)
 
-    player.perkChangedEvent:Connect(UpdatePlayer)
+	print("h")
+
+    player.perkChangedEvent:Connect(UpdatePlayerPremiums)
     
 end
-Game.playerJoinedEvent:Connect(HandlePlayerJoined)
+
+Game.playerJoinedEvent:Connect(WhenPlayerJoined)
+
+
