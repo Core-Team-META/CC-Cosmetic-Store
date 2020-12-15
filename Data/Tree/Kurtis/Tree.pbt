@@ -55,56 +55,13 @@ Objects {
     }
   }
   ParentId: 15571470145942283465
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
   TemplateInstance {
-    ParameterOverrideMap {
-      key: 2689543270797781020
-      value {
-        Overrides {
-          Name: "UIX"
-          Float: 0
-        }
-        Overrides {
-          Name: "UIY"
-          Float: -0.620049596
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 3996216161057668627
-      value {
-        Overrides {
-          Name: "UIY"
-          Float: -32.0865898
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 7134292350723188281
-      value {
-        Overrides {
-          Name: "UIY"
-          Float: -0.295727968
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 8276212151844654341
-      value {
-        Overrides {
-          Name: "UIY"
-          Float: -1.21422291
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 11057592297907562902
-      value {
-        Overrides {
-          Name: "UIY"
-          Float: -64.0245209
-        }
-      }
-    }
     ParameterOverrideMap {
       key: 17217541726260855215
       value {
@@ -120,6 +77,12 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
+          }
+        }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
           }
         }
       }
