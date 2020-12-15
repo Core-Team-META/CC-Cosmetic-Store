@@ -1,16 +1,9 @@
 ﻿Name: "STORE_StoreContents"
 RootId: 6769845893542896755
 Objects {
-  Id: 5193972195836560954
+  Id: 14577003921378174483
   Name: "STOREITEM_Hat1"
   Transform {
-    Location {
-      X: -9485
-      Y: 1240
-      Z: 860
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -35,19 +28,6 @@ Objects {
             Z: 1
           }
         }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -9888.33301
-            Y: 23335
-            Z: 3840
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
       }
     }
     TemplateAsset {
@@ -56,8 +36,8 @@ Objects {
   }
 }
 Objects {
-  Id: 12660755829328269988
-  Name: "STORE_FrogCostume"
+  Id: 5931042832010565579
+  Name: "STOREITEM_Cowboy Hat _Hat"
   Transform {
     Scale {
       X: 1
@@ -67,40 +47,32 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 2559391469669775875
+      key: 4034813922096462059
       value {
         Overrides {
           Name: "Name"
-          String: "STORE_FrogCostume"
+          String: "STOREITEM_Cowboy Hat _Hat"
         }
         Overrides {
-          Name: "Position"
+          Name: "Scale"
           Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 3791193960472781640
+      Id: 614220041473863367
     }
   }
 }
 Objects {
-  Id: 13181879301029437345
-  Name: "STORE_BlueEyeHat"
+  Id: 10438565325206822703
+  Name: "STOREITEM_CloudSoundRapper _Hat"
   Transform {
     Scale {
       X: 1
@@ -110,40 +82,32 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 11137661485279647915
+      key: 4680741444129310880
       value {
         Overrides {
           Name: "Name"
-          String: "STORE_BlueEyeHat"
+          String: "STOREITEM_CloudSoundRapper _Hat"
         }
         Overrides {
-          Name: "Position"
+          Name: "Scale"
           Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 14506495770997542773
+      Id: 10901450253499852413
     }
   }
 }
 Objects {
-  Id: 5911556735134445120
-  Name: "STORE_StrawberrryHat"
+  Id: 13631210607358876787
+  Name: "STOREITEM_Chef Hat"
   Transform {
     Scale {
       X: 1
@@ -153,40 +117,32 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 9902367627764121554
+      key: 549989728288704889
       value {
         Overrides {
           Name: "Name"
-          String: "STORE_StrawberrryHat"
+          String: "STOREITEM_Chef Hat"
         }
         Overrides {
-          Name: "Position"
+          Name: "Scale"
           Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 5218435788178153655
+      Id: 12269522058044990569
     }
   }
 }
 Objects {
-  Id: 16077991723819134391
-  Name: "STORE_FruitHat"
+  Id: 4398141355408727078
+  Name: "STOREITEM_BirthdayCake Hat"
   Transform {
     Scale {
       X: 1
@@ -196,211 +152,31 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 10689192010148224864
+      key: 11511463057368722708
       value {
         Overrides {
           Name: "Name"
-          String: "STORE_FruitHat"
+          String: "STOREITEM_BirthdayCake Hat"
         }
         Overrides {
-          Name: "Position"
+          Name: "Scale"
           Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 803229999192700103
+      Id: 18277733649088940997
     }
   }
 }
 Objects {
-  Id: 16830107854684382846
-  Name: "STORE_TheSandy"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6769845893542896755
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 14827471458180861006
-      value {
-        Overrides {
-          Name: "Name"
-          String: "STORE_TheSandy"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 6198341166539065463
-    }
-  }
-}
-Objects {
-  Id: 4110976125193557471
-  Name: "STORE_MushroomHat"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6769845893542896755
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1744360624616900049
-      value {
-        Overrides {
-          Name: "Name"
-          String: "STORE_MushroomHat"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 246976763650955130
-    }
-  }
-}
-Objects {
-  Id: 8903003792513335344
-  Name: "STORE_BaseballCap"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6769845893542896755
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7383981522250723761
-      value {
-        Overrides {
-          Name: "Name"
-          String: "STORE_BaseballCap"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 7633132214696661734
-    }
-  }
-}
-Objects {
-  Id: 7906073296207648230
-  Name: "STORE_CrazyEye"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6769845893542896755
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3859781522994647652
-      value {
-        Overrides {
-          Name: "Name"
-          String: "STORE_CrazyEye"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 13510754618439544811
-    }
-  }
-}
-Objects {
-  Id: 3879593130682715177
+  Id: 17847506987060825808
   Name: "STORE_WinterHat"
   Transform {
     Scale {
@@ -411,12 +187,6 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 9742581228922254429
@@ -426,13 +196,11 @@ Objects {
           String: "STORE_WinterHat"
         }
         Overrides {
-          Name: "Position"
+          Name: "Scale"
           Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
@@ -443,8 +211,8 @@ Objects {
   }
 }
 Objects {
-  Id: 10687230349103504154
-  Name: "STORE_SuperHat"
+  Id: 16867973401015124166
+  Name: "STORE_TheSandy"
   Transform {
     Scale {
       X: 1
@@ -454,39 +222,31 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 10396994416835930918
+      key: 14827471458180861006
       value {
         Overrides {
           Name: "Name"
-          String: "STORE_SuperHat"
+          String: "STORE_TheSandy"
         }
         Overrides {
-          Name: "Position"
+          Name: "Scale"
           Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 2547238109864662372
+      Id: 6198341166539065463
     }
   }
 }
 Objects {
-  Id: 16376933975589577064
+  Id: 16347026994375321267
   Name: "STORE_TheOoccoo"
   Transform {
     Scale {
@@ -497,12 +257,6 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 15275936954081304982
@@ -512,13 +266,11 @@ Objects {
           String: "STORE_TheOoccoo"
         }
         Overrides {
-          Name: "Position"
+          Name: "Scale"
           Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
@@ -529,7 +281,112 @@ Objects {
   }
 }
 Objects {
-  Id: 13351047624307500683
+  Id: 13276206302487758513
+  Name: "STORE_SuperHat"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6769845893542896755
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 10396994416835930918
+      value {
+        Overrides {
+          Name: "Name"
+          String: "STORE_SuperHat"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2547238109864662372
+    }
+  }
+}
+Objects {
+  Id: 979890586453337870
+  Name: "STORE_StrawberrryHat"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6769845893542896755
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9902367627764121554
+      value {
+        Overrides {
+          Name: "Name"
+          String: "STORE_StrawberrryHat"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5218435788178153655
+    }
+  }
+}
+Objects {
+  Id: 1122652664571780375
+  Name: "STORE_ScoutArmor_Torso"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6769845893542896755
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17268787965089802201
+      value {
+        Overrides {
+          Name: "Name"
+          String: "STORE_ScoutArmor_Torso"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4824922327679417400
+    }
+  }
+}
+Objects {
+  Id: 10218897634178173152
   Name: "STORE_ScoutArmor_Shoes"
   Transform {
     Scale {
@@ -548,6 +405,14 @@ Objects {
           Name: "Name"
           String: "STORE_ScoutArmor_Shoes"
         }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
       }
     }
     TemplateAsset {
@@ -556,7 +421,42 @@ Objects {
   }
 }
 Objects {
-  Id: 10120776318294276885
+  Id: 17311471427887116338
+  Name: "STORE_ScoutArmor_Outfit"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6769845893542896755
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17185917073263904721
+      value {
+        Overrides {
+          Name: "Name"
+          String: "STORE_ScoutArmor_Outfit"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12630763725589868168
+    }
+  }
+}
+Objects {
+  Id: 8116862738528735301
   Name: "STORE_ScoutArmor_Legs"
   Transform {
     Scale {
@@ -567,12 +467,6 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 2170055080473040334
@@ -582,13 +476,11 @@ Objects {
           String: "STORE_ScoutArmor_Legs"
         }
         Overrides {
-          Name: "Position"
+          Name: "Scale"
           Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
@@ -599,51 +491,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17333265851958388310
-  Name: "STORE_ScoutArmor_Torso"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6769845893542896755
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 17268787965089802201
-      value {
-        Overrides {
-          Name: "Name"
-          String: "STORE_ScoutArmor_Torso"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 5
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 4824922327679417400
-    }
-  }
-}
-Objects {
-  Id: 8248966925489599240
+  Id: 4914523752612399548
   Name: "STORE_ScoutArmor_Helmet"
   Transform {
     Scale {
@@ -663,13 +511,11 @@ Objects {
           String: "STORE_ScoutArmor_Helmet"
         }
         Overrides {
-          Name: "Position"
+          Name: "Scale"
           Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
@@ -680,8 +526,8 @@ Objects {
   }
 }
 Objects {
-  Id: 2924780410280577052
-  Name: "STORE_ScoutArmor_Outfit"
+  Id: 17295052247848554678
+  Name: "STORE_MushroomHat"
   Transform {
     Scale {
       X: 1
@@ -691,40 +537,32 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 17185917073263904721
+      key: 1744360624616900049
       value {
         Overrides {
           Name: "Name"
-          String: "STORE_ScoutArmor_Outfit"
+          String: "STORE_MushroomHat"
         }
         Overrides {
-          Name: "Position"
+          Name: "Scale"
           Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 12630763725589868168
+      Id: 246976763650955130
     }
   }
 }
 Objects {
-  Id: 4211902100254558401
-  Name: "STORE_Cowboy Hat _Hat"
+  Id: 14703622362863550977
+  Name: "STORE_FruitHat"
   Transform {
     Scale {
       X: 1
@@ -734,40 +572,32 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 4034813922096462059
+      key: 10689192010148224864
       value {
         Overrides {
           Name: "Name"
-          String: "STORE_Cowboy Hat _Hat"
+          String: "STORE_FruitHat"
         }
         Overrides {
-          Name: "Position"
+          Name: "Scale"
           Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 614220041473863367
+      Id: 803229999192700103
     }
   }
 }
 Objects {
-  Id: 4671553400719951047
-  Name: "STORE_CloudSoundRapper _Hat"
+  Id: 5568303033184271864
+  Name: "STORE_FrogCostume"
   Transform {
     Scale {
       X: 1
@@ -777,40 +607,32 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 4680741444129310880
+      key: 2559391469669775875
       value {
         Overrides {
           Name: "Name"
-          String: "STORE_CloudSoundRapper _Hat"
+          String: "STORE_FrogCostume"
         }
         Overrides {
-          Name: "Position"
+          Name: "Scale"
           Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 10901450253499852413
+      Id: 3791193960472781640
     }
   }
 }
 Objects {
-  Id: 11693076046346639227
-  Name: "STORE_Chef Hat"
+  Id: 17455739262074097057
+  Name: "STORE_CrazyEye"
   Transform {
     Scale {
       X: 1
@@ -820,40 +642,32 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 549989728288704889
+      key: 3859781522994647652
       value {
         Overrides {
           Name: "Name"
-          String: "STORE_Chef Hat"
+          String: "STORE_CrazyEye"
         }
         Overrides {
-          Name: "Position"
+          Name: "Scale"
           Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 12269522058044990569
+      Id: 13510754618439544811
     }
   }
 }
 Objects {
-  Id: 4781553778906573843
-  Name: "STORE_BirthdayCake Hat"
+  Id: 8037678105415021543
+  Name: "STORE_Costume2"
   Transform {
     Scale {
       X: 1
@@ -863,39 +677,31 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 11511463057368722708
+      key: 1816559377336734184
       value {
         Overrides {
           Name: "Name"
-          String: "STORE_BirthdayCake Hat"
+          String: "STORE_Costume2"
         }
         Overrides {
-          Name: "Position"
+          Name: "Scale"
           Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 18277733649088940997
+      Id: 2019170231787868539
     }
   }
 }
 Objects {
-  Id: 15444003283655263639
+  Id: 1172097373401067802
   Name: "STORE_Costume1"
   Transform {
     Scale {
@@ -906,12 +712,6 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 8141680742227768540
@@ -921,19 +721,52 @@ Objects {
           String: "STORE_Costume1"
         }
         Overrides {
-          Name: "Position"
+          Name: "Scale"
           Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
       Id: 13488633352376776946
+    }
+  }
+}
+Objects {
+  Id: 17462120114342914945
+  Name: "STORE_BlueEyeHat"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6769845893542896755
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 11137661485279647915
+      value {
+        Overrides {
+          Name: "Name"
+          String: "STORE_BlueEyeHat"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14506495770997542773
     }
   }
 }

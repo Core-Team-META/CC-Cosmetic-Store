@@ -5936,7 +5936,7 @@ Objects {
   }
   ParentId: 13486834369584544925
   ChildIds: 3059642257298182713
-  ChildIds: 3300885012205748451
+  ChildIds: 6000993877994916547
   UnregisteredParameters {
     Overrides {
       Name: "cs:RarityName"
@@ -5958,7 +5958,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3300885012205748451
+  Id: 6000993877994916547
   Name: "STORE_CrazyEye"
   Transform {
     Scale {
@@ -6170,7 +6170,6 @@ Objects {
   }
   ParentId: 13486834369584544925
   ChildIds: 18053570616654683761
-  ChildIds: 3462356961111371197
   ChildIds: 873800870451345544
   UnregisteredParameters {
     Overrides {
@@ -6224,41 +6223,6 @@ Objects {
     }
     TemplateAsset {
       Id: 5218435788178153655
-    }
-  }
-}
-Objects {
-  Id: 3462356961111371197
-  Name: "STORE_BaseballCap"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3814171903802178733
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7383981522250723761
-      value {
-        Overrides {
-          Name: "Name"
-          String: "STORE_BaseballCap"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 7633132214696661734
     }
   }
 }

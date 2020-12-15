@@ -106,13 +106,7 @@ function RollSale(player)
 	local previousRarity = 0
 	
 	local chosenRarity = nil
-	
-	if not rarityTable[player.id] then
-	
-		return nil
 		
-	end
-	
 	for r, c in pairs(rarityTable[player.id]) do
 		--print("checking " .. r.name .. " at " .. tostring(c))
 		if c[1] + previousRarity >= roll then
@@ -123,7 +117,11 @@ function RollSale(player)
 		previousRarity = c[1] + previousRarity
 	end
 	
-	--print("Rarity: " .. chosenRarity.name)
+	if not chosenRarity then
+		
+		return nil
+		
+	end
 	
 	local rewardsAtRarity = rarityTable[player.id][chosenRarity][2]
 	
@@ -139,37 +137,37 @@ function RollSale(player)
 		
 			rarityTable[player.id][e][1] = r[1] + probability * (1/#rarityTable[player.id])
 			
-		end
+		end		
 		
 		if #rewardsAtRarity < 1 then
 		
 			local newReward = RollSale(player)
 		
 			return newReward
-			
-		else
-			reward = rewardsAtRarity[1]
-		end		
-	else
+		end	
+	
+	end
 
-		local secondRoll = math.random(1, #rewardsAtRarity)
+	local secondRoll = math.random(1, #rewardsAtRarity)
 		
-		reward = rewardsAtRarity[secondRoll]
+	reward = rewardsAtRarity[secondRoll]
+	
+	if rarityTable[player.id][chosenRarity] then
 		
 		table.remove(rarityTable[player.id][chosenRarity][2], secondRoll)
 		
-		print("Checking " .. reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID"))
+	end
 		
-		if player:GetResource("COSMETIC_" .. reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID")) == 1 then
+	print("Checking " .. reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID"))
 		
-			print("PlayerAlreadyOwnsThis")
+	if player:GetResource("COSMETIC_" .. reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID")) == 1 then
+		
+		print("PlayerAlreadyOwnsThis")
 			
-			local newReward = RollSale(player)
+		local newReward = RollSale(player)
 		
-			return newReward
+		return newReward
 			
-		end
-
 	end
 	
 	print("Reward: " .. reward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("StoreName"))

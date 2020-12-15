@@ -41,6 +41,7 @@ local bgImage = script:GetCustomProperty("BGImage"):WaitForObject()
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 local viewToggle = false
+local rollInProgress = true
 
 local displayItems = {}
 local displayedRewards = REWARDS:GetChildren()
@@ -100,8 +101,10 @@ end
 
 function Tick()
 
-	if not viewToggle then
-	
+	if not viewToggle or rollInProgress then
+		
+		infoPanel.visibility = Visibility.FORCE_OFF
+		
 		return
 		
 	end
@@ -115,6 +118,12 @@ function Tick()
 		if slot then
 			
 			local sectionReward = slot:GetChildren()
+			
+			if #sectionReward < 1 then
+			
+				return
+				
+			end
 						
 			if LOCAL_PLAYER:GetResource("COSMETIC_" ..  sectionReward[1]:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID")) == 1 then
 			
@@ -175,6 +184,8 @@ function DiplayItems(row, item1, item2, item3)
 		
 	end
 	
+	rollInProgress = true
+	
 	LOCK_SFX:Play()
 	Ease3D.EasePosition(LOOT_DISPLAY, Vector3.New(0, 100, 560), .8, Ease3D.EasingEquation.BOUNCE, Ease3D.EasingDirection.OUT)
 	Task.Wait(.6)
@@ -217,7 +228,7 @@ function DiplayItems(row, item1, item2, item3)
 	
 	for i = 1, 9 do
 	
-		if displayItems[i] then
+		if displayItems[i] ~= nil then
 	
 			newItem = World.SpawnAsset(displayItems[i])
 			
@@ -238,7 +249,11 @@ function DiplayItems(row, item1, item2, item3)
 			newItem:SetRotation(Rotation.New(0, 0, -90))
 			
 			displayTexts[i].text = tostring(math.floor(newItem:FindChildByName("STORE_ItemInfo"):GetCustomProperty("Cost") * (1 - discount)))
-			
+		
+		else
+		
+			displayTexts[i].text = ""
+		
 		end
 		
 	end
@@ -280,6 +295,8 @@ function DiplayItems(row, item1, item2, item3)
 		end
 		
 	end
+	
+	rollInProgress = false
 
 end
 

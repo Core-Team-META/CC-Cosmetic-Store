@@ -9308,7 +9308,7 @@
           Overrides {
             Name: "cs:BalloonHeartTemplate"
             AssetReference {
-              Id: 11562558932965764687
+              Id: 841534158063459245
             }
           }
           Overrides {
