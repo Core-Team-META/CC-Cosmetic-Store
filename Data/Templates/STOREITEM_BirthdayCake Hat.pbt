@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 6769845893542896755
+        ParentId: 7069178301840666666
         ChildIds: 13185957032834304421
         ChildIds: 14783338600786857350
         ChildIds: 1957881133027487840
@@ -34,7 +34,7 @@
       }
       Objects {
         Id: 13185957032834304421
-        Name: "head"
+        Name: "BirthdayCake Hat"
         Transform {
           Location {
           }
@@ -61,7 +61,7 @@
       }
       Objects {
         Id: 6364218471167572908
-        Name: "BirthdayCake Hat _Hat"
+        Name: "head"
         Transform {
           Location {
             Z: -5
@@ -756,18 +756,18 @@
       }
       Objects {
         Id: 18011977959804436796
-        Name: "BirthdayCake Hat _Hat"
+        Name: "BirthdayCake Hat _display"
         Transform {
           Location {
             X: -6.59472656
-            Z: -62.8305664
+            Z: -51.5104408
           }
           Rotation {
           }
           Scale {
-            X: 4.24786425
-            Y: 4.24786425
-            Z: 4.24786425
+            X: 3.618222
+            Y: 3.618222
+            Z: 3.618222
           }
         }
         ParentId: 1957881133027487840
@@ -831,7 +831,7 @@
       }
       Objects {
         Id: 18226216304394413666
-        Name: "Cake for Alisa"
+        Name: "Cake for Alisa_display"
         Transform {
           Location {
             X: 19.7180462
