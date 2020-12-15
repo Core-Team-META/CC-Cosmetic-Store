@@ -431,6 +431,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16412693659560353417
+  Name: "\"Winter Snowflakes\" Music Construction Kit (Sections) 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_winter_snowflakes_sections_kit_ref"
+  }
+}
+Assets {
   Id: 16353917461806733124
   Name: "Ring - Thin"
   PlatformAssetType: 1
@@ -455,6 +464,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 16171957045391883906
+  Name: "Plastic Shiny"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_shiny_001"
   }
 }
 Assets {
@@ -656,12 +674,30 @@ Assets {
   }
 }
 Assets {
+  Id: 15234553642973347520
+  Name: "Ambience Nature Cicadas Set 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_cicadas_ref"
+  }
+}
+Assets {
   Id: 15203852473398708591
   Name: "Metal Chrome"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "chrome_001"
+  }
+}
+Assets {
+  Id: 15172180549504871240
+  Name: "Ambience Nature Forest Birds Set 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_forestbirds_ref"
   }
 }
 Assets {
@@ -1943,6 +1979,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9172416079279347246
+  Name: "\"Simple Jazz Swing\" Music Construction Kit (Sections) 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_simple_jazz_swing_sections_kit_ref"
+  }
+}
+Assets {
   Id: 9136786294201978281
   Name: "Metal Old Beaten Gold 02"
   PlatformAssetType: 2
@@ -2174,6 +2219,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_part_stair_001_rail"
+  }
+}
+Assets {
+  Id: 7724989921381923917
+  Name: "Ambience Nature Wind and Trees Set 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_windytrees_ref"
   }
 }
 Assets {
@@ -2834,6 +2888,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4753988644095219219
+  Name: "Cylinder - Chamfered Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_hq_002"
+  }
+}
+Assets {
   Id: 4680689859922991872
   Name: "Text 01: 4"
   PlatformAssetType: 1
@@ -3113,6 +3176,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3350581364753243189
+  Name: "Sci-fi Cockpit Console 001"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_scf_ship_cockpit_console_001_ref"
+  }
+}
+Assets {
   Id: 3280557559942806649
   Name: "Fern 03"
   PlatformAssetType: 1
@@ -3272,6 +3344,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_wall_002_corner_ref"
+  }
+}
+Assets {
+  Id: 2402982143081217095
+  Name: "Sci-fi Base Pillar 02 - Base 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_scf_base_pillar_002_base_01_ref"
   }
 }
 Assets {
@@ -3488,6 +3569,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_chain_001"
+  }
+}
+Assets {
+  Id: 1176520312971990409
+  Name: "\"8-Bit Funland\" Music Construction Kit (Sections) 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_8bit_funland_sections_kit_ref"
   }
 }
 Assets {

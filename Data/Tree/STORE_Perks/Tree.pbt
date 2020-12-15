@@ -857,9 +857,9 @@ Objects {
   Name: "Sign Bracket - Round"
   Transform {
     Location {
-      X: 219.780457
-      Y: 8.30835
-      Z: 64.6144409
+      X: 219.773
+      Y: 8.30847454
+      Z: 205.896652
     }
     Rotation {
       Roll: -179.999969
@@ -875,7 +875,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9136786294201978281
+        Id: 1532438403020507221
       }
     }
   }
@@ -907,9 +907,9 @@ Objects {
   Name: "Sign Bracket - Round"
   Transform {
     Location {
-      X: -211.860382
-      Y: 8.30835
-      Z: 64.6144409
+      X: -211.852905
+      Y: 8.30853939
+      Z: 205.896652
     }
     Rotation {
       Roll: -179.999985
@@ -1073,9 +1073,9 @@ Objects {
   Name: "Fantasy Staff Grip 01"
   Transform {
     Location {
-      X: -213.565979
-      Y: 26.2128906
-      Z: -441.544617
+      X: -213.561249
+      Y: 26.2128334
+      Z: -308.305054
     }
     Rotation {
     }
@@ -1114,9 +1114,9 @@ Objects {
   Name: "Fantasy Staff Grip 01"
   Transform {
     Location {
-      X: 218.637451
-      Y: 26.2128906
-      Z: -441.544617
+      X: 218.632736
+      Y: 26.2128487
+      Z: -308.305054
     }
     Rotation {
     }
@@ -5566,7 +5566,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9136786294201978281
+        Id: 1532438403020507221
       }
     }
   }
