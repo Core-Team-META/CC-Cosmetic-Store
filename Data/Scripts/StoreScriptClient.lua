@@ -822,13 +822,16 @@ function UpdateUIPos()
 	end
 	
 	local propButtonLabel = nil
+	local propButtonLabelShadow = nil
 	
 	for k,v in pairs(filterButtonData) do
 		v.root.width = math.floor(screenSize.x * 0.08)
 		v.root.height =  math.floor(screenSize.y * 0.06)
 		
 		propButtonLabel = v.root:GetCustomProperty("ButtonLabel"):WaitForObject()
-		propButtonLabel.fontSize = math.floor(v.root.width * 0.15)
+		propButtonLabelShadow = v.root:GetCustomProperty("ButtonLabelShadow"):WaitForObject()
+		propButtonLabel.fontSize = math.floor(v.root.width * 0.10)
+		propButtonLabelShadow.fontSize = propButtonLabel.fontSize
 		
 		v.root.x = v.root.width * v.position
 		v.root.y = 0
@@ -840,7 +843,9 @@ function UpdateUIPos()
 		v.root.height =  math.floor(screenSize.y * 0.06)
 		
 		propButtonLabel = v.root:GetCustomProperty("ButtonLabel"):WaitForObject()
-		propButtonLabel.fontSize = math.floor(v.root.width * 0.15)
+		propButtonLabelShadow = v.root:GetCustomProperty("ButtonLabelShadow"):WaitForObject()
+		propButtonLabel.fontSize = math.floor(v.root.width * 0.10)
+		propButtonLabelShadow.fontSize = propButtonLabel.fontSize
 		
 		v.root.x = v.root.width * v.position
 		v.root.y = 0
@@ -1022,6 +1027,7 @@ function SpawnFilterButton(displayName, tag, color, position)
 	
 	local propBGImage = newFilterButton:GetCustomProperty("BGImage"):WaitForObject()
 	local propButtonLabel = newFilterButton:GetCustomProperty("ButtonLabel"):WaitForObject()
+	local propButtonLabelShadow = newFilterButton:GetCustomProperty("ButtonLabelShadow"):WaitForObject()
 	local propButton = newFilterButton:GetCustomProperty("Button"):WaitForObject()
 	local propFrameImage = newFilterButton:GetCustomProperty("FrameImage"):WaitForObject()
 	local propFrameImage2 = newFilterButton:GetCustomProperty("FrameImage2"):WaitForObject()
@@ -1036,7 +1042,8 @@ function SpawnFilterButton(displayName, tag, color, position)
 		color = propBGImage:GetColor()
 	end
 	
-	propButtonLabel.text = displayName
+	propButtonLabel.text = string.upper(displayName)
+	propButtonLabelShadow.text = string.upper(displayName)
 	filterButtonData[propButton] = {
 		listener = propButton.clickedEvent:Connect(OnFilterButtonSelected),
 		root = newFilterButton,
@@ -1105,6 +1112,8 @@ function OnFilterButtonSelected(button)
 		propBGImageOther:SetColor(currentTag.color)
 	end
 	
+
+
 	-- highlight button while filter is active
 	propFrameImage2.visibility = Visibility.INHERIT
 	
@@ -1112,7 +1121,7 @@ function OnFilterButtonSelected(button)
 	propFrameImage2:SetColor(propFilterSelectedColor)
 	
 	propBGImage:SetColor(propFilterSelectedColor + Color.New(0.01, 0.01, 0.01))
-	
+
 	currentTag = buttonData
 
 	--print("Filtering for " .. buttonData.tag)
@@ -1148,6 +1157,7 @@ function SpawnTypeFilterButton(displayName, type, color, position)
 
 	local propBGImage = newFilterButton:GetCustomProperty("BGImage"):WaitForObject()
 	local propButtonLabel = newFilterButton:GetCustomProperty("ButtonLabel"):WaitForObject()
+	local propButtonLabelShadow = newFilterButton:GetCustomProperty("ButtonLabelShadow"):WaitForObject()
 	local propButton = newFilterButton:GetCustomProperty("Button"):WaitForObject()
 	local propFrameImage = newFilterButton:GetCustomProperty("FrameImage"):WaitForObject()
 	local propFrameImage2 = newFilterButton:GetCustomProperty("FrameImage2"):WaitForObject()
@@ -1162,7 +1172,8 @@ function SpawnTypeFilterButton(displayName, type, color, position)
 		color = propBGImage:GetColor()
 	end
 	
-	propButtonLabel.text = displayName
+	propButtonLabel.text = string.upper(displayName)
+	propButtonLabelShadow.text = string.upper(displayName)
 	typeFilterButtonData[propButton] = {
 		listener = propButton.clickedEvent:Connect(OnTypeFilterButtonSelected),
 		root = newFilterButton,

@@ -1286,15 +1286,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12707447014042397596
-  Name: "Waterfall 90 Outer Corner"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "waterfall_90oc"
-  }
-}
-Assets {
   Id: 12537868752084607232
   Name: "Ceramic Tiles Square 01"
   PlatformAssetType: 2
@@ -1781,30 +1772,12 @@ Assets {
   }
 }
 Assets {
-  Id: 10124763657611866910
-  Name: "Military Tank Modern Hatch 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_mil_tank_mod_hatch_001_ref"
-  }
-}
-Assets {
   Id: 10014196815467238350
   Name: "Leather Tufted 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_fabric_tufted_001_uv_ref"
-  }
-}
-Assets {
-  Id: 9989071625427101750
-  Name: "Bricks Cobblestone Floor 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_cobblestone_floor_001"
   }
 }
 Assets {
@@ -1922,15 +1895,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_008"
-  }
-}
-Assets {
-  Id: 9380237515475201187
-  Name: "Decal Gold Coins 01"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_gold_coins_001"
   }
 }
 Assets {
