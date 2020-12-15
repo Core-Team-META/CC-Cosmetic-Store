@@ -18,6 +18,7 @@ local START_SPIN_SPEED = 1000
 
 local listener = nil
 local bindingListener = nil
+local spamPrevent, openTime
 
 local totalDt = 0
 local zeroedBefore = false
@@ -30,8 +31,19 @@ local localPlayer = Game.GetLocalPlayer()
 propSpinWheelUI.isEnabled = false
 propSpinWheelUI.visibility = Visibility.INHERIT
 
-function SpinTheWheel(generator, propertyName)
+local function SpamPrevent(spamPrevent)
+	local timeNow = time()
+	if openTime == nil then
+		openTime = 1
+	end
+	if openTime ~= nil and (timeNow - openTime) < spamPrevent then
+		return false
+	end
+	openTime = timeNow
+	return true
+end
 
+function SpinTheWheel(generator, propertyName)
 	if propertyName ~= "PrizeRarity" then
 		return
 	end
@@ -41,10 +53,9 @@ function SpinTheWheel(generator, propertyName)
 	if targetRarity == "" then
 		return
 	end
-	
 
 	propSpinWheelUI.isEnabled = false
-	
+
 	local currentView = localPlayer:GetViewWorldRotation()
 	localPlayer:ClearOverrideCamera()
 	UI.SetCursorVisible(false)
@@ -123,11 +134,8 @@ function SpinTheWheel(generator, propertyName)
 end
 
 function Confirmation(trigger, player)
-
 	if player ~= localPlayer then
-		
 		return
-		
 	end
 
 	while rollInProgress do
@@ -156,7 +164,9 @@ function Exit(button)
 	propSpinWheelUI.isEnabled = false
 
 	if button == propYesButton then
-		Events.BroadcastToServer("SpinTheWheel")
+		if SpamPrevent(15) then
+			Events.BroadcastToServer("SpinTheWheel")
+		end
 	else
 		localPlayer:ClearOverrideCamera()
 		UI.SetCursorVisible(false)
@@ -166,9 +176,11 @@ end
 
 function BindingExit(player, bindingName)
 	if bindingName == purchaseRollBinding then
-		propSpinWheelUI.isEnabled = false
+		if SpamPrevent(15) then
+			propSpinWheelUI.isEnabled = false
 
-		Events.BroadcastToServer("SpinTheWheel")
+			Events.BroadcastToServer("SpinTheWheel")
+		end
 	elseif bindingName == exitRollBinding then
 		propSpinWheelUI.isEnabled = false
 

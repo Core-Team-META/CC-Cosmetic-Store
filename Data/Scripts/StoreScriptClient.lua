@@ -171,6 +171,18 @@ local filterButtonData = {}
 local defaultColor = Color.FromLinearHex("63F3FFFF")
 
 ----------------------------------------------------------------------------------------------------------------
+-- LOCAL HELPER FUNCTIONS
+----------------------------------------------------------------------------------------------------------------
+
+local function StringSplit(s, delimiter)
+	local result = {}
+	for match in (s .. delimiter):gmatch("(.-)" .. delimiter) do
+		table.insert(result, match)
+	end
+	return result
+end
+
+----------------------------------------------------------------------------------------------------------------
 -- SHOW/HIDE HELPERS
 ----------------------------------------------------------------------------------------------------------------
 function ShowStore_ClientHelper()
@@ -904,7 +916,7 @@ function InitStore()
 	end
 
 	for k,v in pairs(propStoreContents:GetChildren()) do
-		local storeInfo = v:FindChildByName("STORE_ItemInfo")
+		local storeInfo = v
 		if storeInfo ~= nil then
 
 			local propStoreName = storeInfo:GetCustomProperty("StoreName")
@@ -914,7 +926,9 @@ function InitStore()
 			local propTypes = storeInfo:GetCustomProperty("Types")
 			local propZoomView = storeInfo:GetCustomProperty("ZoomView")
 			local propPlayerVisibility = storeInfo:GetCustomProperty("PlayerVisibility")
-
+			local tempId = storeInfo:GetCustomProperty("MUID")
+			local tempMuid = StringSplit(tempId, ":")
+			local muid = tempMuid[1]
 
 
 			local tagList = {}
@@ -939,7 +953,7 @@ function InitStore()
 				name = propStoreName,
 				id = propID,
 				cost = propCost,
-				templateId = v.sourceTemplateId,
+				templateId = muid,
 				tags = tagList,
 				types = typeList,
 				visible = propPlayerVisibility,
@@ -972,7 +986,7 @@ function InitStore()
 	TypeList= {}
 	
 	if propTypeDefinitions ~= nil then
-		for k,v in pairs(propTypeDefinitions:GetChildren()) do
+		for k,v in ipairs(propTypeDefinitions:GetChildren()) do
 			local propDisplayName = v:GetCustomProperty("DisplayName")
 			if propDisplayName == "" then propDisplayName = v.name end
 			local propTagColor = v:GetCustomProperty("TypeColor")

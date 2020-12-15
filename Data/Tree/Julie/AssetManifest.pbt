@@ -188,15 +188,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17664178796766610406
-  Name: "Text 03: ("
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F5_Text_045"
-  }
-}
-Assets {
   Id: 17572648761083010261
   Name: "Marble Tiles Octagon Dot 01"
   PlatformAssetType: 2
@@ -440,6 +431,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16412693659560353417
+  Name: "\"Winter Snowflakes\" Music Construction Kit (Sections) 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_winter_snowflakes_sections_kit_ref"
+  }
+}
+Assets {
   Id: 16353917461806733124
   Name: "Ring - Thin"
   PlatformAssetType: 1
@@ -464,6 +464,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 16171957045391883906
+  Name: "Plastic Shiny"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_shiny_001"
   }
 }
 Assets {
@@ -602,6 +611,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15505231543121966376
+  Name: "Bricks Worn Stone 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_worn_001"
+  }
+}
+Assets {
   Id: 15402296587404581505
   Name: "Main Street Trim 02 - Corner"
   PlatformAssetType: 1
@@ -656,12 +674,30 @@ Assets {
   }
 }
 Assets {
+  Id: 15234553642973347520
+  Name: "Ambience Nature Cicadas Set 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_cicadas_ref"
+  }
+}
+Assets {
   Id: 15203852473398708591
   Name: "Metal Chrome"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "chrome_001"
+  }
+}
+Assets {
+  Id: 15172180549504871240
+  Name: "Ambience Nature Forest Birds Set 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_forestbirds_ref"
   }
 }
 Assets {
@@ -815,6 +851,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_birch_001"
+  }
+}
+Assets {
+  Id: 14667297920145436738
+  Name: "Square Column Segment"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_square_segment_001"
   }
 }
 Assets {
@@ -1040,15 +1085,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F6_Text_018"
-  }
-}
-Assets {
-  Id: 13865959327645582838
-  Name: "Column Segment 1m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_column_segment_001"
   }
 }
 Assets {
@@ -1574,6 +1610,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11053950961910504844
+  Name: "Grass Tall"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_grass_generic_001"
+  }
+}
+Assets {
   Id: 11052830231601453858
   Name: "Text 01: P"
   PlatformAssetType: 1
@@ -1934,21 +1979,21 @@ Assets {
   }
 }
 Assets {
+  Id: 9172416079279347246
+  Name: "\"Simple Jazz Swing\" Music Construction Kit (Sections) 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_simple_jazz_swing_sections_kit_ref"
+  }
+}
+Assets {
   Id: 9136786294201978281
   Name: "Metal Old Beaten Gold 02"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_gold_002"
-  }
-}
-Assets {
-  Id: 9129972548118489384
-  Name: "Food Watermelon 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_food_generic_watermelon_001_uv1"
   }
 }
 Assets {
@@ -2177,6 +2222,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7724989921381923917
+  Name: "Ambience Nature Wind and Trees Set 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_windytrees_ref"
+  }
+}
+Assets {
   Id: 7645759828976695097
   Name: "Ellipsoid - Truncated"
   PlatformAssetType: 1
@@ -2345,15 +2399,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_container_rectangle_thick_ref"
-  }
-}
-Assets {
-  Id: 6610453266627144862
-  Name: "Text 04: ?"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F7_Text_065"
   }
 }
 Assets {
@@ -2843,6 +2888,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4753988644095219219
+  Name: "Cylinder - Chamfered Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_hq_002"
+  }
+}
+Assets {
   Id: 4680689859922991872
   Name: "Text 01: 4"
   PlatformAssetType: 1
@@ -3122,21 +3176,21 @@ Assets {
   }
 }
 Assets {
+  Id: 3350581364753243189
+  Name: "Sci-fi Cockpit Console 001"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_scf_ship_cockpit_console_001_ref"
+  }
+}
+Assets {
   Id: 3280557559942806649
   Name: "Fern 03"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fern_generic_003"
-  }
-}
-Assets {
-  Id: 3184356387751164974
-  Name: "Metal Basic 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_basic_001"
   }
 }
 Assets {
@@ -3290,6 +3344,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_wall_002_corner_ref"
+  }
+}
+Assets {
+  Id: 2402982143081217095
+  Name: "Sci-fi Base Pillar 02 - Base 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_scf_base_pillar_002_base_01_ref"
   }
 }
 Assets {
@@ -3506,6 +3569,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_chain_001"
+  }
+}
+Assets {
+  Id: 1176520312971990409
+  Name: "\"8-Bit Funland\" Music Construction Kit (Sections) 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_8bit_funland_sections_kit_ref"
   }
 }
 Assets {
