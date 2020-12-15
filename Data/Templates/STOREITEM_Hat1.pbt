@@ -7,7 +7,7 @@
       RootId: 1263499199588855168
       Objects {
         Id: 1263499199588855168
-        Name: "STORE_Hat1"
+        Name: "STOREITEM_Hat1"
         Transform {
           Scale {
             X: 1
@@ -19,6 +19,7 @@
         ChildIds: 7872076904898112746
         ChildIds: 17557713305722273596
         ChildIds: 11230689304477526829
+        ChildIds: 12015050757571709887
         UnregisteredParameters {
         }
         WantsNetworking: true
@@ -224,6 +225,102 @@
         Script {
           ScriptAsset {
             Id: 6380040976156754336
+          }
+        }
+      }
+      Objects {
+        Id: 12015050757571709887
+        Name: "store_graphic"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1263499199588855168
+        ChildIds: 2972680580451217936
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 2972680580451217936
+        Name: "store_graphic"
+        Transform {
+          Location {
+            X: 8.4730835
+            Z: -15.3598633
+          }
+          Rotation {
+          }
+          Scale {
+            X: 2.28348255
+            Y: 2.28348255
+            Z: 2.28348255
+          }
+        }
+        ParentId: 12015050757571709887
+        ChildIds: 12651955514601192581
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 12651955514601192581
+        Name: "Sphere"
+        Transform {
+          Location {
+            Z: 10
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+        ParentId: 2972680580451217936
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6981698627626169233
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5760915064523727563
+          }
+          Teams {
+          }
+          StaticMesh {
+            Physics {
+            }
           }
         }
       }

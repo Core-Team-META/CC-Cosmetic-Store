@@ -7,7 +7,7 @@
       RootId: 4680741444129310880
       Objects {
         Id: 4680741444129310880
-        Name: "STORE_CloudSoundRapper _Hat"
+        Name: "STOREITEM_CloudSoundRapper _Hat"
         Transform {
           Scale {
             X: 1

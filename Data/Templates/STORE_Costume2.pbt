@@ -7,7 +7,7 @@
       RootId: 1816559377336734184
       Objects {
         Id: 1816559377336734184
-        Name: "STORE_Costume1"
+        Name: "STORE_Costume2"
         Transform {
           Scale {
             X: 1

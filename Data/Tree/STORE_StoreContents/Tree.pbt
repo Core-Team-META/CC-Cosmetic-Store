@@ -1,8 +1,8 @@
 ﻿Name: "STORE_StoreContents"
 RootId: 6769845893542896755
 Objects {
-  Id: 14577003921378174483
-  Name: "STOREITEM_Hat1"
+  Id: 267855927603691309
+  Name: "STORE_BaseballCap"
   Transform {
     Scale {
       X: 1
@@ -14,19 +14,44 @@ Objects {
   WantsNetworking: true
   TemplateInstance {
     ParameterOverrideMap {
+      key: 15509435841760084099
+      value {
+        Overrides {
+          Name: "Name"
+          String: "STORE_BaseballCap"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 3653195339892544252
+    }
+  }
+}
+Objects {
+  Id: 14577003921378174483
+  Name: "STOREITEM_Hat1"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6769845893542896755
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
       key: 1263499199588855168
       value {
         Overrides {
           Name: "Name"
           String: "STOREITEM_Hat1"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -47,6 +72,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 4034813922096462059
@@ -54,14 +85,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STOREITEM_Cowboy Hat _Hat"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -82,6 +105,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 4680741444129310880
@@ -89,14 +118,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STOREITEM_CloudSoundRapper _Hat"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -117,6 +138,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 549989728288704889
@@ -124,14 +151,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STOREITEM_Chef Hat"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -152,6 +171,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 11511463057368722708
@@ -159,14 +184,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STOREITEM_BirthdayCake Hat"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -187,6 +204,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 9742581228922254429
@@ -196,11 +219,13 @@ Objects {
           String: "STORE_WinterHat"
         }
         Overrides {
-          Name: "Scale"
+          Name: "Position"
           Vector {
-            X: 1
-            Y: 1
-            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
           }
         }
       }
@@ -222,6 +247,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 14827471458180861006
@@ -229,14 +260,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STORE_TheSandy"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -257,6 +280,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 15275936954081304982
@@ -264,14 +293,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STORE_TheOoccoo"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -292,6 +313,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 10396994416835930918
@@ -301,11 +328,13 @@ Objects {
           String: "STORE_SuperHat"
         }
         Overrides {
-          Name: "Scale"
+          Name: "Position"
           Vector {
-            X: 1
-            Y: 1
-            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
           }
         }
       }
@@ -327,6 +356,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 9902367627764121554
@@ -334,14 +369,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STORE_StrawberrryHat"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -362,6 +389,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 17268787965089802201
@@ -369,14 +402,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STORE_ScoutArmor_Torso"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -397,6 +422,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 11357215663701969798
@@ -404,14 +435,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STORE_ScoutArmor_Shoes"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -432,6 +455,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 17185917073263904721
@@ -439,14 +468,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STORE_ScoutArmor_Outfit"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -467,6 +488,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 2170055080473040334
@@ -474,14 +501,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STORE_ScoutArmor_Legs"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -502,6 +521,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 2918221417719278259
@@ -509,14 +534,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STORE_ScoutArmor_Helmet"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -537,6 +554,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 1744360624616900049
@@ -544,14 +567,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STORE_MushroomHat"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -572,6 +587,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 10689192010148224864
@@ -581,11 +602,13 @@ Objects {
           String: "STORE_FruitHat"
         }
         Overrides {
-          Name: "Scale"
+          Name: "Position"
           Vector {
-            X: 1
-            Y: 1
-            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
           }
         }
       }
@@ -607,6 +630,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 2559391469669775875
@@ -614,14 +643,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STORE_FrogCostume"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -642,6 +663,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 3859781522994647652
@@ -649,14 +676,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STORE_CrazyEye"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -677,6 +696,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 1816559377336734184
@@ -684,14 +709,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STORE_Costume2"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -712,6 +729,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 8141680742227768540
@@ -719,14 +742,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STORE_Costume1"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -747,6 +762,12 @@ Objects {
   }
   ParentId: 6769845893542896755
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 11137661485279647915
@@ -754,14 +775,6 @@ Objects {
         Overrides {
           Name: "Name"
           String: "STORE_BlueEyeHat"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
