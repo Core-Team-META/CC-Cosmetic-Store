@@ -10166,7 +10166,7 @@
           }
           Overrides {
             Name: "cs:Tags"
-            String: "Legendary"
+            String: "VIP Legendary"
           }
           Overrides {
             Name: "cs:ZoomView"
@@ -10174,7 +10174,11 @@
           }
           Overrides {
             Name: "cs:Cost"
-            Int: 125
+            Int: 150
+          }
+          Overrides {
+            Name: "cs:PlayerVisibility"
+            Bool: false
           }
         }
         WantsNetworking: true

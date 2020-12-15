@@ -2053,7 +2053,7 @@
           }
           Overrides {
             Name: "cs:Tags"
-            String: "Rare"
+            String: "Epic"
           }
           Overrides {
             Name: "cs:ZoomView"

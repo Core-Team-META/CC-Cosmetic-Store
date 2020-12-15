@@ -63,6 +63,9 @@ function OnBindingPressed(player, binding)
 		reRollUI.isEnabled = false
 		
 		viewToggle = false
+		
+		infoPanel.visibility = Visibility.FORCE_OFF
+		
 	elseif binding == "ability_primary" and viewToggle then
 		CheckSelection()
 	end
@@ -110,16 +113,27 @@ function Tick()
 		local slot = REWARDS:FindChildByName(click.other.name)
 		
 		if slot then
-			local section = script:GetCustomProperty(click.other.name):GetChildren()
-	
-			local highlightedReward = section[1]
 			
-			if math.floor(highlightedReward:FindChildByName("STORE_ItemInfo"):GetCustomProperty("Cost") * (1 - discount)) <= LOCAL_PLAYER:GetResource(currencyName) then
+			local sectionReward = slot:GetChildren()
+						
+			if LOCAL_PLAYER:GetResource("COSMETIC_" ..  sectionReward[1]:FindChildByName("STORE_ItemInfo"):GetCustomProperty("ID")) == 1 then
 			
+				messageText.text = "Already Owned"
+			
+			elseif math.floor(sectionReward[1]:FindChildByName("STORE_ItemInfo"):GetCustomProperty("Cost") * (1 - discount)) <= LOCAL_PLAYER:GetResource(currencyName) then
+			
+				messageText.text = "Purchase?"
+				
+			else
+			
+				messageText.text = "Cannot Afford"
 				
 			end
 						
-			infoPanel.visibility = Visibility.INHERIT
+			infoPanel.visibility = Visibility.FORCE_ON
+			
+			infoPanel.x = UI.GetCursorPosition().x
+			infoPanel.y = UI.GetCursorPosition().y
 			
 		else
 		
@@ -203,21 +217,29 @@ function DiplayItems(row, item1, item2, item3)
 	
 	for i = 1, 9 do
 	
-		newItem = World.SpawnAsset(displayItems[i])
-		
-		if newItem:FindDescendantByName("store_graphic") then
-		
-			newItem:FindDescendantByName("store_graphic"):Destroy()
+		if displayItems[i] then
+	
+			newItem = World.SpawnAsset(displayItems[i])
+			
+			if newItem:FindDescendantByName("store_graphic") then
+			
+				for _, c in pairs(newItem:GetChildren()[1]:GetChildren()) do
+				
+					c:Destroy()
+				
+				end
+				
+			end
+					
+			newItem.parent = displayedRewards[i]
+			
+			newItem:SetPosition(Vector3.ZERO)
+			newItem:SetScale(Vector3.ONE)
+			newItem:SetRotation(Rotation.New(0, 0, -90))
+			
+			displayTexts[i].text = tostring(math.floor(newItem:FindChildByName("STORE_ItemInfo"):GetCustomProperty("Cost") * (1 - discount)))
 			
 		end
-				
-		newItem.parent = displayedRewards[i]
-		
-		newItem:SetPosition(Vector3.ZERO)
-		newItem:SetScale(Vector3.ONE)
-		newItem:SetRotation(Rotation.New(0, 0, -90))
-		
-		displayTexts[i].text = tostring(math.floor(newItem:FindChildByName("STORE_ItemInfo"):GetCustomProperty("Cost") * (1 - discount)))
 		
 	end
 	

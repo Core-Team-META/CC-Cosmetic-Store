@@ -568,7 +568,7 @@
           }
           Overrides {
             Name: "cs:Cost"
-            Int: 50
+            Int: 40
           }
         }
         WantsNetworking: true

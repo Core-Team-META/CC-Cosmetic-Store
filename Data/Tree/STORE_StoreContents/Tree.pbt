@@ -1,6 +1,61 @@
 ﻿Name: "STORE_StoreContents"
 RootId: 6769845893542896755
 Objects {
+  Id: 5193972195836560954
+  Name: "STOREITEM_Hat1"
+  Transform {
+    Location {
+      X: -9485
+      Y: 1240
+      Z: 860
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6769845893542896755
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1263499199588855168
+      value {
+        Overrides {
+          Name: "Name"
+          String: "STOREITEM_Hat1"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -9888.33301
+            Y: 23335
+            Z: 3840
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6935989339742598427
+    }
+  }
+}
+Objects {
   Id: 12660755829328269988
   Name: "STORE_FrogCostume"
   Transform {
@@ -563,15 +618,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 3311330293510164700
-      value {
-        Overrides {
-          Name: "cs:Tags"
-          String: "Epic"
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 17268787965089802201
       value {
         Overrides {
@@ -616,14 +662,15 @@ Objects {
           Name: "Name"
           String: "STORE_ScoutArmor_Helmet"
         }
-      }
-    }
-    ParameterOverrideMap {
-      key: 4649612584295969390
-      value {
         Overrides {
-          Name: "cs:Cost"
-          Int: 40
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
         }
       }
     }
@@ -651,23 +698,6 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
-    ParameterOverrideMap {
-      key: 15223686816337804081
-      value {
-        Overrides {
-          Name: "cs:PlayerVisibility"
-          Bool: false
-        }
-        Overrides {
-          Name: "cs:Cost"
-          Int: 150
-        }
-        Overrides {
-          Name: "cs:Tags"
-          String: "VIP Legendary"
-        }
-      }
-    }
     ParameterOverrideMap {
       key: 17185917073263904721
       value {
@@ -730,23 +760,6 @@ Objects {
         }
       }
     }
-    ParameterOverrideMap {
-      key: 9974761825354809242
-      value {
-        Overrides {
-          Name: "cs:ZoomView"
-          String: "Hat"
-        }
-        Overrides {
-          Name: "cs:Cost"
-          Int: 50
-        }
-        Overrides {
-          Name: "cs:Tags"
-          String: "Epic"
-        }
-      }
-    }
     TemplateAsset {
       Id: 614220041473863367
     }
@@ -787,23 +800,6 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 6387085729816349558
-      value {
-        Overrides {
-          Name: "cs:ZoomView"
-          String: "Hat"
-        }
-        Overrides {
-          Name: "cs:Tags"
-          String: "Uncommon"
-        }
-        Overrides {
-          Name: "cs:Cost"
-          Int: 35
         }
       }
     }
@@ -850,19 +846,6 @@ Objects {
         }
       }
     }
-    ParameterOverrideMap {
-      key: 3567951263905755893
-      value {
-        Overrides {
-          Name: "cs:ZoomView"
-          String: "Hat"
-        }
-        Overrides {
-          Name: "cs:Cost"
-          Int: 60
-        }
-      }
-    }
     TemplateAsset {
       Id: 12269522058044990569
     }
@@ -906,77 +889,8 @@ Objects {
         }
       }
     }
-    ParameterOverrideMap {
-      key: 14783338600786857350
-      value {
-        Overrides {
-          Name: "cs:ZoomView"
-          String: "Hat"
-        }
-        Overrides {
-          Name: "cs:Cost"
-          Int: 60
-        }
-      }
-    }
     TemplateAsset {
       Id: 18277733649088940997
-    }
-  }
-}
-Objects {
-  Id: 2012246441603865649
-  Name: "STORE_Hat1"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6769845893542896755
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1263499199588855168
-      value {
-        Overrides {
-          Name: "Name"
-          String: "STORE_Hat1"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 11230689304477526829
-      value {
-        Overrides {
-          Name: "cs:ZoomView"
-          String: "Head"
-        }
-        Overrides {
-          Name: "cs:Cost"
-          Int: 35
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 6935989339742598427
     }
   }
 }
@@ -999,15 +913,6 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
-    ParameterOverrideMap {
-      key: 2958241985496875048
-      value {
-        Overrides {
-          Name: "cs:PlayerVisibility"
-          Bool: false
-        }
-      }
-    }
     ParameterOverrideMap {
       key: 8141680742227768540
       value {

@@ -26,6 +26,19 @@ Assets {
   }
 }
 Assets {
+  Id: 15138980995072208623
+  Name: "gold"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "e373410ac53f4c30a2b40e31afbfb466"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 14509317390755952210
   Name: "Frame Outlined 015"
   PlatformAssetType: 9
@@ -86,6 +99,19 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "CenterArrow_008Wedge"
+  }
+}
+Assets {
+  Id: 10089599454145935633
+  Name: "DailyRoll"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "4cba556512b64958881a790de790c0ff"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
   }
 }
 Assets {
@@ -158,6 +184,19 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundFlat_033"
+  }
+}
+Assets {
+  Id: 4716796813734153262
+  Name: "VIP"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
   }
 }
 Assets {
