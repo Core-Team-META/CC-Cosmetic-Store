@@ -45,7 +45,6 @@ local rollInProgress = true
 
 local displayItems = {}
 local displayedRewards = REWARDS:GetChildren()
-local displayTexts = WORLD_TEXT:GetChildren()
 local displayIds = {}
 
 function OnBindingPressed(player, binding)
@@ -228,6 +227,12 @@ function DiplayItems(row, item1, item2, item3)
 	
 	for i = 1, 9 do
 	
+		local originalPrice = WORLD_TEXT:FindChildByName("OriginalPriceText" .. tostring(i))
+			
+		local newPrice = WORLD_TEXT:FindChildByName("NewPriceText" .. tostring(i))
+		
+		local slash = WORLD_TEXT:FindDescendantByName("Slash" .. tostring(i))
+	
 		if displayItems[i] ~= nil then
 	
 			newItem = World.SpawnAsset(displayItems[i])
@@ -247,12 +252,19 @@ function DiplayItems(row, item1, item2, item3)
 			newItem:SetPosition(Vector3.ZERO)
 			newItem:SetScale(Vector3.ONE)
 			newItem:SetRotation(Rotation.New(0, 0, -90))
+						
+			originalPrice.text = tostring(math.floor(newItem:FindChildByName("STORE_ItemInfo"):GetCustomProperty("Cost")))
 			
-			displayTexts[i].text = tostring(math.floor(newItem:FindChildByName("STORE_ItemInfo"):GetCustomProperty("Cost") * (1 - discount)))
+			newPrice.text = tostring(math.floor(newItem:FindChildByName("STORE_ItemInfo"):GetCustomProperty("Cost") * (1 - discount)))
+			
+			slash.visibility = Visibility.INHERIT
 		
 		else
 		
-			displayTexts[i].text = ""
+			originalPrice.text = ""
+			newPrice.text = ""
+			
+			slash.visibility = Visibility.FORCE_OFF
 		
 		end
 		

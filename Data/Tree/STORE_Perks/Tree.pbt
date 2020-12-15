@@ -3951,8 +3951,8 @@ Objects {
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1.60891902
+      Y: 1.3
+      Z: 2
     }
   }
   ParentId: 9780257858517338826
@@ -3998,8 +3998,8 @@ Objects {
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1.60891902
+      Y: 1.3
+      Z: 2
     }
   }
   ParentId: 9780257858517338826
@@ -4045,8 +4045,8 @@ Objects {
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1.60891902
+      Y: 1.3
+      Z: 2
     }
   }
   ParentId: 9780257858517338826
@@ -4093,8 +4093,8 @@ Objects {
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1.60891902
+      Y: 1.3
+      Z: 2
     }
   }
   ParentId: 9780257858517338826
@@ -4141,8 +4141,8 @@ Objects {
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1.60891902
+      Y: 1.3
+      Z: 2
     }
   }
   ParentId: 9780257858517338826
@@ -4189,8 +4189,8 @@ Objects {
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1.60891902
+      Y: 1.3
+      Z: 2
     }
   }
   ParentId: 9780257858517338826
@@ -4237,8 +4237,8 @@ Objects {
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1.60891902
+      Y: 1.3
+      Z: 2
     }
   }
   ParentId: 9780257858517338826
@@ -4285,8 +4285,8 @@ Objects {
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1.60891902
+      Y: 1.3
+      Z: 2
     }
   }
   ParentId: 9780257858517338826
@@ -4333,8 +4333,8 @@ Objects {
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1.60891902
+      Y: 1.3
+      Z: 2
     }
   }
   ParentId: 9780257858517338826
@@ -4369,7 +4369,7 @@ Objects {
 }
 Objects {
   Id: 2300395450720064626
-  Name: "WorldText9"
+  Name: "OriginalPriceText9"
   Transform {
     Location {
       X: -155.887894
@@ -4380,8 +4380,8 @@ Objects {
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1.60891902
+      Y: 1.3
+      Z: 2
     }
   }
   ParentId: 9780257858517338826
@@ -4415,7 +4415,7 @@ Objects {
 }
 Objects {
   Id: 6555900911149345503
-  Name: "WorldText8"
+  Name: "OriginalPriceText8"
   Transform {
     Location {
       X: 51.9626274
@@ -4426,8 +4426,8 @@ Objects {
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1.60891902
+      Y: 1.3
+      Z: 2
     }
   }
   ParentId: 9780257858517338826
@@ -4461,7 +4461,7 @@ Objects {
 }
 Objects {
   Id: 12747381246229134934
-  Name: "WorldText7"
+  Name: "OriginalPriceText7"
   Transform {
     Location {
       X: 259.813141
@@ -4472,8 +4472,8 @@ Objects {
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1.60891902
+      Y: 1.3
+      Z: 2
     }
   }
   ParentId: 9780257858517338826
@@ -4507,7 +4507,7 @@ Objects {
 }
 Objects {
   Id: 5071281409007468043
-  Name: "WorldText6"
+  Name: "OriginalPriceText6"
   Transform {
     Location {
       X: -155.887894
@@ -4519,8 +4519,8 @@ Objects {
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1.60891902
+      Y: 1.3
+      Z: 2
     }
   }
   ParentId: 9780257858517338826
@@ -4554,7 +4554,7 @@ Objects {
 }
 Objects {
   Id: 7484636606366793760
-  Name: "WorldText5"
+  Name: "OriginalPriceText5"
   Transform {
     Location {
       X: 51.9626274
@@ -4566,8 +4566,8 @@ Objects {
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1.60891902
+      Y: 1.3
+      Z: 2
     }
   }
   ParentId: 9780257858517338826
@@ -4601,7 +4601,7 @@ Objects {
 }
 Objects {
   Id: 12265584490936879013
-  Name: "WorldText4"
+  Name: "OriginalPriceText4"
   Transform {
     Location {
       X: 259.813141
@@ -4613,8 +4613,8 @@ Objects {
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1.60891902
+      Y: 1.3
+      Z: 2
     }
   }
   ParentId: 9780257858517338826
@@ -4648,7 +4648,7 @@ Objects {
 }
 Objects {
   Id: 18194644296580934429
-  Name: "WorldText3"
+  Name: "OriginalPriceText3"
   Transform {
     Location {
       X: -155.887894
@@ -4660,8 +4660,8 @@ Objects {
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1.60891902
+      Y: 1.3
+      Z: 2
     }
   }
   ParentId: 9780257858517338826
@@ -4695,7 +4695,7 @@ Objects {
 }
 Objects {
   Id: 6301437688627980187
-  Name: "WorldText2"
+  Name: "OriginalPriceText2"
   Transform {
     Location {
       X: 51.9626274
@@ -4707,8 +4707,8 @@ Objects {
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1.60891902
+      Y: 1.3
+      Z: 2
     }
   }
   ParentId: 9780257858517338826
@@ -4742,7 +4742,7 @@ Objects {
 }
 Objects {
   Id: 216614589377850414
-  Name: "WorldText1"
+  Name: "OriginalPriceText1"
   Transform {
     Location {
       X: 259.813141
@@ -4754,8 +4754,8 @@ Objects {
     }
     Scale {
       X: 1
-      Y: 1
-      Z: 1.60891902
+      Y: 1.3
+      Z: 2
     }
   }
   ParentId: 9780257858517338826
@@ -6902,14 +6902,6 @@ Objects {
           String: "STORE_ScoutArmor_Torso"
         }
         Overrides {
-          Name: "Position"
-          Vector {
-            X: 9893.33301
-            Y: -23335
-            Z: -3840
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -7030,11 +7022,6 @@ Objects {
           }
         }
         Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
           Name: "Rotation"
           Rotator {
           }
@@ -7144,11 +7131,6 @@ Objects {
             X: 1
             Y: 1
             Z: 1
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
           }
         }
         Overrides {
