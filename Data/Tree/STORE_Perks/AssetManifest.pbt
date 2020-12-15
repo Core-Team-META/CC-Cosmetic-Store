@@ -161,6 +161,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10397718742664464874
+  Name: "Cube - Rounded"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_rounded_002"
+  }
+}
+Assets {
   Id: 9809938118791414773
   Name: "Frame Outlined 002"
   PlatformAssetType: 9
@@ -230,6 +239,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_019"
+  }
+}
+Assets {
+  Id: 5351428073291024820
+  Name: "Emissive Glow Opaque"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_opaque_emissive"
   }
 }
 Assets {
