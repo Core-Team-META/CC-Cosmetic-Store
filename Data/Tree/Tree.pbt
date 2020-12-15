@@ -29,6 +29,7 @@ Objects {
   ChildIds: 5886917377158341065
   ChildIds: 7069178301840666666
   ChildIds: 10254726131360694379
+  ChildIds: 15614838501028591359
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,6 +39,51 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 15614838501028591359
+  Name: "Human Guy 2"
+  Transform {
+    Location {
+      X: -2012.19177
+      Y: 5609.94287
+      Z: 118.909546
+    }
+    Rotation {
+      Yaw: -97.5984497
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5985956015751324126
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+    }
   }
 }
 Objects {
@@ -7275,9 +7321,19 @@ Objects {
           Name: "bp:Tint Color"
           Color {
             R: 1
-            G: 0.761655688
-            B: 0.410000026
+            G: 0.55
+            B: 0.853973448
             A: 1
+          }
+        }
+        Overrides {
+          Name: "bp:Cast Shadows"
+          Bool: true
+        }
+        Overrides {
+          Name: "bp:Ambient Image"
+          Enum {
+            Value: "mc:eambientcubemapssmall:27"
           }
         }
       }
@@ -7296,8 +7352,9 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -43.3280029
-            Yaw: 40.4931679
+            Pitch: -58.3344727
+            Yaw: 88.7134323
+            Roll: 13.2063599
           }
         }
         Overrides {
@@ -7307,7 +7364,16 @@ Objects {
         }
         Overrides {
           Name: "bp:Intensity"
-          Float: 3.36469197
+          Float: 3.89655662
+        }
+        Overrides {
+          Name: "bp:Light Color"
+          Color {
+            R: 0.57
+            G: 0.607019782
+            B: 1
+            A: 1
+          }
         }
       }
     }
@@ -7345,9 +7411,28 @@ Objects {
         Overrides {
           Name: "bp:Zenith Color"
           Color {
-            G: 0.277284503
-            B: 0.53
+            R: 0.32
+            G: 0.446092606
+            B: 1
             A: 0.6
+          }
+        }
+        Overrides {
+          Name: "bp:Haze Color"
+          Color {
+            R: 0.25
+            G: 1
+            B: 0.344370842
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "bp:Horizon Color"
+          Color {
+            R: 0.3
+            G: 1
+            B: 0.76357621
+            A: 0.9
           }
         }
       }

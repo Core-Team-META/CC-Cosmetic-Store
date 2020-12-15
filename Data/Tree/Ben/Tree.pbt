@@ -5,11 +5,12 @@ Objects {
   Name: "PERKS_CurrencyMultiplier"
   Transform {
     Location {
-      X: 1392.72363
-      Y: -666.142578
+      X: 7055.30078
+      Y: 3704.93652
+      Z: 6.10351563e-05
     }
     Rotation {
-      Yaw: 87.6167526
+      Yaw: 177.616745
     }
     Scale {
       X: 1

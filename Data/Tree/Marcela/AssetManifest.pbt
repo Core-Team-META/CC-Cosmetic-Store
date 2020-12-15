@@ -1,64 +1,10 @@
 ﻿Assets {
-  Id: 18353173440642569508
-  Name: "Text 05: R"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F6_Text_017"
-  }
-}
-Assets {
-  Id: 18153381962735685629
-  Name: "Plane Circle - One Sided"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_plane_circle_001"
-  }
-}
-Assets {
-  Id: 17903669751448619867
-  Name: "Text 01: C"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_002"
-  }
-}
-Assets {
-  Id: 17722917267016575012
-  Name: "Text 01: O"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_014"
-  }
-}
-Assets {
-  Id: 17485881147669499682
-  Name: "Cube - Rounded Bottom-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_rounded_001"
-  }
-}
-Assets {
   Id: 16171957045391883906
   Name: "Plastic Shiny"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "plastic_shiny_001"
-  }
-}
-Assets {
-  Id: 13872818768797185478
-  Name: "Text 05: S"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F6_Text_018"
   }
 }
 Assets {
@@ -80,39 +26,12 @@ Assets {
   }
 }
 Assets {
-  Id: 12442421961645460990
-  Name: "Plane 1m - One Sided"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_plane_1m_001"
-  }
-}
-Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_002"
-  }
-}
-Assets {
-  Id: 12037622918791899186
-  Name: "Chain Tile 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_chain_001"
-  }
-}
-Assets {
-  Id: 11148818279538449430
-  Name: "Text 01: D"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_003"
   }
 }
 Assets {
@@ -179,24 +98,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7450635164809747556
-  Name: "Text 01: E"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_004"
-  }
-}
-Assets {
-  Id: 6277375573496963018
-  Name: "Barrier Concrete 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_street_barrier_001"
-  }
-}
-Assets {
   Id: 5920223932982244516
   Name: "Cylinder"
   PlatformAssetType: 1
@@ -221,41 +122,5 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_001"
-  }
-}
-Assets {
-  Id: 3800766745517922842
-  Name: "Text 05: Y"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F6_Text_024"
-  }
-}
-Assets {
-  Id: 2529316016883467796
-  Name: "Text 01: L"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_011"
-  }
-}
-Assets {
-  Id: 1971942697827922499
-  Name: "Text 05: O"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F6_Text_014"
-  }
-}
-Assets {
-  Id: 1574680945468383340
-  Name: "Text 01: S"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_018"
   }
 }

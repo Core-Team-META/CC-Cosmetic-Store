@@ -206,15 +206,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16976085640077695470
-  Name: "Arch Fancy 3m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_arch_fancy_3m_001"
-  }
-}
-Assets {
   Id: 16931630116077975102
   Name: "Main Street Pillar 01"
   PlatformAssetType: 1
@@ -260,6 +251,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16545185151862068743
+  Name: "Stone Arch 3m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_stone-arch_6m_002"
+  }
+}
+Assets {
   Id: 16478024488860942148
   Name: "Text 03: ,"
   PlatformAssetType: 1
@@ -293,6 +293,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F6_Text_036"
+  }
+}
+Assets {
+  Id: 16196046451357117749
+  Name: "Text 01: Z"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_025"
   }
 }
 Assets {
@@ -494,6 +503,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15143766926267315553
+  Name: "Hill 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hill_003"
+  }
+}
+Assets {
   Id: 15048610057996333108
   Name: "Text 01: G"
   PlatformAssetType: 1
@@ -608,6 +626,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_column_square_segment_001"
+  }
+}
+Assets {
+  Id: 14643090495247569259
+  Name: "Dirt 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "dirt_001"
   }
 }
 Assets {
@@ -743,6 +770,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_awning_001_ref"
+  }
+}
+Assets {
+  Id: 13865959327645582838
+  Name: "Column Segment 1m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_segment_001"
   }
 }
 Assets {
@@ -899,12 +935,12 @@ Assets {
   }
 }
 Assets {
-  Id: 12728337217389179065
-  Name: "Craftsman Wall 02 Corner"
+  Id: 12486122445463196188
+  Name: "Fantasy Chest Base 03"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_sub_craftsman_wall_002_corner"
+    AssetId: "sm_fantasy_chest_003_ref"
   }
 }
 Assets {
@@ -941,24 +977,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_hq_002"
-  }
-}
-Assets {
-  Id: 12197464715307188934
-  Name: "Grass Short"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_grass_generic_002"
-  }
-}
-Assets {
-  Id: 12184057866691500510
-  Name: "Grass Clumps"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_grass_002_uv"
   }
 }
 Assets {
@@ -1115,12 +1133,12 @@ Assets {
   }
 }
 Assets {
-  Id: 11053950961910504844
-  Name: "Grass Tall"
+  Id: 11052830231601453858
+  Name: "Text 01: P"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_grass_generic_001"
+    AssetId: "F1_Text_015"
   }
 }
 Assets {
@@ -1364,6 +1382,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_door_001_ref"
+  }
+}
+Assets {
+  Id: 9238590118723645879
+  Name: "Sign Bracket - Round"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_signbracket_round_001"
   }
 }
 Assets {
@@ -1691,6 +1718,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6722267691116138132
+  Name: "Fantasy Staff Grip 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_grip_staff_001"
+  }
+}
+Assets {
   Id: 6712270632153873756
   Name: "Ceramic Terracotta Pots 01"
   PlatformAssetType: 2
@@ -1904,6 +1940,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_002"
+  }
+}
+Assets {
+  Id: 5861223425148352605
+  Name: "Metal Basic Steel"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "steel_001"
   }
 }
 Assets {
@@ -2600,15 +2645,6 @@ Assets {
   }
 }
 Assets {
-  Id: 907494637185805598
-  Name: "Square Column Base 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_column_square_bottom_001"
-  }
-}
-Assets {
   Id: 892215899551972766
   Name: "Branches Cluster Small"
   PlatformAssetType: 1
@@ -2633,6 +2669,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_003"
+  }
+}
+Assets {
+  Id: 666324038109301450
+  Name: "Bricks Cobblestone Floor Arches 001"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_cobblestone_floor_arch_001"
   }
 }
 Assets {

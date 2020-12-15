@@ -83,7 +83,7 @@ Objects {
   }
   ParentId: 3541217153010524449
   ChildIds: 11356402237129105530
-  ChildIds: 18248970786249341558
+  ChildIds: 2660571702833309345
   ChildIds: 1495587963440536165
   ChildIds: 15156601564198830699
   ChildIds: 13390522731244440466
@@ -1155,9 +1155,17 @@ Objects {
   }
 }
 Objects {
-  Id: 18248970786249341558
+  Id: 2660571702833309345
   Name: "STORE_SampleTrigger"
   Transform {
+    Location {
+      X: -1911.26697
+      Y: 26414.7461
+      Z: 3141.01807
+    }
+    Rotation {
+      Yaw: -149.999985
+    }
     Scale {
       X: 1
       Y: 1
@@ -1165,41 +1173,21 @@ Objects {
     }
   }
   ParentId: 7755841275126465915
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 735007756134955167
-      value {
-        Overrides {
-          Name: "Name"
-          String: "STORE_SampleTrigger"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -393.333374
-            Y: 22920
-            Z: 2980
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -149.999985
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2201756071361896455
-    }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 2660571702833309345
+    SubobjectId: 735007756134955167
+    InstanceId: 18248970786249341558
+    TemplateId: 2201756071361896455
+    WasRoot: true
   }
 }
 Objects {
