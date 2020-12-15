@@ -815,8 +815,8 @@ function UpdateUIPos()
 
 		v.overlay.x, v.overlay.y = WorldPosToUIPos(v.geo:GetWorldPosition())
 
-		v.overlay.width = math.floor(screenSize.x * 0.155 * BUTTON_SCALE)
-		v.overlay.height = math.floor(v.overlay.width * 1.35)
+		v.overlay.width = math.floor(screenSize.x * 0.145 * BUTTON_SCALE)
+		v.overlay.height = math.floor(v.overlay.width * 1.2)
 
 		v.itemName.fontSize = math.floor(screenSize.x * 0.017 * BUTTON_SCALE * newScale)
 		v.price.fontSize = math.floor(screenSize.x * 0.017 * BUTTON_SCALE * newScale)

@@ -21,7 +21,7 @@
         ChildIds: 2963586128661085421
         ChildIds: 11848869901376802362
         ChildIds: 13371178204433504938
-        ChildIds: 6373441915489367869
+        ChildIds: 2689543270797781020
         ChildIds: 1171240098768360841
         ChildIds: 3996216161057668627
         ChildIds: 13619166086386304065
@@ -58,7 +58,7 @@
           Value: "mc:evisibilitysetting:forceon"
         }
         Control {
-          Width: 250
+          Width: 245
           Height: 310
           UIX: 1505
           UIY: 570
@@ -179,7 +179,6 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: -10
           Height: 56
           UIY: 38.7077637
           RenderTransformPivot {
@@ -191,7 +190,7 @@
           UseParentWidth: true
           Image {
             Brush {
-              Id: 11781693709059308247
+              Id: 1814707273787853473
             }
             Color {
               G: 0.00182116206
@@ -295,13 +294,13 @@
         }
         Control {
           Height: 94
+          UIY: 136.229874
           RotationAngle: 180
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
-          AddSizeToParentIfUsingParentSize: true
           UseParentWidth: true
           Image {
             Brush {
@@ -318,12 +317,12 @@
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomcenter"
+                Value: "mc:euianchor:topcenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomcenter"
+                Value: "mc:euianchor:topcenter"
               }
             }
           }
@@ -387,6 +386,54 @@
         }
       }
       Objects {
+        Id: 2689543270797781020
+        Name: "UI Panel"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17217541726260855215
+        ChildIds: 6373441915489367869
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Height: 50
+          UIY: 30
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          Panel {
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
         Id: 6373441915489367869
         Name: "PRICE"
         Transform {
@@ -400,7 +447,7 @@
             Z: 1
           }
         }
-        ParentId: 17217541726260855215
+        ParentId: 2689543270797781020
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -408,14 +455,15 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 191
+          Width: -10
           Height: 33
-          UIY: 23.9247742
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
           Text {
             Label: "111 $"
             Color {
@@ -426,7 +474,7 @@
             }
             Size: 14
             Justification {
-              Value: "mc:etextjustify:right"
+              Value: "mc:etextjustify:center"
             }
             AutoWrapText: true
           }
@@ -619,12 +667,12 @@
       }
     }
     Assets {
-      Id: 11781693709059308247
-      Name: "BG Gradient 001"
+      Id: 1814707273787853473
+      Name: "BG Flat 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundFlat_020"
+        AssetId: "BackgroundNoOutline_020"
       }
     }
     Assets {
@@ -652,15 +700,6 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Military_Frame_008"
-      }
-    }
-    Assets {
-      Id: 1814707273787853473
-      Name: "BG Flat 001"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_020"
       }
     }
     PrimaryAssetId {
