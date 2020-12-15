@@ -1,36 +1,10 @@
 ﻿Assets {
-  Id: 16417925323458005731
-  Name: "dailyRoll"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "b97cffc8249f41f9be1ad9bdeab703fa"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
   Id: 15775978992330089425
   Name: "BG Flat 015"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_32"
-  }
-}
-Assets {
-  Id: 15740392939296413402
-  Name: "VIP"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "7ede08f3287a48d89191822247dd9bf8"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
   }
 }
 Assets {
@@ -76,19 +50,6 @@ Assets {
   PrimaryAsset {
     AssetType: "AnimatedMeshAssetRef"
     AssetId: "npc_human_gal_basic_001_ref"
-  }
-}
-Assets {
-  Id: 13672383407179067998
-  Name: "gold"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "94143b92be804c7488f2e56de504947c"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
   }
 }
 Assets {

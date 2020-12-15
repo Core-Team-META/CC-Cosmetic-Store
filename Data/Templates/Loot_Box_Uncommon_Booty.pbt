@@ -2063,7 +2063,7 @@
         Name: "RewardMarker"
         Transform {
           Location {
-            Z: 54.032959
+            Z: 92.074173
           }
           Rotation {
           }
