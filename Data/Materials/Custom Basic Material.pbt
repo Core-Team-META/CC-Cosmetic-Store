@@ -25,9 +25,8 @@
       Overrides {
         Name: "fresnel_color"
         Color {
-          R: 1
-          G: 0.36
-          B: 0.779602349
+          G: 0.0564538166
+          B: 0.145833328
           A: 1
         }
       }
@@ -38,6 +37,14 @@
       Overrides {
         Name: "specular"
         Float: 0.944146812
+      }
+      Overrides {
+        Name: "color"
+        Color {
+          G: 0.0564538166
+          B: 0.145833328
+          A: 1
+        }
       }
     }
     Assets {

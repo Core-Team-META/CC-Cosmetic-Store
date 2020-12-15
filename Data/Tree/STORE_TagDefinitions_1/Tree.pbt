@@ -19,8 +19,8 @@ Objects {
     Overrides {
       Name: "cs:TagColor"
       Color {
-        R: 0.330000043
-        G: 0.157351092
+        R: 1
+        G: 0.476821423
         A: 1
       }
     }
@@ -64,8 +64,8 @@ Objects {
     Overrides {
       Name: "cs:TagColor"
       Color {
-        R: 0.16132471
-        B: 0.210000038
+        R: 0.3566432
+        B: 1
         A: 1
       }
     }
@@ -105,8 +105,8 @@ Objects {
     Overrides {
       Name: "cs:TagColor"
       Color {
-        G: 0.00284749246
-        B: 0.429999948
+        G: 0.175876856
+        B: 1
         A: 1
       }
     }
@@ -146,8 +146,8 @@ Objects {
     Overrides {
       Name: "cs:TagColor"
       Color {
-        R: 0.0105960099
-        G: 0.320000052
+        R: 0.0331125259
+        G: 1
         A: 1
       }
     }
@@ -187,9 +187,9 @@ Objects {
     Overrides {
       Name: "cs:TagColor"
       Color {
-        R: 0.122000009
-        G: 0.122000009
-        B: 0.122000009
+        R: 0.671875
+        G: 0.671875
+        B: 0.671875
         A: 1
       }
     }
