@@ -140,6 +140,19 @@ Objects {
       }
     }
     ParameterOverrideMap {
+      key: 7376295250978335362
+      value {
+        Overrides {
+          Name: "cs:Dialog"
+          String: "Did you know I have 206 bones?  Also, I can mine 300 silver in one minute!"
+        }
+        Overrides {
+          Name: "cs:ReturnDialog"
+          String: "Did you know, more than half my bones are hand and foot bones?  Also, here\'s 300 silver."
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 7713661820209391067
       value {
         Overrides {
@@ -186,6 +199,19 @@ Objects {
       }
     }
     ParameterOverrideMap {
+      key: 13397914146758509642
+      value {
+        Overrides {
+          Name: "cs:Dialog"
+          String: "Rawr rawr rawr.  Rawr rawr rawr rawr rawr.  (5 minutes.  2000 silver.  Take it or leave it.)"
+        }
+        Overrides {
+          Name: "cs:ReturnDialog"
+          String: "Rawr rawr rawr rawr rawr.  (Here is your 2000 silver.)"
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 14204209428387008125
       value {
         Overrides {
@@ -209,6 +235,60 @@ Objects {
           Color {
             G: 0.0468832217
             B: 0.097
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15305007788546469386
+      value {
+        Overrides {
+          Name: "cs:ReturnDialog"
+          String: "Here it is, 10 silver, just like I promised!"
+        }
+        Overrides {
+          Name: "cs:Dialog"
+          String: "I\'m a fast digger!  Send me into the mines, and I\'ll be back in 10 seconds, with 10 silver!"
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16461028457626506286
+      value {
+        Overrides {
+          Name: "ma:Shared_Trim:color"
+          Color {
+            R: 0.7
+            G: 0.7
+            B: 0.7
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17101915981961723828
+      value {
+        Overrides {
+          Name: "cs:Dialog"
+          String: "I\'m really thorough!  Let me go looking for gold, and I\'ll be back in 20 seconds, with 30 silver!"
+        }
+        Overrides {
+          Name: "cs:ReturnDialog"
+          String: "I counted twice and this is exactly 30 silver."
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17895391195169029841
+      value {
+        Overrides {
+          Name: "ma:Shared_Trim:color"
+          Color {
+            R: 0.7
+            G: 0.7
+            B: 0.7
             A: 1
           }
         }
