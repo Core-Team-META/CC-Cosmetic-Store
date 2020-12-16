@@ -197,7 +197,7 @@ end
 ----------------------------------------------------------------------------------------------------------------
 function ShowStore_ClientHelper()
 
-	bindingListener:Disconnect()
+	--bindingListener:Disconnect()
 
 	if propBaseUIContainer then
 		propBaseUIContainer.isEnabled = false
@@ -228,7 +228,7 @@ end
 
 function HideStore_ClientHelper()
 
-	bindingListener = player.bindingPressedEvent:Connect(OnBindingPressed)
+	--bindingListener = player.bindingPressedEvent:Connect(OnBindingPressed)
 
 	if propBaseUIContainer then
 		propBaseUIContainer.isEnabled = true
@@ -1495,13 +1495,13 @@ function SwapMannequin(button)
 end
 
 function OnBindingPressed(player, binding)
-
 	if binding == "ability_extra_29" then
-	
-		store.ShowStore(player)
-		
+		if player:GetOverrideCamera() == propCamera then
+			HideStore()
+		else
+			store.ShowStore(player)
+		end
 	end
-
 end
 
 ----------------------------------------------------------------------------------------------------------------
