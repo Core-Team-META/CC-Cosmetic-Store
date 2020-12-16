@@ -1,27 +1,10 @@
 ﻿Assets {
-  Id: 18151587611326519510
-  Name: "VIP"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "7ede08f3287a48d89191822247dd9bf8"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
-  Id: 17736130674148047762
-  Name: "goldTier2"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "e4e4fd3047bb48d394515bec24e24a2b"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
+  Id: 16171957045391883906
+  Name: "Plastic Shiny"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_shiny_001"
   }
 }
 Assets {
@@ -31,6 +14,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundHighlighted_033"
+  }
+}
+Assets {
+  Id: 15897705887741699672
+  Name: "Urban Pipe Straight"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_pipes_straight_001_ref"
   }
 }
 Assets {
@@ -97,19 +89,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14183874296162673746
-  Name: "gold"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "94143b92be804c7488f2e56de504947c"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
   Id: 13784467660178889007
   Name: "Human Gal 1"
   PlatformAssetType: 17
@@ -137,6 +116,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12442421961645460990
+  Name: "Plane 1m - One Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_001"
+  }
+}
+Assets {
   Id: 12197464715307188934
   Name: "Grass Short"
   PlatformAssetType: 1
@@ -155,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11974361906548255645
+  Name: "Glass 01 (no distortion)"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_glass_001"
+  }
+}
+Assets {
   Id: 11142210224783054821
   Name: "Center Arrow 008 Wedge"
   PlatformAssetType: 9
@@ -164,12 +161,30 @@ Assets {
   }
 }
 Assets {
+  Id: 11020923890823202697
+  Name: "Container - Square Thin 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_container_square_thin_ref"
+  }
+}
+Assets {
   Id: 9933879321394361768
   Name: "BG Highlighted 015"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundHighlighted_032"
+  }
+}
+Assets {
+  Id: 9238590118723645879
+  Name: "Sign Bracket - Round"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_signbracket_round_001"
   }
 }
 Assets {
@@ -191,6 +206,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8425111237879329054
+  Name: "Metal Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_basic_001"
+  }
+}
+Assets {
   Id: 8250221790891313171
   Name: "Fantasy Shape 003"
   PlatformAssetType: 9
@@ -209,6 +233,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8155994152759289014
+  Name: "Cylinder - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_001"
+  }
+}
+Assets {
   Id: 7809958927931360774
   Name: "BG Flat 016"
   PlatformAssetType: 9
@@ -224,6 +257,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_curtain_02"
+  }
+}
+Assets {
+  Id: 6185017546957884116
+  Name: "2D Basic Shapes Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "dcl_basicShapes"
   }
 }
 Assets {
@@ -254,51 +296,12 @@ Assets {
   }
 }
 Assets {
-  Id: 4282027671103380318
-  Name: "goldTier3"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "40e42d7eb30a43928f11692ddc0d918f"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
   Id: 2888315853894773784
   Name: "Cabinet - Upper Narrow"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_cabinet_narrow_001_cabient"
-  }
-}
-Assets {
-  Id: 2008881572446709840
-  Name: "goldTier1"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "422c64963b874c68892824289cb086f3"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
-  Id: 1861686525114732671
-  Name: "FasterMining"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "1b3a78e5a62048ffb8258c3d2b078305"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
   }
 }
 Assets {
@@ -311,24 +314,20 @@ Assets {
   }
 }
 Assets {
-  Id: 1408334510890591770
-  Name: "dailyRoll"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "b97cffc8249f41f9be1ad9bdeab703fa"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
   Id: 1392156535297566702
   Name: "Flower Daisy Patch 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_flower_daisy_001"
+  }
+}
+Assets {
+  Id: 636933061759506446
+  Name: "Fantasy Coins 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Coins_003"
   }
 }
