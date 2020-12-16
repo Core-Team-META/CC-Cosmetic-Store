@@ -45,7 +45,7 @@ function GiveMoney(trigger, player)
 
 		currency.text = tostring(propMoneyPerInterraction)
 		multiplier.text = "x" .. tostring(newMultiplier)
-		Events.BroadcastToServer("Give Player Money", 1)
+		--Events.BroadcastToServer("Give Player Money", 1)
 		player.clientUserData.Veggies = 0
 
 		for i = 1, 25 do

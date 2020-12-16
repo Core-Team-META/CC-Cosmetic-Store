@@ -199,6 +199,12 @@ Objects {
         SelfId: 16501819506997473943
       }
     }
+    Overrides {
+      Name: "cs:Trigger"
+      ObjectReference {
+        SelfId: 16773360391167325378
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

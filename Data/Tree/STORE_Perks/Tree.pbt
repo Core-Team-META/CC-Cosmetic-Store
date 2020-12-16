@@ -4028,7 +4028,7 @@ Objects {
   Name: "PERKS_SubscriptionShop"
   Transform {
     Location {
-      X: -1835
+      X: -1975
       Y: 4400
       Z: 55
     }
@@ -4044,7 +4044,6 @@ Objects {
   ParentId: 4296421264996771920
   ChildIds: 12951209918799974288
   ChildIds: 11861987956534285487
-  ChildIds: 14968915077744600123
   ChildIds: 13897286704891571967
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4068,8 +4067,9 @@ Objects {
   Name: "World Text"
   Transform {
     Location {
-      X: -85
-      Z: 65
+      X: -109.999687
+      Y: 45.0000114
+      Z: 195
     }
     Rotation {
       Yaw: 90
@@ -4088,7 +4088,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Text {
-    Text: "PERKS"
+    Text: "GET VIP"
     Color {
       R: 1
       G: 1
@@ -4107,59 +4107,6 @@ Objects {
   InstanceHistory {
     SelfId: 13897286704891571967
     SubobjectId: 9295333796690035156
-    InstanceId: 6248374133317614710
-    TemplateId: 399464744490226404
-  }
-}
-Objects {
-  Id: 14968915077744600123
-  Name: "Cylinder - Chamfered Polished"
-  Transform {
-    Location {
-      Z: -50
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.69999993
-    }
-  }
-  ParentId: 3251010835081095038
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 9136786294201978281
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4753988644095219219
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 14968915077744600123
-    SubobjectId: 10348982231229401872
     InstanceId: 6248374133317614710
     TemplateId: 399464744490226404
   }
@@ -5743,13 +5690,15 @@ Objects {
   Name: "Trigger"
   Transform {
     Location {
+      X: 4.99999809
+      Y: -1.19209278e-06
     }
     Rotation {
     }
     Scale {
       X: 2.10000014
       Y: 2.2
-      Z: 1.99999988
+      Z: 3.50000072
     }
   }
   ParentId: 3251010835081095038

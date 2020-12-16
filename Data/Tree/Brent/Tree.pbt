@@ -6852,6 +6852,12 @@ Objects {
         SelfId: 7621610798268652802
       }
     }
+    Overrides {
+      Name: "cs:ReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8166,6 +8172,12 @@ Objects {
     Overrides {
       Name: "cs:CurrencyName"
       String: "money"
+    }
+    Overrides {
+      Name: "cs:ReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
     }
   }
   Collidable_v2 {
@@ -56826,6 +56838,12 @@ Objects {
         SelfId: 2449865194192283689
       }
     }
+    Overrides {
+      Name: "cs:ReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -59869,6 +59887,12 @@ Objects {
     Overrides {
       Name: "cs:PlayerId"
       String: ""
+    }
+    Overrides {
+      Name: "cs:ReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
     }
     Overrides {
       Name: "cs:PrizeRarity:isrep"

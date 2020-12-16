@@ -15803,6 +15803,12 @@ Objects {
         Id: 16758479113900193297
       }
     }
+    Overrides {
+      Name: "cs:ReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15862,6 +15868,12 @@ Objects {
       Name: "cs:StoreRoot"
       ObjectReference {
         SelfId: 7563443499317668191
+      }
+    }
+    Overrides {
+      Name: "cs:ReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
       }
     }
   }

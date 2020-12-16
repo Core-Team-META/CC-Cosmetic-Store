@@ -6,6 +6,9 @@ local Rare_Lootbox = script:GetCustomProperty("Loot_Box_Rare")
 local Epic_Lootbox = script:GetCustomProperty("Loot_Box_Epic")
 local Legendary_Lootbox = script:GetCustomProperty("Loot_Box_Legendary")
 local CHANGE_PRIZE_CAMERA = script:GetCustomProperty("ChangePrizeCamera")
+
+local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
+
 local chestSpawnMarker
 local selectedColor = nil
 local currentBox
@@ -53,7 +56,8 @@ end
 
 function SpawnLootBox(player, prize, rarity)
     if CHANGE_PRIZE_CAMERA and player == Game.GetLocalPlayer() then
-        Events.Broadcast("OpenChestEvent")
+        --Events.Broadcast("OpenChestEvent")
+        ReliableEvents.Broadcast("OpenChestEvent")  
     end
     SetupPlatform()
     currentBox = World.SpawnAsset(CheckRarity(rarity), {parent = chestSpawnMarker})

@@ -4,6 +4,8 @@ local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
 local CURRENCY_NAME = script:GetCustomProperty("CurrencyName")
 local ROLL_COST = script:GetCustomProperty("RollCost")
 
+local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
+
 local table = {}
 
 function RollLootbox(trigger, player)
@@ -69,7 +71,7 @@ function RollLootbox(trigger, player)
 		--print("Player already has the prize!")
 	else
 		--print("Giving Reward!")
-
+		--[[
 		while Events.Broadcast(
 			"BUYCOSMETIC",
 			player,
@@ -79,7 +81,9 @@ function RollLootbox(trigger, player)
 		) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 			Task.Wait(0.1)
 		end
-
+		]]
+		
+		ReliableEvents.Broadcast("BUYCOSMETIC", player, reward:GetCustomProperty("ID"), false, 0)  
 		player:SetResource(CURRENCY_NAME, currency - ROLL_COST)
 	end
 

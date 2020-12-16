@@ -55,6 +55,7 @@ local propUIPerkPurchaseButton = script:GetCustomProperty("UIPerkPurchaseButton"
 
 local propTrigger = script:GetCustomProperty("Trigger"):WaitForObject()
 
+local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 
 propUIPerkPurchaseButton:SetPerkReference(dailyRollPerk)
 
@@ -77,10 +78,13 @@ function OnBindingPressed(player, binding)
 	if binding == BINDING_ANIM and viewToggle then
 	
 		print("rerolling")
-	
+		
+		--[[
 		while Events.BroadcastToServer("REROLL") == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 			Task.Wait(0.1)
 		end
+		]]
+		ReliableEvents.BroadcastToServer("REROLL")  
 	
 	elseif binding == "ability_primary" and viewToggle then
 		CheckSelection()
@@ -141,10 +145,13 @@ function CheckSelection()
 			local rewardId = displayItems[tonumber(number)]
 			
 			print("Player wants " .. rewardId)
-			
+			--[[
 			while Events.BroadcastToServer("APLAYERPURCHASED", rewardId) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 				Task.Wait()
 			end
+			]]
+			
+			ReliableEvents.BroadcastToServer("APLAYERPURCHASED", rewardId)  
 			
 		end
 			
