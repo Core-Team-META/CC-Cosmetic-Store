@@ -6,19 +6,20 @@ local ROLL_COST = script:GetCustomProperty("RollCost")
 
 local table = {}
 
-function RollLootbox(player)
+function RollLootbox(trigger, player)
 	TRIGGER.isEnabled = false
 
-	print("Rolling...")
+	--print("Rolling...")
 
 	local currency = player:GetResource(CURRENCY_NAME)
 
 	if currency < ROLL_COST then
 		print("Not enough currency.")
-
+		--[[
 		while Events.BroadcastToPlayer(player, "WheelExit") == BroadcastEventResultCode.EXCEEDED_RATE_LIMIT do
 			Task.Wait()
 		end
+		]]
 		TRIGGER.isEnabled = true
 		return
 	end
@@ -27,7 +28,7 @@ function RollLootbox(player)
 
 	roll = roll * 0.01
 
-	print("player rolled: " .. roll)
+	--print("player rolled: " .. roll)
 
 	local previousRarity = 0
 
@@ -43,7 +44,7 @@ function RollLootbox(player)
 		previousRarity = c + previousRarity
 	end
 
-	print("Rarity: " .. chosenRarity.name)
+	--print("Rarity: " .. chosenRarity.name)
 
 	local rewardsAtRarity = chosenRarity:GetChildren()
 
@@ -57,7 +58,7 @@ function RollLootbox(player)
 		reward = rewardsAtRarity[secondRoll]
 	end
 
-	print("Reward: " .. reward:GetCustomProperty("Name"))
+	--print("Reward: " .. reward:GetCustomProperty("Name"))
 
 	script:SetNetworkedCustomProperty("PrizeRarity", chosenRarity.name)
 	script:SetNetworkedCustomProperty("PlayerId", player.id)
@@ -65,9 +66,9 @@ function RollLootbox(player)
 	Task.Wait(8)
 
 	if player:GetResource("COSMETIC_" .. reward:GetCustomProperty("ID")) == 1 then
-		print("Player already has the prize!")
+		--print("Player already has the prize!")
 	else
-		print("Giving Reward!")
+		--print("Giving Reward!")
 
 		while Events.Broadcast(
 			"BUYCOSMETIC",
@@ -76,7 +77,7 @@ function RollLootbox(player)
 			false,
 			0
 		) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
-			Task.Wait()
+			Task.Wait(0.1)
 		end
 
 		player:SetResource(CURRENCY_NAME, currency - ROLL_COST)
@@ -89,6 +90,8 @@ function RollLootbox(player)
 	script:SetNetworkedCustomProperty("PrizeRarity", "")
 
 	script:SetNetworkedCustomProperty("RewardName", "")
+	
+	Task.Wait(14)
 
 	TRIGGER.isEnabled = true
 end
@@ -103,6 +106,7 @@ function Initialize()
 	end
 end
 
+TRIGGER.interactedEvent:Connect(RollLootbox)
 Events.ConnectForPlayer("SpinTheWheel", RollLootbox)
 
 Initialize()

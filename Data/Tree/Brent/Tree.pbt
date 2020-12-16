@@ -55236,7 +55236,6 @@ Objects {
   }
   ParentId: 13363179722086851574
   ChildIds: 22944115190030467
-  ChildIds: 7922160086768376861
   ChildIds: 3357036419631783885
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -55253,8 +55252,9 @@ Objects {
   Name: "ClickSFX"
   Transform {
     Location {
-      X: 6.1035149e-05
-      Z: 3.05175708e-05
+      X: -1.90734863e-06
+      Y: 7.62939453e-06
+      Z: 44.275383
     }
     Rotation {
     }
@@ -55275,51 +55275,12 @@ Objects {
     AudioAsset {
       Id: 15585626911168066842
     }
-    Volume: 1
+    Volume: 1.5
     Falloff: -1
     Radius: -1
     EnableOcclusion: true
     IsSpatializationEnabled: true
     IsAttenuationEnabled: true
-  }
-}
-Objects {
-  Id: 7922160086768376861
-  Name: "Drum Kit Set Funk Sampled Instrument 01 SFX"
-  Transform {
-    Location {
-      X: 6.1035149e-05
-      Z: 3.05175708e-05
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17360336809329204851
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 13152669538555145280
-    }
-    TeamSettings {
-    }
-    AudioBP {
-      Volume: 1
-      Falloff: 3600
-      Radius: 400
-      EnableOcclusion: true
-      IsSpatializationEnabled: true
-      IsAttenuationEnabled: true
-    }
   }
 }
 Objects {
@@ -56607,8 +56568,6 @@ Objects {
   Name: "LootboxSpinWheelClient"
   Transform {
     Location {
-      X: 3.05175781e-05
-      Z: -160
     }
     Rotation {
     }
@@ -59850,6 +59809,8 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Trigger {
+    Interactable: true
+    InteractionLabel: "Spin the wheel (usually 50 Gold, but for today its free!)"
     TeamSettings {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
@@ -59895,7 +59856,7 @@ Objects {
     }
     Overrides {
       Name: "cs:RollCost"
-      Int: 50
+      Int: 0
     }
     Overrides {
       Name: "cs:PrizeRarity"
