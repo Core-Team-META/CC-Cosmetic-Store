@@ -8177,8 +8177,9 @@ Objects {
     Overrides {
       Name: "cs:SubscriptionColor"
       Color {
-        R: 0.960000038
-        G: 0.495894104
+        R: 1
+        G: 0.842715263
+        B: 0.0500000119
         A: 1
       }
     }

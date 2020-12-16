@@ -401,7 +401,7 @@ function UpdateEntryButton(entry, highlighted)
 	elseif HasCosmetic(entry.data.id) and not highlighted then
 		entry.price:SetColor(Color.WHITE)
 		entry.price.text = "OWNED"
-		entry.BGImage:SetColor(Color.FromLinearHex("08004AFF")) -- purple
+		entry.BGImage:SetColor(Color.FromLinearHex("0808DDFF")) -- purple
 
 	-- owned but hovered
 	elseif HasCosmetic(entry.data.id) and highlighted then
@@ -415,28 +415,40 @@ function UpdateEntryButton(entry, highlighted)
 		
 		if entry.PartOfSubscription then
 			entry.itemName.text = entry.data.name
-			entry.price.text = tostring(entry.data.cost) .. " " .. propSubscriptionName .. " Only"
+			entry.price.text = tostring(entry.data.cost) -- .. " " .. propSubscriptionName .. " Only"
+			if (not entry.vipImage:IsVisibleInHierarchy()) then
+				entry.vipImage.visibility = Visibility.FORCE_ON
+			end
 		else
 			entry.itemName.text = entry.data.name
 			entry.price.text = tostring(entry.data.cost)
+			if (entry.vipImage:IsVisibleInHierarchy()) then
+				entry.vipImage.visibility = Visibility.FORCE_OFF
+			end			
 		end
 		
 		entry.itemName:SetColor(entry.BGImageColor)
 		
 		entry.rarityFin:SetColor(entry.BGImageColor)
 
+		entry.BGImageColor.a = 0.6
+		entry.rarityOverlay:SetColor(entry.BGImageColor)
+		entry.BGImageColor.a = 1
+
 		entry.BGImage:SetColor(Color.FromLinearHex("000002FF"))
-
-
+		local currency = player:GetResource(propCurrencyResourceName)
+		if entry.data.cost > currency then
+			entry.price:SetColor(Color.RED)
+		end
 	else -- cases for not owned and not hovered
 		local currency = player:GetResource(propCurrencyResourceName)
 		if entry.PartOfSubscription and player:HasPerk(subscriptionPerkRef) then
-			entry.price.text = "Claim it!"
+			entry.price.text = "CLAIM IT!"
 			entry.price:SetColor(Color.WHITE)
 			entry.BGImage:SetColor(Color.FromLinearHex("063300FF")) -- dark green
 			return
 		else
-			entry.price.text = "Buy it!\n[" .. tostring(entry.data.cost) .. "]"
+			entry.price.text = "BUY IT!\n[" .. tostring(entry.data.cost) .. "]"
 		end
 		
 		if entry.data.cost <= currency and not entry.PartOfSubscription then
@@ -444,7 +456,6 @@ function UpdateEntryButton(entry, highlighted)
 			entry.BGImage:SetColor(Color.FromLinearHex("063300FF")) -- dark green
 		else
 			entry.itemName:SetColor(Color.RED)
-			
 			if entry.PartOfSubscription then
 				entry.price.text = "NEED " .. propSubscriptionName
 			else
@@ -744,6 +755,8 @@ function PopulateStore(direction)
 		local propButton = newOverlay:GetCustomProperty("Button"):WaitForObject()
 		local propBGImage = newOverlay:GetCustomProperty("BGImage"):WaitForObject()
 		local propRarityFin = newOverlay:GetCustomProperty("RarityFin"):WaitForObject()		
+		local propRarityOverlay = newOverlay:GetCustomProperty("PriceOverlay"):WaitForObject()		
+		local propVIPImage = newOverlay:GetCustomProperty("VIPImage"):WaitForObject()		
 		
 		local previewMesh = newGeo:GetCustomProperty("PreviewMesh"):WaitForObject()
 		local BGMesh = newGeo:GetCustomProperty("BGMesh"):WaitForObject()
@@ -784,7 +797,9 @@ function PopulateStore(direction)
 			geo = newGeo,
 			button = propButton,
 			itemName = propItemName,
+			vipImage = propVIPImage,
 			rarityFin = propRarityFin,
+			rarityOverlay = propRarityOverlay,
 			price = propPrice,
 			listener = propButton.clickedEvent:Connect(StoreItemClicked),
 			listener2 = propButton.hoveredEvent:Connect(StoreItemHovered),
@@ -1087,17 +1102,26 @@ function SpawnFilterButton(displayName, tag, color, position, template)
 	local propButton = newFilterButton:GetCustomProperty("Button"):WaitForObject()
 	local propFrameImage = newFilterButton:GetCustomProperty("FrameImage"):WaitForObject()
 	local propFrameImage2 = newFilterButton:GetCustomProperty("FrameImage2"):WaitForObject()
-	local propRarityLabel = newFilterButton:GetCustomProperty("RarityImage"):WaitForObject() or nil
+	local propRarity = newFilterButton:GetCustomProperty("RarityImage"):WaitForObject() or nil
+	local propRaritySelected = newFilterButton:GetCustomProperty("RarityImageSelected"):WaitForObject() or nil
 	
 	propFrameImage2.visibility = Visibility.FORCE_OFF
 	
 	local frameColor = propFrameImage:GetColor()
 	
 	if color then 
-		propBGImage:SetColor(color) 
-		if (propRarityLabel) then
-			propRarityLabel:SetColor(color)
+		propBGImage:SetColor(color)
+		if (propRarity) then
+			local rarityColor = color
+			rarityColor.a = 0.6
+			propRarity:SetColor(rarityColor)
+			rarityColor.a = 1
+			if (propRaritySelected) then
+				propRaritySelected:SetColor(rarityColor)
+				propButtonLabel:SetColor(color)
+			end	
 		end
+	
 	else 
 		color = propBGImage:GetColor()
 	end
