@@ -151,11 +151,11 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Dialog"
-      String: "Rawr rawr rawr.  Rawr rawr rawr rawr rawr.  (5 minutes.  2000 gold.  Take it or leave it.)"
+      String: "Rawr rawr rawr.  Rawr rawr rawr rawr rawr.  (5 minutes.  2000 silver.  Take it or leave it.)"
     }
     Overrides {
       Name: "cs:ReturnDialog"
-      String: "Rawr rawr rawr rawr rawr.  (Here is your 2000 gold.)"
+      String: "Rawr rawr rawr rawr rawr.  (Here is your 2000 silver.)"
     }
     Overrides {
       Name: "cs:DigTime"
@@ -1045,11 +1045,11 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Dialog"
-      String: "Did you know I have 206 bones?  Also, I can mine 300 gold in one minute!"
+      String: "Did you know I have 206 bones?  Also, I can mine 300 silver in one minute!"
     }
     Overrides {
       Name: "cs:ReturnDialog"
-      String: "Did you know, more than half my bones are hand and foot bones?  Also, here\'s 300 gold."
+      String: "Did you know, more than half my bones are hand and foot bones?  Also, here\'s 300 silver."
     }
     Overrides {
       Name: "cs:DigTime"
@@ -1767,11 +1767,11 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Dialog"
-      String: "I\'m really thorough!  Let me go looking for gold, and I\'ll be back in 20 seconds, with 30 gold!"
+      String: "I\'m really thorough!  Let me go looking for silver, and I\'ll be back in 20 seconds, with 30 silver!"
     }
     Overrides {
       Name: "cs:ReturnDialog"
-      String: "I counted twice and this is exactly 30 gold."
+      String: "I counted twice and this is exactly 30 silver."
     }
     Overrides {
       Name: "cs:DigTime"
@@ -2488,11 +2488,11 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:Dialog"
-      String: "I\'m a fast digger!  Send me into the mines, and I\'ll be back in 10 seconds, with 10 gold!"
+      String: "I\'m a fast digger!  Send me into the mines, and I\'ll be back in 10 seconds, with 10 silver!"
     }
     Overrides {
       Name: "cs:ReturnDialog"
-      String: "Here it is, 10 gold, just like I promised!"
+      String: "Here it is, 10 silver, just like I promised!"
     }
     Overrides {
       Name: "cs:DigTime"
@@ -5419,7 +5419,7 @@ Objects {
       }
     }
     Text {
-      Label: "I\'m a fast digger!  Send me into the mines, and I\'ll be back in 30 seconds, with 10 gold!"
+      Label: "I\'m a fast digger!  Send me into the mines, and I\'ll be back in 30 seconds, with 10 silver!"
       Color {
         R: 1
         G: 1
@@ -16273,7 +16273,7 @@ Objects {
     }
     Overrides {
       Name: "cs:SubscriptionDescription"
-      String: "Benefits: <br> - 250 dollars and 100 gold for first subscription <br> - 1.5 Currency Multiplier <br>  (+0.1 for every VIP in the game) <br> - VIP Room Access <br> - VIP Group Access With 2 or more VIPs <br> - VIP Exclusive Outfit"
+      String: "Benefits: <br> - 250 silver and 100 gold for first subscription <br> - 1.5 Currency Multiplier <br>  (+0.1 for every VIP in the game) <br> - VIP Room Access <br> - VIP Group Access With 2 or more VIPs <br> - VIP Exclusive Outfit"
     }
     Overrides {
       Name: "cs:SubscriptionOneTimeReward"
