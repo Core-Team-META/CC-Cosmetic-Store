@@ -385,7 +385,7 @@ function SelectNothing()
 end
 
 function UpdateEntryButton(entry, highlighted)
-
+	if entry == nil then return end -- coming from LootboxGenerator
 	 -- currently equipped
 	if entry.data.templateId == currentlyEquipped then
 		entry.price:SetColor(Color.WHITE)

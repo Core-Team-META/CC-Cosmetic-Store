@@ -94,7 +94,7 @@ Objects {
         Overrides {
           Name: "Visible"
           Enum {
-            Value: "mc:evisibilitysetting:forceoff"
+            Value: "mc:evisibilitysetting:inheritfromparent"
           }
         }
       }
@@ -165,6 +165,15 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Subscription"
+      NetReference {
+        Key: "7ede08f3287a48d89191822247dd9bf8"
+        Type {
+          Value: "mc:enetreferencetype:creatorperk"
+        }
+      }
+    }
+    Overrides {
       Name: "cs:PremiumCurrency"
       NetReference {
         Key: "94143b92be804c7488f2e56de504947c"
@@ -174,9 +183,27 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:Subscription"
+      Name: "cs:PremiumTier1"
       NetReference {
-        Key: "7ede08f3287a48d89191822247dd9bf8"
+        Key: "422c64963b874c68892824289cb086f3"
+        Type {
+          Value: "mc:enetreferencetype:creatorperk"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:PremiumTier2"
+      NetReference {
+        Key: "e4e4fd3047bb48d394515bec24e24a2b"
+        Type {
+          Value: "mc:enetreferencetype:creatorperk"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:PremiumTier3"
+      NetReference {
+        Key: "40e42d7eb30a43928f11692ddc0d918f"
         Type {
           Value: "mc:enetreferencetype:creatorperk"
         }
@@ -847,6 +874,10 @@ Objects {
       String: "money"
     }
     Overrides {
+      Name: "cs:PremiumCurrencyName"
+      String: "gold"
+    }
+    Overrides {
       Name: "cs:AutosavePurchases"
       Bool: true
     }
@@ -867,37 +898,12 @@ Objects {
       Bool: false
     }
     Overrides {
-      Name: "cs:AllowCurrencyPurchaseWithPerks"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:PremiumCurrencyName"
-      String: "gold"
-    }
-    Overrides {
-      Name: "cs:CurrencyPerPerkPurchase"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:AllowPerkExclusives"
-      Bool: true
-    }
-    Overrides {
       Name: "cs:AllowSubscriptionPurchase"
       Bool: true
     }
     Overrides {
       Name: "cs:KeepSubscriptionCosmetics"
       Bool: false
-    }
-    Overrides {
-      Name: "cs:SubscriptionPerk"
-      NetReference {
-        Key: "8f9afd6d9fd64b1bac2bc4cf639b271b"
-        Type {
-          Value: "mc:enetreferencetype:creatorperk"
-        }
-      }
     }
     Overrides {
       Name: "cs:SubscriptionName"
@@ -940,6 +946,18 @@ Objects {
       Color {
         R: 0.429999948
       }
+    }
+    Overrides {
+      Name: "cs:PremiumTier1Amount"
+      Int: 100
+    }
+    Overrides {
+      Name: "cs:PremiumTier2Amount"
+      Int: 250
+    }
+    Overrides {
+      Name: "cs:PremiumTier3Amount"
+      Int: 400
     }
   }
   Collidable_v2 {
@@ -8434,12 +8452,6 @@ Objects {
       Name: "cs:CurrencyDisplay"
       ObjectReference {
         SelfId: 15020454629687176127
-      }
-    }
-    Overrides {
-      Name: "cs:PremiumCurrency"
-      ObjectReference {
-        SelfId: 11537161061712716610
       }
     }
     Overrides {
