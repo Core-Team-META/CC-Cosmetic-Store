@@ -5,9 +5,9 @@ Objects {
   Name: "PERKS_RandomDailySaleShop"
   Transform {
     Location {
-      X: -8655
-      Y: 1240
-      Z: 860
+      X: -5565
+      Y: 4755
+      Z: 525
     }
     Rotation {
     }
