@@ -12,6 +12,19 @@
   }
 }
 Assets {
+  Id: 17736130674148047762
+  Name: "goldTier2"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "e4e4fd3047bb48d394515bec24e24a2b"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 16020038083592938182
   Name: "BG Highlighted 016"
   PlatformAssetType: 9
@@ -241,12 +254,38 @@ Assets {
   }
 }
 Assets {
+  Id: 4282027671103380318
+  Name: "goldTier3"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "40e42d7eb30a43928f11692ddc0d918f"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 2888315853894773784
   Name: "Cabinet - Upper Narrow"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_cabinet_narrow_001_cabient"
+  }
+}
+Assets {
+  Id: 2008881572446709840
+  Name: "goldTier1"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "422c64963b874c68892824289cb086f3"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
   }
 }
 Assets {

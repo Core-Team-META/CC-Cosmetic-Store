@@ -512,6 +512,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9809938118791414773
+  Name: "Frame Outlined 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid4px_019"
+  }
+}
+Assets {
   Id: 9691585235102710834
   Name: "Metal Iron 01"
   PlatformAssetType: 2
@@ -788,6 +797,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "universal_material_001"
+  }
+}
+Assets {
+  Id: 5140010342643220553
+  Name: "BG Highlighted 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_019"
   }
 }
 Assets {

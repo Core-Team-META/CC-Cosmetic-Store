@@ -99,9 +99,9 @@ function SpinTheWheel(generator, propertyName)
 		currentRotation = 360 + currentRotation
 	end
 
-	print("Desired: " .. tostring(desiredRotation))
+	--print("Desired: " .. tostring(desiredRotation))
 
-	print(currentRotation / desiredRotation)
+	--print(currentRotation / desiredRotation)
 
 	while currentRotation / desiredRotation < 0.55 or currentRotation / desiredRotation > 0.7 do
 		Task.Wait()
