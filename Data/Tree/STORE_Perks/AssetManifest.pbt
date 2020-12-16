@@ -1,13 +1,4 @@
 ﻿Assets {
-  Id: 17800783230945352439
-  Name: "BG Highlighted 009"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundHighlighted_026"
-  }
-}
-Assets {
   Id: 17167898803849830920
   Name: "Crosshair 021"
   PlatformAssetType: 9
@@ -35,30 +26,12 @@ Assets {
   }
 }
 Assets {
-  Id: 14127903040359929144
-  Name: "Frame Ring 021"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameRing_021"
-  }
-}
-Assets {
   Id: 13206135842285396679
   Name: "Emissive Glow Transparent"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_emissive_001"
-  }
-}
-Assets {
-  Id: 12195790988998704122
-  Name: "BG Flat 006"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundNoOutline_015"
   }
 }
 Assets {
@@ -80,12 +53,21 @@ Assets {
   }
 }
 Assets {
-  Id: 9809938118791414773
-  Name: "Frame Outlined 002"
+  Id: 10243469856744289204
+  Name: "BG Flat 003"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameSolid4px_019"
+    AssetId: "BackgroundNoOutline_21"
+  }
+}
+Assets {
+  Id: 10169868912819358188
+  Name: "BG Highlighted 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_021"
   }
 }
 Assets {
@@ -95,15 +77,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_012"
-  }
-}
-Assets {
-  Id: 9348743332232151709
-  Name: "Sci-fi Frame 005"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Scifi_Frame_005"
   }
 }
 Assets {
@@ -125,57 +98,12 @@ Assets {
   }
 }
 Assets {
-  Id: 8165784690113549298
-  Name: "Military Frame 005"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Military_Frame_005"
-  }
-}
-Assets {
-  Id: 7352985708368563232
-  Name: "BG Flat 004"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundNoOutline_22"
-  }
-}
-Assets {
   Id: 6185017546957884116
   Name: "2D Basic Shapes Decal"
   PlatformAssetType: 14
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "dcl_basicShapes"
-  }
-}
-Assets {
-  Id: 6011304498553849206
-  Name: "Frame Ring 1x 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameRing1x_002"
-  }
-}
-Assets {
-  Id: 5506084799444686347
-  Name: "BG Flat 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundNoOutline_019"
-  }
-}
-Assets {
-  Id: 5140010342643220553
-  Name: "BG Highlighted 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundHighlighted_019"
   }
 }
 Assets {
@@ -215,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1814707273787853473
+  Name: "BG Flat 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
   Id: 1532438403020507221
   Name: "Metal Gold 01"
   PlatformAssetType: 2
@@ -224,20 +161,11 @@ Assets {
   }
 }
 Assets {
-  Id: 988741671567447297
-  Name: "Center Arrow 010"
+  Id: 471056512243061456
+  Name: "Military Frame 008"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
-    AssetId: "CenterArrow_010"
-  }
-}
-Assets {
-  Id: 941253059835899406
-  Name: "Frame Rect 007 Wedge"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameRect_007Wedge"
+    AssetId: "UI_Military_Frame_008"
   }
 }
