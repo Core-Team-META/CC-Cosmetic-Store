@@ -59292,7 +59292,7 @@ Objects {
     }
     Overrides {
       Name: "cs:RollCost"
-      Int: 0
+      Int: 50
     }
     Overrides {
       Name: "cs:PrizeRarity"

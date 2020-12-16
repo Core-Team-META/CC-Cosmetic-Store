@@ -62,33 +62,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9136786294201978281
-  Name: "Metal Old Beaten Gold 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_gold_002"
-  }
-}
-Assets {
-  Id: 8657579299584225331
-  Name: "Callout Sparkle"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_sparkles_volume_vfx"
-  }
-}
-Assets {
-  Id: 8155994152759289014
-  Name: "Cylinder - Bottom-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_001"
-  }
-}
-Assets {
   Id: 6185017546957884116
   Name: "2D Basic Shapes Decal"
   PlatformAssetType: 14

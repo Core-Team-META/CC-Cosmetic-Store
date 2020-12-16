@@ -32,7 +32,7 @@ function GiveMoney(player, amount)
 		
 		local moneyGiven = propMoneyPerInterraction * amount * (baseMultiplier + 0.1 * CheckVIPCount())
 		
-		print(player.name .. " got " .. moneyGiven)
+		--print(player.name .. " got " .. moneyGiven)
 		
 		player:SetResource(propCurrencyResourceName, currentCurrency + moneyGiven)
 		

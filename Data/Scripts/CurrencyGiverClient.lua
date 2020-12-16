@@ -29,36 +29,28 @@ end
 function GiveMoney(trigger, player)
 	if player:IsA("Player") then
 		local baseMultiplier = 1.0
+		World.SpawnAsset(CelebrationVFX, {position = propMultiplier:GetWorldPosition() + Vector3.New(0,0, 150)})
 
-		
-		
-		if player.clientUserData.Veggies > 0 then
-			-- Spawn celebration vfx
-			World.SpawnAsset(CelebrationVFX, {position = propMultiplier:GetWorldPosition() + Vector3.New(0,0, 150)})
-
-			if player:HasPerk(propVIP) then
-				baseMultiplier = 1.5
-			end
+		if player:HasPerk(propVIP) then
+			baseMultiplier = 1.5
+		end
 			
-			local newMultiplier = baseMultiplier + 0.1 * CheckVIPCount()
+		local newMultiplier = baseMultiplier + 0.1 * CheckVIPCount()
 
-			local ui = World.SpawnAsset(propMultiplierUI, {position = player:GetWorldPosition()})
-			ui.lifeSpan = 1
-			local panel = ui:FindDescendantByName("MultiplierPanel")
-			local currency = ui:FindDescendantByName("CurrencyText")
-			local multiplier = ui:FindDescendantByName("MultiplierText")
+		local ui = World.SpawnAsset(propMultiplierUI, {position = player:GetWorldPosition()})
+		ui.lifeSpan = 1
+		local panel = ui:FindDescendantByName("MultiplierPanel")
+		local currency = ui:FindDescendantByName("CurrencyText")
+		local multiplier = ui:FindDescendantByName("MultiplierText")
 
-			currency.text = tostring(propMoneyPerInterraction * player.clientUserData.Veggies)
-			multiplier.text = "x" .. tostring(newMultiplier)
-			Events.BroadcastToServer("Give Player Money", player.clientUserData.Veggies)
-			player.clientUserData.Veggies = 0
+		currency.text = tostring(propMoneyPerInterraction)
+		multiplier.text = "x" .. tostring(newMultiplier)
+		Events.BroadcastToServer("Give Player Money", 1)
+		player.clientUserData.Veggies = 0
 
-			for i = 1, 25 do
-				panel.y = panel.y - 0.1 * i
-				Task.Wait()
-			end
-		else
-			UI.PrintToScreen("No veggies, collect some!", Color.RED)
+		for i = 1, 25 do
+			panel.y = panel.y - 0.1 * i
+			Task.Wait()
 		end
 	end
 end

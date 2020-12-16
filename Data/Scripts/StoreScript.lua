@@ -209,12 +209,6 @@ function LoadOwnedCosmeticsAndMoney(player)
 end
 
 function UpdatePlayerPremiums(player, perkRef)
-
-    if perkRef ~= subscriptionPerk and perkRef ~= currencyPerk and perkRef ~= tier1 and perkRef ~= tier2 and perkref ~= tier3 then
-    
-        return
-        
-    end
     
     print("Checking updated perk")
 
@@ -266,21 +260,19 @@ function UpdatePlayerPremiums(player, perkRef)
         currentPremiumCurrency = currentPremiumCurrency + propPremiumTier1Amount * (tier1Purchased - data.COSMETICS.tier1Granted)
         data.COSMETICS.tier1Granted = tier1Purchased
         
-         print("tier 1 purchased")
     end
     
     if tier2Purchased > data.COSMETICS.tier2Granted then
         currentPremiumCurrency = currentPremiumCurrency + propPremiumTier2Amount * (tier2Purchased - data.COSMETICS.tier2Granted)
         data.COSMETICS.tier2Granted = tier2Purchased
         
-         print("tier 2 purchased")
     end
     
     if tier3Purchased > data.COSMETICS.tier3Granted then
         currentPremiumCurrency = currentPremiumCurrency + propPremiumTier3Amount * (tier3Purchased - data.COSMETICS.tier3Granted)
         data.COSMETICS.tier3Granted = tier3Purchased
         
-         print("tier 3 purchased")
+         print(currentPremiumCurrency)
     end
     
     if not data.COSMETICS.subscribedBefore and player:HasPerk(subscriptionPerk) then
