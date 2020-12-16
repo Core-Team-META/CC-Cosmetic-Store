@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 16331102716351555170
-  Name: "PerkScriptClient"
+  Id: 995292163641422619
+  Name: "CurrencyPerkClient"
   PlatformAssetType: 3
   TextAsset {
   }

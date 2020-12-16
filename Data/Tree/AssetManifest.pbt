@@ -1,4 +1,30 @@
 ﻿Assets {
+  Id: 18151587611326519510
+  Name: "VIP"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "7ede08f3287a48d89191822247dd9bf8"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
+  Id: 17736130674148047762
+  Name: "goldTier2"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "e4e4fd3047bb48d394515bec24e24a2b"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 16020038083592938182
   Name: "BG Highlighted 016"
   PlatformAssetType: 9
@@ -68,6 +94,19 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_raw_white_001_uv"
+  }
+}
+Assets {
+  Id: 14183874296162673746
+  Name: "gold"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "94143b92be804c7488f2e56de504947c"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
   }
 }
 Assets {
@@ -215,6 +254,19 @@ Assets {
   }
 }
 Assets {
+  Id: 4282027671103380318
+  Name: "goldTier3"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "40e42d7eb30a43928f11692ddc0d918f"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 2888315853894773784
   Name: "Cabinet - Upper Narrow"
   PlatformAssetType: 1
@@ -224,12 +276,51 @@ Assets {
   }
 }
 Assets {
+  Id: 2008881572446709840
+  Name: "goldTier1"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "422c64963b874c68892824289cb086f3"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
+  Id: 1861686525114732671
+  Name: "FasterMining"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "1b3a78e5a62048ffb8258c3d2b078305"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 1814707273787853473
   Name: "BG Flat 001"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
+  Id: 1408334510890591770
+  Name: "dailyRoll"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "b97cffc8249f41f9be1ad9bdeab703fa"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
   }
 }
 Assets {

@@ -1,19 +1,10 @@
 ﻿Assets {
-  Id: 18194858692276435470
-  Name: "BG Gradient 002"
+  Id: 17800783230945352439
+  Name: "BG Highlighted 009"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundFlat_019"
-  }
-}
-Assets {
-  Id: 18026213939653472356
-  Name: "Frame Outline Thin 012"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameOutline_029"
+    AssetId: "BackgroundHighlighted_026"
   }
 }
 Assets {
@@ -26,12 +17,39 @@ Assets {
   }
 }
 Assets {
+  Id: 14127903040359929144
+  Name: "Frame Ring 021"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameRing_021"
+  }
+}
+Assets {
+  Id: 12195790988998704122
+  Name: "BG Flat 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_015"
+  }
+}
+Assets {
   Id: 9809938118791414773
   Name: "Frame Outlined 002"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameSolid4px_019"
+  }
+}
+Assets {
+  Id: 9348743332232151709
+  Name: "Sci-fi Frame 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Scifi_Frame_005"
   }
 }
 Assets {
@@ -44,12 +62,48 @@ Assets {
   }
 }
 Assets {
+  Id: 8165784690113549298
+  Name: "Military Frame 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Military_Frame_005"
+  }
+}
+Assets {
+  Id: 7352985708368563232
+  Name: "BG Flat 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_22"
+  }
+}
+Assets {
+  Id: 6011304498553849206
+  Name: "Frame Ring 1x 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameRing1x_002"
+  }
+}
+Assets {
   Id: 5506084799444686347
   Name: "BG Flat 002"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_019"
+  }
+}
+Assets {
+  Id: 5140010342643220553
+  Name: "BG Highlighted 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundHighlighted_019"
   }
 }
 Assets {
@@ -62,11 +116,20 @@ Assets {
   }
 }
 Assets {
-  Id: 3959704981855061964
-  Name: "Fantasy Frame 001"
+  Id: 988741671567447297
+  Name: "Center Arrow 010"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Frame_001"
+    AssetId: "CenterArrow_010"
+  }
+}
+Assets {
+  Id: 941253059835899406
+  Name: "Frame Rect 007 Wedge"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameRect_007Wedge"
   }
 }
