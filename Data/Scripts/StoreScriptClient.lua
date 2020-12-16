@@ -49,8 +49,6 @@ local propStoreRoot = script:GetCustomProperty("StoreRoot"):WaitForObject()
 local propCurrencyResourceName = propStoreRoot:GetCustomProperty("CurrencyResourceName")
 local propPremiumCurrencyName = propStoreRoot:GetCustomProperty("PremiumCurrencyName")
 
---local propStoreContents = propStoreRoot:GetCustomProperty("StoreContents"):WaitForObject()
---local propTagDefinitions = propStoreRoot:GetCustomProperty("TagDefinitions"):WaitForObject()
 local propStoreContentsFolderName = propStoreRoot:GetCustomProperty("StoreContentsFolderName")
 local propStoreTagsFolder = propStoreRoot:GetCustomProperty("StoreTagsFolder")
 
@@ -77,6 +75,9 @@ local propUpperZoomMarker = script:GetCustomProperty("UpperZoomMarker"):WaitForO
 local propLowerZoomMarker = script:GetCustomProperty("LowerZoomMarker"):WaitForObject()
 local propFeetZoomMarker = script:GetCustomProperty("FeetZoomMarker"):WaitForObject()
 
+local prop_CosmeticStore = script:GetCustomProperty("_CosmeticStore")
+local store = require(prop_CosmeticStore)
+
 local propUIMarkersAndPreviews = script:GetCustomProperty("UIMarkersAndPreviews"):WaitForObject()
 
 while not _G.PERKS do
@@ -91,7 +92,7 @@ local propAllowSubscriptionPurchase = propStoreRoot:GetCustomProperty("AllowSubs
 local propSubscriptionName = propStoreRoot:GetCustomProperty("SubscriptionName")
 local propSubscriptionColor = propStoreRoot:GetCustomProperty("SubscriptionColor")
 
-
+local bindingListener = nil
 
 local player = nil
 
@@ -196,6 +197,8 @@ end
 ----------------------------------------------------------------------------------------------------------------
 function ShowStore_ClientHelper()
 
+	bindingListener:Disconnect()
+
 	if propBaseUIContainer then
 		propBaseUIContainer.isEnabled = false
 	end
@@ -224,6 +227,8 @@ function ShowStore_ClientHelper()
 end
 
 function HideStore_ClientHelper()
+
+	bindingListener = player.bindingPressedEvent:Connect(OnBindingPressed)
 
 	if propBaseUIContainer then
 		propBaseUIContainer.isEnabled = true
@@ -1489,6 +1494,16 @@ function SwapMannequin(button)
 	end
 end
 
+function OnBindingPressed(player, binding)
+
+	if binding == "ability_extra_29" then
+	
+		store.ShowStore(player)
+		
+	end
+
+end
+
 ----------------------------------------------------------------------------------------------------------------
 -- COSMETIC CLEANUP ON PLAYER LEFT EVENT
 ----------------------------------------------------------------------------------------------------------------
@@ -1517,3 +1532,5 @@ propSwapMannequin.clickedEvent:Connect(SwapMannequin)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 
 InitStore()
+
+bindingListener = player.bindingPressedEvent:Connect(OnBindingPressed)

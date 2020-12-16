@@ -12601,6 +12601,12 @@ Objects {
         SelfId: 1825625024445678567
       }
     }
+    Overrides {
+      Name: "cs:_CosmeticStore"
+      AssetReference {
+        Id: 16758479113900193297
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
