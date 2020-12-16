@@ -2150,6 +2150,7 @@ Objects {
   }
   ParentId: 8881734497852450539
   ChildIds: 13272021943680158671
+  ChildIds: 10308740748918911424
   ChildIds: 15020454629687176127
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2205,14 +2206,14 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 350
+    Width: 151
     Height: 60
+    UIX: 55.6896172
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
-    UseParentWidth: true
     UseParentHeight: true
     Text {
       Label: "35000"
@@ -2222,9 +2223,9 @@ Objects {
         B: 1
         A: 1
       }
-      Size: 30
+      Size: 28
       Justification {
-        Value: "mc:etextjustify:center"
+        Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
     }
@@ -2237,6 +2238,63 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 10308740748918911424
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13484300019971717332
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 45
+    Height: 45
+    UIX: 5.41957331
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 568982993647603982
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleleft"
         }
       }
     }
@@ -5356,7 +5414,7 @@ Objects {
     Width: 395
     Height: 40
     UIX: -14.078434
-    UIY: -145.481949
+    UIY: -99.1834564
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -8008,6 +8066,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
+        R: 0.0108870687
+        G: 0.0144925397
+        B: 0.026041666
         A: 1
       }
     }
@@ -8699,7 +8760,6 @@ Objects {
         Value: "mc:eabilityaimmode:viewrelative"
       }
       AppearanceChannelingTime: 2
-      MountChannelingTime: 2
       FlipOnMultiJump: true
       CanMoveUp: true
       CanMoveDown: true

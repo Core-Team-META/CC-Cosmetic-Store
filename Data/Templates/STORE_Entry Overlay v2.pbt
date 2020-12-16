@@ -408,7 +408,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Height: 80
+          Height: 46
           UIY: -0.620049596
           RenderTransformPivot {
             Anchor {
@@ -563,6 +563,7 @@
           }
         }
         ParentId: 2689543270797781020
+        ChildIds: 1159640402045718050
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -572,6 +573,7 @@
         Control {
           Width: -37
           Height: -8
+          UIX: 28.1631107
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -590,7 +592,7 @@
             }
             Size: 14
             Justification {
-              Value: "mc:etextjustify:right"
+              Value: "mc:etextjustify:left"
             }
             AutoWrapText: true
           }
@@ -603,6 +605,65 @@
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 1159640402045718050
+        Name: "Coin Icon"
+        Transform {
+          Location {
+            Y: -23650
+            Z: -2980
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6373441915489367869
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 32
+          Height: 32
+          UIX: -37.1982193
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 568982993647603982
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middleleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middleleft"
               }
             }
           }
@@ -684,7 +745,7 @@
         Control {
           Width: -6
           Height: 4
-          UIY: -76.7398071
+          UIY: -44.2828178
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1002,6 +1063,15 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "BackgroundHighlighted_020"
+      }
+    }
+    Assets {
+      Id: 568982993647603982
+      Name: "Fantasy Coins 006"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Equip_Coins_006"
       }
     }
     Assets {

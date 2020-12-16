@@ -241,3 +241,12 @@ Assets {
     AssetId: "sm_flower_daisy_001"
   }
 }
+Assets {
+  Id: 568982993647603982
+  Name: "Fantasy Coins 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Coins_006"
+  }
+}
