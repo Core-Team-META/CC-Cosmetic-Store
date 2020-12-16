@@ -1115,6 +1115,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11493331232297119893
+  Name: "Text 04: L"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F7_Text_011"
+  }
+}
+Assets {
   Id: 11478803472724618344
   Name: "Arch Fancy 3m"
   PlatformAssetType: 1
@@ -1691,6 +1700,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7290464541914251187
+  Name: "Text 04: E"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F7_Text_004"
+  }
+}
+Assets {
   Id: 7175198404769298415
   Name: "Gem - Radiant Polished"
   PlatformAssetType: 1
@@ -2060,6 +2078,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5382192199616928500
+  Name: "Text 04: G"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F7_Text_006"
+  }
+}
+Assets {
   Id: 5372950398742022444
   Name: "Text 04: A"
   PlatformAssetType: 1
@@ -2255,6 +2282,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "plastic_shiny_001"
+  }
+}
+Assets {
+  Id: 3921449940594360561
+  Name: "Text 04: C"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F7_Text_002"
   }
 }
 Assets {
@@ -2642,6 +2678,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_gold_002"
+  }
+}
+Assets {
+  Id: 988043007604179674
+  Name: "Text 04: X"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F7_Text_023"
   }
 }
 Assets {

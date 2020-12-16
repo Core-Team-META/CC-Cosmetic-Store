@@ -15,7 +15,7 @@
             Z: 1.47772145
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 8739685216168499133
         ChildIds: 13407878165347069782
         ChildIds: 8547908211886988340
         ChildIds: 5031541496215265298
@@ -104,7 +104,6 @@
         ChildIds: 17401510187932140376
         ChildIds: 3310920861020741819
         ChildIds: 16200496461893636409
-        ChildIds: 1996941472239193728
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -120,15 +119,15 @@
         Name: "Heading World Text"
         Transform {
           Location {
-            Z: 111.356903
+            Z: 111.356918
           }
           Rotation {
             Yaw: -90
           }
           Scale {
-            X: 1.65868819
-            Y: 1.65868819
-            Z: 1.81026351
+            X: 1.25948262
+            Y: 1.25948262
+            Z: 1.37457693
           }
         }
         ParentId: 8547908211886988340
@@ -139,8 +138,11 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Text {
-          Text: "PERK NAME"
+          Text: "VIP MEMBERSHIP"
           Color {
+            R: 1
+            G: 1
+            B: 1
             A: 1
           }
           HorizontalSize: 1
@@ -158,16 +160,16 @@
         Name: "World Text"
         Transform {
           Location {
-            X: 9.57562879e-05
-            Z: 79.0784607
+            X: 1.68402874
+            Z: 88.7481918
           }
           Rotation {
             Yaw: -90
           }
           Scale {
-            X: 0.680849254
-            Y: 0.680849254
-            Z: 0.794479787
+            X: 0.589806616
+            Y: 0.589806616
+            Z: 0.688242495
           }
         }
         ParentId: 8547908211886988340
@@ -178,8 +180,11 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Text {
-          Text: "-info about this perk"
+          Text: "Become a VIP and get"
           Color {
+            R: 1
+            G: 1
+            B: 1
             A: 1
           }
           HorizontalSize: 1
@@ -197,15 +202,16 @@
         Name: "World Text"
         Transform {
           Location {
-            Z: 61.0545425
+            X: 110.400536
+            Z: 61.0545502
           }
           Rotation {
             Yaw: -90
           }
           Scale {
-            X: 0.680849254
-            Y: 0.680849254
-            Z: 0.794479787
+            X: 0.638516605
+            Y: 0.638516605
+            Z: 0.745081961
           }
         }
         ParentId: 8547908211886988340
@@ -216,14 +222,17 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Text {
-          Text: "-more info about this perk"
+          Text: "Instant access to our VIP Lounge"
           Color {
+            R: 1
+            G: 1
+            B: 1
             A: 1
           }
           HorizontalSize: 1
           VerticalSize: 1
           HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:center"
+            Value: "mc:ecoretexthorizontalalign:left"
           }
           VerticalAlignment {
             Value: "mc:ecoretextverticalalign:center"
@@ -235,15 +244,16 @@
         Name: "World Text"
         Transform {
           Location {
-            Z: 40.9246101
+            X: 110.400536
+            Z: 40.9246
           }
           Rotation {
             Yaw: -90
           }
           Scale {
-            X: 0.680849254
-            Y: 0.680849254
-            Z: 0.794479787
+            X: 0.638516605
+            Y: 0.638516605
+            Z: 0.745081961
           }
         }
         ParentId: 8547908211886988340
@@ -254,14 +264,17 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Text {
-          Text: "-even more info about this perk"
+          Text: "Access to the VIP Club"
           Color {
+            R: 1
+            G: 1
+            B: 1
             A: 1
           }
           HorizontalSize: 1
           VerticalSize: 1
           HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:center"
+            Value: "mc:ecoretexthorizontalalign:left"
           }
           VerticalAlignment {
             Value: "mc:ecoretextverticalalign:center"
@@ -273,15 +286,16 @@
         Name: "World Text"
         Transform {
           Location {
-            Z: 19.5190582
+            X: 110.400536
+            Z: 19.5190506
           }
           Rotation {
             Yaw: -90
           }
           Scale {
-            X: 0.680849254
-            Y: 0.680849254
-            Z: 0.794479787
+            X: 0.638516605
+            Y: 0.638516605
+            Z: 0.745081961
           }
         }
         ParentId: 8547908211886988340
@@ -292,51 +306,17 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Text {
-          Text: "-info about this perk"
+          Text: "(requires 2 VIP members online)"
           Color {
+            R: 1
+            G: 1
+            B: 1
             A: 1
           }
           HorizontalSize: 1
           VerticalSize: 1
           HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:center"
-          }
-          VerticalAlignment {
-            Value: "mc:ecoretextverticalalign:center"
-          }
-        }
-      }
-      Objects {
-        Id: 1996941472239193728
-        Name: "World Text"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Yaw: -90
-          }
-          Scale {
-            X: 0.680849254
-            Y: 0.680849254
-            Z: 0.794479787
-          }
-        }
-        ParentId: 8547908211886988340
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Text {
-          Text: "-lastly, info about this perk"
-          Color {
-            A: 1
-          }
-          HorizontalSize: 1
-          VerticalSize: 1
-          HorizontalAlignment {
-            Value: "mc:ecoretexthorizontalalign:center"
+            Value: "mc:ecoretexthorizontalalign:left"
           }
           VerticalAlignment {
             Value: "mc:ecoretextverticalalign:center"
@@ -475,12 +455,12 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 8425111237879329054
+              Id: 2268092006724167310
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
+            Bool: true
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
@@ -489,6 +469,15 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
             Float: 5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.046875
+              G: 0.046875
+              B: 0.046875
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -700,12 +689,12 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 8425111237879329054
+              Id: 2268092006724167310
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
+            Bool: true
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
@@ -714,6 +703,15 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
             Float: 5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.046875
+              G: 0.046875
+              B: 0.046875
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -846,12 +844,21 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 8425111237879329054
+              Id: 2268092006724167310
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
+            Bool: true
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.046875
+              G: 0.046875
+              B: 0.046875
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -903,6 +910,12 @@
               Id: 16171957045391883906
             }
           }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              A: 1
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -951,6 +964,14 @@
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
               Id: 11974361906548255645
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.5
+              G: 0.278320879
+              A: 0.193
             }
           }
         }

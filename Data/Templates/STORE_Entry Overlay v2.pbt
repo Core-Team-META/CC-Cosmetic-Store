@@ -60,7 +60,7 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
           Width: 245
@@ -644,7 +644,7 @@
           }
           Image {
             Brush {
-              Id: 568982993647603982
+              Id: 636933061759506446
             }
             Color {
               R: 1
@@ -1066,12 +1066,12 @@
       }
     }
     Assets {
-      Id: 568982993647603982
-      Name: "Fantasy Coins 006"
+      Id: 636933061759506446
+      Name: "Fantasy Coins 003"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Equip_Coins_006"
+        AssetId: "UI_Fantasy_Equip_Coins_003"
       }
     }
     Assets {
