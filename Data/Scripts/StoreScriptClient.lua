@@ -92,6 +92,8 @@ local propAllowSubscriptionPurchase = propStoreRoot:GetCustomProperty("AllowSubs
 local propSubscriptionName = propStoreRoot:GetCustomProperty("SubscriptionName")
 local propSubscriptionColor = propStoreRoot:GetCustomProperty("SubscriptionColor")
 
+local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
+
 local bindingListener = nil
 
 local player = nil
@@ -251,9 +253,14 @@ end
 
 function HideStore()
 	HideStore_ClientHelper(player)
+	
+	--[[
 	while Events.BroadcastToServer("HIDESTORE_SERVER", player) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 		Task.Wait()
 	end
+	]]
+	
+	ReliableEvents.BroadcastToServer("HIDESTORE_SERVER", player) 
 end
 
 ----------------------------------------------------------------------------------------------------------------
@@ -326,9 +333,12 @@ function StoreItemClicked(button)
 				if player:HasPerk(subscriptionPerkRef) then
 					expectedNewCurrency = currency
 					controlsLocked = true
+					--[[
 					while Events.BroadcastToServer("BUYCOSMETIC", currentlySelected.data.id, true, 0) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 						Task.Wait(0.1)
 					end
+					]]
+					ReliableEvents.BroadcastToServer("BUYCOSMETIC", currentlySelected.data.id, true, 0) 
 				else 
 					currentlySelected = nil
 					return
@@ -340,9 +350,12 @@ function StoreItemClicked(button)
 			else
 				expectedNewCurrency = currency - currentlySelected.data.cost
 				controlsLocked = true
+
 				while Events.BroadcastToServer("BUYCOSMETIC", currentlySelected.data.id, false, currentlySelected.data.cost) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 					Task.Wait(0.1)
 				end
+				
+				--ReliableEvents.BroadcastToServer("BUYCOSMETIC", currentlySelected.data.id, false, currentlySelected.data.cost)
 			end
 		end
 	end
@@ -475,7 +488,7 @@ end
 ----------------------------------------------------------------------------------------------------------------
 
 function BuyCosmeticResponse(storeId, success)
-	print(player.name .. " Bought cosmetic " .. storeId)
+	--print(player.name .. " Bought cosmetic " .. storeId)
 	if success then
 		OwnedCosmetics[storeId] = true
 	end
@@ -581,16 +594,22 @@ end
 
 function ApplyCosmetic(entry)
 	if entry == nil then
+		--[[
 		while Events.BroadcastToServer("REQUESTCOSMETIC", nil, nil, true)  == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 			Task.Wait()
 		end
+		]]
+		ReliableEvents.BroadcastToServer("REQUESTCOSMETIC", nil, nil, true)
 		return
 	end
 	--print("Requesting" .. entry.data.id)
 	--print(entry.data.visible)
+	--[[
 	while Events.BroadcastToServer("REQUESTCOSMETIC", entry.data.templateId, entry.data.id, entry.data.visible)  == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 		Task.Wait()
 	end
+	]]
+	ReliableEvents.BroadcastToServer("REQUESTCOSMETIC", entry.data.templateId, entry.data.id, entry.data.visible)
 end
 
 function ApplyCosmeticHelper(playerId, templateId)
@@ -1080,9 +1099,12 @@ function InitStore()
 	end
 	
 	--print("Requesting other player costume data")
+	--[[
 	while Events.BroadcastToServer("REQUST_OTHER_COSMETICS")  == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 		Task.Wait()
 	end
+	]]
+	ReliableEvents.BroadcastToServer("REQUST_OTHER_COSMETICS")
 end
 
 ----------------------------------------------------------------------------------------------------------------

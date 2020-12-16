@@ -1,6 +1,8 @@
 ﻿local randomDailySaleShop = script:GetCustomProperty("PERKS_RandomDailySaleShop"):WaitForObject()
 local storeContents = script:GetCustomProperty("STORE_StoreContents"):WaitForObject()
 
+local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
+
 while not _G.PERKS do
 
 	Task.Wait()
@@ -39,7 +41,7 @@ end
 function SetupShop(player)
 	--player.perkChangedEvent:Connect(ReRoll)
 
-	print("setting up  daily shop")
+	--print("setting up  daily shop")
 
 	local now = os.date("!*t", os.time())
 	local thisMonth = now.month
@@ -52,7 +54,7 @@ function SetupShop(player)
 	Initialize(player)
 
 	if data.DAILY == nil then
-		print("new player")
+		--print("new player")
 
 		data.DAILY = {}
 
@@ -65,7 +67,7 @@ function SetupShop(player)
 
 		data.DAILY.items = selecteditems
 	elseif data.DAILY.latestDay ~= today or data.DAILY.latestMonth ~= thisMonth then
-		print("old player, new day")
+		--print("old player, new day")
 
 		data.DAILY.latestDay = today
 		data.DAILY.latestMonth = thisMonth
@@ -78,7 +80,7 @@ function SetupShop(player)
 	end
 
 	Storage.SetPlayerData(player, data)
-
+	--[[
 	while Events.BroadcastToPlayer(
 		player,
 		"SETUPDAILYSHOP",
@@ -114,7 +116,13 @@ function SetupShop(player)
 	) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 		Task.Wait(0.1)
 	end
-
+	]]
+	
+	
+	ReliableEvents.BroadcastToPlayer(player,"SETUPDAILYSHOP", 1, data.DAILY.items[1], data.DAILY.items[2], data.DAILY.items[3])  
+	ReliableEvents.BroadcastToPlayer(player,"SETUPDAILYSHOP", 2, data.DAILY.items[4], data.DAILY.items[5], data.DAILY.items[6]) 
+	ReliableEvents.BroadcastToPlayer(player,"SETUPDAILYSHOP", 3, data.DAILY.items[7], data.DAILY.items[8], data.DAILY.items[9]) 
+	
 	--player.bindingPressedEvent:Connect(ReRoll)
 end
 
@@ -171,17 +179,17 @@ function RollSale(player)
 		table.remove(rarityTable[player.id][chosenRarity][2], secondRoll)
 	end
 
-	print("Checking " .. reward:GetCustomProperty("ID"))
+	--print("Checking " .. reward:GetCustomProperty("ID"))
 
 	if player:GetResource("COSMETIC_" .. reward:GetCustomProperty("ID")) == 1 then
-		print("PlayerAlreadyOwnsThis")
+		--print("PlayerAlreadyOwnsThis")
 
 		local newReward = RollSale(player)
 
 		return newReward
 	end
 
-	print("Reward: " .. reward:GetCustomProperty("Name"))
+	--print("Reward: " .. reward:GetCustomProperty("Name"))
 	local muid = reward:GetCustomProperty("MUID")
 	local tempTbl = StringSplit(muid, ":")
 
@@ -239,6 +247,8 @@ function ReRoll(player)
 	data.DAILY.items = selecteditems
 
 	Storage.SetPlayerData(player, data)
+	
+	--[[
 
 	while Events.BroadcastToPlayer(
 		player,
@@ -275,6 +285,11 @@ function ReRoll(player)
 	) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 		Task.Wait(0.1)
 	end
+	]]
+	ReliableEvents.BroadcastToPlayer(player, "SETUPDAILYSHOP", 1, data.DAILY.items[1], data.DAILY.items[2], data.DAILY.items[3])  
+	ReliableEvents.BroadcastToPlayer(player, "SETUPDAILYSHOP", 2, data.DAILY.items[4], data.DAILY.items[5], data.DAILY.items[6]) 
+	ReliableEvents.BroadcastToPlayer(player, "SETUPDAILYSHOP", 3, data.DAILY.items[7], data.DAILY.items[8], data.DAILY.items[9]) 
+	
 end
 
 function OnAcceptPurchase(player, item)
@@ -304,6 +319,8 @@ function OnAcceptPurchase(player, item)
 		while Events.Broadcast("BUYCOSMETIC", player, itemId, false, cost) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 			Task.Wait(0.1)
 		end
+		
+		--ReliableEvents.Broadcast("BUYCOSMETIC", 1, player, itemId, false, cost) 
 	end
 end
 

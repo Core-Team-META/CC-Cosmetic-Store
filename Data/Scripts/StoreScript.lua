@@ -29,6 +29,8 @@ local propPremiumCurrencyName = propStoreRoot:GetCustomProperty("PremiumCurrency
 local propSubscriptionOneTimeReward = propStoreRoot:GetCustomProperty("SubscriptionOneTimeReward")
 local propSubscriptionOneTimePremiumReward = propStoreRoot:GetCustomProperty("SubscriptionOneTimePremiumReward")
 
+local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
+
 local playerOwnedCosmetics = {}
 local playerOwnedSubscriptionCosmetics = {}
 
@@ -87,11 +89,15 @@ function ApplyCosmetic(player, templateId, cosmeticId, visible)
 	end
 
 	player:SetVisibility(visible, false)
-
+	
+	--[[
 	while Events.BroadcastToAllPlayers("APPLYCOSMETIC", player.id, templateId) ==
 		BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 		Task.Wait()
 	end
+	]]
+	
+	ReliableEvents.BroadcastToAllPlayers("APPLYCOSMETIC", player.id, templateId)  
 
 	AppliedCosmetics[player.id] = templateId
 	AppliedCosmeticsTemplate[player.id] = templateId
@@ -120,11 +126,14 @@ function BuyCosmetic(player, templateId, isPartOfSubscription, cost)
 		playerOwnedCosmetics[player.id] = {}
 	end
 	playerOwnedCosmetics[player.id][templateId] = true
-
+	
+	--[[
 	while Events.BroadcastToPlayer(player, "BUYCOSMETIC_RESPONSE", templateId, true) ==
 		BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 		Task.Wait()
 	end
+	]]
+	ReliableEvents.BroadcastToPlayer(player, "BUYCOSMETIC_RESPONSE", templateId, true)  	
 end
 
 function IsCosmeticName(rscName)
@@ -209,8 +218,6 @@ function LoadOwnedCosmeticsAndMoney(player)
 end
 
 function UpdatePlayerPremiums(player, perkRef)
-    
-    print("Checking updated perk")
 
     local data = Storage.GetPlayerData(player)
     
@@ -327,18 +334,23 @@ function ResetPurchases(player)
 end
 
 function OnRequestCosmetics(player)
-	print("Requested costume data!")
+	--print("Requested costume data!")
 	for k, v in pairs(Game:GetPlayers()) do
-		print("Checking data for " .. v.id)
+		--print("Checking data for " .. v.id)
 		if AppliedCosmetics[v.id] ~= nil then
-			print("Sending data for " .. v.id)
+			--print("Sending data for " .. v.id)
+			
+			--[[
 			while Events.BroadcastToPlayer(player, "APPLYCOSMETIC", v.id, AppliedCosmetics[v.id]) ==
 				BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 				Task.Wait()
 			end
+			]]
+			
+			ReliableEvents.BroadcastToPlayer(player, "APPLYCOSMETIC", v.id, AppliedCosmetics[v.id])  	
 		end
 	end
-	print("pairs:")
+	--print("pairs:")
 	for k, v in pairs(AppliedCosmetics) do
 		print(k, v)
 	end

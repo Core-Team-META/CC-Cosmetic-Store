@@ -113,7 +113,7 @@ Objects {
   Name: "Human Guy 2"
   Transform {
     Location {
-      X: -2012.19177
+      X: -1975
       Y: 5609.94287
       Z: 118.909546
     }
