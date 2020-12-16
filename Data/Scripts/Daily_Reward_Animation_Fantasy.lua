@@ -414,4 +414,4 @@ while Events.BroadcastToServer("DAILYSHOPREADY") == BroadcastEventResultCode.EXC
 	Task.Wait()
 end
 
-PlayPopUp()
+--PlayPopUp()
