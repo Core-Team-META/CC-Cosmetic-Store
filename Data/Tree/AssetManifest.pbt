@@ -1,4 +1,30 @@
 ﻿Assets {
+  Id: 18334694903408837949
+  Name: "dailyRoll"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "b97cffc8249f41f9be1ad9bdeab703fa"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
+  Id: 17983850056818289842
+  Name: "FasterMining"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "1b3a78e5a62048ffb8258c3d2b078305"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 16171957045391883906
   Name: "Plastic Shiny"
   PlatformAssetType: 2
@@ -170,6 +196,19 @@ Assets {
   }
 }
 Assets {
+  Id: 10405917537807605245
+  Name: "goldTier1"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "422c64963b874c68892824289cb086f3"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 9933879321394361768
   Name: "BG Highlighted 015"
   PlatformAssetType: 9
@@ -242,6 +281,19 @@ Assets {
   }
 }
 Assets {
+  Id: 8013538572287702583
+  Name: "VIP"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "7ede08f3287a48d89191822247dd9bf8"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 7809958927931360774
   Name: "BG Flat 016"
   PlatformAssetType: 9
@@ -251,12 +303,38 @@ Assets {
   }
 }
 Assets {
+  Id: 7564887653399428314
+  Name: "goldTier3"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "40e42d7eb30a43928f11692ddc0d918f"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 7331838309352431776
   Name: "Curtains Straight"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_curtain_02"
+  }
+}
+Assets {
+  Id: 6594812227563109939
+  Name: "gold"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "94143b92be804c7488f2e56de504947c"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
   }
 }
 Assets {
@@ -302,6 +380,19 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_cabinet_narrow_001_cabient"
+  }
+}
+Assets {
+  Id: 2023347315702358962
+  Name: "goldTier2"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "e4e4fd3047bb48d394515bec24e24a2b"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
   }
 }
 Assets {

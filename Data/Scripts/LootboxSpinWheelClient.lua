@@ -61,7 +61,7 @@ function SpinTheWheel(generator, propertyName)
 	UI.SetCursorVisible(false)
 	localPlayer:SetLookWorldRotation(currentView)
 
-	rollInProgress = true
+	--rollInProgress = true
 
 	local sections = propWheel:FindDescendantsByName(targetRarity)
 
@@ -125,14 +125,17 @@ function SpinTheWheel(generator, propertyName)
 	--Ease3D.EaseRotation(propWheel, Rotation.New(0, 0, 360 - selectedSection:GetRotation().z), currentRotation/desiredRotation * 2, Ease3D.EasingEquation.QUINTIC, Ease3D.EasingDirection.OUT)
 
 	Task.Wait((currentRotation / desiredRotation * 2) + 2)
+	
+	--[[
 
 	Task.Wait(14)
 
 	listener = propTrigger.interactedEvent:Connect(Confirmation)
 
 	rollInProgress = false
+	]]
 end
-
+--[[
 function Confirmation(trigger, player)
 	if player ~= localPlayer then
 		return
@@ -202,7 +205,7 @@ function EmergencyExit()
 	UI.SetCursorVisible(false)
 	listener = propTrigger.interactedEvent:Connect(Confirmation)
 end
-
+]]
 function Tick(dt)
 	totalDt = totalDt + dt
 
@@ -232,12 +235,14 @@ function Tick(dt)
 		zeroedBefore = true
 	end
 end
-
+--[[
 propTrigger.beginOverlapEvent:Connect(Confirmation)
 propTrigger.endOverlapEvent:Connect(EmergencyExit)
-
+]]
 propLootboxGenerator.networkedPropertyChangedEvent:Connect(SpinTheWheel)
 
+--[[
 Events.Connect("WheelExit", EmergencyExit)
 propYesButton.clickedEvent:Connect(Exit)
 propNoButton.clickedEvent:Connect(Exit)
+]]
