@@ -89,6 +89,19 @@ Objects {
       }
     }
     ParameterOverrideMap {
+      key: 3962558708158769065
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            G: 0.117449783
+            B: 0.243000016
+            A: 0.509
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 7713661820209391067
       value {
         Overrides {
@@ -130,6 +143,35 @@ Objects {
             Type {
               Value: "mc:enetreferencetype:creatorperk"
             }
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14204209428387008125
+      value {
+        Overrides {
+          Name: "bp:Color"
+          Color {
+            G: 0.117449723
+            B: 0.243000016
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "bp:Spiral Color"
+          Color {
+            G: 0.0744331554
+            B: 0.154000014
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "bp:Ground Element Color"
+          Color {
+            G: 0.0468832217
+            B: 0.097
+            A: 1
           }
         }
       }

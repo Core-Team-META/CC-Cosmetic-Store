@@ -81,7 +81,7 @@ function OnApplyReward(player, amount, npcId)
 		warn("Somehow we requested a reward from an NPC who wasn't done?")
 		print(npcId, npcStates[player.id][npcId])
 	else
-		player:AddResource("Gold", amount)
+		player:AddResource("money", amount)
 		npcStates[player.id][npcId] = STATE_READY
 	end
 end

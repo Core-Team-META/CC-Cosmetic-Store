@@ -14,10 +14,10 @@ function AddCommas(amount)
 end
 
 function UpdateGoldReadout(player, resource, amt)
-	if resource ~= "Gold" then return end
+	if resource ~= "money" then return end
 	
 	if amt == nil then
-		amt = player:GetResource("Gold")
+		amt = player:GetResource("money")
 	end
 	propWorldText.text = "$" .. AddCommas(amt)
 	propVFX:Play()
@@ -26,4 +26,4 @@ end
 
 
 player.resourceChangedEvent:Connect(UpdateGoldReadout)
-UpdateGoldReadout(player, "Gold")
+UpdateGoldReadout(player, "money")

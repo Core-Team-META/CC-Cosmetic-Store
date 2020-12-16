@@ -53,6 +53,9 @@ local bgImage = script:GetCustomProperty("BGImage"):WaitForObject()
 
 local propUIPerkPurchaseButton = script:GetCustomProperty("UIPerkPurchaseButton"):WaitForObject()
 
+local propTrigger = script:GetCustomProperty("Trigger"):WaitForObject()
+
+
 propUIPerkPurchaseButton:SetPerkReference(dailyRollPerk)
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
@@ -65,7 +68,37 @@ local displayedRewards = REWARDS:GetChildren()
 local displayIds = {}
 
 function OnBindingPressed(player, binding)
-	if binding == BINDING and not viewToggle then
+	if player ~= LOCAL_PLAYER then
+	
+		return
+		
+	end
+	
+	if binding == BINDING_ANIM and viewToggle then
+	
+		print("rerolling")
+	
+		while Events.BroadcastToServer("REROLL") == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
+			Task.Wait(0.1)
+		end
+	
+	elseif binding == "ability_primary" and viewToggle then
+		CheckSelection()
+	elseif binding == "ability_extra_33" and viewToggle then
+		OnInterraction(propTrigger, player)
+	end
+	
+end
+
+function OnInterraction(trigger, player)
+	if player ~= LOCAL_PLAYER then
+	
+		return
+		
+	end
+	
+
+	if not viewToggle then
 		player:SetOverrideCamera(CAMERA)
 		UI.SetCursorVisible(true)
 		
@@ -73,7 +106,9 @@ function OnBindingPressed(player, binding)
 		
 		viewToggle = true
 		
-	elseif binding == BINDING then
+		propTrigger.isEnabled = false
+		
+	else
 		player:ClearOverrideCamera()
 		UI.SetCursorVisible(false)
 		
@@ -83,9 +118,11 @@ function OnBindingPressed(player, binding)
 		
 		infoPanel.visibility = Visibility.FORCE_OFF
 		
-	elseif binding == "ability_primary" and viewToggle then
-		CheckSelection()
+		Task.Wait(0.5)
+		
+		propTrigger.isEnabled = true
 	end
+
 end
 
 function CheckSelection()
@@ -359,6 +396,7 @@ function PlayPopUp()
 
 end
 
+propTrigger.interactedEvent:Connect(OnInterraction)
 LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
 
 Events.Connect("SETUPDAILYSHOP", DiplayItems)

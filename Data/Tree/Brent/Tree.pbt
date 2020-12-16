@@ -5,11 +5,12 @@ Objects {
   Name: "PERKS_RandomDailySaleShop"
   Transform {
     Location {
-      X: -5565
-      Y: 4755
+      X: 7355
+      Y: 3325
       Z: 525
     }
     Rotation {
+      Yaw: 90
     }
     Scale {
       X: 1
@@ -19,6 +20,7 @@ Objects {
   }
   ParentId: 5886917377158341065
   ChildIds: 14122498652259676094
+  ChildIds: 8006428016214945128
   ChildIds: 3334601111219074385
   ChildIds: 13486834369584544925
   ChildIds: 17838574404898326113
@@ -63,6 +65,7 @@ Objects {
     }
   }
   ParentId: 2867906046164362672
+  ChildIds: 7621610798268652802
   ChildIds: 11094384446064237222
   ChildIds: 7712850458408112184
   ChildIds: 17827965472973265724
@@ -81,7 +84,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Binding_Anim"
-      String: "ability_extra_22"
+      String: "ability_extra_23"
     }
   }
   Collidable_v2 {
@@ -5818,7 +5821,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
     RenderTransformPivot {
@@ -6109,7 +6112,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     Width: 145
@@ -6843,6 +6846,12 @@ Objects {
         SelfId: 5292953916387583047
       }
     }
+    Overrides {
+      Name: "cs:Trigger"
+      ObjectReference {
+        SelfId: 7621610798268652802
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -6860,6 +6869,42 @@ Objects {
     SubobjectId: 13477130470728384587
     InstanceId: 11393221869369772317
     TemplateId: 15976951343887126090
+  }
+}
+Objects {
+  Id: 7621610798268652802
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 2.82133751e-05
+      Y: -473.341766
+      Z: -452.148163
+    }
+    Rotation {
+      Yaw: -89.9999771
+    }
+    Scale {
+      X: 8.76037
+      Y: 22.4661121
+      Z: 5.36925936
+    }
+  }
+  ParentId: 17838574404898326113
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
   }
 }
 Objects {
@@ -8010,6 +8055,48 @@ Objects {
     }
   }
   ParentId: 3334601111219074385
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 8006428016214945128
+  Name: "Collision Box"
+  Transform {
+    Location {
+      X: -249.999969
+      Y: -1.52587891e-05
+      Z: -900
+    }
+    Rotation {
+      Yaw: -90
+    }
+    Scale {
+      X: 20.8000011
+      Y: 9.79999733
+      Z: 14.3
+    }
+  }
+  ParentId: 2867906046164362672
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

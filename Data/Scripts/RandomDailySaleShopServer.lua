@@ -37,7 +37,7 @@ function Initialize(player)
 end
 
 function SetupShop(player)
-	player.perkChangedEvent:Connect(ReRoll)
+	--player.perkChangedEvent:Connect(ReRoll)
 
 	print("setting up  daily shop")
 
@@ -115,7 +115,7 @@ function SetupShop(player)
 		Task.Wait(0.1)
 	end
 
-	player.bindingPressedEvent:Connect(ReRoll)
+	--player.bindingPressedEvent:Connect(ReRoll)
 end
 
 function RollSale(player)
@@ -188,12 +188,13 @@ function RollSale(player)
 	return tempTbl[1]
 end
 
-function ReRoll(player, perk)
+function ReRoll(player)
 
 	local selecteditems = {}
 
 	local data = Storage.GetPlayerData(player)
-
+	
+	--[[
 
 	if perk ~= dailyRollPerk then
 	
@@ -202,10 +203,13 @@ function ReRoll(player, perk)
 	end
 	
 	Task.Wait(1)
+	]]
 
 	local now = os.date("!*t", os.time())
 	local thisMonth = now.month
 	local today = now.day
+	
+		--[[
 	
 	if not data.DAILY.grantedRolls then
 	
@@ -221,9 +225,11 @@ function ReRoll(player, perk)
 	
 	data.DAILY.grantedRolls = player:GetPerkCount(dailyRollPerk)
 	
+		]]
+	
 	data.DAILY.latestDay = today
 	data.DAILY.latestMonth = thisMonth
-
+	
 	Initialize(player)
 
 	for i = 1, 9 do
@@ -296,10 +302,11 @@ function OnAcceptPurchase(player, item)
 		print("Giving Reward! ")
 
 		while Events.Broadcast("BUYCOSMETIC", player, itemId, false, cost) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
-			Task.Wait()
+			Task.Wait(0.1)
 		end
 	end
 end
 
+Events.ConnectForPlayer("REROLL", ReRoll)
 Events.ConnectForPlayer("DAILYSHOPREADY", SetupShop)
 Events.ConnectForPlayer("APLAYERPURCHASED", OnAcceptPurchase)
