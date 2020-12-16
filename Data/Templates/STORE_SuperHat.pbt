@@ -370,7 +370,7 @@
       }
       Objects {
         Id: 12472552629764693485
-        Name: "store_graphci"
+        Name: "store_graphic"
         Transform {
           Location {
           }
@@ -400,18 +400,16 @@
         Transform {
           Location {
             X: -4.9680891
-            Y: -2.44918823
-            Z: 24.0246735
+            Y: -13.0321321
+            Z: -7.57979393
           }
           Rotation {
-            Pitch: -54.4981384
-            Yaw: -17.6621399
-            Roll: 21.3615322
+            Pitch: -63.5220032
           }
           Scale {
-            X: 0.927416325
-            Y: 0.927416325
-            Z: 0.927416325
+            X: 2.01865029
+            Y: 2.01865029
+            Z: 2.01865029
           }
         }
         ParentId: 12472552629764693485
