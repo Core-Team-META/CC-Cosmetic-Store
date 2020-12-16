@@ -1,6 +1,417 @@
 ﻿Name: "STORE_Perks"
 RootId: 4296421264996771920
 Objects {
+  Id: 15198001858659635812
+  Name: "PERKS_SubscriptionShopFree"
+  Transform {
+    Location {
+      X: -1525
+      Y: 4400
+      Z: 55
+    }
+    Rotation {
+      Yaw: -179.999969
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4296421264996771920
+  ChildIds: 1418625268618716195
+  ChildIds: 14337119079845014468
+  ChildIds: 6401656059907085278
+  ChildIds: 10062374377571513167
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 3251010835081095038
+    SubobjectId: 7872104506207684693
+    InstanceId: 6248374133317614710
+    TemplateId: 399464744490226404
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 10062374377571513167
+  Name: "World Text"
+  Transform {
+    Location {
+      X: -134.999969
+      Y: 45.0000954
+      Z: 70
+    }
+    Rotation {
+      Yaw: 90
+    }
+    Scale {
+      X: 1.29999983
+      Y: 1.29999983
+      Z: 1.29999983
+    }
+  }
+  ParentId: 15198001858659635812
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Text {
+    Text: "(GET FREE VIP HERE)"
+    Color {
+      R: 1
+      G: 1
+      B: 1
+      A: 1
+    }
+    HorizontalSize: 1
+    VerticalSize: 1
+    HorizontalAlignment {
+      Value: "mc:ecoretexthorizontalalign:left"
+    }
+    VerticalAlignment {
+      Value: "mc:ecoretextverticalalign:center"
+    }
+  }
+  InstanceHistory {
+    SelfId: 13897286704891571967
+    SubobjectId: 9295333796690035156
+    InstanceId: 6248374133317614710
+    TemplateId: 399464744490226404
+  }
+}
+Objects {
+  Id: 6401656059907085278
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15198001858659635812
+  ChildIds: 10287161469882193406
+  ChildIds: 7970554454208588624
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 11861987956534285487
+    SubobjectId: 16482193067462802308
+    InstanceId: 6248374133317614710
+    TemplateId: 399464744490226404
+  }
+}
+Objects {
+  Id: 7970554454208588624
+  Name: "UI Container"
+  Transform {
+    Location {
+      X: -283.333344
+      Y: 21750
+      Z: 450
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6401656059907085278
+  ChildIds: 12744316266208807168
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 9879178210869586501
+    SubobjectId: 14500280507836630382
+    InstanceId: 6248374133317614710
+    TemplateId: 399464744490226404
+  }
+}
+Objects {
+  Id: 12744316266208807168
+  Name: "VIP"
+  Transform {
+    Location {
+      Y: 2095
+      Z: 1335
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7970554454208588624
+  ChildIds: 4292877833330756148
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 1190
+    Height: 645
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12074002497324712067
+    SubobjectId: 16934481598318779468
+    InstanceId: 10742805637806957574
+    TemplateId: 847745453775936604
+  }
+}
+Objects {
+  Id: 4292877833330756148
+  Name: "UI Text Box"
+  Transform {
+    Location {
+      X: -1241.6626
+      Y: -16109.999
+      Z: -505
+    }
+    Rotation {
+      Yaw: 179.999954
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12744316266208807168
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 245
+    Height: 60
+    UIX: 15
+    UIY: -200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "YOU HAVE VIP"
+      Color {
+        R: 0.52
+        G: 0.247947
+        A: 1
+      }
+      Size: 30
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 10287161469882193406
+  Name: "FreeSubscriptionClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6401656059907085278
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Trigger"
+      ObjectReference {
+        SelfId: 1418625268618716195
+      }
+    }
+    Overrides {
+      Name: "cs:VIP"
+      ObjectReference {
+        SelfId: 12744316266208807168
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15440678445494581743
+    }
+  }
+}
+Objects {
+  Id: 14337119079845014468
+  Name: "FreeSubscriptionServer"
+  Transform {
+    Location {
+      X: 5
+      Y: -3.57627869e-06
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15198001858659635812
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Trigger"
+      ObjectReference {
+        SelfId: 1418625268618716195
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9397450180743696244
+    }
+  }
+}
+Objects {
+  Id: 1418625268618716195
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 4.99999809
+      Y: -1.19209278e-06
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.10000014
+      Y: 2.2
+      Z: 3.50000072
+    }
+  }
+  ParentId: 15198001858659635812
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Get \"free VIP\" to enter the VIP Zones."
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 12951209918799974288
+    SubobjectId: 17553145389419339963
+    InstanceId: 6248374133317614710
+    TemplateId: 399464744490226404
+  }
+}
+Objects {
   Id: 11073146231803925661
   Name: "PERKS_PremiumCurrencyShop"
   Transform {

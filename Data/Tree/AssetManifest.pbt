@@ -1,4 +1,17 @@
 ﻿Assets {
+  Id: 16930410318726553440
+  Name: "goldTier1"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "422c64963b874c68892824289cb086f3"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 16171957045391883906
   Name: "Plastic Shiny"
   PlatformAssetType: 2
@@ -89,6 +102,32 @@ Assets {
   }
 }
 Assets {
+  Id: 14208434051131155151
+  Name: "VIP"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "7ede08f3287a48d89191822247dd9bf8"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
+  Id: 13849688032675990302
+  Name: "gold"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "94143b92be804c7488f2e56de504947c"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 13784467660178889007
   Name: "Human Gal 1"
   PlatformAssetType: 17
@@ -149,6 +188,19 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_glass_001"
+  }
+}
+Assets {
+  Id: 11374975738335343858
+  Name: "dailyRoll"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "b97cffc8249f41f9be1ad9bdeab703fa"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
   }
 }
 Assets {
@@ -215,6 +267,19 @@ Assets {
   }
 }
 Assets {
+  Id: 8340700130752030037
+  Name: "FasterMining"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "1b3a78e5a62048ffb8258c3d2b078305"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 8250221790891313171
   Name: "Fantasy Shape 003"
   PlatformAssetType: 9
@@ -269,6 +334,19 @@ Assets {
   }
 }
 Assets {
+  Id: 6172871331293140326
+  Name: "goldTier2"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "e4e4fd3047bb48d394515bec24e24a2b"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
+  }
+}
+Assets {
   Id: 5985956015751324126
   Name: "Human Guy 2"
   PlatformAssetType: 17
@@ -293,6 +371,19 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_001"
+  }
+}
+Assets {
+  Id: 3637506199551700987
+  Name: "goldTier3"
+  PlatformAssetType: 24
+  NetReferenceAsset {
+    NetReference {
+      Key: "40e42d7eb30a43928f11692ddc0d918f"
+      Type {
+        Value: "mc:enetreferencetype:creatorperk"
+      }
+    }
   }
 }
 Assets {
