@@ -407,19 +407,19 @@ function UpdateEntryButton(entry, highlighted)
 	 -- currently equipped
 	if entry.data.templateId == currentlyEquipped then
 		entry.price:SetColor(Color.WHITE)
-		entry.price.text = entry.data.name .. "\nEQUIPPED"
+		entry.price.text = "EQUIPPED"
 		entry.BGImage:SetColor(Color.FromLinearHex("000002FF")) -- dark blue
 
  	-- owned but not hovered
 	elseif HasCosmetic(entry.data.id) and not highlighted then
 		entry.price:SetColor(Color.WHITE)
-		entry.price.text = entry.data.name .. "\nOWNED"
+		entry.price.text = "OWNED"
 		entry.BGImage:SetColor(Color.FromLinearHex("08004AFF")) -- purple
 
 	-- owned but hovered
 	elseif HasCosmetic(entry.data.id) and highlighted then
 		entry.price:SetColor(Color.WHITE)
-		entry.price.text = entry.data.name .. "\nEquip?"
+		entry.price.text = "EQUIP NOW?"
 		entry.BGImage:SetColor(Color.FromLinearHex("000002FF")) -- dark blue
 
  	-- not owned and not hovered		
@@ -899,7 +899,7 @@ function UpdateUIPos()
 	
 	for k,v in pairs(filterButtonData) do
 		v.root.width = math.floor(screenSize.x * 0.08)
-		v.root.height =  math.floor(screenSize.y * 0.06)
+		v.root.height =  math.floor(screenSize.y * 0.055)
 		
 		propButtonLabel = v.root:GetCustomProperty("ButtonLabel"):WaitForObject()
 		propButtonLabelShadow = v.root:GetCustomProperty("ButtonLabelShadow"):WaitForObject()
@@ -913,7 +913,7 @@ function UpdateUIPos()
 	
 	for k,v in pairs(typeFilterButtonData) do
 		v.root.width = math.floor(screenSize.x * 0.09)
-		v.root.height =  math.floor(screenSize.y * 0.06)
+		v.root.height =  math.floor(screenSize.y * 0.055)
 		
 		propButtonLabel = v.root:GetCustomProperty("ButtonLabel"):WaitForObject()
 		propButtonLabelShadow = v.root:GetCustomProperty("ButtonLabelShadow"):WaitForObject()
@@ -1109,6 +1109,7 @@ function SpawnFilterButton(displayName, tag, color, position, template)
 	local propButton = newFilterButton:GetCustomProperty("Button"):WaitForObject()
 	local propFrameImage = newFilterButton:GetCustomProperty("FrameImage"):WaitForObject()
 	local propFrameImage2 = newFilterButton:GetCustomProperty("FrameImage2"):WaitForObject()
+	local propRarityLabel = newFilterButton:GetCustomProperty("RarityImage"):WaitForObject() or nil
 	
 	propFrameImage2.visibility = Visibility.FORCE_OFF
 	
@@ -1116,6 +1117,9 @@ function SpawnFilterButton(displayName, tag, color, position, template)
 	
 	if color then 
 		propBGImage:SetColor(color) 
+		if (propRarityLabel) then
+			propRarityLabel:SetColor(color)
+		end
 	else 
 		color = propBGImage:GetColor()
 	end
