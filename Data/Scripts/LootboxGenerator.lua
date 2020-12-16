@@ -71,7 +71,7 @@ function RollLootbox(trigger, player)
 		--print("Player already has the prize!")
 	else
 		--print("Giving Reward!")
-		--[[
+
 		while Events.Broadcast(
 			"BUYCOSMETIC",
 			player,
@@ -81,9 +81,9 @@ function RollLootbox(trigger, player)
 		) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 			Task.Wait(0.1)
 		end
-		]]
+
 		
-		ReliableEvents.Broadcast("BUYCOSMETIC", player, reward:GetCustomProperty("ID"), false, 0)  
+		--ReliableEvents.Broadcast("BUYCOSMETIC", player, reward:GetCustomProperty("ID"), false, 0)  
 		player:SetResource(CURRENCY_NAME, currency - ROLL_COST)
 	end
 

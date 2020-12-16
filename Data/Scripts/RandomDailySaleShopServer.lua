@@ -315,12 +315,12 @@ function OnAcceptPurchase(player, item)
 		print("Player cannot afford the prize!")
 	else
 		print("Giving Reward! ")
-		--[[
+
 		while Events.Broadcast("BUYCOSMETIC", player, itemId, false, cost) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 			Task.Wait(0.1)
 		end
-		]]
-		ReliableEvents.Broadcast("BUYCOSMETIC", 1, player, itemId, false, cost) 
+		
+		--ReliableEvents.Broadcast("BUYCOSMETIC", 1, player, itemId, false, cost) 
 	end
 end
 
