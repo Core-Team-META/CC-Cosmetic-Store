@@ -75,12 +75,12 @@
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:middleleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:middleright"
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }
@@ -143,6 +143,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
+          Width: 7
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -156,12 +157,12 @@
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }
@@ -1195,6 +1196,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
+          Width: 7
+          Height: 11
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1209,6 +1212,9 @@
             }
             FontSize: 20
             ButtonColor {
+              G: 0.0352011062
+              B: 0.0729166642
+              A: 0.180392161
             }
             HoveredColor {
             }
@@ -1217,19 +1223,19 @@
             DisabledColor {
             }
             Brush {
-              Id: 1814707273787853473
+              Id: 2704989702499929423
             }
             IsButtonEnabled: true
           }
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }
@@ -1317,6 +1323,15 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "CenterArrow_004Wedge"
+      }
+    }
+    Assets {
+      Id: 2704989702499929423
+      Name: "Frame Outline Thin 001"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "FrameOutline_020"
       }
     }
     PrimaryAssetId {

@@ -54,6 +54,12 @@
               SubObjectId: 14835943217078100028
             }
           }
+          Overrides {
+            Name: "cs:RarityImage"
+            ObjectReference {
+              SubObjectId: 10979018871943071127
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -75,12 +81,12 @@
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:middleleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:middleright"
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }
@@ -130,6 +136,7 @@
         ChildIds: 2729856437881581599
         ChildIds: 3585310576844717796
         ChildIds: 14835943217078100028
+        ChildIds: 10979018871943071127
         ChildIds: 15333044528143119153
         ChildIds: 17607137430413193455
         ChildIds: 18086155330651261952
@@ -143,6 +150,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
+          Width: 7
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -156,12 +164,12 @@
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }
@@ -330,6 +338,64 @@
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:topcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 10979018871943071127
+        Name: "Rarity Image"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14787272120848065355
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: -30
+          Height: -50
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 1814707273787853473
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }
@@ -1082,7 +1148,7 @@
         Control {
           Width: 68
           Height: 31
-          UIY: 72.2120361
+          UIY: 65.7043839
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1138,7 +1204,7 @@
         Control {
           Width: 40
           Height: 20
-          UIY: -87.9950562
+          UIY: -92.5515137
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1193,6 +1259,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
+          Width: 7
+          Height: 11
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1207,6 +1275,9 @@
             }
             FontSize: 20
             ButtonColor {
+              G: 0.0352011062
+              B: 0.0729166642
+              A: 0.180392161
             }
             HoveredColor {
             }
@@ -1215,19 +1286,19 @@
             DisabledColor {
             }
             Brush {
-              Id: 1814707273787853473
+              Id: 2704989702499929423
             }
             IsButtonEnabled: true
           }
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }
@@ -1315,6 +1386,15 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "CenterArrow_004Wedge"
+      }
+    }
+    Assets {
+      Id: 2704989702499929423
+      Name: "Frame Outline Thin 001"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "FrameOutline_020"
       }
     }
     PrimaryAssetId {
