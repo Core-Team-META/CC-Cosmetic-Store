@@ -399,8 +399,18 @@ Objects {
     Overrides {
       Name: "ma:Font.Faces:color"
       Color {
-        R: 0.163576096
-        G: 0.38
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:color"
+      Color {
         A: 1
       }
     }
@@ -469,8 +479,18 @@ Objects {
     Overrides {
       Name: "ma:Font.Faces:color"
       Color {
-        R: 0.163576096
-        G: 0.38
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:color"
+      Color {
         A: 1
       }
     }
@@ -539,8 +559,18 @@ Objects {
     Overrides {
       Name: "ma:Font.Faces:color"
       Color {
-        R: 0.163576096
-        G: 0.38
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:color"
+      Color {
         A: 1
       }
     }
@@ -884,6 +914,12 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -934,8 +970,8 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.0466887206
-        G: 0.149999976
+        R: 0.149999976
+        G: 0.0570242293
         A: 1
       }
     }
@@ -1059,7 +1095,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 16171957045391883906
+        Id: 9136786294201978281
       }
     }
     Overrides {
@@ -1085,9 +1121,6 @@ Objects {
     Overrides {
       Name: "ma:Shared_Detail1:color"
       Color {
-        R: 0.551
-        G: 0.551
-        B: 0.551
         A: 1
       }
     }
@@ -1098,6 +1131,12 @@ Objects {
     Overrides {
       Name: "ma:Shared_Detail1:vtile"
       Float: 3
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        A: 1
+      }
     }
   }
   Collidable_v2 {
