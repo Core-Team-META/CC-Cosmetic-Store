@@ -15,8 +15,8 @@
             Z: 1
           }
         }
-        ParentId: 6769845893542896755
-        ChildIds: 3276858166989935681
+        ParentId: 7069178301840666666
+        ChildIds: 12906663813118257076
         ChildIds: 9974761825354809242
         ChildIds: 10919952032427908435
         UnregisteredParameters {
@@ -33,6 +33,32 @@
         }
       }
       Objects {
+        Id: 12906663813118257076
+        Name: "STOREITEM_Cowboy Hat _Hat"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4034813922096462059
+        ChildIds: 3276858166989935681
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
         Id: 3276858166989935681
         Name: "head"
         Transform {
@@ -46,9 +72,8 @@
             Z: 1
           }
         }
-        ParentId: 4034813922096462059
+        ParentId: 12906663813118257076
         ChildIds: 12698504859313637511
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -82,7 +107,7 @@
           }
           Overrides {
             Name: "cs:ScaleModifier"
-            Float: 1.701
+            Float: 1
           }
           Overrides {
             Name: "cs:DisplayRotation"
@@ -123,7 +148,6 @@
             String: "1 = Common, 2 = Uncommon, 3 = Rare , 4 = Epic, 5 = Legendary, 6 = Mythic"
           }
         }
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -429,7 +453,7 @@
       }
       Objects {
         Id: 7139372686811003208
-        Name: "head"
+        Name: "head_display"
         Transform {
           Location {
             X: 18.3729553

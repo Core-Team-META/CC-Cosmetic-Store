@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 6769845893542896755
+        ParentId: 7069178301840666666
         ChildIds: 12244733032850724043
         ChildIds: 14584247713112274982
         WantsNetworking: true
@@ -228,6 +228,10 @@
               A: 1
             }
           }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -282,6 +286,10 @@
               R: 0.72
               A: 1
             }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
           }
         }
         Collidable_v2 {

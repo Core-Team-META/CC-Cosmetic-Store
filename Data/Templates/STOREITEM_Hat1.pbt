@@ -15,8 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 6769845893542896755
-        ChildIds: 7872076904898112746
+        ParentId: 7069178301840666666
         ChildIds: 17557713305722273596
         ChildIds: 11230689304477526829
         ChildIds: 12015050757571709887
@@ -32,76 +31,6 @@
         Folder {
           IsFilePartition: true
           FilePartitionName: "Hat 1"
-        }
-      }
-      Objects {
-        Id: 7872076904898112746
-        Name: "store_graphic"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1263499199588855168
-        ChildIds: 3048042660958241656
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 3048042660958241656
-        Name: "Sphere"
-        Transform {
-          Location {
-            Z: 10
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
-          }
-        }
-        ParentId: 7872076904898112746
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 6981698627626169233
-            }
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5760915064523727563
-          }
-          Teams {
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
         }
       }
       Objects {
@@ -151,7 +80,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 6981698627626169233
+              Id: 1991168273216243350
             }
           }
         }
@@ -192,7 +121,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:StoreName"
-            String: "Ball-head"
+            String: "Essence Pearl"
           }
           Overrides {
             Name: "cs:ID"
@@ -302,7 +231,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 6981698627626169233
+              Id: 1991168273216243350
             }
           }
         }
@@ -332,15 +261,6 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_sphere_002"
-      }
-    }
-    Assets {
-      Id: 6981698627626169233
-      Name: "Magic Glass"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "fxmi_magic_glass"
       }
     }
     PrimaryAssetId {

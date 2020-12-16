@@ -85,7 +85,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
-      String: "Ball-head"
+      String: "Essence Pearl Hat"
     }
     Overrides {
       Name: "cs:ID"

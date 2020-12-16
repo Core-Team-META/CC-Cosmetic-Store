@@ -69,9 +69,9 @@
           Rotation {
           }
           Scale {
-            X: 2
-            Y: 2
-            Z: 2
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 13185957032834304421
@@ -83,7 +83,7 @@
           }
           Overrides {
             Name: "cs:ScaleModifier"
-            Float: 2
+            Float: 1
           }
           Overrides {
             Name: "cs:DisplayRotation"
@@ -149,9 +149,9 @@
             Roll: 6.90732577e-06
           }
           Scale {
-            X: 0.246268392
-            Y: 0.246268392
-            Z: 0.246268392
+            X: 0.284828156
+            Y: 0.284828156
+            Z: 0.284828156
           }
         }
         ParentId: 6364218471167572908
