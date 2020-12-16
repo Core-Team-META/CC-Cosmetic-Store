@@ -4,10 +4,17 @@
     
 end
 
-local subscriptionPerk = _G.PERKS.SUBSCRIPTION
+local tier1 = _G.PERKS.TIER1
+local tier2 = _G.PERKS.TIER2
+local tier3 = _G.PERKS.TIER3
 
 local propPremiumRoot = script:GetCustomProperty("PremiumRoot"):WaitForObject()
+local propCurrencyTitle = script:GetCustomProperty("CurrencyTitle"):WaitForObject()
 
+local propPremiumCurrencyName = propPremiumRoot:GetCustomProperty("PremiumCurrencyName")
+local propTier1Amount = propPremiumRoot:GetCustomProperty("Tier1Amount")
+local propTier2Amount = propPremiumRoot:GetCustomProperty("Tier2Amount")
+local propTier3Amount = propPremiumRoot:GetCustomProperty("Tier3Amount")
 
 local propCurrencyButton1 = script:GetCustomProperty("CurrencyButton1"):WaitForObject()
 local propCurrencyPurchase1 = script:GetCustomProperty("CurrencyPurchase1"):WaitForObject()
@@ -20,14 +27,10 @@ local propCurrencyPurchase3 = script:GetCustomProperty("CurrencyPurchase3"):Wait
 local propCurrencyConversion3 = script:GetCustomProperty("CurrencyConversion3"):WaitForObject()
 
 local propPremiumLeave = script:GetCustomProperty("PremiumLeave"):WaitForObject()
-
 local propPerksWindow = script:GetCustomProperty("PerksWindow"):WaitForObject()
 
 local propTrigger = script:GetCustomProperty("Trigger"):WaitForObject()
 local propCamera = script:GetCustomProperty("Camera"):WaitForObject()
-
-
-propSubscriptionPurchase:SetPerkReference(subscriptionPerk)
 
 local localPlayer = Game.GetLocalPlayer()
 
@@ -83,23 +86,43 @@ end
 
 local function InitializePerkStore()
 
-    if propAllowCurrencyPurchase then
-        
-        propSubscriptionWindowName.text = propSubscriptionSetName
-        
-        description = string.gsub(propSubscriptionSetDescription,"<br>","\n")
-        propSubscriptionDescription.text = description
-        
-        collisionListener = propTrigger.beginOverlapEvent:Connect(ViewCurrencyWindow)
+	propCurrencyTitle.text = "Get " .. propPremiumCurrencyName
 
-		propTrigger.endOverlapEvent:Connect(ExitCurrencyWindowFromTrigger)
-		
-		propSubscriptionLeave.clickedEvent:Connect(ExitCurrencyWindow)
-        
+    if tier1 then
+    	propCurrencyButton1.isEnabled = true
+    	propCurrencyConversion1.text = " " .. tostring(propTier1Amount) .. " " .. propPremiumCurrencyName
+    	propCurrencyPurchase1:SetPerkReference(tier1)
+    else
+    	propCurrencyButton1.isEnabled = false
+    end
+    
+    if tier2 then
+    	propCurrencyButton2.isEnabled = true
+    	propCurrencyConversion2.text = " " .. tostring(propTier2Amount) .. " " .. propPremiumCurrencyName
+    	propCurrencyPurchase2:SetPerkReference(tier2)
+    else
+    	propCurrencyButton2.isEnabled = false
+    end
+    
+    if tier3 then
+    	propCurrencyButton3.isEnabled = true
+    	propCurrencyConversion3.text = " " .. tostring(propTier3Amount) .. " " .. propPremiumCurrencyName
+    	propCurrencyPurchase3:SetPerkReference(tier3)
+    else
+    	propCurrencyButton3.isEnabled = false
     end
     
     propPerksWindow.isEnabled = false
     propPerksWindow.visibility = Visibility.FORCE_OFF
+    
+    if tier1 or tier2 or tier3 then
+        collisionListener = propTrigger.beginOverlapEvent:Connect(ViewCurrencyWindow)
+
+		propTrigger.endOverlapEvent:Connect(ExitCurrencyWindowFromTrigger)
+		
+		propPremiumLeave.clickedEvent:Connect(ExitCurrencyWindow)
+	end
+    	
     
 end
 

@@ -10,6 +10,13 @@ end
 
 local subscriptionPerk = _G.PERKS.SUBSCRIPTION
 local currencyPerk = _G.PERKS.PREMIUM_CURRENCY
+local tier1 = _G.PERKS.TIER1
+local tier2 = _G.PERKS.TIER2
+local tier3 = _G.PERKS.TIER3
+
+local propPremiumTier1Amount = propStoreRoot:GetCustomProperty("PremiumTier1Amount")
+local propPremiumTier2Amount = propStoreRoot:GetCustomProperty("PremiumTier2Amount")
+local propPremiumTier3Amount = propStoreRoot:GetCustomProperty("PremiumTier3Amount")
 
 local propAutosavePurchases = propStoreRoot:GetCustomProperty("AutosavePurchases")
 local propAutosaveCurrency = propStoreRoot:GetCustomProperty("AutosaveCurrency")
@@ -78,8 +85,6 @@ function ApplyCosmetic(player, templateId, cosmeticId, visible)
 		player:SetVisibility(true, false)
 		return
 	end
-
-	print(visible)
 
 	player:SetVisibility(visible, false)
 
@@ -191,9 +196,13 @@ function LoadOwnedCosmeticsAndMoney(player)
 			end
 			if propAutosaveCurrency and data.COSMETICS.currency ~= nil then
 				player:SetResource(propCurrencyResourceName, data.COSMETICS.currency)
+			else
+				player:SetResource(propCurrencyResourceName, 0)
 			end
 			if propAutosaveCurrency and data.COSMETICS.premiumCurrency ~= nil then
 				player:SetResource(propPremiumCurrencyName, data.COSMETICS.premiumCurrency)
+			else
+				player:SetResource(propPremiumCurrencyName, 0)
 			end
 		end
 	end
@@ -201,11 +210,13 @@ end
 
 function UpdatePlayerPremiums(player, perkRef)
 
-    if perkRef ~= subscriptionPerk and perkRef ~= currencyPerk then
+    if perkRef ~= subscriptionPerk and perkRef ~= currencyPerk and perkRef ~= tier1 and perkRef ~= tier2 and perkref ~= tier3 then
     
         return
         
     end
+    
+    print("Checking updated perk")
 
     local data = Storage.GetPlayerData(player)
     
@@ -221,12 +232,55 @@ function UpdatePlayerPremiums(player, perkRef)
         
     end
     
+    if data.COSMETICS.tier1Granted == nil then
+    
+        data.COSMETICS.tier1Granted = 0
+        
+    end
+    
+    if data.COSMETICS.tier2Granted == nil then
+    
+        data.COSMETICS.tier2Granted = 0
+        
+    end
+    
+    if data.COSMETICS.tier3Granted == nil then
+    
+        data.COSMETICS.tier3Granted = 0
+        
+    end
+    
     local currencyPurchased = player:GetPerkCount(currencyPerk)
+    local tier1Purchased = player:GetPerkCount(tier1)
+    local tier2Purchased = player:GetPerkCount(tier2)
+    local tier3Purchased = player:GetPerkCount(tier3)
+    
     local currentPremiumCurrency = player:GetResource(propPremiumCurrencyName)
         
     if currencyPurchased > data.COSMETICS.currencyGranted then
         currentPremiumCurrency = currentPremiumCurrency + propCurrencyPerPerkPurchase * (currencyPurchased - data.COSMETICS.currencyGranted)
         data.COSMETICS.currencyGranted = currencyPurchased
+    end
+    
+    if tier1Purchased > data.COSMETICS.tier1Granted then
+        currentPremiumCurrency = currentPremiumCurrency + propPremiumTier1Amount * (tier1Purchased - data.COSMETICS.tier1Granted)
+        data.COSMETICS.tier1Granted = tier1Purchased
+        
+         print("tier 1 purchased")
+    end
+    
+    if tier2Purchased > data.COSMETICS.tier2Granted then
+        currentPremiumCurrency = currentPremiumCurrency + propPremiumTier2Amount * (tier2Purchased - data.COSMETICS.tier2Granted)
+        data.COSMETICS.tier2Granted = tier2Purchased
+        
+         print("tier 2 purchased")
+    end
+    
+    if tier3Purchased > data.COSMETICS.tier3Granted then
+        currentPremiumCurrency = currentPremiumCurrency + propPremiumTier3Amount * (tier3Purchased - data.COSMETICS.tier3Granted)
+        data.COSMETICS.tier3Granted = tier3Purchased
+        
+         print("tier 3 purchased")
     end
     
     if not data.COSMETICS.subscribedBefore and player:HasPerk(subscriptionPerk) then

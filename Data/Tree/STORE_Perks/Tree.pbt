@@ -5,8 +5,8 @@ Objects {
   Name: "PERKS_PremiumCurrencyShop"
   Transform {
     Location {
-      X: -1265
-      Y: 4400
+      X: 6750
+      Y: 4515
       Z: 55
     }
     Rotation {
@@ -21,12 +21,22 @@ Objects {
   ParentId: 4296421264996771920
   ChildIds: 3016597306418573860
   ChildIds: 14278830429394916171
-  ChildIds: 7212692187724310822
-  ChildIds: 17426016733199945301
   UnregisteredParameters {
     Overrides {
       Name: "cs:PremiumCurrencyName"
       String: "Gold"
+    }
+    Overrides {
+      Name: "cs:Tier1Amount"
+      Int: 100
+    }
+    Overrides {
+      Name: "cs:Tier2Amount"
+      Int: 250
+    }
+    Overrides {
+      Name: "cs:Tier3Amount"
+      Int: 400
     }
   }
   Collidable_v2 {
@@ -44,107 +54,6 @@ Objects {
     InstanceId: 6248374133317614710
     TemplateId: 399464744490226404
     WasRoot: true
-  }
-}
-Objects {
-  Id: 17426016733199945301
-  Name: "World Text"
-  Transform {
-    Location {
-      X: -85
-      Z: 65
-    }
-    Rotation {
-      Yaw: 90
-    }
-    Scale {
-      X: 2.69999957
-      Y: 2.69999957
-      Z: 2.69999957
-    }
-  }
-  ParentId: 11073146231803925661
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Text {
-    Text: "PERKS"
-    Color {
-      R: 1
-      G: 1
-      B: 1
-      A: 1
-    }
-    HorizontalSize: 1
-    VerticalSize: 1
-    HorizontalAlignment {
-      Value: "mc:ecoretexthorizontalalign:left"
-    }
-    VerticalAlignment {
-      Value: "mc:ecoretextverticalalign:center"
-    }
-  }
-  InstanceHistory {
-    SelfId: 13897286704891571967
-    SubobjectId: 9295333796690035156
-    InstanceId: 6248374133317614710
-    TemplateId: 399464744490226404
-  }
-}
-Objects {
-  Id: 7212692187724310822
-  Name: "Cylinder - Chamfered Polished"
-  Transform {
-    Location {
-      Z: -50
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.69999993
-    }
-  }
-  ParentId: 11073146231803925661
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 9136786294201978281
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4753988644095219219
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 14968915077744600123
-    SubobjectId: 10348982231229401872
-    InstanceId: 6248374133317614710
-    TemplateId: 399464744490226404
   }
 }
 Objects {
@@ -786,7 +695,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 115
+    Width: 200
     Height: 35
     UIX: -185.93689
     UIY: 8
@@ -1236,7 +1145,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 115
+    Width: 200
     Height: 35
     UIX: -185.93689
     UIY: 8
@@ -1686,7 +1595,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 115
+    Width: 200
     Height: 35
     UIX: -185.93689
     UIY: 8
@@ -2819,7 +2728,7 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:CurrencyName"
+      Name: "cs:CurrencyTitle"
       ObjectReference {
         SelfId: 11303848884907615186
       }
@@ -2833,12 +2742,13 @@ Objects {
     Overrides {
       Name: "cs:PerksWindow"
       ObjectReference {
+        SelfId: 14258795047574987140
       }
     }
     Overrides {
       Name: "cs:Trigger"
       ObjectReference {
-        SelfId: 14258795047574987140
+        SelfId: 3016597306418573860
       }
     }
     Overrides {
@@ -2925,13 +2835,15 @@ Objects {
   Name: "Trigger"
   Transform {
     Location {
+      X: 6.7949295e-05
+      Y: 95
     }
     Rotation {
     }
     Scale {
-      X: 2.10000014
+      X: 3.70000076
       Y: 2.2
-      Z: 1.99999988
+      Z: 4.9
     }
   }
   ParentId: 11073146231803925661

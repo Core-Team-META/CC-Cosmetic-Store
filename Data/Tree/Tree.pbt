@@ -94,7 +94,7 @@ Objects {
         Overrides {
           Name: "Visible"
           Enum {
-            Value: "mc:evisibilitysetting:forceoff"
+            Value: "mc:evisibilitysetting:inheritfromparent"
           }
         }
       }
@@ -874,6 +874,10 @@ Objects {
       String: "money"
     }
     Overrides {
+      Name: "cs:PremiumCurrencyName"
+      String: "gold"
+    }
+    Overrides {
       Name: "cs:AutosavePurchases"
       Bool: true
     }
@@ -942,6 +946,18 @@ Objects {
       Color {
         R: 0.429999948
       }
+    }
+    Overrides {
+      Name: "cs:PremiumTier1Amount"
+      Int: 100
+    }
+    Overrides {
+      Name: "cs:PremiumTier2Amount"
+      Int: 250
+    }
+    Overrides {
+      Name: "cs:PremiumTier3Amount"
+      Int: 400
     }
   }
   Collidable_v2 {
