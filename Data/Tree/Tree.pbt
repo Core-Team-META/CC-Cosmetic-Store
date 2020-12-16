@@ -23,7 +23,7 @@ Objects {
   ChildIds: 15293838640380427395
   ChildIds: 18072860380143784802
   ChildIds: 2994614744540900363
-  ChildIds: 3797226906030037360
+  ChildIds: 8739685216168499133
   ChildIds: 11035239812348056179
   ChildIds: 1510335979846993994
   ChildIds: 5886917377158341065
@@ -63,15 +63,27 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -5510
-            Y: 4760
+            X: 1088.66052
+            Y: 3815.79248
             Z: 15
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -90
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 3809467462553703560
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 230.506348
+            Y: 111.562012
+            Z: -25.1375885
           }
         }
       }
@@ -83,6 +95,27 @@ Objects {
           Name: "Visible"
           Enum {
             Value: "mc:evisibilitysetting:forceoff"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8055339824751994779
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1095.75415
+            Y: -785.379761
+            Z: 6.10351563e-05
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -46.0416565
+            Yaw: 67.8240356
+            Roll: -150.479752
           }
         }
       }
@@ -266,9 +299,15 @@ Objects {
   }
 }
 Objects {
-  Id: 3797226906030037360
-  Name: "Info Sign"
+  Id: 8739685216168499133
+  Name: "Info Signs"
   Transform {
+    Location {
+      X: 2899.81738
+      Y: 3805.99512
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -276,6 +315,48 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 3797226906030037360
+  ChildIds: 13205469916118207476
+  ChildIds: 2848821165526300341
+  ChildIds: 16234996329832542946
+  ChildIds: 12606983516778136094
+  ChildIds: 10675101523338236404
+  ChildIds: 16087143676717102285
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16087143676717102285
+  Name: "Info Sign"
+  Transform {
+    Location {
+      X: 5095.96484
+      Y: 3895.14307
+      Z: 16.0980682
+    }
+    Rotation {
+      Yaw: -179.999985
+    }
+    Scale {
+      X: 1.47772145
+      Y: 1.47772145
+      Z: 1.47772145
+    }
+  }
+  ParentId: 8739685216168499133
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 16874666322015545267
@@ -287,9 +368,340 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1889.17468
-            Y: 5686.70557
+            X: -635.806152
+            Y: 89.1479492
             Z: 16.0980682
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999985
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.47772145
+            Y: 1.47772145
+            Z: 1.47772145
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1328213396668415185
+    }
+  }
+}
+Objects {
+  Id: 10675101523338236404
+  Name: "Info Sign"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8739685216168499133
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16874666322015545267
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Info Sign"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2196.14746
+            Y: 89.1479492
+            Z: 16.0980682
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999985
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.47772145
+            Y: 1.47772145
+            Z: 1.47772145
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1328213396668415185
+    }
+  }
+}
+Objects {
+  Id: 12606983516778136094
+  Name: "Info Sign"
+  Transform {
+    Location {
+      X: 8169.42383
+      Y: 5686.70557
+      Z: 16.0980682
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.47772145
+      Y: 1.47772145
+      Z: 1.47772145
+    }
+  }
+  ParentId: 8739685216168499133
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16874666322015545267
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Info Sign"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 5269.60645
+            Y: 1880.71045
+            Z: 16.0980682
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.47772145
+            Y: 1.47772145
+            Z: 1.47772145
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1328213396668415185
+    }
+  }
+}
+Objects {
+  Id: 16234996329832542946
+  Name: "Info Sign"
+  Transform {
+    Location {
+      X: 4461.25342
+      Y: 5686.70557
+      Z: 16.0980682
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.47772145
+      Y: 1.47772145
+      Z: 1.47772145
+    }
+  }
+  ParentId: 8739685216168499133
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16874666322015545267
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Info Sign"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1561.43604
+            Y: 1880.71045
+            Z: 16.0980682
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.47772145
+            Y: 1.47772145
+            Z: 1.47772145
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1328213396668415185
+    }
+  }
+}
+Objects {
+  Id: 2848821165526300341
+  Name: "Info Sign"
+  Transform {
+    Location {
+      X: 4461.25342
+      Y: 5686.70557
+      Z: 16.0980682
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.47772145
+      Y: 1.47772145
+      Z: 1.47772145
+    }
+  }
+  ParentId: 8739685216168499133
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16874666322015545267
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Info Sign"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 5269.60645
+            Y: 1880.71045
+            Z: 16.0980682
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.47772145
+            Y: 1.47772145
+            Z: 1.47772145
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1328213396668415185
+    }
+  }
+}
+Objects {
+  Id: 13205469916118207476
+  Name: "Info Sign"
+  Transform {
+    Location {
+      X: -1889.17468
+      Y: 5686.70557
+      Z: 16.0980682
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.47772145
+      Y: 1.47772145
+      Z: 1.47772145
+    }
+  }
+  ParentId: 8739685216168499133
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16874666322015545267
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Info Sign"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1561.43604
+            Y: 1880.71045
+            Z: 16.0980682
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.47772145
+            Y: 1.47772145
+            Z: 1.47772145
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1328213396668415185
+    }
+  }
+}
+Objects {
+  Id: 3797226906030037360
+  Name: "Info Sign"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8739685216168499133
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16874666322015545267
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Info Sign"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4788.99219
+            Y: 1880.71045
+            Z: 16.0980682
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.47772145
+            Y: 1.47772145
+            Z: 1.47772145
           }
         }
       }
@@ -8300,12 +8712,12 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: 4141.95801
+      X: 10718.2578
       Y: 4735.88086
-      Z: 123.961639
+      Z: 164.965393
     }
     Rotation {
-      Yaw: 95.4995346
+      Yaw: -174.500443
     }
     Scale {
       X: 1

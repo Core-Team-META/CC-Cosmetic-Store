@@ -16,6 +16,7 @@
           }
         }
         ParentId: 4781671109827199097
+        ChildIds: 13407878165347069782
         ChildIds: 8547908211886988340
         ChildIds: 5031541496215265298
         Collidable_v2 {
@@ -26,6 +27,58 @@
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 13407878165347069782
+        Name: "Point Light"
+        Transform {
+          Location {
+            X: 54.7209129
+            Y: -16.3879337
+            Z: 359.642273
+          }
+          Rotation {
+            Yaw: 179.999985
+          }
+          Scale {
+            X: 0.67671752
+            Y: 0.67671752
+            Z: 0.67671752
+          }
+        }
+        ParentId: 16874666322015545267
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Light {
+          Intensity: 8
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+          VolumetricIntensity: 5
+          TeamSettings {
+          }
+          Light {
+            Temperature: 6500
+            LocalLight {
+              AttenuationRadius: 1000
+              PointLight {
+                SourceRadius: 20
+                SoftSourceRadius: 20
+                FallOffExponent: 8
+                UseFallOffExponent: true
+              }
+            }
+            MaxDrawDistance: 5000
+            MaxDistanceFadeRange: 1000
+          }
         }
       }
       Objects {

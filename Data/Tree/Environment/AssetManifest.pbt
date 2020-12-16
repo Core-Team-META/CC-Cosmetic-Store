@@ -116,6 +116,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17763022256799195820
+  Name: "Decal Dirt Patch"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_dirt_patch_001"
+  }
+}
+Assets {
   Id: 17722917267016575012
   Name: "Text 01: O"
   PlatformAssetType: 1
