@@ -185,7 +185,7 @@
       }
       Objects {
         Id: 2972680580451217936
-        Name: "store_graphic"
+        Name: "head_display"
         Transform {
           Location {
             X: 8.4730835
