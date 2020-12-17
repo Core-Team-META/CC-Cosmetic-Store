@@ -1,65 +1,6 @@
 ﻿Name: "STORE_Chef Hat"
 RootId: 17863300342496129061
 Objects {
-  Id: 6620053366054839865
-  Name: "STORE_ItemInfo"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17863300342496129061
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:StoreName"
-      String: "Chef Hat"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "CHEFHAT2"
-    }
-    Overrides {
-      Name: "cs:Tags"
-      String: "Legendary"
-    }
-    Overrides {
-      Name: "cs:Types"
-      String: "Hat"
-    }
-    Overrides {
-      Name: "cs:ZoomView"
-      String: "Hat"
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 60
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 6380040976156754336
-    }
-  }
-  InstanceHistory {
-    SelfId: 4660189967688868429
-    SubobjectId: 3567951263905755893
-    InstanceId: 17648780899093822160
-    TemplateId: 12269522058044990569
-  }
-}
-Objects {
   Id: 8623669039602577908
   Name: "head"
   Transform {
@@ -83,12 +24,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 2127996095622904578
-    SubobjectId: 7829389189222788026
-    InstanceId: 17648780899093822160
-    TemplateId: 12269522058044990569
   }
 }
 Objects {
@@ -164,12 +99,6 @@ Objects {
   }
   NetworkContext {
   }
-  InstanceHistory {
-    SelfId: 13569401720461992883
-    SubobjectId: 14807703806914802443
-    InstanceId: 17648780899093822160
-    TemplateId: 12269522058044990569
-  }
 }
 Objects {
   Id: 9286067530844905169
@@ -205,12 +134,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 2961485441362962734
-    SubobjectId: 6356537860878973334
-    InstanceId: 17648780899093822160
-    TemplateId: 12269522058044990569
   }
 }
 Objects {
@@ -265,12 +188,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 4481104335604082189
-    SubobjectId: 5701467476341683893
-    InstanceId: 17648780899093822160
-    TemplateId: 12269522058044990569
-  }
 }
 Objects {
   Id: 15426508189290259718
@@ -323,12 +240,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 1486884266984374324
-    SubobjectId: 7317719976135463052
-    InstanceId: 17648780899093822160
-    TemplateId: 12269522058044990569
   }
 }
 Objects {
@@ -383,12 +294,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 8732616297920670775
-    SubobjectId: 585404805232737423
-    InstanceId: 17648780899093822160
-    TemplateId: 12269522058044990569
-  }
 }
 Objects {
   Id: 2953030521541516915
@@ -442,12 +347,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 10941997184905528648
-    SubobjectId: 16642615537254487536
-    InstanceId: 17648780899093822160
-    TemplateId: 12269522058044990569
-  }
 }
 Objects {
   Id: 11741422329821716340
@@ -500,11 +399,5 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 8120122169245914015
-    SubobjectId: 117026278548194087
-    InstanceId: 17648780899093822160
-    TemplateId: 12269522058044990569
   }
 }

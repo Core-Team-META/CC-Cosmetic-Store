@@ -1,6 +1,13 @@
-﻿local propMultiplier = script:GetCustomProperty("STORE_SampleMultiplier"):WaitForObject()
+﻿while not _G.PERKS do
 
-local propVIP = propMultiplier:GetCustomProperty("VIP")
+	Task.Wait()
+	
+end
+
+local subscriptionPerkRef = _G.PERKS.SUBSCRIPTION 
+
+local propMultiplier = script:GetCustomProperty("STORE_SampleMultiplier"):WaitForObject()
+
 local propRequiredNumberOfVIP = propMultiplier:GetCustomProperty("RequiredNumberOfVIP")
 local propMoneyPerInterraction = propMultiplier:GetCustomProperty("MoneyPerInterraction")
 local propCurrencyResourceName = propMultiplier:GetCustomProperty("CurrencyResourceName")

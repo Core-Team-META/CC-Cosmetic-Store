@@ -22,6 +22,7 @@ local propPerksWindow = script:GetCustomProperty("PerksWindow"):WaitForObject()
 local propTrigger = script:GetCustomProperty("Trigger"):WaitForObject()
 local propCamera = script:GetCustomProperty("Camera"):WaitForObject()
 
+local propHasVIP = script:GetCustomProperty("HasVIP"):WaitForObject()
 
 propSubscriptionPurchase:SetPerkReference(subscriptionPerk)
 
@@ -98,6 +99,20 @@ local function InitializePerkStore()
     propPerksWindow.isEnabled = false
     propPerksWindow.visibility = Visibility.FORCE_OFF
     
+end
+
+function Tick()
+
+	Task.Wait(1)
+
+	if localPlayer:HasPerk(subscriptionPerk) then
+	
+		propHasVIP.visibility = Visibility.FORCE_ON
+		
+		Task.Wait(10)
+		
+	end
+	
 end
 
 InitializePerkStore()

@@ -79,45 +79,7 @@ function SetupShop(player)
 		data.DAILY.items = selecteditems
 	end
 
-	Storage.SetPlayerData(player, data)
-	--[[
-	while Events.BroadcastToPlayer(
-		player,
-		"SETUPDAILYSHOP",
-		1,
-		data.DAILY.items[1],
-		data.DAILY.items[2],
-		data.DAILY.items[3]
-	) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
-		Task.Wait(0.1)
-	end
-	Task.Wait(0.1)
-
-	while Events.BroadcastToPlayer(
-		player,
-		"SETUPDAILYSHOP",
-		2,
-		data.DAILY.items[4],
-		data.DAILY.items[5],
-		data.DAILY.items[6]
-	) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
-		Task.Wait(0.1)
-	end
-
-	Task.Wait(0.1)
-
-	while Events.BroadcastToPlayer(
-		player,
-		"SETUPDAILYSHOP",
-		3,
-		data.DAILY.items[7],
-		data.DAILY.items[8],
-		data.DAILY.items[9]
-	) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
-		Task.Wait(0.1)
-	end
-	]]
-	
+	Storage.SetPlayerData(player, data)	
 	
 	ReliableEvents.BroadcastToPlayer(player,"SETUPDAILYSHOP", 1, data.DAILY.items[1], data.DAILY.items[2], data.DAILY.items[3])  
 	ReliableEvents.BroadcastToPlayer(player,"SETUPDAILYSHOP", 2, data.DAILY.items[4], data.DAILY.items[5], data.DAILY.items[6]) 
@@ -242,44 +204,6 @@ function ReRoll(player, perk)
 
 	Storage.SetPlayerData(player, data)
 	
-	--[[
-
-	while Events.BroadcastToPlayer(
-		player,
-		"SETUPDAILYSHOP",
-		1,
-		data.DAILY.items[1],
-		data.DAILY.items[2],
-		data.DAILY.items[3]
-	) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
-		Task.Wait(0.1)
-	end
-	Task.Wait(0.1)
-
-	while Events.BroadcastToPlayer(
-		player,
-		"SETUPDAILYSHOP",
-		2,
-		data.DAILY.items[4],
-		data.DAILY.items[5],
-		data.DAILY.items[6]
-	) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
-		Task.Wait(0.1)
-	end
-
-	Task.Wait(0.1)
-
-	while Events.BroadcastToPlayer(
-		player,
-		"SETUPDAILYSHOP",
-		3,
-		data.DAILY.items[7],
-		data.DAILY.items[8],
-		data.DAILY.items[9]
-	) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
-		Task.Wait(0.1)
-	end
-	]]
 	ReliableEvents.BroadcastToPlayer(player, "SETUPDAILYSHOP", 1, data.DAILY.items[1], data.DAILY.items[2], data.DAILY.items[3])  
 	ReliableEvents.BroadcastToPlayer(player, "SETUPDAILYSHOP", 2, data.DAILY.items[4], data.DAILY.items[5], data.DAILY.items[6]) 
 	ReliableEvents.BroadcastToPlayer(player, "SETUPDAILYSHOP", 3, data.DAILY.items[7], data.DAILY.items[8], data.DAILY.items[9]) 

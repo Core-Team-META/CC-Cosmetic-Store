@@ -1,18 +1,19 @@
-﻿local propStoreRoot = script:GetCustomProperty("StoreRoot"):WaitForObject()
+﻿------------------------------------------------------------------------------------------------------------------------
+-- StoreScript
+-- Author: Estlogic (META) (https://www.coregames.com/user/385b45d7abdb499f8664c6cb01df521b)
+-- Date: 2020/12/16
+-- Version: 0.1.0
+-- Description: 
+------------------------------------------------------------------------------------------------------------------------
+-- REQUIRE
+------------------------------------------------------------------------------------------------------------------------
+local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
+------------------------------------------------------------------------------------------------------------------------
+-- CUSTOM PROPERTIES
+------------------------------------------------------------------------------------------------------------------------
+local propStoreRoot = script:GetCustomProperty("StoreRoot"):WaitForObject()
 local propCurrencyResourceName = propStoreRoot:GetCustomProperty("CurrencyResourceName")
 local propPremiumCurrencyName = propStoreRoot:GetCustomProperty("PremiumCurrencyName")
-
-while not _G.PERKS do
-
-	Task.Wait()
-	
-end
-
-local subscriptionPerk = _G.PERKS.SUBSCRIPTION
-local currencyPerk = _G.PERKS.PREMIUM_CURRENCY
-local tier1 = _G.PERKS.TIER1
-local tier2 = _G.PERKS.TIER2
-local tier3 = _G.PERKS.TIER3
 
 local propPremiumTier1Amount = propStoreRoot:GetCustomProperty("PremiumTier1Amount")
 local propPremiumTier2Amount = propStoreRoot:GetCustomProperty("PremiumTier2Amount")
@@ -22,14 +23,26 @@ local propAutosavePurchases = propStoreRoot:GetCustomProperty("AutosavePurchases
 local propAutosaveCurrency = propStoreRoot:GetCustomProperty("AutosaveCurrency")
 local propKeepSubscriptionCosmetics = propStoreRoot:GetCustomProperty("KeepSubscriptionCosmetics")
 
-
 local propCurrencyResourceName = propStoreRoot:GetCustomProperty("CurrencyResourceName")
 local propCurrencyPerPerkPurchase = propStoreRoot:GetCustomProperty("CurrencyPerPerkPurchase")
 local propPremiumCurrencyName = propStoreRoot:GetCustomProperty("PremiumCurrencyName")
 local propSubscriptionOneTimeReward = propStoreRoot:GetCustomProperty("SubscriptionOneTimeReward")
 local propSubscriptionOneTimePremiumReward = propStoreRoot:GetCustomProperty("SubscriptionOneTimePremiumReward")
+------------------------------------------------------------------------------------------------------------------------
+-- LOCAL VARIABLES
+------------------------------------------------------------------------------------------------------------------------
+while not _G.PERKS do
 
-local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
+	Task.Wait()
+	
+end
+
+local subscriptionPerk = _G.PERKS.SUBSCRIPTION
+local currencyPerk = _G.PERKS.PREMIUM_CURRENCY
+
+local tier1 = _G.PERKS.TIER1
+local tier2 = _G.PERKS.TIER2
+local tier3 = _G.PERKS.TIER3
 
 local playerOwnedCosmetics = {}
 local playerOwnedSubscriptionCosmetics = {}
@@ -37,6 +50,10 @@ local playerOwnedSubscriptionCosmetics = {}
 local previousLookMode = {}
 local previousMovementMode = {}
 
+
+------------------------------------------------------------------------------------------------------------------------
+-- FUNCTIONS
+------------------------------------------------------------------------------------------------------------------------
 function SavePreviousSettings(player)
 	-- Seems like you cannot directly store a control mode, so just brute-forced with if-else
 	if player.lookControlMode == LookControlMode.RELATIVE then
@@ -356,6 +373,9 @@ function OnRequestCosmetics(player)
 	end
 end
 
+------------------------------------------------------------------------------------------------------------------------
+-- LISTENERS
+------------------------------------------------------------------------------------------------------------------------
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 
@@ -364,8 +384,6 @@ Events.Connect("HIDESTORE_SERVER", HideStore_ServerHelper)
 Events.ConnectForPlayer("REQUESTCOSMETIC", ApplyCosmetic)
 Events.ConnectForPlayer("BUYCOSMETIC", BuyCosmetic)
 Events.Connect("BUYCOSMETIC", BuyCosmetic)
---Events.ConnectForPlayer("SETVISIBILITY", SetPlayerVisibility)
-
 Events.Connect("RESET_PURCHASES", ResetPurchases)
 Events.ConnectForPlayer("RESET_PURCHASES", ResetPurchases)
 Events.ConnectForPlayer("REQUST_OTHER_COSMETICS", OnRequestCosmetics)

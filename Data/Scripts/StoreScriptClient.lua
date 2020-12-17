@@ -1,4 +1,19 @@
-﻿local propSTORE_EntryOverlay = script:GetCustomProperty("STORE_EntryOverlay")
+﻿------------------------------------------------------------------------------------------------------------------------
+-- StoreScriptClient
+-- Authors: Montoli (META) (https://www.coregames.com/user/422e57c184374923b8ce32176b018db5)
+--		    Estlogic (META) (https://www.coregames.com/user/385b45d7abdb499f8664c6cb01df521b)
+--			Buckmonster (META) (https://www.coregames.com/user/901b7628983c4c8db4282f24afeda57a)
+-- Date: 2020/12/16
+-- Version: 0.1.1
+-- Description: 
+------------------------------------------------------------------------------------------------------------------------
+-- REQUIRE
+------------------------------------------------------------------------------------------------------------------------
+local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
+------------------------------------------------------------------------------------------------------------------------
+-- OBJECTS
+------------------------------------------------------------------------------------------------------------------------
+local propSTORE_EntryOverlay = script:GetCustomProperty("STORE_EntryOverlay")
 local propSTORE_EntryGeo = script:GetCustomProperty("STORE_EntryGeo")
 local propSTORE_FilterListEntry = script:GetCustomProperty("STORE_FilterListEntry")
 local propSTORE_FilterListEntry_Bottom = script:GetCustomProperty("STORE_FilterListEntry_Bottom")
@@ -13,7 +28,6 @@ local propPreviewMesh2 = script:GetCustomProperty("PreviewMesh2"):WaitForObject(
 local propBackButton = script:GetCustomProperty("BackButton"):WaitForObject()
 
 local propCurrencyDisplay = script:GetCustomProperty("CurrencyDisplay"):WaitForObject()
---local propPremiumCurrency = script:GetCustomProperty("PremiumCurrency"):WaitForObject()
 
 local propButtonHolder = script:GetCustomProperty("ButtonHolder"):WaitForObject()
 
@@ -29,21 +43,6 @@ local propEnableStoreAnimations = propStoreRoot:GetCustomProperty("EnableStoreAn
 
 local uiBackButton = propPageBackButton:FindChildByType("UIButton")
 local uiNextButton = propPageNextButton:FindChildByType("UIButton")
-
-local propBaseUIContainer = propStoreRoot:GetCustomProperty("BaseUIContainer"):WaitForObject()
-
-local CAMERA_WIDTH = 600
-local BUTTON_SCALE = 0.72
-local ITEMS_PER_ROW = 5
-local ITEMS_PER_COL = 2
-local ITEM_PADDING = 75
-local ITEMS_PER_PAGE = ITEMS_PER_ROW * ITEMS_PER_COL
-
-propStoreUIContainer.isEnabled = false
-propStoreUIContainer.visibility = Visibility.INHERIT
-
-local controlsLocked = false
-local controlsLockedSecondary = false
 
 local propStoreRoot = script:GetCustomProperty("StoreRoot"):WaitForObject()
 local propCurrencyResourceName = propStoreRoot:GetCustomProperty("CurrencyResourceName")
@@ -80,6 +79,16 @@ local store = require(prop_CosmeticStore)
 
 local propUIMarkersAndPreviews = script:GetCustomProperty("UIMarkersAndPreviews"):WaitForObject()
 
+local propBaseUIContainer = propStoreRoot:GetCustomProperty("BaseUIContainer"):WaitForObject()
+------------------------------------------------------------------------------------------------------------------------
+-- CUSTOM PROPERTIES
+------------------------------------------------------------------------------------------------------------------------
+local propAllowSubscriptionPurchase = propStoreRoot:GetCustomProperty("AllowSubscriptionPurchase")
+local propSubscriptionName = propStoreRoot:GetCustomProperty("SubscriptionName")
+local propSubscriptionColor = propStoreRoot:GetCustomProperty("SubscriptionColor")
+------------------------------------------------------------------------------------------------------------------------
+-- LOCAL VARIABLES
+------------------------------------------------------------------------------------------------------------------------
 while not _G.PERKS do
 
 	Task.Wait()
@@ -88,12 +97,6 @@ end
 
 local subscriptionPerkRef = _G.PERKS.SUBSCRIPTION
 
-local propAllowSubscriptionPurchase = propStoreRoot:GetCustomProperty("AllowSubscriptionPurchase")
-local propSubscriptionName = propStoreRoot:GetCustomProperty("SubscriptionName")
-local propSubscriptionColor = propStoreRoot:GetCustomProperty("SubscriptionColor")
-
-local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
-
 local bindingListener = nil
 
 local player = nil
@@ -101,6 +104,19 @@ local player = nil
 local OwnedCosmetics = {}
 
 local storePos = 0
+
+local CAMERA_WIDTH = 600
+local BUTTON_SCALE = 0.72
+local ITEMS_PER_ROW = 5
+local ITEMS_PER_COL = 2
+local ITEM_PADDING = 75
+local ITEMS_PER_PAGE = ITEMS_PER_ROW * ITEMS_PER_COL
+
+propStoreUIContainer.isEnabled = false
+propStoreUIContainer.visibility = Visibility.INHERIT
+
+local controlsLocked = false
+local controlsLockedSecondary = false
 
 local playerSockets = {
 	"left_clavicle",	"nameplate",		"right_clavicle",
@@ -113,14 +129,6 @@ local playerSockets = {
 	"left_ankle",		"pelvis",			"right_ankle",
 	"left_arm_prop",
 }
-
-function HasCosmetic(storeId)
-	if OwnedCosmetics[storeId] == true then
-		return true
-	else
-		return player:GetResource("COSMETIC_" .. storeId) > 0
-	end
-end
 
 -- List of actual buttons, ui elements, and listeners for the store elements
 local StoreUIButtons = {}
@@ -199,8 +207,6 @@ end
 ----------------------------------------------------------------------------------------------------------------
 function ShowStore_ClientHelper()
 
-	--bindingListener:Disconnect()
-
 	if propBaseUIContainer then
 		propBaseUIContainer.isEnabled = false
 	end
@@ -230,8 +236,6 @@ end
 
 function HideStore_ClientHelper()
 
-	--bindingListener = player.bindingPressedEvent:Connect(OnBindingPressed)
-
 	if propBaseUIContainer then
 		propBaseUIContainer.isEnabled = true
 	end
@@ -253,13 +257,7 @@ end
 
 function HideStore()
 	HideStore_ClientHelper(player)
-	
-	--[[
-	while Events.BroadcastToServer("HIDESTORE_SERVER", player) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
-		Task.Wait()
-	end
-	]]
-	
+		
 	ReliableEvents.BroadcastToServer("HIDESTORE_SERVER", player) 
 end
 
@@ -333,18 +331,13 @@ function StoreItemClicked(button)
 				if player:HasPerk(subscriptionPerkRef) then
 					expectedNewCurrency = currency
 					controlsLocked = true
-					--[[
-					while Events.BroadcastToServer("BUYCOSMETIC", currentlySelected.data.id, true, 0) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
-						Task.Wait(0.1)
-					end
-					]]
 					ReliableEvents.BroadcastToServer("BUYCOSMETIC", currentlySelected.data.id, true, 0) 
 				else 
 					currentlySelected = nil
 					return
 				end
 			elseif currency < currentlySelected.data.cost then
-				--print("Not enough funds to buy " .. currentlySelected.data.id)
+
 				currentlySelected = nil
 				return
 			else
@@ -354,8 +347,6 @@ function StoreItemClicked(button)
 				while Events.BroadcastToServer("BUYCOSMETIC", currentlySelected.data.id, false, currentlySelected.data.cost) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 					Task.Wait(0.1)
 				end
-				
-				--ReliableEvents.BroadcastToServer("BUYCOSMETIC", currentlySelected.data.id, false, currentlySelected.data.cost)
 			end
 		end
 	end
@@ -504,6 +495,7 @@ end
 ----------------------------------------------------------------------------------------------------------------
 -- SETTING PREVIEWS
 ----------------------------------------------------------------------------------------------------------------
+
 function SpawnPreview(templateId, previewMesh, visible)
 
 	previewMesh:MoveTo(propDefaultZoomMarker:GetPosition(), 0.5, true)
@@ -578,37 +570,30 @@ end
 -- APPLY/REMOVE COSMETICS
 ----------------------------------------------------------------------------------------------------------------
 
+function HasCosmetic(storeId)
+	if OwnedCosmetics[storeId] == true then
+		return true
+	else
+		return player:GetResource("COSMETIC_" .. storeId) > 0
+	end
+end
+
 function RemoveCosmetic(playerId)
 	if cosmeticElements[playerId] ~= nil then
 		for k,v in pairs(cosmeticElements[playerId]) do
 			v:Destroy()
 		end
 	end
-	--[[
-	while Events.BroadcastToServer("SETVISIBILITY", playerId, true)  == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
-		Task.Wait()
-	end
-	]]
 	cosmeticElements[playerId] = nil
 end
 
 function ApplyCosmetic(entry)
 	if entry == nil then
-		--[[
-		while Events.BroadcastToServer("REQUESTCOSMETIC", nil, nil, true)  == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
-			Task.Wait()
-		end
-		]]
 		ReliableEvents.BroadcastToServer("REQUESTCOSMETIC", nil, nil, true)
 		return
 	end
 	--print("Requesting" .. entry.data.id)
 	--print(entry.data.visible)
-	--[[
-	while Events.BroadcastToServer("REQUESTCOSMETIC", entry.data.templateId, entry.data.id, entry.data.visible)  == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
-		Task.Wait()
-	end
-	]]
 	ReliableEvents.BroadcastToServer("REQUESTCOSMETIC", entry.data.templateId, entry.data.id, entry.data.visible)
 end
 
@@ -645,12 +630,6 @@ function ApplyCosmeticHelper(playerId, templateId)
 
 	for _, v in pairs(CurrentStoreElements) do
 		if v.templateId == templateId then
-			--[[
-			print("currently equipped stuff found")
-			while Events.BroadcastToServer("SETVISIBILITY", playerId, v.visible)  == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
-				Task.Wait()
-			end
-			]]
 			if not player then return end
 			if player.id == playerId then
 				currentlyEquipped = templateId
@@ -672,8 +651,6 @@ end
 
 function BackPageClicked()
 	if controlsLocked or controlsLockedSecondary then return end
-	
-	--RemovePreview()
 
 	storePos = storePos - ITEMS_PER_PAGE
 	if storePos > ITEMS_PER_PAGE * (#CurrentStoreElements // ITEMS_PER_PAGE) then storePos = ITEMS_PER_PAGE * (#CurrentStoreElements // ITEMS_PER_PAGE) end
@@ -683,8 +660,6 @@ end
 
 function NextPageClicked()
 	if controlsLocked or controlsLockedSecondary then return end
-	
-	--RemovePreview()
 
 	storePos = storePos + ITEMS_PER_PAGE
 	if storePos > ITEMS_PER_PAGE * (#CurrentStoreElements // ITEMS_PER_PAGE) then storePos = ITEMS_PER_PAGE * (#CurrentStoreElements // ITEMS_PER_PAGE) end
@@ -714,7 +689,6 @@ function ClearList(direction)
 
 		local timeOffset = (5 - v.gridX)
 
-		-- Stuff for sliding around and being cool.
 		v.startPos = v.geo:GetPosition()
 
 		v.targetPos = Vector3.New(v.gridX * -100, 0, v.gridY * -100)
@@ -729,7 +703,6 @@ function ClearList(direction)
 		v.travelTime = v.travelTime * 0.8
 		v.deleting = true
 	end
-	--StoreUIButtons = {}
 	currentlySelected = nil
 end
 
@@ -862,11 +835,6 @@ function UpdateCurrencyDisplay()
 	local currency = player:GetResource(propCurrencyResourceName)
 
 	propCurrencyDisplay.text = tostring(currency)
-	
-	--local premium = player:GetResource(propPremiumCurrencyName)
-	
-	--propPremiumCurrency.text = tostring(premium)
-
 end
 
 ----------------------------------------------------------------------------------------------------------------
@@ -969,8 +937,10 @@ end
 function InitStore()
 	if not player then
 		player = Game.GetLocalPlayer()
-		print(player.name)
+		--print(player.name)
 	end
+	
+	player.bindingPressedEvent:Connect(OnBindingPressed)
 	
 	ShopContents = {}
 	for k,v in pairs(propStoreGeoHolder:GetChildren()) do
@@ -1099,11 +1069,6 @@ function InitStore()
 	end
 	
 	--print("Requesting other player costume data")
-	--[[
-	while Events.BroadcastToServer("REQUST_OTHER_COSMETICS")  == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
-		Task.Wait()
-	end
-	]]
 	ReliableEvents.BroadcastToServer("REQUST_OTHER_COSMETICS")
 end
 
@@ -1178,8 +1143,6 @@ function OnFilterButtonSelected(button)
 	end
 	
 	if currentTag.tag == tag then -- if the current active filter is this button, reset filter and highlight color
-		--print("Clearing filter")
-		--ClearFilter()
 		
 		CurrentStoreElements = {}
 		
@@ -1565,7 +1528,7 @@ function OnPlayerLeft(leftPlayer)
 end
 
 ----------------------------------------------------------------------------------------------------------------
--- LISTENER SETUP
+-- LISTENERS
 ----------------------------------------------------------------------------------------------------------------
 
 propBackButton.clickedEvent:Connect(ExitStoreClicked)
@@ -1582,5 +1545,3 @@ propSwapMannequin.clickedEvent:Connect(SwapMannequin)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 
 InitStore()
-
-bindingListener = player.bindingPressedEvent:Connect(OnBindingPressed)
