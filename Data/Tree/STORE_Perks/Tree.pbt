@@ -21,9 +21,9 @@ Objects {
   ParentId: 4296421264996771920
   ChildIds: 14122498652259676094
   ChildIds: 8006428016214945128
+  ChildIds: 17838574404898326113
   ChildIds: 3334601111219074385
   ChildIds: 13486834369584544925
-  ChildIds: 17838574404898326113
   UnregisteredParameters {
     Overrides {
       Name: "cs:Discount"
@@ -46,6 +46,1177 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 13486834369584544925
+  Name: "DropTable"
+  Transform {
+    Location {
+      X: -830
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2867906046164362672
+  ChildIds: 3814171903802178733
+  ChildIds: 15705224386648983704
+  ChildIds: 13831520565665589028
+  ChildIds: 2000274744301257247
+  ChildIds: 1278045048359412732
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1278045048359412732
+  Name: "Legendary"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13486834369584544925
+  ChildIds: 4078514301581233490
+  ChildIds: 7495362926156021765
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RarityName"
+      String: "Legendary"
+    }
+    Overrides {
+      Name: "cs:DropChance"
+      Float: 0.1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 7495362926156021765
+  Name: "Chef Hat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1278045048359412732
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Name"
+      String: "STOREITEM_Chef Hat"
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "CHEFHAT2"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 60
+    }
+    Overrides {
+      Name: "cs:MUID"
+      AssetReference {
+        Id: 12269522058044990569
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15071959512768627988
+    }
+  }
+}
+Objects {
+  Id: 4078514301581233490
+  Name: "TheOoccoo"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1278045048359412732
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Name"
+      String: "STORE_TheOoccoo"
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "OOCCOO"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 50
+    }
+    Overrides {
+      Name: "cs:MUID"
+      AssetReference {
+        Id: 18414187469791612460
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15071959512768627988
+    }
+  }
+}
+Objects {
+  Id: 2000274744301257247
+  Name: "Epic"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13486834369584544925
+  ChildIds: 5600041384002885234
+  ChildIds: 2074456346956254183
+  ChildIds: 13165390071460600019
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RarityName"
+      String: "Epic"
+    }
+    Overrides {
+      Name: "cs:DropChance"
+      Float: 0.15
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13165390071460600019
+  Name: "Cowboy Hat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2000274744301257247
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Name"
+      String: "STOREITEM_Cowboy Hat _Hat"
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "DESPERADOHAT3"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 50
+    }
+    Overrides {
+      Name: "cs:MUID"
+      AssetReference {
+        Id: 614220041473863367
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15071959512768627988
+    }
+  }
+}
+Objects {
+  Id: 2074456346956254183
+  Name: "BlueEyeHat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2000274744301257247
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Name"
+      String: "STORE_BlueEyeHat"
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "BLUEEYE"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 30
+    }
+    Overrides {
+      Name: "cs:MUID"
+      AssetReference {
+        Id: 14506495770997542773
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15071959512768627988
+    }
+  }
+}
+Objects {
+  Id: 5600041384002885234
+  Name: "ScoutArmor"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2000274744301257247
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Name"
+      String: "STORE_ScoutArmor_Torso"
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "SCOUTBODY"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 50
+    }
+    Overrides {
+      Name: "cs:MUID"
+      AssetReference {
+        Id: 4824922327679417400
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15071959512768627988
+    }
+  }
+}
+Objects {
+  Id: 13831520565665589028
+  Name: "Rare"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13486834369584544925
+  ChildIds: 18260059547229854532
+  ChildIds: 15799854727461616410
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RarityName"
+      String: "Rare"
+    }
+    Overrides {
+      Name: "cs:DropChance"
+      Float: 0.2
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15799854727461616410
+  Name: "CrazyEye"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13831520565665589028
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Name"
+      String: "STORE_CrazyEye"
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "CRAZYEYE"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 40
+    }
+    Overrides {
+      Name: "cs:MUID"
+      AssetReference {
+        Id: 13510754618439544811
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15071959512768627988
+    }
+  }
+}
+Objects {
+  Id: 18260059547229854532
+  Name: "BirthdayCake Hat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13831520565665589028
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Name"
+      String: "STOREITEM_BirthdayCake Hat"
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "CAKE2"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 60
+    }
+    Overrides {
+      Name: "cs:MUID"
+      AssetReference {
+        Id: 18277733649088940997
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15071959512768627988
+    }
+  }
+}
+Objects {
+  Id: 15705224386648983704
+  Name: "Uncommon"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13486834369584544925
+  ChildIds: 1224573581974179814
+  ChildIds: 18222437591577251306
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RarityName"
+      String: "Common"
+    }
+    Overrides {
+      Name: "cs:DropChance"
+      Float: 0.25
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 18222437591577251306
+  Name: "WinterHat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15705224386648983704
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Name"
+      String: "STORE_WinterHat"
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "WINTERCAP"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 35
+    }
+    Overrides {
+      Name: "cs:MUID"
+      AssetReference {
+        Id: 3914352411083413573
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15071959512768627988
+    }
+  }
+}
+Objects {
+  Id: 1224573581974179814
+  Name: "Hat1"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15705224386648983704
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Name"
+      String: "STOREITEM_Hat1"
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "BALL"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 35
+    }
+    Overrides {
+      Name: "cs:MUID"
+      AssetReference {
+        Id: 6935989339742598427
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15071959512768627988
+    }
+  }
+}
+Objects {
+  Id: 3814171903802178733
+  Name: "Common"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13486834369584544925
+  ChildIds: 7073957503303152557
+  ChildIds: 486251941182470531
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RarityName"
+      String: "Common"
+    }
+    Overrides {
+      Name: "cs:DropChance"
+      Float: 0.3
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 486251941182470531
+  Name: "StrawberrryHat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3814171903802178733
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Name"
+      String: "STORE_StrawberrryHat"
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "STRAWBERRYHAT"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 10
+    }
+    Overrides {
+      Name: "cs:MUID"
+      AssetReference {
+        Id: 5218435788178153655
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15071959512768627988
+    }
+  }
+}
+Objects {
+  Id: 7073957503303152557
+  Name: "FruitHat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3814171903802178733
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Name"
+      String: "STORE_FruitHat"
+    }
+    Overrides {
+      Name: "cs:ID"
+      String: "FRUITHAT"
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 20
+    }
+    Overrides {
+      Name: "cs:MUID"
+      AssetReference {
+        Id: 803229999192700103
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15071959512768627988
+    }
+  }
+}
+Objects {
+  Id: 3334601111219074385
+  Name: "CursorMarkers"
+  Transform {
+    Location {
+      X: 105
+      Z: 125
+    }
+    Rotation {
+      Yaw: 89.9999847
+    }
+    Scale {
+      X: 0.769783914
+      Y: 0.769783914
+      Z: 0.769783914
+    }
+  }
+  ParentId: 2867906046164362672
+  ChildIds: 2865276695053434890
+  ChildIds: 16261274382864638803
+  ChildIds: 12956457387102564612
+  ChildIds: 14489893321829886776
+  ChildIds: 626019668851084025
+  ChildIds: 10296376680828642814
+  ChildIds: 16891401734580523353
+  ChildIds: 17858822338283486689
+  ChildIds: 13158313978377073725
+  ChildIds: 6650783030653090079
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 6650783030653090079
+  Name: "Reward_9"
+  Transform {
+    Location {
+      X: -175.369873
+      Z: -220.842163
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1.30000007
+      Y: 0.8
+      Z: 1.4
+    }
+  }
+  ParentId: 3334601111219074385
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 13158313978377073725
+  Name: "Reward_8"
+  Transform {
+    Location {
+      X: 0.00134277344
+      Z: -220.842163
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1.30000007
+      Y: 0.8
+      Z: 1.4
+    }
+  }
+  ParentId: 3334601111219074385
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 17858822338283486689
+  Name: "Reward_7"
+  Transform {
+    Location {
+      X: 188.375977
+      Z: -220.842163
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1.30000007
+      Y: 0.8
+      Z: 1.4
+    }
+  }
+  ParentId: 3334601111219074385
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 16891401734580523353
+  Name: "Reward_6"
+  Transform {
+    Location {
+      X: -175.37
+      Z: -38.9719238
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1.30000007
+      Y: 0.8
+      Z: 1.4
+    }
+  }
+  ParentId: 3334601111219074385
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 10296376680828642814
+  Name: "Reward_5"
+  Transform {
+    Location {
+      X: 0.00134277344
+      Z: -38.9719238
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1.30000007
+      Y: 0.8
+      Z: 1.4
+    }
+  }
+  ParentId: 3334601111219074385
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 626019668851084025
+  Name: "Reward_4"
+  Transform {
+    Location {
+      X: 188.370605
+      Z: -38.9719238
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1.30000007
+      Y: 0.8
+      Z: 1.4
+    }
+  }
+  ParentId: 3334601111219074385
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 14489893321829886776
+  Name: "Reward_3"
+  Transform {
+    Location {
+      X: -175.369873
+      Z: 149.392334
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1.30000007
+      Y: 0.8
+      Z: 1.4
+    }
+  }
+  ParentId: 3334601111219074385
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 12956457387102564612
+  Name: "Reward_2"
+  Transform {
+    Location {
+      X: 0.00134277344
+      Z: 149.392334
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1.30000007
+      Y: 0.8
+      Z: 1.4
+    }
+  }
+  ParentId: 3334601111219074385
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 16261274382864638803
+  Name: "Reward_1"
+  Transform {
+    Location {
+      X: 188.381836
+      Z: 149.392334
+    }
+    Rotation {
+    }
+    Scale {
+      X: -1.30000007
+      Y: 0.8
+      Z: 1.4
+    }
+  }
+  ParentId: 3334601111219074385
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 2865276695053434890
+  Name: "Backplate"
+  Transform {
+    Location {
+      X: 0.000244140625
+    }
+    Rotation {
+    }
+    Scale {
+      X: -23
+      Y: 0.3
+      Z: 11.4
+    }
+  }
+  ParentId: 3334601111219074385
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
   }
 }
 Objects {
@@ -4530,13 +5701,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 9701608585014559921
-    SubobjectId: 428651341651082331
-    InstanceId: 10680067621209106820
-    TemplateId: 5115411945519666792
-    WasRoot: true
-  }
 }
 Objects {
   Id: 442673395695282346
@@ -4558,7 +5722,6 @@ Objects {
   ChildIds: 7090805425906211795
   ChildIds: 15022360836769792439
   ChildIds: 10595097172541583407
-  ChildIds: 374545526380087081
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4589,400 +5752,6 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 442673395695282346
-    SubobjectId: 9616690020078964800
-    InstanceId: 10680067621209106820
-    TemplateId: 5115411945519666792
-  }
-}
-Objects {
-  Id: 374545526380087081
-  Name: "Icon Panel"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 442673395695282346
-  ChildIds: 18350062252306890564
-  ChildIds: 4074012830123706389
-  ChildIds: 13608558452217128491
-  ChildIds: 11644803588541757911
-  ChildIds: 7189022011223818011
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 80
-    Height: 80
-    UIX: 240
-    UIY: -11
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Panel {
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 374545526380087081
-    SubobjectId: 9683670139050917827
-    InstanceId: 10680067621209106820
-    TemplateId: 5115411945519666792
-  }
-}
-Objects {
-  Id: 7189022011223818011
-  Name: "Binding"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 374545526380087081
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 90
-    Height: 90
-    UIX: -5.65164185
-    UIY: 12
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Text {
-      Label: "Q"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 30
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 7189022011223818011
-    SubobjectId: 16182947396467197937
-    InstanceId: 10680067621209106820
-    TemplateId: 5115411945519666792
-  }
-}
-Objects {
-  Id: 11644803588541757911
-  Name: "Outer Ring"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 374545526380087081
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: -10
-    Height: -10
-    UIX: -6
-    UIY: -2
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    AddSizeToParentIfUsingParentSize: true
-    UseParentWidth: true
-    UseParentHeight: true
-    Image {
-      Brush {
-        Id: 14127903040359929144
-      }
-      Color {
-        R: 0.188235313
-        B: 0.270588249
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 11644803588541757911
-    SubobjectId: 2507184127498682685
-    InstanceId: 10680067621209106820
-    TemplateId: 5115411945519666792
-  }
-}
-Objects {
-  Id: 13608558452217128491
-  Name: "Gradient"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 374545526380087081
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: -10
-    Height: -10
-    UIX: -6
-    UIY: -2
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    AddSizeToParentIfUsingParentSize: true
-    UseParentWidth: true
-    UseParentHeight: true
-    Image {
-      Brush {
-        Id: 17758290862929856650
-      }
-      Color {
-        G: 0.482760429
-        B: 1
-        A: 0.637
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 13608558452217128491
-    SubobjectId: 4578654813129907905
-    InstanceId: 10680067621209106820
-    TemplateId: 5115411945519666792
-  }
-}
-Objects {
-  Id: 4074012830123706389
-  Name: "Fancimification Sphere"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 374545526380087081
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: -17
-    Height: -17
-    UIX: -6
-    UIY: -2
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    AddSizeToParentIfUsingParentSize: true
-    UseParentWidth: true
-    UseParentHeight: true
-    Image {
-      Brush {
-        Id: 8043629826562036191
-      }
-      Color {
-        G: 0.161240876
-        B: 0.334000021
-        A: 0.91200006
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 4074012830123706389
-    SubobjectId: 13535608889174618367
-    InstanceId: 10680067621209106820
-    TemplateId: 5115411945519666792
-  }
-}
-Objects {
-  Id: 18350062252306890564
-  Name: "Sphery Good Solid Background"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 374545526380087081
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: -17
-    Height: -17
-    UIX: -6
-    UIY: -2
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    AddSizeToParentIfUsingParentSize: true
-    UseParentWidth: true
-    UseParentHeight: true
-    Image {
-      Brush {
-        Id: 12195790988998704122
-      }
-      Color {
-        R: 0.0104469862
-        G: 0.0703149885
-        B: 0.337
-        A: 1
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middlecenter"
-        }
-      }
-    }
-  }
-  InstanceHistory {
-    SelfId: 18350062252306890564
-    SubobjectId: 9077407340822087598
-    InstanceId: 10680067621209106820
-    TemplateId: 5115411945519666792
   }
 }
 Objects {
@@ -5018,7 +5787,7 @@ Objects {
     }
     UseParentWidth: true
     Text {
-      Label: "View Daily Discounts"
+      Label: "Daily Discounts Available!"
       Color {
         R: 1
         G: 1
@@ -5043,12 +5812,6 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 10595097172541583407
-    SubobjectId: 1177886168816093381
-    InstanceId: 10680067621209106820
-    TemplateId: 5115411945519666792
   }
 }
 Objects {
@@ -5106,12 +5869,6 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 15022360836769792439
-    SubobjectId: 5993108108024510813
-    InstanceId: 10680067621209106820
-    TemplateId: 5115411945519666792
   }
 }
 Objects {
@@ -5173,12 +5930,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 7090805425906211795
-    SubobjectId: 16228281949766705977
-    InstanceId: 10680067621209106820
-    TemplateId: 5115411945519666792
-  }
 }
 Objects {
   Id: 4943651405257442321
@@ -5236,12 +5987,6 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 4943651405257442321
-    SubobjectId: 14396470093582974203
-    InstanceId: 10680067621209106820
-    TemplateId: 5115411945519666792
   }
 }
 Objects {
@@ -5301,12 +6046,6 @@ Objects {
         }
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 14372314042490342988
-    SubobjectId: 4910435413107799718
-    InstanceId: 10680067621209106820
-    TemplateId: 5115411945519666792
   }
 }
 Objects {
@@ -5625,7 +6364,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
     Width: 145
@@ -6375,1177 +7114,6 @@ Objects {
     }
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 13486834369584544925
-  Name: "DropTable"
-  Transform {
-    Location {
-      X: -830
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2867906046164362672
-  ChildIds: 3814171903802178733
-  ChildIds: 15705224386648983704
-  ChildIds: 13831520565665589028
-  ChildIds: 2000274744301257247
-  ChildIds: 1278045048359412732
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 1278045048359412732
-  Name: "Legendary"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13486834369584544925
-  ChildIds: 4078514301581233490
-  ChildIds: 7495362926156021765
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:RarityName"
-      String: "Legendary"
-    }
-    Overrides {
-      Name: "cs:DropChance"
-      Float: 0.1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 7495362926156021765
-  Name: "Chef Hat"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1278045048359412732
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "STOREITEM_Chef Hat"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "CHEFHAT2"
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:MUID"
-      AssetReference {
-        Id: 12269522058044990569
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 15071959512768627988
-    }
-  }
-}
-Objects {
-  Id: 4078514301581233490
-  Name: "TheOoccoo"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1278045048359412732
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "STORE_TheOoccoo"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "OOCCOO"
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 50
-    }
-    Overrides {
-      Name: "cs:MUID"
-      AssetReference {
-        Id: 18414187469791612460
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 15071959512768627988
-    }
-  }
-}
-Objects {
-  Id: 2000274744301257247
-  Name: "Epic"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13486834369584544925
-  ChildIds: 5600041384002885234
-  ChildIds: 2074456346956254183
-  ChildIds: 13165390071460600019
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:RarityName"
-      String: "Epic"
-    }
-    Overrides {
-      Name: "cs:DropChance"
-      Float: 0.15
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 13165390071460600019
-  Name: "Cowboy Hat"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2000274744301257247
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "STOREITEM_Cowboy Hat _Hat"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "DESPERADOHAT3"
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 50
-    }
-    Overrides {
-      Name: "cs:MUID"
-      AssetReference {
-        Id: 614220041473863367
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 15071959512768627988
-    }
-  }
-}
-Objects {
-  Id: 2074456346956254183
-  Name: "BlueEyeHat"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2000274744301257247
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "STORE_BlueEyeHat"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "BLUEEYE"
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 30
-    }
-    Overrides {
-      Name: "cs:MUID"
-      AssetReference {
-        Id: 14506495770997542773
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 15071959512768627988
-    }
-  }
-}
-Objects {
-  Id: 5600041384002885234
-  Name: "ScoutArmor"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2000274744301257247
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "STORE_ScoutArmor_Torso"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "SCOUTBODY"
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 50
-    }
-    Overrides {
-      Name: "cs:MUID"
-      AssetReference {
-        Id: 4824922327679417400
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 15071959512768627988
-    }
-  }
-}
-Objects {
-  Id: 13831520565665589028
-  Name: "Rare"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13486834369584544925
-  ChildIds: 18260059547229854532
-  ChildIds: 15799854727461616410
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:RarityName"
-      String: "Rare"
-    }
-    Overrides {
-      Name: "cs:DropChance"
-      Float: 0.2
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 15799854727461616410
-  Name: "CrazyEye"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13831520565665589028
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "STORE_CrazyEye"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "CRAZYEYE"
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 40
-    }
-    Overrides {
-      Name: "cs:MUID"
-      AssetReference {
-        Id: 13510754618439544811
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 15071959512768627988
-    }
-  }
-}
-Objects {
-  Id: 18260059547229854532
-  Name: "BirthdayCake Hat"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13831520565665589028
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "STOREITEM_BirthdayCake Hat"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "CAKE2"
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 60
-    }
-    Overrides {
-      Name: "cs:MUID"
-      AssetReference {
-        Id: 18277733649088940997
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 15071959512768627988
-    }
-  }
-}
-Objects {
-  Id: 15705224386648983704
-  Name: "Uncommon"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13486834369584544925
-  ChildIds: 1224573581974179814
-  ChildIds: 18222437591577251306
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:RarityName"
-      String: "Common"
-    }
-    Overrides {
-      Name: "cs:DropChance"
-      Float: 0.25
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 18222437591577251306
-  Name: "WinterHat"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15705224386648983704
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "STORE_WinterHat"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "WINTERCAP"
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 35
-    }
-    Overrides {
-      Name: "cs:MUID"
-      AssetReference {
-        Id: 3914352411083413573
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 15071959512768627988
-    }
-  }
-}
-Objects {
-  Id: 1224573581974179814
-  Name: "Hat1"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15705224386648983704
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "STOREITEM_Hat1"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "BALL"
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 35
-    }
-    Overrides {
-      Name: "cs:MUID"
-      AssetReference {
-        Id: 6935989339742598427
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 15071959512768627988
-    }
-  }
-}
-Objects {
-  Id: 3814171903802178733
-  Name: "Common"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13486834369584544925
-  ChildIds: 7073957503303152557
-  ChildIds: 486251941182470531
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:RarityName"
-      String: "Common"
-    }
-    Overrides {
-      Name: "cs:DropChance"
-      Float: 0.3
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 486251941182470531
-  Name: "StrawberrryHat"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3814171903802178733
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "STORE_StrawberrryHat"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "STRAWBERRYHAT"
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 10
-    }
-    Overrides {
-      Name: "cs:MUID"
-      AssetReference {
-        Id: 5218435788178153655
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 15071959512768627988
-    }
-  }
-}
-Objects {
-  Id: 7073957503303152557
-  Name: "FruitHat"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3814171903802178733
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "STORE_FruitHat"
-    }
-    Overrides {
-      Name: "cs:ID"
-      String: "FRUITHAT"
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 20
-    }
-    Overrides {
-      Name: "cs:MUID"
-      AssetReference {
-        Id: 803229999192700103
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 15071959512768627988
-    }
-  }
-}
-Objects {
-  Id: 3334601111219074385
-  Name: "CursorMarkers"
-  Transform {
-    Location {
-      X: 105
-      Z: 125
-    }
-    Rotation {
-      Yaw: 89.9999847
-    }
-    Scale {
-      X: 0.769783914
-      Y: 0.769783914
-      Z: 0.769783914
-    }
-  }
-  ParentId: 2867906046164362672
-  ChildIds: 2865276695053434890
-  ChildIds: 16261274382864638803
-  ChildIds: 12956457387102564612
-  ChildIds: 14489893321829886776
-  ChildIds: 626019668851084025
-  ChildIds: 10296376680828642814
-  ChildIds: 16891401734580523353
-  ChildIds: 17858822338283486689
-  ChildIds: 13158313978377073725
-  ChildIds: 6650783030653090079
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 6650783030653090079
-  Name: "Reward_9"
-  Transform {
-    Location {
-      X: -175.369873
-      Z: -220.842163
-    }
-    Rotation {
-    }
-    Scale {
-      X: -1.30000007
-      Y: 0.8
-      Z: 1.4
-    }
-  }
-  ParentId: 3334601111219074385
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 13158313978377073725
-  Name: "Reward_8"
-  Transform {
-    Location {
-      X: 0.00134277344
-      Z: -220.842163
-    }
-    Rotation {
-    }
-    Scale {
-      X: -1.30000007
-      Y: 0.8
-      Z: 1.4
-    }
-  }
-  ParentId: 3334601111219074385
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 17858822338283486689
-  Name: "Reward_7"
-  Transform {
-    Location {
-      X: 188.375977
-      Z: -220.842163
-    }
-    Rotation {
-    }
-    Scale {
-      X: -1.30000007
-      Y: 0.8
-      Z: 1.4
-    }
-  }
-  ParentId: 3334601111219074385
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 16891401734580523353
-  Name: "Reward_6"
-  Transform {
-    Location {
-      X: -175.37
-      Z: -38.9719238
-    }
-    Rotation {
-    }
-    Scale {
-      X: -1.30000007
-      Y: 0.8
-      Z: 1.4
-    }
-  }
-  ParentId: 3334601111219074385
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 10296376680828642814
-  Name: "Reward_5"
-  Transform {
-    Location {
-      X: 0.00134277344
-      Z: -38.9719238
-    }
-    Rotation {
-    }
-    Scale {
-      X: -1.30000007
-      Y: 0.8
-      Z: 1.4
-    }
-  }
-  ParentId: 3334601111219074385
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 626019668851084025
-  Name: "Reward_4"
-  Transform {
-    Location {
-      X: 188.370605
-      Z: -38.9719238
-    }
-    Rotation {
-    }
-    Scale {
-      X: -1.30000007
-      Y: 0.8
-      Z: 1.4
-    }
-  }
-  ParentId: 3334601111219074385
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 14489893321829886776
-  Name: "Reward_3"
-  Transform {
-    Location {
-      X: -175.369873
-      Z: 149.392334
-    }
-    Rotation {
-    }
-    Scale {
-      X: -1.30000007
-      Y: 0.8
-      Z: 1.4
-    }
-  }
-  ParentId: 3334601111219074385
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 12956457387102564612
-  Name: "Reward_2"
-  Transform {
-    Location {
-      X: 0.00134277344
-      Z: 149.392334
-    }
-    Rotation {
-    }
-    Scale {
-      X: -1.30000007
-      Y: 0.8
-      Z: 1.4
-    }
-  }
-  ParentId: 3334601111219074385
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 16261274382864638803
-  Name: "Reward_1"
-  Transform {
-    Location {
-      X: 188.381836
-      Z: 149.392334
-    }
-    Rotation {
-    }
-    Scale {
-      X: -1.30000007
-      Y: 0.8
-      Z: 1.4
-    }
-  }
-  ParentId: 3334601111219074385
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 2865276695053434890
-  Name: "Backplate"
-  Transform {
-    Location {
-      X: 0.000244140625
-    }
-    Rotation {
-    }
-    Scale {
-      X: -23
-      Y: 0.3
-      Z: 11.4
-    }
-  }
-  ParentId: 3334601111219074385
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
     }
   }
 }

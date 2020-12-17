@@ -140,11 +140,8 @@ function CheckSelection()
 		if slot then
 			local number = string.gsub(click.other.name, "Reward_", "")
 			
-			print(tonumber(number))
-			
 			local rewardId = displayItems[tonumber(number)]
 			
-			print("Player wants " .. rewardId)
 			--[[
 			while Events.BroadcastToServer("APLAYERPURCHASED", rewardId) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 				Task.Wait()
@@ -375,8 +372,6 @@ end
 
 
 function PlayPopUp()
-
-	print("popup start")
 	
 	Task.Wait(propPopUpDelay)
 	

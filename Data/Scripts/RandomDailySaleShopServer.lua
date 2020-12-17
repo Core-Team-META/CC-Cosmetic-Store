@@ -39,7 +39,7 @@ function Initialize(player)
 end
 
 function SetupShop(player)
-	--player.perkChangedEvent:Connect(ReRoll)
+	player.perkChangedEvent:Connect(ReRoll)
 
 	--print("setting up  daily shop")
 
@@ -196,13 +196,12 @@ function RollSale(player)
 	return tempTbl[1]
 end
 
-function ReRoll(player)
+function ReRoll(player, perk)
 
 	local selecteditems = {}
 
 	local data = Storage.GetPlayerData(player)
 	
-	--[[
 
 	if perk ~= dailyRollPerk then
 	
@@ -211,13 +210,10 @@ function ReRoll(player)
 	end
 	
 	Task.Wait(1)
-	]]
-
+	
 	local now = os.date("!*t", os.time())
 	local thisMonth = now.month
 	local today = now.day
-	
-		--[[
 	
 	if not data.DAILY.grantedRolls then
 	
@@ -232,8 +228,6 @@ function ReRoll(player)
 	end
 	
 	data.DAILY.grantedRolls = player:GetPerkCount(dailyRollPerk)
-	
-		]]
 	
 	data.DAILY.latestDay = today
 	data.DAILY.latestMonth = thisMonth
