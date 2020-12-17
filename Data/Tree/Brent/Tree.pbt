@@ -51617,25 +51617,25 @@ Objects {
     Overrides {
       Name: "cs:Loot_Box_Uncommon"
       AssetReference {
-        Id: 12786252723121837744
+        Id: 6392292436882305540
       }
     }
     Overrides {
       Name: "cs:Loot_Box_Rare"
       AssetReference {
-        Id: 7507518518593025393
+        Id: 12984436206213878224
       }
     }
     Overrides {
       Name: "cs:Loot_Box_Epic"
       AssetReference {
-        Id: 15738654651887114321
+        Id: 4854196293923781992
       }
     }
     Overrides {
       Name: "cs:Loot_Box_Legendary"
       AssetReference {
-        Id: 9461002599271886209
+        Id: 15922254291833518175
       }
     }
     Overrides {
