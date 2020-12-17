@@ -98,6 +98,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17898471167307401943
+  Name: "Text 03: F"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_005"
+  }
+}
+Assets {
   Id: 17775019098342521252
   Name: "Main Street Wall 02"
   PlatformAssetType: 1
@@ -296,6 +305,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16353917461806733124
+  Name: "Ring - Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torus_003"
+  }
+}
+Assets {
   Id: 16215190361915007984
   Name: "Text 05: ~"
   PlatformAssetType: 1
@@ -341,6 +359,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16112594276064518583
+  Name: "Text 03: S"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_018"
+  }
+}
+Assets {
   Id: 16103731374217721402
   Name: "Bricks Chunky Stone 01"
   PlatformAssetType: 2
@@ -374,6 +401,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_curtain_rod_01"
+  }
+}
+Assets {
+  Id: 15897705887741699672
+  Name: "Urban Pipe Straight"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_urb_pipes_straight_001_ref"
   }
 }
 Assets {
@@ -944,6 +980,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12805007769939383991
+  Name: "Text 03: K"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_010"
+  }
+}
+Assets {
   Id: 12782940202352343062
   Name: "Wallpaper Chevron 01"
   PlatformAssetType: 2
@@ -968,6 +1013,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F7_Text_049"
+  }
+}
+Assets {
+  Id: 12442421961645460990
+  Name: "Plane 1m - One Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_001"
   }
 }
 Assets {
@@ -1166,6 +1220,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_015"
+  }
+}
+Assets {
+  Id: 11020923890823202697
+  Name: "Container - Square Thin 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_container_square_thin_ref"
   }
 }
 Assets {
@@ -1448,6 +1511,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9177360065130472087
+  Name: "Text 03: A"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_000"
+  }
+}
+Assets {
   Id: 9172416079279347246
   Name: "\"Simple Jazz Swing\" Music Construction Kit (Sections) 01"
   PlatformAssetType: 10
@@ -1565,6 +1637,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8507532856601508795
+  Name: "Wood Planks White"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_planks_white_001_uv"
+  }
+}
+Assets {
   Id: 8492432699345975995
   Name: "Craftsman Wall 01 Corner"
   PlatformAssetType: 1
@@ -1616,6 +1697,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_trash_public_001"
+  }
+}
+Assets {
+  Id: 8155994152759289014
+  Name: "Cylinder - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_001"
   }
 }
 Assets {
@@ -1790,6 +1880,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6747614045051753376
+  Name: "Cylinder - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_001"
+  }
+}
+Assets {
   Id: 6722267691116138132
   Name: "Fantasy Staff Grip 01"
   PlatformAssetType: 1
@@ -1805,6 +1904,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_fan_terracotta_pots_001_uv"
+  }
+}
+Assets {
+  Id: 6677237403455816226
+  Name: "Portal VFX"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_portal"
   }
 }
 Assets {
@@ -1898,6 +2006,24 @@ Assets {
   }
 }
 Assets {
+  Id: 6185017546957884116
+  Name: "2D Basic Shapes Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "dcl_basicShapes"
+  }
+}
+Assets {
+  Id: 6182276370404030084
+  Name: "Text 03: R"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_017"
+  }
+}
+Assets {
   Id: 6175278711796486850
   Name: "Text 03: S"
   PlatformAssetType: 1
@@ -1913,6 +2039,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dtn_mst_stairs_001_150cm_ref"
+  }
+}
+Assets {
+  Id: 6007590112246060334
+  Name: "Text 04: ,"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F7_Text_062"
   }
 }
 Assets {
@@ -2114,12 +2249,30 @@ Assets {
   }
 }
 Assets {
+  Id: 5125175969659479485
+  Name: "Text 03: E"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_004"
+  }
+}
+Assets {
   Id: 5106178074541799398
   Name: "Cube - Bottom-Aligned"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_001"
+  }
+}
+Assets {
+  Id: 5085459621891475199
+  Name: "Text 03: M"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_012"
   }
 }
 Assets {
@@ -2498,6 +2651,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_011"
+  }
+}
+Assets {
+  Id: 2505596511622348573
+  Name: "Text 03: T"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_019"
   }
 }
 Assets {

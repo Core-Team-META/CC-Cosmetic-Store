@@ -1,17 +1,36 @@
-﻿local lootboxGenerator = script:GetCustomProperty("LootboxGenerator"):WaitForObject()
+﻿------------------------------------------------------------------------------------------------------------------------
+-- Loot Box Spawner
+-- Author: Morticai (META) - (https://www.coregames.com/user/d1073dbcc404405cbef8ce728e53d380)
+-- Date: 2020/12/16
+-- Version: 0.1.0
+-- Description: 
+------------------------------------------------------------------------------------------------------------------------
+-- REQUIRE
+------------------------------------------------------------------------------------------------------------------------
+local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
+------------------------------------------------------------------------------------------------------------------------
+-- OBJECTS
+------------------------------------------------------------------------------------------------------------------------
+local lootboxGenerator = script:GetCustomProperty("LootboxGenerator"):WaitForObject()
 local LOOT_MACHINE = script:GetCustomProperty("Loot_Machine"):WaitForObject()
+------------------------------------------------------------------------------------------------------------------------
+-- CUSTOM PROPERTIES
+------------------------------------------------------------------------------------------------------------------------
 local Common_Lootbox = script:GetCustomProperty("Loot_Box_Common")
 local Uncommon_Lootbox = script:GetCustomProperty("Loot_Box_Uncommon")
 local Rare_Lootbox = script:GetCustomProperty("Loot_Box_Rare")
 local Epic_Lootbox = script:GetCustomProperty("Loot_Box_Epic")
 local Legendary_Lootbox = script:GetCustomProperty("Loot_Box_Legendary")
 local CHANGE_PRIZE_CAMERA = script:GetCustomProperty("ChangePrizeCamera")
-
-local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
-
+------------------------------------------------------------------------------------------------------------------------
+-- LOCAL VARIABLES
+------------------------------------------------------------------------------------------------------------------------
 local chestSpawnMarker
 local selectedColor = nil
 local currentBox
+------------------------------------------------------------------------------------------------------------------------
+-- LOCAL FUNCTIONS
+------------------------------------------------------------------------------------------------------------------------
 
 local function SetupPlatform()
     for i, child in ipairs(LOOT_MACHINE:GetChildren()) do
@@ -21,6 +40,8 @@ local function SetupPlatform()
     end
 end
 
+--@param string rarity
+--@return string lootbox MUID
 local function CheckRarity(rarity)
     if rarity == "Common" then
         return Common_Lootbox
@@ -37,6 +58,8 @@ local function CheckRarity(rarity)
     end
 end
 
+--@param string id => player.id
+--@return object player
 local function FindPlayerById(id)
     for _, player in ipairs(Game.GetPlayers()) do
         if player.id == id then
@@ -54,6 +77,12 @@ local function FindScript(lootBox)
     return nil
 end
 
+
+------------------------------------------------------------------------------------------------------------------------
+-- GLOBAL FUNCTIONS
+------------------------------------------------------------------------------------------------------------------------
+--@param object player
+--@param
 function SpawnLootBox(player, prize, rarity)
     if CHANGE_PRIZE_CAMERA and player == Game.GetLocalPlayer() then
         --Events.Broadcast("OpenChestEvent")
@@ -72,14 +101,11 @@ function Setup(generator, propertyName)
     if propertyName ~= "RewardName" then
         return
     end
-
     local prize = lootboxGenerator:GetCustomProperty("RewardName")
 
     if prize == "" then
         return
     end
-
-    --print("prize name to look for: " .. prize)
 
     local rarity = lootboxGenerator:GetCustomProperty("PrizeRarity")
 
@@ -91,4 +117,8 @@ function Setup(generator, propertyName)
     SpawnLootBox(player, prize, rarity)
 end
 
+
+------------------------------------------------------------------------------------------------------------------------
+-- LISTENERS
+------------------------------------------------------------------------------------------------------------------------
 lootboxGenerator.networkedPropertyChangedEvent:Connect(Setup)
