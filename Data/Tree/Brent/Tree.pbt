@@ -20,7 +20,7 @@ Objects {
   ParentId: 5886917377158341065
   ChildIds: 10287377189951863320
   ChildIds: 15316851131136835521
-  ChildIds: 4048568608329531071
+  ChildIds: 5888033173148557829
   ChildIds: 4066705427424873131
   ChildIds: 1799235503229948380
   ChildIds: 11269061822651247186
@@ -51561,15 +51561,40 @@ Objects {
   }
 }
 Objects {
-  Id: 4048568608329531071
-  Name: "Loot_Box_Spawner"
+  Id: 5888033173148557829
+  Name: "ClientContext"
   Transform {
     Location {
       Y: -44.9999962
       Z: 30
     }
     Rotation {
-      Yaw: -89.9999924
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5595803427365930117
+  ChildIds: 4048568608329531071
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 4048568608329531071
+  Name: "Loot_Box_Spawner"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -89.9999771
     }
     Scale {
       X: 0.99999994
@@ -51577,7 +51602,7 @@ Objects {
       Z: 0.99999994
     }
   }
-  ParentId: 5595803427365930117
+  ParentId: 5888033173148557829
   UnregisteredParameters {
     Overrides {
       Name: "cs:ChangePrizeCamera"
@@ -51592,25 +51617,25 @@ Objects {
     Overrides {
       Name: "cs:Loot_Box_Uncommon"
       AssetReference {
-        Id: 12786252723121837744
+        Id: 6392292436882305540
       }
     }
     Overrides {
       Name: "cs:Loot_Box_Rare"
       AssetReference {
-        Id: 7507518518593025393
+        Id: 12984436206213878224
       }
     }
     Overrides {
       Name: "cs:Loot_Box_Epic"
       AssetReference {
-        Id: 15738654651887114321
+        Id: 4854196293923781992
       }
     }
     Overrides {
       Name: "cs:Loot_Box_Legendary"
       AssetReference {
-        Id: 9461002599271886209
+        Id: 15922254291833518175
       }
     }
     Overrides {
