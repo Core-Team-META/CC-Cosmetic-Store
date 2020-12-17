@@ -18,7 +18,9 @@ Objects {
     }
   }
   ParentId: 5886917377158341065
+  ChildIds: 10287377189951863320
   ChildIds: 15316851131136835521
+  ChildIds: 4048568608329531071
   ChildIds: 4066705427424873131
   ChildIds: 1799235503229948380
   ChildIds: 11269061822651247186
@@ -48561,7 +48563,6 @@ Objects {
   ChildIds: 2531178615423613386
   ChildIds: 2449865194192283689
   ChildIds: 14312363309312814778
-  ChildIds: 4048568608329531071
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -48576,93 +48577,6 @@ Objects {
     InstanceId: 5210728010314460834
     TemplateId: 4038370370694954791
     WasRoot: true
-  }
-}
-Objects {
-  Id: 4048568608329531071
-  Name: "Loot_Box_Spawner"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.28136516
-      Y: 2.28136516
-      Z: 2.28136516
-    }
-  }
-  ParentId: 18244449108185125627
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:ChangePrizeCamera"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:Loot_Box_Common"
-      AssetReference {
-        Id: 6315750633306441554
-      }
-    }
-    Overrides {
-      Name: "cs:Loot_Box_Uncommon"
-      AssetReference {
-        Id: 12786252723121837744
-      }
-    }
-    Overrides {
-      Name: "cs:Loot_Box_Rare"
-      AssetReference {
-        Id: 7507518518593025393
-      }
-    }
-    Overrides {
-      Name: "cs:Loot_Box_Epic"
-      AssetReference {
-        Id: 15738654651887114321
-      }
-    }
-    Overrides {
-      Name: "cs:Loot_Box_Legendary"
-      AssetReference {
-        Id: 9461002599271886209
-      }
-    }
-    Overrides {
-      Name: "cs:ChestSpawnMarker"
-      ObjectReference {
-        SelfId: 4703501942428521935
-      }
-    }
-    Overrides {
-      Name: "cs:LootboxGenerator"
-      ObjectReference {
-        SelfId: 15316851131136835521
-      }
-    }
-    Overrides {
-      Name: "cs:Loot_Machine"
-      ObjectReference {
-        SelfId: 2449865194192283689
-      }
-    }
-    Overrides {
-      Name: "cs:ReliableEvents"
-      AssetReference {
-        Id: 1680988108412715813
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 6605309665226940976
-    }
   }
 }
 Objects {
@@ -51647,6 +51561,136 @@ Objects {
   }
 }
 Objects {
+  Id: 4048568608329531071
+  Name: "Loot_Box_Spawner"
+  Transform {
+    Location {
+      Y: -44.9999962
+      Z: 30
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 0.99999994
+      Y: 0.99999994
+      Z: 0.99999994
+    }
+  }
+  ParentId: 5595803427365930117
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ChangePrizeCamera"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Common"
+      AssetReference {
+        Id: 6315750633306441554
+      }
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Uncommon"
+      AssetReference {
+        Id: 12786252723121837744
+      }
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Rare"
+      AssetReference {
+        Id: 7507518518593025393
+      }
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Epic"
+      AssetReference {
+        Id: 15738654651887114321
+      }
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Legendary"
+      AssetReference {
+        Id: 9461002599271886209
+      }
+    }
+    Overrides {
+      Name: "cs:ChestSpawnMarker"
+      ObjectReference {
+        SelfId: 4703501942428521935
+      }
+    }
+    Overrides {
+      Name: "cs:LootboxGenerator"
+      ObjectReference {
+        SelfId: 15316851131136835521
+      }
+    }
+    Overrides {
+      Name: "cs:Loot_Machine"
+      ObjectReference {
+        SelfId: 2449865194192283689
+      }
+    }
+    Overrides {
+      Name: "cs:ReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
+      Name: "cs:ChangePrizeCamera:tooltip"
+      String: "If this is checked, the player that spins the wheel, will have their camera adjusted to zoom in to the lootboxes"
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Common:tooltip"
+      String: "Asset refrence to the the \"Common\" LootBox, this is the art that will spawn based on the rarity of the prize."
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Uncommon:tooltip"
+      String: "Asset refrence to the the \"Uncommon\" LootBox, this is the art that will spawn based on the rarity of the prize."
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Rare:tooltip"
+      String: "Asset refrence to the the \"Rare\" LootBox, this is the art that will spawn based on the rarity of the prize."
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Epic:tooltip"
+      String: "Asset refrence to the the \"Epic\" LootBox, this is the art that will spawn based on the rarity of the prize."
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Legendary:tooltip"
+      String: "Asset refrence to the the \"Legendary\" LootBox, this is the art that will spawn based on the rarity of the prize."
+    }
+    Overrides {
+      Name: "cs:ChestSpawnMarker:tooltip"
+      String: "This is an object that must be in your game, it\'s currently found in the Loot Machine Animation Fantasy(Client Context). The chest will spawn from this objects world position."
+    }
+    Overrides {
+      Name: "cs:LootboxGenerator:tooltip"
+      String: "Is a Core Object Refrence to the LootboxGenerator.lua script in your heirarchy"
+    }
+    Overrides {
+      Name: "cs:Loot_Machine:tooltip"
+      String: "A Core Object Refrence to your Loot_Machine found  under the  Loot Machine Animation Fantasy(Client Context) To customize your Loot Machine please refrence \"Customizing Loot Machine\" found further in this ReadMe."
+    }
+    Overrides {
+      Name: "cs:ReliableEvents:tooltip"
+      String: "Asset refrennce to ReliableEvents.lua used to make sure broadcasts are not droped."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6605309665226940976
+    }
+  }
+}
+Objects {
   Id: 15316851131136835521
   Name: "LootboxGenerator"
   Transform {
@@ -51714,6 +51758,38 @@ Objects {
       Name: "cs:PlayerId:isrep"
       Bool: true
     }
+    Overrides {
+      Name: "cs:DropTable:tooltip"
+      String: "Refrence the DropTable found in your heirarchy, below this script by default."
+    }
+    Overrides {
+      Name: "cs:Trigger:tooltip"
+      String: "Refrence the Trigger found in your heirarchy, below this script by default."
+    }
+    Overrides {
+      Name: "cs:CurrencyName:tooltip"
+      String: "The name of the resource, players will spend to spin the wheel. (Ex =>  \"gold\", \"coins\", etc)"
+    }
+    Overrides {
+      Name: "cs:RollCost:tooltip"
+      String: "Is the cost of how much a player will spend to spin the wheel each time (Ex => 50 \"gold\")"
+    }
+    Overrides {
+      Name: "cs:PrizeRarity:tooltip"
+      String: "(Leave Blank) Networked Custom Property used to pass rarity from server to client."
+    }
+    Overrides {
+      Name: "cs:RewardName:tooltip"
+      String: "(Leave Blank) Networked Custom Property used to pass reward name from server to client."
+    }
+    Overrides {
+      Name: "cs:PlayerId:tooltip"
+      String: "(Leave Blank) Networked Custom Property used to pass the player.id of the player spinning the wheel from server to client."
+    }
+    Overrides {
+      Name: "cs:ReliableEvents:tooltip"
+      String: "Asset refrennce to ReliableEvents.lua used to make sure broadcasts are not droped."
+    }
   }
   WantsNetworking: true
   Collidable_v2 {
@@ -51725,6 +51801,33 @@ Objects {
   Script {
     ScriptAsset {
       Id: 6111990894080668121
+    }
+  }
+}
+Objects {
+  Id: 10287377189951863320
+  Name: "SpinWheel_README"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5595803427365930117
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7381641073965918806
     }
   }
 }
