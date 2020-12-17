@@ -627,7 +627,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "STORE_Chef Hat_1"
+    FilePartitionName: "STORE_Chef Hat"
   }
   InstanceHistory {
     SelfId: 8542851779739392449
@@ -666,7 +666,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "STORE_Hat1"
+    FilePartitionName: "STORE_Hat1_1"
   }
   InstanceHistory {
     SelfId: 10591507480129226820
@@ -705,7 +705,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "STORE_Cowboy Hat _Hat_1"
+    FilePartitionName: "STORE_Cowboy Hat _Hat"
   }
   InstanceHistory {
     SelfId: 6614845632776586061
@@ -48727,7 +48727,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "STORE_Hat1_1"
+    FilePartitionName: "STORE_Hat1_2"
   }
   InstanceHistory {
     SelfId: 10591507480129226820
@@ -48762,7 +48762,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "STORE_BirthdayCake Hat_1"
+    FilePartitionName: "STORE_BirthdayCake Hat"
   }
   InstanceHistory {
     SelfId: 15837184790646461700
@@ -48797,7 +48797,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "STORE_Cowboy Hat _Hat"
+    FilePartitionName: "STORE_Cowboy Hat _Hat_2"
   }
   InstanceHistory {
     SelfId: 6614845632776586061
@@ -48832,7 +48832,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "STORE_Chef Hat"
+    FilePartitionName: "STORE_Chef Hat_2"
   }
   InstanceHistory {
     SelfId: 8542851779739392449
@@ -48867,7 +48867,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "STORE_Costume1_1"
+    FilePartitionName: "STORE_Costume1"
   }
   InstanceHistory {
     SelfId: 166566125932590602

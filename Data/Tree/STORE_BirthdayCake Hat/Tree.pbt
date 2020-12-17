@@ -1,7 +1,7 @@
-﻿Name: "STORE_BirthdayCake Hat_1"
-RootId: 3280338845287670424
+﻿Name: "STORE_BirthdayCake Hat"
+RootId: 15837184790646461700
 Objects {
-  Id: 8354917965016556714
+  Id: 9881158307198383510
   Name: "STORE_ItemInfo"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3280338845287670424
+  ParentId: 15837184790646461700
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -52,9 +52,15 @@ Objects {
       Id: 6380040976156754336
     }
   }
+  InstanceHistory {
+    SelfId: 9881158307198383510
+    SubobjectId: 14783338600786857350
+    InstanceId: 8344387327099409665
+    TemplateId: 18277733649088940997
+  }
 }
 Objects {
-  Id: 4846463376319909892
+  Id: 17507175165470585269
   Name: "head"
   Transform {
     Location {
@@ -67,8 +73,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3280338845287670424
-  ChildIds: 7336767470808737635
+  ParentId: 15837184790646461700
+  ChildIds: 2042993740370478012
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -78,9 +84,15 @@ Objects {
   Folder {
     IsGroup: true
   }
+  InstanceHistory {
+    SelfId: 17507175165470585269
+    SubobjectId: 13185957032834304421
+    InstanceId: 8344387327099409665
+    TemplateId: 18277733649088940997
+  }
 }
 Objects {
-  Id: 7336767470808737635
+  Id: 2042993740370478012
   Name: "BirthdayCake Hat _Hat"
   Transform {
     Location {
@@ -94,8 +106,8 @@ Objects {
       Z: 2
     }
   }
-  ParentId: 4846463376319909892
-  ChildIds: 15060283322078817978
+  ParentId: 17507175165470585269
+  ChildIds: 2331354777113884642
   UnregisteredParameters {
     Overrides {
       Name: "cs:VerticalOffset"
@@ -152,9 +164,15 @@ Objects {
   }
   NetworkContext {
   }
+  InstanceHistory {
+    SelfId: 2042993740370478012
+    SubobjectId: 6364218471167572908
+    InstanceId: 8344387327099409665
+    TemplateId: 18277733649088940997
+  }
 }
 Objects {
-  Id: 15060283322078817978
+  Id: 2331354777113884642
   Name: "Cake for Alisa"
   Transform {
     Location {
@@ -173,16 +191,16 @@ Objects {
       Z: 0.246268392
     }
   }
-  ParentId: 7336767470808737635
-  ChildIds: 16153350624981249844
-  ChildIds: 16622578408530261846
-  ChildIds: 4426128552160906663
-  ChildIds: 14787016502170383754
-  ChildIds: 9027272019011227837
-  ChildIds: 8865520950760881903
-  ChildIds: 7922210028094775824
-  ChildIds: 14972117518426710806
-  ChildIds: 9463350675371584951
+  ParentId: 2042993740370478012
+  ChildIds: 1150251416933797995
+  ChildIds: 6188095355449975214
+  ChildIds: 9496079233062422113
+  ChildIds: 7301375555552176532
+  ChildIds: 15389549815739804774
+  ChildIds: 18192151907834059648
+  ChildIds: 16972642568128787159
+  ChildIds: 8816117612473231605
+  ChildIds: 1738773745456621152
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -192,9 +210,15 @@ Objects {
   Folder {
     IsGroup: true
   }
+  InstanceHistory {
+    SelfId: 2331354777113884642
+    SubobjectId: 7229042456476864498
+    InstanceId: 8344387327099409665
+    TemplateId: 18277733649088940997
+  }
 }
 Objects {
-  Id: 9463350675371584951
+  Id: 1738773745456621152
   Name: "Heart - Polished"
   Transform {
     Location {
@@ -212,7 +236,7 @@ Objects {
       Z: 0.168370247
     }
   }
-  ParentId: 15060283322078817978
+  ParentId: 2331354777113884642
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -238,9 +262,15 @@ Objects {
       }
     }
   }
+  InstanceHistory {
+    SelfId: 1738773745456621152
+    SubobjectId: 6640918853574106736
+    InstanceId: 8344387327099409665
+    TemplateId: 18277733649088940997
+  }
 }
 Objects {
-  Id: 14972117518426710806
+  Id: 8816117612473231605
   Name: "Cylinder - Rounded Small"
   Transform {
     Location {
@@ -258,7 +288,7 @@ Objects {
       Z: 1.53676784
     }
   }
-  ParentId: 15060283322078817978
+  ParentId: 2331354777113884642
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -290,9 +320,15 @@ Objects {
       }
     }
   }
+  InstanceHistory {
+    SelfId: 8816117612473231605
+    SubobjectId: 4490424468610814181
+    InstanceId: 8344387327099409665
+    TemplateId: 18277733649088940997
+  }
 }
 Objects {
-  Id: 7922210028094775824
+  Id: 16972642568128787159
   Name: "Cylinder - Rounded Small"
   Transform {
     Location {
@@ -310,7 +346,7 @@ Objects {
       Z: 0.360702544
     }
   }
-  ParentId: 15060283322078817978
+  ParentId: 2331354777113884642
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -342,9 +378,15 @@ Objects {
       }
     }
   }
+  InstanceHistory {
+    SelfId: 16972642568128787159
+    SubobjectId: 12646923027958745799
+    InstanceId: 8344387327099409665
+    TemplateId: 18277733649088940997
+  }
 }
 Objects {
-  Id: 8865520950760881903
+  Id: 18192151907834059648
   Name: "Cylinder - Rounded Small"
   Transform {
     Location {
@@ -362,7 +404,7 @@ Objects {
       Z: 0.439904302
     }
   }
-  ParentId: 15060283322078817978
+  ParentId: 2331354777113884642
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -401,9 +443,15 @@ Objects {
       }
     }
   }
+  InstanceHistory {
+    SelfId: 18192151907834059648
+    SubobjectId: 13294508208877593488
+    InstanceId: 8344387327099409665
+    TemplateId: 18277733649088940997
+  }
 }
 Objects {
-  Id: 9027272019011227837
+  Id: 15389549815739804774
   Name: "Cylinder - Rounded Small"
   Transform {
     Location {
@@ -421,7 +469,7 @@ Objects {
       Z: 0.615108311
     }
   }
-  ParentId: 15060283322078817978
+  ParentId: 2331354777113884642
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -460,9 +508,15 @@ Objects {
       }
     }
   }
+  InstanceHistory {
+    SelfId: 15389549815739804774
+    SubobjectId: 10491908307283104886
+    InstanceId: 8344387327099409665
+    TemplateId: 18277733649088940997
+  }
 }
 Objects {
-  Id: 14787016502170383754
+  Id: 7301375555552176532
   Name: "Cylinder - Rounded Small"
   Transform {
     Location {
@@ -480,7 +534,7 @@ Objects {
       Z: 0.83223623
     }
   }
-  ParentId: 15060283322078817978
+  ParentId: 2331354777113884642
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -519,9 +573,15 @@ Objects {
       }
     }
   }
+  InstanceHistory {
+    SelfId: 7301375555552176532
+    SubobjectId: 2403698871313453444
+    InstanceId: 8344387327099409665
+    TemplateId: 18277733649088940997
+  }
 }
 Objects {
-  Id: 4426128552160906663
+  Id: 9496079233062422113
   Name: "Cylinder - Rounded Small"
   Transform {
     Location {
@@ -539,7 +599,7 @@ Objects {
       Z: 0.245478556
     }
   }
-  ParentId: 15060283322078817978
+  ParentId: 2331354777113884642
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -577,9 +637,15 @@ Objects {
       }
     }
   }
+  InstanceHistory {
+    SelfId: 9496079233062422113
+    SubobjectId: 14393729540363615857
+    InstanceId: 8344387327099409665
+    TemplateId: 18277733649088940997
+  }
 }
 Objects {
-  Id: 16622578408530261846
+  Id: 6188095355449975214
   Name: "Cylinder - Rounded Small"
   Transform {
     Location {
@@ -597,7 +663,7 @@ Objects {
       Z: 0.256925046
     }
   }
-  ParentId: 15060283322078817978
+  ParentId: 2331354777113884642
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -635,9 +701,15 @@ Objects {
       }
     }
   }
+  InstanceHistory {
+    SelfId: 6188095355449975214
+    SubobjectId: 1290442860953999806
+    InstanceId: 8344387327099409665
+    TemplateId: 18277733649088940997
+  }
 }
 Objects {
-  Id: 16153350624981249844
+  Id: 1150251416933797995
   Name: "Cylinder - Rounded Small"
   Transform {
     Location {
@@ -654,7 +726,7 @@ Objects {
       Z: 0.327094734
     }
   }
-  ParentId: 15060283322078817978
+  ParentId: 2331354777113884642
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -691,5 +763,11 @@ Objects {
       Physics {
       }
     }
+  }
+  InstanceHistory {
+    SelfId: 1150251416933797995
+    SubobjectId: 5475979745226631291
+    InstanceId: 8344387327099409665
+    TemplateId: 18277733649088940997
   }
 }

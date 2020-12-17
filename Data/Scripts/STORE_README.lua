@@ -1,11 +1,15 @@
 ﻿--[[
-	Cosmetic Store
+	STORE_Logic - README
 	
-	1.0 - 11/9/2020
+	v 0.1.0 - 12/16/2020
 
-	By Chris, Mucusinator, estlogic	
+	By Montoli, Mucusinator, Estlogic, Buckmonster
 
-
+    Montoli (META) (https://www.coregames.com/user/422e57c184374923b8ce32176b018db5)
+    Mucusinator (META) (https://www.coregames.com/user/94d3fd50c4824f019421895ec8dbf099)
+    Estlogic (META) (https://www.coregames.com/user/385b45d7abdb499f8664c6cb01df521b)
+    Buckmonster (META) (https://www.coregames.com/user/901b7628983c4c8db4282f24afeda57a)
+    
 	This is intended to serve as a store for cosmetic items.  Creators can easily
 	create a set of costumes and cosmetics, and create a store that players can
 	buy and equip items from.
@@ -74,9 +78,9 @@
     tool tips on these properties for further information.
 
 	To create an inventory for the store, create a folder in the hierarchy named STORE_StoreContents,
-	and populate it with any cosmetic templates that you want to include in the store. The store
-	will attempt to include every template found in the folder.
-    (the name of this folder can be changed via a custom property on the STORE_CosmeticStore template.)
+	and populate it with the STORE_ItemInfo script for each cosmetic. The store will attempt to include 
+	every template found in the folder. (the name of this folder can be changed via a custom property 
+	on the STORE_CosmeticStore template.)
 
 
 
@@ -162,6 +166,10 @@
 	entry, so players can rotate and zoom in on a mannequin wearing the cosmetic item without having to purchase
 	the cosmetic item (this serves as a preview for the players).
 	
+	Perks
+	-------------------
+	
+	The shop is also equipped to support perk related items such as subscription-exclusive items.
 	
 
 	For more information check the tooltips on each of the script properties.

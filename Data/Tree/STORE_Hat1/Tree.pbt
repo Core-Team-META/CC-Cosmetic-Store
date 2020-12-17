@@ -1,7 +1,7 @@
 ﻿Name: "STORE_Hat1"
-RootId: 17922244112942947364
+RootId: 17336710947800279074
 Objects {
-  Id: 10304799613486060164
+  Id: 167901222871248797
   Name: "STORE_ItemInfo"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17922244112942947364
+  ParentId: 17336710947800279074
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -52,15 +52,9 @@ Objects {
       Id: 6380040976156754336
     }
   }
-  InstanceHistory {
-    SelfId: 1778678136128163561
-    SubobjectId: 11230689304477526829
-    InstanceId: 4144760558013664828
-    TemplateId: 6935989339742598427
-  }
 }
 Objects {
-  Id: 10023600391723582240
+  Id: 15594179340547311185
   Name: "head"
   Transform {
     Location {
@@ -73,8 +67,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17922244112942947364
-  ChildIds: 8953993207376572894
+  ParentId: 17336710947800279074
+  ChildIds: 12295221552666516917
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -84,15 +78,9 @@ Objects {
   Folder {
     IsGroup: true
   }
-  InstanceHistory {
-    SelfId: 8132877530617912056
-    SubobjectId: 17557713305722273596
-    InstanceId: 4144760558013664828
-    TemplateId: 6935989339742598427
-  }
 }
 Objects {
-  Id: 8953993207376572894
+  Id: 12295221552666516917
   Name: "Sphere"
   Transform {
     Location {
@@ -106,7 +94,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 10023600391723582240
+  ParentId: 15594179340547311185
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -132,15 +120,9 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 2179681255613041696
-    SubobjectId: 11334300984355695076
-    InstanceId: 4144760558013664828
-    TemplateId: 6935989339742598427
-  }
 }
 Objects {
-  Id: 5209728225460633448
+  Id: 269646698824525758
   Name: "store_graphic"
   Transform {
     Location {
@@ -153,8 +135,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17922244112942947364
-  ChildIds: 11902430753021201933
+  ParentId: 17336710947800279074
+  ChildIds: 17506817456139767212
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -164,15 +146,9 @@ Objects {
   Folder {
     IsGroup: true
   }
-  InstanceHistory {
-    SelfId: 17170943351030483246
-    SubobjectId: 7872076904898112746
-    InstanceId: 4144760558013664828
-    TemplateId: 6935989339742598427
-  }
 }
 Objects {
-  Id: 11902430753021201933
+  Id: 17506817456139767212
   Name: "Sphere"
   Transform {
     Location {
@@ -186,7 +162,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 5209728225460633448
+  ParentId: 269646698824525758
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -211,11 +187,5 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 12193668178947221180
-    SubobjectId: 3048042660958241656
-    InstanceId: 4144760558013664828
-    TemplateId: 6935989339742598427
   }
 }

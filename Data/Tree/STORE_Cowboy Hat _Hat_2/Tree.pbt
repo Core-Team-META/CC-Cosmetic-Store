@@ -1,7 +1,7 @@
-﻿Name: "STORE_Cowboy Hat _Hat_1"
-RootId: 14225968895845386666
+﻿Name: "STORE_Cowboy Hat _Hat_2"
+RootId: 6614845632776586061
 Objects {
-  Id: 4899497079645155347
+  Id: 16600083391757091900
   Name: "STORE_ItemInfo"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14225968895845386666
+  ParentId: 6614845632776586061
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -52,9 +52,15 @@ Objects {
       Id: 6380040976156754336
     }
   }
+  InstanceHistory {
+    SelfId: 16600083391757091900
+    SubobjectId: 9974761825354809242
+    InstanceId: 15631285836382875372
+    TemplateId: 614220041473863367
+  }
 }
 Objects {
-  Id: 14321848086363615095
+  Id: 4705016727051218919
   Name: "head"
   Transform {
     Location {
@@ -67,8 +73,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14225968895845386666
-  ChildIds: 14142021821514698197
+  ParentId: 6614845632776586061
+  ChildIds: 15854931348895265569
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -78,9 +84,15 @@ Objects {
   Folder {
     IsGroup: true
   }
+  InstanceHistory {
+    SelfId: 4705016727051218919
+    SubobjectId: 3276858166989935681
+    InstanceId: 15631285836382875372
+    TemplateId: 614220041473863367
+  }
 }
 Objects {
-  Id: 14142021821514698197
+  Id: 15854931348895265569
   Name: "Cowboy Hat _Hat"
   Transform {
     Location {
@@ -93,8 +105,8 @@ Objects {
       Z: 0.9
     }
   }
-  ParentId: 14321848086363615095
-  ChildIds: 12750324563866731000
+  ParentId: 4705016727051218919
+  ChildIds: 3875704590580158987
   UnregisteredParameters {
     Overrides {
       Name: "cs:VerticalOffset"
@@ -151,9 +163,15 @@ Objects {
   }
   NetworkContext {
   }
+  InstanceHistory {
+    SelfId: 15854931348895265569
+    SubobjectId: 12698504859313637511
+    InstanceId: 15631285836382875372
+    TemplateId: 614220041473863367
+  }
 }
 Objects {
-  Id: 12750324563866731000
+  Id: 3875704590580158987
   Name: "Hat"
   Transform {
     Location {
@@ -172,10 +190,10 @@ Objects {
       Z: 0.0215625409
     }
   }
-  ParentId: 14142021821514698197
-  ChildIds: 6663454079928389506
-  ChildIds: 14060101453784322734
-  ChildIds: 2348529502536781989
+  ParentId: 15854931348895265569
+  ChildIds: 12806438125612907161
+  ChildIds: 15087446386802688626
+  ChildIds: 12154373393986688325
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -185,9 +203,15 @@ Objects {
   Folder {
     IsGroup: true
   }
+  InstanceHistory {
+    SelfId: 3875704590580158987
+    SubobjectId: 6483892803042339245
+    InstanceId: 15631285836382875372
+    TemplateId: 614220041473863367
+  }
 }
 Objects {
-  Id: 2348529502536781989
+  Id: 12154373393986688325
   Name: "Capsule"
   Transform {
     Location {
@@ -206,7 +230,7 @@ Objects {
       Z: 2.52613735
     }
   }
-  ParentId: 12750324563866731000
+  ParentId: 3875704590580158987
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -245,9 +269,15 @@ Objects {
       }
     }
   }
+  InstanceHistory {
+    SelfId: 12154373393986688325
+    SubobjectId: 14168092260312575715
+    InstanceId: 15631285836382875372
+    TemplateId: 614220041473863367
+  }
 }
 Objects {
-  Id: 14060101453784322734
+  Id: 15087446386802688626
   Name: "Cone - Truncated Wide"
   Transform {
     Location {
@@ -266,7 +296,7 @@ Objects {
       Z: 11.4278803
     }
   }
-  ParentId: 12750324563866731000
+  ParentId: 3875704590580158987
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -305,9 +335,15 @@ Objects {
       }
     }
   }
+  InstanceHistory {
+    SelfId: 15087446386802688626
+    SubobjectId: 13642333877133212116
+    InstanceId: 15631285836382875372
+    TemplateId: 614220041473863367
+  }
 }
 Objects {
-  Id: 6663454079928389506
+  Id: 12806438125612907161
   Name: "Donut"
   Transform {
     Location {
@@ -326,7 +362,7 @@ Objects {
       Z: 2.20884085
     }
   }
-  ParentId: 12750324563866731000
+  ParentId: 3875704590580158987
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -364,5 +400,11 @@ Objects {
       Physics {
       }
     }
+  }
+  InstanceHistory {
+    SelfId: 12806438125612907161
+    SubobjectId: 15964052811478483263
+    InstanceId: 15631285836382875372
+    TemplateId: 614220041473863367
   }
 }
