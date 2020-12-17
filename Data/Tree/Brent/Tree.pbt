@@ -41234,7 +41234,7 @@ Objects {
 }
 Objects {
   Id: 7309511591355786225
-  Name: "Loot_Box_Classic_Legendary"
+  Name: "Lootbox example legendary"
   Transform {
     Location {
       X: -79.5078735
@@ -43188,7 +43188,7 @@ Objects {
 }
 Objects {
   Id: 10347995147754199012
-  Name: "Loot_Box_Classic_Epic"
+  Name: "Lootbox example epic"
   Transform {
     Location {
       X: -48.2710571
@@ -45172,7 +45172,7 @@ Objects {
 }
 Objects {
   Id: 11850322164128907802
-  Name: "Loot_Box_Classic_Rare"
+  Name: "Lootbox example rare"
   Transform {
     Location {
       X: 24.9797363
@@ -47156,7 +47156,7 @@ Objects {
 }
 Objects {
   Id: 13193992458507728205
-  Name: "Loot_Box_Classic_Uncommon"
+  Name: "Lootbox example uncommon"
   Transform {
     Location {
       X: 82.5339355
@@ -49140,7 +49140,7 @@ Objects {
 }
 Objects {
   Id: 6863284667160310646
-  Name: "Loot_Box_Classic_Common"
+  Name: "Lootbox example common"
   Transform {
     Location {
       X: 107.673584
@@ -58686,11 +58686,11 @@ Objects {
     }
     Overrides {
       Name: "cs:UseEaseFunction"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:EaseStrength"
-      Float: 1.8
+      Float: 6.5
     }
     Overrides {
       Name: "cs:SequenceNumber:tooltip"
@@ -58852,7 +58852,7 @@ Objects {
     }
     RotationOffset {
     }
-    FieldOfView: 60
+    FieldOfView: 70
     ViewWidth: 1200
     RotationMode {
       Value: "mc:erotationmode:default"
