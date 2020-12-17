@@ -1,49 +1,10 @@
 ﻿Assets {
-  Id: 17658141792245074039
-  Name: "gold"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "94143b92be804c7488f2e56de504947c"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
-  Id: 17006084549478915643
-  Name: "goldTier3"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "40e42d7eb30a43928f11692ddc0d918f"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
   Id: 16910278292812118833
   Name: "Sun Light"
   PlatformAssetType: 6
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_SunLight"
-  }
-}
-Assets {
-  Id: 16155459845125363314
-  Name: "FasterMining"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "1b3a78e5a62048ffb8258c3d2b078305"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
   }
 }
 Assets {
@@ -146,19 +107,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12645960263457833821
-  Name: "goldTier2"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "e4e4fd3047bb48d394515bec24e24a2b"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
   Id: 12197464715307188934
   Name: "Grass Short"
   PlatformAssetType: 1
@@ -195,38 +143,12 @@ Assets {
   }
 }
 Assets {
-  Id: 10764570151625333288
-  Name: "Prestige"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "323d85cfcd69482da4e50f9bad0b184b"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
   Id: 9933879321394361768
   Name: "BG Highlighted 015"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundHighlighted_032"
-  }
-}
-Assets {
-  Id: 9933644209129313176
-  Name: "VIP"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "7ede08f3287a48d89191822247dd9bf8"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
   }
 }
 Assets {
@@ -293,19 +215,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6669039879252471329
-  Name: "dailyRoll"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "b97cffc8249f41f9be1ad9bdeab703fa"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
-  }
-}
-Assets {
   Id: 5985956015751324126
   Name: "Human Guy 2"
   PlatformAssetType: 17
@@ -330,19 +239,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_001"
-  }
-}
-Assets {
-  Id: 4300836913861041691
-  Name: "goldTier1"
-  PlatformAssetType: 24
-  NetReferenceAsset {
-    NetReference {
-      Key: "422c64963b874c68892824289cb086f3"
-      Type {
-        Value: "mc:enetreferencetype:creatorperk"
-      }
-    }
   }
 }
 Assets {

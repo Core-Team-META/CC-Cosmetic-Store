@@ -18,7 +18,9 @@ Objects {
     }
   }
   ParentId: 5886917377158341065
+  ChildIds: 10287377189951863320
   ChildIds: 15316851131136835521
+  ChildIds: 4048568608329531071
   ChildIds: 4066705427424873131
   ChildIds: 1799235503229948380
   ChildIds: 11269061822651247186
@@ -48561,7 +48563,6 @@ Objects {
   ChildIds: 2531178615423613386
   ChildIds: 2449865194192283689
   ChildIds: 14312363309312814778
-  ChildIds: 4048568608329531071
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -48576,93 +48577,6 @@ Objects {
     InstanceId: 5210728010314460834
     TemplateId: 4038370370694954791
     WasRoot: true
-  }
-}
-Objects {
-  Id: 4048568608329531071
-  Name: "Loot_Box_Spawner"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.28136516
-      Y: 2.28136516
-      Z: 2.28136516
-    }
-  }
-  ParentId: 18244449108185125627
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:ChangePrizeCamera"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:Loot_Box_Common"
-      AssetReference {
-        Id: 6315750633306441554
-      }
-    }
-    Overrides {
-      Name: "cs:Loot_Box_Uncommon"
-      AssetReference {
-        Id: 12786252723121837744
-      }
-    }
-    Overrides {
-      Name: "cs:Loot_Box_Rare"
-      AssetReference {
-        Id: 7507518518593025393
-      }
-    }
-    Overrides {
-      Name: "cs:Loot_Box_Epic"
-      AssetReference {
-        Id: 15738654651887114321
-      }
-    }
-    Overrides {
-      Name: "cs:Loot_Box_Legendary"
-      AssetReference {
-        Id: 9461002599271886209
-      }
-    }
-    Overrides {
-      Name: "cs:ChestSpawnMarker"
-      ObjectReference {
-        SelfId: 4703501942428521935
-      }
-    }
-    Overrides {
-      Name: "cs:LootboxGenerator"
-      ObjectReference {
-        SelfId: 15316851131136835521
-      }
-    }
-    Overrides {
-      Name: "cs:Loot_Machine"
-      ObjectReference {
-        SelfId: 2449865194192283689
-      }
-    }
-    Overrides {
-      Name: "cs:ReliableEvents"
-      AssetReference {
-        Id: 1680988108412715813
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 6605309665226940976
-    }
   }
 }
 Objects {
@@ -51647,6 +51561,96 @@ Objects {
   }
 }
 Objects {
+  Id: 4048568608329531071
+  Name: "Loot_Box_Spawner"
+  Transform {
+    Location {
+      Y: -44.9999962
+      Z: 30
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 0.99999994
+      Y: 0.99999994
+      Z: 0.99999994
+    }
+  }
+  ParentId: 5595803427365930117
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ChangePrizeCamera"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Common"
+      AssetReference {
+        Id: 6315750633306441554
+      }
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Uncommon"
+      AssetReference {
+        Id: 12786252723121837744
+      }
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Rare"
+      AssetReference {
+        Id: 7507518518593025393
+      }
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Epic"
+      AssetReference {
+        Id: 15738654651887114321
+      }
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Legendary"
+      AssetReference {
+        Id: 9461002599271886209
+      }
+    }
+    Overrides {
+      Name: "cs:ChestSpawnMarker"
+      ObjectReference {
+        SelfId: 4703501942428521935
+      }
+    }
+    Overrides {
+      Name: "cs:LootboxGenerator"
+      ObjectReference {
+        SelfId: 15316851131136835521
+      }
+    }
+    Overrides {
+      Name: "cs:Loot_Machine"
+      ObjectReference {
+        SelfId: 2449865194192283689
+      }
+    }
+    Overrides {
+      Name: "cs:ReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6605309665226940976
+    }
+  }
+}
+Objects {
   Id: 15316851131136835521
   Name: "LootboxGenerator"
   Transform {
@@ -51725,6 +51729,33 @@ Objects {
   Script {
     ScriptAsset {
       Id: 6111990894080668121
+    }
+  }
+}
+Objects {
+  Id: 10287377189951863320
+  Name: "SpinWheel_README"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5595803427365930117
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7381641073965918806
     }
   }
 }
