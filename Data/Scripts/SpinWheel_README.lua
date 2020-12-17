@@ -55,8 +55,7 @@
     Customizing Loot Machine
     ------------------------
     
-    In the script "Loot_Box_Spawner", you'll find Custom Properties for each rarity of loot box.
-    There are templates in the Project Content that follow the convention: "Loot_Box_rarity_theme"
+    
     Any of these templates are interchangeable; shout out to @AwkwardGameDev and @Mucusinator for their contribution!
 	All these templates are animated with the script "Loot_Box_Animation_Fantasy". reach out to @WitcherSilver for help 
 	with animations.
@@ -69,6 +68,15 @@
 
     5. Advanced description, instructions and alternate use-cases
         Each with a header. Broken into multiple sections if needed.
+    ---Changing the visuals for loot boxes and the loot machine---
+    	1) There are several examples of loot boxes that can be easily assigned to different rarities of the loot machine. These are all
+    	found in the Project Content and follow the naming convention: "Loot_Box_rarity_theme".
+    	2) To assign a different loot box visual, find the template in Project Contect, then select the Loot_Box_Spawner script in the hierarchy.
+    	Drag the desired template into the custom property of the desired rarity, and that loot box will appear when that rarity is rolled.
+    	3) Replacing the geometry on the loot machine is fairly simple. The animation is looking for the groups called "left_door", "right_door", and
+    	"platform", so you can replace the geometry *inside* these groups. Any other static geometry can be replaced at your discretion.
+    	4) Replacing the geometry on the loot boxes is a bit more complicated. The animation is looking for specific groups, so the geometry inside can
+    	be replaced without too much issue. Check out the script "Loot_Box_Animation_Fantasy" for more information about the animation sequence.
 
     [NOTE: Important issue or limitation to keep in mind]
 
