@@ -1,4 +1,6 @@
-﻿local Loot_Box = script:GetCustomProperty("Loot_Box"):WaitForObject()
+﻿-- this is an old scirpt, please use "Loot_Box_Animation_Fantasy" instead --
+
+local Loot_Box = script:GetCustomProperty("Loot_Box"):WaitForObject()
 local Lid = script:GetCustomProperty("Lid"):WaitForObject()
 local CORE_Logo = script:GetCustomProperty("CORE_Logo"):WaitForObject()
 local Platform = script:GetCustomProperty("Platform"):WaitForObject()
