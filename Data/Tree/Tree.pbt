@@ -4026,11 +4026,11 @@ Objects {
   }
   ParentId: 4781671109827199097
   ChildIds: 11356402237129105530
-  ChildIds: 2660571702833309345
   ChildIds: 7563443499317668191
   ChildIds: 6769845893542896755
   ChildIds: 1495587963440536165
   ChildIds: 15156601564198830699
+  ChildIds: 2660571702833309345
   ChildIds: 13390522731244440466
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4513,6 +4513,102 @@ Objects {
   Script {
     ScriptAsset {
       Id: 1030309154842821714
+    }
+  }
+}
+Objects {
+  Id: 2660571702833309345
+  Name: "STORE_SampleTrigger"
+  Transform {
+    Location {
+      X: 3713.16724
+      Y: 28173.6113
+      Z: 3220.41138
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7755841275126465915
+  ChildIds: 4690092658519938239
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4690092658519938239
+  Name: "Trigger"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.5
+      Y: 2.5
+      Z: 1.5
+    }
+  }
+  ParentId: 2660571702833309345
+  ChildIds: 18285044883702082667
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 18285044883702082667
+  Name: "StoreConsole"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.4
+      Y: 0.4
+      Z: 0.666666687
+    }
+  }
+  ParentId: 4690092658519938239
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:_CosmeticStore"
+      AssetReference {
+        Id: 16758479113900193297
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7154388543807132934
     }
   }
 }
@@ -12557,102 +12653,6 @@ Objects {
   Script {
     ScriptAsset {
       Id: 487360291110906073
-    }
-  }
-}
-Objects {
-  Id: 2660571702833309345
-  Name: "STORE_SampleTrigger"
-  Transform {
-    Location {
-      X: 3713.16724
-      Y: 28173.6113
-      Z: 3220.41138
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7755841275126465915
-  ChildIds: 4690092658519938239
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 4690092658519938239
-  Name: "Trigger"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.5
-      Y: 2.5
-      Z: 1.5
-    }
-  }
-  ParentId: 2660571702833309345
-  ChildIds: 18285044883702082667
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 18285044883702082667
-  Name: "StoreConsole"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.4
-      Y: 0.4
-      Z: 0.666666687
-    }
-  }
-  ParentId: 4690092658519938239
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:_CosmeticStore"
-      AssetReference {
-        Id: 16758479113900193297
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 7154388543807132934
     }
   }
 }

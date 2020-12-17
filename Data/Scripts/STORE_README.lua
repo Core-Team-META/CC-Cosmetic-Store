@@ -10,17 +10,25 @@
     Estlogic (META) (https://www.coregames.com/user/385b45d7abdb499f8664c6cb01df521b)
     Buckmonster (META) (https://www.coregames.com/user/901b7628983c4c8db4282f24afeda57a)
     
+	This package is a work in progress.
+    
+    	Description:    
 	This is intended to serve as a store for cosmetic items.  Creators can easily
 	create a set of costumes and cosmetics, and create a store that players can
-	buy and equip items from.
-
-	See the XXX map for an example of this in use!
-	
+	buy and equip items from.	
+	    
+    This set comes with:
+        1) STORE_CosmeticStore
+        2) STORE_StoreContents
+        3) STORE_TagDefinitions
+        4) STORE_TypeDefinitions
+        5) STORE_SampleTrigger
+        6) STORE_SampleUI
 	
 	Setup instructions
 	-------------------
 	* Add the STORE_CosmeticStore template to your hierarchy.  (You'll probably want
-	  to put it somewhere out of sight, like under the level or something.)
+	  to put it somewhere out of sight, like under the level.)
 	* Create a folder of store contents.  (See below for details)
 	* Create a folder of tags for the store.  (See below for details)
 	* Create a folder of types for the store.  (See below for details)
@@ -170,6 +178,14 @@
 	-------------------
 	
 	The shop is also equipped to support perk related items such as subscription-exclusive items.
+	To set this up, navigate to the STORE_CosmeticStore folder in the hierarchy. The folder itself
+	contains several custom properties to enable/disable subscription options. The STORE_Iteminfo script 
+	contains custom properties to View the tooltips for
+	each custom property for more information.
+	
+	[NOTE: To remove any dependence on perks, remove or comment out the following lines located at the top of
+	the 
+	
 	
 
 	For more information check the tooltips on each of the script properties.
