@@ -68,12 +68,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 4966307981963227706
-    SubobjectId: 3577197315002586691
-    InstanceId: 5921992139093253325
-    TemplateId: 2244875870661893170
-  }
 }
 Objects {
   Id: 9871341408310915715
@@ -134,12 +128,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 1214988580537885866
-    SubobjectId: 7319366856915206355
-    InstanceId: 5921992139093253325
-    TemplateId: 2244875870661893170
   }
 }
 Objects {
@@ -208,11 +196,5 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 11316567099282180428
-    SubobjectId: 16736388990067371317
-    InstanceId: 5921992139093253325
-    TemplateId: 2244875870661893170
   }
 }
