@@ -51637,6 +51637,46 @@ Objects {
         Id: 1680988108412715813
       }
     }
+    Overrides {
+      Name: "cs:ChangePrizeCamera:tooltip"
+      String: "If this is checked, the player that spins the wheel, will have their camera adjusted to zoom in to the lootboxes"
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Common:tooltip"
+      String: "Asset refrence to the the \"Common\" LootBox, this is the art that will spawn based on the rarity of the prize."
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Uncommon:tooltip"
+      String: "Asset refrence to the the \"Uncommon\" LootBox, this is the art that will spawn based on the rarity of the prize."
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Rare:tooltip"
+      String: "Asset refrence to the the \"Rare\" LootBox, this is the art that will spawn based on the rarity of the prize."
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Epic:tooltip"
+      String: "Asset refrence to the the \"Epic\" LootBox, this is the art that will spawn based on the rarity of the prize."
+    }
+    Overrides {
+      Name: "cs:Loot_Box_Legendary:tooltip"
+      String: "Asset refrence to the the \"Legendary\" LootBox, this is the art that will spawn based on the rarity of the prize."
+    }
+    Overrides {
+      Name: "cs:ChestSpawnMarker:tooltip"
+      String: "This is an object that must be in your game, it\'s currently found in the Loot Machine Animation Fantasy(Client Context). The chest will spawn from this objects world position."
+    }
+    Overrides {
+      Name: "cs:LootboxGenerator:tooltip"
+      String: "Is a Core Object Refrence to the LootboxGenerator.lua script in your heirarchy"
+    }
+    Overrides {
+      Name: "cs:Loot_Machine:tooltip"
+      String: "A Core Object Refrence to your Loot_Machine found  under the  Loot Machine Animation Fantasy(Client Context) To customize your Loot Machine please refrence \"Customizing Loot Machine\" found further in this ReadMe."
+    }
+    Overrides {
+      Name: "cs:ReliableEvents:tooltip"
+      String: "Asset refrennce to ReliableEvents.lua used to make sure broadcasts are not droped."
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -51717,6 +51757,38 @@ Objects {
     Overrides {
       Name: "cs:PlayerId:isrep"
       Bool: true
+    }
+    Overrides {
+      Name: "cs:DropTable:tooltip"
+      String: "Refrence the DropTable found in your heirarchy, below this script by default."
+    }
+    Overrides {
+      Name: "cs:Trigger:tooltip"
+      String: "Refrence the Trigger found in your heirarchy, below this script by default."
+    }
+    Overrides {
+      Name: "cs:CurrencyName:tooltip"
+      String: "The name of the resource, players will spend to spin the wheel. (Ex =>  \"gold\", \"coins\", etc)"
+    }
+    Overrides {
+      Name: "cs:RollCost:tooltip"
+      String: "Is the cost of how much a player will spend to spin the wheel each time (Ex => 50 \"gold\")"
+    }
+    Overrides {
+      Name: "cs:PrizeRarity:tooltip"
+      String: "(Leave Blank) Networked Custom Property used to pass rarity from server to client."
+    }
+    Overrides {
+      Name: "cs:RewardName:tooltip"
+      String: "(Leave Blank) Networked Custom Property used to pass reward name from server to client."
+    }
+    Overrides {
+      Name: "cs:PlayerId:tooltip"
+      String: "(Leave Blank) Networked Custom Property used to pass the player.id of the player spinning the wheel from server to client."
+    }
+    Overrides {
+      Name: "cs:ReliableEvents:tooltip"
+      String: "Asset refrennce to ReliableEvents.lua used to make sure broadcasts are not droped."
     }
   }
   WantsNetworking: true
