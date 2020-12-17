@@ -19,8 +19,8 @@ Objects {
   ChildIds: 16813558807825262224
   ChildIds: 4059052303212518943
   ChildIds: 3411705191654242052
-  ChildIds: 4402373789688879353
   ChildIds: 11035239812348056179
+  ChildIds: 4402373789688879353
   ChildIds: 7755841275126465915
   ChildIds: 4296421264996771920
   ChildIds: 5886917377158341065
@@ -8708,32 +8708,6 @@ Objects {
   }
 }
 Objects {
-  Id: 11035239812348056179
-  Name: "Environment"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Environment"
-  }
-}
-Objects {
   Id: 4402373789688879353
   Name: "CosmeticShopAndPerks_README"
   Transform {
@@ -8758,6 +8732,32 @@ Objects {
     ScriptAsset {
       Id: 3258256881781121726
     }
+  }
+}
+Objects {
+  Id: 11035239812348056179
+  Name: "Environment"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Environment"
   }
 }
 Objects {
