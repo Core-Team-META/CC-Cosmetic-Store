@@ -21,16 +21,7 @@ local Ease3D = require(script:GetCustomProperty("Ease3D"))
 
 local Platform, Right_Door, Left_Door
 
---#TODO was there a reason for this?
---[[local allFX = {
-	Open_VFX,
-	Open_Music,
-	Open_SFX,
-	Open_SFX_2,
-	Unlock_SFX,
-	Machine_SFX
-}]] local selectedColor =
-	nil
+local selectedColor = nil
 
 local lootboxGenerator = script:GetCustomProperty("LootboxGenerator"):WaitForObject()
 
@@ -74,20 +65,8 @@ function OpenChest()
 	Reward.visibility = Visibility.FORCE_OFF
 	Machine_SFX:Play()
 	Task.Wait(.6)
-	Ease3D.EasePosition(
-		Right_Door,
-		Vector3.New(180, 0, 250),
-		.5,
-		Ease3D.EasingEquation.ELASTIC,
-		Ease3D.EasingDirection.OUT
-	)
-	Ease3D.EasePosition(
-		Left_Door,
-		Vector3.New(-180, 0, 250),
-		.5,
-		Ease3D.EasingEquation.ELASTIC,
-		Ease3D.EasingDirection.OUT
-	)
+	Ease3D.EasePosition(Right_Door, Vector3.New(180, 0, 250), .5, Ease3D.EasingEquation.ELASTIC, Ease3D.EasingDirection.OUT)
+	Ease3D.EasePosition(Left_Door, Vector3.New(-180, 0, 250), .5, Ease3D.EasingEquation.ELASTIC, Ease3D.EasingDirection.OUT)
 	Task.Wait(.2)
 	Open_Music:Play()
 	Task.Wait(.7)
@@ -104,13 +83,7 @@ function OpenChest()
 	Impact_SFX:Play()
 	Ease3D.EaseRotation(Loot_Box, Rotation.New(0, 0, 0), .4, Ease3D.EasingEquation.BACK, Ease3D.EasingDirection.OUT)
 	Task.Wait(.5)
-	Ease3D.EaseRotation(
-		CORE_Logo,
-		Rotation.New(90, -330, 0),
-		1.75,
-		Ease3D.EasingEquation.CUBIC,
-		Ease3D.EasingDirection.INOUT
-	)
+	Ease3D.EaseRotation(CORE_Logo, Rotation.New(90, -330, 0), 1.75, Ease3D.EasingEquation.CUBIC, Ease3D.EasingDirection.INOUT)
 	Task.Wait(.5)
 	Unlock_SFX:Play()
 	Unlock_VFX:Play()
@@ -125,32 +98,14 @@ function OpenChest()
 	Open_SFX_2:Play()
 	Reward.visibility = Visibility.FORCE_ON
 	Ease3D.EaseRotation(Lid, Rotation.New(-110, 0, 0), .4, Ease3D.EasingEquation.BOUNCE, Ease3D.EasingDirection.OUT)
-	Ease3D.EasePosition(
-		REWARD_MARKER,
-		Vector3.New(0, 0, 200),
-		.8,
-		Ease3D.EasingEquation.QUINTIC,
-		Ease3D.EasingDirection.OUT
-	)
+	Ease3D.EasePosition(REWARD_MARKER, Vector3.New(0, 0, 200),.8, Ease3D.EasingEquation.QUINTIC, Ease3D.EasingDirection.OUT)
 	Ease3D.EaseScale(Reward, Vector3.New(1), .5, Ease3D.EasingEquation.CIRCULAR, Ease3D.EasingDirection.OUT)
-	Ease3D.EaseRotation(
-		REWARD_MARKER,
-		Rotation.New(0, 0, 360),
-		5,
-		Ease3D.EasingEquation.SINE,
-		Ease3D.EasingDirection.INOUT
-	)
+	Ease3D.EaseRotation(REWARD_MARKER, Rotation.New(0, 0, 360), 5, Ease3D.EasingEquation.SINE, Ease3D.EasingDirection.INOUT)
 	Task.Wait(6) -- length of reveal
 	--reset animation
 	Reset_SFX:Play()
 	Ease3D.EaseScale(Reward, Vector3.New(.1), .5, Ease3D.EasingEquation.BACK, Ease3D.EasingDirection.IN)
-	Ease3D.EaseRotation(
-		REWARD_MARKER,
-		Rotation.New(0, 0, 360),
-		1,
-		Ease3D.EasingEquation.SINE,
-		Ease3D.EasingDirection.INOUT
-	)
+	Ease3D.EaseRotation(REWARD_MARKER,Rotation.New(0, 0, 360),1, Ease3D.EasingEquation.SINE, Ease3D.EasingDirection.INOUT)
 	Task.Wait(.5)
 	Reward.visibility = Visibility.FORCE_OFF
 	Ease3D.EasePosition(REWARD_MARKER, Vector3.New(0, 0, 0), .5, Ease3D.EasingEquation.QUINTIC, Ease3D.EasingDirection.OUT)
