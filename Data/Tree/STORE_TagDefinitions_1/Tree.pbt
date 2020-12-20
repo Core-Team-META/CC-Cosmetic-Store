@@ -1,7 +1,7 @@
 ﻿Name: "STORE_TagDefinitions_1"
-RootId: 1495587963440536165
+RootId: 14010071643361284098
 Objects {
-  Id: 9605639491012077988
+  Id: 1347151422376933628
   Name: "Legendary"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1495587963440536165
+  ParentId: 14010071643361284098
   UnregisteredParameters {
     Overrides {
       Name: "cs:TagColor"
@@ -42,7 +42,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6743932162432575341
+  Id: 10922715839962125026
   Name: "Epic"
   Transform {
     Location {
@@ -55,7 +55,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1495587963440536165
+  ParentId: 14010071643361284098
   UnregisteredParameters {
     Overrides {
       Name: "cs:TagName"
@@ -87,7 +87,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15818892775455840500
+  Id: 18033003234313753798
   Name: "Rare"
   Transform {
     Location {
@@ -100,7 +100,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1495587963440536165
+  ParentId: 14010071643361284098
   UnregisteredParameters {
     Overrides {
       Name: "cs:TagColor"
@@ -128,7 +128,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16528048553961409829
+  Id: 14792642553229114637
   Name: "Uncommon"
   Transform {
     Location {
@@ -141,7 +141,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1495587963440536165
+  ParentId: 14010071643361284098
   UnregisteredParameters {
     Overrides {
       Name: "cs:TagColor"
@@ -169,7 +169,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13851340906761864470
+  Id: 5452890505241121561
   Name: "Common"
   Transform {
     Location {
@@ -182,7 +182,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1495587963440536165
+  ParentId: 14010071643361284098
   UnregisteredParameters {
     Overrides {
       Name: "cs:TagColor"

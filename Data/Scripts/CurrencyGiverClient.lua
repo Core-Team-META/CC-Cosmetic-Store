@@ -24,7 +24,7 @@ function CheckVIPCount()
 	local vipCount = 0
 	
 	for _, p in ipairs(allPlayers) do
-		if p:HasPerk(propVIP) then
+		if p:HasPerk(subscriptionPerkRef) then
 			vipCount = vipCount + 1
 		end
 	end
@@ -38,7 +38,7 @@ function GiveMoney(trigger, player)
 		local baseMultiplier = 1.0
 		World.SpawnAsset(CelebrationVFX, {position = propMultiplier:GetWorldPosition() + Vector3.New(0,0, 150)})
 
-		if player:HasPerk(propVIP) then
+		if player:HasPerk(subscriptionPerkRef) then
 			baseMultiplier = 1.5
 		end
 			

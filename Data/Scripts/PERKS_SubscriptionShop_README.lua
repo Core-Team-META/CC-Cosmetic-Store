@@ -1,7 +1,7 @@
 ﻿--[[
 	PERKS_SubscriptionShop - README
 	
-	v 0.1.0 - 12/16/2020
+	v 0.1.1 - 12/16/2020
 
 	By Estlogic
 
@@ -27,16 +27,8 @@
     
     2.	Drop PERKS_SubscriptionShop into the hierarchy and adjust its position as needed.
     
-    3.	Search for SubscriptionClient script in the hierarchy (PERKS_SubscriptionShop -> ClientContext -> SubscriptionClient)
-    	and set the StoreRoot custom property to reference the STORE_CosmeticStore component.
-    	
-   	4.	If the subscription shop needs to be independent, search for the InitializePerkStore() function and assign the 
-   		propSubscriptionWindowName.text and propSubscriptionDescription.text manually. propSubscriptionDescription.text would
-   		display the benefits that would be provided with the subscription perk.
-  	
-		
-	[NOTE: By default, the subscription shop depends on the STORE_CosmeticStore component. See Setup above to turn it
-	into an independent component.]
+    3.	In  the custom properties of PERKS_SubscriptionShop, set the subscription name and a description of the benefits gained
+    	from the subscription. use <br> to create a new line in the text.
 
 	For more information check the tooltips on each of the script properties.
 --]]

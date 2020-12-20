@@ -1,6 +1,33 @@
 ﻿Name: "Documentation"
 RootId: 16472338647689726294
 Objects {
+  Id: 15451772786308546350
+  Name: "PERKS_SubscriptionNameplates_README"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16472338647689726294
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3392543239896220701
+    }
+  }
+}
+Objects {
   Id: 3305009866473001130
   Name: "PERKS_RandomDailySaleShop_README"
   Transform {
@@ -64,7 +91,7 @@ Objects {
 }
 Objects {
   Id: 8668607294056323169
-  Name: "SpinWheel_README"
+  Name: "PERKS_LootboxWheel_README"
   Transform {
     Location {
       X: 4370.9624
@@ -156,10 +183,10 @@ Objects {
 }
 Objects {
   Id: 16362210492747391772
-  Name: "STORE_Logic_README"
+  Name: "META_CosmeticStore_README"
   Transform {
     Location {
-      Y: -20950
+      Y: -20902.5313
       Z: 5
     }
     Rotation {

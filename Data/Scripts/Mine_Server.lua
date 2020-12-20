@@ -43,11 +43,15 @@ function OnPlayerJoined(player)
 end
 
 function OnPlayerLeft(player)
-	local rsc = {}
+	Task.Wait(0.1)
+	local playerData = Storage.GetPlayerData(player)
+	local rsct = {}
 	for k,v in pairs(player:GetResources()) do
-		rsc[k] = v
+		rsct[k] = v
 	end
-	Storage.SetPlayerData(player, {rsc = rsc, npc = npcStates[player.id]})
+	playerData.rsc = rsct
+	playerData.npc = npcStates[player.id]
+	Storage.SetPlayerData(player, playerData)
 	LTT.SaveAsPlayerData(player)
 end
 

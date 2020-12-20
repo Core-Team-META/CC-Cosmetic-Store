@@ -77,7 +77,7 @@ function OnBindingPressed(player, binding)
 	
 	if binding == BINDING_ANIM and viewToggle then
 	
-		print("rerolling")
+		--print("rerolling")
 		
 		--[[
 		while Events.BroadcastToServer("REROLL") == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
@@ -215,7 +215,7 @@ function DiplayItems(row, item1, item2, item3)
 
 	if row == 1 then
 		
-		print("row 1")
+		--print("row 1")
 		displayItems = {}
 		displayIds = {}
 	
@@ -226,7 +226,7 @@ function DiplayItems(row, item1, item2, item3)
 		return
 		
 	elseif row == 2 then
-		print("row 2")
+		--print("row 2")
 		displayItems[4] = item1
 		displayItems[5] = item2
 		displayItems[6] = item3
@@ -234,7 +234,7 @@ function DiplayItems(row, item1, item2, item3)
 		return
 		
 	elseif row == 3 then
-		print("row 3")
+		--print("row 3")
 		displayItems[7] = item1
 		displayItems[8] = item2
 		displayItems[9] = item3

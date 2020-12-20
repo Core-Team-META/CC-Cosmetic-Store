@@ -125,6 +125,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17722917267016575012
+  Name: "Text 01: O"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_014"
+  }
+}
+Assets {
   Id: 17676136256452035495
   Name: "Fantasy Chest Lid 01"
   PlatformAssetType: 1
@@ -203,6 +212,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "universal_material_001"
+  }
+}
+Assets {
+  Id: 16196046451357117749
+  Name: "Text 01: Z"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_025"
   }
 }
 Assets {
@@ -323,6 +341,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15048610057996333108
+  Name: "Text 01: G"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_006"
+  }
+}
+Assets {
   Id: 15023929973968296384
   Name: "Bone Human Ribcage 01"
   PlatformAssetType: 1
@@ -338,6 +365,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_003"
+  }
+}
+Assets {
+  Id: 14763934802461535645
+  Name: "Text 01: N"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_013"
   }
 }
 Assets {
@@ -419,6 +455,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_mil_tank_mod_armorplate_001_ref"
+  }
+}
+Assets {
+  Id: 13241175125531652701
+  Name: "Text 01: R"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_017"
   }
 }
 Assets {
@@ -509,6 +554,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_chest_003_ref"
+  }
+}
+Assets {
+  Id: 12262178821261286881
+  Name: "Text 01: V"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_021"
   }
 }
 Assets {
@@ -662,6 +716,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_painted_metal_basic_001"
+  }
+}
+Assets {
+  Id: 11052830231601453858
+  Name: "Text 01: P"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_015"
   }
 }
 Assets {
@@ -854,12 +917,30 @@ Assets {
   }
 }
 Assets {
+  Id: 9414743244929396516
+  Name: "Text 01: I"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_008"
+  }
+}
+Assets {
   Id: 9290002203986454636
   Name: "Metal Iron Rusted 02"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_iron_003"
+  }
+}
+Assets {
+  Id: 9238590118723645879
+  Name: "Sign Bracket - Round"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_signbracket_round_001"
   }
 }
 Assets {
@@ -971,6 +1052,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8425111237879329054
+  Name: "Metal Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_basic_001"
+  }
+}
+Assets {
   Id: 8307550620811980856
   Name: "Fantasy Chest Lid 02"
   PlatformAssetType: 1
@@ -1034,6 +1124,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7450635164809747556
+  Name: "Text 01: E"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_004"
+  }
+}
+Assets {
   Id: 7357442311375972468
   Name: "Grass Tall"
   PlatformAssetType: 1
@@ -1094,6 +1193,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_stainless-steel_001_uv"
+  }
+}
+Assets {
+  Id: 6722267691116138132
+  Name: "Fantasy Staff Grip 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_grip_staff_001"
   }
 }
 Assets {
@@ -1193,6 +1301,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_019"
+  }
+}
+Assets {
+  Id: 5489775416547967874
+  Name: "Sphere - Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hemisphere_001"
   }
 }
 Assets {
@@ -1373,6 +1490,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_Level_Up"
+  }
+}
+Assets {
+  Id: 4466634555986047655
+  Name: "Text 01: U"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_020"
   }
 }
 Assets {

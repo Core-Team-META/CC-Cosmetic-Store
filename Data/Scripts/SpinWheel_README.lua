@@ -103,7 +103,7 @@
 	Loot Machine Animation Fantasy.
 	
 	6. Select on of the folders with the prefix STORE_, you'll find STORE_Iteminfo.lua as a child of each folder.
-	To edit this info please refrence the STORE_LOGIC_README.lua
+	To edit this info please refrence the META_CosmeticStore_README.lua
 	
  
     

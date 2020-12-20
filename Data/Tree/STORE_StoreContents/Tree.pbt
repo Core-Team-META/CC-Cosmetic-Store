@@ -1,7 +1,7 @@
 ﻿Name: "STORE_StoreContents"
-RootId: 6769845893542896755
+RootId: 9400168650716258104
 Objects {
-  Id: 5108375283544743283
+  Id: 17308166770223046349
   Name: "STORE_BaseballCap"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -68,7 +68,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2026774061414066414
+  Id: 10540991906905418941
   Name: "STOREITEM_Hat1"
   Transform {
     Location {
@@ -81,7 +81,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -135,7 +135,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9371811708646189826
+  Id: 3954256555680777160
   Name: "STOREITEM_Cowboy Hat _Hat"
   Transform {
     Location {
@@ -148,7 +148,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -202,7 +202,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16647445654884332269
+  Id: 11606307379773846232
   Name: "STOREITEM_CloudSoundRapper _Hat"
   Transform {
     Location {
@@ -215,7 +215,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -269,7 +269,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6537889907160453710
+  Id: 5458064538104908584
   Name: "STOREITEM_Chef Hat"
   Transform {
     Location {
@@ -282,7 +282,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -336,7 +336,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9038367364059020515
+  Id: 3431228560534925822
   Name: "STOREITEM_BirthdayCake Hat"
   Transform {
     Location {
@@ -349,7 +349,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -403,7 +403,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8482032761407189490
+  Id: 9494250773953676234
   Name: "STORE_WinterHat"
   Transform {
     Location {
@@ -416,7 +416,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -470,7 +470,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6660706911062647070
+  Id: 16540739520817990929
   Name: "STORE_TheSandy"
   Transform {
     Location {
@@ -483,7 +483,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -537,7 +537,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2166226238407566548
+  Id: 9901296536614394858
   Name: "STORE_TheOoccoo"
   Transform {
     Location {
@@ -550,7 +550,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -604,7 +604,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6786086096223631660
+  Id: 16377146954128496057
   Name: "STORE_SuperHat"
   Transform {
     Location {
@@ -617,7 +617,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -671,7 +671,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11836980515863341376
+  Id: 11867716609911254740
   Name: "STORE_StrawberrryHat"
   Transform {
     Location {
@@ -684,7 +684,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -738,7 +738,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5334120273929253759
+  Id: 934658079199797534
   Name: "STORE_ScoutArmor_Torso"
   Transform {
     Location {
@@ -751,7 +751,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -805,7 +805,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4499539941767512618
+  Id: 4853886124486145557
   Name: "STORE_ScoutArmor_Shoes"
   Transform {
     Location {
@@ -818,7 +818,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -872,7 +872,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10279564358328334416
+  Id: 1372421493535730723
   Name: "STORE_ScoutArmor_Outfit"
   Transform {
     Location {
@@ -885,7 +885,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -939,7 +939,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1876014913479631013
+  Id: 4216135538963086032
   Name: "STORE_ScoutArmor_Legs"
   Transform {
     Location {
@@ -952,7 +952,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -1006,7 +1006,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2853031205901629872
+  Id: 2374469457755766041
   Name: "STORE_ScoutArmor_Helmet"
   Transform {
     Location {
@@ -1019,7 +1019,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -1073,7 +1073,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8104210652161796605
+  Id: 8745783914274140797
   Name: "STORE_MushroomHat"
   Transform {
     Location {
@@ -1086,7 +1086,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -1140,7 +1140,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15705074230629607365
+  Id: 9810858774940746978
   Name: "STORE_FruitHat"
   Transform {
     Location {
@@ -1153,7 +1153,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -1207,7 +1207,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16221239164782534694
+  Id: 14451845871478526566
   Name: "STORE_FrogCostume"
   Transform {
     Location {
@@ -1220,7 +1220,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -1274,7 +1274,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5968268123553523901
+  Id: 5664084012834474740
   Name: "STORE_CrazyEye"
   Transform {
     Location {
@@ -1287,7 +1287,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -1341,7 +1341,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7059507155088596699
+  Id: 13263945513443011633
   Name: "STORE_Costume2"
   Transform {
     Location {
@@ -1354,7 +1354,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -1408,7 +1408,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4725698865593487950
+  Id: 10952811482307668269
   Name: "STORE_Costume1"
   Transform {
     Location {
@@ -1421,7 +1421,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"
@@ -1475,7 +1475,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4749674200632147943
+  Id: 4878015138936583721
   Name: "STORE_BlueEyeHat"
   Transform {
     Location {
@@ -1488,7 +1488,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6769845893542896755
+  ParentId: 9400168650716258104
   UnregisteredParameters {
     Overrides {
       Name: "cs:StoreName"

@@ -29,6 +29,7 @@
     Setup
     1.	Navigate to the =PERKS_GlobalTable group and set the custom properties with net reference of the corresponding
     	perk. The perk type should be the following for each:
+    	
     		- DailyRoll: Repeatable
     		- Subscription: Limited-time
     		- PremiumCurrency: Repeatable

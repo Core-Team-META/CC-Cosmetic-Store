@@ -1,7 +1,7 @@
 ﻿Name: "STORE_TagDefinitions"
-RootId: 15156601564198830699
+RootId: 2215513730066830588
 Objects {
-  Id: 14376319667609821834
+  Id: 12955035602893645182
   Name: "Outfit"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15156601564198830699
+  ParentId: 2215513730066830588
   UnregisteredParameters {
     Overrides {
       Name: "cs:TypeColor"
@@ -42,7 +42,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9841776145300683611
+  Id: 10698392251518392543
   Name: "Hat"
   Transform {
     Location {
@@ -55,7 +55,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15156601564198830699
+  ParentId: 2215513730066830588
   UnregisteredParameters {
     Overrides {
       Name: "cs:TypeColor"
@@ -83,7 +83,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1686777038747769995
+  Id: 5008971262160910154
   Name: "Mask"
   Transform {
     Location {
@@ -96,7 +96,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15156601564198830699
+  ParentId: 2215513730066830588
   UnregisteredParameters {
     Overrides {
       Name: "cs:TypeColor"
@@ -124,7 +124,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7875556123193377429
+  Id: 7935933393573306853
   Name: "Shirt"
   Transform {
     Location {
@@ -137,7 +137,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15156601564198830699
+  ParentId: 2215513730066830588
   UnregisteredParameters {
     Overrides {
       Name: "cs:TypeColor"
@@ -165,7 +165,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14167371183103502130
+  Id: 15542769748523166687
   Name: "Pants"
   Transform {
     Location {
@@ -178,7 +178,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15156601564198830699
+  ParentId: 2215513730066830588
   UnregisteredParameters {
     Overrides {
       Name: "cs:TypeColor"
@@ -206,7 +206,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16707235563720220142
+  Id: 8590741615479358526
   Name: "Shoes"
   Transform {
     Location {
@@ -219,7 +219,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15156601564198830699
+  ParentId: 2215513730066830588
   UnregisteredParameters {
     Overrides {
       Name: "cs:TypeColor"

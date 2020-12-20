@@ -9,7 +9,7 @@ while not _G.PERKS do
 	
 end
 
-local dailyRollPerk = _G.PERKS.DAILY_ROLL
+local dailyRollPerk = nil
 
 local dropTable = script:GetCustomProperty("DropTable"):WaitForObject()
 
@@ -17,6 +17,21 @@ local discount = randomDailySaleShop:GetCustomProperty("Discount")
 local currencyName = script:GetCustomProperty("CurrencyName")
 
 local rarityTable = {}
+
+local checkPerks = nil
+
+function PerksCheckTask()
+	
+	while not _G.PERKS do
+	
+		Task.Wait()
+		
+	end
+
+	dailyRollPerk = _G.PERKS.DAILY_ROLL
+	checkPerks:Cancel()
+	
+end
 
 local function StringSplit(s, delimiter)
 	local result = {}
@@ -222,17 +237,17 @@ function OnAcceptPurchase(player, item)
 			if tempTbl[1] == item then
 				itemId = cc:GetCustomProperty("ID")
 				cost = math.floor(cc:GetCustomProperty("Cost") * (1 - discount))
-				print(itemId .. " costs " .. tostring(cost))
+				--print(itemId .. " costs " .. tostring(cost))
 			end
 		end
 	end
 
 	if player:GetResource("COSMETIC_" .. itemId) == 1 then
-		print("Player already has the prize!")
+		--print("Player already has the prize!")
 	elseif player:GetResource(currencyName) < cost then
-		print("Player cannot afford the prize!")
+		--print("Player cannot afford the prize!")
 	else
-		print("Giving Reward! ")
+		--print("Giving Reward! ")
 
 		while Events.Broadcast("BUYCOSMETIC", player, itemId, false, cost) == BroadcastEventResultCode.EXCEEDED_SIZE_LIMIT do
 			Task.Wait(0.1)
@@ -245,3 +260,6 @@ end
 Events.ConnectForPlayer("REROLL", ReRoll)
 Events.ConnectForPlayer("DAILYSHOPREADY", SetupShop)
 Events.ConnectForPlayer("APLAYERPURCHASED", OnAcceptPurchase)
+
+checkPerks = Task.Spawn(PerksCheckTask)
+checkPerks.repeatCount = -1

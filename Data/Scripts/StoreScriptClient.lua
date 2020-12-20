@@ -4,7 +4,7 @@
 --		    Estlogic (META) (https://www.coregames.com/user/385b45d7abdb499f8664c6cb01df521b)
 --			Buckmonster (META) (https://www.coregames.com/user/901b7628983c4c8db4282f24afeda57a)
 -- Date: 2020/12/16
--- Version: 0.1.1
+-- Version: 0.1.2
 -- Description: 
 ------------------------------------------------------------------------------------------------------------------------
 -- REQUIRE
@@ -89,13 +89,8 @@ local propSubscriptionColor = propStoreRoot:GetCustomProperty("SubscriptionColor
 ------------------------------------------------------------------------------------------------------------------------
 -- LOCAL VARIABLES
 ------------------------------------------------------------------------------------------------------------------------
-while not _G.PERKS do
 
-	Task.Wait()
-	
-end
-
-local subscriptionPerkRef = _G.PERKS.SUBSCRIPTION
+local subscriptionPerkRef = nil
 
 local bindingListener = nil
 
@@ -189,6 +184,29 @@ local typeFilterButtonData = {}
 local filterButtonData = {}
 
 local defaultColor = Color.FromLinearHex("63F3FFFF")
+
+local checkPerks = nil
+
+function PerksCheckTask()
+
+	if not propAllowSubscriptionPurchase then
+	
+		checkPerks:Cancel()
+		return
+		
+	end
+	
+	while not _G.PERKS and propAllowSubscriptionPurchase do
+	
+		Task.Wait()
+		
+	end
+
+	subscriptionPerkRef = _G.PERKS.SUBSCRIPTION
+	
+	checkPerks:Cancel()
+
+end
 
 ----------------------------------------------------------------------------------------------------------------
 -- LOCAL HELPER FUNCTIONS
@@ -327,7 +345,7 @@ function StoreItemClicked(button)
 				end
 			end
 		else
-			if currentlySelected.PartOfSubscription then
+			if currentlySelected.PartOfSubscription and propAllowSubscriptionPurchase then
 				if player:HasPerk(subscriptionPerkRef) then
 					expectedNewCurrency = currency
 					controlsLocked = true
@@ -446,11 +464,13 @@ function UpdateEntryButton(entry, highlighted)
 		end
 	else -- cases for not owned and not hovered
 		local currency = player:GetResource(propCurrencyResourceName)
-		if entry.PartOfSubscription and player:HasPerk(subscriptionPerkRef) then
-			entry.price.text = "CLAIM IT!"
-			entry.price:SetColor(Color.WHITE)
-			entry.BGImage:SetColor(Color.FromLinearHex("063300FF")) -- dark green
-			return
+		if entry.PartOfSubscription and propAllowSubscriptionPurchase then
+			if player:HasPerk(subscriptionPerkRef) then
+				entry.price.text = "CLAIM IT!"
+				entry.price:SetColor(Color.WHITE)
+				entry.BGImage:SetColor(Color.FromLinearHex("063300FF")) -- dark green
+				return
+			end
 		else
 			entry.price.text = "BUY IT!\n[" .. tostring(entry.data.cost) .. "]"
 		end
@@ -609,7 +629,7 @@ function ApplyCosmeticHelper(playerId, templateId)
 		end
 	end
 	if targetPlayer == nil then
-		 warn("Could not find id to match " .. playerId)
+		 warn("Could not find id to match " .. tostring(playerId))
 		return
 	end
 	local itemList = {}
@@ -1069,7 +1089,7 @@ function InitStore()
 	end
 	
 	--print("Requesting other player costume data")
-	ReliableEvents.BroadcastToServer("REQUST_OTHER_COSMETICS")
+	ReliableEvents.BroadcastToServer("REQUEST_OTHER_COSMETICS")
 end
 
 ----------------------------------------------------------------------------------------------------------------
@@ -1545,3 +1565,6 @@ propSwapMannequin.clickedEvent:Connect(SwapMannequin)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 
 InitStore()
+
+checkPerks = Task.Spawn(PerksCheckTask)
+checkPerks.repeatCount = -1

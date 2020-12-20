@@ -998,15 +998,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12486122445463196188
-  Name: "Fantasy Chest Base 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_fantasy_chest_003_ref"
-  }
-}
-Assets {
   Id: 12478142156858989744
   Name: "Text 04: _"
   PlatformAssetType: 1
@@ -1022,15 +1013,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_plane_1m_001"
-  }
-}
-Assets {
-  Id: 12262178821261286881
-  Name: "Text 01: V"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_021"
   }
 }
 Assets {
@@ -1457,15 +1439,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9414743244929396516
-  Name: "Text 01: I"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_008"
-  }
-}
-Assets {
   Id: 9284990410276611597
   Name: "Prism - 3-Sided"
   PlatformAssetType: 1
@@ -1889,15 +1862,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6722267691116138132
-  Name: "Fantasy Staff Grip 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_grip_staff_001"
-  }
-}
-Assets {
   Id: 6712270632153873756
   Name: "Ceramic Terracotta Pots 01"
   PlatformAssetType: 2
@@ -2132,15 +2096,6 @@ Assets {
   }
 }
 Assets {
-  Id: 5861223425148352605
-  Name: "Metal Basic Steel"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "steel_001"
-  }
-}
-Assets {
   Id: 5760915064523727563
   Name: "Sphere"
   PlatformAssetType: 1
@@ -2318,15 +2273,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_014"
-  }
-}
-Assets {
-  Id: 4753988644095219219
-  Name: "Cylinder - Chamfered Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_hq_002"
   }
 }
 Assets {

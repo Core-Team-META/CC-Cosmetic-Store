@@ -1,4 +1,19 @@
 ﻿local propStoreRoot = script:GetCustomProperty("StoreRoot"):WaitForObject()
+local propSubscriptionWindowName = script:GetCustomProperty("SubscriptionWindowName"):WaitForObject()
+local propSubscriptionDescription = script:GetCustomProperty("SubscriptionDescription"):WaitForObject()
+local propSubscriptionPurchase = script:GetCustomProperty("SubscriptionPurchase"):WaitForObject()
+local propSubscriptionLeave = script:GetCustomProperty("SubscriptionLeave"):WaitForObject()
+
+local propPerksWindow = script:GetCustomProperty("PerksWindow"):WaitForObject()
+
+local propTrigger = script:GetCustomProperty("Trigger"):WaitForObject()
+local propCamera = script:GetCustomProperty("Camera"):WaitForObject()
+
+local propHasVIP = script:GetCustomProperty("HasVIP"):WaitForObject()
+
+local propAllowSubscriptionPurchase = propStoreRoot:GetCustomProperty("AllowSubscriptionPurchase")
+local propSubscriptionSetName = propStoreRoot:GetCustomProperty("SubscriptionName")
+local propSubscriptionSetDescription = propStoreRoot:GetCustomProperty("SubscriptionDescription")
 
 while not _G.PERKS do
 
@@ -7,22 +22,6 @@ while not _G.PERKS do
 end
 
 local subscriptionPerk = _G.PERKS.SUBSCRIPTION
-
-local propSubscriptionWindowName = script:GetCustomProperty("SubscriptionWindowName"):WaitForObject()
-local propSubscriptionDescription = script:GetCustomProperty("SubscriptionDescription"):WaitForObject()
-local propSubscriptionPurchase = script:GetCustomProperty("SubscriptionPurchase"):WaitForObject()
-local propSubscriptionLeave = script:GetCustomProperty("SubscriptionLeave"):WaitForObject()
-
-local propAllowSubscriptionPurchase = propStoreRoot:GetCustomProperty("AllowSubscriptionPurchase")
-local propSubscriptionSetName = propStoreRoot:GetCustomProperty("SubscriptionName")
-local propSubscriptionSetDescription = propStoreRoot:GetCustomProperty("SubscriptionDescription")
-
-local propPerksWindow = script:GetCustomProperty("PerksWindow"):WaitForObject()
-
-local propTrigger = script:GetCustomProperty("Trigger"):WaitForObject()
-local propCamera = script:GetCustomProperty("Camera"):WaitForObject()
-
-local propHasVIP = script:GetCustomProperty("HasVIP"):WaitForObject()
 
 propSubscriptionPurchase:SetPerkReference(subscriptionPerk)
 
