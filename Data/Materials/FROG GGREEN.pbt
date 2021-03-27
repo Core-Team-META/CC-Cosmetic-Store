@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5448401008238532580
   Name: "FROG GGREEN"
   PlatformAssetType: 13

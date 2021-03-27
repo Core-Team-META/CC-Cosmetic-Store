@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9174552311536933706
   Name: "Lamp Posts"
   PlatformAssetType: 5

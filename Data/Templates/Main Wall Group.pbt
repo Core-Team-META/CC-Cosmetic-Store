@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9095879257684580346
   Name: "Main Wall Group"
   PlatformAssetType: 5

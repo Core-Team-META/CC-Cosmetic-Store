@@ -1,4 +1,4 @@
-﻿local PickupTrigger = script:GetCustomProperty("PickupTrigger"):WaitForObject()
+local PickupTrigger = script:GetCustomProperty("PickupTrigger"):WaitForObject()
 local PickupSFX = script:GetCustomProperty("PickupSFX")
 local Geos = script:GetCustomProperty("Geos"):WaitForObject()
 

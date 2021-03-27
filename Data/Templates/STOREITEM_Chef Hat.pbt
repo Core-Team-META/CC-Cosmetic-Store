@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12269522058044990569
   Name: "STOREITEM_Chef Hat"
   PlatformAssetType: 5

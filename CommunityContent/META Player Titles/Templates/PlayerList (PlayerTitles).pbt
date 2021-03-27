@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7728240922182239857
   Name: "PlayerList (PlayerTitles)"
   PlatformAssetType: 5

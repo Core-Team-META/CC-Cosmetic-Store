@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7317451588080345742
   Name: "SAR_Potted Plants"
   PlatformAssetType: 5

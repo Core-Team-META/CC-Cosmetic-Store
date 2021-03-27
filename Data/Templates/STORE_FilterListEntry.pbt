@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13687067019817101910
   Name: "STORE_FilterListEntry"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7042587624973825327
   Name: "Black Material"
   PlatformAssetType: 13

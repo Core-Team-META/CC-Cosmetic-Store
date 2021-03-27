@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17241385864391730824
   Name: "Wedge"
   PlatformAssetType: 13

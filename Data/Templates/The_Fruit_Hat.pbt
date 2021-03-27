@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4804001331963556875
   Name: "The_Fruit_Hat"
   PlatformAssetType: 5

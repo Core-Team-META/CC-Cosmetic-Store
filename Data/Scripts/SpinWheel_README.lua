@@ -1,4 +1,4 @@
-﻿--[[
+--[[
     PERKS LootboxWheel - README
     v 0.1.0 - 2020/12/16
     by: 

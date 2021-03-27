@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7221678061450205388
   Name: "Sky Cape Canaveral"
   PlatformAssetType: 5

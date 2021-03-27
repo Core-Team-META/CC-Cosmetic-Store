@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7540612122681468482
   Name: "Farmers Market Display"
   PlatformAssetType: 5

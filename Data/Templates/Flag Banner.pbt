@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11331689766916294753
   Name: "Flag Banner"
   PlatformAssetType: 5

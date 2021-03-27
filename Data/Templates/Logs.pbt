@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 65551897619029722
   Name: "Logs"
   PlatformAssetType: 5

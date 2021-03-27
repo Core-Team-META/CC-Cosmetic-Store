@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1328213396668415185
   Name: "Info Sign"
   PlatformAssetType: 5

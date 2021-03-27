@@ -1,4 +1,4 @@
-﻿Name: "Lanterns_6"
+Name: "Lanterns_6"
 RootId: 5523255144317325603
 Objects {
   Id: 6760581731682046265

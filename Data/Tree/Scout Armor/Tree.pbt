@@ -1,4 +1,4 @@
-﻿Name: "Scout Armor"
+Name: "Scout Armor"
 RootId: 15803731682344697443
 Objects {
   Id: 1116194923178064849

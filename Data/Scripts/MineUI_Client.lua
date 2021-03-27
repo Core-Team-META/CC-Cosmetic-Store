@@ -1,4 +1,4 @@
-﻿local propUI_Root = script:GetCustomProperty("UI_Root"):WaitForObject()
+local propUI_Root = script:GetCustomProperty("UI_Root"):WaitForObject()
 local propButton_Yes = script:GetCustomProperty("Button_Yes"):WaitForObject()
 local propButton_No = script:GetCustomProperty("Button_No"):WaitForObject()
 local propDialogText = script:GetCustomProperty("DialogText"):WaitForObject()

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18163321505155870963
   Name: "Helper_Nameplate"
   PlatformAssetType: 5

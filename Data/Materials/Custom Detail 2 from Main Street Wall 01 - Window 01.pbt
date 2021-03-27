@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13839635833924194736
   Name: "Custom Detail 2 from Main Street Wall 01 - Window 01"
   PlatformAssetType: 13

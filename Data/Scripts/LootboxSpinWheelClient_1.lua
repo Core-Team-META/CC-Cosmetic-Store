@@ -1,4 +1,4 @@
-﻿local propWheel = script:GetCustomProperty("Wheel"):WaitForObject()
+local propWheel = script:GetCustomProperty("Wheel"):WaitForObject()
 local propLootboxGenerator = script:GetCustomProperty("LootboxGenerator"):WaitForObject()
 
 local propSpinWheelUI = script:GetCustomProperty("SpinWheelUI"):WaitForObject()

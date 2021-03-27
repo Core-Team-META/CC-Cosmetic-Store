@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15580067683009272329
   Name: "Loot Box Animation"
   PlatformAssetType: 5

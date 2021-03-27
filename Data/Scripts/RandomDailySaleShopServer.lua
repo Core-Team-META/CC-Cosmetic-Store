@@ -1,4 +1,4 @@
-﻿local randomDailySaleShop = script:GetCustomProperty("PERKS_RandomDailySaleShop"):WaitForObject()
+local randomDailySaleShop = script:GetCustomProperty("PERKS_RandomDailySaleShop"):WaitForObject()
 local storeContents = script:GetCustomProperty("STORE_StoreContents"):WaitForObject()
 
 local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))

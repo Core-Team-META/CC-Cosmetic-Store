@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9346323529662487284
   Name: "Rice"
   PlatformAssetType: 13

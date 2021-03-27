@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9812461676093557942
   Name: "Custom Base Material from Main Street Awning 01"
   PlatformAssetType: 13

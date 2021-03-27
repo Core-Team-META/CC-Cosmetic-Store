@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6420907970706844982
   Name: "Helper_KillFeedLine"
   PlatformAssetType: 5

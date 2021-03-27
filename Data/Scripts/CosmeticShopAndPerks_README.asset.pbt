@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3258256881781121726
   Name: "CosmeticShopAndPerks_README"
   PlatformAssetType: 3

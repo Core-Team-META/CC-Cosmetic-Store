@@ -1,4 +1,4 @@
-﻿local LTT = require(script:GetCustomProperty("_LongTermTimerManager"))
+local LTT = require(script:GetCustomProperty("_LongTermTimerManager"))
 local npcStates = {}
 
 

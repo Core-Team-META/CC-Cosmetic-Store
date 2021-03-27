@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 522347953599270323
   Name: "Core Glow"
   PlatformAssetType: 13

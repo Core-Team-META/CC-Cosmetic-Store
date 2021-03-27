@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16490091655120980800
   Name: "Store Screen Overlay"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17100556297650473030
   Name: "VeggieSpawner"
   PlatformAssetType: 3

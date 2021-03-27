@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16665273921799183399
   Name: "PlayerTitles_README"
   PlatformAssetType: 3

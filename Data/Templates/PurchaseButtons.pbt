@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15562873810623834263
   Name: "PurchaseButtons"
   PlatformAssetType: 5

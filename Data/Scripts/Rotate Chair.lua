@@ -1,4 +1,4 @@
-﻿local Chair = script.parent
+local Chair = script.parent
 
 function Tick(dTime)
     local chairRotation = Chair:GetWorldRotation()

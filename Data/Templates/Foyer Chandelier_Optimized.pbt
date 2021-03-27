@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5821554897946164652
   Name: "Foyer Chandelier_Optimized"
   PlatformAssetType: 5

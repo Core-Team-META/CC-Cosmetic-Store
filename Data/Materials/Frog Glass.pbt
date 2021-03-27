@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9955110316320929207
   Name: "Frog Glass"
   PlatformAssetType: 13

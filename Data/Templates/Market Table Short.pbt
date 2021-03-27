@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4110410094136028837
   Name: "Market Table Short"
   PlatformAssetType: 5

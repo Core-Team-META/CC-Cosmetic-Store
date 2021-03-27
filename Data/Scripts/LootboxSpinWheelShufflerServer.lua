@@ -1,4 +1,4 @@
-﻿--[[
+--[[
     LootboxSpinWheelShufflerServer v1.0
     by: Aj
 

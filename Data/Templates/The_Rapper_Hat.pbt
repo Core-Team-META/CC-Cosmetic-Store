@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7582525347447291639
   Name: "The_Rapper_Hat"
   PlatformAssetType: 5

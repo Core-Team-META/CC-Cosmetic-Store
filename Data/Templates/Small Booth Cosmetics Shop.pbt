@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17819382176491866521
   Name: "Small Booth Cosmetics Shop"
   PlatformAssetType: 5

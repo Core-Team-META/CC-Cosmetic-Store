@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4773504827519110565
   Name: "Veggie"
   PlatformAssetType: 5

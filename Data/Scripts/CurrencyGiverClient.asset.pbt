@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13934600878628152978
   Name: "CurrencyGiverClient"
   PlatformAssetType: 3

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3653195339892544252
   Name: "STORE_BaseballCap"
   PlatformAssetType: 5

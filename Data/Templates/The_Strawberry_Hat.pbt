@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5770261443539794174
   Name: "The_Strawberry_Hat"
   PlatformAssetType: 5

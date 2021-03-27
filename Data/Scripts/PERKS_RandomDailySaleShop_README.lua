@@ -1,4 +1,4 @@
-﻿--[[
+--[[
 	PERKS_RandomDailySaleShop - README
 	
 	v 0.1.0 - 12/16/2020

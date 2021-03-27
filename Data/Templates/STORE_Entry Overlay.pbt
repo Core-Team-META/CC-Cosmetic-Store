@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14247382145864210697
   Name: "STORE_Entry Overlay"
   PlatformAssetType: 5

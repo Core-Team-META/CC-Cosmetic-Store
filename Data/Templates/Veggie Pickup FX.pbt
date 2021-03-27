@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7978962283943599707
   Name: "Veggie Pickup FX"
   PlatformAssetType: 5

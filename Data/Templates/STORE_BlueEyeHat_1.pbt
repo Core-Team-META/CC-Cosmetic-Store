@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14506495770997542773
   Name: "STORE_BlueEyeHat"
   PlatformAssetType: 5

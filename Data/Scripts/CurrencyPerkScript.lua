@@ -1,4 +1,4 @@
-﻿local propStoreRoot = script:GetCustomProperty("StoreRoot"):WaitForObject()
+local propStoreRoot = script:GetCustomProperty("StoreRoot"):WaitForObject()
 
 while not _G.PERKS do
 

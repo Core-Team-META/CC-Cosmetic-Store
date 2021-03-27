@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1991168273216243350
   Name: "Essence_Pearl_Mat"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7370466284646577242
   Name: "PlayerNameplate"
   PlatformAssetType: 5

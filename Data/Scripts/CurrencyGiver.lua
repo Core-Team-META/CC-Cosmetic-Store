@@ -1,4 +1,4 @@
-﻿local propMultiplier = script:GetCustomProperty("STORE_SampleMultiplier"):WaitForObject()
+local propMultiplier = script:GetCustomProperty("STORE_SampleMultiplier"):WaitForObject()
 local propTrigger = script:GetCustomProperty("Trigger"):WaitForObject()
 
 while not _G.PERKS do

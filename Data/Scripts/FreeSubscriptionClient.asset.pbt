@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15440678445494581743
   Name: "FreeSubscriptionClient"
   PlatformAssetType: 3

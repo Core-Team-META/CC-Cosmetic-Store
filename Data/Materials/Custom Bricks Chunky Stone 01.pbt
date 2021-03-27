@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6371170481491896461
   Name: "Custom Bricks Chunky Stone 01"
   PlatformAssetType: 13

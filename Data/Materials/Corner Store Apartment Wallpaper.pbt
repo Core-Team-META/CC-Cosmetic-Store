@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3033064354123194892
   Name: "Corner Store Apartment Wallpaper"
   PlatformAssetType: 13

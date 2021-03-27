@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13460339060751325584
   Name: "CornDog Truck"
   PlatformAssetType: 5

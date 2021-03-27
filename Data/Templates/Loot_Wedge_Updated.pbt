@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14306746303207114523
   Name: "Loot Wedge Updated"
   PlatformAssetType: 5

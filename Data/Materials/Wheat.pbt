@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 128354746956759763
   Name: "Wheat"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5947621926038765917
   Name: "Cash Register"
   PlatformAssetType: 13

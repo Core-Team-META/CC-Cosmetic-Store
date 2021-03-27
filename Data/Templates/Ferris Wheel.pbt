@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2642082876325590669
   Name: "Ferris Wheel"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Name: "STORE_Costume1_2"
+Name: "STORE_Costume1_2"
 RootId: 166566125932590602
 Objects {
   Id: 6611008363574379262

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18277733649088940997
   Name: "STOREITEM_BirthdayCake Hat"
   PlatformAssetType: 5

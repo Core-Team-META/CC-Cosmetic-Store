@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14356558476970021760
   Name: "WoodLogsOnFIre"
   PlatformAssetType: 13

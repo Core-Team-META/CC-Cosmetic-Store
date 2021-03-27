@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17094951970768599212
   Name: "Wood Floor Weave Light"
   PlatformAssetType: 2

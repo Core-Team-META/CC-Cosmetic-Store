@@ -1,4 +1,4 @@
-﻿local propTrigger = script:GetCustomProperty("Trigger"):WaitForObject()
+local propTrigger = script:GetCustomProperty("Trigger"):WaitForObject()
 local propAnimatedMesh = script:GetCustomProperty("AnimatedMesh"):WaitForObject()
 local propWalkPath = script:GetCustomProperty("WalkPath"):WaitForObject()
 local propReadyIndicator = script:GetCustomProperty("ReadyIndicator"):WaitForObject()

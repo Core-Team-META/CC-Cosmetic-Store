@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6392292436882305540
   Name: "Loot_Box_Uncommon_Fantasy"
   PlatformAssetType: 5

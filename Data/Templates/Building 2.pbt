@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13245327699629736603
   Name: "Building 2"
   PlatformAssetType: 5

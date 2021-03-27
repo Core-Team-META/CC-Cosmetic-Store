@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14973446845246237270
   Name: "Custom Wallpaper Polka Dot 01"
   PlatformAssetType: 13

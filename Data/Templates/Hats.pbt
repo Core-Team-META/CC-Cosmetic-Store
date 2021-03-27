@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10417884473164897040
   Name: "Julie Costumes/Hats"
   PlatformAssetType: 5

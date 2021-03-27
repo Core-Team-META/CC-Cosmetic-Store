@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2470261079785649
   Name: "DiningHall Chandelier_Optimized"
   PlatformAssetType: 5

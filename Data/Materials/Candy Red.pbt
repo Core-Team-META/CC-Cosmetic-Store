@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15606259932443011165
   Name: "Candy Red"
   PlatformAssetType: 13

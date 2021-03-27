@@ -1,4 +1,4 @@
-﻿
+
 local DURATION = script.parent:GetCustomProperty("Duration") or 1
 
 local trigger = script.parent:FindChildByType("Trigger")

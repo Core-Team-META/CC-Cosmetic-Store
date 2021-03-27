@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5765139544309967972
   Name: "FantasyChestWood"
   PlatformAssetType: 13

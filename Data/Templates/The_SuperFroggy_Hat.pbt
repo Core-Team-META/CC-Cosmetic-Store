@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9911325134137890833
   Name: "The_SuperFroggy_Hat"
   PlatformAssetType: 5

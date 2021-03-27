@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5029636416148350953
   Name: "FilterButtonClient"
   PlatformAssetType: 3

@@ -1,4 +1,4 @@
-﻿local wall = script.parent
+local wall = script.parent
 
 local startPos = wall:GetPosition()
 

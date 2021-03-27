@@ -1,4 +1,4 @@
-﻿--[[
+--[[
 	PERKS_SubscriptionShop - README
 	
 	v 0.1.1 - 12/16/2020

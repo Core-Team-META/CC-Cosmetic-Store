@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15716931697721315393
   Name: "Waffle"
   PlatformAssetType: 13

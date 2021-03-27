@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1855956291282682555
   Name: "tree base"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10606144509416011798
   Name: "Goldfish Dorsal Fin Material"
   PlatformAssetType: 13

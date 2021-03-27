@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2019170231787868539
   Name: "STORE_Costume2"
   PlatformAssetType: 5

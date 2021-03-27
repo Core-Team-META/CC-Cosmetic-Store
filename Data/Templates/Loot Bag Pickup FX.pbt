@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16207342724638123508
   Name: "Loot Bag Pickup FX"
   PlatformAssetType: 5

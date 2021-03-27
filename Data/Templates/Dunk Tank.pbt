@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11621907616148821889
   Name: "Dunk Tank"
   PlatformAssetType: 5

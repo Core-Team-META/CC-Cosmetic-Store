@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4982687985501020701
   Name: "CinematicToolClient"
   PlatformAssetType: 3

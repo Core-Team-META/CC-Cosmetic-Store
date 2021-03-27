@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 635829914222571251
   Name: "Store Item BG"
   PlatformAssetType: 13

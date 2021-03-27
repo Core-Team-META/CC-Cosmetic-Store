@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10812088708482922085
   Name: "Store Manequin"
   PlatformAssetType: 13

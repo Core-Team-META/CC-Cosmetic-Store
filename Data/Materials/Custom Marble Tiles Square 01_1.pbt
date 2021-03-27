@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12850741108918480971
   Name: "Custom Marble Tiles Square 01_1"
   PlatformAssetType: 13

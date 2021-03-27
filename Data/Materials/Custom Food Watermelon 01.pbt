@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16186194291167484117
   Name: "Custom Food Watermelon 01"
   PlatformAssetType: 13

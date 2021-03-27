@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4618317435035797459
   Name: "Apple"
   PlatformAssetType: 13

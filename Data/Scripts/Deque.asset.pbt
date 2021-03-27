@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4561615774595589971
   Name: "Deque"
   PlatformAssetType: 3

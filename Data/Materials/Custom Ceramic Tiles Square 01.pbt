@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6363533887473132080
   Name: "Custom Ceramic Tiles Square 01"
   PlatformAssetType: 13

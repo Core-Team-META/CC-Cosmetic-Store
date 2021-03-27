@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13131149243676811333
   Name: "Sci-fi Chest Epic 01(Prop)"
   PlatformAssetType: 5

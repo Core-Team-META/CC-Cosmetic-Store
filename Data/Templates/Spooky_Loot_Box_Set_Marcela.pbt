@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5485709564428660248
   Name: "Spooky Loot Box Set (Marcela)"
   PlatformAssetType: 5

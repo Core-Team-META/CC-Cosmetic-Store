@@ -1,4 +1,4 @@
-﻿local propVeggieTemplate = script:GetCustomProperty("VeggieTemplate")
+local propVeggieTemplate = script:GetCustomProperty("VeggieTemplate")
 local propVeggieSpawnPoints = script:GetCustomProperty("VeggieSpawnPoints"):WaitForObject()
 
 local SpawnPoints = propVeggieSpawnPoints:GetChildren()

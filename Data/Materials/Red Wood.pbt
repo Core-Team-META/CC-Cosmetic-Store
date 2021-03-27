@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12712201313298830215
   Name: "Red Wood"
   PlatformAssetType: 13

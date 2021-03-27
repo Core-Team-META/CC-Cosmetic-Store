@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15214002539101761711
   Name: "Custom Base Material from Military Tank Modern"
   PlatformAssetType: 13

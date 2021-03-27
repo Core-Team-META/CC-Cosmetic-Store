@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3914352411083413573
   Name: "STORE_WinterHat"
   PlatformAssetType: 5

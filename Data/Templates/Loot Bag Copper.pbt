@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17464079239437924345
   Name: "Loot Bag Copper"
   PlatformAssetType: 5

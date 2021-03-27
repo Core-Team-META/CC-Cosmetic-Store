@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9570332493984495242
   Name: "XMas Lights - Yellow"
   PlatformAssetType: 5

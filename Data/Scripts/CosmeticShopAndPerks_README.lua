@@ -1,4 +1,4 @@
-﻿--[[
+--[[
     STORE_Logic and PERKS_Examples Set - README
     v 0.1.0 - 2020/12/16
     by: <Estlogic, Morticai, WitcherSilver>

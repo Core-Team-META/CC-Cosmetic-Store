@@ -1,4 +1,4 @@
-﻿--Press Q to switch to the camera
+--Press Q to switch to the camera
 local randomDailySaleShop = script:GetCustomProperty("PERKS_RandomDailySaleShop"):WaitForObject()
 
 while not _G.PERKS do

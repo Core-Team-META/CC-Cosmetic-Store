@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17560063821750810527
   Name: "Custom Food Strawberry 01 - Copy"
   PlatformAssetType: 13

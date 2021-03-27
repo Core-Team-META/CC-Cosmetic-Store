@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12013298046429944662
   Name: "STOREITEM_Hat2"
   PlatformAssetType: 5

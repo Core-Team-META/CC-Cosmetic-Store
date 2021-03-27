@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14510771149733028113
   Name: "META Player Titles With Perk Marker"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8452913983628703125
   Name: "closed sign"
   PlatformAssetType: 5

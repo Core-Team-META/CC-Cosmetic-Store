@@ -1,4 +1,4 @@
-﻿-- this is an old scirpt, please use "Loot_Box_Animation_Fantasy" instead --
+-- this is an old scirpt, please use "Loot_Box_Animation_Fantasy" instead --
 
 local Loot_Box = script:GetCustomProperty("Loot_Box"):WaitForObject()
 local Lid = script:GetCustomProperty("Lid"):WaitForObject()

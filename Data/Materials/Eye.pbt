@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4613396412393064494
   Name: "Eye"
   PlatformAssetType: 13

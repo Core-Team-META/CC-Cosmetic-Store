@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13065483015776121822
   Name: "Orange Wood"
   PlatformAssetType: 13

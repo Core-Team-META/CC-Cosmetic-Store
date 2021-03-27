@@ -1,4 +1,4 @@
-﻿Name: "STORE_Perks"
+Name: "STORE_Perks"
 RootId: 4296421264996771920
 Objects {
   Id: 16183653642147549134

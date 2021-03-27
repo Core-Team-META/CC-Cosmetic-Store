@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13097320809386463721
   Name: "Loot_Box_Common"
   PlatformAssetType: 5

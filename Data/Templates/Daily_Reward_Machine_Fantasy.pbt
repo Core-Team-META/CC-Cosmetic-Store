@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15976951343887126090
   Name: "Daily_Reward_Machine_Fantasy"
   PlatformAssetType: 5

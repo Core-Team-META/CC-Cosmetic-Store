@@ -1,4 +1,4 @@
-﻿local propItem1Trigger = script:GetCustomProperty("Item1Trigger"):WaitForObject()
+local propItem1Trigger = script:GetCustomProperty("Item1Trigger"):WaitForObject()
 local propItem2Trigger = script:GetCustomProperty("Item2Trigger"):WaitForObject()
 local propItem3Trigger = script:GetCustomProperty("Item3Trigger"):WaitForObject()
 

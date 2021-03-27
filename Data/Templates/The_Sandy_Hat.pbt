@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8341789717207267678
   Name: "The_Sandy_Hat"
   PlatformAssetType: 5

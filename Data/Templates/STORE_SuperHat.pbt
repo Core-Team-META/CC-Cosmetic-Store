@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2547238109864662372
   Name: "STORE_SuperHat"
   PlatformAssetType: 5

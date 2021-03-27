@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9754589145086750632
   Name: "Gas Mask Black"
   PlatformAssetType: 13

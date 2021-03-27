@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4854196293923781992
   Name: "Loot_Box_Epic_Fantasy"
   PlatformAssetType: 5

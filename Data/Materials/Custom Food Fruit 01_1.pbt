@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4283023764229537960
   Name: "Custom Food Fruit 01"
   PlatformAssetType: 13

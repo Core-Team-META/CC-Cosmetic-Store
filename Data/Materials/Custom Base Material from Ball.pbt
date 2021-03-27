@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1727322083726026998
   Name: "Custom Base Material from Ball"
   PlatformAssetType: 13

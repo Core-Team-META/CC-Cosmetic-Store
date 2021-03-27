@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 847745453775936604
   Name: "UI Perks and Stonsk Container"
   PlatformAssetType: 5

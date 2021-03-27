@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9457767862297079543
   Name: "Teeth"
   PlatformAssetType: 13

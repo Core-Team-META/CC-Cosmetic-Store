@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4237802730437069703
   Name: "Witcher_Daily_Shop_Changes"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Name: "Shack_6"
+Name: "Shack_6"
 RootId: 13819954654427970998
 Objects {
   Id: 11805083157782419634

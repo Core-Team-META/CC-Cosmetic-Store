@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8380346539891200813
   Name: "CosmeticStore"
   PlatformAssetType: 5

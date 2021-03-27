@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15921551076382742637
   Name: "PERKS_RandomDailyShop"
   PlatformAssetType: 5

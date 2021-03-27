@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7381641073965918806
   Name: "SpinWheel_README"
   PlatformAssetType: 3

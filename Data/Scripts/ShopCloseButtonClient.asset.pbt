@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10805175479645339422
   Name: "ShopCloseButtonClient"
   PlatformAssetType: 3

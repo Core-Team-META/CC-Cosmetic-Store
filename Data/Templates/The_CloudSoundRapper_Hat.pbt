@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13290464981350570086
   Name: "The_CloudSoundRapper_Hat"
   PlatformAssetType: 5

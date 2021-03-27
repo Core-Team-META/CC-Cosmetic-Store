@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2268928575088244628
   Name: "Custom Leaves from Fern 01"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1794343362246124680
   Name: "Caramel"
   PlatformAssetType: 13

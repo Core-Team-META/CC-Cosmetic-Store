@@ -1,4 +1,4 @@
-﻿local propTrigger = script:GetCustomProperty("Trigger"):WaitForObject()
+local propTrigger = script:GetCustomProperty("Trigger"):WaitForObject()
 local propVIP = script:GetCustomProperty("VIP"):WaitForObject()
 
 function onInterraction(trigger, player)

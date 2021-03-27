@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15743894130380492269
   Name: "Store Hex Energy Pulse"
   PlatformAssetType: 13

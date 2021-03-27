@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4569094990012719941
   Name: "Sphere - Half Thick"
   PlatformAssetType: 1

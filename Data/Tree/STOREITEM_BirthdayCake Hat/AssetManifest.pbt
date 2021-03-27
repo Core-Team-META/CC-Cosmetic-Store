@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16808981899589238415
   Name: "Heart - Polished"
   PlatformAssetType: 1

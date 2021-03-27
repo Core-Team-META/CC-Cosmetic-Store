@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2090175514792458102
   Name: "Custom Base Material from Curtains Straight"
   PlatformAssetType: 13

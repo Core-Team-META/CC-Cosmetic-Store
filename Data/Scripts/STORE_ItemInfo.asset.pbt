@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6380040976156754336
   Name: "STORE_ItemInfo"
   PlatformAssetType: 3

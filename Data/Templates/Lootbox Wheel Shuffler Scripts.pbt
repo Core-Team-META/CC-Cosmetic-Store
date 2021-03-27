@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8000199460961675253
   Name: "Lootbox Wheel Shuffler Scripts"
   PlatformAssetType: 5

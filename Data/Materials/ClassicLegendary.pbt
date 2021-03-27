@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8651820878821933268
   Name: "ClassicLegendary"
   PlatformAssetType: 13

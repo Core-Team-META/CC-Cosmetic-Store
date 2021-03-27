@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5218435788178153655
   Name: "STORE_StrawberrryHat"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4038370370694954791
   Name: "Loot Machine Animation Fantasy"
   PlatformAssetType: 5

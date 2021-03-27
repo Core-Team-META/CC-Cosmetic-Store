@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14792109766581981911
   Name: "_LongTermTimerManager"
   PlatformAssetType: 3

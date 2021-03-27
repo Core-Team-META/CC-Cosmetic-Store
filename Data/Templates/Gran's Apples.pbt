@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3008797312281056829
   Name: "Gran\'s Apples"
   PlatformAssetType: 5

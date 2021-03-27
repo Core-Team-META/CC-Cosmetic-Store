@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10655744980633907754
   Name: "WaffleLight"
   PlatformAssetType: 13

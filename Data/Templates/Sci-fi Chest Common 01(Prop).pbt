@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7864846402634828784
   Name: "Sci-fi Chest Common 01(Prop)"
   PlatformAssetType: 5

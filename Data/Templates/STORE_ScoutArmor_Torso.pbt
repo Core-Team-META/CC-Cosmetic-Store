@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4824922327679417400
   Name: "STORE_ScoutArmor_Torso"
   PlatformAssetType: 5

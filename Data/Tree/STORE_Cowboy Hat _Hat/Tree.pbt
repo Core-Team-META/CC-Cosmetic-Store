@@ -1,4 +1,4 @@
-﻿Name: "STORE_Cowboy Hat _Hat"
+Name: "STORE_Cowboy Hat _Hat"
 RootId: 4733964974217363742
 Objects {
   Id: 12989526534379811410

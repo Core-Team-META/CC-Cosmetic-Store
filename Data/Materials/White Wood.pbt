@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14872148932452613716
   Name: "White Wood"
   PlatformAssetType: 13

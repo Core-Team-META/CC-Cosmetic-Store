@@ -1,4 +1,4 @@
-﻿Name: "Documentation"
+Name: "Documentation"
 RootId: 16472338647689726294
 Objects {
   Id: 15451772786308546350

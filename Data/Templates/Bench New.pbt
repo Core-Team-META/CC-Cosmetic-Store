@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11729320246555348743
   Name: "Bench New"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14643839919973517980
   Name: "Custom Metal Gold 01"
   PlatformAssetType: 13

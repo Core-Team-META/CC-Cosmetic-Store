@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 614220041473863367
   Name: "STOREITEM_Cowboy Hat _Hat"
   PlatformAssetType: 5

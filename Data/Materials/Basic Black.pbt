@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 728634478444577498
   Name: "Basic Black"
   PlatformAssetType: 13

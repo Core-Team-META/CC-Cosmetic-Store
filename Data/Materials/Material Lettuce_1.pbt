@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9192660324626430640
   Name: "Material Lettuce"
   PlatformAssetType: 13

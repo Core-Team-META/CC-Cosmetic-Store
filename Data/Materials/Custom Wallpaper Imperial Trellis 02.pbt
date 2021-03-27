@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10259448267849003283
   Name: "Custom Wallpaper Imperial Trellis 02"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12557991413225897844
   Name: "Rough Fabric"
   PlatformAssetType: 13

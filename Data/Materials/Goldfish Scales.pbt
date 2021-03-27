@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7581290277312902614
   Name: "Goldfish Scales"
   PlatformAssetType: 13

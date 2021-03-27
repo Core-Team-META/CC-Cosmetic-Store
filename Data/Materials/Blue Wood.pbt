@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7561318194406071751
   Name: "Blue Wood"
   PlatformAssetType: 13

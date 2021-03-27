@@ -1,4 +1,4 @@
-﻿local propStoreRoot = script:GetCustomProperty("StoreRoot"):WaitForObject()
+local propStoreRoot = script:GetCustomProperty("StoreRoot"):WaitForObject()
 local propSubscriptionWindowName = script:GetCustomProperty("SubscriptionWindowName"):WaitForObject()
 local propSubscriptionDescription = script:GetCustomProperty("SubscriptionDescription"):WaitForObject()
 local propSubscriptionPurchase = script:GetCustomProperty("SubscriptionPurchase"):WaitForObject()

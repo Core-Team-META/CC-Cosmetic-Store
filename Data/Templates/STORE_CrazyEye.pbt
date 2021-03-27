@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13510754618439544811
   Name: "STORE_CrazyEye"
   PlatformAssetType: 5

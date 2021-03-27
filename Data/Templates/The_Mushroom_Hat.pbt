@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14279520522198975860
   Name: "The_Mushroom_Hat"
   PlatformAssetType: 5

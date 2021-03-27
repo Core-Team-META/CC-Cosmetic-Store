@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15071959512768627988
   Name: "Prize_ItemInfo"
   PlatformAssetType: 3

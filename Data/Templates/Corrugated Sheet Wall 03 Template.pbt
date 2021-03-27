@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 272651875326113664
   Name: "Corrugated Sheet Wall 03 Template"
   PlatformAssetType: 5

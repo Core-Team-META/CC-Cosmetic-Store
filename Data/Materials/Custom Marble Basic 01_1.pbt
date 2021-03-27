@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11791765850980444724
   Name: "Custom Marble Basic 01_1"
   PlatformAssetType: 13

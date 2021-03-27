@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4388195968657221034
   Name: "FallFunny_Costume 2"
   PlatformAssetType: 5

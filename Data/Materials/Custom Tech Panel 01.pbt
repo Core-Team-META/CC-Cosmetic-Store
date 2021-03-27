@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4953485687711270547
   Name: "Custom Tech Panel 01"
   PlatformAssetType: 13

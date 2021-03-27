@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1809656584062720044
   Name: "PlayerTitles_Scoreboard"
   PlatformAssetType: 3

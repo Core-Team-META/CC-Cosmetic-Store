@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8858938558013838886
   Name: "META_CosmeticStore"
   PlatformAssetType: 5

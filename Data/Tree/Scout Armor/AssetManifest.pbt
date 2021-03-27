@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17083166192660092680
   Name: "Sci-fi Ship Cockpit Back 02"
   PlatformAssetType: 1

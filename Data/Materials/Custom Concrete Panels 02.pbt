@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 696856107140800809
   Name: "Custom Concrete Panels 02"
   PlatformAssetType: 13

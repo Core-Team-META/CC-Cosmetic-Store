@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12688029538592919280
   Name: "Headlights"
   PlatformAssetType: 13

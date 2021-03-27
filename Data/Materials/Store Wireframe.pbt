@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11569734231589357190
   Name: "Store Wireframe"
   PlatformAssetType: 13

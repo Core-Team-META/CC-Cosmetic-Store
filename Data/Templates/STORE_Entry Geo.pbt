@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15389268987378960631
   Name: "STORE_Entry Geo"
   PlatformAssetType: 5

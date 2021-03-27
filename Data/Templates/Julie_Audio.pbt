@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13850158071016866671
   Name: "Julie Audio"
   PlatformAssetType: 5

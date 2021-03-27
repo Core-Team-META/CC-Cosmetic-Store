@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5333790061076654081
   Name: "Custom Wallpaper Damask 01"
   PlatformAssetType: 13

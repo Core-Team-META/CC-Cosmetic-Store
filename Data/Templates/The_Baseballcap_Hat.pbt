@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8437200917167573213
   Name: "The_Baseballcap_Hat"
   PlatformAssetType: 5

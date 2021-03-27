@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15630911104160611978
   Name: "Metal Boxing Gloves"
   PlatformAssetType: 13

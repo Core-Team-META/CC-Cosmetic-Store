@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1354113122219481586
   Name: "Custom Pineapple"
   PlatformAssetType: 13

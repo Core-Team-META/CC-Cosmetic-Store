@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6437959571606389575
   Name: "The_CrazyEye_Hat"
   PlatformAssetType: 5

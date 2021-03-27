@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 314594804455000350
   Name: "Custom Leaves from Ivy 05"
   PlatformAssetType: 13

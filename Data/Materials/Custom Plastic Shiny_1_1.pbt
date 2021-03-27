@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12570150522929300061
   Name: "Custom Plastic Shiny_1"
   PlatformAssetType: 13

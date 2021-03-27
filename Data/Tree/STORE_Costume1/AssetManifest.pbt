@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17316066277211274956
   Name: "Ring - Quarter"
   PlatformAssetType: 1

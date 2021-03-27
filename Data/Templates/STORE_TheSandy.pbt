@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6198341166539065463
   Name: "STORE_TheSandy"
   PlatformAssetType: 5

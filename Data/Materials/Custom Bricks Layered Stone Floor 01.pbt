@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1093756949027648758
   Name: "Custom Bricks Layered Stone Floor 01"
   PlatformAssetType: 13

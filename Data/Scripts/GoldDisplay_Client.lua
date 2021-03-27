@@ -1,4 +1,4 @@
-﻿local propWorldText = script:GetCustomProperty("WorldText"):WaitForObject()
+local propWorldText = script:GetCustomProperty("WorldText"):WaitForObject()
 local propVFX = script:GetCustomProperty("VFX"):WaitForObject()
 
 local player = Game.GetLocalPlayer()

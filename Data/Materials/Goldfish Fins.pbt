@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14428307037153004899
   Name: "Goldfish Fins"
   PlatformAssetType: 13

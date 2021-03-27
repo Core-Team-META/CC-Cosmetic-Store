@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7946681086304403235
   Name: "Custom Store Hologram"
   PlatformAssetType: 13

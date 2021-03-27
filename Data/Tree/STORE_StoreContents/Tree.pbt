@@ -1,4 +1,4 @@
-﻿Name: "STORE_StoreContents"
+Name: "STORE_StoreContents"
 RootId: 9400168650716258104
 Objects {
   Id: 17308166770223046349

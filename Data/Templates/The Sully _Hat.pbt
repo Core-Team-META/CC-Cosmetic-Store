@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16081904520783275333
   Name: "The Sully _Hat"
   PlatformAssetType: 5

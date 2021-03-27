@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9233731339423141989
   Name: "Custom Wood Raw"
   PlatformAssetType: 13

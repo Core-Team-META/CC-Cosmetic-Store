@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10648004077355277527
   Name: "Custom Camouflage - Woodland"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10750461924305349696
   Name: "Loot Machine Animation Scrap"
   PlatformAssetType: 5

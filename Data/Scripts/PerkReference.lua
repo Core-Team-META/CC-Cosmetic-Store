@@ -1,4 +1,4 @@
-﻿--[[
+--[[
 	This file doesn't actually have anything in it.
 	it's just here to hold the PerkRef custom property.
 	It's a netreference to the perk that you want to use.

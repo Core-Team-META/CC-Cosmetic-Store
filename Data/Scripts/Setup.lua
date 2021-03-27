@@ -1,4 +1,4 @@
-﻿local cash = 0
+local cash = 0
 
 Game.playerJoinedEvent:Connect(function(player)
 

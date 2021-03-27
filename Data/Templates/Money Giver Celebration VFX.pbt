@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 525454144400259669
   Name: "Money Giver Celebration VFX"
   PlatformAssetType: 5

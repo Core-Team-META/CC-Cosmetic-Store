@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14039629976441218644
   Name: "EaseUI"
   PlatformAssetType: 3

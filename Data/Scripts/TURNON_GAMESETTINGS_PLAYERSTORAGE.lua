@@ -1,1 +1,1 @@
-﻿-- Go to game settings and check "ENABLE PLAYER STORAGE"
+-- Go to game settings and check "ENABLE PLAYER STORAGE"

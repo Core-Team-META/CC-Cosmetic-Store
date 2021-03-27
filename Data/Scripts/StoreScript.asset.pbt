@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 487360291110906073
   Name: "StoreScript"
   PlatformAssetType: 3

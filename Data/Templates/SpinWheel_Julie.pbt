@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18366592171662495100
   Name: "SpinWheel_Julie"
   PlatformAssetType: 5

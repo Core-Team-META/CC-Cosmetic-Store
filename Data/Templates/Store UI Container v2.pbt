@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7469010419965287428
   Name: "Store UI Container v2"
   PlatformAssetType: 5

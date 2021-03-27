@@ -1,4 +1,4 @@
-﻿Name: "STORE_Chef Hat_2"
+Name: "STORE_Chef Hat_2"
 RootId: 8542851779739392449
 Objects {
   Id: 4660189967688868429

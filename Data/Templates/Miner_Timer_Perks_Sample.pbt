@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7272225331690163745
   Name: "Miner Timer Sample"
   PlatformAssetType: 5

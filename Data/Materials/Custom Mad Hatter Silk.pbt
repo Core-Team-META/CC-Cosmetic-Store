@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4531461962550948004
   Name: "Custom Mad Hatter Silk"
   PlatformAssetType: 13

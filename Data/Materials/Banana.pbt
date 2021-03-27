@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13354963142046096139
   Name: "Banana"
   PlatformAssetType: 13

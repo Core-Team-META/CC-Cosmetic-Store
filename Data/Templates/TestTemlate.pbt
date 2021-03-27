@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9730217397015634070
   Name: "TestTemlate"
   PlatformAssetType: 5

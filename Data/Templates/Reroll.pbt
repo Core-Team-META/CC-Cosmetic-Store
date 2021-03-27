@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8945038353387607219
   Name: "Reroll"
   PlatformAssetType: 5

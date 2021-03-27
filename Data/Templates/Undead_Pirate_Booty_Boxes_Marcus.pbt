@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14887288656466674093
   Name: "Undead Pirate Booty Boxes (Marcus)"
   PlatformAssetType: 5

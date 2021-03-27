@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9972484726968603259
   Name: "Droid Face Girl"
   PlatformAssetType: 13

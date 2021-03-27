@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 621782261612844046
   Name: "Helper_SegmentSeparator"
   PlatformAssetType: 5

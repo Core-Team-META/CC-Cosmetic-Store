@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18414187469791612460
   Name: "STORE_TheOoccoo"
   PlatformAssetType: 5

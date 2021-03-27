@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5294309952804741000
   Name: "Custom Plastic Matte"
   PlatformAssetType: 13

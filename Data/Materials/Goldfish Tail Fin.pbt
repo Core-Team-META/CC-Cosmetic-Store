@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1357600297956960911
   Name: "Goldfish Tail Fin"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8388883843180304908
   Name: "The_Winter_Hat"
   PlatformAssetType: 5

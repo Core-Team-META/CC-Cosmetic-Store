@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13988984678285716517
   Name: "ScoreboardLeaderstatHeader"
   PlatformAssetType: 5

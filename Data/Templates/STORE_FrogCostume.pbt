@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3791193960472781640
   Name: "STORE_FrogCostume"
   PlatformAssetType: 5

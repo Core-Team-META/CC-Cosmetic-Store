@@ -1,4 +1,4 @@
-﻿local propCurrencyUI = script:GetCustomProperty("CurrencyUI"):WaitForObject()
+local propCurrencyUI = script:GetCustomProperty("CurrencyUI"):WaitForObject()
 local propPremiumUI = script:GetCustomProperty("PremiumUI"):WaitForObject()
 
 local propCosmeticStore = script:GetCustomProperty("STORE_CosmeticStore"):WaitForObject()

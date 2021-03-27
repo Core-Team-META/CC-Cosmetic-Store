@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10002146648556152660
   Name: "Custom Leaves from Flower Bellflower 02"
   PlatformAssetType: 13

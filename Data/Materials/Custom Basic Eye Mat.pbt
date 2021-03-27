@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1280525341534199913
   Name: "Custom Basic Eye Mat"
   PlatformAssetType: 13

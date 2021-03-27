@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7247918365793327328
   Name: "Sky"
   PlatformAssetType: 5

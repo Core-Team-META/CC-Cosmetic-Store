@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 414571301480480549
   Name: "Belly"
   PlatformAssetType: 13

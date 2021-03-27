@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12118991292016097700
   Name: "Perks"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13033743946148283660
   Name: "Loot Machine Animation Standard"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Name: "STORE_BirthdayCake Hat"
+Name: "STORE_BirthdayCake Hat"
 RootId: 15837184790646461700
 Objects {
   Id: 9881158307198383510

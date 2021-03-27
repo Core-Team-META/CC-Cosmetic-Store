@@ -1,4 +1,4 @@
-﻿while not _G.PERKS do
+while not _G.PERKS do
 
     Task.Wait()
     

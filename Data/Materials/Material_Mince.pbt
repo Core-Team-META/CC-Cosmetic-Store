@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10610112056244224949
   Name: "Material_Mince"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5115411945519666792
   Name: "View Daily Rewards Container"
   PlatformAssetType: 5

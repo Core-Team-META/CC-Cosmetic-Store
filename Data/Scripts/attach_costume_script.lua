@@ -1,4 +1,4 @@
-﻿local sockets = script:GetChildren()
+local sockets = script:GetChildren()
 local propTrigger = script:GetCustomProperty("Trigger"):WaitForObject()
 
 

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9423935365713084708
   Name: "The_BlueSully _Hat"
   PlatformAssetType: 5

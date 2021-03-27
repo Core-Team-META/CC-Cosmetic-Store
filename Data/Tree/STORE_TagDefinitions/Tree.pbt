@@ -1,4 +1,4 @@
-﻿Name: "STORE_TagDefinitions"
+Name: "STORE_TagDefinitions"
 RootId: 2215513730066830588
 Objects {
   Id: 12955035602893645182

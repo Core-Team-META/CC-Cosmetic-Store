@@ -1,4 +1,4 @@
-﻿Name: "Perks"
+Name: "Perks"
 RootId: 10254726131360694379
 Objects {
   Id: 17895785427893058254

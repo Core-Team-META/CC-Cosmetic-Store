@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 972826911241001064
   Name: "Custom Wallpaper Stars 01"
   PlatformAssetType: 13

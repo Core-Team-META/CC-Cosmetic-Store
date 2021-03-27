@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15302032350034776922
   Name: "Goldfish Head"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿local propItem1Marker = script:GetCustomProperty("Item1Marker"):WaitForObject()
+local propItem1Marker = script:GetCustomProperty("Item1Marker"):WaitForObject()
 local propItem2Marker = script:GetCustomProperty("Item2Marker"):WaitForObject()
 local propItem3Marker = script:GetCustomProperty("Item3Marker"):WaitForObject()
 

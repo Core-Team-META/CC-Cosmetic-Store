@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8730985546301510027
   Name: "Balloon Trash Can"
   PlatformAssetType: 5

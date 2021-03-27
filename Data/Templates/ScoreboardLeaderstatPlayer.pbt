@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5621440251588566502
   Name: "ScoreboardLeaderstatPlayer"
   PlatformAssetType: 5

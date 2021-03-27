@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15457852413245329884
   Name: "Custom Ceramic Tiles Octagon Dot 01"
   PlatformAssetType: 13

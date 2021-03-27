@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11762778239540610036
   Name: "Cotton Candy Machine"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13751836553642120073
   Name: "Material_TacoShell"
   PlatformAssetType: 13

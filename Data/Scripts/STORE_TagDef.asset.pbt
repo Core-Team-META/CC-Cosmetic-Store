@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 343391826884542433
   Name: "STORE_TagDef"
   PlatformAssetType: 3

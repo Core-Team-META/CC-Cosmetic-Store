@@ -1,4 +1,4 @@
-﻿local propVFX = script:GetCustomProperty("VFX"):WaitForObject()
+local propVFX = script:GetCustomProperty("VFX"):WaitForObject()
 local propValueName = script:GetCustomProperty("PropertyName")
 local autoStart = script:GetCustomProperty("AutoStart")
 local repeatCount = script:GetCustomProperty("RepeatCount")

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2443816718686024532
   Name: "The_Oocoo_Hat"
   PlatformAssetType: 5

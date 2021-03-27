@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9126262550530378352
   Name: "Custom Leather Tufted 01"
   PlatformAssetType: 13

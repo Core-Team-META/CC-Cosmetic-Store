@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9292824741187795801
   Name: "Mouth Tongue"
   PlatformAssetType: 13

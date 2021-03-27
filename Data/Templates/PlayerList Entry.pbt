@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13836671229043303076
   Name: "PlayerList Entry"
   PlatformAssetType: 5

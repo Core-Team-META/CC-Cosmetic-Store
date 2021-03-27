@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6615801700371021935
   Name: "STORE_MushroomHat"
   PlatformAssetType: 5

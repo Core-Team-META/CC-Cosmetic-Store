@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9536351634727135663
   Name: "Custom Mad Hatter Blend"
   PlatformAssetType: 13

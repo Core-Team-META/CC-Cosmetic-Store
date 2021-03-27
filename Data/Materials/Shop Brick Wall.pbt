@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8761147924480114995
   Name: "Shop Brick Wall"
   PlatformAssetType: 13

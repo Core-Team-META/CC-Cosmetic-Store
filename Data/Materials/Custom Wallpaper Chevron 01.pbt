@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15690667457542243144
   Name: "Custom Wallpaper Chevron 01"
   PlatformAssetType: 13

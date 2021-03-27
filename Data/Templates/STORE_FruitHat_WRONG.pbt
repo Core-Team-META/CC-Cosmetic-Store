@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17545234705899415487
   Name: "STORE_FruitHat_WRONG"
   PlatformAssetType: 5

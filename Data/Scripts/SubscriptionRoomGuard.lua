@@ -1,4 +1,4 @@
-﻿local propRequiredNumberOfVIP = script:GetCustomProperty("RequiredNumberOfVIP")
+local propRequiredNumberOfVIP = script:GetCustomProperty("RequiredNumberOfVIP")
 
 while not _G.PERKS do
 

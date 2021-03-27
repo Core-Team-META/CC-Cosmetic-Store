@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14607036420455791692
   Name: "Grand Clock_Optimized"
   PlatformAssetType: 5

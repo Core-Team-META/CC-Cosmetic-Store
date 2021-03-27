@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 482241905882169490
   Name: "Loot_Box_Legendary_Booty"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15784724511649071472
   Name: "Droid Face"
   PlatformAssetType: 13

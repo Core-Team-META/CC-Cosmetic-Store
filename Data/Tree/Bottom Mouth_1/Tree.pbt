@@ -1,4 +1,4 @@
-﻿Name: "Bottom Mouth_1"
+Name: "Bottom Mouth_1"
 RootId: 3150126300396329244
 Objects {
   Id: 16635127107748898143

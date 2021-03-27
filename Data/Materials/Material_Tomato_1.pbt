@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 285448908228857896
   Name: "Material_Tomato"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2562245680748275285
   Name: "The_Chef_Hat"
   PlatformAssetType: 5

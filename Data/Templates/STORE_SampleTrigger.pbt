@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2201756071361896455
   Name: "STORE_SampleTrigger"
   PlatformAssetType: 5

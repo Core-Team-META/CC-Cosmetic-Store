@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13112615037892024010
   Name: "STORE_TypeDef"
   PlatformAssetType: 3

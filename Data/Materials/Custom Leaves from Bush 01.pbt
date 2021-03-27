@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 766667096612755641
   Name: "Custom Leaves from Bush 01"
   PlatformAssetType: 13

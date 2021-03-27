@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5376372365221055051
   Name: "Helper_Nameplate_With_Subscription_Marker"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3343123227045234582
   Name: "Small Booth VIP Shop"
   PlatformAssetType: 5

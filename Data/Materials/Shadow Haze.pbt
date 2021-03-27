@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9543645916439374330
   Name: "Shadow Haze"
   PlatformAssetType: 13

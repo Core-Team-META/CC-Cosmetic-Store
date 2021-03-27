@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4550597871184126140
   Name: "Paper"
   PlatformAssetType: 13

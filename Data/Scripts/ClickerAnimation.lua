@@ -1,4 +1,4 @@
-﻿local clicker = script:GetCustomProperty("Clicker"):WaitForObject()
+local clicker = script:GetCustomProperty("Clicker"):WaitForObject()
 local sample = script:GetCustomProperty("Sample"):WaitForObject()
 local clickSFX = script:GetCustomProperty("ClickSFX"):WaitForObject()
 

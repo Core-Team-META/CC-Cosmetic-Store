@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18325201781401872249
   Name: "UI Basic Shape Square"
   PlatformAssetType: 9

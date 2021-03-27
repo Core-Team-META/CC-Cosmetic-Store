@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18379924532194096666
   Name: "MAin Street Landing 01 4m x 4m"
   PlatformAssetType: 1

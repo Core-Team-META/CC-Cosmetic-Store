@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11766085156774324641
   Name: "META Player Titles"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿local perks = script:GetCustomProperty("Perks"):WaitForObject()
+local perks = script:GetCustomProperty("Perks"):WaitForObject()
 
 _G.PERKS = {}
 

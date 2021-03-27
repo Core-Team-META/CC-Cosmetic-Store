@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4383747324323136254
   Name: "MultiplierUI"
   PlatformAssetType: 5

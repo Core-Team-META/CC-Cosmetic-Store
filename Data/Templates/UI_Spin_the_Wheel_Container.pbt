@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5367241680308786046
   Name: "UI Spin the Wheel Container"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿local DROP_TABLE = script:GetCustomProperty("DropTable"):WaitForObject()
+local DROP_TABLE = script:GetCustomProperty("DropTable"):WaitForObject()
 local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
 
 local CURRENCY_NAME = script:GetCustomProperty("CurrencyName")
