@@ -1,5 +1,5 @@
 GameId: "107EC1434C023D884FFD0BADA187330B"
 DisplayName: "CC Cosmetic Store"
-GameSerializationVersion: 70
+GameSerializationVersion: 84
 Framework: "Empty Project"
-StorageVersion: 1
+StorageVersion: 2

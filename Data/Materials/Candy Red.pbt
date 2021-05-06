@@ -2,7 +2,7 @@ Assets {
   Id: 15606259932443011165
   Name: "Candy Red"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 10184847056121543272
     ParameterOverrides {

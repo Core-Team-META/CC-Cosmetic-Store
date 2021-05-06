@@ -2,7 +2,7 @@ Assets {
   Id: 4531461962550948004
   Name: "Custom Mad Hatter Silk"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 10928861825251085005
     ParameterOverrides {

@@ -2,7 +2,7 @@ Assets {
   Id: 4618317435035797459
   Name: "Apple"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 13261130630075582829
     ParameterOverrides {

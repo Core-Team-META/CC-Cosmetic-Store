@@ -2,7 +2,7 @@ Assets {
   Id: 12712201313298830215
   Name: "Red Wood"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 6675430020078140768
     ParameterOverrides {

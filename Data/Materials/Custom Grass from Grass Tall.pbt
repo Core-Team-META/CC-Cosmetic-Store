@@ -2,7 +2,7 @@ Assets {
   Id: 13399453730767335238
   Name: "Custom Grass from Grass Tall"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 10753667160308124248
     ParameterOverrides {

@@ -2,7 +2,7 @@ Assets {
   Id: 5947621926038765917
   Name: "Cash Register"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 8425111237879329054
     ParameterOverrides {

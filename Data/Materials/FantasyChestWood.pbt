@@ -2,7 +2,7 @@ Assets {
   Id: 5765139544309967972
   Name: "FantasyChestWood"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 6675430020078140768
     ParameterOverrides {

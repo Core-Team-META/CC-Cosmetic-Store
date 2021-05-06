@@ -2,7 +2,7 @@ Assets {
   Id: 2268092006724167310
   Name: "Custom Base Material from Rock Block 01_1"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 6662310896267058003
     ParameterOverrides {

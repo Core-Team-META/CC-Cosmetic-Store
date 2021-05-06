@@ -2,7 +2,7 @@ Assets {
   Id: 13065483015776121822
   Name: "Orange Wood"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 6675430020078140768
     ParameterOverrides {

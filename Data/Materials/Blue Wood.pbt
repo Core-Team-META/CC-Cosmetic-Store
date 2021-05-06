@@ -2,7 +2,7 @@ Assets {
   Id: 7561318194406071751
   Name: "Blue Wood"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 6675430020078140768
     ParameterOverrides {

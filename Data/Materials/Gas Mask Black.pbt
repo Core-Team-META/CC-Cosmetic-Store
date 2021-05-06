@@ -2,7 +2,7 @@ Assets {
   Id: 9754589145086750632
   Name: "Gas Mask Black"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 5649176111305970494
     ParameterOverrides {

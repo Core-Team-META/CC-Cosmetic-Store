@@ -2,7 +2,7 @@ Assets {
   Id: 15205295286776395326
   Name: "Custom Amethyst"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 12083003595834001863
     ParameterOverrides {

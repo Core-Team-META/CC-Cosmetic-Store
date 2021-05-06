@@ -2,7 +2,7 @@ Assets {
   Id: 1794343362246124680
   Name: "Caramel"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 10184847056121543272
     ParameterOverrides {

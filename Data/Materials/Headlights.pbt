@@ -2,7 +2,7 @@ Assets {
   Id: 12688029538592919280
   Name: "Headlights"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 10184847056121543272
     ParameterOverrides {

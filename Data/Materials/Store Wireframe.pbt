@@ -2,7 +2,7 @@ Assets {
   Id: 11569734231589357190
   Name: "Store Wireframe"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 4837726766135890159
     ParameterOverrides {

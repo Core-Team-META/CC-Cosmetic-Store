@@ -2,7 +2,7 @@ Assets {
   Id: 4550597871184126140
   Name: "Paper"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 10184847056121543272
     ParameterOverrides {

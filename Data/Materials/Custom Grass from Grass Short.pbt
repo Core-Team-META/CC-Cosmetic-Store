@@ -2,7 +2,7 @@ Assets {
   Id: 5578068401935150058
   Name: "Custom Grass from Grass Short"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 13794111267259784267
     ParameterOverrides {

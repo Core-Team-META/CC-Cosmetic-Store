@@ -2,7 +2,7 @@ Assets {
   Id: 8651820878821933268
   Name: "ClassicLegendary"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 15952715523737508922
     ParameterOverrides {

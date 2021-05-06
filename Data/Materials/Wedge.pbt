@@ -2,7 +2,7 @@ Assets {
   Id: 17241385864391730824
   Name: "Wedge"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 12046515231661494483
     ParameterOverrides {

@@ -2,7 +2,7 @@ Assets {
   Id: 2206077521261823215
   Name: "Yellow Wood"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 84
   CustomMaterialAsset {
     BaseMaterialId: 6675430020078140768
     ParameterOverrides {
